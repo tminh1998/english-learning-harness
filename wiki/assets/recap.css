@@ -1,0 +1,139 @@
+/* recap.css — style riêng cho BẢNG ÔN TUẦN (`wiki/recap/YYYY-Www.html`).
+   Dùng chung biến màu + .wrap/.hero/.badge/.toolbar/.hide-me của lesson.css.
+   File này chỉ thêm phần bảng tra nhanh và bảng cặp dễ nhầm.
+
+   Ý đồ: nghĩa Việt nằm NGAY CẠNH từ tiếng Anh để liếc một cái là hiểu. Cùng lúc,
+   cột nghĩa Việt mang class `hide-me` nên nút "Chế độ ôn tập" của lesson.js che
+   được — cùng một bảng, bật lên thành bài tự kiểm tra. */
+
+/* ── Bảng tra nhanh ───────────────────────────────────────── */
+
+.tra-nhanh {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 8px;
+  font-size: 15px;
+}
+
+.tra-nhanh th {
+  text-align: left;
+  font-size: .72rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 600;
+  padding: 0 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tra-nhanh td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.tra-nhanh tr:last-child td { border-bottom: none; }
+
+/* Vạch màu trái theo nhóm — cùng ngôn ngữ màu với thẻ từ trong bài học */
+.tra-nhanh tbody tr { border-left: 3px solid transparent; }
+.tra-nhanh tr[data-cat="it"]   { border-left-color: var(--it); }
+.tra-nhanh tr[data-cat="biz"]  { border-left-color: var(--biz); }
+.tra-nhanh tr[data-cat="life"] { border-left-color: var(--life); }
+
+.tra-nhanh tbody tr:hover { background: var(--surface-2); }
+
+/* Cột 1 — từ tiếng Anh */
+.c-tu { width: 34%; }
+
+.c-tu .tu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.c-tu b {
+  font-size: 16.5px;
+  letter-spacing: -.01em;
+}
+
+.c-tu .ipa {
+  display: block;
+  margin-top: 3px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+
+/* Cột 2 — NGHĨA VIỆT. Đây là cột người học nhìn nhiều nhất, cho nổi hẳn lên. */
+.c-vi {
+  width: 34%;
+  font-weight: 600;
+  color: var(--accent-text);
+}
+
+.c-vi .phu {
+  display: block;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: var(--text-dim);
+}
+
+/* Cột 3 — cụm hay đi kèm; collocation quan trọng hơn nghĩa đơn lẻ */
+.c-cum { font-size: 13.5px; color: var(--text-dim); }
+
+.c-cum code {
+  display: inline-block;
+  background: var(--surface-2);
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin: 2px 3px 2px 0;
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+/* ── Bảng cặp dễ nhầm ─────────────────────────────────────── */
+
+.de-nham td { padding: 11px 12px; border-bottom: 1px solid var(--border); }
+.de-nham tr:last-child td { border-bottom: none; }
+.de-nham .dung { color: var(--biz); font-weight: 600; white-space: nowrap; }
+.de-nham .sai  { color: var(--warn); text-decoration: line-through; white-space: nowrap; }
+.de-nham .visao { font-size: 13.5px; color: var(--text-dim); }
+
+/* ── Điện thoại: bảng đổ thành khối, không cuộn ngang ─────── */
+
+@media (max-width: 620px) {
+  .tra-nhanh, .de-nham { font-size: 14.5px; }
+  .tra-nhanh thead { display: none; }
+
+  .tra-nhanh tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left-width: 3px;
+    border-radius: var(--radius);
+  }
+
+  .tra-nhanh td {
+    display: block;
+    width: auto;
+    padding: 3px 0;
+    border-bottom: none;
+  }
+
+  .c-vi { font-size: 15.5px; }
+  .c-cum { margin-top: 4px; }
+
+  .de-nham td { display: block; padding: 3px 0; }
+  .de-nham tr { display: block; padding: 10px 0; border-bottom: 1px solid var(--border); }
+}
+
+/* ── In ra giấy ───────────────────────────────────────────── */
+
+@media print {
+  .tra-nhanh tbody tr:hover { background: none; }
+  .tra-nhanh, .de-nham { page-break-inside: auto; }
+  .tra-nhanh tr, .de-nham tr { page-break-inside: avoid; }
+}
