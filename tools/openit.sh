@@ -89,7 +89,7 @@ keove() {
   cur=$(g rev-parse --abbrev-ref HEAD 2>/dev/null)
   if [ "$cur" != "$NHANH" ]; then
     # VM cloud hay thả session vào một branch mới. Kéo nó về nhánh chính.
-    if g checkout "$NHANH" 2>/dev/null || g checkout -b "$NHANH" 2>/dev/null; then
+    if g checkout "$NHANH" >/dev/null 2>&1 || g checkout -b "$NHANH" >/dev/null 2>&1; then
       echo "DA-CHUYEN-NHANH: $cur -> $NHANH"
     else
       echo "KHONG-CHUYEN-DUOC-NHANH: đang ở '$cur', cần '$NHANH' (có thay đổi chưa commit?)"
