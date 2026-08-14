@@ -20,5 +20,5 @@ Nội dung cần tra: $ARGUMENTS
      Từ này từ nay **không được ra lại** làm từ mới trong `/hoc`.
    - Không → chỉ giải thích, không ghi gì.
 4. Nếu là điểm ngữ pháp đáng lưu → tạo/ghi thêm file trong `wiki/grammar/`.
-5. **Có ghi file ở bước 3 hoặc 4** → `git add -A && git commit -m "tra-tu: <từ>" && git push`
-   (R6). Không ghi gì thì bỏ qua. Push lỗi → nói thẳng là từ chưa lưu lên GitHub.
+5. **Có ghi file ở bước 3 hoặc 4** → `. tools/openit.sh; daylen "tra-tu: <từ>"` (R6).
+   Không ghi gì thì bỏ qua. Không in `DA-PUSH` → nói thẳng là từ chưa lưu lên GitHub.

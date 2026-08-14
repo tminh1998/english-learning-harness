@@ -24,12 +24,12 @@ tuyệt đối.
 ## Phase 0 — Auto-discovery (BẮT BUỘC, mọi task)
 
 ```text
-0. git pull --rebase                         -> KÉO BÀI TỪ MÁY KHÁC VỀ TRƯỚC (xem R6)
-1. Walk-up từ cwd tìm .learning-config.yml   -> xác định {harness}
-2. Đọc .learning-config.yml                  -> learner, daily.mix, level, luật
-3. Đọc {memory}/MEMORY.md                    -> rule đã học về cách học của user
-4. Đọc {progress}                            -> streak, buổi gần nhất, level hiện tại
-5. . tools/openit.sh  -> có hnay/tuan/openit  -> lấy ngày + tuần ISO thật, KHÔNG đoán
+1. . tools/openit.sh                         -> cfg/hnay/tuan/openit/keove/daylen
+2. keove                                     -> VỀ NHÁNH CHÍNH + KÉO BÀI TỪ MÁY KHÁC (R6)
+3. hnay "%Y-%m-%d %A %G-W%V"                 -> ngày + tuần ISO thật, KHÔNG đoán
+4. Đọc .learning-config.yml                  -> learner, daily.mix, level, luật
+5. Đọc {memory}/MEMORY.md                    -> rule đã học về cách học của user
+6. Đọc {progress}                            -> streak, buổi gần nhất, level hiện tại
 ```
 
 > ⚠️ **Không bao giờ tự bịa ngày.** Ngày và tuần ISO lấy bằng lệnh, không lấy bằng
@@ -84,7 +84,7 @@ Học xong mà không ghi wiki = chưa học. Một buổi học hoàn tất khi
 4. `{reviewQueue}` đã thêm lịch ôn (+1 ngày)
 5. `{progress}` đã cập nhật streak + tổng số từ
 6. `sh tools/build-index.sh` đã chạy lại (trang mục lục để đọc trên điện thoại)
-7. Đã `git commit` + `git push` (R6)
+7. `daylen "..."` đã in `DA-PUSH` (R6 — bất kỳ mã nào khác là **chưa đóng**)
 
 Thiếu 1 trong 7 → buổi học chưa đóng, phải nói rõ với user.
 
@@ -128,27 +128,49 @@ state — làm hỏng dữ liệu tiến độ.
 Harness sống ở **nhiều máy**: con Mac của user, và VM cloud khi user học từ điện
 thoại / máy ở nhà qua Claude Code on the web. Git là thứ duy nhất nối chúng lại.
 
-**Đầu buổi — kéo về.** `git pull --rebase` trước khi làm bất cứ việc gì (Phase 0
-bước 0). Bỏ qua bước này thì gate R5 và grep R1 đọc phải state cũ → sinh trùng từ,
-trùng bài, lệch streak. Đây là cách hỏng dữ liệu dễ xảy ra nhất khi học hai nơi.
+**Đầu buổi — `keove`.** Trước khi làm bất cứ việc gì (Phase 0 bước 0). Bỏ qua bước
+này thì gate R5 và grep R1 đọc phải state cũ → sinh trùng từ, trùng bài, lệch
+streak. Đây là cách hỏng dữ liệu dễ xảy ra nhất khi học hai nơi.
 
-**Cuối buổi — đẩy đi.** Ghi xong 5 file state thì commit + push ngay:
+**Cuối buổi — `daylen`.** Ghi xong các file state thì lưu ngay:
 
 ```bash
-git add -A && git commit -m "hoc: <YYYY-MM-DD> — <5 từ>" && git push
+. tools/openit.sh
+keove                                    # đầu buổi
+daylen "hoc: <YYYY-MM-DD> — <5 từ>"      # cuối buổi
 ```
 
 Trên VM cloud điều này là **bắt buộc, không phải tuỳ chọn**: VM bị thu hồi sau một
 thời gian không hoạt động, file chưa push sẽ mất trắng cùng cả buổi học. Trên máy
 Mac cũng phải push — không thì lần sau mở điện thoại lên sẽ thấy bài cũ.
 
-Push xong mà báo lỗi (conflict, mất mạng, chưa có remote) → **nói thẳng với user
-là buổi học chưa được lưu ở đâu ngoài máy này**, đừng báo "xong" rồi im.
+#### Một nhánh duy nhất — không branch, không PR
 
-**Xung đột.** Hai máy cùng học một ngày → `{vocabIndex}` / `{reviewQueue}` /
-`{progress}` đụng nhau. Không tự ý chọn bên nào: giữ **cả hai** phần từ vựng (từ
-đã học là đã học, mất đi thì R1 hết tác dụng), rồi tính lại streak và tổng số từ
-cho khớp `{vocabIndex}` — nó là nguồn sự thật, thắng mọi file khác.
+`keove` luôn chuyển về `remote.branch` (mặc định `main`); `daylen` luôn push thẳng
+vào đó. **Agent không được tự mở branch hay tạo pull request cho việc học.**
+
+Session trên claude.ai/code theo thói quen sẽ làm việc trên branch mới rồi chờ user
+bấm merge. Ở harness này thì không: đây là sổ tay cá nhân, không ai review, mà quên
+merge một PR là hôm sau `keove` không thấy bài đó → R5 tưởng chưa học, R1 grep
+không ra từ → **ra trùng từ**. Bỏ PR là bỏ nguyên một lớp lỗi, đổi lại mất khả năng
+review — thứ mà nội dung học không cần.
+
+(Sửa code của harness — script, template, luật — thì branch/PR vẫn hợp lý. Luật này
+chỉ nói về **nội dung học**.)
+
+#### Báo lỗi, đừng nuốt
+
+`keove`/`daylen` in ra mã kết quả. Gặp `PUSH-LOI`, `KHONG-KEO-DUOC`,
+`DA-COMMIT-NHUNG-CHUA-CO-REMOTE`, `KHONG-CHUYEN-DUOC-NHANH` → **nói thẳng với user
+là buổi học chưa lưu được lên GitHub**, kèm nguyên văn lỗi. Tuyệt đối không báo
+"xong" rồi im: trên VM cloud, im lặng ở bước này nghĩa là mất trắng buổi học.
+
+#### Xung đột
+
+Hai máy cùng học một ngày → `{vocabIndex}` / `{reviewQueue}` / `{progress}` đụng
+nhau. Không tự ý chọn bên nào: giữ **cả hai** phần từ vựng (từ đã học là đã học,
+mất đi thì R1 hết tác dụng), rồi tính lại streak và tổng số từ cho khớp
+`{vocabIndex}` — nó là nguồn sự thật, thắng mọi file khác.
 
 ---
 
@@ -166,7 +188,7 @@ Phase 3  ⛔ HARD GATE R1: grep {vocabIndex} từng từ. Trùng -> quay lại P
 Phase 4  Soạn bài: mỗi từ đủ mục `daily.mustInclude` + mẩu đọc + bài tập
 Phase 5  Ghi file: lesson .md -> lesson .html -> VOCAB_INDEX -> REVIEW_QUEUE
          -> PROGRESS  (đủ 5, R3)
-Phase 6  sh tools/build-index.sh  -> commit + push  (R6 — chưa push là chưa có)
+Phase 6  sh tools/build-index.sh  -> daylen "hoc: ..."  (R6 — chưa push là chưa có)
 Phase 7  openit <file.html> + tóm tắt 5 từ trong chat (không bắt user tự đi tìm file)
          Máy Mac -> mở trình duyệt. VM cloud -> in link Pages để user bấm.
 ```
@@ -183,7 +205,7 @@ Phase 4  Chấm: đối chiếu key, tính %, chỉ ra lỗi + giải thích t�
 Phase 5  Ghi kết quả vào cuối {quiz}/<tuần>.md + {progress}
 Phase 6  Từ sai -> reset interval về bậc 1 trong {reviewQueue}
          Lỗi lặp lại >= 2 lần -> ghi 1 entry {memory}
-Phase 7  commit + push (R6)
+Phase 7  daylen "kiem-tra: <tuần> — <điểm>"  (R6)
 ```
 
 ### Flow C — Tra từ bắt gặp ngoài đời (ad-hoc)

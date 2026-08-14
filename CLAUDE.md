@@ -25,8 +25,10 @@ ENGLISH/                          ← {harness}
 ├── index.html                    ← mục lục cho GitHub Pages — SINH RA, đừng sửa tay
 ├── .claude/commands/             ← 6 slash command (xem bảng dưới)
 ├── tools/
-│   ├── openit.sh                 ← ⭐ hnay/tuan/openit — chỗ DUY NHẤT biết Mac vs VM
-│   └── build-index.sh            ← dựng lại index.html từ wiki/lessons/
+│   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
+│   │                               cfg · hnay · tuan · openit · keove · daylen
+│   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/
+│   └── setup-remote.sh           ← chạy 1 lần lúc dựng: tạo repo + bật Pages
 └── wiki/
     ├── VOCAB_INDEX.md            ← ⭐ mọi từ đã học — nguồn chống trùng (R1)
     ├── REVIEW_QUEUE.md           ← lịch ôn spaced repetition
@@ -71,19 +73,19 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
    `-key.md` trước khi chấm xong.**
 5. **Hai môi trường (R6)**: harness chạy cả trên Mac lẫn VM Linux giờ UTC. `date`
    trần và `open` trần đều hỏng ở một trong hai nơi. Luôn qua `tools/openit.sh`.
-   Và luôn `git pull` đầu buổi, `git push` cuối buổi.
+   Và luôn `keove` đầu buổi, `daylen` cuối buổi — thẳng lên `main`, không PR.
 
 ## Checklist đóng một buổi học (R3 + R6 — thiếu 1 là chưa xong)
 
 ```
-[ ] git pull --rebase                      chạy TRƯỚC khi làm gì (bài từ máy khác)
+[ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
 [ ] wiki/lessons/<tuần>/<ngày>.md          đã tạo, đủ 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
 [ ] wiki/VOCAB_INDEX.md                    +5 dòng, đúng cột, sắp theo ngày
 [ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = hôm nay +1
 [ ] wiki/PROGRESS.md                       streak +1, tổng từ +5, ghi ngày
 [ ] sh tools/build-index.sh                mục lục khớp lại với bài thật
-[ ] git commit + git push                  push fail = BÁO USER, không nói "xong"
+[ ] daylen "hoc: ..."                      phải in DA-PUSH; khác đi = BÁO USER
 [ ] openit <file>.html + tóm tắt 5 từ trong chat
 ```
 
@@ -107,12 +109,15 @@ hình** — khác con Mac ở ba chỗ, và cả ba đều đủ sức làm hỏ
 | Không có lệnh `open`, không có màn hình | Command chết ở bước cuối | `openit()` in link Pages thay vì mở |
 | VM bị thu hồi khi nghỉ lâu | **Mất trắng buổi học chưa push** | R6 — commit + push là bắt buộc |
 
-Nên: mọi command đều mở đầu bằng `git pull --rebase` + `. tools/openit.sh`, và kết
-thúc bằng `git push`. Đừng viết `date` hay `open` trực tiếp vào command mới.
+Nên: mọi command đều mở đầu bằng `. tools/openit.sh` + `keove`, và kết thúc bằng
+`daylen "..."`. Đừng viết `date`, `open`, hay `git` trực tiếp vào command mới —
+sáu hàm trong `openit.sh` là giao diện duy nhất tới môi trường.
 
-Session cloud tạo branch riêng rồi mở PR. Với repo học tập một người, merge PR
-ngay là xong — đừng để tồn PR, vì buổi sau `git pull` sẽ không thấy bài đó và R1
-sẽ ra trùng từ.
+⛔ **Không branch, không PR cho nội dung học.** `keove` chuyển về `remote.branch`,
+`daylen` push thẳng vào đó, kể cả trên VM cloud. Session cloud theo thói quen sẽ
+muốn mở branch rồi chờ merge — ở đây thì không, vì quên merge một lần là hôm sau
+`keove` không thấy bài, R5 tưởng chưa học, R1 grep không ra từ, và agent ra trùng
+từ. (Sửa *code* của harness thì branch/PR vẫn bình thường.)
 
 ## Không có build/test
 

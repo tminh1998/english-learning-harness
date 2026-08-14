@@ -10,22 +10,19 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 
 ## Thứ tự bắt buộc
 
-0. **Kéo bài từ máy khác về trước** (R6) — user có thể đã học từ điện thoại:
+0. **Về nhánh chính + kéo bài từ máy khác về** (R6) — user có thể đã học từ điện
+   thoại. Lấy luôn ngày + tuần ISO thật ở đây, **không đoán**. ⚠️ Không dùng `date`
+   trần: trên VM cloud nó chạy giờ UTC, học buổi tối giờ VN sẽ ra sai ngày.
 
    ```bash
-   git pull --rebase 2>&1 || echo "KHONG-PULL-DUOC"
-   ```
-
-   Không pull được (chưa có remote / mất mạng) → vẫn đi tiếp, nhưng **nhớ báo user
-   ở cuối** là buổi này chưa đồng bộ với máy khác.
-
-1. Lấy ngày + tuần ISO thật, **không đoán**. ⚠️ Không dùng `date` trần — trên VM
-   cloud nó chạy giờ UTC và sẽ trả về sai ngày khi user học buổi tối giờ VN:
-
-   ```bash
-   . tools/openit.sh          # ép TZ theo config + có hàm hnay/tuan/openit
+   . tools/openit.sh          # ép TZ + có hnay/tuan/openit/keove/daylen
+   keove
    hnay "%Y-%m-%d %A %G-W%V"
    ```
+
+   `keove` in ra `DA-KEO-VE` là ổn. In `KHONG-KEO-DUOC` / `KHONG-CHUYEN-DUOC-NHANH`
+   → vẫn đi tiếp được, nhưng **phải báo user ở cuối** là buổi này chưa đồng bộ với
+   máy khác và vì sao.
 
 1b. ⛔ **GATE R5 — MỘT NGÀY MỘT BÀI.** Kiểm tra ngay sau khi có ngày:
 
@@ -57,12 +54,15 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 
    ```bash
    sh tools/build-index.sh
-   git add -A && git commit -m "hoc: $(hnay) — <5 từ, cách nhau bởi dấu phẩy>" && git push
+   daylen "hoc: $(hnay) — <5 từ, cách nhau bởi dấu phẩy>"
    ```
 
-   Push lỗi → **nói thẳng với user là bài chưa lưu được lên GitHub** và lỗi gì.
-   Tuyệt đối không báo "xong" khi push fail: trên VM cloud, VM bị thu hồi là mất
-   trắng cả buổi học.
+   ⛔ **Không tự mở branch, không tạo pull request.** `daylen` push thẳng vào nhánh
+   chính, kể cả khi đang chạy trên VM cloud — đó là chủ ý, xem R6.
+
+   Không in ra `DA-PUSH` → **nói thẳng với user là bài chưa lưu được lên GitHub**,
+   kèm nguyên văn lỗi. Tuyệt đối không báo "xong": trên VM cloud, VM bị thu hồi là
+   mất trắng cả buổi học.
 10. Đưa bài cho user xem — **đừng gọi `open` trực tiếp**, dùng hàm `openit` để nó
     tự xử đúng theo môi trường (máy Mac mở trình duyệt / VM cloud in link Pages):
 

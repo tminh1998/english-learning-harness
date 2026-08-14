@@ -30,17 +30,16 @@ Không cần ngồi đúng con máy này. Có hai cách, dùng cho hai việc kh
 1. Vào [claude.ai/code](https://claude.ai/code) trên trình duyệt bất kỳ (điện thoại
    cũng được), đăng nhập tài khoản Claude như thường.
 2. Chọn repo này → gõ `/hoc`. Session chạy trên VM cloud của Anthropic, sinh bài
-   y hệt ở máy, rồi tự commit + push lên GitHub.
-3. Merge PR mà nó tạo. **Merge luôn, đừng để tồn** — buổi sau `git pull` không
-   thấy bài đó thì agent sẽ ra trùng từ.
+   y hệt như ở máy, rồi tự commit + push thẳng lên nhánh `main`.
+3. Hết. **Không có bước merge nào** — vài chục giây sau bài đã có trên trang đọc.
 
 Cần gói Claude Pro/Max/Team. App Claude trên điện thoại xem/điều khiển được session
 đang chạy.
 
 > ⚠️ **Học hai nơi thì phải đồng bộ.** Chống trùng từ và luật một-ngày-một-bài đều
-> dựa vào `VOCAB_INDEX.md`. Agent tự `git pull` đầu buổi và `git push` cuối buổi
-> (luật R6) — nhưng nếu nó báo push lỗi thì buổi đó **chưa được lưu ở đâu cả**,
-> đừng bỏ qua dòng báo lỗi ấy.
+> dựa vào `VOCAB_INDEX.md`. Agent tự kéo về đầu buổi và đẩy lên cuối buổi (luật
+> R6) — nhưng nếu nó báo push lỗi thì buổi đó **chưa được lưu ở đâu cả**, đừng bỏ
+> qua dòng báo lỗi ấy.
 
 ## Kiến thức nằm ở đâu
 

@@ -11,8 +11,8 @@ Ngày cần mở (bỏ trống = hôm nay): $ARGUMENTS
 Chạy đúng đoạn này (một lần, không đoán ngày trong đầu):
 
 ```bash
-git pull --rebase 2>/dev/null   # bài có thể vừa học ở máy khác (R6)
-. tools/openit.sh               # ép TZ + có hàm hnay/tuan/openit
+. tools/openit.sh   # ép TZ + có hnay/tuan/openit/keove/daylen
+keove               # bài có thể vừa học ở máy khác (R6)
 
 D="${ARGUMENTS:-$(hnay)}"
 W=$(tuan "$D")

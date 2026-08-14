@@ -9,9 +9,9 @@ Tuần cần kiểm tra (bỏ trống = tuần hiện tại): $ARGUMENTS
 
 Thứ tự bắt buộc:
 
-1. `git pull --rebase 2>/dev/null; . tools/openit.sh; hnay "%Y-%m-%d %A %G-W%V"` —
-   kéo bài từ máy khác về (R6) rồi xác định tuần ISO thật. ⚠️ **Không `date` trần**:
-   VM cloud chạy giờ UTC, lệch ngày là lấy nhầm tuần, gom thiếu từ để ra đề.
+1. `. tools/openit.sh; keove; hnay "%Y-%m-%d %A %G-W%V"` — về nhánh chính, kéo bài
+   từ máy khác về (R6), rồi xác định tuần ISO thật. ⚠️ **Không `date` trần**: VM
+   cloud chạy giờ UTC, lệch ngày là lấy nhầm tuần, gom thiếu từ để ra đề.
 2. Đọc mọi file trong `wiki/lessons/<tuần>/` → gom danh sách từ đã học.
    Không có file nào → báo user tuần này chưa học buổi nào, dừng.
 3. Kéo thêm tối đa 5 từ "yếu" từ `wiki/REVIEW_QUEUE.md` (bậc thấp hoặc từng sai).
@@ -25,8 +25,8 @@ Thứ tự bắt buộc:
 8. Từ sai → reset về bậc 1 trong `wiki/REVIEW_QUEUE.md` (next_review = mai).
 9. Lỗi cùng loại lặp ≥ 2 lần trong lịch sử → tạo 1 entry `wiki/memory/` theo
    `wiki/_templates/memory-entry.md` + thêm dòng vào `wiki/memory/MEMORY.md`.
-10. `sh tools/build-index.sh` rồi `git add -A && git commit -m "kiem-tra: <tuần>" && git push`
-    (R6). ⚠️ Chỉ push **sau khi đã chấm xong** — push file `-key.md` lên GitHub
+10. `sh tools/build-index.sh` rồi `daylen "kiem-tra: <tuần> — <điểm>%"` (R6).
+    ⚠️ Chỉ gọi `daylen` **sau khi đã chấm xong** — push file `-key.md` lên GitHub
     trước khi user làm bài là tự lộ đáp án (R2), vì repo để public.
 
 Chấm nghiêm túc. Sai thì nói thẳng chỗ sai, không khen sáo.
