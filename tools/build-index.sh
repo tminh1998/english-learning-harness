@@ -52,6 +52,11 @@ HEAD2
   for wk in $(find wiki/lessons -maxdepth 1 -type d -name '[0-9][0-9][0-9][0-9]-W*' 2>/dev/null | sed 's|.*/||' | sort -r); do
     printf '      <section class="week">\n        <h2>Tuần %s</h2>\n' "$wk"
 
+    # Bảng ôn tuần (trang để đọc) — đặt TRƯỚC danh sách buổi vì hay mở nhất
+    if [ -f "wiki/recap/$wk.html" ]; then
+      printf '        <a class="lesson recap" href="wiki/recap/%s.html"><span class="lesson-date">🔁 Bảng ôn cả tuần %s</span></a>\n' "$wk" "$wk"
+    fi
+
     # Quiz của tuần, nếu có
     if [ -f "wiki/quiz/$wk.md" ]; then
       printf '        <p class="quiz-link"><a href="wiki/quiz/%s.md">📝 Bài kiểm tra tuần %s</a></p>\n' "$wk" "$wk"

@@ -49,6 +49,7 @@ ENGLISH/                          ← {harness}
 | `/open` | Mở lại trang bài học đã có — **không** sinh gì mới | `find` + `open` |
 | `/kiem-tra` | Cuối tuần, kiểm tra từ đã học trong tuần | Flow B |
 | `/on-tap` | Ôn nhanh các từ tới hạn (spaced repetition) | đọc REVIEW_QUEUE |
+| `/on-tap-tuan` | Bảng ôn tuần — trang ĐỂ ĐỌC, nghĩa Việt hiện sẵn | Flow D |
 | `/tra-tu` | Dán 1 từ/câu bắt gặp khi đọc doc, xem phim, đọc email | Flow C |
 | `/tien-do` | Xem đã học bao nhiêu, chỗ nào yếu | đọc PROGRESS + quiz cũ |
 
@@ -113,7 +114,26 @@ Nên: mọi command đều mở đầu bằng `. tools/openit.sh` + `keove`, và
 `daylen "..."`. Đừng viết `date`, `open`, hay `git` trực tiếp vào command mới —
 sáu hàm trong `openit.sh` là giao diện duy nhất tới môi trường.
 
-⛔ **Không branch, không PR cho nội dung học.** `keove` chuyển về `remote.branch`,
+### Hai routine đang chạy tự động
+
+Cấu hình ở [claude.ai/code/routines](https://claude.ai/code/routines), **không** nằm
+trong repo — sửa luật ở đây không tự đổi prompt của routine, phải sửa cả hai chỗ.
+
+| Cron (UTC) | Giờ VN | Chạy | Ghi chú |
+|---|---|---|---|
+| `0 0 * * 1-6` | 7h T2–T7 | `/hoc` | Chủ nhật **không** học từ mới |
+| `0 0 * * 0` | 7h Chủ nhật | `/on-tap-tuan` | gom cả tuần thành bảng ôn |
+
+Cả hai chạy khi **không có ai trả lời**, nên prompt của chúng dặn thêm: gặp gate R5
+thì dừng im lặng (đừng hỏi), phần "ôn nhanh đầu giờ" viết thẳng vào file thay vì hỏi
+trong chat, và `LINK-WEB` là bình thường chứ không phải lỗi.
+
+`/on-tap` và `/kiem-tra` **không** tự động hoá được — chúng cần user trả lời mới
+chấm điểm và cập nhật bậc trong REVIEW_QUEUE được.
+
+### Không branch, không PR
+
+⛔ **Cho nội dung học.** `keove` chuyển về `remote.branch`,
 `daylen` push thẳng vào đó, kể cả trên VM cloud. Session cloud theo thói quen sẽ
 muốn mở branch rồi chờ merge — ở đây thì không, vì quên merge một lần là hôm sau
 `keove` không thấy bài, R5 tưởng chưa học, R1 grep không ra từ, và agent ra trùng

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ôn tuần <YYYY-Www> — <N> từ</title>
+    <!-- CSS DÙNG CHUNG — tuyệt đối không nhúng style vào trang này.
+         Đổi giao diện mọi bảng ôn = sửa wiki/assets/recap.css, không sửa từng tuần. -->
+    <link rel="stylesheet" href="../assets/lesson.css" />
+    <link rel="stylesheet" href="../assets/recap.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div class="eyebrow">Bảng ôn tuần · <dd–dd/mm/yyyy></div>
+        <h1>Tuần <YYYY-Www></h1>
+        <div class="mixline">
+          <span class="badge it"><a> IT</span>
+          <span class="badge biz"><b> Giao tiếp</span>
+          <span class="badge life"><c> Đời sống</span>
+          <span class="badge"><n> buổi học</span>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+        <button id="theme">🌗 Theo hệ thống</button>
+        <span class="hint"
+          >Bấm 🔊 để nghe · bật chế độ ôn tập để che cột tiếng Việt, bấm vào chỗ mờ
+          để hiện lại</span
+        >
+      </div>
+
+      <!-- ══════ 1. BẢNG TRA NHANH ══════
+        ⭐ Phần chính. Nghĩa Việt nằm NGAY CỘT KẾ BÊN từ tiếng Anh.
+        `<td class="c-vi hide-me">` — class hide-me là bắt buộc: nó cho nút
+        "Chế độ ôn tập" che cột này đi, biến chính bảng thành bài tự kiểm tra.
+        `data-cat` trên <tr>: it | biz | life — quyết định màu vạch trái.
+        Xếp IT trước, rồi Business, rồi Life.
+      -->
+
+      <h2>Tra nhanh cả tuần</h2>
+      <p class="passage">
+        <câu dẫn 1-2 dòng: bao nhiêu từ, đọc lướt trước rồi kéo xuống mục Chi tiết>
+      </p>
+
+      <table class="tra-nhanh">
+        <thead>
+          <tr>
+            <th class="c-tu">Từ</th>
+            <th class="c-vi">Nghĩa tiếng Việt</th>
+            <th class="c-cum">Cụm hay đi kèm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-cat="<it|biz|life>">
+            <td class="c-tu">
+              <span class="tu"
+                ><b><word></b>
+                <button class="say" data-say="<word hoặc cụm ngắn tự nhiên hơn>">🔊</button></span
+              >
+              <span class="ipa">/<ipa>/ · <động từ|danh từ|phrasal verb></span>
+            </td>
+            <td class="c-vi hide-me">
+              <nghĩa gọn 2-6 chữ>
+              <span class="phu"><vế làm rõ chỗ người Việt hay hiểu sai></span>
+            </td>
+            <td class="c-cum">
+              <code><collocation 1></code><code><collocation 2></code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ══════ 2. CHỖ DỄ SAI ══════
+        Rút từ mục "Bẫy" của các bài học trong tuần. Ưu tiên giới từ đi kèm, cặp
+        từ dễ lẫn, danh từ/động từ viết liền hay tách, động từ bất quy tắc.
+        Cột "Vì sao" mang hide-me để che được khi tự kiểm tra.
+      -->
+
+      <h2><N> chỗ dễ sai</h2>
+      <p class="passage">
+        Rút từ mục <b>Bẫy</b> của các buổi học trong tuần. Nhớ nghĩa thì dễ, dùng
+        đúng mới khó.
+      </p>
+
+      <table class="de-nham">
+        <tbody>
+          <tr>
+            <td class="dung"><dạng đúng></td>
+            <td class="sai"><dạng sai hay gặp></td>
+            <td class="visao hide-me"><giải thích 1 câu></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ══════ 3. CHI TIẾT ══════
+        ĐÚNG MỘT câu ví dụ mỗi từ. Bảng ôn dài bằng bài gốc thì không ai đọc lại.
+        Tái dùng nguyên cấu trúc article.word của lesson.html để giao diện đồng nhất.
+        Mọi đoạn tiếng Việt phải có class hide-me.
+      -->
+
+      <h2>Chi tiết — mỗi từ một câu thật</h2>
+
+      <article class="word" data-cat="<it|biz|life>">
+        <div class="word-head">
+          <span class="num"><n></span>
+          <h2><word></h2>
+          <span class="ipa">/<ipa>/ <em><part of speech></em></span>
+          <button class="say" data-say="<word>">🔊</button>
+        </div>
+        <p class="vi-quick hide-me"><nghĩa gọn><span class="alt"><nghĩa phụ></span></p>
+        <p class="def">
+          <định nghĩa tiếng Anh>
+          <span class="def-vi hide-me">→ <dịch trọn câu định nghĩa></span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v"
+              ><câu tiếng Anh, bọc <b> quanh từ đang ôn>
+              <span class="hide-me">→ <bản dịch></span></span
+            >
+          </div>
+        </div>
+      </article>
+
+      <!-- ══════ 4. TỰ KIỂM TRA ══════
+        4-6 câu. Đáp án BẮT BUỘC trong <details> (luật R2) và phải nói VÌ SAO.
+      -->
+
+      <h2>Tự kiểm tra — <N> câu</h2>
+      <p class="passage">
+        Trả lời trong đầu trước, rồi mới mở đáp án. Sai câu nào thì quay lên bảng đọc
+        lại đúng từ đó.
+      </p>
+
+      <ol>
+        <li><câu hỏi></li>
+      </ol>
+
+      <details>
+        <summary>Đáp án</summary>
+        <ol>
+          <li><b><đáp án></b> — <vì sao đúng, vì sao dạng kia sai></li>
+        </ol>
+      </details>
+
+      <div class="toolbar" style="margin-top: 28px">
+        <span class="hint" style="margin-left: 0"
+          >Nguồn: <liệt kê ngày các buổi> · Muốn chấm điểm và cập nhật lịch ôn thì gõ
+          <code>/on-tap</code> hoặc <code>/kiem-tra</code></span
+        >
+      </div>
+    </div>
+    <script src="../assets/lesson.js"></script>
+  </body>
+</html>

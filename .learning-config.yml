@@ -43,6 +43,9 @@ paths:
   wiki: "./wiki"
   lessons: "./wiki/lessons" # bài học ngày, gom theo tuần ISO: lessons/YYYY-Www/YYYY-MM-DD.md
   quiz: "./wiki/quiz" # đề + kết quả kiểm tra tuần: quiz/YYYY-Www.md
+  recap: "./wiki/recap" # ⭐ bảng ôn tuần: recap/YYYY-Www.md + .html — trang ĐỂ ĐỌC,
+  # gom mọi từ trong tuần, nghĩa Việt HIỆN SẴN ngay cột kế bên (khác quiz: quiz giấu
+  # đáp án để chấm điểm). Sinh mỗi Chủ nhật 7h sáng, xem Flow D trong AGENTS.md.
   grammar: "./wiki/grammar" # điểm ngữ pháp bắt gặp, mỗi điểm 1 file
   memory: "./wiki/memory" # rule đã học VỀ CÁCH HỌC của learner
   templates: "./wiki/_templates"

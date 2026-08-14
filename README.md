@@ -9,13 +9,35 @@ Mở Claude Code tại thư mục này rồi gõ:
 | Lệnh | Làm gì |
 |---|---|
 | `/hoc` | Bài hôm nay — 5 từ mới (2 IT + 2 giao tiếp khách hàng + 1 đời sống), tự mở trang HTML |
-| `/on-tap` | Ôn nhanh các từ tới hạn theo lịch spaced repetition |
+| `/on-tap` | Ôn nhanh các từ tới hạn theo lịch spaced repetition (có chấm điểm) |
+| `/on-tap-tuan` | **Bảng ôn tuần** — mọi từ trong tuần, nghĩa Việt ngay cạnh từ, để đọc lướt |
 | `/tra-tu <từ/câu>` | Gặp từ lạ khi đọc doc, email khách, phim, truyện → tra và lưu lại |
-| `/kiem-tra` | **Chủ nhật** — kiểm tra toàn bộ từ đã học trong tuần |
+| `/kiem-tra` | **Chủ nhật** — kiểm tra toàn bộ từ đã học trong tuần (có chấm điểm) |
 | `/tien-do` | Xem đã học bao nhiêu, đang yếu chỗ nào |
 | `/open` | Mở lại trang HTML bài hôm nay (`/open 2026-08-12` để mở đúng ngày) |
 
-Nhịp gợi ý: `/hoc` mỗi sáng (~10 phút) · `/on-tap` khi rảnh · `/kiem-tra` mỗi Chủ nhật.
+Ba lệnh ôn dễ nhầm nhau — khác ở chỗ **nghĩa Việt có hiện sẵn không**:
+
+| | Nghĩa Việt | Dùng khi |
+|---|---|---|
+| `/on-tap-tuan` | **hiện sẵn** ngay cạnh từ | đọc lướt cả tuần cho nhớ lại, 5 phút |
+| `/on-tap` | giấu tới khi bạn trả lời | muốn được hỏi và chấm, cập nhật lịch ôn |
+| `/kiem-tra` | giấu ở file riêng | kiểm tra nghiêm túc, tính điểm % |
+
+## Tự động chạy
+
+Không cần gõ gì, không cần bật máy — hai routine chạy trên cloud của Anthropic:
+
+| Khi nào | Chạy gì | Kết quả |
+|---|---|---|
+| **7h sáng T2–T7** | `/hoc` | 5 từ mới, đẩy thẳng lên GitHub |
+| **7h sáng Chủ nhật** | `/on-tap-tuan` | bảng ôn cả tuần (Chủ nhật không học từ mới) |
+
+Sáng dậy mở [trang đọc](https://tminh1998.github.io/english-learning-harness) là có
+sẵn. Xem/sửa/tắt lịch tại [claude.ai/code/routines](https://claude.ai/code/routines).
+
+Hai việc **vẫn phải tự gõ** vì cần bạn trả lời: `/on-tap` và `/kiem-tra`. Máy không
+tự chấm điểm cho một người không ngồi đó trả lời được.
 
 ## Học từ máy khác / điện thoại
 

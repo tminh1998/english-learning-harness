@@ -65,6 +65,14 @@
 .w.biz  { background: var(--biz-bg);  color: var(--biz); }
 .w.life { background: var(--life-bg); color: var(--life); }
 
+/* Bảng ôn tuần — nổi hơn các buổi lẻ, vì đây là trang hay mở nhất */
+.lesson.recap {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.lesson.recap .lesson-date { color: var(--accent-text); }
+
 .quiz-link,
 .repo-link {
   margin: 0 0 .6rem;
