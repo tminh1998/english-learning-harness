@@ -24,10 +24,10 @@ timezone: "Asia/Ho_Chi_Minh"
 # Học được từ điện thoại / máy ở nhà, không cần con Mac này. Xem README mục "Học từ xa".
 remote:
   # Repo GitHub — nguồn đồng bộ giữa các máy. Rỗng = chưa push lên.
-  github: ""
+  github: "https://github.com/tminh1998/english-learning-harness"
   # Trang đọc bài tĩnh (GitHub Pages). Rỗng = chưa bật Pages.
   # Dùng để in link cho user khi chạy trên VM cloud (ở đó không có trình duyệt).
-  pagesBaseUrl: ""
+  pagesBaseUrl: "https://tminh1998.github.io/english-learning-harness"
   # Bài học chỉ tồn tại khi đã push. VM cloud bị thu hồi sau một thời gian không
   # hoạt động -> file không commit là MẤT. Xem R6 trong AGENTS.md.
   autoCommit: true

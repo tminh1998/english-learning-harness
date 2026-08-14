@@ -23,7 +23,7 @@ Không cần ngồi đúng con máy này. Có hai cách, dùng cho hai việc kh
 
 **Chỉ ĐỌC lại bài** → mở trang mục lục, không cần Claude, không cần đăng nhập:
 
-> 📖 <!-- PAGES_URL -->(chưa bật GitHub Pages)
+> 📖 <!-- PAGES_URL -->[https://tminh1998.github.io/english-learning-harness](https://tminh1998.github.io/english-learning-harness)
 
 **HỌC bài mới (gõ `/hoc`)** → cần một agent Claude thật chạy:
 
