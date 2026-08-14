@@ -1,0 +1,123 @@
+<!doctype html>
+<!--
+  KHUÔN TRANG BÀI HỌC — chỉ đọc, đừng điền nội dung học vào file này.
+
+  Cách dùng (lệnh /hoc):
+    1. Copy toàn bộ file này -> wiki/lessons/<YYYY-Www>/<YYYY-MM-DD>.html
+    2. Thay mọi {{PLACEHOLDER}}
+    3. Nhân bản khối <article class="word"> đủ 5 lần (data-cat = it | biz | life)
+    4. Xoá hết comment hướng dẫn
+
+  QUAN TRỌNG:
+  - Đường dẫn CSS/JS là ../../assets/... — đúng khi file nằm ở lessons/<tuần>/.
+    Để chỗ khác thì phải sửa lại cho khớp. KHÔNG nhúng CSS vào từng bài.
+  - Mọi đoạn tiếng Việt (nghĩa, bản dịch) phải có class "hide-me" để chế độ ôn
+    tập che được. Câu tiếng Anh thì KHÔNG che.
+  - Đáp án bài tập luôn nằm trong <details> (luật R2 — không lộ đáp án).
+-->
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{YYYY-MM-DD}} — 5 từ mới</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Tuần {{YYYY-Www}} · Buổi #{{n}}</div>
+  <h1>{{Thứ}}, {{ngày viết đầy đủ}}</h1>
+  <div class="mixline">
+    <span class="badge it">2 IT</span>
+    <span class="badge biz">2 Giao tiếp</span>
+    <span class="badge life">1 Đời sống</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+  <button id="theme">🌗 Theo hệ thống</button>
+  <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
+</div>
+
+<!-- ══ KHỐI TỪ — nhân bản 5 lần ══════════════════════════════════════════ -->
+<article class="word" data-cat="{{it|biz|life}}">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">{{i}}</span>{{word}}
+        <button class="say" data-say="{{word}}" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">{{/ipa/}} · <em>{{part of speech}}</em></div>
+    </div>
+    <span class="badge {{it|biz|life}}">{{IT|Giao tiếp|Đời sống}}</span>
+  </div>
+
+  <!-- Nghĩa Việt GỌN, đặt ngay dưới từ — bắt buộc, là dòng nổi bật nhất card.
+       Ngắn thôi: 2-6 chữ, đúng cái nghĩa dùng nhiều nhất. Nghĩa phụ (nếu có)
+       để trong <span class="alt">. Giải thích dài để xuống dòng GHI CHÚ. -->
+  <p class="vi-quick hide-me">{{nghĩa Việt gọn}}<span class="alt">{{nghĩa phụ / khi nào dùng — bỏ được}}</span></p>
+
+  <!-- Định nghĩa EN BẮT BUỘC kèm bản dịch Việt của chính câu đó (.def-vi).
+       Dịch sát nghĩa cả câu, không tóm tắt — người học cần đối chiếu từng vế
+       để quen cách diễn đạt của định nghĩa tiếng Anh. -->
+  <p class="def"><span class="tag">EN</span>{{định nghĩa tiếng Anh, 1 câu}}
+    <span class="def-vi hide-me">→ {{dịch trọn câu định nghĩa trên sang tiếng Việt}}</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>{{sắc thái, dùng ở đâu, khác gì từ gần nghĩa}}</p>
+
+  <ul class="examples">
+    <li>
+      <span class="en">{{câu ví dụ, bọc <b> quanh từ đang học}}</span>
+      <span class="vi hide-me">→ {{dịch Việt}}</span>
+    </li>
+    <!-- ít nhất 2 ví dụ, 1 câu phải là bối cảnh dev / khách hàng -->
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v">{{cụm hay đi kèm, bọc <code>}}</span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">{{lỗi người Việt hay mắc}}</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">{{word family}}</span></div>
+  </div>
+</article>
+<!-- ══ HẾT KHỐI TỪ ═══════════════════════════════════════════════════════ -->
+
+<section class="block">
+  <h2>Mẩu đọc</h2>
+  <p class="sub">{{bối cảnh — đổi mỗi ngày: code review / email khách / standup / RFC / truyện / hội thoại}}</p>
+  <div class="passage">{{3-5 câu chứa đủ 5 từ, bọc <b> quanh chúng}}</div>
+  <details>
+    <summary>Bản dịch</summary>
+    <p class="hide-me">{{dịch Việt}}</p>
+  </details>
+</section>
+
+<section class="block">
+  <h2>Bài tập</h2>
+  <p class="sub">Làm xong rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li>{{câu 1}}</li>
+    <li>{{câu 2}}</li>
+    <li>{{câu 3}}</li>
+    <li>{{câu 4}}</li>
+    <li>{{câu 5}}</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol>
+      <li>{{đáp án + giải thích NGẮN vì sao}}</li>
+    </ol>
+  </details>
+</section>
+
+<footer>
+  Bản Markdown: <a href="{{YYYY-MM-DD}}.md">{{YYYY-MM-DD}}.md</a> ·
+  Toàn bộ từ đã học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> ·
+  Lịch ôn: <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+  <br>Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại {{N}} từ của tuần {{YYYY-Www}}.
+</footer>
+
+</div>
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>

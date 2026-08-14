@@ -1,0 +1,149 @@
+# .learning-config.yml — file DUY NHẤT chứa cấu hình + path thật của harness học tiếng Anh.
+#
+# ┌───────────────────────────────────────────────────────────────────────┐
+# │ Mọi file khác (AGENTS.md, CLAUDE.md, command, template) chỉ nhắc tới  │
+# │ KÝ HIỆU: {harness}, {wiki}, {lessons}, {quiz}...                      │
+# │ => Copy harness sang máy/thư mục khác: CHỈ sửa file này.              │
+# └───────────────────────────────────────────────────────────────────────┘
+#
+# Agent tìm file này bằng cách walk-up từ cwd. Thư mục chứa nó = {harness}.
+# Mọi path dưới đây tính TƯƠNG ĐỐI TỪ FILE NÀY.
+
+project: "english-learning-harness"
+owner: "minhtc"
+
+# ⚠️ MÚI GIỜ — đọc kỹ trước khi sửa.
+# Harness chạy ở HAI nơi: máy Mac (giờ VN) và VM cloud của Claude Code on the web
+# (giờ UTC). `date` trần trên VM sẽ ra SAI NGÀY khi học buổi tối/đêm giờ VN
+# (VN 00:00-07:00 = UTC hôm trước). Sai ngày -> sai tên file bài học, sai tuần ISO,
+# hỏng luôn gate R5. => MỌI lệnh `date` trong harness BẮT BUỘC ép TZ bằng giá trị này.
+#   TZ="Asia/Ho_Chi_Minh" date "+%Y-%m-%d %A %G-W%V"
+timezone: "Asia/Ho_Chi_Minh"
+
+# ── Nơi harness sống trên mạng ──
+# Học được từ điện thoại / máy ở nhà, không cần con Mac này. Xem README mục "Học từ xa".
+remote:
+  # Repo GitHub — nguồn đồng bộ giữa các máy. Rỗng = chưa push lên.
+  github: ""
+  # Trang đọc bài tĩnh (GitHub Pages). Rỗng = chưa bật Pages.
+  # Dùng để in link cho user khi chạy trên VM cloud (ở đó không có trình duyệt).
+  pagesBaseUrl: ""
+  # Bài học chỉ tồn tại khi đã push. VM cloud bị thu hồi sau một thời gian không
+  # hoạt động -> file không commit là MẤT. Xem R6 trong AGENTS.md.
+  autoCommit: true
+
+# ── Path nội bộ harness ──
+paths:
+  wiki: "./wiki"
+  lessons: "./wiki/lessons" # bài học ngày, gom theo tuần ISO: lessons/YYYY-Www/YYYY-MM-DD.md
+  quiz: "./wiki/quiz" # đề + kết quả kiểm tra tuần: quiz/YYYY-Www.md
+  grammar: "./wiki/grammar" # điểm ngữ pháp bắt gặp, mỗi điểm 1 file
+  memory: "./wiki/memory" # rule đã học VỀ CÁCH HỌC của learner
+  templates: "./wiki/_templates"
+  assets: "./wiki/assets" # lesson.css + lesson.js — giao diện DÙNG CHUNG mọi bài học
+  vocabIndex: "./wiki/VOCAB_INDEX.md" # ⭐ nguồn chống trùng — MỌI từ đã học nằm ở đây
+  reviewQueue: "./wiki/REVIEW_QUEUE.md" # lịch ôn spaced repetition
+  progress: "./wiki/PROGRESS.md" # streak, tổng từ, level, kết quả quiz
+
+# ── Hồ sơ người học ──
+learner:
+  role: "Software developer (Frontend/Fullstack)"
+  nativeLanguage: "Vietnamese"
+  # Chưa làm bài xếp loại chính thức. Tự đánh giá 2026-08-12: đọc hiểu ~70-80%
+  # một trang tài liệu thư viện, còn nhiều từ mới. => Reading ≈ B1+/B2,
+  # vốn từ CHỦ ĐỘNG (nói/viết) thấp hơn reading một bậc.
+  levelSelfReported: "B1+ reading / A2-B1 active"
+  levelConfirmed: null # điền sau khi chạy placement (xem `placement`)
+  goals:
+    - "Đọc doc/spec/PR/RFC tiếng Anh không phải tra từ liên tục"
+    - "Giao tiếp với khách hàng: email, họp, viết report, xin làm rõ yêu cầu"
+    - "Đọc truyện / nội dung đời sống, nghe hiểu hội thoại thường ngày"
+  weakSpotsKnown: [] # agent bổ sung dần từ quiz sai + friction khi học
+
+placement:
+  status: "pending" # pending | done
+  # Buổi học đầu có kèm mini-placement 10 câu (xem lesson đầu tiên). Sau khi có
+  # kết quả -> ghi `levelConfirmed` + đổi status thành `done`.
+  targetLevelAfter: "B2"
+
+# ── Luật ra bài hằng ngày ──
+daily:
+  wordsPerDay: 5
+  # ⛔ MỘT NGÀY MỘT BÀI. Đã có file bài học của hôm nay -> agent KHÔNG được tự
+  # sinh bài thứ hai, kể cả khi user gõ lại `/hoc`. Chỉ sinh buổi #2 khi user
+  # nói rõ ở LƯỢT SAU rằng muốn học thêm. Xem luật R5 trong AGENTS.md.
+  oneLessonPerDay: true
+  # Tỷ lệ chủ đề đã chốt 2026-08-12 (user chọn): 2 IT + 2 giao tiếp + 1 đời sống
+  mix:
+    it: 2 # chuyên ngành dev: doc, code review, kiến trúc, DevOps, thuật ngữ
+    business: 2 # giao tiếp khách hàng: email, họp, thương lượng, báo cáo
+    life: 1 # đời sống / truyện / phim / hội thoại thường ngày
+  explanationLanguage: "bilingual" # định nghĩa EN trước, kèm nghĩa Việt + ghi chú
+  mustInclude: # mỗi từ BẮT BUỘC có đủ các mục này
+    - ipa # phiên âm + trọng âm
+    - partOfSpeech
+    - definitionEn
+    - meaningVi
+    - examples # >= 2 câu, ít nhất 1 câu đúng bối cảnh dev/khách hàng
+    - collocations # cụm đi kèm — quan trọng hơn nghĩa đơn lẻ
+    - commonMistake # bẫy hay gặp với người Việt
+  lessonExtras:
+    - "1 mẩu đọc ngắn (3-5 câu) nhét đủ 5 từ trong ngữ cảnh"
+    - "3-5 câu bài tập tự kiểm tra (đáp án để cuối file, có <details>)"
+    - "Ghi chú phát âm nếu từ có bẫy trọng âm / âm câm"
+  # Mỗi buổi sinh HAI file cùng nội dung:
+  #   .md   — bản canonical, để grep/diff/đọc trong terminal
+  #   .html — bản trình bày, render từ {templates}/lesson.html, mở bằng `open`
+  # Lệch nhau -> .md thắng. CSS/JS KHÔNG nhúng vào bài, chỉ link tới {assets}.
+  outputs: ["md", "html"]
+  htmlTemplate: "./wiki/_templates/lesson.html"
+  openAfterGenerate: true # mở trang ngay sau khi ghi xong
+
+# Trình duyệt mở trang bài học. Đây là chỗ DUY NHẤT khai báo — `/hoc` và `/open`
+# đều đọc từ đây. Đổi sang trình duyệt khác: sửa đúng dòng này.
+#   Tên app đúng như trong /Applications (bỏ đuôi .app):
+#   "Google Chrome" | "Safari" | "Firefox" | "Microsoft Edge" | "Arc"
+#   Đặt null = dùng trình duyệt mặc định của hệ thống (`open <file>`).
+ui:
+  browser: "Google Chrome"
+  # Lệnh thật: open -a "Google Chrome" "<file>.html"
+  # App không tồn tại -> tự fallback về `open "<file>.html"`, không được báo lỗi rồi dừng.
+  #
+  # ⚠️ `open` là lệnh RIÊNG CỦA macOS. Trên VM Linux của Claude Code on the web nó
+  # không tồn tại, và ở đó cũng chẳng có màn hình nào để mở trình duyệt lên.
+  # => Agent phải dò môi trường, đừng gọi `open` một cách vô điều kiện:
+  #      command -v open  -> có  : máy Mac, mở như cũ
+  #                       -> không: VM cloud, IN RA link `remote.pagesBaseUrl`
+  # Đoạn shell chuẩn nằm ở `tools/openit.sh` — cả /hoc lẫn /open đều source file đó.
+
+# ── Kiểm tra cuối tuần ──
+weekly:
+  quizDay: "Sunday" # cuối tuần ISO
+  scope: "Toàn bộ từ học trong tuần ISO đó + tối đa 5 từ 'yếu' kéo từ REVIEW_QUEUE"
+  format:
+    - "Phần A — Recall: cho nghĩa Việt, viết lại từ tiếng Anh (không gợi ý)"
+    - "Phần B — Cloze: điền từ vào câu ngữ cảnh (có word bank xáo trộn)"
+    - "Phần C — Collocation: chọn cụm đúng / sửa cụm sai"
+    - "Phần D — Production: đặt 2 câu tự do dùng từ trong ngữ cảnh công việc"
+  passScore: 80 # % — dưới ngưỡng thì từ sai bị đẩy về REVIEW_QUEUE với interval reset
+  gradingRule: "Chấm SAU khi user trả lời. TUYỆT ĐỐI không hiện đáp án trước khi user nộp bài."
+
+# ── Spaced repetition (ôn lại) ──
+review:
+  intervalsDays: [1, 3, 7, 16, 35] # đúng -> lên bậc kế; sai -> tụt về bậc 1
+  maxPerSession: 15
+
+# ── Chống trùng bài — HARD GATE ──
+antiDuplicate:
+  # Trước khi chốt BẤT KỲ từ nào cho bài mới, agent PHẢI grep {vocabIndex}.
+  # Trùng (kể cả biến thể/word family) -> BỎ, chọn từ khác. Không có ngoại lệ.
+  checkCommand: 'grep -in "<word>" ./wiki/VOCAB_INDEX.md'
+  scope: "Trùng lemma hoặc trùng word family (deploy/deployment/deployable) đều tính là TRÙNG"
+  exception: >
+    Từ cũ được phép XUẤT HIỆN LẠI trong câu ví dụ / mẩu đọc / bài quiz (đó là ôn tập,
+    khuyến khích) — nhưng KHÔNG được tính là 1 trong 5 từ mới của ngày.
+
+bootstrap:
+  date: "2026-08-12"
+  startWeek: "2026-W33"
+  replaces: "harness frontend VCBF cũ — đã archive ở ./.archive-fe-harness/"

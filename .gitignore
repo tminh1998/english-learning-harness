@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+._*
+
+# Editor / IDE  (ENGLISH.code-workspace giữ lại — nội dung generic, không có path máy)
+.vscode/
+.idea/
+
+# Cấu hình Claude Code riêng từng máy (permission, MCP...) — không đồng bộ
+.claude/settings.local.json
+
+# Harness frontend VCBF cũ, đã archive, không đưa lên repo
+.archive-fe-harness/

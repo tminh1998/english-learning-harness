@@ -1,0 +1,138 @@
+# CLAUDE.md — English Learning Harness (Claude Code addendum)
+
+**Master rules ở [AGENTS.md](AGENTS.md) — đọc trước.** File này chỉ bổ sung phần
+đặc thù Claude Code: slash command, cách chạy, checklist đóng buổi.
+
+---
+
+## Harness này là gì
+
+Không phải project code. Đây là hệ thống học tiếng Anh có lưu vết cho **một dev
+người Việt**: mỗi ngày 5 từ mới (2 IT + 2 giao tiếp khách hàng + 1 đời sống), ghi
+vào `wiki/`, cuối tuần kiểm tra lại, không bao giờ ra trùng từ cũ.
+
+Harness frontend VCBF cũ đã được archive ở `.archive-fe-harness/` — **không đọc,
+không trích**, xoá được bất cứ lúc nào.
+
+## Bố cục
+
+```
+ENGLISH/                          ← {harness}
+├── .learning-config.yml          ← ⭐ file DUY NHẤT chứa path + cấu hình thật
+├── AGENTS.md                     ← master rules (tool-agnostic)
+├── CLAUDE.md                     ← file này
+├── README.md                     ← hướng dẫn dùng cho người học
+├── index.html                    ← mục lục cho GitHub Pages — SINH RA, đừng sửa tay
+├── .claude/commands/             ← 6 slash command (xem bảng dưới)
+├── tools/
+│   ├── openit.sh                 ← ⭐ hnay/tuan/openit — chỗ DUY NHẤT biết Mac vs VM
+│   └── build-index.sh            ← dựng lại index.html từ wiki/lessons/
+└── wiki/
+    ├── VOCAB_INDEX.md            ← ⭐ mọi từ đã học — nguồn chống trùng (R1)
+    ├── REVIEW_QUEUE.md           ← lịch ôn spaced repetition
+    ├── PROGRESS.md               ← streak, tổng từ, điểm quiz, level
+    ├── assets/lesson.css + .js   ← giao diện DÙNG CHUNG cho mọi trang bài học
+    ├── lessons/YYYY-Www/YYYY-MM-DD.md  + .html   ← bản đọc nhanh + bản trình bày
+    ├── quiz/YYYY-Www.md  +  YYYY-Www-key.md     ← đề và đáp án TÁCH FILE (R2)
+    ├── grammar/                  ← điểm ngữ pháp gặp phải, mỗi điểm 1 file
+    ├── memory/MEMORY.md          ← rule đã học về cách học của user
+    └── _templates/               ← khuôn lesson.md / lesson.html / quiz / memory
+```
+
+## Slash command
+
+| Lệnh | Dùng khi | Flow |
+|---|---|---|
+| `/hoc` | Học 5 từ mới hôm nay — sinh `.md` + `.html` rồi mở trình duyệt | Flow A (AGENTS.md) |
+| `/open` | Mở lại trang bài học đã có — **không** sinh gì mới | `find` + `open` |
+| `/kiem-tra` | Cuối tuần, kiểm tra từ đã học trong tuần | Flow B |
+| `/on-tap` | Ôn nhanh các từ tới hạn (spaced repetition) | đọc REVIEW_QUEUE |
+| `/tra-tu` | Dán 1 từ/câu bắt gặp khi đọc doc, xem phim, đọc email | Flow C |
+| `/tien-do` | Xem đã học bao nhiêu, chỗ nào yếu | đọc PROGRESS + quiz cũ |
+
+`/hoc` không tham số = bài hôm nay. `/hoc <chủ đề>` = ưu tiên chủ đề đó nhưng vẫn
+giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
+
+`/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa học thì mở bài gần
+nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
+buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
+
+## Năm luật dễ vi phạm nhất — kiểm lại trước khi trả lời
+
+1. **Ngày tháng**: `. tools/openit.sh` rồi `hnay "%Y-%m-%d %A %G-W%V"`. Không suy
+   đoán từ context, và **không gọi `date` trần** — xem luật 5.
+2. **Một ngày một bài (R5)**: `/hoc` mà hôm nay đã có file bài học → **DỪNG**, mở
+   lại bài cũ + hỏi user. Không tự sinh buổi #2. Gõ lại `/hoc` **không** có nghĩa
+   là muốn học thêm.
+3. **Chống trùng (R1)**: grep `wiki/VOCAB_INDEX.md` cho **từng** ứng viên **trước
+   khi** soạn bài. Trùng cả word family cũng là trùng.
+4. **Không lộ đáp án (R2)**: bài tập bọc `<details>`; đáp án quiz để file `-key.md`
+   riêng và không hiện cho tới khi user nộp bài. Repo public → **không push
+   `-key.md` trước khi chấm xong.**
+5. **Hai môi trường (R6)**: harness chạy cả trên Mac lẫn VM Linux giờ UTC. `date`
+   trần và `open` trần đều hỏng ở một trong hai nơi. Luôn qua `tools/openit.sh`.
+   Và luôn `git pull` đầu buổi, `git push` cuối buổi.
+
+## Checklist đóng một buổi học (R3 + R6 — thiếu 1 là chưa xong)
+
+```
+[ ] git pull --rebase                      chạy TRƯỚC khi làm gì (bài từ máy khác)
+[ ] wiki/lessons/<tuần>/<ngày>.md          đã tạo, đủ 5 từ + mẩu đọc + bài tập
+[ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
+[ ] wiki/VOCAB_INDEX.md                    +5 dòng, đúng cột, sắp theo ngày
+[ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = hôm nay +1
+[ ] wiki/PROGRESS.md                       streak +1, tổng từ +5, ghi ngày
+[ ] sh tools/build-index.sh                mục lục khớp lại với bài thật
+[ ] git commit + git push                  push fail = BÁO USER, không nói "xong"
+[ ] openit <file>.html + tóm tắt 5 từ trong chat
+```
+
+## Giao diện HTML
+
+CSS/JS **dùng chung** ở `wiki/assets/`. Trang bài học chỉ `<link>` tới
+`../../assets/lesson.css` và `<script src="../../assets/lesson.js">` — **tuyệt đối
+không nhúng style vào từng bài**, nếu không thì đổi giao diện phải sửa lại toàn bộ
+bài cũ. Trang có 3 tính năng: nút 🔊 phát âm (Web Speech API, offline), "Chế độ ôn
+tập" che mờ toàn bộ phần tiếng Việt (class `hide-me`), và nút sáng/tối.
+
+## Chạy trên Claude Code on the web
+
+User học từ điện thoại / máy ở nhà bằng cách vào `claude.ai/code`, chọn repo này,
+rồi gõ `/hoc` như bình thường. Session chạy trên **VM Linux, giờ UTC, không màn
+hình** — khác con Mac ở ba chỗ, và cả ba đều đủ sức làm hỏng dữ liệu:
+
+| Khác biệt | Hỏng cái gì | Xử ở đâu |
+|---|---|---|
+| Giờ UTC, không phải giờ VN | Sai ngày → sai tên file, gate R5 mù, sinh trùng bài | `tools/openit.sh` export `TZ` |
+| Không có lệnh `open`, không có màn hình | Command chết ở bước cuối | `openit()` in link Pages thay vì mở |
+| VM bị thu hồi khi nghỉ lâu | **Mất trắng buổi học chưa push** | R6 — commit + push là bắt buộc |
+
+Nên: mọi command đều mở đầu bằng `git pull --rebase` + `. tools/openit.sh`, và kết
+thúc bằng `git push`. Đừng viết `date` hay `open` trực tiếp vào command mới.
+
+Session cloud tạo branch riêng rồi mở PR. Với repo học tập một người, merge PR
+ngay là xong — đừng để tồn PR, vì buổi sau `git pull` sẽ không thấy bài đó và R1
+sẽ ra trùng từ.
+
+## Không có build/test
+
+Đây là repo tri thức, không có `npm`, không có test runner. "Verify" ở đây nghĩa là:
+grep VOCAB_INDEX không thấy trùng, 5 file state đã cập nhật khớp nhau, và
+`sh tools/build-index.sh` chạy không lỗi.
+
+Hai script trong `tools/` là **shell POSIX thuần** (`/bin/sh`), chạy được trên cả
+macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng thì test bằng:
+
+```bash
+sh tools/build-index.sh                                    # phải in DA-DUNG-INDEX
+TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
+```
+
+## Source of truth (thứ tự ưu tiên)
+
+1. `.learning-config.yml` — cấu hình + mọi path thật
+2. [AGENTS.md](AGENTS.md) — luật + flow
+3. `wiki/VOCAB_INDEX.md` — sự thật về "đã học gì" (thắng mọi mô tả khác)
+4. `wiki/memory/MEMORY.md` — rule đã học về learner
+
+Doc mâu thuẫn với VOCAB_INDEX → VOCAB_INDEX thắng, sửa doc.

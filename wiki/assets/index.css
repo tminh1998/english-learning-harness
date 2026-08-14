@@ -1,0 +1,88 @@
+/* index.css — style riêng cho trang mục lục ở gốc repo (`index.html`).
+   Dùng CHUNG biến màu + .wrap/.hero/.badge/.toolbar của lesson.css — file này
+   chỉ thêm phần danh sách bài. Không định nghĩa lại màu: đổi tông thì sửa
+   lesson.css, sáng/tối tự theo.
+   Sinh bởi tools/build-index.sh — đừng sửa index.html bằng tay. */
+
+.week {
+  margin: 2rem 0;
+}
+
+.week > h2 {
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 0 0 .75rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.lesson {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .35rem .9rem;
+  padding: .85rem 1rem;
+  margin-bottom: .5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color .15s, transform .15s;
+}
+
+.lesson:hover,
+.lesson:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.lesson-date {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.lesson-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-left: auto;
+}
+
+/* Chip từ vựng — cùng bảng màu 3 nhóm với badge của bài học */
+.w {
+  font-size: .78rem;
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.w.it   { background: var(--it-bg);   color: var(--it); }
+.w.biz  { background: var(--biz-bg);  color: var(--biz); }
+.w.life { background: var(--life-bg); color: var(--life); }
+
+.quiz-link,
+.repo-link {
+  margin: 0 0 .6rem;
+  font-size: .85rem;
+}
+
+.quiz-link a,
+.repo-link a {
+  color: var(--accent-text);
+}
+
+.repo-link {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: var(--text-dim);
+}
+
+/* Điện thoại: từ vựng xuống dòng riêng thay vì chen bên phải ngày */
+@media (max-width: 34rem) {
+  .lesson-words { margin-left: 0; width: 100%; }
+}
