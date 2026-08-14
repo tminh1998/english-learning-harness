@@ -17,6 +17,31 @@ Mở Claude Code tại thư mục này rồi gõ:
 
 Nhịp gợi ý: `/hoc` mỗi sáng (~10 phút) · `/on-tap` khi rảnh · `/kiem-tra` mỗi Chủ nhật.
 
+## Học từ máy khác / điện thoại
+
+Không cần ngồi đúng con máy này. Có hai cách, dùng cho hai việc khác nhau:
+
+**Chỉ ĐỌC lại bài** → mở trang mục lục, không cần Claude, không cần đăng nhập:
+
+> 📖 <!-- PAGES_URL -->(chưa bật GitHub Pages)
+
+**HỌC bài mới (gõ `/hoc`)** → cần một agent Claude thật chạy:
+
+1. Vào [claude.ai/code](https://claude.ai/code) trên trình duyệt bất kỳ (điện thoại
+   cũng được), đăng nhập tài khoản Claude như thường.
+2. Chọn repo này → gõ `/hoc`. Session chạy trên VM cloud của Anthropic, sinh bài
+   y hệt ở máy, rồi tự commit + push lên GitHub.
+3. Merge PR mà nó tạo. **Merge luôn, đừng để tồn** — buổi sau `git pull` không
+   thấy bài đó thì agent sẽ ra trùng từ.
+
+Cần gói Claude Pro/Max/Team. App Claude trên điện thoại xem/điều khiển được session
+đang chạy.
+
+> ⚠️ **Học hai nơi thì phải đồng bộ.** Chống trùng từ và luật một-ngày-một-bài đều
+> dựa vào `VOCAB_INDEX.md`. Agent tự `git pull` đầu buổi và `git push` cuối buổi
+> (luật R6) — nhưng nếu nó báo push lỗi thì buổi đó **chưa được lưu ở đâu cả**,
+> đừng bỏ qua dòng báo lỗi ấy.
+
 ## Kiến thức nằm ở đâu
 
 ```
@@ -50,8 +75,8 @@ Muốn đổi giao diện cho **tất cả** bài học (kể cả bài cũ): s�
    trùng cả họ từ (`deploy`/`deployment`) cũng bị loại.
 2. **Không lộ đáp án** — bài tập bọc `<details>`, đề quiz và đáp án nằm hai file
    khác nhau, chỉ chấm sau khi bạn nộp bài.
-3. **Không học chay** — mỗi buổi phải cập nhật đủ 4 file state, thiếu 1 là buổi
-   chưa đóng.
+3. **Không học chay** — mỗi buổi phải cập nhật đủ 5 file state, dựng lại mục lục,
+   rồi push lên GitHub. Thiếu 1 là buổi chưa đóng.
 
 ## Cấu hình
 
