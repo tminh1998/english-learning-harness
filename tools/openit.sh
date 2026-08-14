@@ -110,9 +110,20 @@ daylen() {
   [ -n "$1" ] || { echo "THIEU-MESSAGE"; return 1; }
 
   g add -A
-  if g diff --cached --quiet; then echo "KHONG-CO-GI-DE-LUU"; return 0; fi
-
-  out=$(g commit -m "$1" 2>&1) || { echo "COMMIT-LOI:"; echo "$out" | tail -5; return 1; }
+  if g diff --cached --quiet; then
+    # Không có thay đổi mới. NHƯNG lần chạy trước có thể đã commit xong rồi push
+    # hỏng (mất mạng, chưa có quyền) — commit đó vẫn đang nằm lại. Không kiểm chỗ
+    # này thì daylen báo "không có gì để lưu" trong khi bài học chưa hề lên GitHub:
+    # đúng cái nó sinh ra để chống.
+    if g remote get-url origin >/dev/null 2>&1 &&
+       [ -n "$(g log "origin/$NHANH..$NHANH" --oneline 2>/dev/null)" ]; then
+      echo "CON-COMMIT-CHUA-PUSH: $(g rev-list --count "origin/$NHANH..$NHANH") commit — đẩy nốt"
+    else
+      echo "KHONG-CO-GI-DE-LUU"; return 0
+    fi
+  else
+    out=$(g commit -m "$1" 2>&1) || { echo "COMMIT-LOI:"; echo "$out" | tail -5; return 1; }
+  fi
 
   g remote get-url origin >/dev/null 2>&1 ||
     { echo "DA-COMMIT-NHUNG-CHUA-CO-REMOTE"; return 1; }
