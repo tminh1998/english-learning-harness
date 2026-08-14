@@ -25,7 +25,9 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
 4. **Ghi bản Markdown** theo `wiki/_templates/recap.md` → `wiki/recap/<tuần>.md`.
 5. **Ghi bản HTML** theo `wiki/_templates/recap.html` → `wiki/recap/<tuần>.html`.
 6. `sh tools/build-index.sh` rồi `daylen "recap: <tuần> — <N> từ"` (R6).
-   Không mở branch, không tạo PR. Không in `DA-PUSH` → báo thẳng cho user.
+   Không mở branch, không tạo PR. `DA-PUSH` **hoặc** `KHONG-CO-GI-DE-LUU` đều là
+   thành công (mã sau nghĩa là bảng ôn đã khớp sẵn, không cần sinh lại). Mã khác
+   → báo thẳng cho user là chưa lưu được.
 7. `openit "wiki/recap/<tuần>.html"` rồi tóm tắt trong chat: bao nhiêu từ, phân bố
    IT/Business/Life, và 2-3 chỗ dễ sai đáng chú ý nhất của tuần.
 

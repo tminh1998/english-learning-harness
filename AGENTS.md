@@ -160,10 +160,17 @@ chỉ nói về **nội dung học**.)
 
 #### Báo lỗi, đừng nuốt
 
-`keove`/`daylen` in ra mã kết quả. Gặp `PUSH-LOI`, `KHONG-KEO-DUOC`,
-`DA-COMMIT-NHUNG-CHUA-CO-REMOTE`, `KHONG-CHUYEN-DUOC-NHANH` → **nói thẳng với user
-là buổi học chưa lưu được lên GitHub**, kèm nguyên văn lỗi. Tuyệt đối không báo
-"xong" rồi im: trên VM cloud, im lặng ở bước này nghĩa là mất trắng buổi học.
+`keove`/`daylen` in ra mã kết quả. **Hai mã là THÀNH CÔNG:**
+
+| Mã | Nghĩa |
+|---|---|
+| `DA-PUSH: <sha> -> origin/<nhánh>` | đã lưu lên GitHub |
+| `KHONG-CO-GI-DE-LUU` | cây làm việc sạch, không có thay đổi nào — **không phải lỗi** |
+
+Mọi mã còn lại (`PUSH-LOI`, `COMMIT-LOI`, `KHONG-KEO-DUOC`, `KHONG-CHUYEN-DUOC-NHANH`,
+`DA-COMMIT-NHUNG-CHUA-CO-REMOTE`) là **thất bại** → nói thẳng với user là buổi học
+chưa lưu được lên GitHub, kèm nguyên văn lỗi. Tuyệt đối không báo "xong" rồi im:
+trên VM cloud, im lặng ở bước này nghĩa là mất trắng buổi học.
 
 #### Xung đột
 
