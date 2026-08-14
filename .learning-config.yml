@@ -31,6 +31,12 @@ remote:
   # Bài học chỉ tồn tại khi đã push. VM cloud bị thu hồi sau một thời gian không
   # hoạt động -> file không commit là MẤT. Xem R6 trong AGENTS.md.
   autoCommit: true
+  # ⭐ MỘT NHÁNH DUY NHẤT. Đây là sổ tay cá nhân, không ai review -> không dùng PR.
+  # Session trên claude.ai/code hay tự mở branch mới rồi đợi user bấm merge; ở đây
+  # KHÔNG làm vậy: `keove` luôn chuyển về nhánh này trước khi học, `daylen` luôn
+  # push thẳng vào nó. Quên merge một PR = hôm sau pull không thấy bài = R1 ra
+  # trùng từ. Bỏ hẳn PR là bỏ hẳn cả lớp lỗi đó.
+  branch: "main"
 
 # ── Path nội bộ harness ──
 paths:
