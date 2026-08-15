@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 10 từ** · IT 4 · Business 4 · Life 2 · ad-hoc 0
-**Cập nhật:** 2026-08-14
+**Tổng: 15 từ** · IT 6 · Business 6 · Life 3 · ad-hoc 0
+**Cập nhật:** 2026-08-15
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -28,6 +28,11 @@
 | 8 | escalate | escalation, escalated, escalating, de-escalate | verb | Business | đẩy lên cấp cao hơn; leo thang | 2026-08-14 | lesson |
 | 9 | deliverable | deliverables, deliver, delivery, undeliverable | noun | Business | hạng mục bàn giao | 2026-08-14 | lesson |
 | 10 | run out of | run out, ran out of, running out of, be out of | phrasal verb | Life | hết sạch, dùng hết | 2026-08-14 | lesson |
+| 11 | rollback | roll back, rolled back, rolling back | noun (v: roll back) | IT | quay về bản cũ, hoàn tác deploy | 2026-08-15 | lesson |
+| 12 | flaky | flake, flaked, flakiness, flakier, flakiest | adjective | IT | chập chờn, lúc được lúc không | 2026-08-15 | lesson |
+| 13 | reach out | reach, reached out, reaching out, outreach | phrasal verb | Business | chủ động liên hệ trước | 2026-08-15 | lesson |
+| 14 | scope creep | scope, creep, crept, in scope, out of scope | noun (uncountable) | Business | phình phạm vi ngoài thoả thuận | 2026-08-15 | lesson |
+| 15 | get the hang of | hang, the hang of, got the hang of, getting the hang of | idiom | Life | quen tay, nắm được cách | 2026-08-15 | lesson |
 
 <!--
 LUẬT GHI:
