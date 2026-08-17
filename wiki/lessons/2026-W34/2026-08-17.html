@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026-08-17 — 5 từ mới</title>
+    <link rel="stylesheet" href="../../assets/lesson.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div class="eyebrow">Tuần 2026-W34 · Buổi #4</div>
+        <h1>Thứ Hai, 17 tháng 8 năm 2026</h1>
+        <div class="mixline">
+          <span class="badge it">2 IT</span>
+          <span class="badge biz">2 Giao tiếp</span>
+          <span class="badge life">1 Đời sống</span>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+        <button id="theme">🌗 Theo hệ thống</button>
+        <span class="hint"
+          >Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để
+          hiện</span
+        >
+      </div>
+
+      <section class="block">
+        <h2>Ôn nhanh đầu giờ</h2>
+        <p class="sub">
+          5 từ của buổi #3 tới hạn ôn từ hôm qua (Chủ nhật không học từ mới).
+          Trả lời trong đầu trước rồi mới mở đáp án.
+        </p>
+        <ol class="ex">
+          <li class="hide-me">
+            Từ nào chỉ <b>cái test lúc chạy được lúc không, không đoán trước
+            được</b>?
+          </li>
+          <li>
+            <em
+              >“The deploy broke checkout, so we triggered an immediate ___ to
+              the previous release.”</em
+            >
+            <span class="hide-me">(danh từ, viết liền)</span>
+          </li>
+          <li>
+            <em
+              >“Please ___ ___ <b>to</b> the client before they open a
+              ticket.”</em
+            >
+            <span class="hide-me">(chủ động liên hệ trước)</span>
+          </li>
+          <li>
+            <em
+              >“The client kept adding ‘quick wins’ mid-sprint — textbook ___
+              ___.”</em
+            >
+            <span class="hide-me">(phình phạm vi, không đếm được)</span>
+          </li>
+          <li>
+            <em>“After two weeks I finally ___ ___ ___ ___ it.”</em>
+            <span class="hide-me">(quen tay rồi — chia quá khứ)</span>
+          </li>
+        </ol>
+        <details>
+          <summary>Đáp án ôn nhanh</summary>
+          <ol>
+            <li>
+              <b>flaky</b> —
+              <em>The integration test is flaky; it fails about one run in five.</em>
+              <span class="hide-me"
+                >(<code>buggy</code> là hỏng đều đặn, <code>flaky</code> là hỏng
+                ngẫu nhiên)</span
+              >
+            </li>
+            <li>
+              <b>rollback</b>
+              <span class="hide-me"
+                >— danh từ viết liền. Nếu là động từ thì tách:
+                <em>we rolled back the release</em>.</span
+              >
+            </li>
+            <li>
+              <b>reach out</b>
+              <span class="hide-me"
+                >— luôn có <code>to</code> trước người nhận:
+                <em>reach out <b>to</b> the client</em>.</span
+              >
+            </li>
+            <li>
+              <b>scope creep</b>
+              <span class="hide-me"
+                >— không đếm được, không có “a scope creep”.</span
+              >
+            </li>
+            <li>
+              <b>got the hang of</b>
+              <span class="hide-me"
+                >— quá khứ là <code>got</code>, và bắt buộc có tân ngữ
+                (<code>it</code>) sau <code>of</code>.</span
+              >
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">1</span>throttle
+              <button class="say" data-say="throttle" title="Nghe phát âm">
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">/ˈθrɑːtl/ · <em>verb (cũng dùng làm noun)</em></div>
+          </div>
+          <span class="badge it">IT</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          bóp tốc độ, giới hạn lưu lượng<span class="alt"
+            >nói về rate limiting</span
+          >
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>To deliberately limit how fast something
+          runs or how many requests a client is allowed to send in a given
+          period.
+          <span class="def-vi hide-me"
+            >→ Cố ý giới hạn một thứ gì đó chạy nhanh đến đâu, hoặc một client
+            được phép gửi bao nhiêu request trong một khoảng thời gian nhất
+            định.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Trong dev gần như luôn nói về
+          <b>rate limiting</b>: server cố tình làm chậm hoặc từ chối bớt request.
+          Khác <code>block</code> (chặn hẳn, không cho qua) và
+          <code>debounce</code> (gộp nhiều sự kiện liên tiếp thành một). Ngoài
+          đời <code>throttle</code> còn là cần ga xe — nghĩa gốc “bóp lại” giống
+          nhau.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >The gateway will <b>throttle</b> any client that sends more than
+              100 requests per minute.</span
+            >
+            <span class="vi hide-me"
+              >→ Cổng API sẽ bóp lưu lượng của bất kỳ client nào gửi quá 100
+              request mỗi phút.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >We deliberately <b>throttle</b> the nightly sync so it doesn't
+              turn the database into a bottleneck.</span
+            >
+            <span class="vi hide-me"
+              >→ Bọn mình cố tình làm chậm tác vụ đồng bộ ban đêm để nó không
+              biến database thành nút thắt cổ chai.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>throttle requests / traffic / an API</code> ·
+              <code>request throttling</code> ·
+              <code>be throttled to 10 requests per second</code> ·
+              <code>an unthrottled connection</code> · gần nghĩa:
+              <code>rate-limit</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v hide-me"
+              >Âm <code>th</code> là /θ/ (đầu lưỡi chạm nhẹ hai hàm răng),
+              <b>không</b> đọc thành /t/ hay /s/. Dạng bị động rất hay gặp và
+              người Việt hay quên: <em>“you're <b>being throttled</b>”</em>. Và
+              <code>throttle</code> ≠ <code>block</code>: bị throttle thì request
+              vẫn qua, chỉ chậm hoặc bị từ chối bớt.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v">throttle (v/n) · throttling · throttled · unthrottled</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">2</span>regression
+              <button class="say" data-say="regression" title="Nghe phát âm">
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">/rɪˈɡreʃn/ · <em>noun (đếm được)</em></div>
+          </div>
+          <span class="badge it">IT</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          lỗi tái phát<span class="alt">chỗ đang chạy tốt bỗng hỏng</span>
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>A bug that appears in a feature which used
+          to work correctly, usually caused by a recent change.
+          <span class="def-vi hide-me"
+            >→ Một lỗi xuất hiện ở tính năng vốn trước đây vẫn chạy đúng, thường
+            là do một thay đổi gần đây gây ra.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Điểm khác quan trọng nhất so với “bug”
+          thường: nói <code>regression</code> là ngầm nói “trước đây nó chạy
+          được, ta vừa làm hỏng nó”. <code>regression test/suite</code> là bộ test
+          chạy lại để bắt đúng loại lỗi này. Đừng nhầm với
+          <code>linear regression</code> trong thống kê — cùng chữ, khác hẳn
+          ngành.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >The new caching layer is fast, but it introduced a
+              <b>regression</b> in the guest checkout flow.</span
+            >
+            <span class="vi hide-me"
+              >→ Lớp cache mới thì nhanh, nhưng nó làm phát sinh một lỗi tái phát
+              ở luồng thanh toán khách vãng lai.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >We run the full <b>regression</b> suite before every release, so
+              most of these never reach the client.</span
+            >
+            <span class="vi hide-me"
+              >→ Bọn mình chạy trọn bộ test hồi quy trước mỗi lần phát hành, nên
+              phần lớn lỗi loại này không bao giờ tới tay khách.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>introduce / cause a regression</code> ·
+              <code>a regression in &lt;tính năng&gt;</code> ·
+              <code>regression test / suite / testing</code> ·
+              <code>a performance regression</code> ·
+              <code>catch a regression</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v hide-me"
+              >Đếm được: <code>a regression</code>, <code>three regressions</code>
+              — nhớ mạo từ. Đừng dùng động từ <code>regress</code> khi nói về bug
+              (nghĩa “thụt lùi”, rất trang trọng, gần như không dùng trong dev).
+              Và chỉ gọi là regression khi <b>trước đó nó đã chạy đúng</b> — tính
+              năng mới hỏng thì chỉ là bug.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >regress · regressive · regression test · non-regression</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">3</span>heads-up
+              <button
+                class="say"
+                data-say="just a quick heads-up"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">
+              /ˌhedz ˈʌp/ · <em>noun (đếm được, thân mật)</em>
+            </div>
+          </div>
+          <span class="badge biz">Giao tiếp</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          lời báo trước<span class="alt">“nói trước một tiếng”</span>
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>A short warning given in advance so the
+          other person has time to prepare.
+          <span class="def-vi hide-me"
+            >→ Một lời cảnh báo ngắn đưa ra từ trước, để người kia có thời gian
+            chuẩn bị.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Gần như luôn đi với mạo từ
+          <code>a</code>: <em>give you <b>a</b> heads-up</em>. Thân mật hơn
+          <code>notify in advance</code> nhưng hoàn toàn dùng được trong email
+          khách hàng — nó làm câu văn nhẹ đi, kiểu “báo anh/chị biết trước cho
+          chủ động”. Khác <code>follow up</code> (nhắc lại chuyện đã nói):
+          <code>heads-up</code> là báo <b>chuyện sắp xảy ra</b>.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >Just a quick <b>heads-up</b>: the staging server will be down for
+              an hour tomorrow morning.</span
+            >
+            <span class="vi hide-me"
+              >→ Báo anh/chị biết trước cho chủ động: máy chủ staging sẽ ngừng một
+              tiếng vào sáng mai.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >Thanks for the <b>heads-up</b> — I'll clarify the new deadline
+              with the client before they start testing.</span
+            >
+            <span class="vi hide-me"
+              >→ Cảm ơn đã báo trước — tôi sẽ làm rõ hạn mới với khách trước khi
+              họ bắt đầu kiểm thử.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>give sb a heads-up</code> ·
+              <code>just a (quick) heads-up</code> ·
+              <code>thanks for the heads-up</code> ·
+              <code>a heads-up on / about sth</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v hide-me"
+              >Chữ <code>heads</code> <b>luôn có s</b> dù chỉ báo một chuyện —
+              viết “a head-up” là sai. Nó là <b>danh từ</b>, không phải động từ →
+              không nói “I will heads-up you”, phải là
+              <em>“I'll <b>give you a</b> heads-up”</em>. Trọng âm rơi vào
+              <b>UP</b>.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >heads up! (thán từ: coi chừng, né ra!) · head up sth (dẫn dắt một
+              nhóm — nghĩa khác hẳn)</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">4</span>ballpark
+              <button
+                class="say"
+                data-say="a ballpark figure"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">
+              /ˈbɔːlpɑːrk/ · <em>adjective (cũng dùng làm noun)</em>
+            </div>
+          </div>
+          <span class="badge biz">Giao tiếp</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          ước chừng, áng chừng<span class="alt">a ballpark figure = con số áng chừng</span>
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>Rough and approximate, but close enough to
+          the real number to be useful for planning.
+          <span class="def-vi hide-me"
+            >→ Thô và áng chừng, nhưng đủ gần con số thật để còn dùng được vào
+            việc lên kế hoạch.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Câu cửa miệng cực hữu ích khi khách hỏi
+          “bao lâu / bao nhiêu tiền” mà bạn chưa dám cam kết: lịch sự hơn hẳn “I
+          don't know”, mà vẫn không bị khách coi là lời hứa. Gốc từ sân bóng chày
+          Mỹ, nhưng giờ dùng khắp nơi trong công việc.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >I can't commit to a date yet, but a <b>ballpark</b> figure would
+              be three weeks for the whole migration.</span
+            >
+            <span class="vi hide-me"
+              >→ Tôi chưa chốt ngày được, nhưng ước chừng thì cả đợt chuyển đổi
+              mất khoảng ba tuần.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >Their budget is 20,000 and our estimate is 22,000 — at least we're
+              in the same <b>ballpark</b>.</span
+            >
+            <span class="vi hide-me"
+              >→ Ngân sách của họ là 20.000 còn dự toán của mình là 22.000 — ít
+              nhất thì hai bên cũng xấp xỉ nhau.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>a ballpark figure / estimate / number</code> ·
+              <code>in the ballpark of $50,000</code> ·
+              <code>in the same ballpark</code> ·
+              <code>that's not even in the ballpark</code> (sai xa lắm)</span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v hide-me"
+              >Viết <b>liền một từ</b>. Giới từ đi kèm là <code>of</code>:
+              <em>in the ballpark <b>of</b> 50k</em>, không phải “in the ballpark
+              with”. Và <code>ballpark</code> là ước chừng <b>có căn cứ</b>,
+              không phải con số bịa — nếu không, lần sau khách sẽ coi mọi con số
+              của bạn là hứa suông.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >ballpark figure · in the ballpark · ballpark it (động từ, rất thân
+              mật)</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="life">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">5</span>keep an eye on
+              <button
+                class="say"
+                data-say="keep an eye on the logs"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">
+              /kiːp ən ˈaɪ ɒn/ · <em>idiom (cụm động từ)</em>
+            </div>
+          </div>
+          <span class="badge life">Đời sống</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          để mắt tới, trông chừng<span class="alt">theo dõi nhẹ, ngắt quãng</span>
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>To watch something from time to time so that
+          you notice if it changes or goes wrong.
+          <span class="def-vi hide-me"
+            >→ Thỉnh thoảng nhìn chừng một thứ gì đó, để nhận ra ngay nếu nó thay
+            đổi hoặc trục trặc.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Là theo dõi <b>nhẹ nhàng, ngắt
+          quãng</b> — thỉnh thoảng liếc xem có gì bất thường, chứ không ngồi nhìn
+          chằm chằm. Khác <code>monitor</code> (trang trọng, kỹ thuật, thường có
+          công cụ) và <code>watch</code> (nhìn tập trung). Dùng được cả ở nhà lẫn
+          ở công ty, nên rất đáng thuộc.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >Can you <b>keep an eye on</b> the error logs this afternoon? The
+              fix went out at noon.</span
+            >
+            <span class="vi hide-me"
+              >→ Chiều nay cậu để mắt tới log lỗi giúp mình nhé? Bản sửa đã ra lúc
+              trưa rồi.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >I'll <b>keep an eye on</b> the pot while you answer the door.</span
+            >
+            <span class="vi hide-me"
+              >→ Để mình trông nồi cho, cậu ra mở cửa đi.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>keep an eye on sth/sb</code> ·
+              <code>keep a close eye on</code> (sát hơn) ·
+              <code>keep an eye out for sth</code> (canh chờ thứ chưa tới) ·
+              <code>keep an eye on things</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v hide-me"
+              ><code>an eye</code> số <b>ít</b> dù ta có hai mắt — “keep eyes on”
+              là sai. Phân biệt cặp rất dễ lẫn: <code>keep an eye <b>on</b></code>
+              = trông chừng thứ <b>đã có trước mặt</b>;
+              <code>keep an eye <b>out for</b></code> = để ý tìm thứ
+              <b>chưa tới</b>. Và đừng thay bằng <code>look at</code> — cái đó là
+              nhìn một lần rồi thôi.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >an eye on sth · keep a close eye on · keep an eye out for · have
+              your eye on sth</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <section class="block">
+        <h2>Mẩu đọc</h2>
+        <p class="sub">Bình luận review một pull request</p>
+        <div class="passage">
+          Nice catch on the cache fix — but a quick <b>heads-up</b> before you
+          merge. This touches the same code path we broke last month, and I'm
+          fairly sure there's a <b>regression</b> in guest checkout: it worked
+          fine on Friday. Two more things. The retry loop has no limit, so the
+          moment the payment provider starts to <b>throttle</b> us we'll hammer
+          them until they ban our whole IP range — can you cap it at five
+          attempts? And could you give me a <b>ballpark</b> on a proper fix, a
+          day or a week? I just need a number for the client call at four; I'll
+          clarify the details with them afterwards. Either way I'll
+          <b>keep an eye on</b> the error rate for an hour after the deploy, and
+          we can always trigger a <b>rollback</b> if it looks worse than what we
+          have now.
+        </div>
+        <details>
+          <summary>Bản dịch</summary>
+          <p class="hide-me">
+            Bắt lỗi chỗ sửa cache hay đấy — nhưng báo cậu biết trước một tiếng
+            trước khi merge. Chỗ này đụng đúng luồng code mà tháng trước bọn mình
+            từng làm hỏng, và tớ khá chắc là có một lỗi tái phát ở phần thanh
+            toán khách vãng lai: thứ Sáu nó vẫn chạy tốt. Còn hai việc nữa. Vòng
+            lặp thử lại không có giới hạn, nên ngay khi bên cổng thanh toán bắt
+            đầu bóp lưu lượng của mình là mình sẽ dội vào họ liên tục cho tới lúc
+            họ chặn cả dải IP của công ty — cậu chốt lại tối đa năm lần thử được
+            không? Với lại cho tớ một con số áng chừng để sửa cho tử tế, một ngày
+            hay một tuần? Tớ chỉ cần một con số cho buổi gọi với khách lúc bốn
+            giờ thôi; chi tiết thì tớ sẽ làm rõ với họ sau. Kiểu gì thì sau khi
+            deploy tớ cũng sẽ để mắt tới tỷ lệ lỗi trong một tiếng, và lúc nào
+            cũng có thể kích hoạt quay về bản cũ nếu thấy tệ hơn hiện tại.
+          </p>
+        </details>
+      </section>
+
+      <section class="block">
+        <h2>Bài tập</h2>
+        <p class="sub">Làm xong rồi mới mở đáp án.</p>
+        <ol class="ex">
+          <li>
+            <b>Nối</b> — nối mỗi tình huống với đúng một từ:
+            <code>throttle</code> · <code>regression</code> ·
+            <code>heads-up</code>
+            <br /><span class="hide-me"
+              >(a) Tính năng tìm kiếm chạy tốt suốt cả năm, sau bản deploy hôm qua
+              thì trả về rỗng.<br />(b) Bạn nhắn khách từ hôm nay rằng thứ Năm hệ
+              thống sẽ bảo trì hai tiếng.<br />(c) API bên thứ ba bắt đầu trả về
+              lỗi 429 vì bạn gọi 500 lần một phút.</span
+            >
+          </li>
+          <li>
+            <b>Chọn đúng</b> — <code>keep an eye on</code> hay
+            <code>keep an eye out for</code>?
+            <br /><em
+              >(a) “I'll ___ the dashboard while the migration runs.”<br />(b)
+              “___ an email from their legal team — it should land today.”</em
+            >
+          </li>
+          <li>
+            <b>Điền từ</b> —
+            <em
+              >“I can't give you an exact price today, but a ___ figure would be
+              around fifteen thousand.”</em
+            >
+          </li>
+          <li>
+            <b>Sửa lỗi sai</b> — mỗi câu có đúng một lỗi:
+            <br /><em
+              >(a) “Thanks for the head-up about the meeting change.”<br />(b)
+              “Can you heads-up me before you deploy?”</em
+            >
+          </li>
+          <li>
+            <b>Dịch Việt–Anh</b> —
+            <span class="hide-me"
+              >“Bản sửa tuần trước làm hỏng phần đăng nhập — đây là lỗi tái phát
+              chứ không phải tính năng mới.”</span
+            >
+          </li>
+        </ol>
+        <details>
+          <summary>Đáp án</summary>
+          <ol>
+            <li>
+              (a) <b>regression</b>
+              <span class="hide-me">— trước đó chạy tốt, thay đổi mới làm hỏng.</span>
+              (b) <b>heads-up</b>
+              <span class="hide-me">— báo trước chuyện sắp xảy ra.</span>
+              (c) <b>throttle</b>
+              <span class="hide-me"
+                >— bị bóp lưu lượng vì gọi quá nhiều (429 = Too Many
+                Requests).</span
+              >
+            </li>
+            <li>
+              (a) <b>keep an eye on</b>
+              <span class="hide-me">— cái dashboard đã có sẵn trước mặt.</span>
+              (b) <b>Keep an eye out for</b>
+              <span class="hide-me">— cái email <b>chưa tới</b>, phải canh chờ.</span>
+            </li>
+            <li>
+              <b>ballpark</b> — <code>a ballpark figure</code>.
+              <span class="hide-me"
+                >(<code>estimate</code> cũng đúng ngữ pháp nhưng nghe như đã tính
+                toán kỹ; <code>ballpark</code> mới đúng ý “chưa chốt, đừng bắt lỗi
+                tôi”.)</span
+              >
+            </li>
+            <li>
+              (a) <b>“Thanks for the <em>heads</em>-up…”</b>
+              <span class="hide-me">— luôn có s.</span> (b)
+              <b>“Can you <em>give me a</em> heads-up before you deploy?”</b>
+              <span class="hide-me">— <code>heads-up</code> là danh từ, không phải động từ.</span>
+            </li>
+            <li>
+              <b
+                >“Last week's fix broke the login flow — that's a
+                <em>regression</em>, not a new feature.”</b
+              >
+              <span class="hide-me"
+                >— có <code>a</code> vì đếm được, và dùng được
+                <code>regression</code> chính vì trước đó login vẫn chạy.</span
+              >
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <footer>
+        Bản Markdown: <a href="2026-08-17.md">2026-08-17.md</a> · Toàn bộ từ đã
+        học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> · Lịch ôn:
+        <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+        <br />Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại các từ của tuần
+        2026-W34.
+      </footer>
+    </div>
+    <script src="../../assets/lesson.js"></script>
+  </body>
+</html>

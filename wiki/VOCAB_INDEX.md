@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 15 từ** · IT 6 · Business 6 · Life 3 · ad-hoc 0
-**Cập nhật:** 2026-08-15
+**Tổng: 20 từ** · IT 8 · Business 8 · Life 4 · ad-hoc 0
+**Cập nhật:** 2026-08-17
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -33,6 +33,11 @@
 | 13 | reach out | reach, reached out, reaching out, outreach | phrasal verb | Business | chủ động liên hệ trước | 2026-08-15 | lesson |
 | 14 | scope creep | scope, creep, crept, in scope, out of scope | noun (uncountable) | Business | phình phạm vi ngoài thoả thuận | 2026-08-15 | lesson |
 | 15 | get the hang of | hang, the hang of, got the hang of, getting the hang of | idiom | Life | quen tay, nắm được cách | 2026-08-15 | lesson |
+| 16 | throttle | throttling, throttled, unthrottled, rate-limit | verb (cũng là noun) | IT | bóp tốc độ, giới hạn lưu lượng | 2026-08-17 | lesson |
+| 17 | regression | regress, regressive, regression test, non-regression | noun | IT | lỗi tái phát, chỗ đang chạy tốt bỗng hỏng | 2026-08-17 | lesson |
+| 18 | heads-up | heads up, a heads-up, head up | noun | Business | lời báo trước | 2026-08-17 | lesson |
+| 19 | ballpark | ball park, ballpark figure, in the ballpark, ballpark it | adjective (cũng là noun) | Business | ước chừng, áng chừng | 2026-08-17 | lesson |
+| 20 | keep an eye on | eye, an eye on, keep a close eye on, keep an eye out for, have your eye on | idiom | Life | để mắt tới, trông chừng | 2026-08-17 | lesson |
 
 <!--
 LUẬT GHI:
