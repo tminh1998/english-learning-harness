@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 20 từ** · IT 8 · Business 8 · Life 4 · ad-hoc 0
-**Cập nhật:** 2026-08-17
+**Tổng: 25 từ** · IT 10 · Business 10 · Life 5 · ad-hoc 0
+**Cập nhật:** 2026-08-18
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -38,6 +38,11 @@
 | 18 | heads-up | heads up, a heads-up, head up | noun | Business | lời báo trước | 2026-08-17 | lesson |
 | 19 | ballpark | ball park, ballpark figure, in the ballpark, ballpark it | adjective (cũng là noun) | Business | ước chừng, áng chừng | 2026-08-17 | lesson |
 | 20 | keep an eye on | eye, an eye on, keep a close eye on, keep an eye out for, have your eye on | idiom | Life | để mắt tới, trông chừng | 2026-08-17 | lesson |
+| 21 | boilerplate | boiler plate, boilerplate code, boilerplate clause, boilerplate-heavy | noun (không đếm được) | IT | code lặp soạn sẵn | 2026-08-18 | lesson |
+| 22 | stale | staleness, go stale, stale-dated, stale-while-revalidate | adjective | IT | cũ, lỗi thời, không còn đúng | 2026-08-18 | lesson |
+| 23 | walk through | walk sb through, walked through, walking through, walkthrough | phrasal verb | Business | dẫn đi từng bước, hướng dẫn tường tận | 2026-08-18 | lesson |
+| 24 | sign off | sign-off, signoff, signed off, signing off, sign off on | phrasal verb | Business | duyệt chính thức, chốt | 2026-08-18 | lesson |
+| 25 | end up | ended up, ending up, ends up, wind up | phrasal verb | Life | rốt cuộc lại, cuối cùng thành ra | 2026-08-18 | lesson |
 
 <!--
 LUẬT GHI:

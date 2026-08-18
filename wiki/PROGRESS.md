@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-17
+**Cập nhật:** 2026-08-18
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 20                                                                                      |
-| Phân bố              | IT 8 · Business 8 · Life 4                                                              |
-| Số buổi học          | 4                                                                                       |
-| Streak hiện tại      | 4 buổi (Chủ nhật 2026-08-16 là ngày nghỉ theo lịch — không tính đứt)                    |
-| Streak dài nhất      | 4 buổi                                                                                  |
-| Buổi gần nhất        | 2026-08-17 (Thứ Hai) — buổi #4                                                          |
+| Tổng số từ đã học    | 25                                                                                      |
+| Phân bố              | IT 10 · Business 10 · Life 5                                                            |
+| Số buổi học          | 5                                                                                       |
+| Streak hiện tại      | 5 buổi (Chủ nhật 2026-08-16 là ngày nghỉ theo lịch — không tính đứt)                    |
+| Streak dài nhất      | 5 buổi                                                                                  |
+| Buổi gần nhất        | 2026-08-18 (Thứ Ba) — buổi #5                                                           |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -22,6 +22,7 @@
 | 2026-08-14 | 2026-W33 | #2 | edge case · bottleneck · escalate · deliverable · run out of |
 | 2026-08-15 | 2026-W33 | #3 | rollback · flaky · reach out · scope creep · get the hang of |
 | 2026-08-17 | 2026-W34 | #4 | throttle · regression · heads-up · ballpark · keep an eye on |
+| 2026-08-18 | 2026-W34 | #5 | boilerplate · stale · walk through · sign off · end up |
 
 ## Kết quả quiz tuần
 
@@ -31,4 +32,6 @@
 
 ## Đang yếu
 
-_(chưa có dữ liệu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+_(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Đáng chú ý:** tính tới 2026-08-18 đã có **20/25 từ quá hạn ôn** trong `REVIEW_QUEUE.md`, tất cả vẫn ở bậc 1. Routine tự động chỉ sinh được từ mới; `/on-tap` và `/kiem-tra` cần user trả lời mới lên/xuống bậc được. Số từ đọng đã vượt `review.maxPerSession` (15) — nên gõ `/on-tap` một buổi để giải quyết lô cũ nhất trước khi nó phình thêm.

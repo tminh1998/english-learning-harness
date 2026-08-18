@@ -4,15 +4,16 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Quá hạn tính tới 2026-08-17: 15 từ** — toàn bộ vốn từ của tuần W33, cả ba lô:
+**⚠️ Tới hạn / quá hạn tính tới 2026-08-18: 20 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
 - hạn 2026-08-16 — rollback · flaky · reach out · scope creep · get the hang of
+- hạn 2026-08-18 — throttle · regression · heads-up · ballpark · keep an eye on
 
-_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Lô 08-16 đã được ôn nhanh ở đầu buổi #4 nhưng chưa chấm nên vẫn giữ bậc 1. Gõ `/on-tap` để giải quyết cả 15 từ (config `review.maxPerSession` = 15, vừa đủ một buổi)._
+_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Các lô 08-16 và 08-18 đã được ôn nhanh ở đầu buổi #4 / #5 nhưng chưa chấm nên vẫn giữ bậc 1. Số từ đọng đã vượt `review.maxPerSession` (15) — gõ `/on-tap` sớm, ưu tiên lô cũ nhất trước._
 
-**Tới hạn ngày mai (2026-08-18): 5 từ** — throttle · regression · heads-up · ballpark · keep an eye on
+**Tới hạn ngày mai (2026-08-19): 5 từ** — boilerplate · stale · walk through · sign off · end up
 
 | Word | Bậc | next_review | Số lần đúng | Số lần sai | Học từ |
 | ---- | --- | ----------- | ----------- | ---------- | ------ |
@@ -36,6 +37,11 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 | heads-up | 1 | 2026-08-18 | 0 | 0 | 2026-08-17 |
 | ballpark | 1 | 2026-08-18 | 0 | 0 | 2026-08-17 |
 | keep an eye on | 1 | 2026-08-18 | 0 | 0 | 2026-08-17 |
+| boilerplate | 1 | 2026-08-19 | 0 | 0 | 2026-08-18 |
+| stale | 1 | 2026-08-19 | 0 | 0 | 2026-08-18 |
+| walk through | 1 | 2026-08-19 | 0 | 0 | 2026-08-18 |
+| sign off | 1 | 2026-08-19 | 0 | 0 | 2026-08-18 |
+| end up | 1 | 2026-08-19 | 0 | 0 | 2026-08-18 |
 
 ## Đã thuộc (bậc 5, đúng)
 
