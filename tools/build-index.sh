@@ -75,13 +75,20 @@ HEAD2
       printf '          <span class="lesson-words">'
       if [ -f "$md" ]; then
         # Heading từ vựng có dạng:  ## 3. **escalate** /ipa/ — _verb_ · `Business`
-        sed -n 's/^## [0-9][0-9]*\. \*\*\([^*][^*]*\)\*\*.*·[[:space:]]*`\([A-Za-z]*\)`.*/\2\
+        # Nhãn nhóm chấp nhận cả tiếng Anh (IT|Business|Life) lẫn tiếng Việt
+        # (`Giao tiếp` / `Đời sống`) vì bài cũ và routine viết khác nhau —
+        # khớp mọi thứ nằm trong cặp backtick CUỐI dòng, đừng bó vào [A-Za-z].
+        sed -n 's/^## [0-9][0-9]*\. \*\*\([^*][^*]*\)\*\*.*`\([^`][^`]*\)`[^`]*$/\2\
 \1/p' "$md" | while IFS= read -r cat && IFS= read -r w; do
           case "$cat" in
-            IT)       cls=it ;;
-            Business) cls=biz ;;
-            *)        cls=life ;;
+            IT|it|Tech|tech)                       cls=it ;;
+            Business|business|"Giao tiếp"|"Khách hàng") cls=biz ;;
+            *)                                     cls=life ;;
           esac
+          # Chip mục lục để ngắn: bỏ phần trong ngoặc của heading
+          # ("walk (someone) through (something)" → "walk through") cho khớp
+          # đúng lemma trong VOCAB_INDEX.
+          w=$(printf '%s' "$w" | sed 's/[[:space:]]*([^)]*)//g; s/  */ /g; s/^ //; s/ $//')
           printf '<span class="w %s">%s</span>' "$cls" "$w"
         done
       fi

@@ -11,6 +11,11 @@
 
 ## 1. **{{word}}** {{/ipa/}} — *{{part of speech}}* · `{{IT|Business|Life}}`
 
+<!-- ⚠️ Nhãn nhóm trong .md phải ĐÚNG 1 trong 3 chữ `IT` / `Business` / `Life`.
+     Bản .html mới hiển thị tiếng Việt (IT / Giao tiếp / Đời sống).
+     `tools/build-index.sh` đọc nhãn ở heading này để tô màu chip ngoài
+     mục lục — viết tiếng Việt vào đây là mục lục thiếu từ. -->
+
 **EN** — {{English definition, 1 câu, dùng từ dễ hơn chính nó}}
 **VI** — {{nghĩa Việt + nuance: sắc thái, trang trọng hay suồng sã, hay dùng ở đâu}}
 
