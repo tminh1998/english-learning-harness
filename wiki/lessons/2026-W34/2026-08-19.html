@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026-08-19 — 5 từ mới</title>
+    <link rel="stylesheet" href="../../assets/lesson.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div class="eyebrow">Tuần 2026-W34 · Buổi #6</div>
+        <h1>Thứ Tư, 19 tháng 8 năm 2026</h1>
+        <div class="mixline">
+          <span class="badge it">2 IT</span>
+          <span class="badge biz">2 Giao tiếp</span>
+          <span class="badge life">1 Đời sống</span>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+        <button id="theme">🌗 Theo hệ thống</button>
+        <span class="hint"
+          >Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để
+          hiện</span
+        >
+      </div>
+
+      <section class="block">
+        <h2>Ôn nhanh đầu giờ</h2>
+        <p class="sub">
+          5 từ của buổi #5 tới hạn ôn <b>hôm nay</b>. Trả lời trong đầu trước
+          rồi mới mở đáp án — mở sớm là mất tác dụng.
+        </p>
+        <ol class="ex">
+          <li class="hide-me">
+            Cache chưa được xoá nên dashboard vẫn hiện số của hôm qua. Tính từ
+            nào tả đúng mấy con số đó? (một âm tiết, vần với
+            <code>sail</code>)
+          </li>
+          <li>
+            <em
+              >“Half of this file is ___; the framework can generate it for
+              us.”</em
+            >
+            <span class="hide-me">(danh từ, không đếm được, viết liền)</span>
+          </li>
+          <li>
+            <b>Sửa lỗi</b> —
+            <em>“Could you walk through me the deploy script?”</em>
+          </li>
+          <li class="hide-me">
+            <code>sign off</code> khi là <b>động từ</b> thì đi với giới từ nào?
+            Còn khi là <b>danh từ</b> thì viết thế nào?
+          </li>
+          <li class="hide-me">
+            Sau <code>end up</code> là dạng gì của động từ? Dịch nhanh: “Bọn
+            mình chỉ định sửa một dòng, rốt cuộc lại viết lại cả module.”
+          </li>
+        </ol>
+        <details>
+          <summary>Đáp án ôn nhanh</summary>
+          <ol>
+            <li>
+              <b>stale</b>
+              <span class="hide-me"
+                >— /steɪl/, một âm tiết. Phân biệt với
+                <code>expired</code>: token thì <code>expired</code> (quá mốc
+                định sẵn), cache thì <code>stale</code> (đã có bản mới
+                hơn).</span
+              >
+            </li>
+            <li>
+              <b>boilerplate</b>
+              <span class="hide-me"
+                >— không đếm được, <b>không</b> thêm <code>s</code>,
+                <b>không</b> có <code>a</code> đứng trước.</span
+              >
+            </li>
+            <li>
+              <b>“Could you walk me through the deploy script?”</b>
+              <span class="hide-me"
+                >— tân ngữ người phải chen vào giữa.</span
+              >
+            </li>
+            <li>
+              <b>on</b> / <b>sign-off</b>
+              <span class="hide-me"
+                >— động từ: <em>sign off <b>on</b> the design</em>; danh từ có
+                gạch nối: <em>get their <b>sign-off</b></em
+                >.</span
+              >
+            </li>
+            <li>
+              <b>V-ing</b> —
+              <b>“We only meant to fix one line, but we ended up rewriting the
+              whole module.”</b>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">1</span>race condition
+              <button
+                class="say"
+                data-say="a race condition"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">
+              /ˌreɪs kənˈdɪʃn/ · <em>noun (đếm được)</em>
+            </div>
+          </div>
+          <span class="badge it">IT</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          lỗi tranh chấp thứ tự<span class="alt"
+            >hai luồng chạy song song, ai xong trước thì kết quả theo bên
+            đó</span
+          >
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>A bug that appears when two operations run
+          at the same time, so the result depends on which one happens to finish
+          first.
+          <span class="def-vi hide-me"
+            >→ Một lỗi xuất hiện khi hai thao tác cùng chạy một lúc, nên kết quả
+            phụ thuộc vào việc thao tác nào tình cờ kết thúc trước.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Hai luồng (hai request, hai tiến
+          trình, hai lần bấm nút) cùng chạy và kết quả phụ thuộc
+          <b>đứa nào về đích trước</b>. Chạy 100 lần đúng 99 lần, đúng lần thứ
+          100 thì sai — nên rất khó tái hiện. Hình ảnh gốc là một
+          <b>cuộc đua</b> (<code>race</code>). Đây là từ bạn sẽ gặp trong mọi
+          post-mortem về lỗi “không hiểu sao thỉnh thoảng nó hỏng”.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >Two workers picked up the same job — that's
+              <b>a race condition</b>, not a database problem.</span
+            >
+            <span class="vi hide-me"
+              >→ Hai worker cùng nhặt một job — đó là lỗi tranh chấp thứ tự,
+              không phải lỗi database.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >Double-clicking the pay button creates
+              <b>a race condition</b> between the click handler and the
+              confirmation call.</span
+            >
+            <span class="vi hide-me"
+              >→ Bấm đúp nút thanh toán tạo ra một lỗi tranh chấp giữa hàm xử lý
+              cú bấm và lời gọi xác nhận.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>a race condition</code> ·
+              <code>hit / run into a race condition</code> ·
+              <code>introduce a race condition</code> ·
+              <code>guard against a race condition</code> ·
+              <code>there's a race between X and Y</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v"
+              ><b>Đếm được</b>, luôn có mạo từ:
+              <em>“we hit <b>a</b> race condition”</em>. Đừng nhầm ba thứ hay đi
+              cùng nhau: <code>flaky</code> (buổi #3) là
+              <b>triệu chứng</b> — test lúc được lúc không;
+              <code>race condition</code> là <b>nguyên nhân</b>; còn
+              <code>deadlock</code> là hai bên <b>cùng đứng im chờ nhau</b>.
+              Trọng âm rơi vào <code>con-DI-tion</code> /kənˈdɪʃn/ — âm đầu nhẹ,
+              đừng đọc “con-đi-sần”.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >race conditions · a data race (gần nghĩa, hẹp hơn) · racy (hiếm
+              trong nghĩa này)</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">2</span>idempotent
+              <button class="say" data-say="idempotent" title="Nghe phát âm">
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">/aɪˈdempətənt/ · <em>adjective</em></div>
+          </div>
+          <span class="badge it">IT</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          chạy lại vẫn ra y nguyên<span class="alt"
+            >gọi nhiều lần cũng vô hại, không cộng dồn</span
+          >
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>Safe to run more than once, because
+          repeating the operation gives exactly the same result as running it a
+          single time.
+          <span class="def-vi hide-me"
+            >→ An toàn khi chạy nhiều hơn một lần, bởi vì lặp lại thao tác đó
+            cho ra đúng cùng một kết quả như khi chỉ chạy một lần.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Đây là tính chất bạn phải thiết kế cho
+          mọi thứ có thể bị gọi lại: request bị retry khi mạng chập, người dùng
+          bấm đúp, webhook bắn trùng, migration chạy lại. Trong REST:
+          <code>GET</code>, <code>PUT</code>, <code>DELETE</code> là idempotent,
+          còn <code>POST</code> thì <b>không</b> — gọi hai lần là tạo hai bản
+          ghi. Khoá chống trùng gửi kèm request gọi là
+          <code>idempotency key</code>.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >Make the payment endpoint <b>idempotent</b> so a double click
+              doesn't charge the customer twice.</span
+            >
+            <span class="vi hide-me"
+              >→ Hãy làm cho endpoint thanh toán chạy lại vẫn ra y nguyên, để
+              một cú bấm đúp không trừ tiền khách hai lần.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >The whole retry logic only works if the handler is
+              <b>idempotent</b>; otherwise every timeout duplicates an
+              order.</span
+            >
+            <span class="vi hide-me"
+              >→ Toàn bộ cơ chế thử lại chỉ hoạt động nếu hàm xử lý chạy lại vẫn
+              ra y nguyên; không thì cứ mỗi lần quá hạn là nhân đôi một đơn
+              hàng.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>an idempotent operation / endpoint / request</code> ·
+              <code>make sth idempotent</code> ·
+              <code>an idempotency key</code> ·
+              <code>PUT is idempotent, POST is not</code> ·
+              <code>idempotent by design</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v"
+              ><b>Phát âm là bẫy lớn nhất</b>: /aɪˈdempətənt/ — bắt đầu bằng
+              <b>“ai”</b> (như <code>idea</code>), trọng âm rơi vào
+              <b>DEM</b>: <em>ai-DEM-pờ-tần</em>. Rất nhiều dev Việt đọc
+              “i-đem-pô-tần”. Thứ hai, đây là <b>tính từ</b>; danh từ là
+              <code>idempotency</code> — viết
+              <em>“this endpoint is idempotence”</em> là sai. Thứ ba, nghĩa đúng
+              là <b>chạy nhiều lần cũng vô hại</b>, không phải “chỉ được chạy
+              một lần”.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >idempotency (n) · idempotence (n) · idempotently (adv, hiếm) ·
+              non-idempotent</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">3</span>push back (on something)
+              <button
+                class="say"
+                data-say="push back on the deadline"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">/ˌpʊʃ ˈbæk/ · <em>phrasal verb</em></div>
+          </div>
+          <span class="badge biz">Giao tiếp</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          phản đối, không nhận ngay<span class="alt"
+            >nói “không” theo kiểu mở đàm phán, không đóng cửa</span
+          >
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>To politely refuse or argue against a
+          request, plan or deadline instead of simply accepting it.
+          <span class="def-vi hide-me"
+            >→ Từ chối một cách lịch sự hoặc phản bác lại một yêu cầu, kế hoạch
+            hay thời hạn, thay vì chỉ đơn giản chấp nhận nó.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Khác <code>refuse</code> (đóng cửa) và
+          <code>disagree</code> (chỉ nói là không đồng ý):
+          <code>push back</code> hàm ý bạn
+          <b>đưa lý do và đề xuất phương án khác</b>, và cả hai bên đều hiểu đây
+          là chuyện bình thường trong công việc. Đây là từ đáng thuộc nhất hôm
+          nay cho việc làm với khách: bạn cần một cách nói “không” mà vẫn giữ
+          quan hệ. Danh từ là <code>pushback</code> — viết <b>liền</b>.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >I <b>pushed back on</b> the Friday deadline and asked for one
+              more sprint; they agreed after I showed the test list.</span
+            >
+            <span class="vi hide-me"
+              >→ Tôi đã phản đối cái hạn thứ Sáu và xin thêm một sprint; họ đồng
+              ý sau khi tôi đưa ra danh sách test.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >Expect some <b>pushback</b> from their team — we're asking them
+              to change a process they've used for years.</span
+            >
+            <span class="vi hide-me"
+              >→ Cứ chuẩn bị tinh thần bên họ sẽ phản đối — mình đang đề nghị họ
+              đổi một quy trình họ dùng nhiều năm rồi.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>push back on sth</code> ·
+              <code>push back hard / gently</code> ·
+              <code>get / expect / meet pushback</code> ·
+              <code>pushback from the client</code> ·
+              <code>there was a lot of pushback</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v"
+              >⚠️ <b>Hai cụm gần giống nhau, nghĩa khác hẳn:</b>
+              <code>push back <b>on</b> the deadline</code> =
+              <b>phản đối</b> cái hạn đó; còn
+              <code>push back the deadline</code> (không có <code>on</code>) =
+              <b>dời hạn muộn lại</b>. Nhầm một chữ là khách hiểu ngược. Thứ
+              hai: đối tượng của <code>push back on</code> là <b>việc</b>, không
+              phải <b>người</b> — nói <em>“I pushed back on the request”</em>,
+              không nói “I pushed back the client”. Thứ ba: danh từ
+              <code>pushback</code> viết <b>liền một từ</b>.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >pushed back · pushing back · pushback (n) · push for sth (ngược
+              lại: thúc đẩy)</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">4</span>caveat
+              <button
+                class="say"
+                data-say="with one caveat"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">/ˈkæviæt/ · <em>noun (đếm được)</em></div>
+          </div>
+          <span class="badge biz">Giao tiếp</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          điều lưu ý kèm theo<span class="alt"
+            >vế “nhưng mà…” gắn vào một lời hứa</span
+          >
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>A warning that something is only true, or
+          only works, under certain conditions.
+          <span class="def-vi hide-me"
+            >→ Một lời lưu ý rằng điều gì đó chỉ đúng, hoặc chỉ hoạt động, trong
+            một số điều kiện nhất định.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Là vế bạn gắn vào lời hứa để nó không
+          bị hiểu quá rộng:
+          <em>“Yes, Friday — with one caveat: only if staging is free.”</em>
+          Khác <code>warning</code> (cảnh báo nguy hiểm) và khác
+          <code>condition</code> trong hợp đồng (điều kiện ràng buộc pháp lý):
+          <code>caveat</code> nhẹ hơn, mang tính
+          <b>giới hạn phạm vi của điều vừa nói</b>. Trong email khách và doc kỹ
+          thuật nó xuất hiện dày đặc, thường ngay đầu dòng:
+          <em>“Caveat: this benchmark ran on a single machine.”</em>
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >We can hit that date, with one <b>caveat</b>: the export only
+              covers accounts created after 2024.</span
+            >
+            <span class="vi hide-me"
+              >→ Bọn tôi kịp ngày đó, kèm một lưu ý: phần xuất dữ liệu chỉ áp
+              dụng cho tài khoản tạo sau năm 2024.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >The report looks great, but there are a couple of
+              <b>caveats</b> in the footnotes worth reading.</span
+            >
+            <span class="vi hide-me"
+              >→ Báo cáo trông ổn đấy, nhưng có vài điều lưu ý trong phần chú
+              thích đáng đọc.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>with one caveat</code> ·
+              <code>with the caveat that…</code> ·
+              <code>a couple of caveats</code> ·
+              <code>add / attach a caveat</code> ·
+              <code>the usual caveats apply</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v"
+              >Phát âm <b>/ˈkæviæt/ — KAV-i-át</b>, trọng âm ở <b>âm đầu</b>, ba
+              âm tiết (còn có biến thể /ˈkeɪviæt/). Đừng đọc thành “ca-vi-a”
+              kiểu tiếng Pháp. <b>Đếm được</b>: <em>a caveat</em>,
+              <em>two caveats</em> — không nói “some caveat”. Mệnh đề đi sau là
+              <code>with the caveat <b>that</b> + mệnh đề</code>, không phải
+              “with the caveat of”.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >caveats · caveat emptor (thành ngữ pháp lý: người mua tự chịu
+              trách nhiệm)</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="life">
+        <div class="word-head">
+          <div>
+            <h2>
+              <span class="num">5</span>awkward
+              <button
+                class="say"
+                data-say="an awkward silence"
+                title="Nghe phát âm"
+              >
+                🔊
+              </button>
+            </h2>
+            <div class="ipa">/ˈɔːkwərd/ · <em>adjective</em></div>
+          </div>
+          <span class="badge life">Đời sống</span>
+        </div>
+
+        <p class="vi-quick hide-me">
+          ngượng, gượng gạo<span class="alt">khó xử; hoặc bất tiện, khó dùng</span>
+        </p>
+
+        <p class="def">
+          <span class="tag">EN</span>Making people feel uncomfortable or
+          embarrassed; or difficult and inconvenient to use or deal with.
+          <span class="def-vi hide-me"
+            >→ Khiến người ta thấy không thoải mái hoặc ngượng ngùng; hoặc khó
+            và bất tiện khi sử dụng, khi phải xử lý.</span
+          >
+        </p>
+        <p class="def hide-me">
+          <span class="tag">GHI CHÚ</span>Nghĩa hay dùng nhất là tả
+          <b>không khí hoặc cảm giác</b>: im lặng một cách ngại ngùng, câu hỏi
+          khiến người ta bối rối, gặp lại người yêu cũ ngoài siêu thị. Nghĩa thứ
+          hai là <b>bất tiện, khó dùng</b>: <em>an awkward angle</em>,
+          <em>an awkward API</em>. Đây là một trong những tính từ xuất hiện
+          nhiều nhất trong phim và hội thoại Mỹ — nghe đúng một chữ
+          <em>“That was awkward.”</em> là hiểu ngay cả tình huống.
+        </p>
+
+        <ul class="examples">
+          <li>
+            <span class="en"
+              >There was an <b>awkward</b> silence on the call after I asked who
+              owned the delay.</span
+            >
+            <span class="vi hide-me"
+              >→ Có một khoảng im lặng gượng gạo trong cuộc gọi sau khi tôi hỏi
+              ai chịu trách nhiệm về việc trễ hạn.</span
+            >
+          </li>
+          <li>
+            <span class="en"
+              >The date picker is <b>awkward</b> to use on a phone — you need
+              three taps just to change the month.</span
+            >
+            <span class="vi hide-me"
+              >→ Cái bộ chọn ngày rất khó dùng trên điện thoại — phải bấm ba lần
+              chỉ để đổi tháng.</span
+            >
+          </li>
+        </ul>
+
+        <div class="rows">
+          <div class="r">
+            <span class="k">Collocation</span
+            ><span class="v"
+              ><code>an awkward silence / pause / moment</code> ·
+              <code>feel awkward</code> · <code>make things awkward</code> ·
+              <code>an awkward question</code> ·
+              <code>awkward to use / to hold</code> ·
+              <code>socially awkward</code></span
+            >
+          </div>
+          <div class="r warn">
+            <span class="k">Bẫy</span
+            ><span class="v"
+              >Phát âm <b>/ˈɔːkwərd/ — AWK-wợd</b>, <b>hai</b> âm tiết, trọng âm
+              đầu; đừng tách thành ba âm tiết. Về nghĩa: <b>không</b> phải “vụng
+              về tay chân” — đó là <code>clumsy</code>;
+              <code>awkward</code> nghiêng hẳn về <b>khó xử về mặt xã hội</b>.
+              Về ngữ pháp: sau <code>feel</code> phải là <b>tính từ</b>, nói
+              <em>“I felt <b>awkward</b>”</em>, không phải “I felt awkwardly” —
+              lỗi này người Việt rất hay mắc vì thấy
+              <code>feel</code> là động từ nên tự động thêm
+              <code>-ly</code>.</span
+            >
+          </div>
+          <div class="r">
+            <span class="k">Họ từ</span
+            ><span class="v"
+              >awkwardly (adv) · awkwardness (n) · socially awkward · an awkward
+              customer (người khó chiều)</span
+            >
+          </div>
+        </div>
+      </article>
+
+      <section class="block">
+        <h2>Mẩu đọc</h2>
+        <p class="sub">
+          Hai đồng nghiệp ngồi quán cà phê sau buổi họp với khách
+        </p>
+        <div class="passage">
+          — So, how did it go?<br />
+          — Fine, mostly. They wanted the retry button live by Friday and I
+          <b>pushed back on</b> the date — a week was a ballpark, not a promise.
+          There was an <b>awkward</b> silence for about five seconds, and then
+          their PM agreed.<br />
+          — Did you bring up the payment bug?<br />
+          — I did, with one <b>caveat</b>: we can only fix it properly if we
+          make that endpoint <b>idempotent</b>. Right now there's
+          <b>a race condition</b> between the click handler and the confirmation
+          call, so a double click charges people twice. That's also why the
+          checkout test is flaky.<br />
+          — Good. Send them a heads-up before we deploy, and get their sign-off
+          in writing this time.
+        </div>
+        <details>
+          <summary>Bản dịch</summary>
+          <p class="hide-me">
+            — Thế nào, buổi họp ổn không?<br />
+            — Nhìn chung là ổn. Họ muốn nút thử lại chạy thật trước thứ Sáu, và
+            tớ đã phản đối cái hạn đó — một tuần là con số áng chừng, không phải
+            lời hứa. Có khoảng năm giây im lặng gượng gạo, rồi PM bên họ đồng
+            ý.<br />
+            — Cậu có nêu cái lỗi thanh toán không?<br />
+            — Có, kèm một điều lưu ý: bọn mình chỉ sửa được triệt để nếu làm cho
+            cái endpoint đó chạy lại vẫn ra y nguyên. Hiện giờ đang có lỗi tranh
+            chấp thứ tự giữa hàm xử lý cú bấm và lời gọi xác nhận, nên bấm đúp
+            một cái là trừ tiền khách hai lần. Đó cũng là lý do bài test thanh
+            toán cứ chập chờn.<br />
+            — Tốt. Nhắn báo trước cho họ một tiếng trước khi mình deploy, và lần
+            này nhớ lấy duyệt chính thức bằng văn bản.
+          </p>
+        </details>
+      </section>
+
+      <section class="block">
+        <h2>Bài tập</h2>
+        <p class="sub">Làm xong rồi mới mở đáp án.</p>
+        <ol class="ex">
+          <li>
+            <b>Chọn từ đúng cho từng tình huống</b> —
+            <code>race condition</code> · <code>idempotent</code> ·
+            <code>caveat</code> · <code>pushback</code> ·
+            <code>awkward</code>
+            <span class="hide-me">
+              <br />(a) Bấm nút “Thanh toán” hai lần thì bị trừ tiền hai lần →
+              cần làm endpoint này ___. <br />(b) Hai worker cùng nhặt một job,
+              ai xong sau thì đè lên kết quả của người kia → đây là một ___.
+              <br />(c) Bạn hứa xong thứ Sáu, nhưng kèm vế “nếu môi trường
+              staging rảnh” → cái vế đó gọi là một ___.
+            </span>
+          </li>
+          <li>
+            <b>Điền giới từ hoặc chia dạng từ</b><br />
+            (a) <em>“The client pushed back ___ our estimate.”</em><br />
+            (b) <em>“We got a lot of ___ from their legal team.”</em>
+            <span class="hide-me">(dạng danh từ của <code>push back</code>)</span
+            ><br />
+            (c)
+            <em
+              >“We can ship on Tuesday, with the caveat ___ the API key arrives
+              on Monday.”</em
+            >
+          </li>
+          <li>
+            <b>Sửa lỗi sai</b> — mỗi câu có đúng một lỗi:<br />
+            (a) <em>“This endpoint is idempotence, so retrying is safe.”</em
+            ><br />
+            (b) <em>“I felt very awkwardly when nobody answered.”</em><br />
+            (c) <em>“We hit race condition in the queue worker last night.”</em>
+          </li>
+          <li class="hide-me">
+            <b>Phân biệt hai cụm</b> —
+            <code>push back on the deadline</code> khác
+            <code>push back the deadline</code> ở chỗ nào? Đặt một câu cho mỗi
+            cụm.
+          </li>
+          <li class="hide-me">
+            <b>Dịch Việt–Anh</b> — “Tôi sẽ chốt vào thứ Sáu, kèm một lưu ý: bọn
+            tôi vẫn đang chờ khách duyệt bản thiết kế.”
+          </li>
+        </ol>
+        <details>
+          <summary>Đáp án</summary>
+          <ol>
+            <li>
+              (a) <b>idempotent</b>
+              <span class="hide-me"
+                >— chạy lại vẫn ra một kết quả, nên bấm đúp không trừ tiền hai
+                lần.</span
+              >
+              (b) <b>a race condition</b>
+              <span class="hide-me"
+                >— hai bên chạy song song, kết quả phụ thuộc đứa nào xong trước;
+                nhớ mạo từ <code>a</code>.</span
+              >
+              (c) <b>caveat</b>
+              <span class="hide-me"
+                >— điều lưu ý giới hạn lời hứa vừa nói.</span
+              >
+            </li>
+            <li>
+              (a) <b>on</b> — <code>push back on sth</code>. (b)
+              <b>pushback</b>
+              <span class="hide-me"
+                >— danh từ, viết <b>liền</b>, đi với <code>a lot of</code>.</span
+              >
+              (c) <b>that</b>
+              <span class="hide-me"
+                >— cụm chuẩn là <code>with the caveat that + mệnh đề</code>,
+                không phải “of”.</span
+              >
+            </li>
+            <li>
+              (a) <b>“This endpoint is idempotent.”</b>
+              <span class="hide-me"
+                ><code>idempotence</code> là danh từ, ở đây cần tính từ.</span
+              ><br />
+              (b) <b>“I felt very awkward when nobody answered.”</b>
+              <span class="hide-me">Sau <code>feel</code> phải là tính từ.</span
+              ><br />
+              (c) <b>“We hit a race condition in the queue worker.”</b>
+              <span class="hide-me"
+                ><code>race condition</code> đếm được, phải có mạo từ.</span
+              >
+            </li>
+            <li>
+              <b>on = phản đối · không có on = dời hạn muộn lại</b>
+              <span class="hide-me"
+                >— <em>“I pushed back <b>on</b> the deadline because two devs
+                are on leave.”</em> (phản đối cái hạn) so với
+                <em>“They pushed back the deadline to the 30th.”</em> (dời hạn
+                sang muộn hơn). Một chữ <code>on</code> đổi hẳn nghĩa, và khách
+                sẽ hiểu ngược nếu bạn nhầm.</span
+              >
+            </li>
+            <li>
+              <b
+                >“I'll sign off on Friday, with one caveat: we're still waiting
+                for the client to sign off on the design.”</b
+              >
+              <span class="hide-me"
+                >— hoặc tự nhiên hơn:
+                <em
+                  >“…with one caveat: we're still waiting for the client's
+                  sign-off on the design.”</em
+                >
+                Chú ý <code>caveat</code> đếm được nên có <code>one</code>, và
+                <code>sign off</code> đi với <code>on</code>.</span
+              >
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="block">
+        <h2>Ghi chú buổi học</h2>
+        <ul class="ex">
+          <li>
+            <b>“I'd like to push back on that date — here's why.”</b>
+            <span class="hide-me"
+              >— từ đáng thuộc nhất hôm nay; đây là cách nói “không” mà vẫn giữ
+              được quan hệ với khách. Học thuộc nguyên khối.</span
+            >
+          </li>
+          <li>
+            <b>push back <em>on</em> the deadline ≠ push back the deadline</b>
+            <span class="hide-me"
+              >— phản đối cái hạn, so với dời hạn muộn lại. Sai một giới từ là
+              khách hiểu ngược hoàn toàn.</span
+            >
+          </li>
+          <li>
+            <b
+              >“the test was flaky because of a race condition in the worker”</b
+            >
+            <span class="hide-me"
+              >— <code>flaky</code> là <b>triệu chứng</b> nhìn thấy được,
+              <code>race condition</code> là <b>nguyên nhân</b> bên dưới. Trong
+              post-mortem nên viết cả hai.</span
+            >
+          </li>
+          <li>
+            <b>idempotent /aɪˈdempətənt/ · caveat /ˈkæviæt/ · awkward
+            /ˈɔːkwərd/</b>
+            <span class="hide-me"
+              >— cả ba từ này người Việt gần như luôn đọc sai ngay lần đầu:
+              <code>idempotent</code> bắt đầu bằng “ai” và nhấn DEM;
+              <code>caveat</code> nhấn âm đầu; <code>awkward</code> chỉ hai âm
+              tiết.</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        Bản Markdown: <a href="2026-08-19.md">2026-08-19.md</a> · Toàn bộ từ đã
+        học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> · Lịch ôn:
+        <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+        <br />Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại các từ của tuần
+        2026-W34.
+      </footer>
+    </div>
+    <script src="../../assets/lesson.js"></script>
+  </body>
+</html>

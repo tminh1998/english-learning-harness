@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 25 từ** · IT 10 · Business 10 · Life 5 · ad-hoc 0
-**Cập nhật:** 2026-08-18
+**Tổng: 30 từ** · IT 12 · Business 12 · Life 6 · ad-hoc 0
+**Cập nhật:** 2026-08-19
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -43,6 +43,11 @@
 | 23 | walk through | walk sb through, walked through, walking through, walkthrough | phrasal verb | Business | dẫn đi từng bước, hướng dẫn tường tận | 2026-08-18 | lesson |
 | 24 | sign off | sign-off, signoff, signed off, signing off, sign off on | phrasal verb | Business | duyệt chính thức, chốt | 2026-08-18 | lesson |
 | 25 | end up | ended up, ending up, ends up, wind up | phrasal verb | Life | rốt cuộc lại, cuối cùng thành ra | 2026-08-18 | lesson |
+| 26 | race condition | race conditions, a data race, race between X and Y | noun (đếm được) | IT | lỗi tranh chấp thứ tự | 2026-08-19 | lesson |
+| 27 | idempotent | idempotency, idempotence, idempotently, non-idempotent, idempotency key | adjective | IT | chạy lại vẫn ra y nguyên | 2026-08-19 | lesson |
+| 28 | push back | pushed back, pushing back, pushback, push back on | phrasal verb | Business | phản đối, không nhận ngay | 2026-08-19 | lesson |
+| 29 | caveat | caveats, with the caveat that, caveat emptor | noun (đếm được) | Business | điều lưu ý kèm theo | 2026-08-19 | lesson |
+| 30 | awkward | awkwardly, awkwardness, socially awkward, an awkward customer | adjective | Life | ngượng, gượng gạo; bất tiện | 2026-08-19 | lesson |
 
 <!--
 LUẬT GHI:
