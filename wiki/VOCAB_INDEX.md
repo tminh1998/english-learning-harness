@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 30 từ** · IT 12 · Business 12 · Life 6 · ad-hoc 0
-**Cập nhật:** 2026-08-19
+**Tổng: 35 từ** · IT 14 · Business 14 · Life 7 · ad-hoc 0
+**Cập nhật:** 2026-08-20
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -48,6 +48,11 @@
 | 28 | push back | pushed back, pushing back, pushback, push back on | phrasal verb | Business | phản đối, không nhận ngay | 2026-08-19 | lesson |
 | 29 | caveat | caveats, with the caveat that, caveat emptor | noun (đếm được) | Business | điều lưu ý kèm theo | 2026-08-19 | lesson |
 | 30 | awkward | awkwardly, awkwardness, socially awkward, an awkward customer | adjective | Life | ngượng, gượng gạo; bất tiện | 2026-08-19 | lesson |
+| 31 | refactor | refactored, refactoring, refactors, a refactor | verb (cũng là noun) | IT | dọn/viết lại code, không đổi hành vi | 2026-08-20 | lesson |
+| 32 | merge conflict | merge conflicts, merge, merging, merged, conflict, conflicting | noun (đếm được) | IT | xung đột khi gộp code | 2026-08-20 | lesson |
+| 33 | loop in | loop sb in, looped in, looping in, in the loop, out of the loop, keep sb in the loop | phrasal verb | Business | kéo thêm người vào cuộc trao đổi | 2026-08-20 | lesson |
+| 34 | bandwidth | mental bandwidth, a bandwidth issue, no bandwidth | noun (không đếm được) | Business | quỹ thời gian / sức làm còn rảnh | 2026-08-20 | lesson |
+| 35 | catch up | caught up, catching up, a catch-up, catch up with, catch up on, catch up to | phrasal verb | Life | gặp hàn huyên; làm bù cho kịp | 2026-08-20 | lesson |
 
 <!--
 LUẬT GHI:

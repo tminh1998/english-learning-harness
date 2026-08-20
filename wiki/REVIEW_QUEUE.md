@@ -4,17 +4,18 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-08-19: 25 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-08-20: 30 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
 - hạn 2026-08-16 — rollback · flaky · reach out · scope creep · get the hang of
 - hạn 2026-08-18 — throttle · regression · heads-up · ballpark · keep an eye on
 - hạn 2026-08-19 — boilerplate · stale · walk through · sign off · end up
+- hạn 2026-08-20 — race condition · idempotent · push back · caveat · awkward
 
-_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Các lô 08-16, 08-18 và 08-19 đã được ôn nhanh ở đầu buổi #4 / #5 / #6 nhưng chưa chấm nên vẫn giữ bậc 1. Số từ đọng đã gấp rưỡi `review.maxPerSession` (15) — gõ `/on-tap` sớm, ưu tiên lô cũ nhất trước._
+_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Các lô 08-16, 08-18, 08-19 và 08-20 đã được ôn nhanh ở đầu buổi #4 / #5 / #6 / #7 nhưng chưa chấm nên vẫn giữ bậc 1. Số từ đọng đã gấp rưỡi `review.maxPerSession` (15) — gõ `/on-tap` sớm, ưu tiên lô cũ nhất trước._
 
-**Tới hạn ngày mai (2026-08-20): 5 từ** — race condition · idempotent · push back · caveat · awkward
+**Tới hạn ngày mai (2026-08-21): 5 từ** — refactor · merge conflict · loop in · bandwidth · catch up
 
 | Word | Bậc | next_review | Số lần đúng | Số lần sai | Học từ |
 | ---- | --- | ----------- | ----------- | ---------- | ------ |
@@ -48,6 +49,11 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 | push back | 1 | 2026-08-20 | 0 | 0 | 2026-08-19 |
 | caveat | 1 | 2026-08-20 | 0 | 0 | 2026-08-19 |
 | awkward | 1 | 2026-08-20 | 0 | 0 | 2026-08-19 |
+| refactor | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
+| merge conflict | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
+| loop in | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
+| bandwidth | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
+| catch up | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
 
 ## Đã thuộc (bậc 5, đúng)
 
