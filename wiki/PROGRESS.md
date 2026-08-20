@@ -24,7 +24,7 @@
 | 2026-08-17 | 2026-W34 | #4 | throttle · regression · heads-up · ballpark · keep an eye on |
 | 2026-08-18 | 2026-W34 | #5 | boilerplate · stale · walk through · sign off · end up |
 | 2026-08-19 | 2026-W34 | #6 | race condition · idempotent · push back · caveat · awkward |
-| 2026-08-20 | 2026-W34 | #7 | refactor · merge conflict · loop in · bandwidth · catch up |
+| 2026-08-20 | 2026-W34 | #7 | technical debt · cherry-pick · loop in · bandwidth · catch up |
 
 ## Kết quả quiz tuần
 

@@ -107,58 +107,61 @@
         <div class="word-head">
           <div>
             <h2>
-              <span class="num">1</span>refactor
+              <span class="num">1</span>technical debt
               <button
                 class="say"
-                data-say="refactor the code"
+                data-say="a lot of technical debt"
                 title="Nghe phát âm"
               >
                 🔊
               </button>
             </h2>
-            <div class="ipa">/ˌriːˈfæktər/ · <em>verb (cũng là noun)</em></div>
+            <div class="ipa">
+              /ˌteknɪkl ˈdet/ · <em>noun (không đếm được)</em>
+            </div>
           </div>
           <span class="badge it">IT</span>
         </div>
 
         <p class="vi-quick hide-me">
-          dọn/viết lại code<span class="alt"
-            >gọn hơn mà <b>không đổi hành vi</b></span
+          nợ phải trả sau vì làm nhanh<span class="alt"
+            >nói tắt: <b>tech debt</b></span
           >
         </p>
 
         <p class="def">
-          <span class="tag">EN</span>To rewrite existing code so it is cleaner or
-          easier to work with, without changing what it actually does.
+          <span class="tag">EN</span>The extra work you will have to do later
+          because you chose a quick solution now instead of a better, slower
+          one.
           <span class="def-vi hide-me"
-            >→ Viết lại code sẵn có cho sạch hơn, dễ sửa hơn — mà nó vẫn làm đúng những gì nó đang làm.</span
+            >→ Phần việc phải trả sau, vì hôm nay chọn cách làm nhanh cho kịp thay vì làm cho tử tế.</span
           >
         </p>
         <p class="def hide-me">
-          <span class="tag">GHI CHÚ</span>Điểm mấu chốt phân biệt với “sửa tính
-          năng”: refactor xong thì <b>đầu vào — đầu ra vẫn y nguyên</b>, chỉ bên
-          trong sạch hơn. Là từ bạn gặp mỗi ngày trong PR và code review. Nếu vừa
-          dọn vừa thêm/sửa tính năng thì đó <b>không</b> còn là refactor thuần —
-          nên tách thành hai PR để reviewer dễ soi.
+          <span class="tag">GHI CHÚ</span>Trong chat và standup hay nói tắt là
+          <code>tech debt</code>. Đây <b>không</b> phải câu chê code xấu — nó là
+          cách nói có chủ đích: vay để kịp deadline thì được, nhưng phải có kế
+          hoạch trả. Văn bản gửi khách thì viết đủ
+          <code>technical debt</code>.
         </p>
 
         <ul class="examples">
           <li>
             <span class="en"
-              >I'll <b>refactor</b> the auth module before we add SSO — it's too
-              tangled to extend right now.</span
+              >We shipped on time, but we took on a lot of
+              <b>technical debt</b> in the payment flow.</span
             >
             <span class="vi hide-me"
-              >→ Tôi sẽ refactor module auth trước rồi mới thêm SSO — giờ nó rối quá, không mở rộng nổi.</span
+              >→ Kịp hạn thật, nhưng luồng thanh toán để lại một đống nợ phải trả sau.</span
             >
           </li>
           <li>
             <span class="en"
-              >This PR is a pure <b>refactor</b>: same behaviour, 200 fewer
-              lines, all tests still green.</span
+              >Can we set aside one day a sprint to <b>pay down</b> some
+              <b>tech debt</b>?</span
             >
             <span class="vi hide-me"
-              >→ PR này thuần refactor thôi: hành vi y nguyên, bớt 200 dòng, test vẫn xanh hết.</span
+              >→ Mỗi sprint mình chừa một ngày trả bớt tech debt được không?</span
             >
           </li>
         </ul>
@@ -167,27 +170,28 @@
           <div class="r">
             <span class="k">Collocation</span
             ><span class="v"
-              ><code>refactor the code / a module</code> ·
-              <code>a pure refactor</code> · <code>refactor sth into…</code> ·
-              <code>a big / risky refactor</code> ·
-              <code>refactor as we go</code></span
+              ><code>take on / accrue / rack up technical debt</code> ·
+              <code>pay down / pay off technical debt</code> ·
+              <code>a lot of tech debt</code> · <code>a tech-debt ticket</code> ·
+              <code>high-interest tech debt</code></span
             >
           </div>
           <div class="r warn">
             <span class="k">Bẫy</span
             ><span class="v"
-              ><b>Không đổi hành vi</b> là bản chất; vừa dọn vừa thêm tính năng
-              thì không còn là refactor thuần — tách PR. Phát âm
-              <b>/ˌriːˈfæktər/</b> bắt đầu “ri-”, đừng đọc “re-” như
-              <code>record</code>. Động từ có quy tắc:
-              <em>refactored</em> (một mạch), không tách hai âm.</span
+              >Phát âm <code>debt</code> là <b>/det/</b> — chữ <b>b câm</b> hoàn
+              toàn, đừng đọc “đép-t”. <b>Không đếm được</b>:
+              <em>a lot of tech debt</em>, không nói “a technical debt” hay
+              “technical debts”. Đi trọn ẩn dụ vay–trả:
+              <code>take on</code> (vay) ↔ <code>pay down</code> (trả) — không
+              dùng “fix/repair debt”.</span
             >
           </div>
           <div class="r">
             <span class="k">Họ từ</span
             ><span class="v"
-              >refactored · refactoring (n/adj) · refactor (n) · factor (gốc,
-              nghĩa khác hẳn)</span
+              >tech debt (nói tắt) · debt (n) · be in debt · indebted · a
+              debt-heavy codebase</span
             >
           </div>
         </div>
@@ -197,60 +201,60 @@
         <div class="word-head">
           <div>
             <h2>
-              <span class="num">2</span>merge conflict
+              <span class="num">2</span>cherry-pick
               <button
                 class="say"
-                data-say="a merge conflict"
+                data-say="cherry-pick the commit onto the release branch"
                 title="Nghe phát âm"
               >
                 🔊
               </button>
             </h2>
-            <div class="ipa">
-              /ˌmɜːrdʒ ˈkɒnflɪkt/ · <em>noun (đếm được)</em>
-            </div>
+            <div class="ipa">/ˈtʃeri pɪk/ · <em>verb (có gạch nối)</em></div>
           </div>
           <span class="badge it">IT</span>
         </div>
 
         <p class="vi-quick hide-me">
-          hai nhánh sửa cùng chỗ, Git chịu<span class="alt">phải ngồi giải quyết tay</span>
+          bê riêng một commit sang nhánh khác<span class="alt"
+            >nghĩa bóng: chỉ nhặt cái có lợi</span
+          >
         </p>
 
         <p class="def">
-          <span class="tag">EN</span>A situation in Git where two branches
-          changed the same lines, so the tool cannot combine them automatically
-          and you must fix it by hand.
+          <span class="tag">EN</span>In Git: to copy one specific commit onto
+          another branch. In everyday use: to choose only the items that suit
+          you and ignore the rest.
           <span class="def-vi hide-me"
-            >→ Hai nhánh sửa trúng cùng mấy dòng, Git không tự gộp được nên đành ngồi giải quyết bằng tay.</span
+            >→ Trong Git: bê đúng một commit sang nhánh khác. Nghĩa đời thường: chỉ nhặt phần có lợi cho mình, còn lại lờ đi.</span
           >
         </p>
         <p class="def hide-me">
-          <span class="tag">GHI CHÚ</span>Từ bạn gặp gần như mỗi tuần khi làm
-          nhóm — biết gọi đúng tên giúp trao đổi với đồng nghiệp nước ngoài trôi
-          hơn. Động từ đi cùng thường là <code>resolve</code> (giải quyết), không
-          phải “fix/repair”. Đừng lẫn với <code>race condition</code> (buổi #6):
-          merge conflict là lúc <b>gộp code</b>, race condition là lúc
-          <b>chạy code</b>.
+          <span class="tag">GHI CHÚ</span>Nghĩa Git thì trung tính — bê một
+          commit, <b>không</b> kéo theo cả nhánh. Nhưng nghĩa bóng
+          <b>mang sắc tiêu cực</b>: nói
+          <em>“you're cherry-picking the numbers”</em> là đang trách người ta
+          chọn số liệu có lợi. Hai nghĩa cách nhau rất xa — cẩn thận khi nói với
+          khách.
         </p>
 
         <ul class="examples">
           <li>
             <span class="en"
-              >I hit a <b>merge conflict</b> in <code>package-lock.json</code> —
-              can you walk me through which side to keep?</span
+              >Just <b>cherry-pick</b> that hotfix onto <code>release/1.8</code>
+              — we don't want the rest of main yet.</span
             >
             <span class="vi hide-me"
-              >→ Tôi dính merge conflict ở <code>package-lock.json</code> — bạn xem giúp nên giữ bên nào với?</span
+              >→ Cứ bê riêng cái hotfix đó sang <code>release/1.8</code> thôi — phần còn lại của main chưa lấy vội.</span
             >
           </li>
           <li>
             <span class="en"
-              >Rebase early and often so you don't end up with a huge
-              <b>merge conflict</b> on Friday.</span
+              >The report <b>cherry-picks</b> the two best weeks and quietly
+              skips the outage.</span
             >
             <span class="vi hide-me"
-              >→ Cứ rebase liên tục vào, không thứ Sáu lại ngồi gỡ một đống merge conflict đấy.</span
+              >→ Báo cáo chỉ nhặt đúng hai tuần đẹp nhất, còn vụ sập hệ thống thì lờ đi.</span
             >
           </li>
         </ul>
@@ -259,27 +263,28 @@
           <div class="r">
             <span class="k">Collocation</span
             ><span class="v"
-              ><code>hit / get / run into a merge conflict</code> ·
-              <code>resolve a merge conflict</code> ·
-              <code>a nasty / huge merge conflict</code> ·
-              <code>merge conflicts in &lt;file&gt;</code></span
+              ><code>cherry-pick a commit</code> ·
+              <code>cherry-pick sth onto / into a branch</code> ·
+              <code>cherry-pick the fix / the hotfix</code> ·
+              <code>cherry-pick data / examples</code> (nghĩa xấu) ·
+              <code>a clean cherry-pick</code></span
             >
           </div>
           <div class="r warn">
             <span class="k">Bẫy</span
             ><span class="v"
-              ><b>Đếm được</b>: <em>a merge conflict</em>,
-              <em>three merge conflicts</em> — đừng nói “merge conflict happened”
-              trống mạo từ. Động từ chuẩn là <code>resolve</code>, không phải
-              “fix”. Đừng lẫn với <code>race condition</code>: đây là xung đột lúc
-              <b>gộp</b>, kia là lỗi lúc <b>chạy</b>.</span
+              ><b>Có gạch nối</b>: <em>cherry-pick</em>, quá khứ
+              <em>cherry-picked</em> — đừng viết rời “cherry pick”. Giới từ là
+              <code>onto</code> / <code>into</code> + nhánh,
+              <b>không phải “to”</b>. Nghĩa bóng là lời trách, không phải lời
+              khen — dùng nhầm với khách là mất lòng.</span
             >
           </div>
           <div class="r">
             <span class="k">Họ từ</span
             ><span class="v"
-              >merge (v/n) · merging · merged · conflict (v/n) · conflicting
-              changes</span
+              >cherry-picked · cherry-picking · a cherry-pick (n, trong Git) ·
+              cherry-picker</span
             >
           </div>
         </div>
@@ -569,23 +574,23 @@
         <p class="sub">Thread Slack đầu ngày trong nhóm dev</p>
         <div class="passage">
           <b>Mai:</b> Morning! Before standup — I have some <b>bandwidth</b> this
-          afternoon, so I can pick up the login cleanup. Plan is to
-          <b>refactor</b> the auth module, no behaviour change.<br />
-          <b>Nam:</b> Nice. Heads-up: I touched the same file yesterday, so you
-          might hit <b>a merge conflict</b> on <code>auth.ts</code>. Rebase onto
-          main first.<br />
-          <b>Mai:</b> Good call. If it gets messy I'll <b>loop in</b> you to
-          check which side to keep.<br />
+          afternoon, so I can finally pay down some of the
+          <b>tech debt</b> in the login code.<br />
+          <b>Nam:</b> Nice. One thing first: the timeout hotfix is still only on
+          main. Can you <b>cherry-pick</b> it onto <code>release/1.8</code>
+          before you touch anything else?<br />
+          <b>Mai:</b> Sure. If it doesn't apply cleanly I'll <b>loop in</b> Nga —
+          she wrote that commit.<br />
           <b>Nam:</b> 👍 Also let's <b>catch up</b> after lunch — I want to walk
           you through the new token flow before you start.
         </div>
         <details>
           <summary>Bản dịch</summary>
           <p class="hide-me">
-            <b>Mai:</b> Chào buổi sáng! Tranh thủ trước giờ standup — chiều nay tôi còn rảnh, nhận phần dọn dẹp đăng nhập nhé. Định refactor module auth thôi, không đổi hành vi gì cả.<br />
-            <b>Nam:</b> Ngon. Báo trước một tiếng: hôm qua tôi có động đúng file đó, khả năng bạn sẽ dính merge conflict ở <code>auth.ts</code>. Rebase lên main cái đã.<br />
-            <b>Mai:</b> Chuẩn. Rối quá thì tôi kéo bạn vào xem giúp nên giữ bên nào.<br />
-            <b>Nam:</b> 👍 À, ăn trưa xong ngồi lại chút nhé — tôi muốn dẫn bạn qua luồng token mới rồi hẵng bắt tay vào.
+            <b>Mai:</b> Chào buổi sáng! Tranh thủ trước giờ standup — chiều nay tôi còn rảnh, tính trả bớt đống tech debt ở phần đăng nhập.<br />
+            <b>Nam:</b> Ngon. Nhưng làm cái này trước đã: hotfix timeout mới nằm trên main thôi. Bê nó sang <code>release/1.8</code> giúp tôi rồi hẵng động vào chỗ khác nhé.<br />
+            <b>Mai:</b> Được. Bê không trót lọt thì tôi kéo Nga vào — commit đó chị ấy viết.<br />
+            <b>Nam:</b> 👍 À, ăn trưa xong ngồi lại chút — tôi muốn dẫn bạn qua luồng token mới rồi hẵng bắt tay vào.
           </p>
         </details>
       </section>
@@ -595,13 +600,14 @@
         <p class="sub">Làm xong rồi mới mở đáp án.</p>
         <ol class="ex">
           <li>
-            <b>Chọn từ đúng</b> — <code>refactor</code> ·
-            <code>merge conflict</code> · <code>loop in</code> ·
+            <b>Chọn từ đúng</b> — <code>technical debt</code> ·
+            <code>cherry-pick</code> · <code>loop in</code> ·
             <code>bandwidth</code> · <code>catch up</code>
             <span class="hide-me">
-              <br />(a) Hai nhánh sửa cùng một dòng, Git không tự gộp được → bạn
-              gặp một ___. <br />(b) Viết lại code cho gọn mà không đổi hành vi →
-              ___ code. <br />(c) “Tôi không đủ thời gian tuần này” →
+              <br />(a) Chỉ bê riêng một commit sang nhánh release → ___ it onto
+              <code>release/1.8</code>. <br />(b) Làm nhanh cho kịp hạn, sau này
+              phải trả giá → <em>we took on a lot of ___.</em> <br />(c) “Tôi
+              không đủ thời gian tuần này” →
               <em>I don't have the ___ this week.</em>
             </span>
           </li>
@@ -609,12 +615,13 @@
             <b>Điền giới từ</b><br />
             (a) <em>“Let me ___ ___ the client so they're aware.”</em>
             <span class="hide-me">(kéo khách vào cuộc trao đổi)</span><br />
-            (b) <em>“I need to catch up ___ my unread emails.”</em><br />
-            (c) <em>“Let's catch up ___ Sarah when she's back from leave.”</em>
+            (b) <em>“Can you cherry-pick that commit ___ the release branch?”</em><br />
+            (c) <em>“I need to catch up ___ my unread emails.”</em><br />
+            (d) <em>“Let's catch up ___ Sarah when she's back from leave.”</em>
           </li>
           <li>
             <b>Sửa lỗi</b> — mỗi câu một lỗi:<br />
-            (a) <em>“We hit merge conflict in the lockfile.”</em><br />
+            (a) <em>“We have a lot of technical debts in this module.”</em><br />
             (b) <em>“Can you loop in me on that thread?”</em><br />
             (c) <em>“Do you have a bandwidth to review this today?”</em>
           </li>
@@ -623,18 +630,18 @@
             <code>catch up on sth</code> thế nào? Đặt một câu cho mỗi cụm.
           </li>
           <li class="hide-me">
-            <b>Dịch Việt–Anh</b> — “Đây là PR dọn code thuần, không đổi hành vi;
-            nếu bạn dính merge conflict thì kéo tôi vào nhé.”
+            <b>Dịch Việt–Anh</b> — “Cứ bê riêng cái hotfix đó sang nhánh
+            release; phần trả nợ kỹ thuật để sau, tuần này tôi không đủ sức.”
           </li>
         </ol>
         <details>
           <summary>Đáp án</summary>
           <ol>
             <li>
-              (a) <b>merge conflict</b>
-              <span class="hide-me">— đếm được, có mạo từ <code>a</code>.</span>
-              (b) <b>refactor</b>
-              <span class="hide-me">— dọn code, giữ nguyên hành vi.</span>
+              (a) <b>cherry-pick</b>
+              <span class="hide-me">— bê đúng một commit sang nhánh khác.</span>
+              (b) <b>technical debt</b>
+              <span class="hide-me">— không đếm được, đi với <em>a lot of</em>.</span>
               (c) <b>bandwidth</b>
               <span class="hide-me">— không đếm được, không có <code>a</code>.</span>
             </li>
@@ -644,14 +651,16 @@
                 >— <em>loop in the client</em> (danh từ để sau được; đại từ thì
                 xen giữa).</span
               >
-              (b) <b>on</b>
+              (b) <b>onto</b>
+              <span class="hide-me">— hoặc <code>into</code>, không dùng “to”.</span>
+              (c) <b>on</b>
               <span class="hide-me">— <code>catch up on + việc</code>.</span>
-              (c) <b>with</b>
+              (d) <b>with</b>
               <span class="hide-me">— <code>catch up with + người</code>.</span>
             </li>
             <li>
-              (a) <b>“We hit a merge conflict in the lockfile.”</b>
-              <span class="hide-me">— đếm được, thiếu mạo từ.</span><br />
+              (a) <b>“We have a lot of technical debt in this module.”</b>
+              <span class="hide-me">— không đếm được, bỏ <code>-s</code>.</span><br />
               (b) <b>“Can you loop me in on that thread?”</b>
               <span class="hide-me">— đại từ phải xen vào giữa.</span><br />
               (c) <b>“Do you have the bandwidth…?”</b>
@@ -671,12 +680,12 @@
             </li>
             <li>
               <b
-                >“This is a pure refactor — no behaviour change; if you hit a
-                merge conflict, loop me in.”</b
+                >“Just cherry-pick that hotfix onto the release branch; the tech
+                debt cleanup can wait — I don't have the bandwidth this week.”</b
               >
               <span class="hide-me"
-                >— chú ý <code>a merge conflict</code> có mạo từ, và
-                <code>loop <b>me</b> in</code> đại từ xen giữa.</span
+                >— chú ý <code>cherry-pick … <b>onto</b></code> và
+                <code>tech debt</code> không có <code>-s</code>.</span
               >
             </li>
           </ol>
@@ -694,10 +703,18 @@
             >
           </li>
           <li>
-            <b>refactor = đổi bên trong, giữ nguyên hành vi</b>
+            <b>debt = /det/, chữ b câm · không đếm được</b>
             <span class="hide-me"
-              >— vừa dọn vừa thêm tính năng thì không còn là refactor thuần, tách
-              PR ra.</span
+              >— <em>a lot of tech debt</em>, không có <code>debts</code>. Ẩn dụ
+              vay–trả đi trọn bộ: <code>take on</code> ↔
+              <code>pay down</code>, không nói “fix the debt”.</span
+            >
+          </li>
+          <li>
+            <b>cherry-pick có gạch nối · đi với <em>onto</em></b>
+            <span class="hide-me"
+              >— nghĩa Git trung tính, nghĩa bóng (nhặt số liệu có lợi) là lời
+              trách — đừng dùng nhầm chỗ với khách.</span
             >
           </li>
           <li>
@@ -705,14 +722,6 @@
             <span class="hide-me"
               >— hai cặp giới từ/vị trí dễ sai nhất hôm nay; học thuộc nguyên
               cụm.</span
-            >
-          </li>
-          <li>
-            <b>merge /mɜːrdʒ/ · bandwidth /ˈbændwɪdθ/ · refactor /ˌriːˈfæktər/</b>
-            <span class="hide-me"
-              >— <code>merge</code> có âm “dʒ” cuối; <code>bandwidth</code> đừng
-              nuốt đuôi -dth; <code>refactor</code> bắt đầu “ri-” không phải
-              “re-”.</span
             >
           </li>
         </ul>

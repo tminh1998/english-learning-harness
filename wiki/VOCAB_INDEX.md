@@ -48,8 +48,8 @@
 | 28 | push back | pushed back, pushing back, pushback, push back on | phrasal verb | Business | phản đối lại, chưa nhận ngay | 2026-08-19 | lesson |
 | 29 | caveat | caveats, with the caveat that, caveat emptor | noun (đếm được) | Business | cái vế "nhưng mà" kèm theo | 2026-08-19 | lesson |
 | 30 | awkward | awkwardly, awkwardness, socially awkward, an awkward customer | adjective | Life | ngượng, gượng gạo; bất tiện | 2026-08-19 | lesson |
-| 31 | refactor | refactored, refactoring, refactors, a refactor | verb (cũng là noun) | IT | dọn lại code, không đổi hành vi | 2026-08-20 | lesson |
-| 32 | merge conflict | merge conflicts, merge, merging, merged, conflict, conflicting | noun (đếm được) | IT | hai nhánh sửa cùng chỗ, Git chịu | 2026-08-20 | lesson |
+| 31 | technical debt | tech debt, debt, debts, in debt, indebted, debt-heavy | noun (không đếm được) | IT | nợ phải trả sau vì làm nhanh cho kịp | 2026-08-20 | lesson |
+| 32 | cherry-pick | cherry pick, cherry-picked, cherry-picking, a cherry-pick, cherry-picker | verb (có gạch nối) | IT | bê riêng một commit sang nhánh khác | 2026-08-20 | lesson |
 | 33 | loop in | loop sb in, looped in, looping in, in the loop, out of the loop, keep sb in the loop | phrasal verb | Business | kéo thêm người vào cuộc | 2026-08-20 | lesson |
 | 34 | bandwidth | mental bandwidth, a bandwidth issue, no bandwidth | noun (không đếm được) | Business | còn rảnh sức mà nhận việc không | 2026-08-20 | lesson |
 | 35 | catch up | caught up, catching up, a catch-up, catch up with, catch up on, catch up to | phrasal verb | Life | gặp hàn huyên; làm bù cho kịp | 2026-08-20 | lesson |
