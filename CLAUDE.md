@@ -60,7 +60,7 @@ giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
 buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 
-## Năm luật dễ vi phạm nhất — kiểm lại trước khi trả lời
+## Sáu luật dễ vi phạm nhất — kiểm lại trước khi trả lời
 
 1. **Ngày tháng**: `. tools/openit.sh` rồi `hnay "%Y-%m-%d %A %G-W%V"`. Không suy
    đoán từ context, và **không gọi `date` trần** — xem luật 5.
@@ -75,6 +75,11 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 5. **Hai môi trường (R6)**: harness chạy cả trên Mac lẫn VM Linux giờ UTC. `date`
    trần và `open` trần đều hỏng ở một trong hai nơi. Luôn qua `tools/openit.sh`.
    Và luôn `keove` đầu buổi, `daylen` cuối buổi — thẳng lên `main`, không PR.
+6. **Nghĩa Việt không được máy móc (R7)**: dịch ý chứ không dịch cấu trúc câu tiếng
+   Anh; thuật ngữ dev quen nói bằng tiếng Anh (`deploy`, `release`, `cache`,
+   `endpoint`, `merge conflict`…) **để nguyên**, đừng dịch thành "bản phát hành",
+   "xung đột khi gộp code". Giọng bám vai câu gốc: khách → *anh/chị*, đồng nghiệp →
+   *mình/cậu*. Đọc to một lượt trước khi ghi file.
 
 ## Checklist đóng một buổi học (R3 + R6 — thiếu 1 là chưa xong)
 
@@ -82,6 +87,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
 [ ] wiki/lessons/<tuần>/<ngày>.md          đã tạo, đủ 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
+[ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
 [ ] wiki/VOCAB_INDEX.md                    +5 dòng, đúng cột, sắp theo ngày
 [ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = hôm nay +1
 [ ] wiki/PROGRESS.md                       streak +1, tổng từ +5, ghi ngày

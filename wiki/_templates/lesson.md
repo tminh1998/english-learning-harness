@@ -19,6 +19,13 @@
 **EN** — {{English definition, 1 câu, dùng từ dễ hơn chính nó}}
 **VI** — {{nghĩa Việt + nuance: sắc thái, trang trọng hay suồng sã, hay dùng ở đâu}}
 
+<!-- ⚠️ R7 — mọi câu tiếng Việt phải nghe như người Việt nói: dịch Ý chứ không dịch
+     cấu trúc câu tiếng Anh; thuật ngữ dev quen nói bằng tiếng Anh (deploy, release,
+     cache, endpoint, merge conflict, sprint…) GIỮ NGUYÊN, đừng dịch thành "bản phát
+     hành" / "xung đột khi gộp code". Giọng bám vai câu gốc: khách → anh/chị…ạ,
+     đồng nghiệp → mình/tớ/cậu. Đọc to một lượt; câu nào đọc hai lần mới xuôi thì
+     viết lại. -->
+
 **Ví dụ**
 - {{câu 1 — bối cảnh dev/khách hàng}}
   → *{{dịch Việt}}*

@@ -50,7 +50,7 @@ tuyệt đối.
 
 ---
 
-## Sáu quy tắc CỨNG
+## Bảy quy tắc CỨNG
 
 ### R1 — Không trùng từ đã học (hard gate)
 
@@ -181,6 +181,44 @@ mất đi thì R1 hết tác dụng), rồi tính lại streak và tổng số t
 
 ---
 
+### R7 — Nghĩa Việt phải nghe như người Việt nói
+
+Bản dịch **không phải bản chuyển ngữ từng chữ**. Người học đọc câu tiếng Việt để
+*cảm* được câu tiếng Anh, nên câu tiếng Việt phải là câu một dev Việt thật sự nói
+ra. Luật này áp cho **mọi** chỗ có tiếng Việt: cột `Nghĩa gọn` trong
+`{vocabIndex}`, mục `**VI**`, `vi-quick`, `def-vi`, câu dịch ví dụ, bản dịch mẩu
+đọc, và cột nghĩa trong `{recap}`.
+
+1. **Dịch ý, không dịch cấu trúc.** Tiếng Anh treo mệnh đề phụ ở cuối thì tiếng
+   Việt thường phải đưa lên đầu. Bỏ "một cách…", "việc mà…", "điều gì đó", chủ ngữ
+   giả, và mọi thứ chỉ tồn tại vì câu gốc có nó.
+   - ✗ _"Một cách tạm thời để làm xong việc gì đó bằng cách né tránh vấn đề thay vì sửa nó."_
+   - ✓ _"Cách làm tạm cho xong việc bằng cách né chỗ lỗi, chứ không phải sửa lỗi."_
+
+2. **Thuật ngữ nào dev nói bằng tiếng Anh thì để nguyên tiếng Anh.** `deploy` ·
+   `release` · `cache` · `endpoint` · `rebase` · `merge conflict` · `refactor` ·
+   `test` · `staging` · `sprint` · `PR` · `review` · `database` · `job` · `retry` ·
+   `query` · `export`… Dịch chúng ra ("bản phát hành", "xung đột khi gộp code",
+   "tác vụ đồng bộ", "bộ chọn ngày") là **dấu hiệu rõ nhất của bản dịch máy** — không
+   ai trong nghề nói vậy. Nghĩa tiếng Việt của chính từ đang học đã nằm ở mục `**VI**`
+   và cột `Nghĩa gọn` rồi, câu ví dụ không phải gánh thêm việc đó.
+   *Ngoại lệ:* từ nào đã có tiếng Việt quen miệng thì dùng tiếng Việt — nút thắt cổ
+   chai, chập chờn, quen tay, gượng gạo.
+
+3. **Giữ đúng vai của câu gốc.** Câu email/họp với khách → _anh/chị, bên em, …ạ_.
+   Câu chat/standup với đồng nghiệp → _mình, bọn mình, tớ/cậu_. Câu đời sống → xưng
+   hô đời thường. Một bài có cả ba giọng là bình thường; **dùng một giọng cho cả bài
+   mới là sai**.
+
+4. **Nghĩa gọn viết như nói, không như từ điển.** Ngắn, có hình ảnh, đọc phát hiểu.
+   - ✗ "quỹ thời gian / sức làm còn rảnh" → ✓ "còn rảnh sức mà nhận việc không"
+   - ✗ "xung đột khi gộp code" → ✓ "hai nhánh sửa cùng chỗ, Git chịu"
+
+5. **Đọc to lên một lượt trước khi ghi file.** Câu nào phải đọc hai lần mới xuôi thì
+   viết lại. Đây là kiểm tra cuối, không bỏ qua được.
+
+---
+
 ## Luồng chuẩn
 
 ### Flow A — Buổi học hằng ngày
@@ -278,6 +316,7 @@ Ngoài R1 (không trùng từ), tránh lặp **kiểu bài**:
 - Không viết dài dòng. Người học là dev bận — mỗi buổi đọc trong ~10 phút.
 - Không khen sáo. Sai thì nói thẳng chỗ sai và vì sao.
 - Được dùng ví dụ có code/thuật ngữ kỹ thuật — đó là lợi thế của learner này.
+- **Câu tiếng Việt phải nghe như người Việt nói** — luật đầy đủ ở [R7](#r7--nghĩa-việt-phải-nghe-như-người-việt-nói).
 
 ---
 

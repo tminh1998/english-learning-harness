@@ -121,9 +121,7 @@
         </div>
 
         <p class="vi-quick hide-me">
-          bóp tốc độ, giới hạn lưu lượng<span class="alt"
-            >nói về rate limiting</span
-          >
+          bóp lại cho chậm bớt<span class="alt">trong dev = rate limiting</span>
         </p>
 
         <p class="def">
@@ -131,9 +129,7 @@
           runs or how many requests a client is allowed to send in a given
           period.
           <span class="def-vi hide-me"
-            >→ Cố ý giới hạn một thứ gì đó chạy nhanh đến đâu, hoặc một client
-            được phép gửi bao nhiêu request trong một khoảng thời gian nhất
-            định.</span
+            >→ Cố tình bóp lại: cho chạy chậm bớt, hoặc chặn không cho một client bắn quá nhiều request trong một khoảng thời gian.</span
           >
         </p>
         <p class="def hide-me">
@@ -152,8 +148,7 @@
               100 requests per minute.</span
             >
             <span class="vi hide-me"
-              >→ Cổng API sẽ bóp lưu lượng của bất kỳ client nào gửi quá 100
-              request mỗi phút.</span
+              >→ API gateway sẽ throttle bất kỳ client nào bắn quá 100 request mỗi phút.</span
             >
           </li>
           <li>
@@ -162,8 +157,7 @@
               turn the database into a bottleneck.</span
             >
             <span class="vi hide-me"
-              >→ Bọn mình cố tình làm chậm tác vụ đồng bộ ban đêm để nó không
-              biến database thành nút thắt cổ chai.</span
+              >→ Bọn mình cố tình bóp chậm job sync ban đêm, không thì nó làm nghẽn cả database.</span
             >
           </li>
         </ul>
@@ -211,15 +205,14 @@
         </div>
 
         <p class="vi-quick hide-me">
-          lỗi tái phát<span class="alt">chỗ đang chạy tốt bỗng hỏng</span>
+          đang chạy tốt bỗng hỏng<span class="alt">ngầm hiểu: mình vừa làm hỏng nó</span>
         </p>
 
         <p class="def">
           <span class="tag">EN</span>A bug that appears in a feature which used
           to work correctly, usually caused by a recent change.
           <span class="def-vi hide-me"
-            >→ Một lỗi xuất hiện ở tính năng vốn trước đây vẫn chạy đúng, thường
-            là do một thay đổi gần đây gây ra.</span
+            >→ Lỗi mọc ra ở chỗ trước giờ vẫn chạy tốt, thường là do một thay đổi vừa đẩy lên.</span
           >
         </p>
         <p class="def hide-me">
@@ -238,8 +231,7 @@
               <b>regression</b> in the guest checkout flow.</span
             >
             <span class="vi hide-me"
-              >→ Lớp cache mới thì nhanh, nhưng nó làm phát sinh một lỗi tái phát
-              ở luồng thanh toán khách vãng lai.</span
+              >→ Lớp cache mới thì nhanh thật, nhưng lại làm hỏng luồng thanh toán khách vãng lai — đúng nghĩa một regression.</span
             >
           </li>
           <li>
@@ -248,8 +240,7 @@
               most of these never reach the client.</span
             >
             <span class="vi hide-me"
-              >→ Bọn mình chạy trọn bộ test hồi quy trước mỗi lần phát hành, nên
-              phần lớn lỗi loại này không bao giờ tới tay khách.</span
+              >→ Trước mỗi lần release bọn mình chạy trọn bộ regression test, nên loại lỗi này hiếm khi tới được tay khách.</span
             >
           </li>
         </ul>
@@ -305,15 +296,14 @@
         </div>
 
         <p class="vi-quick hide-me">
-          lời báo trước<span class="alt">“nói trước một tiếng”</span>
+          báo trước một tiếng<span class="alt">để người ta còn kịp chuẩn bị</span>
         </p>
 
         <p class="def">
           <span class="tag">EN</span>A short warning given in advance so the
           other person has time to prepare.
           <span class="def-vi hide-me"
-            >→ Một lời cảnh báo ngắn đưa ra từ trước, để người kia có thời gian
-            chuẩn bị.</span
+            >→ Một câu báo trước ngắn gọn, để người ta còn kịp xoay xở.</span
           >
         </p>
         <p class="def hide-me">
@@ -332,8 +322,7 @@
               an hour tomorrow morning.</span
             >
             <span class="vi hide-me"
-              >→ Báo anh/chị biết trước cho chủ động: máy chủ staging sẽ ngừng một
-              tiếng vào sáng mai.</span
+              >→ Báo anh/chị biết trước cho chủ động: sáng mai server staging sẽ nghỉ một tiếng.</span
             >
           </li>
           <li>
@@ -342,8 +331,7 @@
               with the client before they start testing.</span
             >
             <span class="vi hide-me"
-              >→ Cảm ơn đã báo trước — tôi sẽ làm rõ hạn mới với khách trước khi
-              họ bắt đầu kiểm thử.</span
+              >→ Cảm ơn cậu đã báo trước — tớ sẽ chốt lại cái hạn mới với khách trước khi họ bắt đầu test.</span
             >
           </li>
         </ul>
@@ -399,15 +387,14 @@
         </div>
 
         <p class="vi-quick hide-me">
-          ước chừng, áng chừng<span class="alt">a ballpark figure = con số áng chừng</span>
+          áng chừng, khoảng khoảng<span class="alt">a ballpark figure = con số áng chừng</span>
         </p>
 
         <p class="def">
           <span class="tag">EN</span>Rough and approximate, but close enough to
           the real number to be useful for planning.
           <span class="def-vi hide-me"
-            >→ Thô và áng chừng, nhưng đủ gần con số thật để còn dùng được vào
-            việc lên kế hoạch.</span
+            >→ Ước chừng thôi, chưa chính xác — nhưng đủ sát để còn lên kế hoạch được.</span
           >
         </p>
         <p class="def hide-me">
@@ -424,8 +411,7 @@
               be three weeks for the whole migration.</span
             >
             <span class="vi hide-me"
-              >→ Tôi chưa chốt ngày được, nhưng ước chừng thì cả đợt chuyển đổi
-              mất khoảng ba tuần.</span
+              >→ Tôi chưa chốt ngày được, nhưng áng chừng cả đợt migration mất khoảng ba tuần.</span
             >
           </li>
           <li>
@@ -434,8 +420,7 @@
               in the same <b>ballpark</b>.</span
             >
             <span class="vi hide-me"
-              >→ Ngân sách của họ là 20.000 còn dự toán của mình là 22.000 — ít
-              nhất thì hai bên cũng xấp xỉ nhau.</span
+              >→ Họ có 20.000, mình báo giá 22.000 — thôi thì cũng gọi là xấp xỉ nhau.</span
             >
           </li>
         </ul>
@@ -498,8 +483,7 @@
           <span class="tag">EN</span>To watch something from time to time so that
           you notice if it changes or goes wrong.
           <span class="def-vi hide-me"
-            >→ Thỉnh thoảng nhìn chừng một thứ gì đó, để nhận ra ngay nếu nó thay
-            đổi hoặc trục trặc.</span
+            >→ Thỉnh thoảng liếc qua xem sao, để có gì bất thường là biết ngay.</span
           >
         </p>
         <p class="def hide-me">
@@ -517,8 +501,7 @@
               fix went out at noon.</span
             >
             <span class="vi hide-me"
-              >→ Chiều nay cậu để mắt tới log lỗi giúp mình nhé? Bản sửa đã ra lúc
-              trưa rồi.</span
+              >→ Chiều nay cậu để mắt hộ tớ cái log lỗi nhé? Bản fix ra từ trưa rồi.</span
             >
           </li>
           <li>
@@ -526,7 +509,7 @@
               >I'll <b>keep an eye on</b> the pot while you answer the door.</span
             >
             <span class="vi hide-me"
-              >→ Để mình trông nồi cho, cậu ra mở cửa đi.</span
+              >→ Để tớ trông nồi cho, cậu chạy ra mở cửa đi.</span
             >
           </li>
         </ul>
@@ -582,18 +565,7 @@
         <details>
           <summary>Bản dịch</summary>
           <p class="hide-me">
-            Bắt lỗi chỗ sửa cache hay đấy — nhưng báo cậu biết trước một tiếng
-            trước khi merge. Chỗ này đụng đúng luồng code mà tháng trước bọn mình
-            từng làm hỏng, và tớ khá chắc là có một lỗi tái phát ở phần thanh
-            toán khách vãng lai: thứ Sáu nó vẫn chạy tốt. Còn hai việc nữa. Vòng
-            lặp thử lại không có giới hạn, nên ngay khi bên cổng thanh toán bắt
-            đầu bóp lưu lượng của mình là mình sẽ dội vào họ liên tục cho tới lúc
-            họ chặn cả dải IP của công ty — cậu chốt lại tối đa năm lần thử được
-            không? Với lại cho tớ một con số áng chừng để sửa cho tử tế, một ngày
-            hay một tuần? Tớ chỉ cần một con số cho buổi gọi với khách lúc bốn
-            giờ thôi; chi tiết thì tớ sẽ làm rõ với họ sau. Kiểu gì thì sau khi
-            deploy tớ cũng sẽ để mắt tới tỷ lệ lỗi trong một tiếng, và lúc nào
-            cũng có thể kích hoạt quay về bản cũ nếu thấy tệ hơn hiện tại.
+            Bắt được chỗ sửa cache hay đấy — nhưng báo cậu trước một tiếng đã rồi hẵng merge. Chỗ này đụng đúng luồng code mà tháng trước bọn mình từng làm hỏng, và tớ khá chắc là có regression ở phần thanh toán khách vãng lai: thứ Sáu nó còn chạy tốt mà. Còn hai việc nữa. Vòng retry không giới hạn, nên bên payment gateway vừa throttle mình một cái là mình dội vào họ liên tục, tới lúc họ chặn nguyên dải IP công ty — cậu chốt lại tối đa năm lần retry được không? Với lại cho tớ một con số áng chừng để sửa cho tử tế: một ngày hay một tuần? Tớ chỉ cần một con số cho buổi gọi với khách lúc bốn giờ thôi, chi tiết thì nói lại với họ sau. Kiểu gì thì deploy xong tớ cũng ngồi để mắt tỷ lệ lỗi một tiếng, thấy tệ hơn hiện tại là rollback ngay.
           </p>
         </details>
       </section>

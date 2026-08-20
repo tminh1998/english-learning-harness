@@ -11,4 +11,4 @@
 > Memory là **rule hành động được**, không phải nội dung bài học. Khuôn:
 > [`../_templates/memory-entry.md`](../_templates/memory-entry.md).
 
-*(chưa có memory nào — sẽ tích luỹ sau vài buổi học và bài quiz đầu tiên)*
+- [Nghĩa Việt phải nghe như người Việt nói](dich-tu-nhien.md) — không dịch từng chữ, giữ nguyên thuật ngữ dev tiếng Anh (R7).

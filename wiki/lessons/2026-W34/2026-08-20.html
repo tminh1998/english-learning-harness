@@ -131,8 +131,7 @@
           <span class="tag">EN</span>To rewrite existing code so it is cleaner or
           easier to work with, without changing what it actually does.
           <span class="def-vi hide-me"
-            >→ Viết lại đoạn code sẵn có cho sạch hơn hoặc dễ làm việc hơn, mà
-            không thay đổi việc nó thực sự làm gì.</span
+            >→ Viết lại code sẵn có cho sạch hơn, dễ sửa hơn — mà nó vẫn làm đúng những gì nó đang làm.</span
           >
         </p>
         <p class="def hide-me">
@@ -150,8 +149,7 @@
               tangled to extend right now.</span
             >
             <span class="vi hide-me"
-              >→ Tôi sẽ dọn lại module xác thực trước khi thêm SSO — hiện nó rối
-              quá, không mở rộng nổi.</span
+              >→ Tôi sẽ refactor module auth trước rồi mới thêm SSO — giờ nó rối quá, không mở rộng nổi.</span
             >
           </li>
           <li>
@@ -160,8 +158,7 @@
               lines, all tests still green.</span
             >
             <span class="vi hide-me"
-              >→ PR này thuần là dọn code: hành vi y nguyên, ít hơn 200 dòng,
-              test vẫn xanh hết.</span
+              >→ PR này thuần refactor thôi: hành vi y nguyên, bớt 200 dòng, test vẫn xanh hết.</span
             >
           </li>
         </ul>
@@ -217,9 +214,7 @@
         </div>
 
         <p class="vi-quick hide-me">
-          xung đột khi gộp code<span class="alt"
-            >hai nhánh sửa cùng một chỗ, Git không tự gộp được</span
-          >
+          hai nhánh sửa cùng chỗ, Git chịu<span class="alt">phải ngồi giải quyết tay</span>
         </p>
 
         <p class="def">
@@ -227,9 +222,7 @@
           changed the same lines, so the tool cannot combine them automatically
           and you must fix it by hand.
           <span class="def-vi hide-me"
-            >→ Tình huống trong Git khi hai nhánh sửa cùng những dòng đó, nên
-            công cụ không thể tự động gộp chúng lại và bạn phải xử lý bằng
-            tay.</span
+            >→ Hai nhánh sửa trúng cùng mấy dòng, Git không tự gộp được nên đành ngồi giải quyết bằng tay.</span
           >
         </p>
         <p class="def hide-me">
@@ -248,8 +241,7 @@
               can you walk me through which side to keep?</span
             >
             <span class="vi hide-me"
-              >→ Tôi bị merge conflict ở <code>package-lock.json</code> — bạn chỉ
-              giúp nên giữ bên nào không?</span
+              >→ Tôi dính merge conflict ở <code>package-lock.json</code> — bạn xem giúp nên giữ bên nào với?</span
             >
           </li>
           <li>
@@ -258,8 +250,7 @@
               <b>merge conflict</b> on Friday.</span
             >
             <span class="vi hide-me"
-              >→ Cứ rebase sớm và thường xuyên để khỏi dính một mớ merge conflict
-              to đùng vào thứ Sáu.</span
+              >→ Cứ rebase liên tục vào, không thứ Sáu lại ngồi gỡ một đống merge conflict đấy.</span
             >
           </li>
         </ul>
@@ -322,8 +313,7 @@
           <span class="tag">EN</span>To add someone to a conversation or email so
           they get the information and can take part.
           <span class="def-vi hide-me"
-            >→ Thêm ai đó vào một cuộc trao đổi hoặc email để họ nhận được thông
-            tin và có thể tham gia.</span
+            >→ Kéo thêm ai đó vào email hoặc cuộc trao đổi, để họ nắm được và tham gia luôn.</span
           >
         </p>
         <p class="def hide-me">
@@ -342,8 +332,7 @@
               confirm the timeline.</span
             >
             <span class="vi hide-me"
-              >→ Để tôi kéo trưởng nhóm backend vào — chị ấy phụ trách API đó và
-              xác nhận được tiến độ.</span
+              >→ Để tôi kéo chị lead backend vào — API đó chị ấy phụ trách, xác nhận tiến độ được ngay.</span
             >
           </li>
           <li>
@@ -352,8 +341,7 @@
               aware before the customer calls.</span
             >
             <span class="vi hide-me"
-              >→ Cảm ơn đã báo. Tôi kéo bên Support vào để họ nắm trước khi khách
-              gọi tới.</span
+              >→ Cảm ơn đã báo. Tôi kéo bên Support vào để họ nắm trước, kẻo khách gọi tới lại ngơ ngác.</span
             >
           </li>
         </ul>
@@ -411,9 +399,7 @@
         </div>
 
         <p class="vi-quick hide-me">
-          quỹ thời gian / sức làm<span class="alt"
-            >còn rảnh để nhận thêm việc hay không</span
-          >
+          còn rảnh sức mà nhận việc không<span class="alt">thời gian, người, sức — gộp lại một chữ</span>
         </p>
 
         <p class="def">
@@ -421,8 +407,7 @@
           available to take on work (a figurative use borrowed from network
           bandwidth).
           <span class="def-vi hide-me"
-            >→ Lượng thời gian, sức lực hoặc nhân lực còn sẵn để nhận việc (nghĩa
-            bóng, mượn từ băng thông mạng).</span
+            >→ Còn bao nhiêu thời gian, sức lực, người — để mà nhận thêm việc (nghĩa bóng, mượn từ băng thông mạng).</span
           >
         </p>
         <p class="def hide-me">
@@ -441,8 +426,7 @@
               <b>bandwidth</b> until the release ships.</span
             >
             <span class="vi hide-me"
-              >→ Bọn tôi rất muốn nhận, nhưng chưa đủ nhân lực/thời gian cho tới
-              khi ra bản phát hành.</span
+              >→ Chúng tôi rất muốn nhận, nhưng phải xong bản release này đã thì mới có người làm.</span
             >
           </li>
           <li>
@@ -451,8 +435,7 @@
               sprint, or should we push it?</span
             >
             <span class="vi hide-me"
-              >→ Nhóm bạn còn đủ thời gian review thiết kế trong sprint này không,
-              hay mình dời lại?</span
+              >→ Sprint này team bạn còn kham nổi phần review thiết kế không, hay mình dời sang sau?</span
             >
           </li>
         </ul>
@@ -518,9 +501,7 @@
           after not seeing them for a while; or to do work you fell behind on so
           you reach the point you should be at.
           <span class="def-vi hide-me"
-            >→ Gặp hoặc nói chuyện với ai đó để cập nhật tin tức sau một thời gian
-            không gặp; hoặc làm phần việc bạn bị tụt lại để đạt tới chỗ đáng lẽ
-            phải tới.</span
+            >→ Gặp nhau kể chuyện sau một thời gian bặt tin; hoặc làm bù phần đã tụt lại cho kịp chỗ đáng lẽ phải tới.</span
           >
         </p>
         <p class="def hide-me">
@@ -539,8 +520,7 @@
               weekend.</span
             >
             <span class="vi hide-me"
-              >→ Lâu rồi mình chưa nói chuyện — cuối tuần cà phê hàn huyên chút
-              nhé.</span
+              >→ Lâu quá không nói chuyện — cuối tuần cà phê ngồi hàn huyên chút nhé.</span
             >
           </li>
           <li>
@@ -549,8 +529,7 @@
               unread messages.</span
             >
             <span class="vi hide-me"
-              >→ Tôi nghỉ ốm, nên sáng thứ Hai ngồi đọc bù đống tin nhắn chưa
-              xem.</span
+              >→ Tôi nghỉ ốm mấy hôm, nên cả sáng thứ Hai ngồi đọc bù đống tin nhắn chưa xem.</span
             >
           </li>
         </ul>
@@ -603,16 +582,10 @@
         <details>
           <summary>Bản dịch</summary>
           <p class="hide-me">
-            <b>Mai:</b> Chào buổi sáng! Trước giờ standup — chiều nay tôi còn rảnh
-            (còn sức/thời gian), nên nhận phần dọn dẹp đăng nhập. Kế hoạch là dọn
-            lại module xác thực, không đổi hành vi.<br />
-            <b>Nam:</b> Ngon. Báo trước: hôm qua tôi có sửa đúng file đó, nên có
-            thể bạn sẽ dính merge conflict ở <code>auth.ts</code>. Rebase lên main
-            trước đã.<br />
-            <b>Mai:</b> Chuẩn. Nếu rối quá tôi sẽ kéo bạn vào để xem nên giữ bên
-            nào.<br />
-            <b>Nam:</b> 👍 À, ăn trưa xong mình gặp nói chuyện chút nhé — tôi muốn
-            dẫn bạn qua luồng token mới trước khi bạn bắt tay vào.
+            <b>Mai:</b> Chào buổi sáng! Tranh thủ trước giờ standup — chiều nay tôi còn rảnh, nhận phần dọn dẹp đăng nhập nhé. Định refactor module auth thôi, không đổi hành vi gì cả.<br />
+            <b>Nam:</b> Ngon. Báo trước một tiếng: hôm qua tôi có động đúng file đó, khả năng bạn sẽ dính merge conflict ở <code>auth.ts</code>. Rebase lên main cái đã.<br />
+            <b>Mai:</b> Chuẩn. Rối quá thì tôi kéo bạn vào xem giúp nên giữ bên nào.<br />
+            <b>Nam:</b> 👍 À, ăn trưa xong ngồi lại chút nhé — tôi muốn dẫn bạn qua luồng token mới rồi hẵng bắt tay vào.
           </p>
         </details>
       </section>

@@ -139,16 +139,14 @@
         </div>
 
         <p class="vi-quick hide-me">
-          quay về bản cũ<span class="alt">hoàn tác một đợt deploy</span>
+          quay về bản cũ<span class="alt">deploy hỏng thì lùi lại bản trước</span>
         </p>
 
         <p class="def">
           <span class="tag">EN</span>The act of returning a system, database, or
           release to an earlier working state after a change causes problems.
           <span class="def-vi hide-me"
-            >→ Hành động đưa một hệ thống, cơ sở dữ liệu hoặc bản phát hành về
-            lại trạng thái chạy được trước đó, sau khi một thay đổi gây ra sự
-            cố.</span
+            >→ Đưa hệ thống, database hay bản release về lại trạng thái chạy được trước đó, sau khi một thay đổi làm hỏng chuyện.</span
           >
         </p>
         <p class="def hide-me">
@@ -167,8 +165,7 @@
               <b>rollback</b> to the previous release.</span
             >
             <span class="vi hide-me"
-              >→ Đợt deploy làm hỏng phần thanh toán, nên bọn mình kích hoạt
-              ngay một lần quay về bản phát hành trước.</span
+              >→ Đợt deploy làm vỡ phần thanh toán, nên bọn mình rollback ngay về bản trước.</span
             >
           </li>
           <li>
@@ -177,8 +174,7 @@
               no data is lost.</span
             >
             <span class="vi hide-me"
-              >→ Nếu bản migration thất bại, giao dịch sẽ được hoàn tác và không
-              mất dữ liệu nào.</span
+              >→ Migration mà lỗi thì transaction tự rollback, không mất dữ liệu nào cả.</span
             >
           </li>
         </ul>
@@ -235,8 +231,7 @@
           <span class="tag">EN</span>Behaving in an unreliable way — sometimes
           working and sometimes failing, with no clear reason.
           <span class="def-vi hide-me"
-            >→ Hoạt động một cách không đáng tin cậy — lúc chạy được lúc lỗi,
-            không có lý do rõ ràng.</span
+            >→ Chạy không đáng tin — lúc được lúc không, mà chẳng vì lý do gì rõ ràng.</span
           >
         </p>
         <p class="def hide-me">
@@ -254,8 +249,7 @@
               fails about one run in five.</span
             >
             <span class="vi hide-me"
-              >→ Đừng chạy lại build làm gì — cái test đó chập chờn, cứ khoảng
-              năm lần chạy thì hỏng một lần.</span
+              >→ Chạy lại build cũng thế thôi — cái test đó chập chờn, cứ tầm năm lần thì đỏ một lần.</span
             >
           </li>
           <li>
@@ -264,8 +258,7 @@
               call from my phone.</span
             >
             <span class="vi hide-me"
-              >→ Wi-Fi phòng họp chập chờn, nên tôi sẽ vào cuộc gọi bằng điện
-              thoại.</span
+              >→ Wi-Fi phòng họp chập chờn lắm, tôi gọi vào bằng điện thoại cho chắc.</span
             >
           </li>
         </ul>
@@ -324,8 +317,7 @@
           <span class="tag">EN</span>To contact someone first, usually to offer
           help, ask for something, or start a conversation.
           <span class="def-vi hide-me"
-            >→ Chủ động liên hệ với ai đó trước, thường là để đề nghị giúp đỡ,
-            nhờ vả điều gì, hoặc bắt đầu một cuộc trao đổi.</span
+            >→ Chủ động nhắn hoặc gọi cho ai đó trước — để ngỏ lời giúp, để nhờ việc, hoặc chỉ để mở đầu câu chuyện.</span
           >
         </p>
         <p class="def hide-me">
@@ -343,8 +335,7 @@
               the staging server goes down again.</span
             >
             <span class="vi hide-me"
-              >→ Cảm ơn vì đã cập nhật — cứ liên hệ thẳng với tôi nếu server
-              staging lại sập nhé.</span
+              >→ Cảm ơn anh/chị đã cập nhật — server staging mà sập nữa thì cứ nhắn thẳng cho tôi nhé.</span
             >
           </li>
           <li>
@@ -353,8 +344,7 @@
               could you confirm you received it?</span
             >
             <span class="vi hide-me"
-              >→ Tôi liên hệ về hoá đơn bên tôi gửi hôm thứ Ba tuần trước;
-              anh/chị xác nhận giúp là đã nhận được chứ?</span
+              >→ Em liên hệ về hoá đơn bên em gửi hôm thứ Ba tuần trước — anh/chị xác nhận giúp là đã nhận được chưa ạ?</span
             >
           </li>
         </ul>
@@ -414,9 +404,7 @@
           beyond what was originally agreed, usually without extra time or
           budget.
           <span class="def-vi hide-me"
-            >→ Sự phình ra từ từ của các yêu cầu trong một dự án, vượt quá những
-            gì đã thống nhất ban đầu, mà thường thì không có thêm thời gian hay
-            ngân sách.</span
+            >→ Yêu cầu của dự án cứ phình ra từ từ, vượt quá thoả thuận ban đầu, mà thời gian với ngân sách thì vẫn y nguyên.</span
           >
         </p>
         <p class="def hide-me">
@@ -434,8 +422,7 @@
               clear we had serious <b>scope creep</b>.</span
             >
             <span class="vi hide-me"
-              >→ Mỗi yêu cầu “nhỏ” thêm vào lại tốn một ngày; đến sprint thứ ba
-              thì rõ ràng là phạm vi đã phình nặng.</span
+              >→ Cứ thêm một yêu cầu “nhỏ” là mất thêm một ngày; tới sprint thứ ba thì thấy rõ scope đã phình nặng.</span
             >
           </li>
           <li>
@@ -444,8 +431,7 @@
               <b>scope creep</b>.</span
             >
             <span class="vi hide-me"
-              >→ Bọn tôi chốt cứng yêu cầu sau khi duyệt để tránh việc phạm vi
-              bị phình ra.</span
+              >→ Duyệt xong là bọn tôi chốt cứng yêu cầu, không cho scope phình thêm.</span
             >
           </li>
         </ul>
@@ -506,8 +492,7 @@
           practising it for a while, especially something that felt awkward at
           first.
           <span class="def-vi hide-me"
-            >→ Học được cách làm tốt một việc gì đó sau khi luyện tập một thời
-            gian, nhất là việc lúc đầu thấy lóng ngóng.</span
+            >→ Làm mãi rồi thạo — nhất là mấy việc lúc đầu cầm vào thấy lóng ngóng.</span
           >
         </p>
         <p class="def hide-me">
@@ -524,8 +509,7 @@
               shortcuts after a week.</span
             >
             <span class="vi hide-me"
-              >→ Vim ngày đầu thấy bất khả thi, nhưng sau một tuần là bạn quen
-              tay với đống phím tắt thôi.</span
+              >→ Ngày đầu dùng Vim thấy bất khả thi thật, nhưng độ một tuần là quen tay hết mấy phím tắt thôi.</span
             >
           </li>
           <li>
@@ -534,7 +518,7 @@
               stove.</span
             >
             <span class="vi hide-me"
-              >→ Cô ấy vẫn đang tập quen với việc nấu bằng bếp ga.</span
+              >→ Cô ấy vẫn đang tập cho quen nấu bằng bếp ga.</span
             >
           </li>
         </ul>
@@ -589,18 +573,7 @@
         <details>
           <summary>Bản dịch</summary>
           <p class="hide-me">
-            Đợt deploy hôm thứ Sáu làm trang thanh toán sập mười một phút. CI
-            vẫn xanh, nhưng chỉ vì cái test duy nhất phủ luồng đó là loại chập
-            chờn — nó vẫn hỏng ở một trường hợp biên, cứ khoảng năm lần chạy thì
-            trượt một lần, nên hai sprint trước có người đã tắt tiếng nó đi. Khi
-            cảnh báo nổ ra, bọn mình kích hoạt quay về bản phát hành trước và
-            trang web sống lại. Buổi retro chốt ra hai việc: khách muốn bọn mình
-            chủ động liên hệ ngay khi có bất cứ thứ gì người dùng nhìn thấy bị
-            hỏng, thay vì đợi tới báo cáo tuần; và bọn mình đóng băng backlog,
-            vì mấy “việc nhỏ ăn liền” nhét vào giữa sprint đúng là phình phạm vi
-            kinh điển, làm không còn thời gian sửa cái test bị tắt. Lịch trực
-            on-call mới chạy được ba tuần nên cả nhóm vẫn đang tập quen với công
-            cụ báo động — tôi đã đặt lịch một buổi hướng dẫn ngắn vào thứ Hai.
+            Đợt deploy hôm thứ Sáu làm trang thanh toán sập mười một phút. CI vẫn xanh, nhưng chỉ vì cái test duy nhất phủ luồng đó là loại chập chờn — nó vẫn trượt ở một edge case, cứ tầm năm lần chạy thì đỏ một lần, nên hai sprint trước có người tắt nó đi cho đỡ phiền. Lúc cảnh báo nổ, bọn mình rollback về bản trước, trang web sống lại. Buổi retro chốt hai việc: hễ có gì người dùng nhìn thấy được mà hỏng thì bên mình phải liên hệ với khách ngay, đừng đợi tới báo cáo tuần; và bọn mình đóng băng backlog, vì mấy “việc nhỏ ăn liền” nhét giữa sprint đúng là scope creep kinh điển, ngốn hết thời gian đáng lẽ để sửa cái test bị tắt. Lịch trực on-call mới chạy được ba tuần nên cả nhóm vẫn đang tập cho quen bộ công cụ báo động — tôi đã đặt lịch một buổi hướng dẫn ngắn vào thứ Hai.
           </p>
         </details>
       </section>

@@ -133,8 +133,7 @@
           at the same time, so the result depends on which one happens to finish
           first.
           <span class="def-vi hide-me"
-            >→ Một lỗi xuất hiện khi hai thao tác cùng chạy một lúc, nên kết quả
-            phụ thuộc vào việc thao tác nào tình cờ kết thúc trước.</span
+            >→ Lỗi sinh ra khi hai thao tác chạy cùng lúc, kết quả thế nào thì tuỳ đứa nào tình cờ về đích trước.</span
           >
         </p>
         <p class="def hide-me">
@@ -153,8 +152,7 @@
               <b>a race condition</b>, not a database problem.</span
             >
             <span class="vi hide-me"
-              >→ Hai worker cùng nhặt một job — đó là lỗi tranh chấp thứ tự,
-              không phải lỗi database.</span
+              >→ Hai worker cùng vớ một job — đó là race condition chứ không phải lỗi database.</span
             >
           </li>
           <li>
@@ -164,8 +162,7 @@
               confirmation call.</span
             >
             <span class="vi hide-me"
-              >→ Bấm đúp nút thanh toán tạo ra một lỗi tranh chấp giữa hàm xử lý
-              cú bấm và lời gọi xác nhận.</span
+              >→ Bấm đúp nút thanh toán là sinh ra race condition giữa hàm xử lý cú bấm và lời gọi xác nhận.</span
             >
           </li>
         </ul>
@@ -229,8 +226,7 @@
           repeating the operation gives exactly the same result as running it a
           single time.
           <span class="def-vi hide-me"
-            >→ An toàn khi chạy nhiều hơn một lần, bởi vì lặp lại thao tác đó
-            cho ra đúng cùng một kết quả như khi chỉ chạy một lần.</span
+            >→ Gọi mấy lần cũng vô hại, vì chạy lại vẫn ra đúng cái kết quả của lần đầu.</span
           >
         </p>
         <p class="def hide-me">
@@ -250,8 +246,7 @@
               doesn't charge the customer twice.</span
             >
             <span class="vi hide-me"
-              >→ Hãy làm cho endpoint thanh toán chạy lại vẫn ra y nguyên, để
-              một cú bấm đúp không trừ tiền khách hai lần.</span
+              >→ Làm cho endpoint thanh toán idempotent đi, để khách bấm đúp cũng không bị trừ tiền hai lần.</span
             >
           </li>
           <li>
@@ -261,9 +256,7 @@
               order.</span
             >
             <span class="vi hide-me"
-              >→ Toàn bộ cơ chế thử lại chỉ hoạt động nếu hàm xử lý chạy lại vẫn
-              ra y nguyên; không thì cứ mỗi lần quá hạn là nhân đôi một đơn
-              hàng.</span
+              >→ Cơ chế retry chỉ chạy đúng khi handler idempotent; không thì cứ timeout một lần là đơn hàng nhân đôi.</span
             >
           </li>
         </ul>
@@ -330,8 +323,7 @@
           <span class="tag">EN</span>To politely refuse or argue against a
           request, plan or deadline instead of simply accepting it.
           <span class="def-vi hide-me"
-            >→ Từ chối một cách lịch sự hoặc phản bác lại một yêu cầu, kế hoạch
-            hay thời hạn, thay vì chỉ đơn giản chấp nhận nó.</span
+            >→ Nói lại, phản đối một yêu cầu hay một cái hạn — thay vì gật đầu nhận luôn.</span
           >
         </p>
         <p class="def hide-me">
@@ -351,8 +343,7 @@
               more sprint; they agreed after I showed the test list.</span
             >
             <span class="vi hide-me"
-              >→ Tôi đã phản đối cái hạn thứ Sáu và xin thêm một sprint; họ đồng
-              ý sau khi tôi đưa ra danh sách test.</span
+              >→ Tôi có phản đối lại cái hạn thứ Sáu và xin thêm một sprint; đưa danh sách test ra là họ đồng ý.</span
             >
           </li>
           <li>
@@ -361,8 +352,7 @@
               to change a process they've used for years.</span
             >
             <span class="vi hide-me"
-              >→ Cứ chuẩn bị tinh thần bên họ sẽ phản đối — mình đang đề nghị họ
-              đổi một quy trình họ dùng nhiều năm rồi.</span
+              >→ Chuẩn bị tinh thần là họ sẽ phản đối — mình đang bảo họ đổi cái quy trình dùng bao nhiêu năm nay rồi.</span
             >
           </li>
         </ul>
@@ -421,17 +411,14 @@
         </div>
 
         <p class="vi-quick hide-me">
-          điều lưu ý kèm theo<span class="alt"
-            >vế “nhưng mà…” gắn vào một lời hứa</span
-          >
+          cái vế “nhưng mà…”<span class="alt">gắn vào lời hứa cho khỏi bị hiểu quá rộng</span>
         </p>
 
         <p class="def">
           <span class="tag">EN</span>A warning that something is only true, or
           only works, under certain conditions.
           <span class="def-vi hide-me"
-            >→ Một lời lưu ý rằng điều gì đó chỉ đúng, hoặc chỉ hoạt động, trong
-            một số điều kiện nhất định.</span
+            >→ Câu lưu ý rằng điều vừa nói chỉ đúng, chỉ chạy được, trong một số điều kiện nhất định.</span
           >
         </p>
         <p class="def hide-me">
@@ -453,8 +440,7 @@
               covers accounts created after 2024.</span
             >
             <span class="vi hide-me"
-              >→ Bọn tôi kịp ngày đó, kèm một lưu ý: phần xuất dữ liệu chỉ áp
-              dụng cho tài khoản tạo sau năm 2024.</span
+              >→ Ngày đó bọn tôi kịp, nhưng kèm một lưu ý: phần export chỉ áp dụng cho tài khoản tạo sau 2024.</span
             >
           </li>
           <li>
@@ -463,8 +449,7 @@
               <b>caveats</b> in the footnotes worth reading.</span
             >
             <span class="vi hide-me"
-              >→ Báo cáo trông ổn đấy, nhưng có vài điều lưu ý trong phần chú
-              thích đáng đọc.</span
+              >→ Báo cáo nhìn ổn đấy, nhưng mấy dòng lưu ý dưới phần chú thích cũng nên đọc.</span
             >
           </li>
         </ul>
@@ -527,8 +512,7 @@
           <span class="tag">EN</span>Making people feel uncomfortable or
           embarrassed; or difficult and inconvenient to use or deal with.
           <span class="def-vi hide-me"
-            >→ Khiến người ta thấy không thoải mái hoặc ngượng ngùng; hoặc khó
-            và bất tiện khi sử dụng, khi phải xử lý.</span
+            >→ Làm người ta ngượng, thấy không thoải mái; hoặc khó dùng, bất tiện.</span
           >
         </p>
         <p class="def hide-me">
@@ -548,8 +532,7 @@
               owned the delay.</span
             >
             <span class="vi hide-me"
-              >→ Có một khoảng im lặng gượng gạo trong cuộc gọi sau khi tôi hỏi
-              ai chịu trách nhiệm về việc trễ hạn.</span
+              >→ Cả cuộc gọi im bặt một cách gượng gạo, sau khi tôi hỏi ai chịu trách nhiệm vụ trễ hạn.</span
             >
           </li>
           <li>
@@ -558,8 +541,7 @@
               three taps just to change the month.</span
             >
             <span class="vi hide-me"
-              >→ Cái bộ chọn ngày rất khó dùng trên điện thoại — phải bấm ba lần
-              chỉ để đổi tháng.</span
+              >→ Cái date picker dùng trên điện thoại bất tiện lắm — đổi mỗi cái tháng mà phải bấm ba lần.</span
             >
           </li>
         </ul>
@@ -623,18 +605,12 @@
           <summary>Bản dịch</summary>
           <p class="hide-me">
             — Thế nào, buổi họp ổn không?<br />
-            — Nhìn chung là ổn. Họ muốn nút thử lại chạy thật trước thứ Sáu, và
-            tớ đã phản đối cái hạn đó — một tuần là con số áng chừng, không phải
-            lời hứa. Có khoảng năm giây im lặng gượng gạo, rồi PM bên họ đồng
+            — Nhìn chung là ổn. Họ muốn nút retry chạy thật trước thứ Sáu, tớ có phản đối lại cái hạn đó — một tuần là con số áng chừng chứ không phải lời hứa. Có khoảng năm giây im lặng gượng gạo, rồi PM bên họ đồng
             ý.<br />
             — Cậu có nêu cái lỗi thanh toán không?<br />
-            — Có, kèm một điều lưu ý: bọn mình chỉ sửa được triệt để nếu làm cho
-            cái endpoint đó chạy lại vẫn ra y nguyên. Hiện giờ đang có lỗi tranh
-            chấp thứ tự giữa hàm xử lý cú bấm và lời gọi xác nhận, nên bấm đúp
-            một cái là trừ tiền khách hai lần. Đó cũng là lý do bài test thanh
+            — Có, kèm một lưu ý: bọn mình chỉ sửa dứt điểm được nếu làm cho cái endpoint đó idempotent. Giờ đang có race condition giữa hàm xử lý cú bấm và lời gọi xác nhận, nên khách bấm đúp một cái là bị trừ tiền hai lần. Đó cũng là lý do bài test thanh
             toán cứ chập chờn.<br />
-            — Tốt. Nhắn báo trước cho họ một tiếng trước khi mình deploy, và lần
-            này nhớ lấy duyệt chính thức bằng văn bản.
+            — Tốt. Nhắn báo họ trước một tiếng rồi hẵng deploy, và lần này nhớ lấy sign-off bằng văn bản.
           </p>
         </details>
       </section>
