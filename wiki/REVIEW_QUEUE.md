@@ -15,7 +15,7 @@
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Các lô 08-16, 08-18, 08-19 và 08-20 đã được ôn nhanh ở đầu buổi #4 / #5 / #6 / #7 nhưng chưa chấm nên vẫn giữ bậc 1. Số từ đọng đã gấp rưỡi `review.maxPerSession` (15) — gõ `/on-tap` sớm, ưu tiên lô cũ nhất trước._
 
-**Tới hạn ngày mai (2026-08-21): 5 từ** — technical debt · cherry-pick · loop in · bandwidth · catch up
+**Tới hạn ngày mai (2026-08-21): 5 từ** — technical debt · backward compatible · loop in · bandwidth · catch up
 
 | Word | Bậc | next_review | Số lần đúng | Số lần sai | Học từ |
 | ---- | --- | ----------- | ----------- | ---------- | ------ |
@@ -50,7 +50,7 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 | caveat | 1 | 2026-08-20 | 0 | 0 | 2026-08-19 |
 | awkward | 1 | 2026-08-20 | 0 | 0 | 2026-08-19 |
 | technical debt | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
-| cherry-pick | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
+| backward compatible | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
 | loop in | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
 | bandwidth | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |
 | catch up | 1 | 2026-08-21 | 0 | 0 | 2026-08-20 |

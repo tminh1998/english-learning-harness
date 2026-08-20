@@ -201,60 +201,59 @@
         <div class="word-head">
           <div>
             <h2>
-              <span class="num">2</span>cherry-pick
+              <span class="num">2</span>backward compatible
               <button
                 class="say"
-                data-say="cherry-pick the commit onto the release branch"
+                data-say="backward compatible with version one"
                 title="Nghe phát âm"
               >
                 🔊
               </button>
             </h2>
-            <div class="ipa">/ˈtʃeri pɪk/ · <em>verb (có gạch nối)</em></div>
+            <div class="ipa">
+              /ˌbækwərd kəmˈpætəbl/ · <em>adjective</em>
+            </div>
           </div>
           <span class="badge it">IT</span>
         </div>
 
         <p class="vi-quick hide-me">
-          bê riêng một commit sang nhánh khác<span class="alt"
-            >nghĩa bóng: chỉ nhặt cái có lợi</span
+          bản mới vẫn chạy với bản cũ<span class="alt"
+            >khách không phải sửa gì bên họ</span
           >
         </p>
 
         <p class="def">
-          <span class="tag">EN</span>In Git: to copy one specific commit onto
-          another branch. In everyday use: to choose only the items that suit
-          you and ignore the rest.
+          <span class="tag">EN</span>Able to work with older versions of a
+          system, so people using the old version don't have to change anything.
           <span class="def-vi hide-me"
-            >→ Trong Git: bê đúng một commit sang nhánh khác. Nghĩa đời thường: chỉ nhặt phần có lợi cho mình, còn lại lờ đi.</span
+            >→ Vẫn chạy được với bản cũ, nên ai đang dùng bản cũ không phải sửa gì cả.</span
           >
         </p>
         <p class="def hide-me">
-          <span class="tag">GHI CHÚ</span>Nghĩa Git thì trung tính — bê một
-          commit, <b>không</b> kéo theo cả nhánh. Nhưng nghĩa bóng
-          <b>mang sắc tiêu cực</b>: nói
-          <em>“you're cherry-picking the numbers”</em> là đang trách người ta
-          chọn số liệu có lợi. Hai nghĩa cách nhau rất xa — cẩn thận khi nói với
-          khách.
+          <span class="tag">GHI CHÚ</span>Câu đáng thuộc khi làm với khách:
+          <em>“The change is backward compatible, so nothing changes on your
+          side.”</em> — trấn an gọn một câu. Ngược nghĩa là
+          <code>a breaking change</code>: bản mới làm bên kia gãy, phải sửa theo.
         </p>
 
         <ul class="examples">
           <li>
             <span class="en"
-              >Just <b>cherry-pick</b> that hotfix onto <code>release/1.8</code>
-              — we don't want the rest of main yet.</span
+              >The new endpoint is <b>backward compatible</b> with v1, so old
+              clients keep working.</span
             >
             <span class="vi hide-me"
-              >→ Cứ bê riêng cái hotfix đó sang <code>release/1.8</code> thôi — phần còn lại của main chưa lấy vội.</span
+              >→ Endpoint mới vẫn tương thích ngược với v1, client cũ chạy bình thường.</span
             >
           </li>
           <li>
             <span class="en"
-              >The report <b>cherry-picks</b> the two best weeks and quietly
-              skips the outage.</span
+              >We can't keep this <b>backward-compatible</b> — dropping that
+              field is a breaking change.</span
             >
             <span class="vi hide-me"
-              >→ Báo cáo chỉ nhặt đúng hai tuần đẹp nhất, còn vụ sập hệ thống thì lờ đi.</span
+              >→ Chỗ này giữ tương thích ngược không nổi đâu — bỏ field đó là breaking change rồi.</span
             >
           </li>
         </ul>
@@ -263,28 +262,31 @@
           <div class="r">
             <span class="k">Collocation</span
             ><span class="v"
-              ><code>cherry-pick a commit</code> ·
-              <code>cherry-pick sth onto / into a branch</code> ·
-              <code>cherry-pick the fix / the hotfix</code> ·
-              <code>cherry-pick data / examples</code> (nghĩa xấu) ·
-              <code>a clean cherry-pick</code></span
+              ><code>backward compatible with sth</code> ·
+              <code>a backward-compatible change</code> ·
+              <code>maintain / preserve backward compatibility</code> ·
+              <code>break backward compatibility</code> ·
+              <code>a breaking change</code> (ngược nghĩa)</span
             >
           </div>
           <div class="r warn">
             <span class="k">Bẫy</span
             ><span class="v"
-              ><b>Có gạch nối</b>: <em>cherry-pick</em>, quá khứ
-              <em>cherry-picked</em> — đừng viết rời “cherry pick”. Giới từ là
-              <code>onto</code> / <code>into</code> + nhánh,
-              <b>không phải “to”</b>. Nghĩa bóng là lời trách, không phải lời
-              khen — dùng nhầm với khách là mất lòng.</span
+              >Giới từ là <b>with</b>, không phải “to” —
+              <em>compatible <b>with</b> v1</em>. Đứng <b>trước</b> danh từ thì
+              có gạch nối: <em>a backward-compatible change</em>; đứng sau
+              <code>be</code> thì không: <em>it is backward compatible</em>.
+              Danh từ là <code>backward compatibility</code> (không đếm được).
+              Mỹ viết <code>backward</code>, Anh hay viết
+              <code>backwards</code> — chọn một rồi dùng nhất quán.</span
             >
           </div>
           <div class="r">
             <span class="k">Họ từ</span
             ><span class="v"
-              >cherry-picked · cherry-picking · a cherry-pick (n, trong Git) ·
-              cherry-picker</span
+              >backward compatibility (n) · backwards compatible (biến thể
+              Anh-Anh) · compatible / incompatible · a breaking change (ngược
+              nghĩa)</span
             >
           </div>
         </div>
@@ -576,11 +578,10 @@
           <b>Mai:</b> Morning! Before standup — I have some <b>bandwidth</b> this
           afternoon, so I can finally pay down some of the
           <b>tech debt</b> in the login code.<br />
-          <b>Nam:</b> Nice. One thing first: the timeout hotfix is still only on
-          main. Can you <b>cherry-pick</b> it onto <code>release/1.8</code>
-          before you touch anything else?<br />
-          <b>Mai:</b> Sure. If it doesn't apply cleanly I'll <b>loop in</b> Nga —
-          she wrote that commit.<br />
+          <b>Nam:</b> Nice. Just keep it <b>backward compatible</b> — the old
+          mobile app still calls that endpoint.<br />
+          <b>Mai:</b> Good point. If I can't avoid a breaking change I'll
+          <b>loop in</b> Nga before I touch it.<br />
           <b>Nam:</b> 👍 Also let's <b>catch up</b> after lunch — I want to walk
           you through the new token flow before you start.
         </div>
@@ -588,8 +589,8 @@
           <summary>Bản dịch</summary>
           <p class="hide-me">
             <b>Mai:</b> Chào buổi sáng! Tranh thủ trước giờ standup — chiều nay tôi còn rảnh, tính trả bớt đống tech debt ở phần đăng nhập.<br />
-            <b>Nam:</b> Ngon. Nhưng làm cái này trước đã: hotfix timeout mới nằm trên main thôi. Bê nó sang <code>release/1.8</code> giúp tôi rồi hẵng động vào chỗ khác nhé.<br />
-            <b>Mai:</b> Được. Bê không trót lọt thì tôi kéo Nga vào — commit đó chị ấy viết.<br />
+            <b>Nam:</b> Ngon. Nhưng nhớ giữ tương thích ngược nhé — app mobile bản cũ vẫn gọi vào endpoint đó đấy.<br />
+            <b>Mai:</b> Ừ nhỉ. Nếu không tránh được breaking change thì tôi kéo Nga vào rồi mới đụng vào.<br />
             <b>Nam:</b> 👍 À, ăn trưa xong ngồi lại chút — tôi muốn dẫn bạn qua luồng token mới rồi hẵng bắt tay vào.
           </p>
         </details>
@@ -601,11 +602,11 @@
         <ol class="ex">
           <li>
             <b>Chọn từ đúng</b> — <code>technical debt</code> ·
-            <code>cherry-pick</code> · <code>loop in</code> ·
+            <code>backward compatible</code> · <code>loop in</code> ·
             <code>bandwidth</code> · <code>catch up</code>
             <span class="hide-me">
-              <br />(a) Chỉ bê riêng một commit sang nhánh release → ___ it onto
-              <code>release/1.8</code>. <br />(b) Làm nhanh cho kịp hạn, sau này
+              <br />(a) Bản mới vẫn chạy được với client cũ, khách không phải
+              sửa gì → <em>the change is ___.</em> <br />(b) Làm nhanh cho kịp hạn, sau này
               phải trả giá → <em>we took on a lot of ___.</em> <br />(c) “Tôi
               không đủ thời gian tuần này” →
               <em>I don't have the ___ this week.</em>
@@ -615,7 +616,7 @@
             <b>Điền giới từ</b><br />
             (a) <em>“Let me ___ ___ the client so they're aware.”</em>
             <span class="hide-me">(kéo khách vào cuộc trao đổi)</span><br />
-            (b) <em>“Can you cherry-pick that commit ___ the release branch?”</em><br />
+            (b) <em>“The new API is backward compatible ___ v1.”</em><br />
             (c) <em>“I need to catch up ___ my unread emails.”</em><br />
             (d) <em>“Let's catch up ___ Sarah when she's back from leave.”</em>
           </li>
@@ -630,16 +631,17 @@
             <code>catch up on sth</code> thế nào? Đặt một câu cho mỗi cụm.
           </li>
           <li class="hide-me">
-            <b>Dịch Việt–Anh</b> — “Cứ bê riêng cái hotfix đó sang nhánh
-            release; phần trả nợ kỹ thuật để sau, tuần này tôi không đủ sức.”
+            <b>Dịch Việt–Anh</b> — “Bản này vẫn tương thích ngược với v1 nên
+            khách không phải sửa gì; phần trả nợ kỹ thuật để tuần sau, tuần này
+            tôi không đủ sức.”
           </li>
         </ol>
         <details>
           <summary>Đáp án</summary>
           <ol>
             <li>
-              (a) <b>cherry-pick</b>
-              <span class="hide-me">— bê đúng một commit sang nhánh khác.</span>
+              (a) <b>backward compatible</b>
+              <span class="hide-me">— client cũ vẫn chạy được, khách khỏi sửa.</span>
               (b) <b>technical debt</b>
               <span class="hide-me">— không đếm được, đi với <em>a lot of</em>.</span>
               (c) <b>bandwidth</b>
@@ -651,8 +653,8 @@
                 >— <em>loop in the client</em> (danh từ để sau được; đại từ thì
                 xen giữa).</span
               >
-              (b) <b>onto</b>
-              <span class="hide-me">— hoặc <code>into</code>, không dùng “to”.</span>
+              (b) <b>with</b>
+              <span class="hide-me">— <em>compatible <b>with</b></em>, không phải “to”.</span>
               (c) <b>on</b>
               <span class="hide-me">— <code>catch up on + việc</code>.</span>
               (d) <b>with</b>
@@ -680,11 +682,12 @@
             </li>
             <li>
               <b
-                >“Just cherry-pick that hotfix onto the release branch; the tech
-                debt cleanup can wait — I don't have the bandwidth this week.”</b
+                >“This release is backward compatible with v1, so nothing changes
+                on your side; the tech debt cleanup can wait until next week — I
+                don't have the bandwidth this week.”</b
               >
               <span class="hide-me"
-                >— chú ý <code>cherry-pick … <b>onto</b></code> và
+                >— chú ý <code>compatible <b>with</b></code> và
                 <code>tech debt</code> không có <code>-s</code>.</span
               >
             </li>
@@ -711,10 +714,12 @@
             >
           </li>
           <li>
-            <b>cherry-pick có gạch nối · đi với <em>onto</em></b>
+            <b>backward compatible <em>with</em>, không phải “to”</b>
             <span class="hide-me"
-              >— nghĩa Git trung tính, nghĩa bóng (nhặt số liệu có lợi) là lời
-              trách — đừng dùng nhầm chỗ với khách.</span
+              >— có gạch nối khi đứng trước danh từ:
+              <em>a backward-compatible change</em>. Danh từ:
+              <code>backward compatibility</code>. Ngược nghĩa:
+              <code>a breaking change</code>.</span
             >
           </li>
           <li>
