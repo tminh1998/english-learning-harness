@@ -50,7 +50,7 @@ tuyệt đối.
 
 ---
 
-## Bảy quy tắc CỨNG
+## Tám quy tắc CỨNG
 
 ### R1 — Không trùng từ đã học (hard gate)
 
@@ -216,6 +216,30 @@ ra. Luật này áp cho **mọi** chỗ có tiếng Việt: cột `Nghĩa gọn`
 
 5. **Đọc to lên một lượt trước khi ghi file.** Câu nào phải đọc hai lần mới xuôi thì
    viết lại. Đây là kiểm tra cuối, không bỏ qua được.
+
+---
+
+### R8 — Mỗi từ mới phải kéo theo ít nhất một từ cũ
+
+Câu ví dụ không chỉ để dạy từ hôm nay — nó còn là **chỗ ôn lại** từ hôm qua. Gặp
+lại một từ trong ngữ cảnh mới là cách nhớ tốt hơn nhiều so với đọc lại định nghĩa.
+
+1. **Mỗi từ mới**: trong hai câu ví dụ phải có **≥ 1 từ đã học ở buổi trước** (bất
+   kỳ buổi nào, không riêng buổi liền trước).
+2. **Mẩu đọc**: cũng phải có ≥ 1 từ cũ.
+3. **Đánh dấu từ cũ**: HTML dùng `<span class="rev">từ cũ</span>`, Markdown dùng
+   `_từ cũ_`. **Không in đậm** — in đậm chỉ dành cho từ mới của bài. CSS `.rev`
+   nằm sẵn ở `{assets}/lesson.css` (gạch chân chấm chấm), đừng nhúng style riêng.
+4. **Phải đúng nghĩa đã học**, không phải trùng mặt chữ: `reach the client` KHÔNG
+   tính là ôn `reach out`; `on the scope` KHÔNG tính là ôn `scope creep`.
+5. **Ưu tiên** từ đang tới hạn trong `{reviewQueue}`, và ưu tiên từ **khác nhóm**
+   với từ mới (từ IT kéo theo một từ giao tiếp và ngược lại) để nối mạng từ vựng.
+6. Câu vẫn phải tự nhiên. Nhồi ba từ cũ vào một câu cho đủ chỉ tiêu là hỏng —
+   một từ, đặt đúng chỗ, là đủ.
+7. **Ngoại lệ duy nhất**: buổi #1 (chưa có từ cũ nào để tái sử dụng).
+
+Cách tự kiểm trước khi đóng buổi: đọc lại từng khối ví dụ, chỉ ra được từ cũ nằm ở
+đâu và nó thuộc buổi nào. Không chỉ ra được = viết lại câu.
 
 ---
 

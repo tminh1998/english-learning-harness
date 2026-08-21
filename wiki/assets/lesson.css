@@ -263,6 +263,12 @@ ul.examples li {
   margin-bottom: 8px;
 }
 ul.examples .en b, .passage b { color: var(--accent); font-weight: 700; }
+/* .rev = từ CŨ được tái sử dụng trong ví dụ (luật R8) */
+ul.examples .en .rev, .passage .rev, ul.examples .vi .rev {
+  border-bottom: 1.5px dotted currentColor;
+  opacity: .92;
+}
+ul.examples .en .rev { font-weight: 600; }
 ul.examples .vi {
   display: block;
   margin-top: 4px;

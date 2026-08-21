@@ -60,7 +60,7 @@ giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
 buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 
-## Sáu luật dễ vi phạm nhất — kiểm lại trước khi trả lời
+## Bảy luật dễ vi phạm nhất — kiểm lại trước khi trả lời
 
 1. **Ngày tháng**: `. tools/openit.sh` rồi `hnay "%Y-%m-%d %A %G-W%V"`. Không suy
    đoán từ context, và **không gọi `date` trần** — xem luật 5.
@@ -81,6 +81,11 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
    "xung đột khi gộp code". Giọng bám vai câu gốc: khách → *anh/chị*, đồng nghiệp →
    *mình/cậu*. Đọc to một lượt trước khi ghi file.
 
+7. **Ví dụ phải ôn lại từ cũ (R8)**: mỗi từ mới, trong hai câu ví dụ phải có ít nhất
+   **một từ đã học buổi trước**; mẩu đọc cũng vậy. Đánh dấu bằng
+   `<span class="rev">…</span>` (HTML) / `_từ cũ_` (md) — **không** in đậm. Trùng mặt
+   chữ mà khác nghĩa thì không tính. Chỉ buổi #1 được miễn.
+
 ## Checklist đóng một buổi học (R3 + R6 — thiếu 1 là chưa xong)
 
 ```
@@ -88,6 +93,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 [ ] wiki/lessons/<tuần>/<ngày>.md          đã tạo, đủ 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
+[ ] mỗi từ mới có ≥1 từ cũ trong ví dụ     R8 — mẩu đọc cũng vậy, đánh dấu .rev
 [ ] wiki/VOCAB_INDEX.md                    +5 dòng, đúng cột, sắp theo ngày
 [ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = hôm nay +1
 [ ] wiki/PROGRESS.md                       streak +1, tổng từ +5, ghi ngày

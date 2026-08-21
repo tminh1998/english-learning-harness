@@ -12,3 +12,4 @@
 > [`../_templates/memory-entry.md`](../_templates/memory-entry.md).
 
 - [Nghĩa Việt phải nghe như người Việt nói](dich-tu-nhien.md) — không dịch từng chữ, giữ nguyên thuật ngữ dev tiếng Anh (R7).
+- [Ví dụ phải ôn lại từ cũ](vi-du-phai-on-tu-cu.md) — mỗi từ mới kéo theo ≥1 từ cũ, đánh dấu `.rev` (R8).

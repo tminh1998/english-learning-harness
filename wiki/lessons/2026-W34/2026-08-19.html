@@ -157,13 +157,9 @@
           </li>
           <li>
             <span class="en"
-              >Double-clicking the pay button creates
-              <b>a race condition</b> between the click handler and the
-              confirmation call.</span
-            >
+              >Double-clicking the pay button creates a <b>race condition</b> between the click handler and the confirmation call — an <span class="rev">edge case</span> QA hit twice this week.</span>
             <span class="vi hide-me"
-              >→ Bấm đúp nút thanh toán là sinh ra race condition giữa hàm xử lý cú bấm và lời gọi xác nhận.</span
-            >
+              >→ Bấm đúp nút thanh toán là sinh ra race condition giữa hàm xử lý cú bấm và lời gọi xác nhận — edge case này QA dính hai lần trong tuần rồi.</span>
           </li>
         </ul>
 
@@ -251,13 +247,9 @@
           </li>
           <li>
             <span class="en"
-              >The whole retry logic only works if the handler is
-              <b>idempotent</b>; otherwise every timeout duplicates an
-              order.</span
-            >
+              >The whole retry logic only works if the handler is <b>idempotent</b>; otherwise every timeout duplicates an order and the payment tests go <span class="rev">flaky</span>.</span>
             <span class="vi hide-me"
-              >→ Cơ chế retry chỉ chạy đúng khi handler idempotent; không thì cứ timeout một lần là đơn hàng nhân đôi.</span
-            >
+              >→ Cơ chế retry chỉ chạy đúng khi handler idempotent; không thì cứ timeout một lần là đơn hàng nhân đôi, mà test thanh toán cũng chập chờn theo.</span>
           </li>
         </ul>
 
@@ -339,12 +331,9 @@
         <ul class="examples">
           <li>
             <span class="en"
-              >I <b>pushed back on</b> the Friday deadline and asked for one
-              more sprint; they agreed after I showed the test list.</span
-            >
+              >I <b>pushed back on</b> the Friday deadline and asked for one more sprint; they agreed after I <span class="rev">walked them through</span> the <span class="rev">regression</span> list.</span>
             <span class="vi hide-me"
-              >→ Tôi có phản đối lại cái hạn thứ Sáu và xin thêm một sprint; đưa danh sách test ra là họ đồng ý.</span
-            >
+              >→ Tôi có phản đối lại cái hạn thứ Sáu và xin thêm một sprint; dẫn họ đi qua danh sách regression một lượt là họ đồng ý.</span>
           </li>
           <li>
             <span class="en"
@@ -445,12 +434,9 @@
           </li>
           <li>
             <span class="en"
-              >The report looks great, but there are a couple of
-              <b>caveats</b> in the footnotes worth reading.</span
-            >
+              >Those numbers are a <span class="rev">ballpark</span> only, and there are a couple of <b>caveats</b> in the footnotes worth reading.</span>
             <span class="vi hide-me"
-              >→ Báo cáo nhìn ổn đấy, nhưng mấy dòng lưu ý dưới phần chú thích cũng nên đọc.</span
-            >
+              >→ Mấy con số đó mới là áng chừng thôi, mà dưới phần chú thích còn vài dòng lưu ý cũng nên đọc.</span>
           </li>
         </ul>
 
@@ -528,12 +514,9 @@
         <ul class="examples">
           <li>
             <span class="en"
-              >There was an <b>awkward</b> silence on the call after I asked who
-              owned the delay.</span
-            >
+              >There was an <b>awkward</b> silence on the call after I asked why nobody had given the client a <span class="rev">heads-up</span>.</span>
             <span class="vi hide-me"
-              >→ Cả cuộc gọi im bặt một cách gượng gạo, sau khi tôi hỏi ai chịu trách nhiệm vụ trễ hạn.</span
-            >
+              >→ Cả cuộc gọi im bặt một cách gượng gạo, sau khi tôi hỏi sao không ai báo trước cho khách một tiếng.</span>
           </li>
           <li>
             <span class="en"

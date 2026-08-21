@@ -64,8 +64,8 @@
 
   <ul class="examples">
     <li>
-      <span class="en">We shipped the new checkout behind a <b>feature flag</b>, so we can turn it off the second the error rate spikes.</span>
-      <span class="vi hide-me">→ Bọn mình đẩy trang checkout mới ra sau một feature flag, lỗi mà nhảy vọt là tắt được ngay.</span>
+      <span class="en">We shipped the new checkout behind a <b>feature flag</b>, so we can turn it off the second the error rate spikes — no <span class="rev">rollback</span> needed.</span>
+      <span class="vi hide-me">→ Bọn mình đẩy trang checkout mới ra sau một feature flag, lỗi mà nhảy vọt là tắt ngay được, khỏi phải rollback.</span>
     </li>
     <li>
       <span class="en">Let's roll it out to 5% of users first — the <b>feature flag</b> lets us do that without a new deploy.</span>
@@ -105,8 +105,8 @@
       <span class="vi hide-me">→ Đổi tên field đó là một breaking change đấy — client nào còn gọi tên cũ là dính lỗi 400 hết.</span>
     </li>
     <li>
-      <span class="en">Rest assured this update has no <b>breaking changes</b> — your system will run exactly as before.</span>
-      <span class="vi hide-me">→ (email khách) Anh/chị yên tâm, bản cập nhật này không có breaking change nào, hệ thống bên mình chạy y như cũ ạ.</span>
+      <span class="en">Rest assured this update has no <b>breaking changes</b> — it's fully <span class="rev">backward compatible</span>, so nothing on your side has to change.</span>
+      <span class="vi hide-me">→ (email khách) Anh/chị yên tâm, bản cập nhật này không có breaking change nào — vẫn tương thích ngược hoàn toàn, bên anh/chị không phải sửa gì ạ.</span>
     </li>
   </ul>
 
@@ -175,8 +175,8 @@
 
   <ul class="examples">
     <li>
-      <span class="en">We need to <b>align</b> with the client on scope before we commit to a date.</span>
-      <span class="vi hide-me">→ Phải align với khách về scope đã rồi mới dám chốt ngày.</span>
+      <span class="en">We need to <b>align</b> with the client on scope before we even give them a <span class="rev">ballpark</span> date.</span>
+      <span class="vi hide-me">→ Phải align với khách về scope đã, rồi mới dám đưa cả ngày áng chừng.</span>
     </li>
     <li>
       <span class="en">Let's <b>align</b> as a team: this release only fixes bugs, new features go to the next sprint.</span>
@@ -231,10 +231,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Ghi chú cuộc họp lập kế hoạch release với khách</p>
-  <div class="passage">Notes from today's release planning call. We agreed to ship the new billing engine behind a <b>feature flag</b> first, so we can turn it off instantly if anything looks wrong in production. The one <b>breaking change</b> — the old CSV export is being dropped — has to reach the client's data team early, not be discovered on launch day. Mid-call the finance lead asked, <b>out of the blue</b>, whether invoices would still export to their old accounting tool; good thing someone wrote it down. Before we commit to a date, we need to <b>align</b> with every <b>stakeholder</b> on the scope — dev, QA, and the client's ops team all have to say yes.</div>
+  <div class="passage">Notes from today's release planning call. We agreed to ship the new billing engine behind a <b>feature flag</b> first, so we can turn it off instantly if anything looks wrong in production. The one <b>breaking change</b> — the old CSV export is being dropped — needs to go to the client's data team as an early <span class="rev">heads-up</span>, not be discovered on launch day. Mid-call the finance lead asked, <b>out of the blue</b>, whether invoices would still export to their old accounting tool; good thing someone wrote it down. Before we commit to a date, we need to <b>align</b> with every <b>stakeholder</b> on the scope — dev, QA, and the client's ops team all have to say yes.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Ghi chú buổi họp lập kế hoạch release hôm nay. Cả nhóm thống nhất đẩy phần billing engine mới ra sau một feature flag trước, để trục trặc gì trên production là tắt được ngay. Cái breaking change duy nhất — bỏ export CSV kiểu cũ — phải báo cho team dữ liệu của khách sớm, đừng để tới ngày go-live họ mới phát hiện. Giữa buổi, anh phụ trách tài chính tự dưng hỏi hóa đơn có còn export sang phần mềm kế toán cũ của họ không; may mà có người ghi lại. Trước khi chốt ngày, bọn mình phải align với mọi stakeholder về scope — dev, QA, với bên vận hành của khách, tất cả phải đồng ý.</p>
+    <p class="hide-me">Ghi chú buổi họp lập kế hoạch release hôm nay. Cả nhóm thống nhất đẩy phần billing engine mới ra sau một feature flag trước, để trục trặc gì trên production là tắt được ngay. Cái breaking change duy nhất — bỏ export CSV kiểu cũ — phải báo trước cho team dữ liệu của khách, đừng để tới ngày go-live họ mới phát hiện. Giữa buổi, anh phụ trách tài chính tự dưng hỏi hóa đơn có còn export sang phần mềm kế toán cũ của họ không; may mà có người ghi lại. Trước khi chốt ngày, bọn mình phải align với mọi stakeholder về scope — dev, QA, với bên vận hành của khách, tất cả phải đồng ý.</p>
   </details>
 </section>
 
