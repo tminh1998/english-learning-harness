@@ -1,7 +1,8 @@
 # Ví dụ phải ôn lại từ cũ
 
-**Rule (R8):** Mỗi từ mới, trong hai câu ví dụ phải xuất hiện ít nhất **một từ đã
-học ở buổi trước**; mẩu đọc cũng phải có ít nhất một từ cũ.
+**Rule (R8):** **Mỗi câu** ví dụ phải chứa ít nhất **một từ đã học ở buổi trước**, và
+**hai câu của cùng một từ phải mượn hai từ cũ khác nhau**; mẩu đọc cũng phải có ít
+nhất một từ cũ.
 
 **Vì sao:** User nói thẳng (2026-08-21) là muốn các đoạn ví dụ "tận dụng ít nhất 1
 từ cũ của các bài trước". Gặp lại từ trong ngữ cảnh mới nhớ tốt hơn đọc lại định
@@ -16,4 +17,8 @@ nghĩa, và nó nối các buổi rời rạc thành một mạng từ vựng.
 - Một từ cũ đặt đúng chỗ là đủ; nhồi cho đủ chỉ tiêu làm câu mất tự nhiên.
 - Buổi #1 là ngoại lệ duy nhất.
 
-**Đã retrofit:** toàn bộ buổi #2–#8 (2026-08-14 → 2026-08-21), cả `.md` lẫn `.html`.
+**Lịch sử:** user yêu cầu 2026-08-21 (lần đầu: ≥1 từ cũ mỗi khối), rồi siết ngay trong
+ngày thành **mỗi câu một từ cũ, hai câu không trùng nhau**.
+
+**Đã retrofit:** toàn bộ buổi #2–#8 (2026-08-14 → 2026-08-21) — 70 câu ví dụ, cả `.md`
+lẫn `.html`.

@@ -143,18 +143,13 @@
 
         <ul class="examples">
           <li>
-            <span class="en"
-              >The gateway will <b>throttle</b> any client that sends more than
-              100 requests per minute.</span
-            >
-            <span class="vi hide-me"
-              >→ API gateway sẽ throttle bất kỳ client nào bắn quá 100 request mỗi phút.</span
-            >
+            <span class="en">The gateway will <b>throttle</b> any client that sends more than 100 requests per minute; if a real customer hits the limit, <span class="rev">escalate</span> it to me.</span>
+            <span class="vi hide-me">→ API gateway sẽ throttle bất kỳ client nào bắn quá 100 request mỗi phút; khách thật mà dính thì đẩy lên cho tôi.</span>
           </li>
           <li>
             <span class="en"
               >We deliberately <b>throttle</b> the nightly sync so it doesn't
-              turn the database into a bottleneck.</span
+              turn the database into a <span class="rev">bottleneck</span>.</span
             >
             <span class="vi hide-me"
               >→ Bọn mình cố tình bóp chậm job sync ban đêm, không thì nó làm nghẽn cả database.</span
@@ -232,13 +227,8 @@
               >→ Lớp cache mới nhanh thật, nhưng làm hỏng luồng thanh toán khách vãng lai — đúng nghĩa một regression, nên trong vòng một tiếng bọn mình rollback luôn.</span>
           </li>
           <li>
-            <span class="en"
-              >We run the full <b>regression</b> suite before every release, so
-              most of these never reach the client.</span
-            >
-            <span class="vi hide-me"
-              >→ Trước mỗi lần release bọn mình chạy trọn bộ regression test, nên loại lỗi này hiếm khi tới được tay khách.</span
-            >
+            <span class="en">We run the full <b>regression</b> suite before every release — the only noise left is one <span class="rev">flaky</span> test in the payment module.</span>
+            <span class="vi hide-me">→ Trước mỗi lần release bọn mình chạy trọn bộ regression test — giờ chỉ còn đúng một test chập chờn ở phần thanh toán là gây nhiễu.</span>
           </li>
         </ul>
 
@@ -314,17 +304,12 @@
 
         <ul class="examples">
           <li>
-            <span class="en"
-              >Just a quick <b>heads-up</b>: the staging server will be down for
-              an hour tomorrow morning.</span
-            >
-            <span class="vi hide-me"
-              >→ Báo anh/chị biết trước cho chủ động: sáng mai server staging sẽ nghỉ một tiếng.</span
-            >
+            <span class="en">Just a quick <b>heads-up</b>: the staging server will be down for an hour tomorrow morning while we rehearse a <span class="rev">rollback</span>.</span>
+            <span class="vi hide-me">→ Báo anh/chị biết trước cho chủ động: sáng mai server staging nghỉ một tiếng để bọn em tập chạy thử rollback.</span>
           </li>
           <li>
             <span class="en"
-              >Thanks for the <b>heads-up</b> — I'll clarify the new deadline
+              >Thanks for the <b>heads-up</b> — I'll <span class="rev">clarify</span> the new deadline
               with the client before they start testing.</span
             >
             <span class="vi hide-me"
@@ -409,13 +394,8 @@
               >→ Tôi chưa chốt ngày được, nhưng nếu scope không phình thêm thì áng chừng cả đợt migration mất khoảng ba tuần.</span>
           </li>
           <li>
-            <span class="en"
-              >Their budget is 20,000 and our estimate is 22,000 — at least we're
-              in the same <b>ballpark</b>.</span
-            >
-            <span class="vi hide-me"
-              >→ Họ có 20.000, mình báo giá 22.000 — thôi thì cũng gọi là xấp xỉ nhau.</span
-            >
+            <span class="en">Their budget is 20,000 and our estimate is 22,000 — same <b>ballpark</b>, as long as the <span class="rev">deliverables</span> stay as agreed.</span>
+            <span class="vi hide-me">→ Họ có 20.000, mình báo giá 22.000 — cũng gọi là xấp xỉ nhau, miễn là mấy món phải giao đừng đổi.</span>
           </li>
         </ul>
 
@@ -496,12 +476,8 @@
               >→ Chiều nay cậu để mắt hộ tớ cái log lỗi nhé? Bản fix ra từ trưa rồi — lỗi mà vọt lên là rollback ngay.</span>
           </li>
           <li>
-            <span class="en"
-              >I'll <b>keep an eye on</b> the pot while you answer the door.</span
-            >
-            <span class="vi hide-me"
-              >→ Để tớ trông nồi cho, cậu chạy ra mở cửa đi.</span
-            >
+            <span class="en">I'll <b>keep an eye on</b> the pot while you answer the door — shout if we've <span class="rev">run out of</span> fish sauce.</span>
+            <span class="vi hide-me">→ Để tớ trông nồi cho, cậu chạy ra mở cửa đi — hết nước mắm thì gọi tớ một tiếng.</span>
           </li>
         </ul>
 

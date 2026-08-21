@@ -26,14 +26,15 @@
      đồng nghiệp → mình/tớ/cậu. Đọc to một lượt; câu nào đọc hai lần mới xuôi thì
      viết lại. -->
 
-<!-- ⚠️ R8 — hai câu ví dụ dưới đây phải có ÍT NHẤT MỘT từ đã học buổi trước, viết
-     dạng _từ cũ_ (nghiêng, KHÔNG in đậm — in đậm dành cho từ mới). Trùng mặt chữ mà
-     khác nghĩa thì không tính. Ưu tiên từ đang tới hạn ôn và từ khác nhóm. -->
+<!-- ⚠️ R8 — MỖI câu ví dụ dưới đây phải có ít nhất MỘT từ đã học buổi trước, và hai
+     câu phải mượn HAI từ cũ KHÁC NHAU. Viết dạng _từ cũ_ (nghiêng, KHÔNG in đậm — in
+     đậm dành cho từ mới). Trùng mặt chữ mà khác nghĩa thì không tính. Ưu tiên từ đang
+     tới hạn ôn và từ khác nhóm. -->
 
 **Ví dụ**
-- {{câu 1 — bối cảnh dev/khách hàng}}
+- {{câu 1 — bối cảnh dev/khách hàng, có _từ cũ A_}}
   → *{{dịch Việt}}*
-- {{câu 2 — bối cảnh khác, có _từ cũ_ nếu câu 1 chưa có}}
+- {{câu 2 — bối cảnh khác, có _từ cũ B_ (khác A)}}
   → *{{dịch Việt}}*
 
 **Collocation** — {{cụm hay đi kèm; đây là phần đáng nhớ nhất}}

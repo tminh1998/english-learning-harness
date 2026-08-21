@@ -68,8 +68,8 @@
       <span class="vi hide-me">→ Bọn mình đẩy trang checkout mới ra sau một feature flag, lỗi mà nhảy vọt là tắt ngay được, khỏi phải rollback.</span>
     </li>
     <li>
-      <span class="en">Let's roll it out to 5% of users first — the <b>feature flag</b> lets us do that without a new deploy.</span>
-      <span class="vi hide-me">→ Mở cho 5% user trước đã; có feature flag nên khỏi cần deploy lại.</span>
+      <span class="en">Let's roll it out to 5% of users first and <span class="rev">keep an eye on</span> the error rate — the <b>feature flag</b> lets us do that without a new deploy.</span>
+      <span class="vi hide-me">→ Mở cho 5% user trước đã rồi để mắt cái tỷ lệ lỗi; có feature flag nên khỏi cần deploy lại.</span>
     </li>
   </ul>
 
@@ -101,8 +101,8 @@
 
   <ul class="examples">
     <li>
-      <span class="en">Renaming that field is a <b>breaking change</b> — every client calling the old name will get a 400.</span>
-      <span class="vi hide-me">→ Đổi tên field đó là một breaking change đấy — client nào còn gọi tên cũ là dính lỗi 400 hết.</span>
+      <span class="en">Renaming that field is a <b>breaking change</b> — every client calling the old name will get a 400, so <span class="rev">deprecate</span> it for one release instead.</span>
+      <span class="vi hide-me">→ Đổi tên field đó là một breaking change đấy — client nào còn gọi tên cũ là dính lỗi 400 hết, nên báo là sắp bỏ rồi để thêm một bản nữa hẵng xoá.</span>
     </li>
     <li>
       <span class="en">Rest assured this update has no <b>breaking changes</b> — it's fully <span class="rev">backward compatible</span>, so nothing on your side has to change.</span>
@@ -138,12 +138,12 @@
 
   <ul class="examples">
     <li>
-      <span class="en">Before we lock the deadline, let's make sure every <b>stakeholder</b> has signed off — dev, QA, and the client's ops team.</span>
+      <span class="en">Before we lock the deadline, let's make sure every <b>stakeholder</b> has <span class="rev">signed off</span> — dev, QA, and the client's ops team.</span>
       <span class="vi hide-me">→ Chốt hạn thì phải chắc mọi stakeholder đã duyệt đã: dev, QA, với cả bên vận hành của khách.</span>
     </li>
     <li>
-      <span class="en">I'll gather feedback from the <b>stakeholders</b> and send you the final plan by the end of the week.</span>
-      <span class="vi hide-me">→ (báo cáo khách) Em sẽ tổng hợp phản hồi từ các stakeholder rồi gửi lại anh bản kế hoạch cuối tuần này ạ.</span>
+      <span class="en">I'll gather feedback from the <b>stakeholders</b> and <span class="rev">loop you in</span> before we send the final plan on Friday.</span>
+      <span class="vi hide-me">→ (báo cáo khách) Em sẽ tổng hợp phản hồi từ các stakeholder rồi kéo anh vào trước khi bên em gửi bản kế hoạch cuối vào thứ Sáu ạ.</span>
     </li>
   </ul>
 
@@ -179,8 +179,8 @@
       <span class="vi hide-me">→ Phải align với khách về scope đã, rồi mới dám đưa cả ngày áng chừng.</span>
     </li>
     <li>
-      <span class="en">Let's <b>align</b> as a team: this release only fixes bugs, new features go to the next sprint.</span>
-      <span class="vi hide-me">→ (standup) Cả team mình align lại một chút nhé: bản này chỉ sửa bug, tính năng mới để sprint sau.</span>
+      <span class="en">Let's <b>align</b> as a team: this release only fixes bugs — anything new is <span class="rev">scope creep</span> and goes to the next sprint.</span>
+      <span class="vi hide-me">→ (standup) Cả team mình align lại một chút nhé: bản này chỉ sửa bug — thêm gì nữa là scope phình, để sprint sau.</span>
     </li>
   </ul>
 
@@ -212,11 +212,11 @@
 
   <ul class="examples">
     <li>
-      <span class="en">Mid-meeting the client asked, <b>out of the blue</b>, whether we still support the old export format.</span>
-      <span class="vi hide-me">→ Đang họp thì khách tự dưng hỏi luôn là có còn hỗ trợ định dạng export cũ không.</span>
+      <span class="en">Mid-meeting the client asked, <b>out of the blue</b>, whether the export format we <span class="rev">deprecated</span> last year still works.</span>
+      <span class="vi hide-me">→ Đang họp thì khách tự dưng hỏi luôn là cái định dạng export bọn mình báo bỏ từ năm ngoái có còn chạy không.</span>
     </li>
     <li>
-      <span class="en">An old colleague messaged me <b>out of the blue</b> last night to catch up.</span>
+      <span class="en">An old colleague messaged me <b>out of the blue</b> last night to <span class="rev">catch up</span>.</span>
       <span class="vi hide-me">→ Tối qua một đồng nghiệp cũ tự dưng nhắn tin rủ gặp hàn huyên.</span>
     </li>
   </ul>
