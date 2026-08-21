@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 35 từ** · IT 14 · Business 14 · Life 7 · ad-hoc 0
-**Cập nhật:** 2026-08-20
+**Tổng: 40 từ** · IT 16 · Business 16 · Life 8 · ad-hoc 0
+**Cập nhật:** 2026-08-21
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -53,6 +53,11 @@
 | 33 | loop in | loop sb in, looped in, looping in, in the loop, out of the loop, keep sb in the loop | phrasal verb | Business | kéo thêm người vào cuộc | 2026-08-20 | lesson |
 | 34 | bandwidth | mental bandwidth, a bandwidth issue, no bandwidth | noun (không đếm được) | Business | còn rảnh sức mà nhận việc không | 2026-08-20 | lesson |
 | 35 | catch up | caught up, catching up, a catch-up, catch up with, catch up on, catch up to | phrasal verb | Life | gặp hàn huyên; làm bù cho kịp | 2026-08-20 | lesson |
+| 36 | feature flag | feature flags, feature-flagged, feature toggle, flag | noun | IT | công tắc bật/tắt tính năng, khỏi deploy lại | 2026-08-21 | lesson |
+| 37 | breaking change | breaking changes, break, broke, broken, backward-breaking | noun | IT | thay đổi phá tương thích, client cũ phải sửa | 2026-08-21 | lesson |
+| 38 | stakeholder | stakeholders, stake, stakeholding | noun | Business | bên liên quan, người cần hỏi ý | 2026-08-21 | lesson |
+| 39 | align | aligns, aligned, aligning, alignment, misalign, realign | verb | Business | ngồi lại thống nhất cho cùng hướng | 2026-08-21 | lesson |
+| 40 | out of the blue | a bolt from/out of the blue, come out of the blue | idiom | Life | tự dưng, bất thình lình | 2026-08-21 | lesson |
 
 <!--
 LUẬT GHI:
