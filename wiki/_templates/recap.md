@@ -23,6 +23,19 @@
 | --- | --- | --- | --- |
 | **<word>** /<ipa>/ (<v/n/phr v>) | **<nghĩa gọn>** — <vế làm rõ chỗ dễ hiểu sai> | <IT/Business/Life> | `<collocation 1>` · `<collocation 2>` |
 
+## Ngữ pháp tuần này — <m> điểm
+
+<!--
+  Gom các điểm ngữ pháp đã dạy trong tuần. Nguồn: wiki/grammar/CURRICULUM.md
+  (dòng ✅ có cột "Buổi" rơi vào tuần này) + khối "Ngữ pháp hôm nay" của từng bài.
+  ⛔ Tuần TRƯỚC 2026-08-24 chưa có ngữ pháp -> BỎ HẲN mục này, đừng để bảng rỗng.
+  Mỗi điểm ĐÚNG MỘT dòng.
+-->
+
+| # | Điểm | Công thức | Câu mẫu | Dùng khi nào |
+| --- | --- | --- | --- | --- |
+| [#<n>](../grammar/<slug>.md) | <tên điểm> | `<công thức gọn>` | _<câu tiếng Anh ngắn>_ | <một vế ngắn> |
+
 ## <N> chỗ dễ sai
 
 <!--

@@ -328,6 +328,8 @@ Phase 7  daylen "kiem-tra: <tuần> — <điểm>"  (R6)
 Phase 0  Auto-discovery + xác định tuần ISO cần ôn
 Phase 1  Đọc MỌI file {lessons}/<tuần>/*.md -> gom từ + IPA + nghĩa + collocation
          + mục Bẫy + câu ví dụ đắt nhất. Không có buổi nào -> báo rồi dừng.
+Phase 1.5 Gom điểm ngữ pháp của tuần: {grammar}/CURRICULUM.md, các dòng ✅ có cột
+         "Buổi" thuộc tuần này. Tuần trước `grammar.startDate` -> BỎ HẲN mục này.
 Phase 2  Ghi {recap}/<tuần>.md   theo {templates}/recap.md
 Phase 3  Ghi {recap}/<tuần>.html theo {templates}/recap.html
 Phase 4  sh tools/build-index.sh -> daylen "recap: <tuần> — <N> từ"  (R6)

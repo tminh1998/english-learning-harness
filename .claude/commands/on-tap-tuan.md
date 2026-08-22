@@ -22,6 +22,11 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
 3. Gom danh sách từ: tất cả từ mới của các buổi trong tuần. Với mỗi từ lấy sẵn
    IPA, từ loại, nghĩa Việt, collocation, mục **Bẫy**, và câu ví dụ đắt nhất.
    ⛔ Chỉ lấy từ **trong tuần đó**. Không kéo từ tuần khác, không thêm từ mới.
+3b. ⭐ **Gom điểm ngữ pháp của tuần.** Đọc `wiki/grammar/CURRICULUM.md`, lấy các
+   dòng ✅ có cột **"Buổi"** rơi vào tuần này; chi tiết từng điểm lấy ở khối
+   "Ngữ pháp hôm nay" trong chính các file `wiki/lessons/<tuần>/*.md`.
+   ⛔ Tuần **trước 2026-08-24** chưa có ngữ pháp → **bỏ hẳn** mục này khỏi trang,
+   đừng để bảng rỗng và tuyệt đối đừng bịa điểm nào.
 4. **Ghi bản Markdown** theo `wiki/_templates/recap.md` → `wiki/recap/<tuần>.md`.
 5. **Ghi bản HTML** theo `wiki/_templates/recap.html` → `wiki/recap/<tuần>.html`.
 6. `sh tools/build-index.sh` rồi `daylen "recap: <tuần> — <N> từ"` (R6).
@@ -29,9 +34,9 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
    thành công (mã sau nghĩa là bảng ôn đã khớp sẵn, không cần sinh lại). Mã khác
    → báo thẳng cho user là chưa lưu được.
 7. `openit "wiki/recap/<tuần>.html"` rồi tóm tắt trong chat: bao nhiêu từ, phân bố
-   IT/Business/Life, và 2-3 chỗ dễ sai đáng chú ý nhất của tuần.
+   IT/Business/Life, **các điểm ngữ pháp của tuần**, và 2-3 chỗ dễ sai đáng chú ý nhất.
 
-## Bốn luật riêng của bảng ôn
+## Năm luật riêng của bảng ôn
 
 1. **Nghĩa Việt nằm ngay cột kế bên** — đây là lý do trang này tồn tại. Cột nghĩa
    in đậm, nổi hơn mọi cột khác. Viết nghĩa gọn **2-6 chữ**, rồi gạch ngang thêm
@@ -52,6 +57,11 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
 4. **Mỗi từ đúng MỘT câu ví dụ.** Chọn câu đắt nhất trong bài gốc, không bê cả bài
    sang. Bảng ôn dài bằng bài học gốc thì không ai đọc lại — mà không đọc lại thì
    trang này vô nghĩa.
+
+5. **Ngữ pháp cũng đúng MỘT dòng mỗi điểm** (`<table class="ngu-phap">`): số thứ tự
+   → tên điểm → công thức gọn → một câu mẫu → một vế "dùng khi nào". Không chép cả
+   khối 8 mục của bài học sang — ai cần đọc kỹ thì bấm link `grammar/<slug>.md` ở
+   cột đầu. Cột "dùng khi nào" phải mang `hide-me`.
 
 ## Ghi đè
 
