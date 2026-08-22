@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 40 từ** · IT 16 · Business 16 · Life 8 · ad-hoc 0
-**Cập nhật:** 2026-08-21
+**Tổng: 45 từ** · IT 18 · Business 18 · Life 9 · ad-hoc 0
+**Cập nhật:** 2026-08-22
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -58,6 +58,11 @@
 | 38 | stakeholder | stakeholders, stake, stakeholding | noun | Business | bên liên quan, người cần hỏi ý | 2026-08-21 | lesson |
 | 39 | align | aligns, aligned, aligning, alignment, misalign, realign | verb | Business | ngồi lại thống nhất cho cùng hướng | 2026-08-21 | lesson |
 | 40 | out of the blue | a bolt from/out of the blue, come out of the blue | idiom | Life | tự dưng, bất thình lình | 2026-08-21 | lesson |
+| 41 | fallback | fallbacks, fall back, falls back, fell back, fallen back, fall back on | noun (v: fall back on/to) | IT | đường lui dựng sẵn, cái chính hỏng thì chạy cái này | 2026-08-22 | lesson |
+| 42 | brittle | brittleness, more brittle, the most brittle | adjective | IT | giòn, đụng nhẹ là gãy | 2026-08-22 | lesson |
+| 43 | bring up | brings up, brought up, bringing up, upbringing | phrasal verb | Business | nêu ra cho cả nhóm cùng bàn | 2026-08-22 | lesson |
+| 44 | turnaround | turnarounds, turnaround time, turn around, turned around, turning around | noun | Business | nhận việc tới lúc trả xong mất bao lâu | 2026-08-22 | lesson |
+| 45 | sort out | sorts out, sorted out, sorting out, get sorted, sorted | phrasal verb | Life | xử cho xong, dẹp gọn | 2026-08-22 | lesson |
 
 <!--
 LUẬT GHI:

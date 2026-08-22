@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-08-22 — 5 từ mới</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Tuần 2026-W34 · Buổi #9</div>
+  <h1>Thứ Bảy, 22 tháng 8, 2026</h1>
+  <div class="mixline">
+    <span class="badge it">2 IT</span>
+    <span class="badge biz">2 Giao tiếp</span>
+    <span class="badge life">1 Đời sống</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+  <button id="theme">🌗 Theo hệ thống</button>
+  <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
+</div>
+
+<section class="block">
+  <h2>Ôn nhanh đầu giờ</h2>
+  <p class="sub">Năm từ hôm qua (buổi #8) tới hạn ôn hôm nay. Tự trả lời rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li>Đổi tên một field trong API làm client cũ lỗi cho tới khi họ sửa theo — gọi là gì?</li>
+    <li>"Ngồi lại thống nhất cho cả nhóm cùng một hướng" — động từ nào, và đi với giới từ gì khi nói về <b>một vấn đề</b>?</li>
+    <li>Tự dưng, chẳng có gì báo trước — idiom bốn chữ nào?</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol class="hide-me">
+      <li><b>breaking change</b> — <em>"Renaming that field is a breaking change; every client must migrate."</em></li>
+      <li><b>align</b>, giới từ <b>on</b> — <em>"We need to align on scope."</em> (align <b>with</b> một người, <b>on</b> một vấn đề)</li>
+      <li><b>out of the blue</b> — <em>"She called me out of the blue last night."</em> (đủ bốn chữ, đừng rút thành <em>out of blue</em>)</li>
+    </ol>
+  </details>
+</section>
+
+<!-- ══ 1. fallback ══ -->
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">1</span>fallback
+        <button class="say" data-say="fall back on the cached value" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈfɔːlbæk/ · <em>noun (v: fall back on/to)</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">phương án dự phòng<span class="alt">cái chính hỏng thì tự chạy cái này</span></p>
+
+  <p class="def"><span class="tag">EN</span>something you use instead when the first choice fails.
+    <span class="def-vi hide-me">→ thứ bạn dùng thay thế khi lựa chọn đầu tiên hỏng.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <em>rollback</em> ở chỗ rollback là lùi về bản cũ <b>sau khi</b> đã hỏng, còn fallback là phương án B chuẩn bị từ trước, hỏng cái là nó đỡ ngay. Frontend gặp hằng ngày: fallback font, fallback UI, giá trị mặc định khi API không trả về.</p>
+
+  <ul class="examples">
+    <li>
+      <span class="en">When the pricing API times out, the app <b>falls back</b> to the last cached rates — they're a bit <span class="rev">stale</span>, but an empty screen is worse.</span>
+      <span class="vi hide-me">→ Khi API giá timeout, app tự lùi về mức giá cache gần nhất — hơi cũ, nhưng vẫn hơn là để màn hình trống.</span>
+    </li>
+    <li>
+      <span class="en">We kept the old checkout page as a <b>fallback</b> behind the <span class="rev">feature flag</span>, so support can switch a user back in one click.</span>
+      <span class="vi hide-me">→ Bọn mình giữ trang checkout cũ làm phương án dự phòng sau feature flag, bên support cần là bấm một cái đưa user về ngay.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a fallback option/plan</code>, <code>fall back on something</code>, <code>fall back to a value</code>, <code>fallback font</code>, <code>graceful fallback</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ viết liền <code>fallback</code>, động từ viết tách <code>fall back</code>. Giới từ: fall back <b>on</b> một phương án, fall back <b>to</b> một giá trị/trạng thái. Đừng nhầm với <code>rollback</code> — rollback lùi bản đã deploy, fallback là đường lui dựng sẵn.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">fallback, fallbacks, fall back, falls back, fell back, fallen back, fall back on</span></div>
+  </div>
+</article>
+
+<!-- ══ 2. brittle ══ -->
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">2</span>brittle
+        <button class="say" data-say="brittle tests" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈbrɪtl/ · <em>adjective</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">giòn, đụng nhẹ là gãy<span class="alt">sửa chỗ này hỏng chỗ kia</span></p>
+
+  <p class="def"><span class="tag">EN</span>easy to break, and likely to break as soon as anything around it changes.
+    <span class="def-vi hide-me">→ dễ vỡ, và hễ có gì xung quanh thay đổi là gãy ngay.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Tả code/test/hệ thống dính chặt vào nhau tới mức sửa chỗ này là gãy chỗ kia. Khác <em>flaky</em>: flaky là chập chờn, không sửa gì nó cũng lúc được lúc không; brittle thì chạy ổn định, nhưng hễ <b>có ai đụng vào</b> là hỏng.</p>
+
+  <ul class="examples">
+    <li>
+      <span class="en">These tests aren't <span class="rev">flaky</span> — they're <b>brittle</b>: they pass every single run until someone renames a CSS class.</span>
+      <span class="vi hide-me">→ Mấy test này không phải chập chờn đâu, nó giòn thôi: lần nào cũng pass, tới khi có người đổi tên một class CSS là gãy.</span>
+    </li>
+    <li>
+      <span class="en">That module is so <b>brittle</b> that every small fix ships a <span class="rev">regression</span> two files away.</span>
+      <span class="vi hide-me">→ Cái module đó giòn tới mức vá tí xíu là chỗ cách đó hai file lại hỏng theo.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>brittle code</code>, <code>brittle tests</code>, <code>a brittle system</code>, <code>brittle and hard to change</code>, <code>become brittle over time</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /ˈbrɪtl/ hai âm tiết, đuôi <code>-tle</code> nuốt thành "-tl" y như <em>little</em>, đừng đọc "bri-tồ". Tả <b>đồ vật / code</b>, không tả người: người dễ tự ái là <em>touchy</em>, không phải <em>brittle</em>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">brittle, brittleness, more brittle, the most brittle</span></div>
+  </div>
+</article>
+
+<!-- ══ 3. bring up ══ -->
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">3</span>bring up
+        <button class="say" data-say="bring up an issue" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˌbrɪŋ ˈʌp/ · <em>phrasal verb</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">nêu ra, đưa lên bàn<span class="alt">mở đầu một chuyện để cả nhóm bàn</span></p>
+
+  <p class="def"><span class="tag">EN</span>to start talking about a topic so other people can discuss it.
+    <span class="def-vi hide-me">→ bắt đầu nói về một chủ đề để những người khác cùng bàn.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trung tính và lịch sự hơn <em>complain</em> nhiều — nêu vấn đề chứ không phải kêu ca. Câu cửa miệng trong họp: <em>"Thanks for bringing that up."</em> Nghĩa thứ hai, đời sống: nuôi dạy (<em>I was brought up in Hanoi</em>).</p>
+
+  <ul class="examples">
+    <li>
+      <span class="en">One <span class="rev">stakeholder</span> <b>brought up</b> the migration cost right at the end of the call, and nobody had an answer ready.</span>
+      <span class="vi hide-me">→ Cuối buổi call thì một bên liên quan mới nêu chuyện chi phí migration, chẳng ai chuẩn bị sẵn câu trả lời.</span>
+    </li>
+    <li>
+      <span class="en">Thanks for <b>bringing</b> that <b>up</b> — I should have mentioned the <span class="rev">caveat</span> about old browsers in the first email.</span>
+      <span class="vi hide-me">→ (trả lời đồng nghiệp) Cảm ơn cậu đã nêu ra — lẽ ra mình phải nói luôn cái vế "nhưng mà" về trình duyệt cũ ngay trong email đầu.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>bring up an issue/a point/a concern</code>, <code>bring it up in the meeting</code>, <code>thanks for bringing that up</code>, <code>bring up the topic of…</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Tách được: <em>bring the issue up</em>; nhưng đại từ <b>bắt buộc</b> đứng giữa — <em>bring it up</em>, không bao giờ <em>bring up it</em>. Đừng nhầm với <code>come up</code> (chuyện tự nó nảy ra) hay <code>bring forward</code> (dời sớm lên).</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">bring up, brings up, brought up, bringing up, upbringing (n: sự nuôi dạy)</span></div>
+  </div>
+</article>
+
+<!-- ══ 4. turnaround ══ -->
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">4</span>turnaround
+        <button class="say" data-say="a two-day turnaround" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈtɜːrnəraʊnd/ · <em>noun</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">thời gian xử xong trả lại<span class="alt">nhận việc → làm xong → giao lại mất bao lâu</span></p>
+
+  <p class="def"><span class="tag">EN</span>the time it takes to finish a job and hand it back to whoever asked for it.
+    <span class="def-vi hide-me">→ khoảng thời gian cần để làm xong một việc và trả lại cho người đã yêu cầu.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong email khách đây là con số cam kết, nên hay đi cả cụm <code>turnaround time</code>. Nghĩa thứ hai, ít gặp hơn: cú lật ngược tình thế (<em>a remarkable turnaround</em>).</p>
+
+  <ul class="examples">
+    <li>
+      <span class="en">Our usual <b>turnaround</b> on a bug report is two working days; for anything bigger we'll send you a <span class="rev">ballpark</span> first.</span>
+      <span class="vi hide-me">→ (email khách) Bên em thường xử một báo lỗi trong hai ngày làm việc ạ; việc nào lớn hơn thì bên em gửi anh/chị con số áng chừng trước.</span>
+    </li>
+    <li>
+      <span class="en">Our <b>turnaround</b> has slipped this sprint — two people are out and the rest of us have no <span class="rev">bandwidth</span> left.</span>
+      <span class="vi hide-me">→ (standup) Sprint này bọn mình trả việc chậm hẳn — hai người nghỉ, mấy đứa còn lại thì hết sức rồi.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>turnaround time</code>, <code>a quick/fast turnaround</code>, <code>a 24-hour turnaround</code>, <code>on a tight turnaround</code>, <code>improve the turnaround</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ viết liền <code>turnaround</code>; viết tách <code>turn around</code> là động từ "quay lại". Nhanh thì dùng <em>quick/fast</em>, không phải <em>early</em>. Đừng nói <em>turnaround of time</em> — hoặc <code>turnaround</code>, hoặc <code>turnaround time</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">turnaround, turnarounds, turnaround time, turn around (v), turned around, turning around</span></div>
+  </div>
+</article>
+
+<!-- ══ 5. sort out ══ -->
+<article class="word" data-cat="life">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">5</span>sort out
+        <button class="say" data-say="sort it out" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˌsɔːrt ˈaʊt/ · <em>phrasal verb</em></div>
+    </div>
+    <span class="badge life">Đời sống</span>
+  </div>
+
+  <p class="vi-quick hide-me">xử cho xong, dẹp gọn<span class="alt">gỡ rối tới lúc đâu vào đấy</span></p>
+
+  <p class="def"><span class="tag">EN</span>to deal with a problem or a mess until everything is in order again.
+    <span class="def-vi hide-me">→ xử lý một vấn đề hoặc một mớ lộn xộn cho tới khi mọi thứ đâu vào đấy.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Nhẹ hơn <em>solve</em>: <em>solve</em> là giải một bài toán có lời giải, còn <em>sort out</em> là dẹp cho gọn — giấy tờ, lịch hẹn, hiểu lầm, mấy cái bug lặt vặt. Rất đời thường, người Anh nói dày hơn người Mỹ. Còn một nghĩa nữa là phân loại: <em>sort out the old clothes</em>.</p>
+
+  <ul class="examples">
+    <li>
+      <span class="en">Let me <b>sort out</b> the dates with my wife first, then we can <span class="rev">catch up</span> properly over coffee.</span>
+      <span class="vi hide-me">→ Để mình chốt ngày với vợ đã, rồi hẵng hẹn cà phê ngồi tán chuyện cho đã.</span>
+    </li>
+    <li>
+      <span class="en">My landlord texted me <span class="rev">out of the blue</span> about the rent, so my whole morning went into <b>sorting</b> it <b>out</b>.</span>
+      <span class="vi hide-me">→ Ông chủ nhà tự dưng nhắn chuyện tiền nhà, thế là cả buổi sáng mình đi giải quyết mỗi cái đó.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>sort something out</code>, <code>sort it out</code>, <code>get things sorted</code>, <code>sort out a misunderstanding</code>, <code>it'll sort itself out</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đại từ đứng giữa: <em>sort it out</em>, không phải <em>sort out it</em>. Khác <code>figure out</code>: <em>figure out</em> là <b>hiểu ra / nghĩ ra</b>, <em>sort out</em> là <b>làm cho xong</b>. Người Anh nói cụt lủn <em>Sorted!</em> nghĩa là "xong rồi".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">sort out, sorts out, sorted out, sorting out, get sorted, sorted (adj, thân mật)</span></div>
+  </div>
+</article>
+
+<section class="block">
+  <h2>Mẩu đọc</h2>
+  <p class="sub">Dòng nhật ký cuối ngày của một dev</p>
+  <div class="passage">Friday, end of day. The client's ops lead <b>brought up</b> the CSV export again on the call — third time this month — and I could tell nobody wanted to <span class="rev">push back</span>. We promised a two-day <b>turnaround</b> on the fix, which is optimistic: that parser is so <b>brittle</b> that every patch breaks something two files away. For now we ship a <b>fallback</b> to the old exporter and buy ourselves a week. Then I shut the laptop, <b>sorted out</b> the weekend plans I'd been ignoring since Monday, and went for a walk.</div>
+  <details>
+    <summary>Bản dịch</summary>
+    <p class="hide-me">Thứ Sáu, cuối ngày. Trong buổi call, anh phụ trách vận hành bên khách lại nêu chuyện export CSV — lần thứ ba trong tháng — nhìn là biết chẳng ai muốn phản đối lại. Bọn mình hứa hai ngày là sửa xong, nghe hơi liều: cái parser đó giòn tới mức vá chỗ này thì gãy chỗ cách đó hai file. Trước mắt cứ đẩy ra một phương án dự phòng chạy bộ export cũ, câu thêm được một tuần. Xong mình gập laptop, dẹp cho gọn cái kế hoạch cuối tuần bỏ lửng từ thứ Hai, rồi đi bộ một vòng.</p>
+  </details>
+</section>
+
+<section class="block">
+  <h2>Bài tập</h2>
+  <p class="sub">Làm xong rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li><b>Nối</b> — mỗi từ với đúng một mô tả:<br>
+      (a) <code>fallback</code> · (b) <code>brittle</code> · (c) <code>bring up</code> · (d) <code>turnaround</code> · (e) <code>sort out</code><br>
+      1. Từ lúc nhận việc tới lúc trả xong mất bao lâu<br>
+      2. Đường lui dựng sẵn, cái chính hỏng thì chạy cái này<br>
+      3. Gỡ cho xong, dọn cho đâu vào đấy<br>
+      4. Nêu một chuyện ra để cả nhóm cùng bàn<br>
+      5. Đụng nhẹ là gãy, sửa chỗ này hỏng chỗ kia</li>
+    <li><b>Điền từ</b> — <code>fallback</code> · <code>brittle</code> · <code>brought up</code> · <code>turnaround</code> · <code>sort out</code><br>
+      (a) <em>"Our ___ on urgent tickets is four hours."</em><br>
+      (b) <em>"The suite is green today, but it's ___ — renaming one prop broke nine tests last week."</em><br>
+      (c) <em>"Give me ten minutes to ___ this invoice mess and I'll call you back."</em><br>
+      (d) <em>"She ___ the licensing question that everyone else was avoiding."</em><br>
+      (e) <em>"There's no ___ if the CDN goes down — the page just fails."</em></li>
+    <li><b>Sửa lỗi</b> — mỗi câu đúng một lỗi:<br>
+      (a) <em>"Can you sort out it before Monday?"</em><br>
+      (b) <em>"Our turn around time is two working days."</em><br>
+      (c) <em>"Thanks for bring up that point in the meeting."</em></li>
+    <li><b>Dịch Việt → Anh</b><br>
+      (a) "Nếu API giá timeout, app lùi về mức giá đã cache."<br>
+      (b) "Bên em thường xử xong trong hai ngày làm việc ạ."</li>
+    <li><b>Viết lại câu</b> dùng từ trong ngoặc, giữ nguyên nghĩa:<br>
+      (a) <em>"Nobody mentioned the deadline until the very end of the call."</em> (<b>bring up</b>)<br>
+      (b) <em>"That code breaks every time you touch anything near it."</em> (<b>brittle</b>)</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol>
+      <li>(a)–<b>2</b> · (b)–<b>5</b> · (c)–<b>4</b> · (d)–<b>1</b> · (e)–<b>3</b>.</li>
+      <li>(a) <b>turnaround</b> — (b) <b>brittle</b> (test <em>chập chờn</em> mới là <em>flaky</em>; đây là "đụng vào là gãy") — (c) <b>sort out</b> — (d) <b>brought up</b> — (e) <b>fallback</b>.</li>
+      <li>(a) <em>"Can you <b>sort it out</b> before Monday?"</em> — đại từ phải đứng giữa. (b) <em>"Our <b>turnaround</b> time is two working days."</em> — danh từ viết liền. (c) <em>"Thanks for <b>bringing</b> up that point…"</em> — sau <em>for</em> dùng V-ing.</li>
+      <li>(a) <em>"If the pricing API times out, the app <b>falls back to</b> the cached rates."</em> (fall back <b>to</b> một giá trị). (b) <em>"Our usual <b>turnaround</b> is two working days."</em> — hoặc <em>"Our turnaround time is two working days."</em></li>
+      <li>(a) <em>"Nobody <b>brought up</b> the deadline until the very end of the call."</em> (b) <em>"That code is so <b>brittle</b> that it breaks every time you touch anything near it."</em></li>
+    </ol>
+  </details>
+</section>
+
+<footer>
+  Bản Markdown: <a href="2026-08-22.md">2026-08-22.md</a> ·
+  Toàn bộ từ đã học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> ·
+  Lịch ôn: <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+  <br>Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại các từ của tuần 2026-W34.
+</footer>
+
+</div>
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>
+</content>
