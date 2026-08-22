@@ -36,7 +36,9 @@ ENGLISH/                          ← {harness}
     ├── assets/lesson.css + .js   ← giao diện DÙNG CHUNG cho mọi trang bài học
     ├── lessons/YYYY-Www/YYYY-MM-DD.md  + .html   ← bản đọc nhanh + bản trình bày
     ├── quiz/YYYY-Www.md  +  YYYY-Www-key.md     ← đề và đáp án TÁCH FILE (R2)
-    ├── grammar/                  ← điểm ngữ pháp gặp phải, mỗi điểm 1 file
+    ├── grammar/
+    │   ├── CURRICULUM.md         ← ⭐ 42 điểm ngữ pháp + con trỏ "đang dạy tới đâu" (R9)
+    │   └── <slug>.md             ← mỗi điểm 1 file, ghi ra khi dạy tới
     ├── memory/MEMORY.md          ← rule đã học về cách học của user
     └── _templates/               ← khuôn lesson.md / lesson.html / quiz / memory
 ```
@@ -60,7 +62,7 @@ giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
 buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 
-## Bảy luật dễ vi phạm nhất — kiểm lại trước khi trả lời
+## Tám luật dễ vi phạm nhất — kiểm lại trước khi trả lời
 
 1. **Ngày tháng**: `. tools/openit.sh` rồi `hnay "%Y-%m-%d %A %G-W%V"`. Không suy
    đoán từ context, và **không gọi `date` trần** — xem luật 5.
@@ -86,17 +88,30 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
    cũng phải có một từ cũ. Đánh dấu bằng `<span class="rev">…</span>` (HTML) / `_từ cũ_`
    (md) — **không** in đậm. Trùng mặt chữ mà khác nghĩa thì không tính. Chỉ buổi #1 được miễn.
 
+8. **Ngữ pháp là khung câu của cả buổi (R9)** — áp dụng từ **2026-08-24**. Điểm ngữ
+   pháp hôm nay lấy từ dòng *"Điểm kế tiếp"* trong `wiki/grammar/CURRICULUM.md`,
+   **không suy từ số buổi**. Ví dụ của **cả 5 từ** và mẩu đọc đều phải viết theo mẫu
+   đó (R8 vẫn cộng dồn). Khối ngữ pháp phải đủ **8 mục**, và hai mục *"Nó là gì"* +
+   *"Dùng khi nào"* phải đứng **trước** công thức. Buổi phải có khối **"Tự viết"** 3 câu
+   không đáp án. Đóng buổi nhớ đánh ✅ lại vào `CURRICULUM.md` — quên là hôm sau dạy lại.
+
 ## Checklist đóng một buổi học (R3 + R6 — thiếu 1 là chưa xong)
 
 ```
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
-[ ] wiki/lessons/<tuần>/<ngày>.md          đã tạo, đủ 5 từ + mẩu đọc + bài tập
+[ ] điểm ngữ pháp lấy từ CURRICULUM.md      R9 — dòng "Điểm kế tiếp", không đoán
+[ ] wiki/lessons/<tuần>/<ngày>.md          đủ 5 từ + khối ngữ pháp + tự viết + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
+[ ] khối ngữ pháp đủ 8 mục, "nó là gì" trước công thức   R9.2
+[ ] khối tự viết 3 đề, 3 dạng, KHÔNG đáp án              R9.4
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
 [ ] MỌI câu ví dụ có ≥1 từ cũ, 2 câu khác nhau  R8 — mẩu đọc cũng vậy, đánh dấu .rev
+[ ] MỌI câu ví dụ viết theo mẫu ngữ pháp hôm nay R9.3 — có nhãn .pattern-tag
 [ ] wiki/VOCAB_INDEX.md                    +5 dòng, đúng cột, sắp theo ngày
 [ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = hôm nay +1
-[ ] wiki/PROGRESS.md                       streak +1, tổng từ +5, ghi ngày
+[ ] wiki/PROGRESS.md                       streak +1, tổng từ +5, ngữ pháp x/42
+[ ] wiki/grammar/<slug>.md                 file chi tiết của điểm vừa dạy
+[ ] wiki/grammar/CURRICULUM.md             ✅ dòng vừa dạy + sửa "Đang ở đâu"  ← QUÊN LÀ DẠY LẠI
 [ ] sh tools/build-index.sh                mục lục khớp lại với bài thật
 [ ] daylen "hoc: ..."                      phải in DA-PUSH; khác đi = BÁO USER
 [ ] openit <file>.html + tóm tắt 5 từ trong chat
@@ -107,8 +122,15 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 CSS/JS **dùng chung** ở `wiki/assets/`. Trang bài học chỉ `<link>` tới
 `../../assets/lesson.css` và `<script src="../../assets/lesson.js">` — **tuyệt đối
 không nhúng style vào từng bài**, nếu không thì đổi giao diện phải sửa lại toàn bộ
-bài cũ. Trang có 3 tính năng: nút 🔊 phát âm (Web Speech API, offline), "Chế độ ôn
-tập" che mờ toàn bộ phần tiếng Việt (class `hide-me`), và nút sáng/tối.
+bài cũ. Trang có 4 tính năng: nút 🔊 phát âm (Web Speech API, offline), "Chế độ ôn
+tập" che mờ phần tiếng Việt (class `hide-me`), nút sáng/tối, và **ô tự viết lưu nháp
+vào localStorage** (`.wtask textarea[data-key]`).
+
+Từ lộ trình v2 (2026-08-24) trang có thêm hai khối: `<section class="grammar">` và
+`<section class="write">`. CSS/JS của chúng **đã nằm trong `wiki/assets/`** — mẫu đầy
+đủ để đối chiếu hình dạng: `wiki/_templates/lesson-v2-mockup.html`.
+⚠️ Tiếng Việt trong khối ngữ pháp **không** mang `hide-me` (trừ `.uc-vi`) — đó là bài
+giảng, làm mờ nó thì bật "Chế độ ôn tập" là không đọc được gì.
 
 ## Chạy trên Claude Code on the web
 

@@ -50,7 +50,7 @@ tuyệt đối.
 
 ---
 
-## Tám quy tắc CỨNG
+## Chín quy tắc CỨNG
 
 ### R1 — Không trùng từ đã học (hard gate)
 
@@ -245,6 +245,39 @@ Cách tự kiểm trước khi đóng buổi: với **từng câu** ví dụ, ch
 
 ---
 
+### R9 — Ngữ pháp là khung câu của cả buổi
+
+Từ **2026-08-24** (`grammar.startDate`) mỗi buổi dạy **đúng một** điểm ngữ pháp, và
+điểm đó không phải phần phụ nằm cạnh từ vựng — nó là **khung câu** để 5 từ mới của
+ngày được đặt vào. Lý do: 9 buổi đầu dạy 45 từ mà không dạy khung, nên người học
+nhận ra từ nhưng không ráp được câu.
+
+1. **Điểm nào là do `{grammar}/CURRICULUM.md` quyết** — đọc dòng *"Điểm kế tiếp"*.
+   Tuyệt đối không suy ra từ số buổi, từ ngày tháng, hay từ trí nhớ của agent.
+2. **Khối "Ngữ pháp hôm nay" phải đủ 8 mục** theo `grammar.blockSections`, đúng thứ
+   tự. Hai mục **"Nó là gì"** và **"Dùng khi nào"** là bắt buộc và phải đứng trước
+   công thức — nhảy thẳng vào công thức chính là lối dạy đã làm người học mất gốc.
+   Mục "Nó là gì" phải **neo vào tiếng Việt**: chỉ ra cách nói tiếng Việt gần nhất,
+   hoặc nói thẳng là tiếng Việt không có nên phải hiểu bằng công dụng.
+3. **Ví dụ của cả 5 từ và mẩu đọc đều phải viết theo mẫu ngữ pháp đó.** R8 vẫn giữ
+   nguyên và cộng dồn: một câu vừa theo mẫu ngữ pháp mới, vừa mượn một từ cũ. Trên
+   HTML, gắn nhãn `<div class="ex-label">Ví dụ <span class="pattern-tag">…</span></div>`.
+   Viết nhãn mà câu không theo mẫu là nói dối người học — thà bỏ nhãn.
+4. **Buổi phải có khối "Tự viết"** (`production`): 3 đề, ba dạng câu **khác nhau**
+   (khẳng định / câu hỏi / phủ định), mỗi đề buộc dùng mẫu ngữ pháp + một từ mới.
+   **Không có đáp án** cho 3 đề — chỉ 2 câu **mẫu**, bọc `<details>`. Đây là bước
+   duy nhất bắt người học tự sản xuất câu; bỏ nó thì buổi học quay về đọc-rồi-quên.
+5. **Đóng buổi phải cập nhật con trỏ**: đánh ✅ dòng tương ứng trong `CURRICULUM.md`,
+   sửa lại mục *"Đang ở đâu"*, ghi `{grammar}/<slug>.md`, và cập nhật dòng ngữ pháp
+   trong `{progress}`. Quên bước này thì hôm sau dạy lại đúng điểm cũ.
+6. **Điểm không liên quan thời gian** (mạo từ, giới từ, modal, mệnh đề quan hệ…) thì
+   mục "trục thời gian" đổi thành hai ô so sánh khác — `a/an` vs `the`, `must` vs
+   `have to` — vẫn dùng class `.tl` / `.tl-card`, đừng bỏ trống mục.
+7. **Ngoại lệ**: bài học có ngày **trước** `grammar.startDate` thì không có khối ngữ
+   pháp lẫn khối tự viết, và không gắn nhãn `.pattern-tag`. Đừng đi sửa bài cũ.
+
+---
+
 ## Luồng chuẩn
 
 ### Flow A — Buổi học hằng ngày
@@ -253,12 +286,20 @@ Cách tự kiểm trước khi đóng buổi: với **từng câu** ví dụ, ch
 Phase 0  Auto-discovery (ở trên)
 Phase 0.5 ⛔ GATE R5: ls {lessons}/<tuần>/<hôm nay>*.md
          Có file -> KHÔNG sinh bài. Mở lại bài cũ, hỏi user, DỪNG tại đây.
-Phase 1  Ôn nhanh: đọc {reviewQueue}, lấy các từ due hôm nay -> hỏi 3-5 câu chớp nhoáng
+Phase 1  Ôn nhanh: đọc {reviewQueue}, lấy `review.warmupPerSession` từ (8) tới hạn,
+         LÔ CŨ NHẤT TRƯỚC -> hỏi gợi nhớ, đáp án bọc <details>
+Phase 1.5 ⭐ Ngữ pháp (R9): đọc {grammar}/CURRICULUM.md -> dòng "Điểm kế tiếp".
+         Ngày học < `grammar.startDate` -> bỏ qua Phase 1.5 và Phase 4.5.
 Phase 2  Chọn ứng viên: 2 IT + 2 business + 1 life, bám level
 Phase 3  ⛔ HARD GATE R1: grep {vocabIndex} từng từ. Trùng -> quay lại Phase 2
-Phase 4  Soạn bài: mỗi từ đủ mục `daily.mustInclude` + mẩu đọc + bài tập
+Phase 4  Soạn bài: mỗi từ đủ mục `daily.mustInclude` + mẩu đọc + bài tập.
+         ⛔ R9: ví dụ của CẢ 5 TỪ + mẩu đọc viết theo mẫu ngữ pháp Phase 1.5.
+         ⛔ R8 vẫn cộng dồn: mỗi câu vẫn phải mượn 1 từ cũ, 2 câu 2 từ khác nhau.
+Phase 4.5 ⭐ Tự viết (R9.4): 3 đề — khẳng định / câu hỏi / phủ định. Không đáp án,
+         chỉ 2 câu mẫu bọc <details>.
 Phase 5  Ghi file: lesson .md -> lesson .html -> VOCAB_INDEX -> REVIEW_QUEUE
-         -> PROGRESS  (đủ 5, R3)
+         -> PROGRESS -> {grammar}/<slug>.md -> CURRICULUM.md (✅ + "Đang ở đâu")
+         (R3 + R9.5)
 Phase 6  sh tools/build-index.sh  -> daylen "hoc: ..."  (R6 — chưa push là chưa có)
 Phase 7  openit <file.html> + tóm tắt 5 từ trong chat (không bắt user tự đi tìm file)
          Máy Mac -> mở trình duyệt. VM cloud -> in link Pages để user bấm.
@@ -269,7 +310,9 @@ Phase 7  openit <file.html> + tóm tắt 5 từ trong chat (không bắt user t�
 ```text
 Phase 0  Auto-discovery + xác định tuần ISO cần kiểm tra
 Phase 1  Gom từ: mọi từ trong {lessons}/<tuần>/ + tối đa 5 từ yếu từ {reviewQueue}
-Phase 2  Ra đề 4 phần A/B/C/D theo config `weekly.format` -> ghi {quiz}/<tuần>.md
+         + các điểm ngữ pháp đã dạy trong tuần (đọc {grammar}/CURRICULUM.md)
+Phase 2  Ra đề 4 phần A/B/C/D theo config `weekly.format`, THÊM phần E — Ngữ pháp
+         (các điểm của tuần) -> ghi {quiz}/<tuần>.md
          Đáp án ghi RIÊNG ra {quiz}/<tuần>-key.md  (R2)
 Phase 3  User làm bài trong chat
 Phase 4  Chấm: đối chiếu key, tính %, chỉ ra lỗi + giải thích tại sao sai

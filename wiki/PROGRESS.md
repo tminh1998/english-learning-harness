@@ -1,6 +1,6 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-22
+**Cập nhật:** 2026-08-22 (chốt lộ trình v2)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
@@ -10,6 +10,7 @@
 | Streak hiện tại      | 9 buổi (Chủ nhật 2026-08-16 là ngày nghỉ theo lịch — không tính đứt)                    |
 | Streak dài nhất      | 9 buổi                                                                                  |
 | Buổi gần nhất        | 2026-08-22 (Thứ Bảy) — buổi #9                                                          |
+| Ngữ pháp             | **0 / 42** · chưa bắt đầu — lộ trình v2 chạy từ **2026-08-24** (thứ Hai, 2026-W35)      |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -33,6 +34,24 @@
 | Tuần     | Ngày làm                    | Điểm | Kết quả | Từ sai |
 | -------- | --------------------------- | ---- | ------- | ------ |
 | 2026-W33 | _(chưa làm — Chủ nhật 2026-08-16 routine chỉ sinh bảng ôn `recap/2026-W33`; `/kiem-tra` cần user trả lời nên phải gõ tay)_ | —    | —       | —      |
+
+## Lộ trình v2 — gắn ngữ pháp vào buổi học (chốt 2026-08-22)
+
+Chín buổi đầu dạy 45 từ mà **không dạy một điểm ngữ pháp nào** → người học nhận ra
+từ nhưng không tự ráp được câu. Từ **thứ Hai 2026-08-24**, mỗi buổi `/hoc` đổi khuôn:
+
+| Khối | Mới? | Ghi chú |
+| --- | --- | --- |
+| Ôn nhanh đầu giờ | nâng 2-4 → **8 từ** | lô hạn cũ nhất trước — xoá 40 từ nợ trong ~5 buổi |
+| **Ngữ pháp hôm nay** | ⭐ mới | 1 điểm/buổi, 8 mục, con trỏ ở [grammar/CURRICULUM.md](grammar/CURRICULUM.md) |
+| 5 từ mới | giữ | nhưng ví dụ của **cả 5 từ** phải viết theo mẫu ngữ pháp của buổi (R9) |
+| Mẩu đọc | giữ | cũng theo mẫu đó |
+| **Tự viết** | ⭐ mới | 3 câu tự sản xuất, **không có đáp án** — bước duy nhất luyện vốn chủ động |
+| Bài tập | giữ | thêm 2 câu ngữ pháp |
+
+Chương trình: 42 điểm ≈ 7 tuần, 4 chặng — *khung câu* → *thì & thời gian* →
+*lịch sự & modal* → *câu phức*. Mẫu giao diện đã duyệt:
+[`_templates/lesson-v2-mockup.html`](_templates/lesson-v2-mockup.html).
 
 ## Đang yếu
 

@@ -125,6 +125,47 @@ ui:
   #                       -> không: VM cloud, IN RA link `remote.pagesBaseUrl`
   # Đoạn shell chuẩn nằm ở `tools/openit.sh` — cả /hoc lẫn /open đều source file đó.
 
+# ── Ngữ pháp (lộ trình v2) ──
+# Mỗi buổi học dạy ĐÚNG MỘT điểm ngữ pháp, và điểm đó là KHUNG CÂU của cả buổi:
+# ví dụ của cả 5 từ mới + mẩu đọc đều phải viết theo mẫu ấy (luật R9 trong AGENTS.md).
+# Đây là phần bù cho chỗ hổng lớn nhất: 9 buổi đầu chỉ dạy từ, không dạy khung.
+grammar:
+  enabled: true
+  # ⛔ Trước ngày này thì KHÔNG chèn khối ngữ pháp / khối tự viết vào bài —
+  # user chốt bắt đầu từ thứ Hai 2026-08-24 (tuần 2026-W35).
+  startDate: "2026-08-24"
+  # ⭐ Con trỏ thật nằm trong file này, KHÔNG suy đoán từ ngày tháng hay số buổi.
+  # Dạy xong điểm nào thì đánh ✅ trong đó rồi cập nhật mục "Đang ở đâu".
+  curriculum: "./wiki/grammar/CURRICULUM.md"
+  pointsPerLesson: 1
+  # Mỗi điểm được ghi ra một file riêng trong {grammar}/ để tra lại sau.
+  writeDetailFile: true
+  # Khối "Ngữ pháp hôm nay" trên trang bài học phải có đủ 8 mục, đúng thứ tự này.
+  # Bỏ mục 1-2 là quay về lối dạy công thức khô — chính thứ làm user mất gốc.
+  blockSections:
+    - "noLaGi"        # giải thích bằng lời thường + neo vào tiếng Việt
+    - "trucThoiGian"  # 2 hình SVG so sánh với thì/cấu trúc dễ nhầm nhất
+    - "dungKhiNao"    # 4-5 trường hợp dùng, mỗi cái có từ khoá nhận dạng + ví dụ
+    - "gapODau"       # bảng: standup / PR / email khách / báo lỗi
+    - "khongDung"     # các chỗ phải chuyển sang cấu trúc khác
+    - "congThuc"
+    - "dungSai"       # 3 cặp ✅/❌ + vì sao
+    - "bayNguoiViet"  # chỗ tiếng Việt không có nên hay dịch nhầm
+
+# ── Tự viết (production) ──
+# Khối BẮT BUỘC cuối mỗi buổi. Đây là bước duy nhất bắt người học tự SẢN XUẤT câu;
+# thiếu nó thì từ mới chỉ nằm ở vốn thụ động (nhận ra) chứ không sang vốn chủ động.
+production:
+  enabled: true
+  sentencesPerLesson: 3
+  # 3 đề phải khác dạng câu nhau để không viết được cả ba theo một khuôn.
+  taskShapes: ["khang-dinh", "cau-hoi", "phu-dinh"]
+  requireGrammarPattern: true # mỗi câu phải dùng mẫu ngữ pháp của buổi
+  requireTodayWord: true # và phải dùng một từ mới của buổi
+  showSampleAnswers: 2 # 2 câu mẫu, bọc <details>, mở SAU khi đã viết
+  # KHÔNG chấm tự động trên trang. Muốn được chấm thì user dán vào chat -> /kiem-tra.
+  gradedBy: "chat"
+
 # ── Kiểm tra cuối tuần ──
 weekly:
   quizDay: "Sunday" # cuối tuần ISO
@@ -141,6 +182,12 @@ weekly:
 review:
   intervalsDays: [1, 3, 7, 16, 35] # đúng -> lên bậc kế; sai -> tụt về bậc 1
   maxPerSession: 15
+  # Số từ hỏi ở khối "Ôn nhanh đầu giờ" mỗi buổi /hoc. Nâng 2-4 -> 8 từ 2026-08-22:
+  # tính tới lúc đó đã đọng 40 từ quá hạn ở bậc 1, mỗi ngày lại thêm 5. Hỏi 8 từ/buổi
+  # và LUÔN ưu tiên lô hạn cũ nhất thì xoá hết nợ trong ~5 buổi mà không phải dừng
+  # học từ mới. Nợ hết -> hạ lại về 5 cho nhẹ buổi.
+  warmupPerSession: 8
+  warmupOrder: "oldest-due-first"
 
 # ── Chống trùng bài — HARD GATE ──
 antiDuplicate:

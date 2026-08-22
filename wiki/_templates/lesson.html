@@ -33,6 +33,13 @@
     <span class="badge biz">2 Giao tiếp</span>
     <span class="badge life">1 Đời sống</span>
   </div>
+  <!-- Thanh tiến độ ngữ pháp. Số lấy từ {grammar}/CURRICULUM.md, KHÔNG tự tính.
+       width tính bằng n/42*100, làm tròn số nguyên. -->
+  <div class="gram-progress">
+    <span class="lbl">Ngữ pháp {{n}}/42</span>
+    <span class="bar"><i style="width:{{n/42*100}}%"></i></span>
+    <span>Chặng {{k}} · {{tên chặng}}</span>
+  </div>
 </header>
 
 <div class="toolbar">
@@ -40,6 +47,141 @@
   <button id="theme">🌗 Theo hệ thống</button>
   <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
 </div>
+
+<!-- ══ A. ÔN NHANH ĐẦU GIỜ ═══════════════════════════════════════════════
+     Số câu = `review.warmupPerSession` trong config (đang là 8), LUÔN lấy lô
+     hạn CŨ NHẤT trước (`warmupOrder: oldest-due-first`). Hỏi gợi nhớ bằng tiếng
+     Việt, đáp án bọc <details> + .hide-me (R2). -->
+<section class="block">
+  <h2>Ôn nhanh đầu giờ</h2>
+  <p class="sub">{{N}} từ tới hạn — ưu tiên lô cũ nhất ({{các ngày}}). Tự trả lời rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li>{{câu gợi nhớ 1}}</li>
+    <!-- … đủ N câu … -->
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol class="hide-me">
+      <li><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ══ B. NGỮ PHÁP HÔM NAY ════════════════════════════════════════════════
+     ⛔ CHỈ chèn khối này khi ngày học >= `grammar.startDate` (2026-08-24).
+     ⛔ Điểm ngữ pháp lấy từ {grammar}/CURRICULUM.md — dòng "Điểm kế tiếp".
+        KHÔNG suy đoán từ số buổi hay ngày tháng.
+     ⛔ Phải đủ 8 mục theo `grammar.blockSections`, ĐÚNG thứ tự dưới đây. Bỏ mục
+        1-2 là quay về lối dạy công thức khô — đúng thứ đã làm user mất gốc.
+     ⚠️ Tiếng Việt ở khối này KHÔNG mang .hide-me (trừ .uc-vi): đây là bài giảng,
+        làm mờ nó thì bật "Chế độ ôn tập" là không đọc được gì. -->
+<section class="grammar">
+  <div class="gram-head">
+    <span class="kicker">#{{n}} · Ngữ pháp hôm nay</span>
+    <h2>{{tên điểm ngữ pháp}}</h2>
+  </div>
+  <p class="gram-vi">{{một câu: nó giải quyết chuyện gì}}</p>
+
+  <!-- 1. NÓ LÀ GÌ — bằng lời thường, neo vào tiếng Việt, KHÔNG công thức -->
+  <div class="gram-what">
+    <p>{{nó dùng để làm gì — nói như nói với người chưa từng học}}</p>
+    <p>{{neo vào tiếng Việt: chữ/cách nói nào của tiếng Việt gần nó nhất, hoặc
+        nói rõ tiếng Việt KHÔNG có cái này nên phải hiểu bằng công dụng}}</p>
+    <span class="rule">Nguyên tắc một dòng: {{…}}</span>
+  </div>
+
+  <!-- 2. TRỤC THỜI GIAN — 2 hình so sánh với cấu trúc dễ nhầm nhất.
+       Điểm nào không liên quan thời gian (mạo từ, giới từ, modal…) thì đổi thành
+       2 ô so sánh khác (vd: "a/an" vs "the"), giữ nguyên class .tl/.tl-card. -->
+  <div class="gram-sub">Nhìn trên trục thời gian</div>
+  <div class="tl">
+    <div class="tl-card">
+      <h4>{{cấu trúc dễ nhầm}}</h4>
+      <p class="cap">{{một câu}}</p>
+      <svg viewBox="0 0 250 84" role="img" aria-label="{{mô tả hình}}">
+        <line class="axis" x1="12" y1="48" x2="238" y2="48"/>
+        <circle class="dot" cx="62" cy="48" r="6.5"/>
+        <text x="62" y="30" text-anchor="middle">{{câu mẫu}}</text>
+        <line class="stop" x1="62" y1="55" x2="62" y2="64"/>
+        <text class="tick" x="62" y="76" text-anchor="middle">{{mốc}}</text>
+        <line class="now" x1="200" y1="32" x2="200" y2="64"/>
+        <text class="tick lab-now" x="200" y="76" text-anchor="middle">BÂY GIỜ</text>
+      </svg>
+    </div>
+    <div class="tl-card pp">
+      <h4>{{điểm đang học}}</h4>
+      <p class="cap">{{một câu}}</p>
+      <svg viewBox="0 0 250 84" role="img" aria-label="{{mô tả hình}}">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" class="ahd"/>
+          </marker>
+        </defs>
+        <line class="axis" x1="12" y1="48" x2="238" y2="48"/>
+        <line class="reach" x1="62" y1="48" x2="192" y2="48" marker-end="url(#ah)"/>
+        <circle class="dot" cx="62" cy="48" r="6.5"/>
+        <text x="62" y="30" text-anchor="middle">{{câu mẫu}}</text>
+        <text class="tick" x="127" y="68" text-anchor="middle">{{nhãn giữa}}</text>
+        <line class="now" x1="200" y1="32" x2="200" y2="64"/>
+        <text class="tick lab-now" x="200" y="76" text-anchor="middle">BÂY GIỜ</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 3. DÙNG KHI NÀO — 4-5 trường hợp. Mỗi cái: tên tình huống + <span class="cue">
+       từ khoá nhận dạng</span> + câu tiếng Anh + dòng "ý thật là…" (.uc-vi, có hide-me). -->
+  <div class="gram-sub">Dùng trong {{4-5}} trường hợp này</div>
+  <ol class="usecases">
+    <li>
+      <span class="uc-t">{{tình huống}} <span class="cue">{{từ khoá nhận dạng}}</span></span>
+      <span class="uc-en">“{{câu tiếng Anh, bọc <b> quanh phần cấu trúc}}”</span>
+      <span class="uc-vi hide-me">→ {{ý thật là gì — đừng dịch máy móc, nói cái người nghe HIỂU}}</span>
+    </li>
+  </ol>
+
+  <!-- 4. GẶP Ở ĐÂU — bảng, bám đúng ngày làm việc của một dev -->
+  <div class="gram-sub">Trong ngày làm việc bạn gặp nó ở đâu</div>
+  <table class="gram-where">
+    <thead><tr><th>Tình huống</th><th>Câu mẫu</th><th>Vì sao dùng cấu trúc này</th></tr></thead>
+    <tbody>
+      <tr><td>{{standup / PR / email khách / hỏi tiến độ / báo lỗi}}</td><td><code>{{câu}}</code></td><td>{{vì sao}}</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 5. KHI NÀO KHÔNG DÙNG -->
+  <div class="gram-sub">Khi nào tuyệt đối không dùng</div>
+  <div class="notuse">
+    <span class="t">🚫 {{N}} chỗ phải dùng cấu trúc khác</span>
+    · {{chỗ 1}}<br>
+    · {{chỗ 2}}
+  </div>
+
+  <!-- 6. CÔNG THỨC -->
+  <div class="gram-sub">Công thức</div>
+  <div class="formula">
+    <span class="lab">Khẳng định</span> {{…}}<br>
+    <span class="lab">Phủ định</span> {{…}}<br>
+    <span class="lab">Câu hỏi</span> {{…}}
+  </div>
+
+  <!-- 7. ĐÚNG / SAI — 3 cặp, mỗi cặp kèm dòng .why giải thích -->
+  <div class="gram-sub">Ba lỗi thường gặp nhất</div>
+  <div class="cmp">
+    <div class="pair">
+      <div class="good">{{câu đúng, bọc <b> phần mấu chốt}}</div>
+      <div class="bad">{{câu sai, bọc <b> chỗ sai}}</div>
+      <div class="why">{{vì sao sai + câu đúng thay thế}}</div>
+    </div>
+  </div>
+
+  <!-- 8. BẪY NGƯỜI VIỆT -->
+  <div class="trap">
+    <span class="t">⚠️ Bẫy người Việt</span>
+    {{chỗ tiếng Việt không có / có nhưng map 1-nhiều nên hay dịch nhầm, + mẹo chọn nhanh}}
+  </div>
+
+  <p class="gram-more">📄 Chi tiết: <a href="../../grammar/{{slug}}.md">grammar/{{slug}}.md</a></p>
+</section>
 
 <!-- ══ KHỐI TỪ — nhân bản 5 lần ══════════════════════════════════════════ -->
 <article class="word" data-cat="{{it|biz|life}}">
@@ -66,6 +208,10 @@
   </p>
   <p class="def hide-me"><span class="tag">GHI CHÚ</span>{{sắc thái, dùng ở đâu, khác gì từ gần nghĩa}}</p>
 
+  <!-- ⚠️ R9: mọi câu ví dụ của CẢ 5 TỪ phải viết theo mẫu ngữ pháp của buổi.
+       Nhãn dưới đây là lời hứa với người học — viết nhãn mà câu không theo mẫu
+       là nói dối, thà bỏ nhãn còn hơn. Buổi trước `grammar.startDate` thì bỏ nhãn. -->
+  <div class="ex-label">Ví dụ <span class="pattern-tag">viết theo mẫu #{{n}} · {{tên điểm}}</span></div>
   <ul class="examples">
     <li>
       <span class="en">{{câu ví dụ, bọc <b> quanh từ đang học, <span class="rev"> quanh từ CŨ}}</span>
@@ -92,6 +238,49 @@
     <summary>Bản dịch</summary>
     <p class="hide-me">{{dịch Việt}}</p>
   </details>
+</section>
+
+<!-- ══ E. TỰ VIẾT ═══════════════════════════════════════════════════════
+     Khối BẮT BUỘC (config `production`). Đây là bước DUY NHẤT bắt người học tự
+     sản xuất câu — bỏ nó thì buổi học quay về chỉ-đọc-rồi-quên.
+     · 3 đề, ba dạng câu KHÁC nhau: khẳng định / câu hỏi / phủ định.
+     · Mỗi đề buộc dùng mẫu ngữ pháp của buổi + một từ mới của buổi.
+     · KHÔNG có đáp án cho 3 đề. Chỉ có 2 câu MẪU trong <details>, mở sau khi viết.
+     · <textarea> tự lưu localStorage nhờ assets/lesson.js — đừng thêm script riêng. -->
+<section class="write">
+  <h2>✍️ Tự viết — 3 câu của bạn</h2>
+  <p class="sub">
+    Phần quan trọng nhất buổi học, và là phần <b>không có đáp án</b>. Mỗi câu phải dùng
+    mẫu <b>#{{n}} {{tên điểm}}</b> + từ được chỉ định. Viết xong hãy mở phần câu mẫu để
+    đối chiếu — muốn được chấm thật thì dán cả 3 câu vào chat.
+  </p>
+
+  <div class="wtask">
+    <div class="q"><span class="n">1</span><span>{{đề khẳng định — bám việc thật của user, dùng <code>{{từ}}</code>}}</span></div>
+    <textarea data-key="w1" placeholder="{{gợi ý mở đầu câu…}}"></textarea>
+  </div>
+  <div class="wtask">
+    <div class="q"><span class="n">2</span><span>{{đề câu hỏi, dùng <code>{{từ}}</code>}}</span></div>
+    <textarea data-key="w2" placeholder="{{gợi ý mở đầu câu…}}"></textarea>
+  </div>
+  <div class="wtask">
+    <div class="q"><span class="n">3</span><span>{{đề phủ định, dùng <code>{{từ}}</code>}}</span></div>
+    <textarea data-key="w3" placeholder="{{gợi ý mở đầu câu…}}"></textarea>
+  </div>
+
+  <details>
+    <summary>Xem 2 câu mẫu — mở SAU khi đã viết xong cả 3</summary>
+    <ol>
+      <li><em>"{{câu mẫu}}"</em> — {{chỉ ra chỗ đắt giá về ngữ pháp}}</li>
+      <li><em>"{{câu mẫu}}"</em> — {{…}}</li>
+    </ol>
+  </details>
+
+  <div class="write-foot">
+    <button id="clear-draft">🗑️ Xoá nháp</button>
+    <span>Nháp tự lưu trong trình duyệt này — đóng tab rồi mở lại vẫn còn.</span>
+    <span id="save-state"></span>
+  </div>
 </section>
 
 <section class="block">

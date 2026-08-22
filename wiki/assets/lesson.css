@@ -383,3 +383,410 @@ footer a { color: var(--accent); }
   article.word, section.block { box-shadow: none; break-inside: avoid; }
   details { display: none; }
 }
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   KHỐI NGỮ PHÁP + KHỐI TỰ VIẾT  (lộ trình v2, từ 2026-08-24)
+   Dùng bởi: section.grammar · section.write · .gram-progress · .pattern-tag
+   Xem khuôn ở _templates/lesson.html, mẫu đầy đủ ở _templates/lesson-v2-mockup.html
+   ══════════════════════════════════════════════════════════════════════ */
+:root {
+  --gram: #6d4aca;          /* tím — không đụng màu it/biz/life/accent */
+  --gram-bg: #f0ebfd;
+  --gram-text: #55379f;
+  --ok: #0d8a6a;
+  --ok-bg: #e2f5ef;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --gram: #a98cf5;
+    --gram-bg: #241c3d;
+    --gram-text: #c3aeff;
+    --ok: #4fd1a8;
+    --ok-bg: #143029;
+  }
+}
+:root[data-theme="dark"] {
+  --gram: #a98cf5;
+  --gram-bg: #241c3d;
+  --gram-text: #c3aeff;
+  --ok: #4fd1a8;
+  --ok-bg: #143029;
+}
+
+/* ── Thanh tiến độ ngữ pháp trên header ── */
+.gram-progress {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 15px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  flex-wrap: wrap;
+}
+.gram-progress .lbl { font-weight: 700; color: var(--gram); letter-spacing: .01em; }
+.gram-progress .bar {
+  flex: 1 1 160px;
+  height: 7px;
+  min-width: 120px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.gram-progress .bar i { display: block; height: 100%; background: var(--gram); border-radius: 999px; }
+
+/* ── Khối NGỮ PHÁP HÔM NAY ── */
+section.grammar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gram);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  margin: 30px 0;
+}
+section.grammar .gram-head {
+  display: flex;
+  align-items: baseline;
+  gap: 11px;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+section.grammar .kicker {
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gram);
+  background: var(--gram-bg);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+section.grammar h2 { margin: 0; font-size: 24px; letter-spacing: -.015em; }
+section.grammar .gram-vi { margin: 2px 0 16px; color: var(--text-dim); font-size: 14.5px; }
+
+.formula {
+  background: var(--gram-bg);
+  border: 1px dashed var(--gram);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin: 0 0 16px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 15px;
+  line-height: 2;
+  color: var(--gram-text);
+}
+.formula b { font-weight: 800; }
+.formula .lab {
+  display: inline-block;
+  min-width: 78px;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  opacity: .72;
+  text-transform: uppercase;
+}
+
+/* bảng Đúng / Sai */
+.cmp { display: grid; gap: 10px; margin: 0 0 4px; }
+.cmp .pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.cmp .good, .cmp .bad {
+  padding: 10px 13px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.cmp .good { background: var(--ok-bg); border-left: 3px solid var(--ok); }
+.cmp .bad  { background: var(--warn-bg); border-left: 3px solid var(--warn); }
+.cmp .good::before { content: "✅ "; }
+.cmp .bad::before  { content: "❌ "; }
+.cmp .good b { color: var(--ok); }
+.cmp .bad b  { color: var(--warn); text-decoration: line-through; }
+.cmp .why {
+  grid-column: 1 / -1;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  padding: 0 4px 2px;
+  font-style: italic;
+}
+
+/* callout bẫy người Việt */
+.trap {
+  margin: 18px 0 0;
+  padding: 14px 17px;
+  background: var(--warn-bg);
+  border-radius: 10px;
+  border-left: 3px solid var(--warn);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.trap .t {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--warn);
+  margin-bottom: 5px;
+}
+.gram-more { margin: 16px 0 0; font-size: 13.5px; }
+.gram-more a { color: var(--gram); }
+
+/* nhãn ⟨mẫu #13⟩ cạnh chữ "Ví dụ" trong từng card từ */
+.ex-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 -6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.pattern-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: none;
+  color: var(--gram);
+  background: var(--gram-bg);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+
+/* ── "Nó là gì" — đoạn mở đầu bằng lời thường ── */
+.gram-what {
+  background: var(--surface-2);
+  border-left: 3px solid var(--gram);
+  border-radius: 0 10px 10px 0;
+  padding: 15px 18px;
+  margin: 0 0 18px;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.gram-what p { margin: 0 0 10px; }
+.gram-what p:last-child { margin-bottom: 0; }
+.gram-what .rule {
+  display: block;
+  margin-top: 12px;
+  padding-top: 11px;
+  border-top: 1px dashed var(--border);
+  font-weight: 700;
+  color: var(--gram-text);
+}
+
+/* ── Hai trục thời gian so sánh ── */
+.tl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 20px; }
+.tl-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px 8px;
+}
+.tl-card h4 {
+  margin: 0 0 2px;
+  font-size: 13px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.tl-card .cap { margin: 0 0 8px; font-size: 14px; }
+.tl-card.pp h4 { color: var(--gram); }
+.tl-card svg { width: 100%; height: auto; display: block; color: var(--text); }
+.tl svg .axis { stroke: currentColor; stroke-opacity: .25; stroke-width: 2; }
+.tl svg .now   { stroke: var(--warn); stroke-width: 2.5; }
+.tl svg .dot   { fill: var(--text-dim); }
+.tl-card.pp svg .dot { fill: var(--gram); }
+.tl svg .reach { stroke: var(--gram); stroke-width: 2.5; fill: none; }
+.tl svg .stop  { stroke: var(--text-dim); stroke-width: 2; stroke-dasharray: 4 4; opacity: .6; }
+.tl svg text   { font: 700 9px ui-sans-serif, sans-serif; fill: currentColor; }
+.tl svg .tick  { fill: var(--text-dim); font-weight: 600; letter-spacing: .06em; }
+.tl svg .lab-now { fill: var(--warn); }
+
+/* ── Dùng khi nào — danh sách trường hợp ── */
+.usecases { counter-reset: uc; list-style: none; padding: 0; margin: 0 0 6px; }
+.usecases > li {
+  counter-increment: uc;
+  position: relative;
+  padding: 12px 14px 12px 46px;
+  background: var(--surface-2);
+  border-radius: 10px;
+  margin-bottom: 9px;
+}
+.usecases > li::before {
+  content: counter(uc);
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--gram);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.usecases .uc-t { font-weight: 700; font-size: 15px; display: block; margin-bottom: 5px; }
+.usecases .uc-en { display: block; font-size: 15px; }
+.usecases .uc-en b { color: var(--gram); }
+.usecases .uc-vi {
+  display: block;
+  margin-top: 3px;
+  font-size: 13.5px;
+  font-style: italic;
+  color: var(--text-dim);
+}
+.usecases .cue {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  background: var(--gram-bg);
+  color: var(--gram-text);
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+/* ── Gặp ở đâu trong công việc ── */
+.gram-where { width: 100%; border-collapse: collapse; margin: 0 0 4px; font-size: 14.5px; }
+.gram-where th, .gram-where td {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.gram-where th {
+  font-size: 11.5px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 700;
+}
+.gram-where td:first-child { white-space: nowrap; font-weight: 600; color: var(--text-dim); }
+.gram-where tr:last-child td { border-bottom: none; }
+.gram-where code { font-size: 13px; }
+
+/* ── Khi nào KHÔNG dùng ── */
+.notuse {
+  margin: 0 0 18px;
+  padding: 13px 16px;
+  background: var(--warn-bg);
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.notuse .t {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--warn);
+  margin-bottom: 5px;
+}
+
+/* tiêu đề nhỏ phân mục bên trong khối ngữ pháp */
+.gram-sub {
+  margin: 22px 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.gram-sub::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.tl svg .ahd { fill: var(--gram); }
+@media (max-width: 560px) { .tl { grid-template-columns: 1fr; } }
+/* ── Khối TỰ VIẾT ── */
+section.write {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  margin: 30px 0;
+}
+section.write h2 { margin: 0 0 4px; font-size: 20px; letter-spacing: -.01em; }
+section.write .sub { margin: 0 0 18px; color: var(--text-dim); font-size: 14px; }
+.wtask { margin-bottom: 18px; }
+.wtask .q {
+  font-size: 15.5px;
+  margin-bottom: 7px;
+  display: flex;
+  gap: 9px;
+  align-items: baseline;
+}
+.wtask .q .n {
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1px 7px;
+}
+.wtask textarea {
+  width: 100%;
+  min-height: 62px;
+  resize: vertical;
+  font: inherit;
+  font-size: 15.5px;
+  line-height: 1.6;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  transition: border-color .15s;
+}
+.wtask textarea:focus { outline: none; border-color: var(--accent); background: var(--surface); }
+.wtask textarea::placeholder { color: var(--text-dim); opacity: .65; }
+.write-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 13.5px;
+  color: var(--text-dim);
+}
+.write-foot button {
+  font: inherit;
+  font-size: 13.5px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.write-foot button:hover { border-color: var(--warn); color: var(--warn); }
+#save-state { margin-left: auto; font-style: italic; }
+
+@media (max-width: 560px) {
+  .cmp .pair { grid-template-columns: 1fr; }
+  .formula .lab { display: block; min-width: 0; }
+}
+@media print { section.write textarea { min-height: 92px; } }

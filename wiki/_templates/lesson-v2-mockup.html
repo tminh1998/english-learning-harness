@@ -1,0 +1,519 @@
+<!doctype html>
+<!--
+  ⚠️ ĐÂY LÀ MẪU GIAO DIỆN ĐỂ DUYỆT — KHÔNG PHẢI BÀI HỌC THẬT.
+
+  Nội dung lấy lại từ buổi #9 (2026-08-22) nhưng đã viết lại ví dụ theo
+  mẫu ngữ pháp #13 Present perfect, để thấy đúng cảm giác trang thật sau
+  khi gắn hai khối mới:
+
+      ▓ NGỮ PHÁP HÔM NAY   (trước phần từ vựng)
+      ✍ TỰ VIẾT            (sau mẩu đọc)
+
+  Đã duyệt 2026-08-22. CSS/JS của hai khối mới nay nằm ở assets/lesson.css
+  + assets/lesson.js dùng chung — file này KHÔNG còn style/script riêng,
+  nên nó cũng là phép thử: mở ra mà vẫn đẹp thì assets đã đúng.
+-->
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MẪU v2 — 5 từ + ngữ pháp #13</title>
+<link rel="stylesheet" href="../assets/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">MẪU GIAO DIỆN v2 · Tuần 2026-W34 · Buổi #9</div>
+  <h1>Thứ Bảy, 22 tháng 8, 2026</h1>
+  <div class="mixline">
+    <span class="badge it">2 IT</span>
+    <span class="badge biz">2 Giao tiếp</span>
+    <span class="badge life">1 Đời sống</span>
+  </div>
+  <div class="gram-progress">
+    <span class="lbl">Ngữ pháp 13/42</span>
+    <span class="bar"><i style="width:31%"></i></span>
+    <span>Chặng 2 · Thì &amp; thời gian</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+  <button id="theme">🌗 Theo hệ thống</button>
+  <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
+</div>
+
+<!-- ══ A. ÔN NHANH ĐẦU GIỜ — nâng lên 8 từ, ưu tiên lô cũ nhất ══ -->
+<section class="block">
+  <h2>Ôn nhanh đầu giờ</h2>
+  <p class="sub">8 từ tới hạn — ưu tiên lô cũ nhất (13/08 &amp; 14/08). Tự trả lời rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li>Đánh dấu một API là "đừng dùng nữa, sắp bỏ" — động từ nào?</li>
+    <li>Cách chữa cháy tạm, không phải cách sửa thật — danh từ nào?</li>
+    <li>Trường hợp hiếm, nằm ở rìa, dễ làm code vỡ — cụm nào?</li>
+    <li>Chỗ nghẽn làm cả hệ thống chậm theo — danh từ nào?</li>
+    <li>Đẩy vấn đề lên cấp cao hơn vì mình không xử được — động từ nào?</li>
+    <li>Thứ bàn giao được cho khách, sờ được, tính tiền được — danh từ nào?</li>
+    <li>Hỏi cho rõ vì yêu cầu còn mơ hồ — động từ nào?</li>
+    <li>Hết sạch (thời gian, tiền, kiên nhẫn) — cụm ba chữ nào?</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol class="hide-me">
+      <li><b>deprecate</b> — <em>"We've deprecated the v1 endpoint."</em></li>
+      <li><b>workaround</b> — <em>"That's a workaround, not a fix."</em></li>
+      <li><b>edge case</b> — <em>"It fails on an edge case with empty arrays."</em></li>
+      <li><b>bottleneck</b> — <em>"The DB is the bottleneck."</em></li>
+      <li><b>escalate</b> — <em>"I've escalated it to the platform team."</em></li>
+      <li><b>deliverable</b> — <em>"The first deliverable is due Friday."</em></li>
+      <li><b>clarify</b> — <em>"Could you clarify what 'soon' means here?"</em></li>
+      <li><b>run out of</b> — <em>"We've run out of time this sprint."</em></li>
+    </ol>
+  </details>
+</section>
+
+<!-- ══ B. ⭐ KHỐI MỚI — NGỮ PHÁP HÔM NAY ══ -->
+<section class="grammar">
+  <div class="gram-head">
+    <span class="kicker">#13 · Ngữ pháp hôm nay</span>
+    <h2>Present perfect</h2>
+  </div>
+  <p class="gram-vi">Thì nối <b>quá khứ với hiện tại</b> — tiếng Việt không có thì này, nên phải hiểu bằng công dụng chứ đừng dịch.</p>
+
+  <!-- ── 1. NÓ LÀ GÌ ── -->
+  <div class="gram-what">
+    <p>Present perfect <b>không dùng để kể chuyện quá khứ</b>. Nó dùng để <b>báo tình trạng bây giờ</b>, bằng cách nhắc tới một việc đã xảy ra trước đó.</p>
+    <p>Thứ gần nó nhất trong tiếng Việt là chữ <b>“rồi”</b>. Khi bạn nói <em>“Sửa xong rồi”</em>, người nghe không hỏi bạn sửa lúc mấy giờ — họ chỉ cần biết <b>giờ nó chạy được chưa</b>. Đó đúng là việc của present perfect.</p>
+    <p>Vì thế nó gần như <b>không bao giờ đi với mốc thời gian</b>. Nói giờ nào là tự động rơi về past simple.</p>
+    <span class="rule">Nguyên tắc một dòng: thời điểm không quan trọng — <b>kết quả tính đến bây giờ</b> mới là thứ đang được nói.</span>
+  </div>
+
+  <!-- ── 2. NHÌN TRÊN TRỤC THỜI GIAN ── -->
+  <div class="gram-sub">Nhìn trên trục thời gian</div>
+  <div class="tl">
+    <div class="tl-card">
+      <h4>Past simple</h4>
+      <p class="cap">Việc đóng lại ở một điểm trong quá khứ. Kể xong là hết.</p>
+      <svg viewBox="0 0 250 84" role="img" aria-label="Past simple: một điểm trong quá khứ, không nối tới hiện tại">
+        <line class="axis" x1="12" y1="48" x2="238" y2="48"/>
+        <circle class="dot" cx="62" cy="48" r="6.5"/>
+        <text x="62" y="30" text-anchor="middle">I fixed it</text>
+        <line class="stop" x1="62" y1="55" x2="62" y2="64"/>
+        <text class="tick" x="62" y="76" text-anchor="middle">YESTERDAY</text>
+        <line class="now" x1="200" y1="32" x2="200" y2="64"/>
+        <text class="tick lab-now" x="200" y="76" text-anchor="middle">BÂY GIỜ</text>
+      </svg>
+    </div>
+    <div class="tl-card pp">
+      <h4>Present perfect</h4>
+      <p class="cap">Việc xảy ra ở quá khứ nhưng <b>kết quả kéo tới tận bây giờ</b>.</p>
+      <svg viewBox="0 0 250 84" role="img" aria-label="Present perfect: việc trong quá khứ có kết quả kéo dài tới hiện tại">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" class="ahd"/>
+          </marker>
+        </defs>
+        <line class="axis" x1="12" y1="48" x2="238" y2="48"/>
+        <line class="reach" x1="62" y1="48" x2="192" y2="48" marker-end="url(#ah)"/>
+        <circle class="dot" cx="62" cy="48" r="6.5"/>
+        <text x="62" y="30" text-anchor="middle">I've fixed it</text>
+        <text class="tick" x="127" y="68" text-anchor="middle">KẾT QUẢ CÒN ĐÓ</text>
+        <line class="now" x1="200" y1="32" x2="200" y2="64"/>
+        <text class="tick lab-now" x="200" y="76" text-anchor="middle">BÂY GIỜ</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ── 3. DÙNG KHI NÀO ── -->
+  <div class="gram-sub">Dùng trong 5 trường hợp này</div>
+  <ol class="usecases">
+    <li>
+      <span class="uc-t">Báo một việc vừa xong, kết quả còn nguyên đó <span class="cue">just · already</span></span>
+      <span class="uc-en">“I<b>'ve deployed</b> the fix.”</span>
+      <span class="uc-vi hide-me">→ Ý thật không phải “tôi đã deploy”, mà là <b>“trên production giờ đã có bản vá rồi, khỏi lo”</b>.</span>
+    </li>
+    <li>
+      <span class="uc-t">Nói kinh nghiệm — đã từng / chưa từng, không nói lúc nào <span class="cue">ever · never · before</span></span>
+      <span class="uc-en">“I<b>'ve worked</b> with Kafka before.” · “I<b>'ve never used</b> Rust.”</span>
+      <span class="uc-vi hide-me">→ Đây là câu bạn sẽ cần trong phỏng vấn và khi khách hỏi năng lực. Hỏi lúc nào là lạc đề — vấn đề là <b>có kinh nghiệm hay không</b>.</span>
+    </li>
+    <li>
+      <span class="uc-t">Việc bắt đầu trong quá khứ và <b>vẫn đang tiếp diễn</b> <span class="cue">for · since</span></span>
+      <span class="uc-en">“I<b>'ve been</b> at this company <b>for</b> three years.” · “We<b>'ve used</b> that library <b>since</b> 2023.”</span>
+      <span class="uc-vi hide-me">→ Vẫn đang làm ở đó, vẫn đang dùng thư viện đó. Dùng past simple ở đây là người nghe hiểu <b>bạn đã nghỉ việc rồi</b>.</span>
+    </li>
+    <li>
+      <span class="uc-t">Tính đến bây giờ vẫn <b>chưa</b> xảy ra <span class="cue">yet · still</span></span>
+      <span class="uc-en">“The client <b>hasn't replied</b> yet.” · “We still <b>haven't agreed</b> on the scope.”</span>
+      <span class="uc-vi hide-me">→ Hàm ý là <b>vẫn đang chờ</b>, chuyện chưa khép lại. Câu này dùng dày đặc trong standup và email theo dõi công việc.</span>
+    </li>
+    <li>
+      <span class="uc-t">Đếm số lần <b>tính đến lúc này</b>, khoảng thời gian chưa kết thúc <span class="cue">twice · so far · this week</span></span>
+      <span class="uc-en">“We<b>'ve released</b> twice this week.” · “It <b>has failed</b> three times so far today.”</span>
+      <span class="uc-vi hide-me">→ Tuần này / hôm nay <b>chưa hết</b>, nên con số còn có thể tăng. Nếu tuần đã qua thì phải là <em>“We released twice last week.”</em></span>
+    </li>
+  </ol>
+
+  <!-- ── 4. GẶP Ở ĐÂU TRONG CÔNG VIỆC ── -->
+  <div class="gram-sub">Trong ngày làm việc bạn gặp nó ở đâu</div>
+  <table class="gram-where">
+    <thead><tr><th>Tình huống</th><th>Câu mẫu</th><th>Vì sao là present perfect</th></tr></thead>
+    <tbody>
+      <tr><td>Standup</td><td><code>I've finished the export job.</code></td><td>Báo việc xong — không ai quan tâm xong lúc mấy giờ.</td></tr>
+      <tr><td>Mô tả PR</td><td><code>I've added a fallback and updated the tests.</code></td><td>Liệt kê thay đổi đang nằm sẵn trong PR ngay lúc này.</td></tr>
+      <tr><td>Email khách</td><td><code>We've completed the migration.</code></td><td>Trang trọng hơn <em>We completed…</em>, và nhấn vào kết quả bàn giao.</td></tr>
+      <tr><td>Hỏi tiến độ</td><td><code>Have you heard back from them?</code></td><td>Hỏi tình trạng <b>tính đến lúc này</b>, không hỏi một thời điểm.</td></tr>
+      <tr><td>Báo lỗi</td><td><code>The API has returned 500 three times today.</code></td><td>Hôm nay chưa hết — con số còn có thể tăng.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ── 5. KHI NÀO KHÔNG DÙNG ── -->
+  <div class="gram-sub">Khi nào tuyệt đối không dùng</div>
+  <div class="notuse">
+    <span class="t">🚫 Ba chỗ phải chuyển về past simple</span>
+    · Có <b>mốc thời gian đã đóng</b>: <code>yesterday</code>, <code>last week</code>, <code>two hours ago</code>, <code>in 2024</code>, <code>at 3pm</code>.<br>
+    · Câu hỏi mở đầu bằng <b><code>When…?</code></b> — luôn luôn past simple.
+      ✅ <em>When <b>did</b> you fix it?</em> &nbsp;❌ <em>When have you fixed it?</em><br>
+    · <b>Kể một chuỗi việc theo thứ tự</b> (thuật lại sự cố, viết post-mortem): <em>“The job failed, we rolled back, then we patched the parser.”</em>
+  </div>
+
+  <!-- ── 6. CÔNG THỨC ── -->
+  <div class="gram-sub">Công thức</div>
+  <div class="formula">
+    <span class="lab">Khẳng định</span> S + <b>have / has</b> + V3<br>
+    <span class="lab">Phủ định</span> S + <b>haven't / hasn't</b> + V3<br>
+    <span class="lab">Câu hỏi</span> <b>Have / Has</b> + S + V3 ?<br>
+    <span class="lab">Ngôi 3 ít</span> he / she / it / the API → <b>has</b>
+  </div>
+
+  <!-- ── 7. ĐÚNG / SAI ── -->
+  <div class="gram-sub">Ba lỗi thường gặp nhất</div>
+  <div class="cmp">
+    <div class="pair">
+      <div class="good">I've <b>fixed</b> the bug.</div>
+      <div class="bad">I have fixed the bug <b>yesterday</b>.</div>
+      <div class="why">Có mốc quá khứ (<code>yesterday</code>, <code>last week</code>, <code>… ago</code>) → bắt buộc past simple: <em>I fixed it yesterday.</em> <code>have</code> và <code>ago</code> không bao giờ đi chung.</div>
+    </div>
+    <div class="pair">
+      <div class="good">The API <b>has</b> returned 500 twice.</div>
+      <div class="bad">The API <b>have</b> returned 500 twice.</div>
+      <div class="why">Chủ ngữ số ít → <code>has</code>. Đây là lỗi số 1 của người Việt vì tiếng Việt không chia động từ theo ngôi.</div>
+    </div>
+    <div class="pair">
+      <div class="good">We <b>haven't finished</b> yet.</div>
+      <div class="bad">We <b>didn't finished</b> yet.</div>
+      <div class="why">Sau <code>have/has</code> luôn là V3 (<em>finished</em>); sau <code>did</code> luôn là nguyên mẫu (<em>finish</em>). Và <code>yet</code> kéo theo present perfect.</div>
+    </div>
+  </div>
+
+  <!-- ── 8. BẪY NGƯỜI VIỆT ── -->
+  <div class="trap">
+    <span class="t">⚠️ Bẫy người Việt</span>
+    Tiếng Việt chỉ có <b>một</b> chữ “đã”, tiếng Anh tách làm hai. Cách chọn nhanh —
+    tự hỏi: <b>“bây giờ chuyện đó còn quan trọng không?”</b><br>
+    · Chỉ kể lại, có mốc thời gian → <em>past simple</em>: <b>I fixed it yesterday.</b><br>
+    · Kết quả còn hiệu lực bây giờ → <em>present perfect</em>: <b>I've fixed it.</b> (ý: giờ nó chạy rồi)<br>
+    Mẹo nhận dạng: thấy <code>already · just · yet · never · so far · since</code> → present perfect.
+    Thấy <code>yesterday · last … · … ago · in 2024</code> → past simple.
+  </div>
+
+  <p class="gram-more">📄 Chi tiết + 40 V3 bất quy tắc hay gặp: <a href="../grammar/present-perfect.md">grammar/present-perfect.md</a></p>
+</section>
+
+<!-- ══ C. 5 TỪ MỚI — ví dụ nay viết theo mẫu #13 ══ -->
+
+<!-- ── 1. fallback ── -->
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">1</span>fallback
+        <button class="say" data-say="fall back on the cached value" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈfɔːlbæk/ · <em>noun (v: fall back on/to)</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">phương án dự phòng<span class="alt">cái chính hỏng thì tự chạy cái này</span></p>
+
+  <p class="def"><span class="tag">EN</span>something you use instead when the first choice fails.
+    <span class="def-vi hide-me">→ thứ bạn dùng thay thế khi lựa chọn đầu tiên hỏng.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <em>rollback</em> ở chỗ rollback là lùi về bản cũ <b>sau khi</b> đã hỏng, còn fallback là phương án B chuẩn bị từ trước, hỏng cái là nó đỡ ngay.</p>
+
+  <div class="ex-label">Ví dụ <span class="pattern-tag">viết theo mẫu #13 · present perfect</span></div>
+  <ul class="examples">
+    <li>
+      <span class="en">We've already added a <b>fallback</b> to the cached rates, so the app no longer dies when the pricing API starts to <span class="rev">throttle</span> us.</span>
+      <span class="vi hide-me">→ Bọn mình đã gắn sẵn phương án dự phòng chạy giá cache rồi, nên giờ API giá có chặn bớt request thì app cũng không chết nữa.</span>
+    </li>
+    <li>
+      <span class="en">Nobody <b>has</b> ever <b>built</b> a <b>fallback</b> for the CDN — that's the ugliest piece of <span class="rev">technical debt</span> we've left in there.</span>
+      <span class="vi hide-me">→ Chưa ai làm phương án dự phòng cho CDN cả — đó là cục nợ xấu nhất bọn mình để lại trong đấy.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a fallback option/plan</code>, <code>fall back on something</code>, <code>fall back to a value</code>, <code>graceful fallback</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ viết liền <code>fallback</code>, động từ viết tách <code>fall back</code>. V3 của <em>fall back</em> là <b>fallen back</b> — <em>"We've fallen back to v1 twice."</em></span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">fallback, fallbacks, fall back, falls back, fell back, fallen back, fall back on</span></div>
+  </div>
+</article>
+
+<!-- ── 2. brittle ── -->
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">2</span>brittle
+        <button class="say" data-say="brittle tests" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈbrɪtl/ · <em>adjective</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">giòn, đụng nhẹ là gãy<span class="alt">sửa chỗ này hỏng chỗ kia</span></p>
+
+  <p class="def"><span class="tag">EN</span>easy to break, and likely to break as soon as anything around it changes.
+    <span class="def-vi hide-me">→ dễ vỡ, và hễ có gì xung quanh thay đổi là gãy ngay.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <em>flaky</em>: flaky là chập chờn, không đụng gì nó cũng lúc được lúc không; brittle thì chạy ổn định, nhưng hễ <b>có ai đụng vào</b> là hỏng.</p>
+
+  <div class="ex-label">Ví dụ <span class="pattern-tag">viết theo mẫu #13 · present perfect</span></div>
+  <ul class="examples">
+    <li>
+      <span class="en">That parser <b>has become</b> so <b>brittle</b> that we've shipped three <span class="rev">regressions</span> from it this month alone.</span>
+      <span class="vi hide-me">→ Cái parser đó giòn tới mức riêng tháng này bọn mình đã để lọt ba lỗi tái phát từ nó.</span>
+    </li>
+    <li>
+      <span class="en">These tests <b>have</b> never <b>been</b> <span class="rev">flaky</span> — they're just <b>brittle</b>: they've broken every single time someone renames a CSS class.</span>
+      <span class="vi hide-me">→ Mấy test này chưa bao giờ chập chờn cả — nó giòn thôi: cứ có ai đổi tên một class CSS là gãy.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>brittle code</code>, <code>brittle tests</code>, <code>become brittle over time</code>, <code>brittle and hard to change</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /ˈbrɪtl/ hai âm tiết, đuôi <code>-tle</code> nuốt thành "-tl" y như <em>little</em>. Tả <b>đồ vật / code</b>, không tả người.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">brittle, brittleness, more brittle, the most brittle</span></div>
+  </div>
+</article>
+
+<!-- ── 3. bring up ── -->
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">3</span>bring up
+        <button class="say" data-say="bring up an issue" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˌbrɪŋ ˈʌp/ · <em>phrasal verb</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">nêu ra, đưa lên bàn<span class="alt">mở đầu một chuyện để cả nhóm bàn</span></p>
+
+  <p class="def"><span class="tag">EN</span>to start talking about a topic so other people can discuss it.
+    <span class="def-vi hide-me">→ bắt đầu nói về một chủ đề để những người khác cùng bàn.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trung tính và lịch sự hơn <em>complain</em> nhiều — nêu vấn đề chứ không phải kêu ca. Câu cửa miệng trong họp: <em>"Thanks for bringing that up."</em></p>
+
+  <div class="ex-label">Ví dụ <span class="pattern-tag">viết theo mẫu #13 · present perfect</span></div>
+  <ul class="examples">
+    <li>
+      <span class="en">One <span class="rev">stakeholder</span> <b>has brought up</b> the migration cost twice already, and we still haven't given him a number.</span>
+      <span class="vi hide-me">→ Có một bên liên quan nêu chuyện chi phí migration hai lần rồi, mà bọn mình vẫn chưa đưa được con số nào.</span>
+    </li>
+    <li>
+      <span class="en">Thanks for <b>bringing</b> that <b>up</b> — I <b>haven't mentioned</b> the <span class="rev">caveat</span> about old browsers yet.</span>
+      <span class="vi hide-me">→ (với đồng nghiệp) Cảm ơn cậu đã nêu ra — mình chưa kịp nói cái vế "nhưng mà" về trình duyệt cũ.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>bring up an issue/a point/a concern</code>, <code>thanks for bringing that up</code>, <code>bring it up in the meeting</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đại từ <b>bắt buộc</b> đứng giữa — <em>bring it up</em>, không bao giờ <em>bring up it</em>. V3 là <b>brought up</b>, không phải <em>bringed</em>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">bring up, brings up, brought up, bringing up, upbringing (n)</span></div>
+  </div>
+</article>
+
+<!-- ── 4. turnaround ── -->
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">4</span>turnaround
+        <button class="say" data-say="a two-day turnaround" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈtɜːrnəraʊnd/ · <em>noun</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">thời gian xử xong trả lại<span class="alt">nhận việc → làm xong → giao lại mất bao lâu</span></p>
+
+  <p class="def"><span class="tag">EN</span>the time it takes to finish a job and hand it back to whoever asked for it.
+    <span class="def-vi hide-me">→ khoảng thời gian cần để làm xong một việc và trả lại cho người đã yêu cầu.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong email khách đây là con số cam kết, nên hay đi cả cụm <code>turnaround time</code>.</p>
+
+  <div class="ex-label">Ví dụ <span class="pattern-tag">viết theo mẫu #13 · present perfect</span></div>
+  <ul class="examples">
+    <li>
+      <span class="en">Our <b>turnaround</b> on bug reports <b>has dropped</b> to two working days since the team <span class="rev">aligned</span> on priorities.</span>
+      <span class="vi hide-me">→ (email khách) Từ lúc cả nhóm thống nhất được thứ tự ưu tiên, bên em xử một báo lỗi chỉ còn hai ngày làm việc ạ.</span>
+    </li>
+    <li>
+      <span class="en">I <b>haven't promised</b> them a <b>turnaround</b> yet — so far I've only given them a <span class="rev">ballpark</span>.</span>
+      <span class="vi hide-me">→ Mình chưa hứa với họ bao lâu xong đâu — tới giờ mới đưa con số áng chừng thôi.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>turnaround time</code>, <code>a quick/fast turnaround</code>, <code>a 24-hour turnaround</code>, <code>on a tight turnaround</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ viết liền <code>turnaround</code>; viết tách <code>turn around</code> là động từ "quay lại". Nhanh dùng <em>quick/fast</em>, không phải <em>early</em>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">turnaround, turnarounds, turnaround time, turn around (v), turned around</span></div>
+  </div>
+</article>
+
+<!-- ── 5. sort out ── -->
+<article class="word" data-cat="life">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">5</span>sort out
+        <button class="say" data-say="sort it out" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˌsɔːrt ˈaʊt/ · <em>phrasal verb</em></div>
+    </div>
+    <span class="badge life">Đời sống</span>
+  </div>
+
+  <p class="vi-quick hide-me">xử cho xong, dẹp gọn<span class="alt">gỡ rối tới lúc đâu vào đấy</span></p>
+
+  <p class="def"><span class="tag">EN</span>to deal with a problem or a mess until everything is in order again.
+    <span class="def-vi hide-me">→ xử lý một vấn đề hoặc một mớ lộn xộn cho tới khi mọi thứ đâu vào đấy.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Nhẹ hơn <em>solve</em>: <em>solve</em> là giải bài toán có lời giải, <em>sort out</em> là dẹp cho gọn — giấy tờ, lịch hẹn, hiểu lầm, bug lặt vặt.</p>
+
+  <div class="ex-label">Ví dụ <span class="pattern-tag">viết theo mẫu #13 · present perfect</span></div>
+  <ul class="examples">
+    <li>
+      <span class="en">I've finally <b>sorted out</b> the staging config, so we can <span class="rev">catch up</span> on the backlog tomorrow.</span>
+      <span class="vi hide-me">→ Cuối cùng cũng dẹp xong cái config staging, mai bọn mình làm bù cho kịp đống backlog được rồi.</span>
+    </li>
+    <li>
+      <span class="en">My landlord <b>has texted</b> me <span class="rev">out of the blue</span> about the rent, and I still <b>haven't sorted</b> it <b>out</b>.</span>
+      <span class="vi hide-me">→ Ông chủ nhà tự dưng nhắn chuyện tiền nhà, mà tới giờ mình vẫn chưa giải quyết xong.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>sort something out</code>, <code>sort it out</code>, <code>get things sorted</code>, <code>it'll sort itself out</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đại từ đứng giữa: <em>sort it out</em>. Khác <code>figure out</code>: <em>figure out</em> là <b>nghĩ ra</b>, <em>sort out</em> là <b>làm cho xong</b>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">sort out, sorts out, sorted out, sorting out, get sorted, sorted (adj)</span></div>
+  </div>
+</article>
+
+<!-- ══ D. MẨU ĐỌC — cũng viết theo mẫu #13 ══ -->
+<section class="block">
+  <h2>Mẩu đọc <span class="pattern-tag">mẫu #13</span></h2>
+  <p class="sub">Tin nhắn Slack gửi team lúc cuối ngày</p>
+  <div class="passage">Quick update before I log off. The client's ops lead <b>has brought up</b> the CSV export again — that's three times this month, and we still <span class="rev">haven't pushed back</span> once. Our <b>turnaround</b> on it <b>has slipped</b> to five days, mostly because that parser <b>has become</b> genuinely <b>brittle</b>: I've touched it twice this week and broken something two files away both times. I've shipped a <b>fallback</b> to the old exporter for now, so nothing is on fire. I <b>haven't sorted out</b> the root cause yet — I'll <span class="rev">loop</span> the platform team <span class="rev">in</span> tomorrow morning.</div>
+  <details>
+    <summary>Bản dịch</summary>
+    <p class="hide-me">Cập nhật nhanh trước khi mình off. Anh phụ trách vận hành bên khách lại nêu chuyện export CSV — lần thứ ba trong tháng, mà bọn mình chưa phản đối lại lần nào. Thời gian xử vụ đó đã chậm thành năm ngày, chủ yếu vì cái parser giờ giòn thật sự: tuần này mình đụng vào hai lần thì cả hai lần đều làm gãy chỗ cách đó hai file. Trước mắt mình đã đẩy ra một phương án dự phòng chạy bộ export cũ, nên chưa cháy nhà đâu. Nguyên nhân gốc thì mình chưa xử xong — sáng mai mình sẽ kéo team platform vào.</p>
+  </details>
+</section>
+
+<!-- ══ E. ⭐ KHỐI MỚI — TỰ VIẾT ══ -->
+<section class="write">
+  <h2>✍️ Tự viết — 3 câu của bạn</h2>
+  <p class="sub">
+    Phần quan trọng nhất buổi học, và là phần <b>không có đáp án</b>. Mỗi câu phải dùng
+    mẫu <b>#13 present perfect</b> + từ được chỉ định. Viết xong hãy mở phần câu mẫu để
+    đối chiếu — muốn được chấm thật thì dán cả 3 câu vào chat.
+  </p>
+
+  <div class="wtask">
+    <div class="q"><span class="n">1</span><span>Viết 1 câu về một việc bạn <b>đã làm xong</b> hôm nay và <b>giờ vẫn còn tác dụng</b>, dùng <code>sort out</code>.</span></div>
+    <textarea data-key="w1" placeholder="I've sorted out…"></textarea>
+  </div>
+
+  <div class="wtask">
+    <div class="q"><span class="n">2</span><span>Viết 1 <b>câu hỏi</b> gửi khách hàng, dùng <code>turnaround</code>. Nhớ đảo <code>Have/Has</code> lên đầu.</span></div>
+    <textarea data-key="w2" placeholder="Has the new turnaround…"></textarea>
+  </div>
+
+  <div class="wtask">
+    <div class="q"><span class="n">3</span><span>Viết 1 câu <b>phủ định</b> về hệ thống bạn đang làm, dùng <code>brittle</code> hoặc <code>fallback</code>.</span></div>
+    <textarea data-key="w3" placeholder="We haven't…"></textarea>
+  </div>
+
+  <details>
+    <summary>Xem 2 câu mẫu — mở SAU khi đã viết xong cả 3</summary>
+    <ol>
+      <li><em>"I've sorted out the staging credentials, so nobody has to ask me for them any more."</em> — mệnh đề sau ở present simple vì đang nói hiện trạng.</li>
+      <li><em>"Has your team noticed any change in our turnaround since last month?"</em> — <code>Has</code> lên đầu, động từ về V3, <code>since</code> kéo theo present perfect.</li>
+    </ol>
+  </details>
+
+  <div class="write-foot">
+    <button id="clear-draft">🗑️ Xoá nháp</button>
+    <span>Nháp tự lưu trong trình duyệt này — đóng tab rồi mở lại vẫn còn.</span>
+    <span id="save-state"></span>
+  </div>
+</section>
+
+<!-- ══ F. BÀI TẬP — thêm 2 câu ngữ pháp ══ -->
+<section class="block">
+  <h2>Bài tập</h2>
+  <p class="sub">Câu 1–3 về từ vựng, câu 4–5 về ngữ pháp #13. Làm xong rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li><b>Điền từ</b> — <code>fallback</code> · <code>brittle</code> · <code>brought up</code> · <code>turnaround</code> · <code>sorted out</code><br>
+      (a) <em>"Our ___ on urgent tickets has dropped to four hours."</em><br>
+      (b) <em>"The suite is green today, but it's ___ — renaming one prop broke nine tests."</em><br>
+      (c) <em>"I've finally ___ that invoice mess."</em><br>
+      (d) <em>"She ___ the licensing question that everyone else was avoiding."</em><br>
+      (e) <em>"There's no ___ if the CDN goes down."</em></li>
+    <li><b>Sửa lỗi</b> — mỗi câu đúng một lỗi:<br>
+      (a) <em>"Can you sort out it before Monday?"</em><br>
+      (b) <em>"Our turn around time is two working days."</em><br>
+      (c) <em>"Thanks for bring up that point in the meeting."</em></li>
+    <li><b>Dịch Việt → Anh</b><br>
+      (a) "Bọn mình đã gắn sẵn phương án dự phòng rồi."<br>
+      (b) "Tới giờ mình vẫn chưa xử xong vụ đó."</li>
+    <li><b>Ngữ pháp — chọn thì đúng</b>, và nói vì sao:<br>
+      (a) <em>"I (fixed / have fixed) the login bug yesterday."</em><br>
+      (b) <em>"The API (returned / has returned) 500 three times so far today."</em><br>
+      (c) <em>"We (didn't finish / haven't finished) the migration yet."</em><br>
+      (d) <em>"She (worked / has worked) here since 2021."</em></li>
+    <li><b>Ngữ pháp — viết lại</b> ở present perfect, giữ nguyên nghĩa:<br>
+      (a) <em>"He brought it up in the meeting. He is still waiting for an answer."</em> → gộp thành 1 câu có <code>already</code>.<br>
+      (b) <em>"We started using the fallback in June. We still use it."</em> → dùng <code>since</code>.</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol>
+      <li>(a) <b>turnaround</b> — (b) <b>brittle</b> — (c) <b>sorted out</b> — (d) <b>brought up</b> — (e) <b>fallback</b>.</li>
+      <li>(a) <em>"Can you <b>sort it out</b> before Monday?"</em> — đại từ đứng giữa. (b) <em>"Our <b>turnaround</b> time…"</em> — danh từ viết liền. (c) <em>"Thanks for <b>bringing</b> up…"</em> — sau <code>for</code> dùng V-ing.</li>
+      <li>(a) <em>"We've already added a <b>fallback</b>."</em> (b) <em>"I <b>haven't sorted</b> it <b>out</b> yet."</em></li>
+      <li>(a) <b>fixed</b> — có <code>yesterday</code>, mốc quá khứ rõ ràng.<br>
+          (b) <b>has returned</b> — <code>so far today</code>, hôm nay chưa hết, kết quả còn đang tính.<br>
+          (c) <b>haven't finished</b> — <code>yet</code> luôn kéo theo present perfect.<br>
+          (d) <b>has worked</b> — <code>since</code> + việc còn tiếp diễn tới giờ.</li>
+      <li>(a) <em>"He <b>has already brought</b> it <b>up</b> in the meeting."</em> (<code>already</code> đứng giữa <em>has</em> và V3)<br>
+          (b) <em>"We <b>have used</b> the fallback <b>since</b> June."</em> (hoặc <em>"…have been using…"</em>)</li>
+    </ol>
+  </details>
+</section>
+
+<footer>
+  ⚠️ <b>Đây là mẫu giao diện để duyệt</b>, không phải bài học thật — nội dung lấy từ buổi #9
+  và viết lại ví dụ theo mẫu ngữ pháp #13.
+  <br>Bài thật: <a href="../lessons/2026-W34/2026-08-22.html">2026-08-22.html</a> ·
+  Toàn bộ từ đã học: <a href="../VOCAB_INDEX.md">VOCAB_INDEX.md</a>
+</footer>
+
+</div>
+<script src="../assets/lesson.js"></script>
+</body>
+</html>
