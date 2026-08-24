@@ -20,7 +20,9 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 
 **Tới hạn hôm nay (2026-08-24): 5 từ** — fallback · brittle · bring up · turnaround · sort out (quá hạn từ 2026-08-23)
 
-**Tới hạn ngày mai (2026-08-25): 5 từ** — hotfix · overwrite · prioritize · trade-off · put off
+**Tới hạn ngày mai (2026-08-25): 5 từ** — cherry-pick · backfill · prioritize · trade-off · put off
+
+_Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix` và `overwrite` → hai từ đó bị thay bằng `cherry-pick` và `backfill`, và **không** được đưa vào lịch ôn (vẫn giữ trong VOCAB_INDEX với nguồn `da-biet` để R1 chặn trùng)._
 
 | Word | Bậc | next_review | Số lần đúng | Số lần sai | Học từ |
 | ---- | --- | ----------- | ----------- | ---------- | ------ |
@@ -69,8 +71,8 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 | bring up | 1 | 2026-08-23 | 0 | 0 | 2026-08-22 |
 | turnaround | 1 | 2026-08-23 | 0 | 0 | 2026-08-22 |
 | sort out | 1 | 2026-08-23 | 0 | 0 | 2026-08-22 |
-| hotfix | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
-| overwrite | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| cherry-pick | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| backfill | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
 | prioritize | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
 | trade-off | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
 | put off | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
