@@ -16,9 +16,10 @@ cd "$HARNESS"
 OUT="index.html"
 GH=$(cfg github)
 
-# Số từ đã học = số dòng bảng trong VOCAB_INDEX (dòng bắt đầu bằng `| ` và không phải header/separator).
-# Bỏ qua dòng nguồn `da-biet` — từ người học báo đã biết sẵn, có trong bảng chỉ để chặn trùng.
-TONGTU=$(sed -n 's/^|[[:space:]]*[0-9][0-9]*[[:space:]]*|.*/&/p' wiki/VOCAB_INDEX.md 2>/dev/null | grep -v 'da-biet' | wc -l | tr -d ' ')
+# Số từ đã học = số dòng bảng CÓ ĐÁNH SỐ trong VOCAB_INDEX.
+# Bảng "Đã biết sẵn" ở cuối file không đánh số nên tự động không bị đếm — đúng ý:
+# đó là từ người học vốn đã biết, không phải từ đã dạy.
+TONGTU=$(sed -n 's/^|[[:space:]]*[0-9][0-9]*[[:space:]]*|.*/x/p' wiki/VOCAB_INDEX.md 2>/dev/null | wc -l | tr -d ' ')
 
 {
   cat <<'HEAD'

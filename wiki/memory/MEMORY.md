@@ -13,3 +13,4 @@
 
 - [Nghĩa Việt phải nghe như người Việt nói](dich-tu-nhien.md) — không dịch từng chữ, giữ nguyên thuật ngữ dev tiếng Anh (R7).
 - [Ví dụ phải ôn lại từ cũ](vi-du-phai-on-tu-cu.md) — mỗi từ mới kéo theo ≥1 từ cũ, đánh dấu `.rev` (R8).
+- [Từ đã biết thì không dạy lại](tu-da-biet-khong-day-lai.md) — user đánh dấu "đã biết" → vào bảng ⛔ cuối VOCAB_INDEX, tránh nhóm từ lệnh git/CI hằng ngày.

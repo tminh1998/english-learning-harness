@@ -13,7 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 50 từ đã học** · IT 20 · Business 20 · Life 10 · ad-hoc 0 · **+2 đã biết sẵn** (hotfix, overwrite — nguồn `da-biet`, không vào lịch ôn)
+**Tổng: 50 từ đã học** · IT 20 · Business 20 · Life 10 · ad-hoc 0
+**Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
 **Cập nhật:** 2026-08-24
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -63,20 +64,35 @@
 | 43 | bring up | brings up, brought up, bringing up, upbringing | phrasal verb | Business | nêu ra cho cả nhóm cùng bàn | 2026-08-22 | lesson |
 | 44 | turnaround | turnarounds, turnaround time, turn around, turned around, turning around | noun | Business | nhận việc tới lúc trả xong mất bao lâu | 2026-08-22 | lesson |
 | 45 | sort out | sorts out, sorted out, sorting out, get sorted, sorted | phrasal verb | Life | xử cho xong, dẹp gọn | 2026-08-22 | lesson |
-| 46 | cherry-pick | cherry pick, cherry-picks, cherry-picked, cherry-picking, cherry-picked commit | verb (cũng là noun) | IT | nhặt riêng một commit đem sang nhánh khác | 2026-08-24 | lesson |
+| 46 | cutover | cutovers, cut over, cut-over, cutting over | noun (v: cut over to) | IT | mốc chuyển hẳn sang hệ mới, tắt hệ cũ | 2026-08-24 | lesson |
 | 47 | backfill | back fill, back-fill, backfills, backfilled, backfilling, backfill job | verb (cũng là noun) | IT | bù lại dữ liệu thiếu của quãng thời gian trước | 2026-08-24 | lesson |
 | 48 | prioritize | prioritizes, prioritized, prioritizing, prioritise, priority, priorities, prioritization, deprioritize | verb | Business | xếp lên làm trước | 2026-08-24 | lesson |
 | 49 | trade-off | trade-offs, tradeoff, trade off, traded off, trading off | noun (đếm được) | Business | được cái này thì mất cái kia | 2026-08-24 | lesson |
 | 50 | put off | puts off, put it off, putting off, put-off | phrasal verb | Life | hoãn lại, để đó tính sau | 2026-08-24 | lesson |
-| 51 | hotfix | hotfixes, hot-fix, hot fix, hotfixed, hotfixing | noun (dùng được như verb) | IT | bản vá nóng, sửa gấp đẩy thẳng lên production | 2026-08-24 | da-biet |
-| 52 | overwrite | overwrites, overwrote, overwritten, overwriting | verb | IT | ghi đè, cái mới đè mất cái cũ | 2026-08-24 | da-biet |
+
+## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
+
+> Từ người học tự đánh dấu "tôi đã biết từ này". Bảng này **cùng luật chống trùng
+> R1** với bảng trên: `/hoc` grep cả file, trúng dòng nào ở đây cũng là **trùng** →
+> phải chọn từ khác. Khác bảng trên ở ba chỗ: không tính vào tổng số từ đã học,
+> không vào `REVIEW_QUEUE.md`, và không có buổi học nào chứa nó.
+>
+> Muốn thêm: chỉ cần nói *"từ này tôi đã biết"* — agent thêm dòng vào đây, thay từ
+> khác vào bài đang mở, rồi cập nhật lại 5 file state.
+
+| Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày đánh dấu |
+| ---- | -------------------------------- | ---- | ---- | --------- | ------------- |
+| hotfix | hotfixes, hot-fix, hot fix, hotfixed, hotfixing | noun (dùng được như verb) | IT | bản vá nóng, sửa gấp đẩy thẳng lên production | 2026-08-24 |
+| overwrite | overwrites, overwrote, overwritten, overwriting | verb | IT | ghi đè, cái mới đè mất cái cũ | 2026-08-24 |
+| cherry-pick | cherry pick, cherry-picks, cherry-picked, cherry-picking | verb (cũng là noun) | IT | nhặt riêng một commit đem sang nhánh khác | 2026-08-24 |
 
 <!--
 LUẬT GHI:
 - Mỗi từ MỘT dòng, thêm vào CUỐI bảng, # tăng dần. Không sắp xếp lại bảng.
 - Cột "Word family" phải liệt kê đủ biến thể — đó là thứ grep sẽ bắt được.
-- Cột Nguồn: `lesson` (từ /hoc) | `ad-hoc` (từ /tra-tu) | `da-biet` (người học báo đã biết
-  sẵn — KHÔNG dạy, KHÔNG vào REVIEW_QUEUE, nhưng vẫn chặn trùng ở R1 và không tính
-  vào dòng "Tổng").
+- Cột Nguồn: `lesson` (từ /hoc) | `ad-hoc` (từ /tra-tu).
+- Từ người học báo "đã biết rồi" KHÔNG vào bảng chính — vào bảng **Đã biết sẵn** ở
+  cuối file (không đánh số, không tính vào Tổng, không vào REVIEW_QUEUE), nhưng vẫn
+  bị grep R1 bắt nên không bao giờ ra lại.
 - Cập nhật dòng "Tổng" ở trên mỗi lần thêm.
 -->

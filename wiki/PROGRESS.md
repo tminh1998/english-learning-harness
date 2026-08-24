@@ -1,10 +1,10 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-24 (buổi #10 — lộ trình v2 chạy buổi đầu tiên; sửa trong ngày: `hotfix` + `overwrite` người học đã biết sẵn → thay bằng `cherry-pick` + `backfill`)
+**Cập nhật:** 2026-08-24 (buổi #10 — lộ trình v2 chạy buổi đầu tiên; sửa trong ngày: `hotfix`, `overwrite`, `cherry-pick` người học đã biết sẵn → hai suất IT thay bằng `cutover` + `backfill`)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 50 (+2 từ đã biết sẵn: hotfix, overwrite — ghi trong VOCAB_INDEX, không tính vào tổng) |
+| Tổng số từ đã học    | 50 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
 | Phân bố              | IT 20 · Business 20 · Life 10                                                           |
 | Số buổi học          | 10                                                                                      |
 | Streak hiện tại      | 10 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
@@ -28,7 +28,7 @@
 | 2026-08-20 | 2026-W34 | #7 | technical debt · backward compatible · loop in · bandwidth · catch up |
 | 2026-08-21 | 2026-W34 | #8 | feature flag · breaking change · stakeholder · align · out of the blue |
 | 2026-08-22 | 2026-W34 | #9 | fallback · brittle · bring up · turnaround · sort out |
-| 2026-08-24 | 2026-W35 | #10 | cherry-pick · backfill · prioritize · trade-off · put off — **ngữ pháp #1 S + V + O** |
+| 2026-08-24 | 2026-W35 | #10 | cutover · backfill · prioritize · trade-off · put off — **ngữ pháp #1 S + V + O** |
 
 ## Kết quả quiz tuần
 

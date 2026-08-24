@@ -60,6 +60,8 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 4. Chọn ứng viên 5 từ theo mix + level trong config.
 5. ⛔ **HARD GATE R1** — grep từng ứng viên:
    `grep -in "<word>" wiki/VOCAB_INDEX.md`
+   Kết quả rơi vào bảng `## ⛔ Đã biết sẵn` ở cuối file **cũng là trùng** (R1.b) —
+   đó là từ người học đã báo là biết rồi, tuyệt đối không dạy lại.
    Trùng lemma hoặc word family → loại, chọn từ khác, grep lại. Chỉ đi tiếp khi cả 5 sạch.
 5b. ⭐ **Soạn khối ngữ pháp + khối tự viết (R9).**
 

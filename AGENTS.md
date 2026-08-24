@@ -67,6 +67,23 @@ dòng `Đã kiểm tra trùng: <5 từ> — không trùng VOCAB_INDEX (N từ)`.
 Từ cũ **được** tái xuất hiện trong câu ví dụ / mẩu đọc / quiz — đó là ôn tập, tốt.
 Chỉ không được tính là từ mới.
 
+**R1.b — Bảng "Đã biết sẵn" cũng là trùng.** Cuối `{vocabIndex}` có bảng
+`## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại`: từ người học tự báo là đã biết. Lệnh
+grep ở trên quét cả file nên tự bắt được — **không được** bỏ qua kết quả chỉ vì nó
+nằm ở bảng dưới. Trúng bảng này = loại y như trùng từ đã dạy.
+
+**Khi user nói "từ này tôi đã biết"** (đang mở một bài học bất kỳ):
+
+1. Thêm dòng vào bảng **Đã biết sẵn** — đủ word family, để lần sau grep bắt được.
+2. Xoá từ đó khỏi bảng chính (nếu đã lỡ ghi) và khỏi `{reviewQueue}`.
+3. Chọn từ thay thế **cùng nhóm** (IT/Business/Life), qua lại hard gate R1.
+4. Viết lại **mọi** chỗ trong bài có từ cũ: khối từ, ví dụ, mẩu đọc, khối tự viết,
+   bài tập, đáp án, ghi chú buổi học — R8 và R9 vẫn phải đúng sau khi thay.
+5. Cập nhật lại 5 file state + `sh tools/build-index.sh` + `daylen`.
+
+Người học đã biết một từ thì việc dạy lại là **lãng phí một suất trong ngày** —
+mỗi buổi chỉ có 5 suất.
+
 ### R2 — Không đưa đáp án trước khi user trả lời
 
 Bài tập cuối lesson: đáp án bọc trong `<details><summary>Đáp án</summary>…</details>`.
