@@ -1,16 +1,16 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-22 (chốt lộ trình v2)
+**Cập nhật:** 2026-08-24 (buổi #10 — lộ trình v2 chạy buổi đầu tiên)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 45                                                                                      |
-| Phân bố              | IT 18 · Business 18 · Life 9                                                            |
-| Số buổi học          | 9                                                                                       |
-| Streak hiện tại      | 9 buổi (Chủ nhật 2026-08-16 là ngày nghỉ theo lịch — không tính đứt)                    |
-| Streak dài nhất      | 9 buổi                                                                                  |
-| Buổi gần nhất        | 2026-08-22 (Thứ Bảy) — buổi #9                                                          |
-| Ngữ pháp             | **0 / 42** · chưa bắt đầu — lộ trình v2 chạy từ **2026-08-24** (thứ Hai, 2026-W35)      |
+| Tổng số từ đã học    | 50                                                                                      |
+| Phân bố              | IT 20 · Business 20 · Life 10                                                           |
+| Số buổi học          | 10                                                                                      |
+| Streak hiện tại      | 10 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
+| Streak dài nhất      | 10 buổi                                                                                 |
+| Buổi gần nhất        | 2026-08-24 (Thứ Hai) — buổi #10                                                         |
+| Ngữ pháp             | **1 / 42** · Chặng 1 · Khung câu — vừa dạy #1 Trật tự câu S + V + O                     |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -28,6 +28,7 @@
 | 2026-08-20 | 2026-W34 | #7 | technical debt · backward compatible · loop in · bandwidth · catch up |
 | 2026-08-21 | 2026-W34 | #8 | feature flag · breaking change · stakeholder · align · out of the blue |
 | 2026-08-22 | 2026-W34 | #9 | fallback · brittle · bring up · turnaround · sort out |
+| 2026-08-24 | 2026-W35 | #10 | hotfix · overwrite · prioritize · trade-off · put off — **ngữ pháp #1 S + V + O** |
 
 ## Kết quả quiz tuần
 
@@ -57,4 +58,4 @@ Chương trình: 42 điểm ≈ 7 tuần, 4 chặng — *khung câu* → *thì &
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
 
-⚠️ **Đáng chú ý:** tính tới 2026-08-22 đã có **40/45 từ quá hạn ôn** trong `REVIEW_QUEUE.md`, tất cả vẫn ở bậc 1 — mỗi ngày lại thêm 5 từ. Routine tự động chỉ sinh được từ mới; `/on-tap` và `/kiem-tra` cần user trả lời mới lên/xuống bậc được. Số từ đọng đã gấp gần ba lần `review.maxPerSession` (15) — nên dành hẳn một buổi gõ `/on-tap` để giải quyết lô cũ nhất (08-14, 08-15) trước khi nó phình thêm. Chủ nhật 2026-08-23 routine sẽ tự sinh bảng ôn `recap/2026-W34`, nhưng bảng ôn **không chấm điểm** — muốn có điểm và lên bậc thì phải gõ tay `/kiem-tra` cho tuần 2026-W34.
+⚠️ **Đáng chú ý:** tính tới 2026-08-24 đã có **45/50 từ quá hạn ôn** trong `REVIEW_QUEUE.md`, tất cả vẫn ở bậc 1 — mỗi ngày lại thêm 5 từ. Buổi #10 đã nâng khối "Ôn nhanh đầu giờ" lên 8 từ và hỏi đúng lô cũ nhất (08-14 + 3 từ đầu lô 08-15), nhưng đó là hỏi-tự-trả-lời trên trang nên **không chấm được, không lên bậc được**. Routine tự động chỉ sinh được từ mới; `/on-tap` và `/kiem-tra` cần user trả lời mới lên/xuống bậc. Số từ đọng đã gấp ba lần `review.maxPerSession` (15) — nên dành hẳn một buổi gõ `/on-tap` để giải quyết lô cũ nhất (08-14, 08-15) trước khi nó phình thêm. Hai tuần 2026-W33 và 2026-W34 đều chưa có điểm quiz — muốn có điểm thì phải gõ tay `/kiem-tra`.

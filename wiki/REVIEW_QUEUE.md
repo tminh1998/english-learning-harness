@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-08-22: 40 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-08-24: 45 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -14,12 +14,13 @@
 - hạn 2026-08-20 — race condition · idempotent · push back · caveat · awkward
 - hạn 2026-08-21 — technical debt · backward compatible · loop in · bandwidth · catch up
 - hạn 2026-08-22 — feature flag · breaking change · stakeholder · align · out of the blue
+- hạn 2026-08-23 — fallback · brittle · bring up · turnaround · sort out
 
-_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Các lô 08-16, 08-18, 08-19, 08-20 và 08-21 đã được ôn nhanh ở đầu buổi #4 → #9 nhưng chưa chấm nên vẫn giữ bậc 1. Số từ đọng giờ đã gấp gần ba lần `review.maxPerSession` (15) — gõ `/on-tap` sớm, ưu tiên lô cũ nhất trước._
+_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Buổi #10 (2026-08-24) đã nâng khối "Ôn nhanh đầu giờ" lên **8 từ** và hỏi đúng lô cũ nhất (deprecate · workaround · clarify · follow up · come across · edge case · bottleneck · escalate), nhưng vẫn là hỏi-tự-trả-lời trên trang nên chưa chấm được → cả 8 từ giữ nguyên bậc 1. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
-**Tới hạn hôm nay (2026-08-22): 5 từ** — feature flag · breaking change · stakeholder · align · out of the blue (đã ôn nhanh đầu buổi #9, chưa chấm nên vẫn bậc 1)
+**Tới hạn hôm nay (2026-08-24): 5 từ** — fallback · brittle · bring up · turnaround · sort out (quá hạn từ 2026-08-23)
 
-**Tới hạn ngày mai (2026-08-23): 5 từ** — fallback · brittle · bring up · turnaround · sort out
+**Tới hạn ngày mai (2026-08-25): 5 từ** — hotfix · overwrite · prioritize · trade-off · put off
 
 | Word | Bậc | next_review | Số lần đúng | Số lần sai | Học từ |
 | ---- | --- | ----------- | ----------- | ---------- | ------ |
@@ -68,6 +69,11 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 | bring up | 1 | 2026-08-23 | 0 | 0 | 2026-08-22 |
 | turnaround | 1 | 2026-08-23 | 0 | 0 | 2026-08-22 |
 | sort out | 1 | 2026-08-23 | 0 | 0 | 2026-08-22 |
+| hotfix | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| overwrite | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| prioritize | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| trade-off | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| put off | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
 
 ## Đã thuộc (bậc 5, đúng)
 

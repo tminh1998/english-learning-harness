@@ -13,8 +13,8 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 45 từ** · IT 18 · Business 18 · Life 9 · ad-hoc 0
-**Cập nhật:** 2026-08-22
+**Tổng: 50 từ** · IT 20 · Business 20 · Life 10 · ad-hoc 0
+**Cập nhật:** 2026-08-24
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -63,6 +63,11 @@
 | 43 | bring up | brings up, brought up, bringing up, upbringing | phrasal verb | Business | nêu ra cho cả nhóm cùng bàn | 2026-08-22 | lesson |
 | 44 | turnaround | turnarounds, turnaround time, turn around, turned around, turning around | noun | Business | nhận việc tới lúc trả xong mất bao lâu | 2026-08-22 | lesson |
 | 45 | sort out | sorts out, sorted out, sorting out, get sorted, sorted | phrasal verb | Life | xử cho xong, dẹp gọn | 2026-08-22 | lesson |
+| 46 | hotfix | hotfixes, hot-fix, hot fix, hotfixed, hotfixing | noun (dùng được như verb) | IT | bản vá nóng, sửa gấp đẩy thẳng lên production | 2026-08-24 | lesson |
+| 47 | overwrite | overwrites, overwrote, overwritten, overwriting | verb | IT | ghi đè, cái mới đè mất cái cũ | 2026-08-24 | lesson |
+| 48 | prioritize | prioritizes, prioritized, prioritizing, prioritise, priority, priorities, prioritization, deprioritize | verb | Business | xếp lên làm trước | 2026-08-24 | lesson |
+| 49 | trade-off | trade-offs, tradeoff, trade off, traded off, trading off | noun (đếm được) | Business | được cái này thì mất cái kia | 2026-08-24 | lesson |
+| 50 | put off | puts off, put it off, putting off, put-off | phrasal verb | Life | hoãn lại, để đó tính sau | 2026-08-24 | lesson |
 
 <!--
 LUẬT GHI:
