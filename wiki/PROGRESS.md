@@ -1,16 +1,16 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-24 (buổi #10 — lộ trình v2 chạy buổi đầu tiên; sửa trong ngày: `hotfix`, `overwrite`, `cherry-pick` người học đã biết sẵn → hai suất IT thay bằng `cutover` + `backfill`)
+**Cập nhật:** 2026-08-25 (buổi #11 — ngữ pháp #2 `be`; 5 từ hôm nay đều là tính từ/cụm tính từ đứng sau `be`)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 50 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 20 · Business 20 · Life 10                                                           |
-| Số buổi học          | 10                                                                                      |
-| Streak hiện tại      | 10 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
-| Streak dài nhất      | 10 buổi                                                                                 |
-| Buổi gần nhất        | 2026-08-24 (Thứ Hai) — buổi #10                                                         |
-| Ngữ pháp             | **1 / 42** · Chặng 1 · Khung câu — vừa dạy #1 Trật tự câu S + V + O                     |
+| Tổng số từ đã học    | 55 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 22 · Business 22 · Life 11                                                           |
+| Số buổi học          | 11                                                                                      |
+| Streak hiện tại      | 11 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
+| Streak dài nhất      | 11 buổi                                                                                 |
+| Buổi gần nhất        | 2026-08-25 (Thứ Ba) — buổi #11                                                          |
+| Ngữ pháp             | **2 / 42** · Chặng 1 · Khung câu — vừa dạy #2 Động từ `be` (am / is / are)              |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -29,6 +29,7 @@
 | 2026-08-21 | 2026-W34 | #8 | feature flag · breaking change · stakeholder · align · out of the blue |
 | 2026-08-22 | 2026-W34 | #9 | fallback · brittle · bring up · turnaround · sort out |
 | 2026-08-24 | 2026-W35 | #10 | cutover · backfill · prioritize · trade-off · put off — **ngữ pháp #1 S + V + O** |
+| 2026-08-25 | 2026-W35 | #11 | stateless · verbose · on track · tentative · fed up — **ngữ pháp #2 `be` (am/is/are)** |
 
 ## Kết quả quiz tuần
 
@@ -58,4 +59,6 @@ Chương trình: 42 điểm ≈ 7 tuần, 4 chặng — *khung câu* → *thì &
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
 
-⚠️ **Đáng chú ý:** tính tới 2026-08-24 đã có **45/50 từ quá hạn ôn** trong `REVIEW_QUEUE.md`, tất cả vẫn ở bậc 1 — mỗi ngày lại thêm 5 từ. Buổi #10 đã nâng khối "Ôn nhanh đầu giờ" lên 8 từ và hỏi đúng lô cũ nhất (08-14 + 3 từ đầu lô 08-15), nhưng đó là hỏi-tự-trả-lời trên trang nên **không chấm được, không lên bậc được**. Routine tự động chỉ sinh được từ mới; `/on-tap` và `/kiem-tra` cần user trả lời mới lên/xuống bậc. Số từ đọng đã gấp ba lần `review.maxPerSession` (15) — nên dành hẳn một buổi gõ `/on-tap` để giải quyết lô cũ nhất (08-14, 08-15) trước khi nó phình thêm. Hai tuần 2026-W33 và 2026-W34 đều chưa có điểm quiz — muốn có điểm thì phải gõ tay `/kiem-tra`.
+⚠️ **Cập nhật 2026-08-25:** nợ ôn tập vẫn tăng — **50/55 từ quá hạn**, tất cả ở bậc 1. Buổi #11 đã đi tiếp lô cũ nhất còn nợ (thay vì hỏi lại đúng 8 từ của buổi #10), nên khối "Ôn nhanh đầu giờ" giờ đã quét hết lô 14/08 → 16/08 và chạm lô 18/08. Nhưng đó vẫn là hỏi-tự-trả-lời trên trang: **không từ nào lên bậc được**. Chỉ có gõ tay `/on-tap` hoặc `/kiem-tra` mới đổi được bậc.
+
+⚠️ **Ghi nhận 2026-08-24:** tính tới hôm đó đã có **45/50 từ quá hạn ôn** trong `REVIEW_QUEUE.md`, tất cả vẫn ở bậc 1 — mỗi ngày lại thêm 5 từ. Buổi #10 đã nâng khối "Ôn nhanh đầu giờ" lên 8 từ và hỏi đúng lô cũ nhất (08-14 + 3 từ đầu lô 08-15), nhưng đó là hỏi-tự-trả-lời trên trang nên **không chấm được, không lên bậc được**. Routine tự động chỉ sinh được từ mới; `/on-tap` và `/kiem-tra` cần user trả lời mới lên/xuống bậc. Số từ đọng đã gấp ba lần `review.maxPerSession` (15) — nên dành hẳn một buổi gõ `/on-tap` để giải quyết lô cũ nhất (08-14, 08-15) trước khi nó phình thêm. Hai tuần 2026-W33 và 2026-W34 đều chưa có điểm quiz — muốn có điểm thì phải gõ tay `/kiem-tra`.

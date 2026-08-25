@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 50 từ đã học** · IT 20 · Business 20 · Life 10 · ad-hoc 0
+**Tổng: 55 từ đã học** · IT 22 · Business 22 · Life 11 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-24
+**Cập nhật:** 2026-08-25
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -69,6 +69,11 @@
 | 48 | prioritize | prioritizes, prioritized, prioritizing, prioritise, priority, priorities, prioritization, deprioritize | verb | Business | xếp lên làm trước | 2026-08-24 | lesson |
 | 49 | trade-off | trade-offs, tradeoff, trade off, traded off, trading off | noun (đếm được) | Business | được cái này thì mất cái kia | 2026-08-24 | lesson |
 | 50 | put off | puts off, put it off, putting off, put-off | phrasal verb | Life | hoãn lại, để đó tính sau | 2026-08-24 | lesson |
+| 51 | stateless | statelessness, stateful, state, stateless service | adjective | IT | không nhớ gì giữa các lần gọi | 2026-08-25 | lesson |
+| 52 | verbose | verbosely, verbosity, verbose logging, --verbose | adjective | IT | dài dòng, in ra quá nhiều | 2026-08-25 | lesson |
+| 53 | on track | on-track, off track, back on track, keep sth on track, track record | cụm tính từ (đi sau `be`) | Business | đang đúng tiến độ, vẫn kịp | 2026-08-25 | lesson |
+| 54 | tentative | tentatively, tentativeness | adjective | Business | tạm thế đã, chưa chốt | 2026-08-25 | lesson |
+| 55 | fed up | fed-up, be fed up with, get fed up, fed up of | cụm tính từ (đi sau `be`) | Life | ngán tận cổ, chịu hết nổi | 2026-08-25 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-08-24: 45 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-08-25: 50 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -15,12 +15,15 @@
 - hạn 2026-08-21 — technical debt · backward compatible · loop in · bandwidth · catch up
 - hạn 2026-08-22 — feature flag · breaking change · stakeholder · align · out of the blue
 - hạn 2026-08-23 — fallback · brittle · bring up · turnaround · sort out
+- hạn 2026-08-25 — cutover · backfill · prioritize · trade-off · put off
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Buổi #10 (2026-08-24) đã nâng khối "Ôn nhanh đầu giờ" lên **8 từ** và hỏi đúng lô cũ nhất (deprecate · workaround · clarify · follow up · come across · edge case · bottleneck · escalate), nhưng vẫn là hỏi-tự-trả-lời trên trang nên chưa chấm được → cả 8 từ giữ nguyên bậc 1. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
-**Tới hạn hôm nay (2026-08-24): 5 từ** — fallback · brittle · bring up · turnaround · sort out (quá hạn từ 2026-08-23)
+**Tới hạn hôm nay (2026-08-25): 5 từ** — cutover · backfill · prioritize · trade-off · put off
 
-**Tới hạn ngày mai (2026-08-25): 5 từ** — cutover · backfill · prioritize · trade-off · put off
+**Tới hạn ngày mai (2026-08-26): 5 từ** — stateless · verbose · on track · tentative · fed up
+
+_Ghi chú 2026-08-25: buổi #11 hỏi 8 từ ở khối "Ôn nhanh đầu giờ", **đi tiếp** lô cũ nhất còn nợ thay vì hỏi lại đúng 8 từ của buổi #10 (deliverable · run out of · rollback · flaky · reach out · scope creep · get the hang of · throttle). Lý do: routine tự động không chấm được nên không từ nào lên bậc — cứ hỏi lại y hệt một lô thì 42 từ còn lại không bao giờ được đụng tới. Sau buổi này khối ôn nhanh đã quét hết lô 14/08, 15/08, 16/08 và chạm lô 18/08._
 
 _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite`, `cherry-pick` → ba từ đó **không** vào lịch ôn, chuyển sang bảng **Đã biết sẵn** cuối `VOCAB_INDEX.md` (luật R1.b chặn vĩnh viễn). Hai suất IT của buổi thay bằng `cutover` và `backfill`._
 
@@ -76,6 +79,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | prioritize | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
 | trade-off | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
 | put off | 1 | 2026-08-25 | 0 | 0 | 2026-08-24 |
+| stateless | 1 | 2026-08-26 | 0 | 0 | 2026-08-25 |
+| verbose | 1 | 2026-08-26 | 0 | 0 | 2026-08-25 |
+| on track | 1 | 2026-08-26 | 0 | 0 | 2026-08-25 |
+| tentative | 1 | 2026-08-26 | 0 | 0 | 2026-08-25 |
+| fed up | 1 | 2026-08-26 | 0 | 0 | 2026-08-25 |
 
 ## Đã thuộc (bậc 5, đúng)
 

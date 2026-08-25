@@ -89,5 +89,5 @@ như tin nhắn gõ vội, không phải câu trả lời của một nhà cung 
 ## Đã gặp ở đâu
 
 - Buổi **#10** ([2026-08-24](../lessons/2026-W35/2026-08-24.md)) — dạy lần đầu;
-  ví dụ của cả 5 từ (`hotfix`, `overwrite`, `prioritize`, `trade-off`, `put off`)
+  ví dụ của cả 5 từ (`cutover`, `backfill`, `prioritize`, `trade-off`, `put off`)
   và mẩu đọc đều viết theo mẫu này.
