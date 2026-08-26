@@ -38,24 +38,25 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    Chỉ khi user **nói rõ ở lượt sau** là muốn buổi #2 mới đi tiếp từ bước 2,
    ghi ra `<YYYY-MM-DD>-2.md` + `.html`. Rỗng → đi tiếp bình thường.
 2. Đọc `.learning-config.yml`, `wiki/memory/MEMORY.md`, `wiki/PROGRESS.md`.
-3. Đọc `wiki/REVIEW_QUEUE.md` → phần "Ôn nhanh đầu giờ". Số câu = `review.warmupPerSession`
-   (đang là **8**), và **luôn lấy lô hạn CŨ NHẤT trước** (`warmupOrder: oldest-due-first`) —
-   đang đọng ~40 từ quá hạn ở bậc 1, hỏi kiểu này thì ~5 buổi là sạch nợ.
-   Hỏi gợi nhớ bằng tiếng Việt, đáp án bọc `<details>`.
+3. ⭐ **Ôn nhanh đầu giờ — 15 từ (R9), chia hai phần cố định** (`review.warmup`):
 
-3b. ⭐ **Chọn điểm ngữ pháp của buổi (R9).** Bỏ qua bước này nếu ngày học **trước**
-   `grammar.startDate` (2026-08-24).
+   - **5 từ của buổi LIỀN TRƯỚC** — lấy từ `wiki/PROGRESS.md` (bảng "Nhật ký buổi
+     học", dòng cuối) hoặc file bài học gần nhất. Đúng thứ tự trong bài.
+   - **10 từ BỐC NGẪU NHIÊN** trong **toàn bộ** `wiki/VOCAB_INDEX.md` — không phải
+     chỉ từ tới hạn trong REVIEW_QUEUE. Bốc **bằng lệnh**, không bốc bằng mắt:
 
-   ```bash
-   grep -A6 "Đang ở đâu" wiki/grammar/CURRICULUM.md
-   ```
+     ```bash
+     grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
+       | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
+       | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -10
+     ```
 
-   Lấy **đúng** điểm ở dòng *"Điểm kế tiếp"* — không suy từ số buổi, không nhảy cóc,
-   không tự chọn điểm "hợp với từ hôm nay hơn". Thứ tự 42 điểm đã được thiết kế để
-   xây từ khung câu lên; đảo thứ tự là hỏng cả lộ trình.
+     (`shuf` không có sẵn trên macOS nên dùng `awk`. Agent tự "chọn ngẫu nhiên" thì
+     luôn trúng mấy từ vừa đọc thấy ở đầu bảng — phải chạy lệnh thật.)
 
-   Điểm này là **khung câu của cả buổi**: ví dụ của cả 5 từ và mẩu đọc đều viết theo
-   mẫu đó. Chọn từ ở bước 4 nên ưu tiên từ nào đặt vào mẫu này nghe tự nhiên.
+   Trên trang để **hai phần riêng biệt**, ghi rõ phần nào là bài hôm qua, phần nào
+   là bốc ngẫu. Hỏi gợi nhớ bằng tiếng Việt, đáp án bọc `<details>` + `.hide-me`.
+   Chưa đủ 10 từ cũ (buổi #1, #2) → lấy hết những gì có, không bịa thêm.
 
 4. Chọn ứng viên 5 từ theo mix + level trong config.
 5. ⛔ **HARD GATE R1** — grep từng ứng viên:
@@ -63,31 +64,17 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    Kết quả rơi vào bảng `## ⛔ Đã biết sẵn` ở cuối file **cũng là trùng** (R1.b) —
    đó là từ người học đã báo là biết rồi, tuyệt đối không dạy lại.
    Trùng lemma hoặc word family → loại, chọn từ khác, grep lại. Chỉ đi tiếp khi cả 5 sạch.
-5b. ⭐ **Soạn khối ngữ pháp + khối tự viết (R9).**
-
-   - Khối **"Ngữ pháp hôm nay"** phải đủ **8 mục**, đúng thứ tự trong
-     `grammar.blockSections`: *nó là gì → trục thời gian → dùng khi nào → gặp ở đâu
-     → khi nào không dùng → công thức → đúng/sai → bẫy người Việt*.
-     Hai mục đầu **không được bỏ**: nhảy thẳng vào công thức chính là lối dạy đã làm
-     người học mất gốc. Mục "nó là gì" phải **neo vào tiếng Việt**.
-   - Khối **"Tự viết"**: 3 đề, ba dạng câu **khác nhau** (khẳng định / câu hỏi /
-     phủ định), mỗi đề buộc dùng mẫu ngữ pháp + một từ mới. **Không có đáp án** —
-     chỉ 2 câu **mẫu** bọc `<details>`.
-   - Mẫu đầy đủ để nhìn cho ra hình dạng: `wiki/_templates/lesson-v2-mockup.html`.
+5b. ⛔ **Không soạn khối ngữ pháp, không khối "Tự viết".** Harness bỏ hẳn ngữ pháp
+   từ 2026-08-26. Bài học chỉ gồm: ôn nhanh đầu giờ → 5 từ → mẩu đọc → bài tập.
+   Bài tập là **5 câu về từ vựng**, không có câu ngữ pháp.
 
 6. **Ghi bản Markdown** theo `wiki/_templates/lesson.md` →
    `wiki/lessons/<YYYY-Www>/<YYYY-MM-DD>.md` (tạo thư mục tuần nếu chưa có).
 7. **Ghi bản HTML** theo `wiki/_templates/lesson.html` →
    `wiki/lessons/<YYYY-Www>/<YYYY-MM-DD>.html` — xem luật render bên dưới.
-7b. **Ghi file ngữ pháp** `wiki/grammar/<slug>.md` (slug lấy đúng cột "File" trong
-   CURRICULUM.md), khuôn tối thiểu ở `wiki/grammar/README.md`.
-8. Cập nhật đủ **6 file state** (R3 + R9.5): lesson → `VOCAB_INDEX.md` (+5 dòng) →
+8. Cập nhật đủ **4 file state** (R3): lesson → `VOCAB_INDEX.md` (+5 dòng) →
    `REVIEW_QUEUE.md` (+5 dòng, next_review = hôm nay +1) → `PROGRESS.md` (streak,
-   tổng từ, **và dòng ngữ pháp x/42**) → `wiki/grammar/CURRICULUM.md` (đánh ✅ dòng
-   vừa dạy, điền cột "Buổi", sửa lại mục **"Đang ở đâu"**).
-
-   ⚠️ Quên cập nhật CURRICULUM.md thì hôm sau dạy lại đúng điểm cũ — đây là con trỏ
-   duy nhất, không có chỗ nào khác ghi lại "đã dạy tới đâu".
+   tổng từ, nhật ký buổi học).
 9. **Dựng lại trang mục lục + lưu lên GitHub** (R6 — chưa push là chưa có):
 
    ```bash
@@ -112,9 +99,7 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
     - `LINK-WEB: <url>` → **đưa nguyên link đó cho user bấm** (đang chạy trên cloud,
       máy user ở chỗ khác nên không mở hộ được).
     - `CHUA-CAU-HINH-PAGES` → báo user điền `remote.pagesBaseUrl` trong config.
-11. Tóm tắt trong chat: **điểm ngữ pháp hôm nay (1-2 dòng)** + 5 từ (mỗi từ 2-3 dòng)
-    + nhắc user làm khối "Tự viết" và dán 3 câu vào chat nếu muốn được chấm.
-    + đưa đường dẫn/link bài.
+11. Tóm tắt trong chat: 5 từ (mỗi từ 2-3 dòng) + đường dẫn/link bài.
     Đừng dán lại toàn bộ bài — trang HTML là nơi để đọc kỹ.
 
 ## Luật render HTML
@@ -145,15 +130,12 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 - Trong câu ví dụ và mẩu đọc, bọc `<b>` quanh chính từ đang học.
 - Nút 🔊: `<button class="say" data-say="...">` — `data-say` là từ, hoặc một cụm
   ngắn tự nhiên hơn khi đọc lên (vd `follow up on the contract`).
-- **Khối ngữ pháp** dùng `<section class="grammar">`, **khối tự viết** dùng
-  `<section class="write">`. CSS/JS của cả hai đã nằm sẵn ở `wiki/assets/` — **không**
-  nhúng `<style>`/`<script>` riêng vào bài.
-- Tiếng Việt trong khối ngữ pháp **không** mang `hide-me` (trừ dòng `.uc-vi`): đó là
-  bài giảng, làm mờ nó thì bật "Chế độ ôn tập" là không đọc được gì.
-- `<textarea>` trong khối tự viết phải có `data-key="w1|w2|w3"` — `lesson.js` dựa vào
-  đó để lưu nháp; và giữ nguyên `id="clear-draft"` + `id="save-state"`.
-- Đáp án bài tập **luôn** nằm trong `<details>` (luật R2). Ba đề **tự viết** thì
-  không có đáp án — chỉ 2 câu mẫu.
+- Khối **Ôn nhanh đầu giờ** là một `<section class="block">` với **hai** danh sách
+  tách nhau (`<div class="warm-part">`): phần A "5 từ buổi trước", phần B "10 từ bốc
+  ngẫu nhiên". Đáp án chung một `<details>`, chia đúng hai phần đó.
+- ⛔ **Không** có `<section class="grammar">`, `<section class="write">`,
+  `.gram-progress`, `.pattern-tag` — harness đã bỏ ngữ pháp.
+- Đáp án bài tập **luôn** nằm trong `<details>` (luật R2).
 - Xoá hết comment hướng dẫn của template khi ghi file thật.
 
 ## Nhắc lại luật R5

@@ -14,7 +14,7 @@ sẵn**, dạy lại là phí một suất trong năm suất mỗi ngày.
    `## ⛔ Đã biết sẵn` ở cuối `wiki/VOCAB_INDEX.md`, **đủ word family**.
 2. Không đưa từ đó vào `REVIEW_QUEUE.md`, không tính vào tổng số từ.
 3. Thay bằng từ khác **cùng nhóm**, viết lại mọi chỗ trong bài (ví dụ, mẩu đọc,
-   tự viết, bài tập, đáp án) cho đúng R8 + R9.
+   bài tập, đáp án) cho đúng R8.
 4. Từ buổi sau: gate R1 grep cả file nên bảng này tự chặn — xem R1.b trong AGENTS.md.
 
 ## Chọn từ IT thế nào cho đỡ trúng từ đã biết

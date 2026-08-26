@@ -10,7 +10,7 @@
 | `assets/lesson.css` · `lesson.js` | Giao diện + phát âm + chế độ ôn tập, **dùng chung mọi bài** | *(sửa tay khi muốn đổi giao diện)* |
 | `quiz/YYYY-Www.md` | Đề kiểm tra tuần + kết quả sau khi chấm | `/kiem-tra` |
 | `quiz/YYYY-Www-key.md` | Đáp án — **tách file** để không lộ trước (luật R2) | `/kiem-tra` |
-| `grammar/` | Điểm ngữ pháp bắt gặp, mỗi điểm một file | `/tra-tu`, `/kiem-tra` |
+| `recap/YYYY-Www.md` · `.html` | Bảng ôn cả tuần, nghĩa Việt hiện sẵn | `/on-tap-tuan` |
 | `memory/` | Rule đã học về cách học của learner | `/kiem-tra` |
 | `_templates/` | Khuôn lesson / quiz / memory-entry | *(chỉ đọc)* |
 

@@ -74,7 +74,7 @@ wiki/
 ├── lessons/2026-W33/2026-08-12.md     bản đọc nhanh
 │                        2026-08-12.html    bản trình bày (mở bằng trình duyệt)
 ├── quiz/2026-W33.md                   đề kiểm tra tuần (+ file -key.md riêng)
-├── grammar/              điểm ngữ pháp bắt gặp
+├── recap/2026-W33.md                  bảng ôn cả tuần (+ .html)
 └── memory/MEMORY.md      rule đã học về cách học của bạn
 ```
 

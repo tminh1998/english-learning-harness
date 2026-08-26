@@ -1,6 +1,6 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-26 (buổi #12 — ngữ pháp #3 present simple; 5 từ hôm nay đều là động từ/cụm động từ để `-s` có chỗ bám)
+**Cập nhật:** 2026-08-26 (buổi #12 + đổi luật: **bỏ hẳn ngữ pháp**, khối ôn nhanh đầu giờ lên **15 từ**)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
@@ -10,7 +10,6 @@
 | Streak hiện tại      | 12 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
 | Streak dài nhất      | 12 buổi                                                                                 |
 | Buổi gần nhất        | 2026-08-26 (Thứ Tư) — buổi #12                                                          |
-| Ngữ pháp             | **3 / 42** · Chặng 1 · Khung câu — vừa dạy #3 Present simple + `-s` ngôi 3 số ít        |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -28,9 +27,9 @@
 | 2026-08-20 | 2026-W34 | #7 | technical debt · backward compatible · loop in · bandwidth · catch up |
 | 2026-08-21 | 2026-W34 | #8 | feature flag · breaking change · stakeholder · align · out of the blue |
 | 2026-08-22 | 2026-W34 | #9 | fallback · brittle · bring up · turnaround · sort out |
-| 2026-08-24 | 2026-W35 | #10 | cutover · backfill · prioritize · trade-off · put off — **ngữ pháp #1 S + V + O** |
-| 2026-08-25 | 2026-W35 | #11 | stateless · verbose · on track · tentative · fed up — **ngữ pháp #2 `be` (am/is/are)** |
-| 2026-08-26 | 2026-W35 | #12 | spin up · truncate · touch base · accommodate · drop by — **ngữ pháp #3 present simple + `-s`** |
+| 2026-08-24 | 2026-W35 | #10 | cutover · backfill · prioritize · trade-off · put off |
+| 2026-08-25 | 2026-W35 | #11 | stateless · verbose · on track · tentative · fed up |
+| 2026-08-26 | 2026-W35 | #12 | spin up · truncate · touch base · accommodate · drop by |
 
 ## Kết quả quiz tuần
 
@@ -38,23 +37,25 @@
 | -------- | --------------------------- | ---- | ------- | ------ |
 | 2026-W33 | _(chưa làm — Chủ nhật 2026-08-16 routine chỉ sinh bảng ôn `recap/2026-W33`; `/kiem-tra` cần user trả lời nên phải gõ tay)_ | —    | —       | —      |
 
-## Lộ trình v2 — gắn ngữ pháp vào buổi học (chốt 2026-08-22)
+## Đổi luật 2026-08-26 — bỏ ngữ pháp, ôn nhanh lên 15 từ
 
-Chín buổi đầu dạy 45 từ mà **không dạy một điểm ngữ pháp nào** → người học nhận ra
-từ nhưng không tự ráp được câu. Từ **thứ Hai 2026-08-24**, mỗi buổi `/hoc` đổi khuôn:
+Người học chốt: harness **không dạy ngữ pháp nữa**. Bỏ hẳn khối "Ngữ pháp hôm nay",
+khối "Tự viết", thư mục `wiki/grammar/`, phần ngữ pháp trong quiz và bảng ôn tuần —
+kể cả trong ba bài đã sinh (24, 25, 26/08). Buổi học quay về đúng một việc: **từ vựng**.
 
-| Khối | Mới? | Ghi chú |
+| Khối | Trước | Từ 2026-08-26 |
 | --- | --- | --- |
-| Ôn nhanh đầu giờ | nâng 2-4 → **8 từ** | lô hạn cũ nhất trước — xoá 40 từ nợ trong ~5 buổi |
-| **Ngữ pháp hôm nay** | ⭐ mới | 1 điểm/buổi, 8 mục, con trỏ ở [grammar/CURRICULUM.md](grammar/CURRICULUM.md) |
-| 5 từ mới | giữ | nhưng ví dụ của **cả 5 từ** phải viết theo mẫu ngữ pháp của buổi (R9) |
-| Mẩu đọc | giữ | cũng theo mẫu đó |
-| **Tự viết** | ⭐ mới | 3 câu tự sản xuất, **không có đáp án** — bước duy nhất luyện vốn chủ động |
-| Bài tập | giữ | thêm 2 câu ngữ pháp |
+| Ôn nhanh đầu giờ | 8 từ, luôn lấy lô hạn cũ nhất | **15 từ** = 5 từ buổi trước + **10 từ bốc ngẫu nhiên** trong cả vốn từ |
+| Ngữ pháp hôm nay | 1 điểm/buổi, 8 mục | ❌ bỏ |
+| 5 từ mới | giữ | giữ (ví dụ vẫn phải mượn từ cũ — R8) |
+| Mẩu đọc | giữ | giữ |
+| Tự viết | 3 câu, không đáp án | ❌ bỏ |
+| Bài tập | 3 câu từ vựng + 2 câu ngữ pháp | 5 câu, toàn bộ về từ vựng |
 
-Chương trình: 42 điểm ≈ 7 tuần, 4 chặng — *khung câu* → *thì & thời gian* →
-*lịch sự & modal* → *câu phức*. Mẫu giao diện đã duyệt:
-[`_templates/lesson-v2-mockup.html`](_templates/lesson-v2-mockup.html).
+Vì sao đổi cách ôn nhanh: quét theo lô hạn cũ nhất làm lô cũ bị hỏi lặp còn lô vừa
+học xong thì cả tuần không được đụng tới. Bốc ngẫu nhiên trên **toàn bộ** vốn từ thì
+mọi từ đều có cơ hội quay lại, và 5 từ của buổi trước luôn được ôn đúng lúc trí nhớ
+sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 
 ## Đang yếu
 

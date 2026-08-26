@@ -13,7 +13,7 @@ Harness này **không phải project code**. Sản phẩm của nó là **kiến
 | Ký hiệu | Nghĩa | Nguồn |
 |---|---|---|
 | `{harness}` | Thư mục chứa `.learning-config.yml` | agent walk-up từ cwd |
-| `{wiki}` `{lessons}` `{quiz}` `{memory}` `{grammar}` | Thư mục con | config → `paths.*` |
+| `{wiki}` `{lessons}` `{quiz}` `{recap}` `{memory}` | Thư mục con | config → `paths.*` |
 | `{vocabIndex}` `{reviewQueue}` `{progress}` | 3 file state trung tâm | config → `paths.*` |
 
 **Chỉ `.learning-config.yml` biết path thật.** Không file nào khác được viết path
@@ -77,8 +77,8 @@ nằm ở bảng dưới. Trúng bảng này = loại y như trùng từ đã d�
 1. Thêm dòng vào bảng **Đã biết sẵn** — đủ word family, để lần sau grep bắt được.
 2. Xoá từ đó khỏi bảng chính (nếu đã lỡ ghi) và khỏi `{reviewQueue}`.
 3. Chọn từ thay thế **cùng nhóm** (IT/Business/Life), qua lại hard gate R1.
-4. Viết lại **mọi** chỗ trong bài có từ cũ: khối từ, ví dụ, mẩu đọc, khối tự viết,
-   bài tập, đáp án, ghi chú buổi học — R8 và R9 vẫn phải đúng sau khi thay.
+4. Viết lại **mọi** chỗ trong bài có từ cũ: khối từ, ví dụ, mẩu đọc, bài tập,
+   đáp án, ghi chú buổi học — R8 vẫn phải đúng sau khi thay.
 5. Cập nhật lại 5 file state + `sh tools/build-index.sh` + `daylen`.
 
 Người học đã biết một từ thì việc dạy lại là **lãng phí một suất trong ngày** —
@@ -262,36 +262,41 @@ Cách tự kiểm trước khi đóng buổi: với **từng câu** ví dụ, ch
 
 ---
 
-### R9 — Ngữ pháp là khung câu của cả buổi
+### R9 — Ôn nhanh đầu giờ: 15 từ, 5 của buổi trước + 10 bốc ngẫu nhiên
 
-Từ **2026-08-24** (`grammar.startDate`) mỗi buổi dạy **đúng một** điểm ngữ pháp, và
-điểm đó không phải phần phụ nằm cạnh từ vựng — nó là **khung câu** để 5 từ mới của
-ngày được đặt vào. Lý do: 9 buổi đầu dạy 45 từ mà không dạy khung, nên người học
-nhận ra từ nhưng không ráp được câu.
+Từ **2026-08-26**, khối "Ôn nhanh đầu giờ" của mỗi buổi `/hoc` là **15 từ**, chia
+cố định làm hai phần (config `review.warmup`):
 
-1. **Điểm nào là do `{grammar}/CURRICULUM.md` quyết** — đọc dòng *"Điểm kế tiếp"*.
-   Tuyệt đối không suy ra từ số buổi, từ ngày tháng, hay từ trí nhớ của agent.
-2. **Khối "Ngữ pháp hôm nay" phải đủ 8 mục** theo `grammar.blockSections`, đúng thứ
-   tự. Hai mục **"Nó là gì"** và **"Dùng khi nào"** là bắt buộc và phải đứng trước
-   công thức — nhảy thẳng vào công thức chính là lối dạy đã làm người học mất gốc.
-   Mục "Nó là gì" phải **neo vào tiếng Việt**: chỉ ra cách nói tiếng Việt gần nhất,
-   hoặc nói thẳng là tiếng Việt không có nên phải hiểu bằng công dụng.
-3. **Ví dụ của cả 5 từ và mẩu đọc đều phải viết theo mẫu ngữ pháp đó.** R8 vẫn giữ
-   nguyên và cộng dồn: một câu vừa theo mẫu ngữ pháp mới, vừa mượn một từ cũ. Trên
-   HTML, gắn nhãn `<div class="ex-label">Ví dụ <span class="pattern-tag">…</span></div>`.
-   Viết nhãn mà câu không theo mẫu là nói dối người học — thà bỏ nhãn.
-4. **Buổi phải có khối "Tự viết"** (`production`): 3 đề, ba dạng câu **khác nhau**
-   (khẳng định / câu hỏi / phủ định), mỗi đề buộc dùng mẫu ngữ pháp + một từ mới.
-   **Không có đáp án** cho 3 đề — chỉ 2 câu **mẫu**, bọc `<details>`. Đây là bước
-   duy nhất bắt người học tự sản xuất câu; bỏ nó thì buổi học quay về đọc-rồi-quên.
-5. **Đóng buổi phải cập nhật con trỏ**: đánh ✅ dòng tương ứng trong `CURRICULUM.md`,
-   sửa lại mục *"Đang ở đâu"*, ghi `{grammar}/<slug>.md`, và cập nhật dòng ngữ pháp
-   trong `{progress}`. Quên bước này thì hôm sau dạy lại đúng điểm cũ.
-6. **Điểm không liên quan thời gian** (mạo từ, giới từ, modal, mệnh đề quan hệ…) thì
-   mục "trục thời gian" đổi thành hai ô so sánh khác — `a/an` vs `the`, `must` vs
-   `have to` — vẫn dùng class `.tl` / `.tl-card`, đừng bỏ trống mục.
-7. **Ngoại lệ**: bài học có ngày **trước** `grammar.startDate` thì không có khối ngữ
-   pháp lẫn khối tự viết, và không gắn nhãn `.pattern-tag`. Đừng đi sửa bài cũ.
+| Phần | Bao nhiêu | Lấy ở đâu |
+|---|---|---|
+| Từ buổi liền trước | **5** | đúng 5 từ của buổi học gần nhất, theo thứ tự trong bài |
+| Bốc ngẫu nhiên | **10** | **toàn bộ** `{vocabIndex}`, trừ 5 từ ở trên |
+
+1. **10 từ kia phải bốc BẰNG LỆNH, không bốc bằng mắt.** Agent tự "chọn ngẫu nhiên"
+   thì luôn trúng mấy từ vừa đọc thấy ở đầu bảng. `shuf` không có sẵn trên macOS
+   nên dùng `awk`:
+
+   ```bash
+   grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
+     | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
+     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -10
+   ```
+
+2. **Phạm vi là mọi từ đã học**, không phải chỉ từ tới hạn trong `{reviewQueue}`.
+   Từ đã lên bậc cao vẫn có thể trúng — đó là chủ ý, để không từ nào rơi hẳn ra
+   khỏi tầm ngắm.
+3. **Hai phần để riêng trên trang**, ghi rõ phần nào là gì: người học cần biết 5 từ
+   đầu là bài hôm qua (phải nhớ được), 10 từ sau là bốc ngẫu (quên là bình thường).
+4. **Hỏi gợi nhớ bằng tiếng Việt**, đáp án bọc `<details>` + `.hide-me` (R2). Đáp án
+   mỗi từ = từ tiếng Anh + một câu ví dụ ngắn, không chép lại cả bài cũ.
+5. **Không đủ 10 từ cũ** (buổi #1, #2) → lấy hết những gì có, không bịa thêm từ.
+6. Đây **không** thay `/on-tap`: khối này hỏi-tự-trả-lời trên trang nên không lên
+   xuống bậc trong `{reviewQueue}`. Muốn đổi bậc thì vẫn phải gõ `/on-tap`.
+
+Lý do đổi (cũ: 8 từ, luôn lấy lô hạn cũ nhất): quét theo lô làm lô cũ bị hỏi lặp
+còn lô vừa học xong thì cả tuần không được đụng tới. Bốc ngẫu nhiên trên toàn bộ vốn
+từ thì mọi từ đều có cơ hội quay lại, và 5 từ của buổi trước luôn được ôn đúng lúc
+trí nhớ sắp phai.
 
 ---
 
@@ -303,20 +308,15 @@ nhận ra từ nhưng không ráp được câu.
 Phase 0  Auto-discovery (ở trên)
 Phase 0.5 ⛔ GATE R5: ls {lessons}/<tuần>/<hôm nay>*.md
          Có file -> KHÔNG sinh bài. Mở lại bài cũ, hỏi user, DỪNG tại đây.
-Phase 1  Ôn nhanh: đọc {reviewQueue}, lấy `review.warmupPerSession` từ (8) tới hạn,
-         LÔ CŨ NHẤT TRƯỚC -> hỏi gợi nhớ, đáp án bọc <details>
-Phase 1.5 ⭐ Ngữ pháp (R9): đọc {grammar}/CURRICULUM.md -> dòng "Điểm kế tiếp".
-         Ngày học < `grammar.startDate` -> bỏ qua Phase 1.5 và Phase 4.5.
+Phase 1  Ôn nhanh đầu giờ — 15 từ (R9): 5 từ của buổi LIỀN TRƯỚC + 10 từ BỐC
+         NGẪU NHIÊN bằng lệnh trong {vocabIndex}. Hỏi gợi nhớ bằng tiếng Việt,
+         đáp án bọc <details>.
 Phase 2  Chọn ứng viên: 2 IT + 2 business + 1 life, bám level
 Phase 3  ⛔ HARD GATE R1: grep {vocabIndex} từng từ. Trùng -> quay lại Phase 2
 Phase 4  Soạn bài: mỗi từ đủ mục `daily.mustInclude` + mẩu đọc + bài tập.
-         ⛔ R9: ví dụ của CẢ 5 TỪ + mẩu đọc viết theo mẫu ngữ pháp Phase 1.5.
-         ⛔ R8 vẫn cộng dồn: mỗi câu vẫn phải mượn 1 từ cũ, 2 câu 2 từ khác nhau.
-Phase 4.5 ⭐ Tự viết (R9.4): 3 đề — khẳng định / câu hỏi / phủ định. Không đáp án,
-         chỉ 2 câu mẫu bọc <details>.
+         ⛔ R8: mỗi câu ví dụ phải mượn 1 từ cũ, 2 câu của cùng một từ mượn 2 từ khác nhau.
 Phase 5  Ghi file: lesson .md -> lesson .html -> VOCAB_INDEX -> REVIEW_QUEUE
-         -> PROGRESS -> {grammar}/<slug>.md -> CURRICULUM.md (✅ + "Đang ở đâu")
-         (R3 + R9.5)
+         -> PROGRESS  (R3)
 Phase 6  sh tools/build-index.sh  -> daylen "hoc: ..."  (R6 — chưa push là chưa có)
 Phase 7  openit <file.html> + tóm tắt 5 từ trong chat (không bắt user tự đi tìm file)
          Máy Mac -> mở trình duyệt. VM cloud -> in link Pages để user bấm.
@@ -327,9 +327,7 @@ Phase 7  openit <file.html> + tóm tắt 5 từ trong chat (không bắt user t�
 ```text
 Phase 0  Auto-discovery + xác định tuần ISO cần kiểm tra
 Phase 1  Gom từ: mọi từ trong {lessons}/<tuần>/ + tối đa 5 từ yếu từ {reviewQueue}
-         + các điểm ngữ pháp đã dạy trong tuần (đọc {grammar}/CURRICULUM.md)
-Phase 2  Ra đề 4 phần A/B/C/D theo config `weekly.format`, THÊM phần E — Ngữ pháp
-         (các điểm của tuần) -> ghi {quiz}/<tuần>.md
+Phase 2  Ra đề 4 phần A/B/C/D theo config `weekly.format` -> ghi {quiz}/<tuần>.md
          Đáp án ghi RIÊNG ra {quiz}/<tuần>-key.md  (R2)
 Phase 3  User làm bài trong chat
 Phase 4  Chấm: đối chiếu key, tính %, chỉ ra lỗi + giải thích tại sao sai
@@ -345,8 +343,6 @@ Phase 7  daylen "kiem-tra: <tuần> — <điểm>"  (R6)
 Phase 0  Auto-discovery + xác định tuần ISO cần ôn
 Phase 1  Đọc MỌI file {lessons}/<tuần>/*.md -> gom từ + IPA + nghĩa + collocation
          + mục Bẫy + câu ví dụ đắt nhất. Không có buổi nào -> báo rồi dừng.
-Phase 1.5 Gom điểm ngữ pháp của tuần: {grammar}/CURRICULUM.md, các dòng ✅ có cột
-         "Buổi" thuộc tuần này. Tuần trước `grammar.startDate` -> BỎ HẲN mục này.
 Phase 2  Ghi {recap}/<tuần>.md   theo {templates}/recap.md
 Phase 3  Ghi {recap}/<tuần>.html theo {templates}/recap.html
 Phase 4  sh tools/build-index.sh -> daylen "recap: <tuần> — <N> từ"  (R6)

@@ -18,7 +18,9 @@
 - hạn 2026-08-25 — cutover · backfill · prioritize · trade-off · put off
 - hạn 2026-08-26 — stateless · verbose · on track · tentative · fed up
 
-_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Buổi #10 (2026-08-24) đã nâng khối "Ôn nhanh đầu giờ" lên **8 từ** và hỏi đúng lô cũ nhất (deprecate · workaround · clarify · follow up · come across · edge case · bottleneck · escalate), nhưng vẫn là hỏi-tự-trả-lời trên trang nên chưa chấm được → cả 8 từ giữ nguyên bậc 1. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
+_Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
+
+**⚙️ Đổi luật 2026-08-26 — khối "Ôn nhanh đầu giờ" của `/hoc`:** từ **8 từ / lô hạn cũ nhất** → **15 từ**, chia cố định: **5 từ của buổi liền trước** + **10 từ bốc ngẫu nhiên** trong toàn bộ `VOCAB_INDEX.md` (bốc bằng lệnh `awk+rand`, không bốc bằng mắt). Quét theo lô làm lô cũ bị hỏi lặp còn lô vừa học xong cả tuần không được đụng tới; bốc ngẫu nhiên thì mọi từ đều có cơ hội quay lại. Luật đầy đủ: R9 trong `AGENTS.md`. Harness cũng **bỏ hẳn phần ngữ pháp** kể từ ngày này.
 
 **Tới hạn hôm nay (2026-08-26): 5 từ** — stateless · verbose · on track · tentative · fed up
 
