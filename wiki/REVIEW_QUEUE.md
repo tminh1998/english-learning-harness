@@ -26,7 +26,7 @@ _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới ch
 
 **Tới hạn ngày mai (2026-08-27): 5 từ** — spin up · truncate · touch base · accommodate · drop by
 
-_Ghi chú 2026-08-26: buổi #12 hỏi 8 từ ở khối "Ôn nhanh đầu giờ", đi tiếp lô cũ nhất còn nợ (regression · heads-up · ballpark · keep an eye on · boilerplate · stale · walk through · sign off). Sau buổi này khối ôn nhanh đã quét hết lô 18/08 và trọn lô 19/08 — còn nợ từ lô 20/08 trở đi. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
+_Ghi chú 2026-08-26: bài buổi #12 đã được **soạn lại theo luật R9 mới** — khối "Ôn nhanh đầu giờ" giờ là **15 từ**: phần A là 5 từ của buổi 25/08 (stateless · verbose · on track · tentative · fed up), phần B là 10 từ bốc ngẫu nhiên bằng lệnh trong cả 60 từ (bring up · caveat · brittle · prioritize · regression · sign off · stakeholder · clarify · trade-off · keep an eye on). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc** — muốn đổi bậc phải gõ `/on-tap`._
 
 _Ghi chú 2026-08-25: buổi #11 hỏi 8 từ ở khối "Ôn nhanh đầu giờ", **đi tiếp** lô cũ nhất còn nợ thay vì hỏi lại đúng 8 từ của buổi #10 (deliverable · run out of · rollback · flaky · reach out · scope creep · get the hang of · throttle). Lý do: routine tự động không chấm được nên không từ nào lên bậc — cứ hỏi lại y hệt một lô thì 42 từ còn lại không bao giờ được đụng tới. Sau buổi này khối ôn nhanh đã quét hết lô 14/08, 15/08, 16/08 và chạm lô 18/08._
 

@@ -21,8 +21,13 @@
 
 <details><summary>Đáp án</summary>
 
-**A.** 1. **{{từ}}** — *"{{câu ví dụ ngắn}}"*
-**B.** 1. **{{từ}}** — *"{{câu ví dụ ngắn}}"*
+**A — buổi trước ({{YYYY-MM-DD}})**
+
+1. **{{từ}}** — *"{{câu ví dụ ngắn}}"*
+
+**B — bốc ngẫu nhiên**
+
+1. **{{từ}}** — *"{{câu ví dụ ngắn}}"*
 
 </details>
 

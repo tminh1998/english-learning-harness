@@ -61,7 +61,7 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
 
-⚠️ **Cập nhật 2026-08-26:** nợ ôn tập giờ là **55/60 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #12 đã hỏi tiếp lô cũ nhất còn nợ (`regression` → `sign off`), tức khối "Ôn nhanh đầu giờ" đã quét xong lô 18/08 và 19/08 sau ba buổi. Nhưng vì đây là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc** — mỗi ngày lại thêm 5 từ vào nợ. Cách duy nhất giảm thật là gõ tay `/on-tap` (chấm được, lên bậc được), ưu tiên lô 14/08 → 16/08.
+⚠️ **Cập nhật 2026-08-26:** nợ ôn tập là **55/60 từ quá hạn**, vẫn toàn bộ ở bậc 1. Bài buổi #12 đã được soạn lại theo luật R9 mới: khối "Ôn nhanh đầu giờ" giờ hỏi **15 từ** (5 từ buổi 25/08 + 10 từ bốc ngẫu nhiên trong cả vốn từ) thay vì 8 từ quét theo lô. Cách bốc ngẫu nhiên phủ đều hơn hẳn, nhưng vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc** — mỗi ngày lại thêm 5 từ vào nợ. Cách duy nhất giảm thật là gõ tay `/on-tap` (chấm được, lên bậc được), ưu tiên lô 14/08 → 16/08.
 
 ⚠️ **Cập nhật 2026-08-25:** nợ ôn tập vẫn tăng — **50/55 từ quá hạn**, tất cả ở bậc 1. Buổi #11 đã đi tiếp lô cũ nhất còn nợ (thay vì hỏi lại đúng 8 từ của buổi #10), nên khối "Ôn nhanh đầu giờ" giờ đã quét hết lô 14/08 → 16/08 và chạm lô 18/08. Nhưng đó vẫn là hỏi-tự-trả-lời trên trang: **không từ nào lên bậc được**. Chỉ có gõ tay `/on-tap` hoặc `/kiem-tra` mới đổi được bậc.
 
