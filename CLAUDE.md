@@ -165,11 +165,11 @@ trong chat, và `LINK-WEB` là bình thường chứ không phải lỗi.
 `/on-tap` và `/kiem-tra` **không** tự động hoá được — chúng cần user trả lời mới
 chấm điểm và cập nhật bậc trong REVIEW_QUEUE được.
 
-⚠️ **2026-08-26 — nhớ sửa prompt của routine `/hoc` trên web:** nếu prompt cũ có
-nhắc tới ngữ pháp / CURRICULUM / khối "Tự viết", hoặc nhắc "ôn nhanh 8 từ, lô cũ
-nhất trước", thì phải bỏ đi — repo đã bỏ hẳn ngữ pháp và đổi khối ôn nhanh thành
-15 từ (5 buổi trước + 10 bốc ngẫu nhiên). Prompt routine không nằm trong repo nên
-sửa ở đây **không** tự đổi nó.
+✅ **2026-08-26 — prompt của cả hai routine ĐÃ được viết lại** cho khớp luật mới
+(bỏ ngữ pháp + ôn nhanh 15 từ). ID để tra sau: `/hoc` = `trig_01QfWZkEggCXjyrR4nKvaM3U`,
+`/on-tap-tuan` = `trig_01DeXAVcCXsfXb3B62b9wKEq`. Lần sau đổi luật trong repo thì
+**vẫn phải sửa tay ở cả hai chỗ** — prompt routine không nằm trong repo, sửa file
+ở đây không tự đổi nó. Sửa bằng `/schedule` hoặc tại claude.ai/code/routines.
 
 ### Không branch, không PR
 
