@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 55 từ đã học** · IT 22 · Business 22 · Life 11 · ad-hoc 0
+**Tổng: 60 từ đã học** · IT 24 · Business 24 · Life 12 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-25
+**Cập nhật:** 2026-08-26
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -74,6 +74,11 @@
 | 53 | on track | on-track, off track, back on track, keep sth on track, track record | cụm tính từ (đi sau `be`) | Business | đang đúng tiến độ, vẫn kịp | 2026-08-25 | lesson |
 | 54 | tentative | tentatively, tentativeness | adjective | Business | tạm thế đã, chưa chốt | 2026-08-25 | lesson |
 | 55 | fed up | fed-up, be fed up with, get fed up, fed up of | cụm tính từ (đi sau `be`) | Life | ngán tận cổ, chịu hết nổi | 2026-08-25 | lesson |
+| 56 | spin up | spins up, spun up, spinning up, spin-up time, spin down | phrasal verb | IT | dựng mới một môi trường rồi cho chạy | 2026-08-26 | lesson |
+| 57 | truncate | truncates, truncated, truncating, truncation, truncated output | verb | IT | cắt cụt cho ngắn, đuôi mất luôn | 2026-08-26 | lesson |
+| 58 | touch base | touches base, touched base, touching base, a touch-base, touch base with | idiom (cụm động từ) | Business | nhắn một câu cập nhật tình hình | 2026-08-26 | lesson |
+| 59 | accommodate | accommodates, accommodated, accommodating, accommodation | verb | Business | thu xếp chiều theo yêu cầu | 2026-08-26 | lesson |
+| 60 | drop by | drops by, dropped by, dropping by, drop in, drop in on sb, stop by | phrasal verb | Life | ghé qua một lát, không hẹn trước | 2026-08-26 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

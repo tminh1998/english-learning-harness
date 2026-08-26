@@ -10,10 +10,10 @@
 
 | | |
 |---|---|
-| **Điểm kế tiếp** | **#3 — Present simple + `-s` ngôi 3 số ít** |
-| Đã dạy | 2 / 42 |
+| **Điểm kế tiếp** | **#4 — Phủ định & câu hỏi với `do / does`** |
+| Đã dạy | 3 / 42 |
 | Chặng hiện tại | Chặng 1 · Khung câu |
-| Vừa dạy xong | #2 Động từ `be` (am / is / are) — buổi #11 (2026-08-25) |
+| Vừa dạy xong | #3 Present simple + `-s` ngôi 3 số ít — buổi #12 (2026-08-26) |
 
 <!-- LUẬT CẬP NHẬT: dạy xong điểm nào thì đổi Trạng thái thành ✅ + điền cột "Buổi",
      rồi sửa lại ba dòng "Đang ở đâu" ngay trên. Đây là chỗ DUY NHẤT agent đọc để
@@ -29,7 +29,7 @@ Phần "mất gốc" thật sự. Xong chặng này là tự ráp được câu 
 |---|---|---|---|---|
 | 1 | Trật tự câu `S + V + O` | `word-order-svo.md` | ✅ | #10 · 2026-08-24 |
 | 2 | Động từ `be` — am / is / are | `be-am-is-are.md` | ✅ | #11 · 2026-08-25 |
-| 3 | Present simple + `-s` ngôi 3 số ít | `present-simple.md` | ⬜ | |
+| 3 | Present simple + `-s` ngôi 3 số ít | `present-simple.md` | ✅ | #12 · 2026-08-26 |
 | 4 | Phủ định & câu hỏi với `do / does` | `do-does-negative-question.md` | ⬜ | |
 | 5 | Câu hỏi Wh- (what / why / how / when / where) | `wh-questions.md` | ⬜ | |
 | 6 | Đếm được / không đếm được + `a / an / the` | `articles-a-an-the.md` | ⬜ | |

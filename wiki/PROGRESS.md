@@ -1,16 +1,16 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-25 (buổi #11 — ngữ pháp #2 `be`; 5 từ hôm nay đều là tính từ/cụm tính từ đứng sau `be`)
+**Cập nhật:** 2026-08-26 (buổi #12 — ngữ pháp #3 present simple; 5 từ hôm nay đều là động từ/cụm động từ để `-s` có chỗ bám)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 55 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 22 · Business 22 · Life 11                                                           |
-| Số buổi học          | 11                                                                                      |
-| Streak hiện tại      | 11 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
-| Streak dài nhất      | 11 buổi                                                                                 |
-| Buổi gần nhất        | 2026-08-25 (Thứ Ba) — buổi #11                                                          |
-| Ngữ pháp             | **2 / 42** · Chặng 1 · Khung câu — vừa dạy #2 Động từ `be` (am / is / are)              |
+| Tổng số từ đã học    | 60 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 24 · Business 24 · Life 12                                                           |
+| Số buổi học          | 12                                                                                      |
+| Streak hiện tại      | 12 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
+| Streak dài nhất      | 12 buổi                                                                                 |
+| Buổi gần nhất        | 2026-08-26 (Thứ Tư) — buổi #12                                                          |
+| Ngữ pháp             | **3 / 42** · Chặng 1 · Khung câu — vừa dạy #3 Present simple + `-s` ngôi 3 số ít        |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -30,6 +30,7 @@
 | 2026-08-22 | 2026-W34 | #9 | fallback · brittle · bring up · turnaround · sort out |
 | 2026-08-24 | 2026-W35 | #10 | cutover · backfill · prioritize · trade-off · put off — **ngữ pháp #1 S + V + O** |
 | 2026-08-25 | 2026-W35 | #11 | stateless · verbose · on track · tentative · fed up — **ngữ pháp #2 `be` (am/is/are)** |
+| 2026-08-26 | 2026-W35 | #12 | spin up · truncate · touch base · accommodate · drop by — **ngữ pháp #3 present simple + `-s`** |
 
 ## Kết quả quiz tuần
 
@@ -58,6 +59,8 @@ Chương trình: 42 điểm ≈ 7 tuần, 4 chặng — *khung câu* → *thì &
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-08-26:** nợ ôn tập giờ là **55/60 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #12 đã hỏi tiếp lô cũ nhất còn nợ (`regression` → `sign off`), tức khối "Ôn nhanh đầu giờ" đã quét xong lô 18/08 và 19/08 sau ba buổi. Nhưng vì đây là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc** — mỗi ngày lại thêm 5 từ vào nợ. Cách duy nhất giảm thật là gõ tay `/on-tap` (chấm được, lên bậc được), ưu tiên lô 14/08 → 16/08.
 
 ⚠️ **Cập nhật 2026-08-25:** nợ ôn tập vẫn tăng — **50/55 từ quá hạn**, tất cả ở bậc 1. Buổi #11 đã đi tiếp lô cũ nhất còn nợ (thay vì hỏi lại đúng 8 từ của buổi #10), nên khối "Ôn nhanh đầu giờ" giờ đã quét hết lô 14/08 → 16/08 và chạm lô 18/08. Nhưng đó vẫn là hỏi-tự-trả-lời trên trang: **không từ nào lên bậc được**. Chỉ có gõ tay `/on-tap` hoặc `/kiem-tra` mới đổi được bậc.
 

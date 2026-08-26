@@ -15,5 +15,6 @@ người Việt** → **lesson/quiz nào đã gặp**.
 | --- | --- | --- | --- |
 | 1 | Trật tự câu `S + V + O` | [`word-order-svo.md`](word-order-svo.md) | #10 · 2026-08-24 |
 | 2 | Động từ `be` — am / is / are | [`be-am-is-are.md`](be-am-is-are.md) | #11 · 2026-08-25 |
+| 3 | Present simple + `-s` ngôi 3 số ít | [`present-simple.md`](present-simple.md) | #12 · 2026-08-26 |
 
 Con trỏ "đang dạy tới đâu" nằm ở [`CURRICULUM.md`](CURRICULUM.md), không phải ở đây.
