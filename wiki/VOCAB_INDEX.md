@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 60 từ đã học** · IT 24 · Business 24 · Life 12 · ad-hoc 0
+**Tổng: 65 từ đã học** · IT 26 · Business 26 · Life 13 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-26
+**Cập nhật:** 2026-08-27
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -79,6 +79,11 @@
 | 58 | touch base | touches base, touched base, touching base, a touch-base, touch base with | idiom (cụm động từ) | Business | nhắn một câu cập nhật tình hình | 2026-08-26 | lesson |
 | 59 | accommodate | accommodates, accommodated, accommodating, accommodation | verb | Business | thu xếp chiều theo yêu cầu | 2026-08-26 | lesson |
 | 60 | drop by | drops by, dropped by, dropping by, drop in, drop in on sb, stop by | phrasal verb | Life | ghé qua một lát, không hẹn trước | 2026-08-26 | lesson |
+| 61 | deadlock | deadlocks, deadlocked, deadlocking, dead lock, stalemate | noun (đếm được) | IT | kẹt cứng, bên nào cũng chờ bên kia | 2026-08-27 | lesson |
+| 62 | throughput | through-put, high-throughput, low-throughput, throughput rate | noun (không đếm được) | IT | chạy được bao nhiêu việc mỗi giây | 2026-08-27 | lesson |
+| 63 | milestone | milestones, milestone payment, a milestone birthday, mile | noun (đếm được) | Business | mốc lớn trong dự án | 2026-08-27 | lesson |
+| 64 | buy-in | buy in, buy into, bought into, buying in, stakeholder buy-in | noun (không đếm được) | Business | gật đầu rồi còn chịu làm cùng | 2026-08-27 | lesson |
+| 65 | chip in | chips in, chipped in, chipping in, chip in for, chip in with | phrasal verb | Life | góp một tay, góp một ít | 2026-08-27 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
