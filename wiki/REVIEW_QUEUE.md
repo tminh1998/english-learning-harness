@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-08-27: 60 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-08-28: 65 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -18,16 +18,19 @@
 - hạn 2026-08-25 — cutover · backfill · prioritize · trade-off · put off
 - hạn 2026-08-26 — stateless · verbose · on track · tentative · fed up
 - hạn 2026-08-27 — spin up · truncate · touch base · accommodate · drop by
+- hạn 2026-08-28 — deadlock · throughput · milestone · buy-in · chip in
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
 **⚙️ Đổi luật 2026-08-26 — khối "Ôn nhanh đầu giờ" của `/hoc`:** từ **8 từ / lô hạn cũ nhất** → **15 từ**, chia cố định: **5 từ của buổi liền trước** + **10 từ bốc ngẫu nhiên** trong toàn bộ `VOCAB_INDEX.md` (bốc bằng lệnh `awk+rand`, không bốc bằng mắt). Quét theo lô làm lô cũ bị hỏi lặp còn lô vừa học xong cả tuần không được đụng tới; bốc ngẫu nhiên thì mọi từ đều có cơ hội quay lại. Luật đầy đủ: R9 trong `AGENTS.md`. Harness cũng **bỏ hẳn phần ngữ pháp** kể từ ngày này.
 
-**Tới hạn hôm nay (2026-08-27): 5 từ** — spin up · truncate · touch base · accommodate · drop by
+**Tới hạn hôm nay (2026-08-28): 5 từ** — deadlock · throughput · milestone · buy-in · chip in
 
-**Tới hạn ngày mai (2026-08-28): 5 từ** — deadlock · throughput · milestone · buy-in · chip in
+**Tới hạn ngày mai (2026-08-29): 5 từ** — backpressure · cold start · pain point · takeaway · hassle
 
-_Ghi chú 2026-08-27 (buổi #13): khối "Ôn nhanh đầu giờ" theo đúng R9 — phần A là 5 từ của buổi 26/08 (spin up · truncate · touch base · accommodate · drop by), phần B là 10 từ bốc ngẫu nhiên bằng lệnh `awk+rand` trong cả 60 từ cũ (clarify · technical debt · scope creep · sign off · bandwidth · escalate · throttle · put off · turnaround · stale). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc** — muốn đổi bậc phải gõ `/on-tap`. Nợ ôn tập nay là **60/65 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-08-28 (buổi #14): khối "Ôn nhanh đầu giờ" theo đúng R9 — phần A là 5 từ của buổi 27/08 (deadlock · throughput · milestone · buy-in · chip in), phần B là 10 từ bốc ngẫu nhiên bằng lệnh `awk+rand` trong cả 60 từ cũ (verbose · come across · flaky · backfill · technical debt · prioritize · walk through · push back · heads-up · clarify) — chạm cả lô cũ nhất 13/08 lẫn lô 24/08. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc** — muốn đổi bậc phải gõ `/on-tap`. Nợ ôn tập nay là **65/70 từ**, toàn bộ ở bậc 1._
+
+_Ghi chú 2026-08-27 (buổi #13): phần A là 5 từ của buổi 26/08 (spin up · truncate · touch base · accommodate · drop by), phần B bốc trúng clarify · technical debt · scope creep · sign off · bandwidth · escalate · throttle · put off · turnaround · stale. Nợ ôn tập khi đó: 60/65 từ._
 
 _Ghi chú 2026-08-25: buổi #11 hỏi 8 từ ở khối "Ôn nhanh đầu giờ", **đi tiếp** lô cũ nhất còn nợ thay vì hỏi lại đúng 8 từ của buổi #10 (deliverable · run out of · rollback · flaky · reach out · scope creep · get the hang of · throttle). Lý do: routine tự động không chấm được nên không từ nào lên bậc — cứ hỏi lại y hệt một lô thì 42 từ còn lại không bao giờ được đụng tới. Sau buổi này khối ôn nhanh đã quét hết lô 14/08, 15/08, 16/08 và chạm lô 18/08._
 
@@ -100,6 +103,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | milestone | 1 | 2026-08-28 | 0 | 0 | 2026-08-27 |
 | buy-in | 1 | 2026-08-28 | 0 | 0 | 2026-08-27 |
 | chip in | 1 | 2026-08-28 | 0 | 0 | 2026-08-27 |
+| backpressure | 1 | 2026-08-29 | 0 | 0 | 2026-08-28 |
+| cold start | 1 | 2026-08-29 | 0 | 0 | 2026-08-28 |
+| pain point | 1 | 2026-08-29 | 0 | 0 | 2026-08-28 |
+| takeaway | 1 | 2026-08-29 | 0 | 0 | 2026-08-28 |
+| hassle | 1 | 2026-08-29 | 0 | 0 | 2026-08-28 |
 
 ## Đã thuộc (bậc 5, đúng)
 

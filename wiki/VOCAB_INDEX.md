@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 65 từ đã học** · IT 26 · Business 26 · Life 13 · ad-hoc 0
+**Tổng: 70 từ đã học** · IT 28 · Business 28 · Life 14 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-27
+**Cập nhật:** 2026-08-28
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -84,6 +84,11 @@
 | 63 | milestone | milestones, milestone payment, a milestone birthday, mile | noun (đếm được) | Business | mốc lớn trong dự án | 2026-08-27 | lesson |
 | 64 | buy-in | buy in, buy into, bought into, buying in, stakeholder buy-in | noun (không đếm được) | Business | gật đầu rồi còn chịu làm cùng | 2026-08-27 | lesson |
 | 65 | chip in | chips in, chipped in, chipping in, chip in for, chip in with | phrasal verb | Life | góp một tay, góp một ít | 2026-08-27 | lesson |
+| 66 | backpressure | back pressure, back-pressure, backpressured, apply backpressure | noun (không đếm được) | IT | ép khâu trước gửi chậm lại | 2026-08-28 | lesson |
+| 67 | cold start | cold starts, cold-start, cold-started, warm start, keep warm | noun (đếm được) | IT | lần chạy đầu, chậm vì mới dậy | 2026-08-28 | lesson |
+| 68 | pain point | pain points, painful, a pain, pain-point analysis | noun (đếm được) | Business | chỗ khách thấy khổ nhất | 2026-08-28 | lesson |
+| 69 | takeaway | takeaways, take away, took away, taken away, takeout | noun (đếm được) | Business | điều đọng lại sau buổi họp | 2026-08-28 | lesson |
+| 70 | hassle | hassles, hassled, hassling, hassle-free, no-hassle | noun (đếm được & không đếm được), cũng là verb | Life | lích kích, mất công | 2026-08-28 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
