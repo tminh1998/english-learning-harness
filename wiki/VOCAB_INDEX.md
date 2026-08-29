@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 70 từ đã học** · IT 28 · Business 28 · Life 14 · ad-hoc 0
+**Tổng: 75 từ đã học** · IT 30 · Business 30 · Life 15 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-28
+**Cập nhật:** 2026-08-29
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -89,6 +89,11 @@
 | 68 | pain point | pain points, painful, a pain, pain-point analysis | noun (đếm được) | Business | chỗ khách thấy khổ nhất | 2026-08-28 | lesson |
 | 69 | takeaway | takeaways, take away, took away, taken away, takeout | noun (đếm được) | Business | điều đọng lại sau buổi họp | 2026-08-28 | lesson |
 | 70 | hassle | hassles, hassled, hassling, hassle-free, no-hassle | noun (đếm được & không đếm được), cũng là verb | Life | lích kích, mất công | 2026-08-28 | lesson |
+| 71 | granular | granularity, granularly, fine-grained, coarse-grained, at a granular level | adjective | IT | chia nhỏ tới từng chi tiết | 2026-08-29 | lesson |
+| 72 | sanity check | sanity checks, sanity-check, sanity-checked, sane, insanity | noun (đếm được), cũng là verb | IT | soi nhanh xem có sai lè không | 2026-08-29 | lesson |
+| 73 | circle back | circles back, circled back, circling back, circle back to/with/on | phrasal verb | Business | quay lại chuyện này sau | 2026-08-29 | lesson |
+| 74 | feasible | feasibility, feasibly, unfeasible, infeasible, feasibility study | adjective | Business | làm được trong tầm tay | 2026-08-29 | lesson |
+| 75 | drag on | drags on, dragged on, dragging on, drag sth out, a drag | phrasal verb | Life | kéo dài lê thê | 2026-08-29 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
