@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 75 từ đã học** · IT 30 · Business 30 · Life 15 · ad-hoc 0
+**Tổng: 80 từ đã học** · IT 32 · Business 32 · Life 16 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-29
+**Cập nhật:** 2026-08-31
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -94,6 +94,11 @@
 | 73 | circle back | circles back, circled back, circling back, circle back to/with/on | phrasal verb | Business | quay lại chuyện này sau | 2026-08-29 | lesson |
 | 74 | feasible | feasibility, feasibly, unfeasible, infeasible, feasibility study | adjective | Business | làm được trong tầm tay | 2026-08-29 | lesson |
 | 75 | drag on | drags on, dragged on, dragging on, drag sth out, a drag | phrasal verb | Life | kéo dài lê thê | 2026-08-29 | lesson |
+| 76 | immutable | immutability, immutably, mutable, mutate, mutation | adjective | IT | tạo xong là không sửa được nữa | 2026-08-31 | lesson |
+| 77 | overhead | overhead cost, low-overhead, zero-overhead, overheads | noun (không đếm được) | IT | phần hao thêm ngoài việc chính | 2026-08-31 | lesson |
+| 78 | wrap up | wraps up, wrapped up, wrapping up, a wrap-up, that's a wrap | phrasal verb | Business | chốt lại cho gọn rồi dừng | 2026-08-31 | lesson |
+| 79 | leeway | wiggle room (gần nghĩa), no leeway, give sb leeway | noun (không đếm được) | Business | khoảng du di, chỗ còn co giãn | 2026-08-31 | lesson |
+| 80 | sleep in | sleeps in, slept in, sleeping in, a lie-in, oversleep | phrasal verb | Life | ngủ nướng | 2026-08-31 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

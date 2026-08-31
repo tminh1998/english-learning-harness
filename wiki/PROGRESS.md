@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-29 (buổi #15)
+**Cập nhật:** 2026-08-31 (buổi #16)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 75 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 30 · Business 30 · Life 15                                                           |
-| Số buổi học          | 15                                                                                      |
-| Streak hiện tại      | 15 buổi (Chủ nhật 2026-08-16 và 2026-08-23 là ngày nghỉ theo lịch — không tính đứt)     |
-| Streak dài nhất      | 15 buổi                                                                                 |
-| Buổi gần nhất        | 2026-08-29 (Thứ Bảy) — buổi #15                                                         |
+| Tổng số từ đã học    | 80 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 32 · Business 32 · Life 16                                                           |
+| Số buổi học          | 16                                                                                      |
+| Streak hiện tại      | 16 buổi (Chủ nhật 2026-08-16, 2026-08-23 và 2026-08-30 là ngày nghỉ theo lịch — không tính đứt) |
+| Streak dài nhất      | 16 buổi                                                                                 |
+| Buổi gần nhất        | 2026-08-31 (Thứ Hai) — buổi #16                                                         |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -33,6 +33,7 @@
 | 2026-08-27 | 2026-W35 | #13 | deadlock · throughput · milestone · buy-in · chip in |
 | 2026-08-28 | 2026-W35 | #14 | backpressure · cold start · pain point · takeaway · hassle |
 | 2026-08-29 | 2026-W35 | #15 | granular · sanity check · circle back · feasible · drag on |
+| 2026-08-31 | 2026-W36 | #16 | immutable · overhead · wrap up · leeway · sleep in |
 
 ## Kết quả quiz tuần
 
@@ -63,6 +64,10 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-08-31:** nợ ôn tập lên **75/80 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #16 mở tuần 2026-W36 và chạy đúng luật R9: phần A hỏi lại 5 từ của buổi 29/08, phần B bốc ngẫu nhiên bằng lệnh trúng sign off · verbose · brittle · backfill · turnaround · stakeholder · loop in · technical debt · tentative · trade-off — chạm cả lô 18/08 lẫn lô 25/08. Nhưng khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W35 đã khép lại với 30 từ mà **vẫn chưa có điểm quiz nào** — ba tuần liên tiếp như vậy. Muốn nợ giảm thật thì phải gõ tay `/on-tap` (lô cũ nhất 14/08 → 16/08), muốn có điểm thì gõ `/kiem-tra` cho tuần W35.
+
+_(Dọn dẹp kèm buổi #16: bốn file bài học cũ — 22/08 và 28/08, cả `.md` lẫn `.html` — bị sót thẻ rác `</content>` / `</invoke>` ở cuối file do lỗi ghi file của session trước. Đã xoá, nội dung bài không đổi.)_
 
 ⚠️ **Cập nhật 2026-08-29:** nợ ôn tập lên **70/75 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #15 chạy đúng luật R9: phần A hỏi lại 5 từ của buổi 28/08, phần B bốc ngẫu nhiên bằng lệnh trúng rollback · buy-in · sign off · flaky · truncate · get the hang of · boilerplate · follow up · feature flag · turnaround — chạm cả lô 15/08 lẫn lô 27/08. Nhưng khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hôm nay là Thứ Bảy và tuần 2026-W35 đã đủ **30 từ** (buổi 24 → 29/08) — mai Chủ nhật routine sẽ tự sinh bảng ôn `/on-tap-tuan`, nhưng muốn có **điểm quiz đầu tiên** thì vẫn phải gõ tay `/kiem-tra`, và muốn nợ ôn tập giảm thật thì phải gõ `/on-tap` (ưu tiên lô cũ nhất 14/08 → 16/08).
 

@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-08-29: 70 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-08-31: 75 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -20,14 +20,15 @@
 - hạn 2026-08-27 — spin up · truncate · touch base · accommodate · drop by
 - hạn 2026-08-28 — deadlock · throughput · milestone · buy-in · chip in
 - hạn 2026-08-29 — backpressure · cold start · pain point · takeaway · hassle
+- hạn 2026-08-30 — granular · sanity check · circle back · feasible · drag on
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
 **⚙️ Đổi luật 2026-08-26 — khối "Ôn nhanh đầu giờ" của `/hoc`:** từ **8 từ / lô hạn cũ nhất** → **15 từ**, chia cố định: **5 từ của buổi liền trước** + **10 từ bốc ngẫu nhiên** trong toàn bộ `VOCAB_INDEX.md` (bốc bằng lệnh `awk+rand`, không bốc bằng mắt). Quét theo lô làm lô cũ bị hỏi lặp còn lô vừa học xong cả tuần không được đụng tới; bốc ngẫu nhiên thì mọi từ đều có cơ hội quay lại. Luật đầy đủ: R9 trong `AGENTS.md`. Harness cũng **bỏ hẳn phần ngữ pháp** kể từ ngày này.
 
-**Tới hạn hôm nay (2026-08-29): 5 từ** — backpressure · cold start · pain point · takeaway · hassle
+**Tới hạn hôm nay (2026-08-31): 75 từ** — toàn bộ vốn từ cũ, lô cũ nhất là 2026-08-14 (deprecate · workaround · clarify · follow up · come across)
 
-**Tới hạn ngày mai (2026-08-30): 5 từ** — granular · sanity check · circle back · feasible · drag on
+**Tới hạn ngày mai (2026-09-01): 5 từ** — immutable · overhead · wrap up · leeway · sleep in
 
 _Ghi chú 2026-08-28 (buổi #14): khối "Ôn nhanh đầu giờ" theo đúng R9 — phần A là 5 từ của buổi 27/08 (deadlock · throughput · milestone · buy-in · chip in), phần B là 10 từ bốc ngẫu nhiên bằng lệnh `awk+rand` trong cả 60 từ cũ (verbose · come across · flaky · backfill · technical debt · prioritize · walk through · push back · heads-up · clarify) — chạm cả lô cũ nhất 13/08 lẫn lô 24/08. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc** — muốn đổi bậc phải gõ `/on-tap`. Nợ ôn tập nay là **65/70 từ**, toàn bộ ở bậc 1._
 
@@ -114,6 +115,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | circle back | 1 | 2026-08-30 | 0 | 0 | 2026-08-29 |
 | feasible | 1 | 2026-08-30 | 0 | 0 | 2026-08-29 |
 | drag on | 1 | 2026-08-30 | 0 | 0 | 2026-08-29 |
+| immutable | 1 | 2026-09-01 | 0 | 0 | 2026-08-31 |
+| overhead | 1 | 2026-09-01 | 0 | 0 | 2026-08-31 |
+| wrap up | 1 | 2026-09-01 | 0 | 0 | 2026-08-31 |
+| leeway | 1 | 2026-09-01 | 0 | 0 | 2026-08-31 |
+| sleep in | 1 | 2026-09-01 | 0 | 0 | 2026-08-31 |
 
 ## Đã thuộc (bậc 5, đúng)
 
