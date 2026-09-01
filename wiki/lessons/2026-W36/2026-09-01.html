@@ -87,74 +87,74 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>debounce
-        <button class="say" data-say="debounce the search input" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>failover
+        <button class="say" data-say="automatic failover to the standby" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/dɪˈbaʊns/ · <em>verb (cũng dùng như noun: a 300 ms debounce)</em></div>
+      <div class="ipa">/ˈfeɪləʊvə(r)/ · <em>noun (dạng động từ tách đôi: fail over)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">chờ gõ xong hẵng chạy<span class="alt">gom một tràng sự kiện thành một lần</span></p>
+  <p class="vi-quick hide-me">tự chuyển sang hệ dự phòng<span class="alt">máy chính chết thì máy phụ tiếp quản</span></p>
 
-  <p class="def"><span class="tag">EN</span>to wait until a fast, repeated event has stopped for a moment, then run the code just once.
-    <span class="def-vi hide-me">→ chờ cho tới khi chuỗi sự kiện dồn dập kia im được một nhịp, rồi mới cho code chạy đúng một lần.</span>
+  <p class="def"><span class="tag">EN</span>the automatic switch to a standby system when the main one stops working.
+    <span class="def-vi hide-me">→ việc tự động chuyển sang một hệ dự phòng đang chờ sẵn khi hệ chính ngừng hoạt động.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Kinh điển ở FE: ô search gõ phím nào bắn request phím đó → <code>debounce</code> 300 ms thì chỉ bắn một request sau khi người dùng ngừng gõ. Khác <code>throttle</code>: <code>throttle</code> là <b>cứ X mili-giây cho chạy một lần đều đặn</b>, còn <code>debounce</code> là <b>chưa im thì chưa chạy</b>.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Nói về hạ tầng: một con database, một node, có khi cả một vùng máy chủ. Khác <code>fallback</code> (đã học 22/08): <code>fallback</code> là <b>phương án B nói chung, thường nằm ở mức logic trong code</b>; <code>failover</code> hẹp hơn — <b>đổi hẳn sang một bản sao đang chờ sẵn</b>, thường tự động và tính bằng giây.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">We <b>debounce</b> the search box by 300 ms — without it every keystroke hits the API, and that endpoint is already a <span class="rev">bottleneck</span>.</span>
-      <span class="vi hide-me">→ Ô tìm kiếm bọn mình debounce 300 ms; không có nó thì gõ phím nào là bắn request phím đó, mà cái endpoint kia vốn đã nghẽn sẵn.</span>
+      <span class="en">When the primary database locked up, <b>failover</b> moved every connection to the replica in under a minute — no <span class="rev">rollback</span> needed.</span>
+      <span class="vi hide-me">→ Lúc con database chính treo cứng, cơ chế failover đẩy toàn bộ kết nối sang bản sao trong chưa đầy một phút — khỏi phải quay ngược bản nào cả.</span>
     </li>
     <li>
-      <span class="en">I <b>debounced</b> the submit button so a double click can't create two orders — much cheaper than making the whole endpoint <span class="rev">idempotent</span>.</span>
-      <span class="vi hide-me">→ Mình debounce cái nút submit để bấm nhầm hai phát không thành hai đơn — đỡ tốn công hơn hẳn so với đi sửa cả endpoint cho gọi mấy lần cũng ra một kết quả.</span>
+      <span class="en">The client won't <span class="rev">sign off</span> on the contract until we show them an automatic <b>failover</b> with the whole team watching.</span>
+      <span class="vi hide-me">→ Khách chưa chịu ký duyệt hợp đồng chừng nào bên mình chưa diễn cho họ xem một lần failover tự động, có mặt cả đội.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>debounce the input / the handler</code>, <code>debounce by 300 ms</code>, <code>a debounced search</code>, <code>a 300 ms debounce</code>, <code>debounce vs throttle</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /dɪˈbaʊns/ "đi-BAO-nx", trọng âm âm sau, phần <code>ounce</code> y hệt <code>bounce</code> — ❌ "đi-bun". Ngoại động từ, đi thẳng với tân ngữ: <code>debounce the input</code>, ❌ <em>debounce for the input</em>. Đừng dùng thay <code>throttle</code>: "cứ 100 ms một lần" là <code>throttle</code>, "chờ gõ xong hẵng chạy" mới là <code>debounce</code>.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">debounces, debounced, debouncing, debouncer, a debounce, bounce</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>automatic failover</code>, <code>trigger / test failover</code>, <code>a failover drill</code>, <code>fail over to the standby</code>, <code>failover time</code>, <code>seamless failover</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Viết liền <code>failover</code> là <b>danh từ</b>, tách đôi <code>fail over</code> mới là <b>động từ</b>: ✓ <em>the cluster <b>failed over</b> to the replica</em>, ❌ <em>the system failovered</em>. Trọng âm âm đầu: <b>FAIL</b>-over. Cẩn thận khi nói với khách: nghe "we have failover" là họ hiểu bên mình có sẵn máy dự phòng chạy song song — hứa hơi to nếu thực ra chỉ có một nhánh <code>if</code> trong code.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">failovers, fail over, failed over, failing over, fail-over (adj), failover cluster</span></div>
   </div>
 </article>
 
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>payload
-        <button class="say" data-say="the request payload" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>graceful degradation
+        <button class="say" data-say="the site degrades gracefully" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈpeɪləʊd/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˌɡreɪsfl ˌdeɡrəˈdeɪʃn/ · <em>noun phrase (dạng động từ: degrade gracefully)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">phần dữ liệu thật gửi đi<span class="alt">không tính header và vỏ bọc ngoài</span></p>
+  <p class="vi-quick hide-me">hỏng một phần vẫn chạy tiếp<span class="alt">bớt tính năng chứ không sập cả trang</span></p>
 
-  <p class="def"><span class="tag">EN</span>the actual data a request, message or response carries, not counting the headers and the wrapper around it.
-    <span class="def-vi hide-me">→ phần dữ liệu thật mà một request, message hay response mang theo, không tính header và lớp vỏ bọc quanh nó.</span>
+  <p class="def"><span class="tag">EN</span>the ability of a system to keep working with fewer features when one part fails, instead of breaking completely.
+    <span class="def-vi hide-me">→ khả năng một hệ thống vẫn chạy tiếp với ít tính năng hơn khi một phần của nó hỏng, thay vì gãy hẳn toàn bộ.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Gặp mỗi ngày ở API, webhook, message queue. Khác <code>body</code>: <code>body</code> là <b>chỗ chứa</b>, <code>payload</code> là <b>món hàng nằm trong đó</b> — nghĩa gốc của nó đúng là hàng mà một chiếc máy bay chở.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Ví dụ kinh điển: service gợi ý sản phẩm chết → trang vẫn load bình thường, chỉ thiếu mỗi khối gợi ý. Khác <code>failover</code>: <code>failover</code> là <b>đổi sang máy khác để chạy nguyên vẹn như cũ</b>, còn <code>graceful degradation</code> là <b>ở nguyên đó nhưng chấp nhận chạy yếu đi</b>.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">The webhook <b>payload</b> doesn't carry the customer email any more — that's a <span class="rev">breaking change</span> for everyone already parsing it.</span>
-      <span class="vi hide-me">→ Payload của webhook không còn kèm email khách nữa — ai đang đọc nó là phải sửa code theo, không chạy tiếp được.</span>
+      <span class="en">If the pricing service is down we show <span class="rev">stale</span> numbers with a warning instead of an error page — that's <b>graceful degradation</b>.</span>
+      <span class="vi hide-me">→ Service tính giá mà chết thì bên mình hiện số cũ kèm một dòng cảnh báo, chứ không quăng ra trang lỗi — đó chính là graceful degradation.</span>
     </li>
     <li>
-      <span class="en">Give the client a <span class="rev">heads-up</span> before we add two fields to the <b>payload</b>; their logs will look different from Monday.</span>
-      <span class="vi hide-me">→ Bên mình thêm hai field vào payload thì báo khách trước một tiếng nhé, từ thứ Hai log bên họ nhìn sẽ khác đi đấy.</span>
+      <span class="en">We should <span class="rev">align</span> on how much <b>graceful degradation</b> the client actually wants before we design the checkout flow.</span>
+      <span class="vi hide-me">→ Bên mình nên ngồi thống nhất trước xem khách thật sự muốn hỏng tới đâu vẫn phải chạy được, rồi hẵng thiết kế luồng thanh toán.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>the request / response payload</code>, <code>a JSON payload</code>, <code>send / parse the payload</code>, <code>payload size</code>, <code>payload too large</code>, <code>keep the payload small</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Trọng âm âm đầu: <b>PAY</b>-load, ❌ "pay-LOAD". Đếm được: <code>two payloads</code>, <code>a large payload</code>. Đừng viết <em>the payload of data</em> — thừa, <code>payload</code> đã là dữ liệu rồi. Và <code>payload</code> ≠ <code>query params</code>: cái treo trên URL là <code>query params</code>, cái nằm trong thân request mới là <code>payload</code>.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">payloads, payload size, max payload, pay, load</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>degrade gracefully</code>, <code>fail gracefully</code>, <code>a degraded mode</code>, <code>run in degraded mode</code>, <code>degraded service</code>, <code>design for graceful degradation</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Dạng động từ đi với <b>trạng từ</b>: ✓ <code>the site degrades gracefully</code>, ❌ <em>degrades graceful</em>. Đừng dịch <code>degradation</code> thành "xuống cấp" theo nghĩa xấu — ở đây nó là <b>chủ động thiết kế cho yếu đi có kiểm soát</b>, là điểm cộng chứ không phải lỗi. Nói với khách thì nên kèm luôn cái mất: <em>"the site degrades gracefully — checkout still works, recommendations don't."</em></span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">degrade, degrades, degraded, degrading, gracefully, degraded mode, fail gracefully</span></div>
   </div>
 </article>
 
@@ -272,12 +272,12 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Một câu trả lời trên diễn đàn dev</p>
-  <div class="passage"><b>Re: My search box fires a request on every keystroke — what am I doing wrong?</b><br><br>
-    Nothing is wrong with your code, you just haven't <b>debounced</b> the input yet. Wait 300 ms after the last keystroke and send one request instead of eight; the <b>payload</b> stays exactly the same size, but half your <span class="rev">throughput</span> problem disappears on its own. Before you rewrite anything, though, <b>nail down</b> which part is actually slow — run a quick <span class="rev">sanity check</span> in the network tab first, because the only <b>outstanding</b> question here might be the server, not the browser. And if you can <b>spare</b> an afternoon, write a small test for it too; future you will be grateful.</div>
+  <div class="passage"><b>Re: We had 40 minutes of downtime on Sunday — what should we fix first?</b><br><br>
+    Your <b>failover</b> did fire, so the database was never the real problem — the standby took over in under a minute. What hurt you was the front end: it showed a blank page for forty minutes instead of degrading gracefully. Build in some <b>graceful degradation</b> first, so that when the recommendation service is gone the rest of the page still renders. Then <b>nail down</b> the real <span class="rev">bottleneck</span> from Sunday's logs before you change anything else, because the only <b>outstanding</b> question is whether <span class="rev">backpressure</span> built up before or after the switch. And if you can <b>spare</b> a day this sprint, write the postmortem while everyone still remembers it.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me"><b>Re: Ô tìm kiếm của mình cứ gõ một phím là bắn một request — mình sai chỗ nào?</b><br><br>
-      Code bạn không sai gì đâu, chỉ là chưa debounce cái ô input thôi. Chờ 300 ms sau phím cuối rồi bắn một request thay vì tám cái; payload vẫn y nguyên bằng đó, nhưng một nửa vấn đề "chạy được bao nhiêu việc mỗi giây" tự nó biến mất. Mà trước khi sửa gì thì chốt cho rõ đã: khúc nào mới thật sự chậm — mở tab Network soi nhanh một cái, vì biết đâu câu hỏi còn tồn ở đây lại nằm ở phía server chứ không phải trình duyệt. Còn nếu rảnh được một buổi chiều thì viết luôn cho nó một cái test nhỏ; sau này bạn sẽ cảm ơn chính mình.</p>
+    <p class="hide-me"><b>Re: Chủ nhật vừa rồi bên mình chết 40 phút — nên sửa cái gì trước?</b><br><br>
+      Cơ chế failover của bạn có chạy đấy chứ, nên database chưa bao giờ là vấn đề thật sự — máy dự phòng đã tiếp quản trong chưa đầy một phút. Cái làm bạn đau là phía front end: nó hiện trang trắng suốt bốn mươi phút thay vì chịu chạy yếu đi một cách có kiểm soát. Việc đầu tiên là làm cho hệ thống hỏng-vẫn-chạy-được: service gợi ý có chết thì phần còn lại của trang vẫn phải hiện ra. Xong rồi thì soi log hôm Chủ nhật, chốt cho ra chỗ nghẽn thật sự nằm đâu đã, rồi hẵng sửa tiếp — vì câu hỏi duy nhất còn tồn lúc này là dữ liệu bị dồn ứ trước hay sau lúc chuyển máy. Còn nếu sprint này bạn rảnh ra được một ngày thì viết luôn bản postmortem đi, lúc mọi người còn nhớ.</p>
   </details>
 </section>
 
@@ -286,27 +286,27 @@
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
     <li><b>Điền từ</b> (đúng dạng)<br>
-        (a) <em>"We ___ the search input by 300 ms so we don't hit the API on every keystroke."</em><br>
-        (b) <em>"Their API rejects any ___ over one megabyte."</em><br>
+        (a) <em>"Automatic ___ moved every connection to the replica in under a minute."</em><br>
+        (b) <em>"If the recommendation service dies the rest of the page still renders — that's ___ ___."</em><br>
         (c) <em>"Can we ___ ___ a delivery date before the call ends?"</em><br>
         (d) <em>"Please settle the ___ balance before the end of the month."</em><br>
         (e) <em>"I read the whole RFC in my ___ time."</em></li>
     <li><b>Chọn từ đúng</b> — hai từ dễ lẫn:<br>
-        (a) Cứ 100 ms cho chạy một lần đều đặn: <em>debounce</em> / <em>throttle</em>?<br>
-        (b) Dữ liệu nằm trong thân request: <em>payload</em> / <em>query params</em>?<br>
+        (a) Đổi hẳn sang máy dự phòng để chạy tiếp nguyên vẹn: <em>failover</em> / <em>graceful degradation</em>?<br>
+        (b) <em>"The cluster ___ to the replica at 3 a.m."</em> — <em>failover</em> / <em>failed over</em>?<br>
         (c) <em>"He was an outstanding candidate."</em> — ở đây <code>outstanding</code> nghĩa là <em>còn tồn</em> hay <em>xuất sắc</em>?<br>
         (d) Cái sạc dự phòng để trong ngăn kéo, đang không dùng: <em>a spare charger</em> / <em>an extra charger</em>?<br>
         (e) <em>"You really nailed that demo."</em> — <em>nail down</em> hay <em>nail it</em>?</li>
     <li><b>Sửa lỗi</b> — mỗi câu đúng một lỗi:<br>
         (a) <em>"Let's nail down it before Friday."</em><br>
-        (b) <em>"Can you debounce for the input?"</em><br>
-        (c) <em>"We had to reduce the payload of data."</em><br>
+        (b) <em>"The system failovered to the backup node."</em><br>
+        (c) <em>"The site degraded graceful when the pricing API died."</em><br>
         (d) <em>"I fixed it in my free time of me."</em></li>
     <li><b>Dịch Việt → Anh</b><br>
         (a) "Tuần này mình chốt cứng phạm vi công việc đi, không thì sprint cuối lại phình việc."<br>
-        (b) "Cậu bớt cho mình mười phút được không? Mình muốn hỏi cho rõ cái payload của webhook."</li>
+        (b) "Cậu bớt cho mình mười phút được không? Mình muốn hỏi cho rõ cơ chế failover."</li>
     <li><b>Chọn collocation đúng</b><br>
-        (a) <em>debounce the handler</em> / <em>debounce to the handler</em><br>
+        (a) <em>trigger failover</em> / <em>trigger the failovering</em><br>
         (b) <em>outstanding invoice</em> / <em>outstanding work of money</em><br>
         (c) <em>time to spare</em> / <em>time for spare</em><br>
         (d) <em>nail down the root cause</em> / <em>nail down on the root cause</em></li>
@@ -314,19 +314,19 @@
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li>(a) <b>debounce</b> — (b) <b>payload</b> — (c) <b>nail down</b> — (d) <b>outstanding</b> — (e) <b>spare</b></li>
-      <li>(a) <b>throttle</b> — đều đặn X mili-giây một lần là <code>throttle</code>; chờ im rồi mới chạy mới là <code>debounce</code>.<br>
-          (b) <b>payload</b> — <code>query params</code> treo trên URL, <code>payload</code> nằm trong thân request.<br>
+      <li>(a) <b>failover</b> — (b) <b>graceful degradation</b> — (c) <b>nail down</b> — (d) <b>outstanding</b> — (e) <b>spare</b></li>
+      <li>(a) <b>failover</b> — đổi sang bản sao để chạy như cũ. <code>graceful degradation</code> là ở nguyên đó nhưng chạy yếu đi.<br>
+          (b) <b>failed over</b> — vị trí này cần <b>động từ</b>, mà động từ thì viết tách đôi <code>fail over</code>. <code>failover</code> viết liền chỉ làm danh từ.<br>
           (c) <b>xuất sắc</b> — đi với người / kết quả là <em>xuất sắc</em>; đi với việc, tiền, câu hỏi mới là <em>còn tồn</em>.<br>
           (d) <b>a spare charger</b> — <code>spare</code> là có sẵn mà đang không dùng; <code>extra</code> là thêm vào cho nhiều hơn.<br>
           (e) <b>nail it</b> — làm quá ngon, ăn điểm. <code>nail down</code> là chốt cho rõ, nghĩa khác hẳn.</li>
       <li>(a) <em>"Let's <b>nail it down</b> before Friday."</em> — tân ngữ là đại từ thì phải chèn vào giữa.<br>
-          (b) <em>"Can you <b>debounce the input</b>?"</em> — ngoại động từ, đi thẳng với tân ngữ, không có <code>for</code>.<br>
-          (c) <em>"We had to reduce the <b>payload</b>."</em> — <code>payload</code> đã là dữ liệu rồi, thêm <code>of data</code> là thừa.<br>
+          (b) <em>"The system <b>failed over</b> to the backup node."</em> — ❌ <em>failovered</em>; động từ là <code>fail over</code>, quá khứ <code>failed over</code>.<br>
+          (c) <em>"The site <b>degraded gracefully</b> when the pricing API died."</em> — bổ nghĩa cho động từ thì phải là trạng từ.<br>
           (d) <em>"I fixed it in my <b>spare time</b>."</em> — ❌ <em>free time of me</em>.</li>
       <li>(a) <em>"Let's <b>nail down</b> the scope this week, or we'll get scope creep in the last sprint again."</em><br>
-          (b) <em>"Can you <b>spare</b> ten minutes? I'd like to clarify the webhook <b>payload</b>."</em></li>
-      <li>(a) <b>debounce the handler</b> — không có giới từ.<br>
+          (b) <em>"Can you <b>spare</b> ten minutes? I'd like to clarify how the <b>failover</b> works."</em></li>
+      <li>(a) <b>trigger failover</b> — <code>failover</code> là danh từ, không chia như động từ.<br>
           (b) <b>outstanding invoice</b> — <code>outstanding</code> đi thẳng với <code>invoice / balance / payment</code>.<br>
           (c) <b>time to spare</b> — cụm cố định, nghĩa là <em>còn dư thời gian</em>.<br>
           (d) <b>nail down the root cause</b> — <code>nail down</code> đi thẳng với tân ngữ, ❌ <em>nail down on</em>.</li>

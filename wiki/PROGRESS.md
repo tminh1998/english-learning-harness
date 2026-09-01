@@ -4,7 +4,7 @@
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 85 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Tổng số từ đã học    | 85 · **đã biết sẵn** 5 (hotfix · overwrite · cherry-pick · debounce · payload — bảng cuối VOCAB_INDEX, không dạy lại) |
 | Phân bố              | IT 34 · Business 34 · Life 17                                                           |
 | Số buổi học          | 17                                                                                      |
 | Streak hiện tại      | 17 buổi (Chủ nhật 2026-08-16, 2026-08-23 và 2026-08-30 là ngày nghỉ theo lịch — không tính đứt) |
@@ -34,7 +34,7 @@
 | 2026-08-28 | 2026-W35 | #14 | backpressure · cold start · pain point · takeaway · hassle |
 | 2026-08-29 | 2026-W35 | #15 | granular · sanity check · circle back · feasible · drag on |
 | 2026-08-31 | 2026-W36 | #16 | immutable · overhead · wrap up · leeway · sleep in |
-| 2026-09-01 | 2026-W36 | #17 | debounce · payload · nail down · outstanding · spare |
+| 2026-09-01 | 2026-W36 | #17 | failover · graceful degradation · nail down · outstanding · spare |
 
 ## Kết quả quiz tuần
 
@@ -65,6 +65,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+🔁 **Sửa lại 2026-09-01 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `debounce` và `payload` — hai suất IT của buổi #17. Theo R1.b: hai từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), và được thay bằng `failover` + `graceful degradation` — cùng nhóm IT, đã qua lại hard gate R1. Bài `.md` và `.html` đã viết lại toàn bộ: khối từ, ví dụ (R8 vẫn đúng), mẩu đọc, bài tập, đáp án, ghi chú. Tổng số từ vẫn là 85 vì thay 2 ăn 2; số từ "đã biết sẵn" lên 5. Đây là lần thứ hai user loại từ vì đã biết (lần đầu 2026-08-24 với `hotfix` · `overwrite` · `cherry-pick`) — cả 5 từ bị loại đều thuộc nhóm "lệnh/khái niệm gặp hằng ngày", đúng cảnh báo trong `memory/tu-da-biet-khong-day-lai.md`.
 
 ⚠️ **Cập nhật 2026-09-01:** nợ ôn tập lên **80/85 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #17 chạy đúng luật R9: phần A hỏi lại 5 từ của buổi 31/08, phần B bốc ngẫu nhiên bằng lệnh trúng tentative · throughput · technical debt · awkward · throttle · align · circle back · on track · turnaround · brittle — chạm cả lô 19/08 lẫn lô 29/08. Nhưng khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W36 mới có 10 từ (31/08 + 01/09); tuần W35 đã khép lại với 30 từ mà vẫn chưa có điểm quiz — muốn có điểm thì phải gõ tay `/kiem-tra` cho W35, muốn nợ giảm thật thì phải gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
