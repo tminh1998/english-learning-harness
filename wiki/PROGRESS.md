@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-08-31 (buổi #16)
+**Cập nhật:** 2026-09-01 (buổi #17)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 80 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 32 · Business 32 · Life 16                                                           |
-| Số buổi học          | 16                                                                                      |
-| Streak hiện tại      | 16 buổi (Chủ nhật 2026-08-16, 2026-08-23 và 2026-08-30 là ngày nghỉ theo lịch — không tính đứt) |
-| Streak dài nhất      | 16 buổi                                                                                 |
-| Buổi gần nhất        | 2026-08-31 (Thứ Hai) — buổi #16                                                         |
+| Tổng số từ đã học    | 85 · **đã biết sẵn** 3 (hotfix · overwrite · cherry-pick — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 34 · Business 34 · Life 17                                                           |
+| Số buổi học          | 17                                                                                      |
+| Streak hiện tại      | 17 buổi (Chủ nhật 2026-08-16, 2026-08-23 và 2026-08-30 là ngày nghỉ theo lịch — không tính đứt) |
+| Streak dài nhất      | 17 buổi                                                                                 |
+| Buổi gần nhất        | 2026-09-01 (Thứ Ba) — buổi #17                                                          |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -34,6 +34,7 @@
 | 2026-08-28 | 2026-W35 | #14 | backpressure · cold start · pain point · takeaway · hassle |
 | 2026-08-29 | 2026-W35 | #15 | granular · sanity check · circle back · feasible · drag on |
 | 2026-08-31 | 2026-W36 | #16 | immutable · overhead · wrap up · leeway · sleep in |
+| 2026-09-01 | 2026-W36 | #17 | debounce · payload · nail down · outstanding · spare |
 
 ## Kết quả quiz tuần
 
@@ -64,6 +65,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-09-01:** nợ ôn tập lên **80/85 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #17 chạy đúng luật R9: phần A hỏi lại 5 từ của buổi 31/08, phần B bốc ngẫu nhiên bằng lệnh trúng tentative · throughput · technical debt · awkward · throttle · align · circle back · on track · turnaround · brittle — chạm cả lô 19/08 lẫn lô 29/08. Nhưng khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W36 mới có 10 từ (31/08 + 01/09); tuần W35 đã khép lại với 30 từ mà vẫn chưa có điểm quiz — muốn có điểm thì phải gõ tay `/kiem-tra` cho W35, muốn nợ giảm thật thì phải gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-08-31:** nợ ôn tập lên **75/80 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #16 mở tuần 2026-W36 và chạy đúng luật R9: phần A hỏi lại 5 từ của buổi 29/08, phần B bốc ngẫu nhiên bằng lệnh trúng sign off · verbose · brittle · backfill · turnaround · stakeholder · loop in · technical debt · tentative · trade-off — chạm cả lô 18/08 lẫn lô 25/08. Nhưng khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W35 đã khép lại với 30 từ mà **vẫn chưa có điểm quiz nào** — ba tuần liên tiếp như vậy. Muốn nợ giảm thật thì phải gõ tay `/on-tap` (lô cũ nhất 14/08 → 16/08), muốn có điểm thì gõ `/kiem-tra` cho tuần W35.
 

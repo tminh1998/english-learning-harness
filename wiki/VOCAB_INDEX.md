@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 80 từ đã học** · IT 32 · Business 32 · Life 16 · ad-hoc 0
+**Tổng: 85 từ đã học** · IT 34 · Business 34 · Life 17 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 3 từ — xem bảng cuối file
-**Cập nhật:** 2026-08-31
+**Cập nhật:** 2026-09-01
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -99,6 +99,11 @@
 | 78 | wrap up | wraps up, wrapped up, wrapping up, a wrap-up, that's a wrap | phrasal verb | Business | chốt lại cho gọn rồi dừng | 2026-08-31 | lesson |
 | 79 | leeway | wiggle room (gần nghĩa), no leeway, give sb leeway | noun (không đếm được) | Business | khoảng du di, chỗ còn co giãn | 2026-08-31 | lesson |
 | 80 | sleep in | sleeps in, slept in, sleeping in, a lie-in, oversleep | phrasal verb | Life | ngủ nướng | 2026-08-31 | lesson |
+| 81 | debounce | debounces, debounced, debouncing, debouncer, a debounce, bounce | verb (cũng là noun) | IT | chờ gõ xong hẵng chạy, gom một tràng thành một lần | 2026-09-01 | lesson |
+| 82 | payload | payloads, payload size, max payload, pay, load | noun (đếm được) | IT | phần dữ liệu thật gửi đi, không tính header | 2026-09-01 | lesson |
+| 83 | nail down | nails down, nailed down, nailing down, hard-to-nail-down, nail it | phrasal verb | Business | chốt cứng cho hết lửng lơ | 2026-09-01 | lesson |
+| 84 | outstanding | outstandingly, outstanding balance, stand out, standout | adjective | Business | còn tồn, chưa xong, chưa trả | 2026-09-01 | lesson |
+| 85 | spare | spares, spared, sparing, sparingly, spare part, to spare | adjective (cũng là verb) | Life | dư ra, đang không dùng tới | 2026-09-01 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
