@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-01: 80 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-02: 85 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -22,6 +22,7 @@
 - hạn 2026-08-29 — backpressure · cold start · pain point · takeaway · hassle
 - hạn 2026-08-30 — granular · sanity check · circle back · feasible · drag on
 - hạn 2026-09-01 — immutable · overhead · wrap up · leeway · sleep in
+- hạn 2026-09-02 — failover · graceful degradation · nail down · outstanding · spare
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
@@ -126,6 +127,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | nail down | 1 | 2026-09-02 | 0 | 0 | 2026-09-01 |
 | outstanding | 1 | 2026-09-02 | 0 | 0 | 2026-09-01 |
 | spare | 1 | 2026-09-02 | 0 | 0 | 2026-09-01 |
+| culprit | 1 | 2026-09-03 | 0 | 0 | 2026-09-02 |
+| spike | 1 | 2026-09-03 | 0 | 0 | 2026-09-02 |
+| defer | 1 | 2026-09-03 | 0 | 0 | 2026-09-02 |
+| ramp up | 1 | 2026-09-03 | 0 | 0 | 2026-09-02 |
+| worn out | 1 | 2026-09-03 | 0 | 0 | 2026-09-02 |
 
 ## Đã thuộc (bậc 5, đúng)
 

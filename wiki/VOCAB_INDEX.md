@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 85 từ đã học** · IT 34 · Business 34 · Life 17 · ad-hoc 0
+**Tổng: 90 từ đã học** · IT 36 · Business 36 · Life 18 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-01
+**Cập nhật:** 2026-09-02
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -104,6 +104,11 @@
 | 83 | nail down | nails down, nailed down, nailing down, hard-to-nail-down, nail it | phrasal verb | Business | chốt cứng cho hết lửng lơ | 2026-09-01 | lesson |
 | 84 | outstanding | outstandingly, outstanding balance, stand out, standout | adjective | Business | còn tồn, chưa xong, chưa trả | 2026-09-01 | lesson |
 | 85 | spare | spares, spared, sparing, sparingly, spare part, to spare | adjective (cũng là verb) | Life | dư ra, đang không dùng tới | 2026-09-01 | lesson |
+| 86 | culprit | culprits, the usual culprits, culpable | noun | IT | thủ phạm gây ra lỗi | 2026-09-02 | lesson |
+| 87 | spike | spikes, spiked, spiking, spiky, traffic spike, spike in | noun (cũng là verb) | IT | vọt lên rồi tụt xuống ngay | 2026-09-02 | lesson |
+| 88 | defer | defers, deferred, deferring, deferral, deferment, defer to | verb | Business | gác lại làm sau, kiểu trang trọng | 2026-09-02 | lesson |
+| 89 | ramp up | ramps up, ramped up, ramping up, ramp-up, ramp down | phrasal verb | Business | tăng dần lên từng nấc | 2026-09-02 | lesson |
+| 90 | worn out | wear out, wears out, wore out, worn-out, wear yourself out | adjective (dạng động từ: wear out) | Life | mệt rã rời; đồ thì mòn hỏng | 2026-09-02 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
