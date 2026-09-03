@@ -174,10 +174,13 @@ trong chat, và `LINK-WEB` là bình thường chứ không phải lỗi.
 `/on-tap` và `/kiem-tra` **không** tự động hoá được — chúng cần user trả lời mới
 chấm điểm và cập nhật bậc trong REVIEW_QUEUE được.
 
-⚠️ **2026-09-04 — prompt routine `/hoc` ĐANG LỆCH luật R9 mới.** Nó vẫn dặn "ôn nhanh
-15 từ, 5 + 10". Repo đã lên **25 từ (5 + 20) + khối gập mặc định đóng** nhưng prompt
-routine **không nằm trong repo** nên không tự đổi — phải sửa tay, nếu không bài do
-routine 7h sáng sinh ra sẽ sai luật.
+✅ **2026-09-03 — prompt routine `/hoc` ĐÃ sửa** cho khớp luật R9 mới: ôn nhanh **25 từ
+(5 + 20)**, cả cụm bọc `<details class="warm-toggle">` không `open`, **đáp án đi theo
+từng câu** (`ol.ex.qa-list` → `li.qa` → `span.q` + `details.ans`), và dòng tóm tắt cuối
+đổi sang "25 từ … 20 từ phần B". Bài đầu tiên chạy luật mới: **2026-09-04**.
+
+⚠️ Prompt routine **không nằm trong repo** — cứ đổi luật ở đây là phải sửa tay bên kia,
+nếu không bài do routine 7h sáng sinh ra sẽ theo luật cũ.
 
 ID để tra: `/hoc` = `trig_01QfWZkEggCXjyrR4nKvaM3U`,
 `/on-tap-tuan` = `trig_01DeXAVcCXsfXb3B62b9wKEq` (routine ôn tuần không đụng khối ôn
