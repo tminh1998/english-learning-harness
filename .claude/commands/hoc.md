@@ -38,25 +38,33 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    Chỉ khi user **nói rõ ở lượt sau** là muốn buổi #2 mới đi tiếp từ bước 2,
    ghi ra `<YYYY-MM-DD>-2.md` + `.html`. Rỗng → đi tiếp bình thường.
 2. Đọc `.learning-config.yml`, `wiki/memory/MEMORY.md`, `wiki/PROGRESS.md`.
-3. ⭐ **Ôn nhanh đầu giờ — 15 từ (R9), chia hai phần cố định** (`review.warmup`):
+3. ⭐ **Ôn nhanh đầu giờ — 25 từ (R9), chia hai phần cố định** (`review.warmup`):
 
    - **5 từ của buổi LIỀN TRƯỚC** — lấy từ `wiki/PROGRESS.md` (bảng "Nhật ký buổi
      học", dòng cuối) hoặc file bài học gần nhất. Đúng thứ tự trong bài.
-   - **10 từ BỐC NGẪU NHIÊN** trong **toàn bộ** `wiki/VOCAB_INDEX.md` — không phải
+   - **20 từ BỐC NGẪU NHIÊN** trong **toàn bộ** `wiki/VOCAB_INDEX.md` — không phải
      chỉ từ tới hạn trong REVIEW_QUEUE. Bốc **bằng lệnh**, không bốc bằng mắt:
 
      ```bash
      grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
        | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
-       | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -10
+       | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
      ```
 
      (`shuf` không có sẵn trên macOS nên dùng `awk`. Agent tự "chọn ngẫu nhiên" thì
      luôn trúng mấy từ vừa đọc thấy ở đầu bảng — phải chạy lệnh thật.)
 
    Trên trang để **hai phần riêng biệt**, ghi rõ phần nào là bài hôm qua, phần nào
-   là bốc ngẫu. Hỏi gợi nhớ bằng tiếng Việt, đáp án bọc `<details>` + `.hide-me`.
-   Chưa đủ 10 từ cũ (buổi #1, #2) → lấy hết những gì có, không bịa thêm.
+   là bốc ngẫu. Hỏi gợi nhớ bằng tiếng Việt. Chưa đủ 20 từ cũ → lấy hết những gì
+   có, không bịa thêm.
+
+   ⭐ **Cả cụm ôn nhanh phải gập được và mặc định ĐANG ẨN**: bọc trong
+   `<details class="warm-toggle">`, **không** thêm `open`. Không viết JS cho việc
+   này — `<details>` gốc chạy được cả khi mở bằng `file://`. Bản `.md` cũng bọc
+   `<details>` ngoài cùng cho khớp.
+
+   ⭐ **Đáp án đi theo TỪNG câu**, không gộp một khối ở cuối nữa (đổi 2026-09-04) —
+   xem khuôn trong `wiki/_templates/lesson.html`.
 
 4. Chọn ứng viên 5 từ theo mix + level trong config.
 5. ⛔ **HARD GATE R1** — grep từng ứng viên:
@@ -130,9 +138,18 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 - Trong câu ví dụ và mẩu đọc, bọc `<b>` quanh chính từ đang học.
 - Nút 🔊: `<button class="say" data-say="...">` — `data-say` là từ, hoặc một cụm
   ngắn tự nhiên hơn khi đọc lên (vd `follow up on the contract`).
-- Khối **Ôn nhanh đầu giờ** là một `<section class="block">` với **hai** danh sách
-  tách nhau (`<div class="warm-part">`): phần A "5 từ buổi trước", phần B "10 từ bốc
-  ngẫu nhiên". Đáp án chung một `<details>`, chia đúng hai phần đó.
+- Khối **Ôn nhanh đầu giờ** là `<section class="block warmup">` chứa
+  `<details class="warm-toggle">` (**không** `open` — vào trang là đang ẩn). Trong
+  `<details>` đó: `<summary>` gồm `<h2>Ôn nhanh đầu giờ <span class="cnt">25 từ</span></h2>`
+  + `<span class="wt-state"></span>` (để **rỗng**, chữ "bấm để mở / bấm để ẩn" do CSS
+  sinh), rồi **hai** danh sách tách nhau (`<div class="warm-part">`): phần A "5 từ
+  buổi trước", phần B "20 từ bốc ngẫu nhiên".
+- Mỗi câu ôn nhanh: `<ol class="ex qa-list">` → `<li class="qa">` chứa **đúng hai**
+  con — `<span class="q">` (câu hỏi tiếng Việt) và `<details class="ans">` (nút đáp
+  án). Trong `details.ans`: `<summary>đáp án</summary>` + `<span class="a hide-me">`
+  (từ bọc `<b>`, câu ví dụ bọc `<em>`). **Không** `open`, **không** `id`, **không**
+  thêm con thứ ba vào `li.qa` — layout flex sẽ vỡ. Thiếu class `qa-list` là mất số
+  thứ tự của cả danh sách.
 - ⛔ **Không** có `<section class="grammar">`, `<section class="write">`,
   `.gram-progress`, `.pattern-tag` — harness đã bỏ ngữ pháp.
 - Đáp án bài tập **luôn** nằm trong `<details>` (luật R2).

@@ -262,41 +262,61 @@ Cách tự kiểm trước khi đóng buổi: với **từng câu** ví dụ, ch
 
 ---
 
-### R9 — Ôn nhanh đầu giờ: 15 từ, 5 của buổi trước + 10 bốc ngẫu nhiên
+### R9 — Ôn nhanh đầu giờ: 25 từ, khối gập mặc định ĐÓNG, đáp án theo TỪNG câu
 
-Từ **2026-08-26**, khối "Ôn nhanh đầu giờ" của mỗi buổi `/hoc` là **15 từ**, chia
-cố định làm hai phần (config `review.warmup`):
+Từ **2026-08-26**, khối "Ôn nhanh đầu giờ" của mỗi buổi `/hoc` là một khối hỏi lại
+từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định làm hai phần
+(config `review.warmup`):
 
 | Phần | Bao nhiêu | Lấy ở đâu |
 |---|---|---|
 | Từ buổi liền trước | **5** | đúng 5 từ của buổi học gần nhất, theo thứ tự trong bài |
-| Bốc ngẫu nhiên | **10** | **toàn bộ** `{vocabIndex}`, trừ 5 từ ở trên |
+| Bốc ngẫu nhiên | **20** | **toàn bộ** `{vocabIndex}`, trừ 5 từ ở trên |
 
-1. **10 từ kia phải bốc BẰNG LỆNH, không bốc bằng mắt.** Agent tự "chọn ngẫu nhiên"
+1. **20 từ kia phải bốc BẰNG LỆNH, không bốc bằng mắt.** Agent tự "chọn ngẫu nhiên"
    thì luôn trúng mấy từ vừa đọc thấy ở đầu bảng. `shuf` không có sẵn trên macOS
    nên dùng `awk`:
 
    ```bash
    grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
      | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
-     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -10
+     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
    ```
 
 2. **Phạm vi là mọi từ đã học**, không phải chỉ từ tới hạn trong `{reviewQueue}`.
    Từ đã lên bậc cao vẫn có thể trúng — đó là chủ ý, để không từ nào rơi hẳn ra
    khỏi tầm ngắm.
 3. **Hai phần để riêng trên trang**, ghi rõ phần nào là gì: người học cần biết 5 từ
-   đầu là bài hôm qua (phải nhớ được), 10 từ sau là bốc ngẫu (quên là bình thường).
-4. **Hỏi gợi nhớ bằng tiếng Việt**, đáp án bọc `<details>` + `.hide-me` (R2). Đáp án
-   mỗi từ = từ tiếng Anh + một câu ví dụ ngắn, không chép lại cả bài cũ.
-5. **Không đủ 10 từ cũ** (buổi #1, #2) → lấy hết những gì có, không bịa thêm từ.
-6. Đây **không** thay `/on-tap`: khối này hỏi-tự-trả-lời trên trang nên không lên
+   đầu là bài hôm qua (phải nhớ được), 20 từ sau là bốc ngẫu (quên là bình thường).
+4. ⭐ **Cả khối phải gập lại được, và MẶC ĐỊNH ĐANG ĐÓNG** (`review.warmup.collapsed`).
+   Bọc toàn bộ khối trong `<details class="warm-toggle">` — **không** thêm thuộc
+   tính `open`. Dùng `<details>` gốc của trình duyệt chứ không viết JS: trang bài
+   học hay được mở bằng `file://`, và toggle không được phép hỏng ở đó. Bản `.md`
+   cũng bọc `<details>` ngoài cùng cho khớp. Lý do: 25 câu hỏi + 25 dòng đáp án đẩy
+   5 từ mới của hôm nay xuống quá sâu — vào trang phải thấy bài mới trước, ôn tập
+   là cái người học chủ động bấm mở.
+5. ⭐ **Đáp án đi theo TỪNG câu, không gộp một khối ở cuối** (đổi 2026-09-04).
+   Mỗi câu là một `<li class="qa">` trong `<ol class="ex qa-list">`, gồm đúng hai
+   con: `<span class="q">` (câu hỏi tiếng Việt) và `<details class="ans">` (nút 👁,
+   **không** `open`, **không** cần `id`) chứa `<span class="a hide-me">`. Bản `.md`
+   để `<details>` ngay dưới dòng đánh số, thụt vào 3 dấu cách.
+   Vì sao: 25 câu mà đáp án dồn xuống cuối thì phải cuộn đi cuộn lại và đếm ngược
+   xem câu 14 ứng với dòng nào — sai dòng là học sai từ.
+6. **Hỏi gợi nhớ bằng tiếng Việt**, đáp án luôn có `.hide-me` để "Chế độ ôn tập"
+   che được (R2). Đáp án mỗi từ = từ tiếng Anh + một câu ví dụ ngắn, không chép
+   lại cả bài cũ.
+7. **Không đủ 20 từ cũ** (những buổi đầu) → lấy hết những gì có, không bịa thêm từ.
+8. Đây **không** thay `/on-tap`: khối này hỏi-tự-trả-lời trên trang nên không lên
    xuống bậc trong `{reviewQueue}`. Muốn đổi bậc thì vẫn phải gõ `/on-tap`.
 
-Lý do đổi (cũ: 8 từ, luôn lấy lô hạn cũ nhất): quét theo lô làm lô cũ bị hỏi lặp
-còn lô vừa học xong thì cả tuần không được đụng tới. Bốc ngẫu nhiên trên toàn bộ vốn
-từ thì mọi từ đều có cơ hội quay lại, và 5 từ của buổi trước luôn được ôn đúng lúc
-trí nhớ sắp phai.
+Lý do đổi (2026-08-26, cũ: 8 từ, luôn lấy lô hạn cũ nhất): quét theo lô làm lô cũ bị
+hỏi lặp còn lô vừa học xong thì cả tuần không được đụng tới. Bốc ngẫu nhiên trên toàn
+bộ vốn từ thì mọi từ đều có cơ hội quay lại, và 5 từ của buổi trước luôn được ôn đúng
+lúc trí nhớ sắp phai.
+
+Lý do nâng 10 → 20 (2026-09-04): vốn từ đã qua 90 từ, bốc 10 mỗi buổi thì một từ chỉ
+quay lại sau khoảng 9 buổi — quá thưa so với nợ ôn tập đang đọng. Bốc 20 rút xuống
+còn 4-5 buổi. Cái giá là trang dài gấp đôi, nên đi kèm bắt buộc với luật 4 và 5.
 
 ---
 
@@ -308,9 +328,10 @@ trí nhớ sắp phai.
 Phase 0  Auto-discovery (ở trên)
 Phase 0.5 ⛔ GATE R5: ls {lessons}/<tuần>/<hôm nay>*.md
          Có file -> KHÔNG sinh bài. Mở lại bài cũ, hỏi user, DỪNG tại đây.
-Phase 1  Ôn nhanh đầu giờ — 15 từ (R9): 5 từ của buổi LIỀN TRƯỚC + 10 từ BỐC
+Phase 1  Ôn nhanh đầu giờ — 25 từ (R9): 5 từ của buổi LIỀN TRƯỚC + 20 từ BỐC
          NGẪU NHIÊN bằng lệnh trong {vocabIndex}. Hỏi gợi nhớ bằng tiếng Việt,
-         đáp án bọc <details>.
+         đáp án đi theo TỪNG câu (<li class="qa"> + <details class="ans">). Cả
+         khối bọc <details class="warm-toggle"> KHÔNG có `open` — vào trang là ẩn.
 Phase 2  Chọn ứng viên: 2 IT + 2 business + 1 life, bám level
 Phase 3  ⛔ HARD GATE R1: grep {vocabIndex} từng từ. Trùng -> quay lại Phase 2
 Phase 4  Soạn bài: mỗi từ đủ mục `daily.mustInclude` + mẩu đọc + bài tập.

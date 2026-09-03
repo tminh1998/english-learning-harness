@@ -386,10 +386,73 @@ footer a { color: var(--accent); }
 
 
 /* ══════════════════════════════════════════════════════════════════════
-   KHỐI ÔN NHANH ĐẦU GIỜ — 15 từ, hai phần (từ 2026-08-26)
-   Dùng bởi: section.block.warmup · .warm-part · .wp-head · .wp-tag
-   Luật R9 trong AGENTS.md: phần A = 5 từ buổi trước, phần B = 10 từ bốc ngẫu nhiên.
+   KHỐI ÔN NHANH ĐẦU GIỜ — 25 từ, hai phần (từ 2026-09-04)
+   Dùng bởi: section.block.warmup · details.warm-toggle · .warm-part · .wp-head · .wp-tag
+   Luật R9 trong AGENTS.md: phần A = 5 từ buổi trước, phần B = 20 từ bốc ngẫu nhiên.
+   Cả khối gập lại được và MẶC ĐỊNH ĐÓNG — dùng <details class="warm-toggle">
+   (native, không cần JS, nên vẫn mở được cả khi mở file bằng file://).
+   Bài cũ (trước 2026-09-04) không có .warm-toggle nên vẫn hiện sẵn như trước.
    ══════════════════════════════════════════════════════════════════════ */
+
+/* — Nút gập/mở cả khối: <summary> đóng vai đầu đề của section — */
+.warmup > details.warm-toggle {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.warmup > details.warm-toggle[open] { padding-bottom: 0; }
+.warmup > details.warm-toggle > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  color: var(--text);
+  font-weight: 700;
+}
+.warmup > details.warm-toggle > summary::before {
+  content: "▸";
+  color: var(--accent);
+  font-size: 15px;
+  line-height: 1;
+}
+.warmup > details.warm-toggle[open] > summary::before { content: "▾"; }
+.warmup > details.warm-toggle > summary h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+/* nhãn tự đổi chữ theo trạng thái — span để RỖNG trong HTML */
+.wt-state {
+  margin-left: auto;
+  flex: 0 0 auto;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 11px;
+}
+.warm-toggle > summary .wt-state::after { content: "bấm để mở"; }
+.warm-toggle[open] > summary .wt-state::after { content: "bấm để ẩn"; }
+.warmup > details.warm-toggle > .sub {
+  margin: 14px 0 0;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .warmup > details.warm-toggle > summary { flex-wrap: wrap; }
+  .warmup > details.warm-toggle > summary h2 { font-size: 18px; }
+}
+
+@media print {
+  /* khối ôn nhanh vẫn phải in ra — luật `details { display: none }` ở trên
+     chỉ nhắm vào khối ĐÁP ÁN, không nhắm vào nút gập của cả khối. */
+  .warmup > details.warm-toggle { display: block; }
+}
 section.warmup h2 .cnt {
   margin-left: 9px;
   font-size: 12px;
@@ -432,4 +495,126 @@ section.warmup h2 .cnt {
 
 @media (max-width: 560px) {
   .wp-head { font-size: 13.5px; }
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   ÔN NHANH — MỖI CÂU MỘT THẺ, ĐÁP ÁN NGAY BÊN CẠNH (từ 2026-09-04)
+   Dùng bởi: ol.ex.qa-list > li.qa · .q · details.ans · .a
+   Luật R9: đáp án KHÔNG gộp ở cuối khối nữa — mỗi câu có nút 👁 riêng, mặc định
+   đóng, bấm thì đáp án hiện ngay trong thẻ của chính câu đó.
+   Bài trước 2026-09-04 không có .qa-list nên hiển thị y như cũ, không ảnh hưởng.
+   Mục tiêu: nhìn phát biết ngay đâu là câu hỏi, đâu là đáp án, và đáp án đang
+   mở là của CÂU NÀO — không lẫn sang câu bên cạnh.
+   Ba tầng phân biệt:
+     1. mỗi câu là một thẻ có viền + số thứ tự trong huy hiệu tròn bên trái;
+     2. đáp án nằm THỤT VÀO trong thẻ đó, nền accent-bg + vạch accent bên trái,
+        khác hẳn nền xám của câu hỏi;
+     3. thẻ nào đang mở đáp án thì viền đổi sang accent -> quét mắt là thấy.
+   ══════════════════════════════════════════════════════════════════════ */
+.warm-part ol.ex.qa-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: qa;
+}
+li.qa {
+  counter-increment: qa;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin: 0 0 9px;
+  padding: 11px 14px 11px 46px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+li.qa:last-child { margin-bottom: 0; }
+
+/* số thứ tự — neo mắt vào từng câu */
+li.qa::before {
+  content: counter(qa);
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  font-size: 12px;
+  font-weight: 700;
+}
+li.qa > .q { flex: 1 1 260px; line-height: 1.55; }
+
+/* nút đáp án: nằm cuối dòng câu hỏi */
+li.qa > details.ans {
+  flex: 0 0 auto;
+  margin: 0 0 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+li.qa > details.ans[open] { flex: 1 1 100%; margin-left: 0; padding-bottom: 0; }
+details.ans > summary {
+  display: inline-block;
+  padding: 2px 11px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+details.ans > summary::before { content: "👁"; margin-right: 5px; }
+details.ans[open] > summary {
+  color: var(--accent-text);
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+details.ans[open] > summary::before { content: "🙈"; }
+
+/* đáp án: khối màu, thụt vào, không thể lẫn với câu hỏi */
+details.ans > .a {
+  display: block;
+  margin: 9px 0 1px;
+  padding: 10px 13px;
+  background: var(--accent-bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 9px 9px 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+details.ans > .a b {
+  color: var(--accent-text);
+  font-size: 15.5px;
+  letter-spacing: -.01em;
+}
+details.ans > .a em { color: var(--text-dim); }
+
+/* thẻ đang mở đáp án -> viền accent, tách hẳn khỏi mấy thẻ chưa mở */
+li.qa:has(> details.ans[open]) {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+li.qa:has(> details.ans[open])::before {
+  border-color: var(--accent);
+  color: var(--accent-text);
+  background: var(--accent-bg);
+}
+
+@media (max-width: 560px) {
+  li.qa { padding: 10px 12px 10px 40px; }
+  li.qa::before { left: 9px; width: 22px; height: 22px; }
+  li.qa > details.ans { margin-left: 0; }
+}
+
+@media print {
+  li.qa { break-inside: avoid; }
 }

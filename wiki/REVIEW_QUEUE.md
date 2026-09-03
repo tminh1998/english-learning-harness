@@ -27,6 +27,8 @@
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
+**⚙️ Đổi luật 2026-09-04 — khối "Ôn nhanh đầu giờ" của `/hoc`:** phần bốc ngẫu nhiên **10 → 20 từ** (tổng **25 từ**/buổi: 5 từ buổi liền trước + 20 bốc ngẫu). Vốn từ đã qua 90 từ nên bốc 10 thì mỗi từ chỉ quay lại sau ~9 buổi; bốc 20 rút xuống ~4-5 buổi. Đổi lại trang dài gấp đôi, nên kèm hai thay đổi giao diện: **cả cụm ôn nhanh gập lại được và mặc định ĐANG ẨN** (vào trang thấy 5 từ mới trước, bấm mới mở phần ôn), và **đáp án đi theo từng câu** — mỗi câu một thẻ có số riêng + nút `👁 đáp án` ở cuối dòng, thay cho khối đáp án gộp ở cuối trước đây. Vẫn là hỏi-tự-trả-lời nên **không đổi bậc** ở bảng này. Luật đầy đủ: R9 trong `AGENTS.md`. Áp dụng từ bài học kế tiếp (bài 2026-09-03 giữ nguyên 15 từ).
+
 **⚙️ Đổi luật 2026-08-26 — khối "Ôn nhanh đầu giờ" của `/hoc`:** từ **8 từ / lô hạn cũ nhất** → **15 từ**, chia cố định: **5 từ của buổi liền trước** + **10 từ bốc ngẫu nhiên** trong toàn bộ `VOCAB_INDEX.md` (bốc bằng lệnh `awk+rand`, không bốc bằng mắt). Quét theo lô làm lô cũ bị hỏi lặp còn lô vừa học xong cả tuần không được đụng tới; bốc ngẫu nhiên thì mọi từ đều có cơ hội quay lại. Luật đầy đủ: R9 trong `AGENTS.md`. Harness cũng **bỏ hẳn phần ngữ pháp** kể từ ngày này.
 
 **Tới hạn hôm nay (2026-09-01): 80 từ** — toàn bộ vốn từ cũ, lô cũ nhất là 2026-08-14 (deprecate · workaround · clarify · follow up · come across)

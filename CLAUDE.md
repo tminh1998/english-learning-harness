@@ -90,24 +90,31 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
    cũng phải có một từ cũ. Đánh dấu bằng `<span class="rev">…</span>` (HTML) / `_từ cũ_`
    (md) — **không** in đậm. Trùng mặt chữ mà khác nghĩa thì không tính. Chỉ buổi #1 được miễn.
 
-8. **Ôn nhanh đầu giờ = 15 từ, chia 5 + 10 (R9)** — áp dụng từ **2026-08-26**.
-   **5** từ đầu là đúng 5 từ của **buổi liền trước**; **10** từ sau **bốc ngẫu nhiên
+8. **Ôn nhanh đầu giờ = 25 từ, chia 5 + 20, KHỐI GẬP MẶC ĐỊNH ĐÓNG (R9)** — 15 từ
+   từ **2026-08-26**, nâng lên 25 từ **2026-09-04**.
+   **5** từ đầu là đúng 5 từ của **buổi liền trước**; **20** từ sau **bốc ngẫu nhiên
    bằng lệnh** trong toàn bộ `wiki/VOCAB_INDEX.md` (không phải chỉ từ tới hạn, và
    **không** bốc bằng mắt — agent tự chọn thì luôn trúng mấy từ ở đầu bảng):
 
    ```bash
    grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
      | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
-     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -10
+     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
    ```
 
-   Trên trang để **hai phần riêng**, ghi rõ phần nào là bài hôm qua, phần nào là bốc ngẫu.
+   Trên trang để **hai phần riêng**, ghi rõ phần nào là bài hôm qua, phần nào là bốc
+   ngẫu. Và **cả cụm** bọc trong `<details class="warm-toggle">` **không có `open`**
+   — vào trang là đang ẩn, bấm mới mở. `<details>` gốc của trình duyệt, **không viết
+   JS** (trang hay mở bằng `file://`). Bản `.md` cũng bọc `<details>` ngoài cùng.
+   **Đáp án đi theo từng câu**, không gộp ở cuối: `<ol class="ex qa-list">` →
+   `<li class="qa">` → `<span class="q">` + `<details class="ans">` (nút 👁, không
+   `open`, không `id`) → `<span class="a hide-me">`.
 
 ## Checklist đóng một buổi học (R3 + R6 — thiếu 1 là chưa xong)
 
 ```
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
-[ ] 15 từ ôn nhanh: 5 buổi trước + 10 bốc BẰNG LỆNH   R9 — hai phần để riêng
+[ ] 25 từ ôn nhanh: 5 buổi trước + 20 bốc BẰNG LỆNH   R9 — khối ĐÓNG, đáp án theo TỪNG câu
 [ ] wiki/lessons/<tuần>/<ngày>.md          ôn nhanh + 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
@@ -129,7 +136,9 @@ bài cũ. Trang có 4 tính năng: nút 🔊 phát âm (Web Speech API, offline)
 tập" che mờ phần tiếng Việt (class `hide-me`), và nút sáng/tối.
 
 Cấu trúc một trang bài học: `header.hero` → `.toolbar` → `section.block` (Ôn nhanh
-đầu giờ, **hai phần: 5 từ buổi trước + 10 từ bốc ngẫu**) → 5 × `article.word` →
+đầu giờ — bọc `<details class="warm-toggle">` không `open`, trong có **hai phần:
+5 từ buổi trước + 20 từ bốc ngẫu**, mỗi câu một `li.qa` kèm `details.ans` riêng)
+→ 5 × `article.word` →
 `section.block` (Mẩu đọc) → `section.block` (Bài tập) → `footer`.
 
 ## Chạy trên Claude Code on the web
@@ -165,11 +174,17 @@ trong chat, và `LINK-WEB` là bình thường chứ không phải lỗi.
 `/on-tap` và `/kiem-tra` **không** tự động hoá được — chúng cần user trả lời mới
 chấm điểm và cập nhật bậc trong REVIEW_QUEUE được.
 
-✅ **2026-08-26 — prompt của cả hai routine ĐÃ được viết lại** cho khớp luật mới
-(bỏ ngữ pháp + ôn nhanh 15 từ). ID để tra sau: `/hoc` = `trig_01QfWZkEggCXjyrR4nKvaM3U`,
-`/on-tap-tuan` = `trig_01DeXAVcCXsfXb3B62b9wKEq`. Lần sau đổi luật trong repo thì
-**vẫn phải sửa tay ở cả hai chỗ** — prompt routine không nằm trong repo, sửa file
-ở đây không tự đổi nó. Sửa bằng `/schedule` hoặc tại claude.ai/code/routines.
+⚠️ **2026-09-04 — prompt routine `/hoc` ĐANG LỆCH luật R9 mới.** Nó vẫn dặn "ôn nhanh
+15 từ, 5 + 10". Repo đã lên **25 từ (5 + 20) + khối gập mặc định đóng** nhưng prompt
+routine **không nằm trong repo** nên không tự đổi — phải sửa tay, nếu không bài do
+routine 7h sáng sinh ra sẽ sai luật.
+
+ID để tra: `/hoc` = `trig_01QfWZkEggCXjyrR4nKvaM3U`,
+`/on-tap-tuan` = `trig_01DeXAVcCXsfXb3B62b9wKEq` (routine ôn tuần không đụng khối ôn
+nhanh nên không ảnh hưởng). Sửa bằng `/schedule` hoặc tại claude.ai/code/routines.
+
+_(2026-08-26: cả hai prompt đã được viết lại một lần cho luật bỏ ngữ pháp + ôn nhanh
+15 từ. Cứ đổi luật trong repo là phải sửa tay ở cả hai chỗ.)_
 
 ### Không branch, không PR
 

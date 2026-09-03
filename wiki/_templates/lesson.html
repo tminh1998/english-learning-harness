@@ -41,40 +41,56 @@
   <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
 </div>
 
-<!-- ══ A. ÔN NHANH ĐẦU GIỜ — 15 TỪ ═══════════════════════════════════════
-     ⛔ R9: 15 từ, chia CỐ ĐỊNH hai phần (config `review.warmup`):
+<!-- ══ A. ÔN NHANH ĐẦU GIỜ — 25 TỪ ═══════════════════════════════════════
+     ⛔ R9: 25 từ, chia CỐ ĐỊNH hai phần (config `review.warmup`):
         · Phần A = ĐÚNG 5 từ của buổi LIỀN TRƯỚC.
-        · Phần B = 10 từ bốc NGẪU NHIÊN trong TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên).
+        · Phần B = 20 từ bốc NGẪU NHIÊN trong TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên).
           Bốc BẰNG LỆNH awk+rand — agent tự "chọn ngẫu nhiên" thì luôn trúng mấy từ
           ở đầu bảng.
-     Hỏi gợi nhớ bằng tiếng Việt; đáp án bọc <details> + .hide-me (R2). -->
+     ⛔ Cả khối bọc trong <details class="warm-toggle"> và KHÔNG có thuộc tính
+        `open` — vào trang là khối đang ẩn, người học bấm mới mở. Đừng thêm `open`.
+     ⛔ ĐÁP ÁN ĐI THEO TỪNG CÂU, không gộp ở cuối khối nữa (đổi 2026-09-04):
+        · <ol class="ex qa-list"> — nhớ class `qa-list`, thiếu là mất số thứ tự.
+        · mỗi câu là <li class="qa"> gồm ĐÚNG hai con: <span class="q"> (câu hỏi
+          tiếng Việt) và <details class="ans"> (nút 👁 + đáp án). Không thêm con
+          thứ ba, layout flex sẽ vỡ.
+        · đáp án là <span class="a hide-me"> — .hide-me để "Chế độ ôn tập" che được
+          (R2), <b> quanh từ tiếng Anh, <em> quanh câu ví dụ ngắn.
+        · <details class="ans"> KHÔNG có `open`, và KHÔNG cần id — đừng thêm.
+     Hỏi gợi nhớ bằng tiếng Việt. -->
 <section class="block warmup">
-  <h2>Ôn nhanh đầu giờ <span class="cnt">15 từ</span></h2>
-  <p class="sub">Tự trả lời rồi mới mở đáp án. Phần B bốc ngẫu nhiên trong cả vốn từ — quên vài từ là bình thường.</p>
+  <details class="warm-toggle">
+    <summary>
+      <h2>Ôn nhanh đầu giờ <span class="cnt">25 từ</span></h2>
+      <span class="wt-state"></span><!-- chữ do CSS sinh, để RỖNG -->
+    </summary>
 
-  <div class="warm-part">
-    <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — {{YYYY-MM-DD}}</div>
-    <ol class="ex">
-      <li>{{câu gợi nhớ 1}}</li>
-      <!-- … đủ 5 câu … -->
-    </ol>
-  </div>
+    <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B bốc ngẫu nhiên trong cả vốn từ — quên vài từ là bình thường.</p>
 
-  <div class="warm-part">
-    <div class="wp-head"><span class="wp-tag b">B</span>10 từ bốc ngẫu nhiên trong cả vốn từ</div>
-    <ol class="ex">
-      <li>{{câu gợi nhớ 1}}</li>
-      <!-- … đủ 10 câu … -->
-    </ol>
-  </div>
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — {{YYYY-MM-DD}}</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">{{câu gợi nhớ bằng tiếng Việt}}</span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></span>
+          </details>
+        </li>
+        <!-- … đủ 5 câu … -->
+      </ol>
+    </div>
 
-  <details>
-    <summary>Đáp án</summary>
-    <div class="hide-me">
-      <p><b>A — buổi trước</b></p>
-      <ol><li><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></li></ol>
-      <p><b>B — bốc ngẫu nhiên</b></p>
-      <ol><li><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></li></ol>
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag b">B</span>20 từ bốc ngẫu nhiên trong cả vốn từ</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">{{câu gợi nhớ bằng tiếng Việt}}</span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></span>
+          </details>
+        </li>
+        <!-- … đủ 20 câu … -->
+      </ol>
     </div>
   </details>
 </section>

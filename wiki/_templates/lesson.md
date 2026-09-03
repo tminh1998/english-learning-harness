@@ -3,31 +3,34 @@
 > Mix: 2 IT · 2 Business · 1 Life — theo `.learning-config.yml` → `daily.mix`
 > Đã kiểm tra trùng: {{5 từ}} — không trùng VOCAB_INDEX ({{N}} từ)
 
-## Ôn nhanh đầu giờ — 15 từ
+## Ôn nhanh đầu giờ — 25 từ
 
-<!-- ⛔ R9: 15 từ, chia CỐ ĐỊNH hai phần (config `review.warmup`).
+<!-- ⛔ R9: 25 từ, chia CỐ ĐỊNH hai phần (config `review.warmup`).
      · Phần A = ĐÚNG 5 từ của buổi LIỀN TRƯỚC.
-     · Phần B = 10 từ bốc NGẪU NHIÊN trong TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên),
+     · Phần B = 20 từ bốc NGẪU NHIÊN trong TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên),
        bốc BẰNG LỆNH awk+rand, không bốc bằng mắt.
-     Hỏi gợi nhớ bằng tiếng Việt, đáp án bọc <details>. -->
+     ⛔ Cả khối gói trong <details> ngoài cùng, KHÔNG có `open` — mở file ra là
+     khối đang ẩn, khớp với bản HTML.
+     ⛔ ĐÁP ÁN ĐI THEO TỪNG CÂU (đổi 2026-09-04), không gộp ở cuối nữa: mỗi câu
+     là một dòng đánh số, đáp án nằm trong <details> ngay dưới dòng đó, thụt vào
+     3 dấu cách cho khớp danh sách. Đúng khuôn dưới đây, đừng đổi cách thụt lề —
+     lệch một cái là GitHub render vỡ danh sách. -->
+
+<details><summary><b>Bấm để mở phần ôn nhanh — 25 từ</b></summary>
 
 ### A. 5 từ của buổi trước ({{YYYY-MM-DD}})
 
-1. {{câu gợi nhớ}}
+1. {{câu gợi nhớ bằng tiếng Việt}}
+   <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></details>
 
-### B. 10 từ bốc ngẫu nhiên trong cả vốn từ
+<!-- … đủ 5 câu … -->
 
-1. {{câu gợi nhớ}}
+### B. 20 từ bốc ngẫu nhiên trong cả vốn từ
 
-<details><summary>Đáp án</summary>
+1. {{câu gợi nhớ bằng tiếng Việt}}
+   <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></details>
 
-**A — buổi trước ({{YYYY-MM-DD}})**
-
-1. **{{từ}}** — *"{{câu ví dụ ngắn}}"*
-
-**B — bốc ngẫu nhiên**
-
-1. **{{từ}}** — *"{{câu ví dụ ngắn}}"*
+<!-- … đủ 20 câu … -->
 
 </details>
 

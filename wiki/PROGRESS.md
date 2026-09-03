@@ -44,6 +44,30 @@
 | -------- | --------------------------- | ---- | ------- | ------ |
 | 2026-W33 | _(chưa làm — Chủ nhật 2026-08-16 routine chỉ sinh bảng ôn `recap/2026-W33`; `/kiem-tra` cần user trả lời nên phải gõ tay)_ | —    | —       | —      |
 
+## Đổi luật 2026-09-04 — ôn nhanh lên 25 từ, cả cụm ẩn mặc định
+
+Người học chốt: phần **bốc ngẫu nhiên** của khối "Ôn nhanh đầu giờ" nâng **10 → 20 từ**
+(tổng **25 từ**/buổi, phần A vẫn đúng 5 từ của buổi liền trước). Vốn từ đã qua 90 từ,
+bốc 10 mỗi buổi thì một từ chỉ quay lại sau khoảng 9 buổi — quá thưa. Bốc 20 rút còn
+4-5 buổi.
+
+Cái giá là trang bài học dài gấp đôi trước khi tới 5 từ mới, nên đi kèm hai thay đổi
+giao diện:
+
+1. **Cả cụm ôn nhanh bọc trong `<details class="warm-toggle">`, mặc định ĐANG ĐÓNG** —
+   vào trang thấy bài mới trước, ôn tập là cái người học chủ động bấm mở.
+2. **Đáp án đi theo từng câu**, không gộp một khối ở cuối nữa. Mỗi câu là một thẻ có
+   số thứ tự riêng, nút `👁 đáp án` ở cuối dòng; bấm thì đáp án hiện ngay trong thẻ
+   đó (nền accent, vạch màu bên trái, viền thẻ đổi sang accent). Trước đây 25 câu mà
+   đáp án dồn xuống cuối thì phải cuộn đi cuộn lại và đếm ngược xem câu 14 ứng với
+   dòng nào — sai dòng là học sai từ.
+
+Cả hai đều dùng `<details>` gốc của trình duyệt, không JS, để không hỏng khi mở bằng
+`file://`. Duyệt mẫu ngày 2026-09-03 (thư mục `demo/`, đã xoá sau khi chốt).
+
+Áp dụng **từ bài học kế tiếp**; bài 2026-09-03 và các bài cũ giữ nguyên 15 từ, hiện sẵn.
+Luật đầy đủ: R9 trong `AGENTS.md`.
+
 ## Đổi luật 2026-08-26 — bỏ ngữ pháp, ôn nhanh lên 15 từ
 
 Người học chốt: harness **không dạy ngữ pháp nữa**. Bỏ hẳn khối "Ngữ pháp hôm nay",
