@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 90 từ đã học** · IT 36 · Business 36 · Life 18 · ad-hoc 0
+**Tổng: 95 từ đã học** · IT 38 · Business 38 · Life 19 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-02
+**Cập nhật:** 2026-09-03
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -109,6 +109,11 @@
 | 88 | defer | defers, deferred, deferring, deferral, deferment, defer to | verb | Business | gác lại làm sau, kiểu trang trọng | 2026-09-02 | lesson |
 | 89 | ramp up | ramps up, ramped up, ramping up, ramp-up, ramp down | phrasal verb | Business | tăng dần lên từng nấc | 2026-09-02 | lesson |
 | 90 | worn out | wear out, wears out, wore out, worn-out, wear yourself out | adjective (dạng động từ: wear out) | Life | mệt rã rời; đồ thì mòn hỏng | 2026-09-02 | lesson |
+| 91 | backport | backports, backported, backporting, a backport, backportable, forward-port | verb (cũng là noun) | IT | bê bản vá về nhánh cũ khách đang chạy | 2026-09-03 | lesson |
+| 92 | smoke test | smoke tests, smoke-test, smoke-tested, smoke testing, smoke test suite | noun (cũng dùng như verb) | IT | test nhanh một lượt xem còn sống không | 2026-09-03 | lesson |
+| 93 | iron out | irons out, ironed out, ironing out, iron sth out, iron out the kinks | phrasal verb | Business | gỡ nốt mấy chỗ còn vướng | 2026-09-03 | lesson |
+| 94 | action item | action items, action point, actionable, take action | noun (đếm được) | Business | đầu việc chốt sau họp, có tên người làm | 2026-09-03 | lesson |
+| 95 | grab a bite | grabs a bite, grabbed a bite, grabbing a bite, grab a bite to eat, grab a coffee, up for grabs | idiom (cụm động từ) | Life | đi kiếm gì ăn nhanh một cái | 2026-09-03 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
