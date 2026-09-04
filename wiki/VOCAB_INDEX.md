@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 95 từ đã học** · IT 38 · Business 38 · Life 19 · ad-hoc 0
+**Tổng: 100 từ đã học** · IT 40 · Business 40 · Life 20 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-03
+**Cập nhật:** 2026-09-04
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -114,6 +114,11 @@
 | 93 | iron out | irons out, ironed out, ironing out, iron sth out, iron out the kinks | phrasal verb | Business | gỡ nốt mấy chỗ còn vướng | 2026-09-03 | lesson |
 | 94 | action item | action items, action point, actionable, take action | noun (đếm được) | Business | đầu việc chốt sau họp, có tên người làm | 2026-09-03 | lesson |
 | 95 | grab a bite | grabs a bite, grabbed a bite, grabbing a bite, grab a bite to eat, grab a coffee, up for grabs | idiom (cụm động từ) | Life | đi kiếm gì ăn nhanh một cái | 2026-09-03 | lesson |
+| 96 | canary release | canary, canary deploy, canary deployment, canarying, release, released, releasing | noun phrase | IT | thả bản mới cho ít user trước, ổn rồi mới mở hết | 2026-09-04 | lesson |
+| 97 | downstream | upstream, downstream service, downstream consumer, downstream impact, further downstream | adjective (cũng là adverb) | IT | phía sau, bên nhận đồ mình đẩy ra | 2026-09-04 | lesson |
+| 98 | recap | recaps, recapped, recapping, a recap of, recapitulate | verb (cũng là noun) | Business | tóm nhanh lại mấy ý chính | 2026-09-04 | lesson |
+| 99 | bear with | bears with, bore with, borne with, bearing with, bear with me/us | phrasal verb | Business | thông cảm chờ chút | 2026-09-04 | lesson |
+| 100 | under the weather | feel under the weather, a bit under the weather, be under the weather | idiom | Life | người ngâm ngẩm, mệt mệt | 2026-09-04 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
