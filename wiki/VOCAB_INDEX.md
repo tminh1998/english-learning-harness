@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 100 từ đã học** · IT 40 · Business 40 · Life 20 · ad-hoc 0
+**Tổng: 105 từ đã học** · IT 42 · Business 42 · Life 21 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-04
+**Cập nhật:** 2026-09-05
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -119,6 +119,11 @@
 | 98 | recap | recaps, recapped, recapping, a recap of, recapitulate | verb (cũng là noun) | Business | tóm nhanh lại mấy ý chính | 2026-09-04 | lesson |
 | 99 | bear with | bears with, bore with, borne with, bearing with, bear with me/us | phrasal verb | Business | thông cảm chờ chút | 2026-09-04 | lesson |
 | 100 | under the weather | feel under the weather, a bit under the weather, be under the weather | idiom | Life | người ngâm ngẩm, mệt mệt | 2026-09-04 | lesson |
+| 101 | latency | latencies, latent, low-latency, high-latency, latency spike | noun (không đếm được) | IT | độ trễ — bấm xong bao lâu mới có kết quả | 2026-09-05 | lesson |
+| 102 | stub | stubs, stubbed, stubbing, stub out, stub data, a stub implementation | noun (cũng là verb) | IT | bản giả tạm, chờ bản thật | 2026-09-05 | lesson |
+| 103 | onboarding | onboard, onboards, onboarded, offboarding, client onboarding | noun (động từ: onboard) | Business | đưa khách/người mới vào guồng | 2026-09-05 | lesson |
+| 104 | pencil in | pencils in, pencilled in, penciled in, pencilling in, pencil sb in for | phrasal verb | Business | ghi tạm vào lịch, chưa chốt | 2026-09-05 | lesson |
+| 105 | run errands | errand, errands, run an errand, errand boy, fool's errand | idiom (cụm động từ) | Life | chạy việc vặt | 2026-09-05 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
