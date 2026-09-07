@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-05: 100 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-07: 105 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -26,6 +26,7 @@
 - hạn 2026-09-03 — culprit · spike · defer · ramp up · worn out
 - hạn 2026-09-04 — backport · smoke test · iron out · action item · grab a bite
 - hạn 2026-09-05 — canary release · downstream · recap · bear with · under the weather
+- hạn 2026-09-06 — latency · stub · onboarding · pencil in · run errands
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
@@ -152,6 +153,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | onboarding | 1 | 2026-09-06 | 0 | 0 | 2026-09-05 |
 | pencil in | 1 | 2026-09-06 | 0 | 0 | 2026-09-05 |
 | run errands | 1 | 2026-09-06 | 0 | 0 | 2026-09-05 |
+| propagate | 1 | 2026-09-08 | 0 | 0 | 2026-09-07 |
+| resilient | 1 | 2026-09-08 | 0 | 0 | 2026-09-07 |
+| weigh in | 1 | 2026-09-08 | 0 | 0 | 2026-09-07 |
+| discrepancy | 1 | 2026-09-08 | 0 | 0 | 2026-09-07 |
+| doze off | 1 | 2026-09-08 | 0 | 0 | 2026-09-07 |
 
 ## Đã thuộc (bậc 5, đúng)
 

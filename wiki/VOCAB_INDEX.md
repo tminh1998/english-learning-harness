@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 105 từ đã học** · IT 42 · Business 42 · Life 21 · ad-hoc 0
+**Tổng: 110 từ đã học** · IT 44 · Business 44 · Life 22 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-05
+**Cập nhật:** 2026-09-07
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -124,6 +124,11 @@
 | 103 | onboarding | onboard, onboards, onboarded, offboarding, client onboarding | noun (động từ: onboard) | Business | đưa khách/người mới vào guồng | 2026-09-05 | lesson |
 | 104 | pencil in | pencils in, pencilled in, penciled in, pencilling in, pencil sb in for | phrasal verb | Business | ghi tạm vào lịch, chưa chốt | 2026-09-05 | lesson |
 | 105 | run errands | errand, errands, run an errand, errand boy, fool's errand | idiom (cụm động từ) | Life | chạy việc vặt | 2026-09-05 | lesson |
+| 106 | propagate | propagation, propagated, propagating, propagator, stopPropagation, non-propagating | verb | IT | lan ra khắp hệ thống | 2026-09-07 | lesson |
+| 107 | resilient | resilience, resiliency, resiliently, non-resilient | adjective | IT | chịu đòn tốt, gãy xong tự dậy | 2026-09-07 | lesson |
+| 108 | weigh in | weighs in, weighed in, weighing in, a weigh-in, weigh up, outweigh | phrasal verb | Business | vào cho ý kiến | 2026-09-07 | lesson |
+| 109 | discrepancy | discrepancies, discrepant | noun (đếm được) | Business | chỗ vênh giữa hai con số | 2026-09-07 | lesson |
+| 110 | doze off | dozes off, dozed off, dozing off, a doze, dozy | phrasal verb | Life | ngủ gật | 2026-09-07 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
