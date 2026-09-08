@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 110 từ đã học** · IT 44 · Business 44 · Life 22 · ad-hoc 0
+**Tổng: 115 từ đã học** · IT 46 · Business 46 · Life 23 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-07
+**Cập nhật:** 2026-09-08
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -129,6 +129,11 @@
 | 108 | weigh in | weighs in, weighed in, weighing in, a weigh-in, weigh up, outweigh | phrasal verb | Business | vào cho ý kiến | 2026-09-07 | lesson |
 | 109 | discrepancy | discrepancies, discrepant | noun (đếm được) | Business | chỗ vênh giữa hai con số | 2026-09-07 | lesson |
 | 110 | doze off | dozes off, dozed off, dozing off, a doze, dozy | phrasal verb | Life | ngủ gật | 2026-09-07 | lesson |
+| 111 | provision | provisions, provisioned, provisioning, de-provision, over-provision, re-provision | verb | IT | dựng sẵn, cấp đủ đồ cho chạy được | 2026-09-08 | lesson |
+| 112 | bump | bumps, bumped, bumping, a bump, version bump, bump up | verb (cũng là noun) | IT | nâng lên một nấc — hay nhất là số version | 2026-09-08 | lesson |
+| 113 | run by | runs by, ran by, running by, run sth by sb, run sth past sb | phrasal verb | Business | đưa xem hỏi ý trước khi làm | 2026-09-08 | lesson |
+| 114 | short notice | at short notice, on short notice, at a moment's notice, give notice, notice period, without notice | idiom (cụm danh từ) | Business | báo sát giờ, không kịp trở tay | 2026-09-08 | lesson |
+| 115 | put up with | puts up with, put up with, putting up with, put up | phrasal verb | Life | chịu đựng cho qua | 2026-09-08 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
