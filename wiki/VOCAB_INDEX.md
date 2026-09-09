@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 115 từ đã học** · IT 46 · Business 46 · Life 23 · ad-hoc 0
+**Tổng: 120 từ đã học** · IT 48 · Business 48 · Life 24 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-08
+**Cập nhật:** 2026-09-09
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -134,6 +134,11 @@
 | 113 | run by | runs by, ran by, running by, run sth by sb, run sth past sb | phrasal verb | Business | đưa xem hỏi ý trước khi làm | 2026-09-08 | lesson |
 | 114 | short notice | at short notice, on short notice, at a moment's notice, give notice, notice period, without notice | idiom (cụm danh từ) | Business | báo sát giờ, không kịp trở tay | 2026-09-08 | lesson |
 | 115 | put up with | puts up with, put up with, putting up with, put up | phrasal verb | Life | chịu đựng cho qua | 2026-09-08 | lesson |
+| 116 | dry run | dry-run, dry runs, --dry-run, dry-run mode | noun | IT | chạy thử, không ăn dữ liệu thật | 2026-09-09 | lesson |
+| 117 | snapshot | snapshots, snapshotting, to snapshot, snapshot testing, point-in-time snapshot | noun (cũng là verb) | IT | bản chụp một thời điểm, đứng yên | 2026-09-09 | lesson |
+| 118 | narrow down | narrows down, narrowed down, narrowing down, narrow it down to, narrow (adj) | phrasal verb | Business | lọc lại còn vài cái | 2026-09-09 | lesson |
+| 119 | lead time | lead times, long-lead-time, lead-time estimate | noun | Business | cần báo trước bao lâu mới có | 2026-09-09 | lesson |
+| 120 | hit it off | hits it off, hitting it off, hit it off with | phrasal verb (idiom) | Life | vừa gặp đã hợp nhau | 2026-09-09 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
