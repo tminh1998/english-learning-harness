@@ -490,6 +490,65 @@ section.warmup h2 .cnt {
 }
 .wp-tag.a { background: var(--accent); }
 .wp-tag.b { background: var(--text-dim); }
+/* ── Nút đổi chiều ôn: Anh->Việt / Việt->Anh (từ 2026-09-09) ──────────
+   Khối HTML bài học vẫn viết một chiều (hỏi Việt -> đáp Anh); lesson.js dựng
+   chiều còn lại rồi CHÈN nút này vào ngay dưới .sub. Mặc định Anh -> Việt.
+   Trang không chạy JS thì không có nút, và bài học hiện y như trước. */
+.dir-switch {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin: 12px 0 2px;
+}
+.ds-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--text-dim);
+  margin-right: 2px;
+}
+.dir-switch .ds-btn {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: .15s;
+}
+.dir-switch .ds-btn:hover { border-color: var(--accent); color: var(--accent); }
+.dir-switch .ds-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* chiều Anh -> Việt: câu hỏi chính là TỪ tiếng Anh, cho nổi hẳn lên */
+li.qa > .q .w-en {
+  font-weight: 700;
+  font-size: 16.5px;
+  letter-spacing: -.01em;
+  color: var(--accent-text);
+}
+li.qa > .q button.say {
+  font-size: 13px;
+  padding: 3px 7px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+/* đáp án lúc này là nghĩa Việt -> chữ thường, không to như từ tiếng Anh */
+details.ans > .a b.vi-ans {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+@media print { .dir-switch { display: none; } }
+
 .warmup details p { margin: 12px 0 6px; font-size: 14px; }
 .warmup details p:first-child { margin-top: 0; }
 

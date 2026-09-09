@@ -306,7 +306,14 @@ từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định là
    che được (R2). Đáp án mỗi từ = từ tiếng Anh + một câu ví dụ ngắn, không chép
    lại cả bài cũ.
 7. **Không đủ 20 từ cũ** (những buổi đầu) → lấy hết những gì có, không bịa thêm từ.
-8. Đây **không** thay `/on-tap`: khối này hỏi-tự-trả-lời trên trang nên không lên
+8. ⭐ **Hai chiều hỏi, mặc định Anh → Việt** (thêm 2026-09-09). Trên trang có nút
+   *Chiều ôn*: **Anh → Việt** (hiện từ tiếng Anh + nút 🔊, đáp án là nghĩa Việt) và
+   **Việt → Anh** (đúng như file viết ra). Việc của người soạn bài **không đổi gì**:
+   cứ viết câu hỏi tiếng Việt + đáp án `<b>từ</b> — <em>ví dụ</em>` như cũ,
+   `wiki/assets/lesson.js` tự dựng chiều ngược lại từ chính hai mẩu đó và tự chèn
+   nút vào. Đừng viết tay nút này vào file bài học, cũng đừng nhân đôi dữ liệu.
+   Lựa chọn của người học nhớ trong `localStorage` (`en-warm-dir`).
+9. Đây **không** thay `/on-tap`: khối này hỏi-tự-trả-lời trên trang nên không lên
    xuống bậc trong `{reviewQueue}`. Muốn đổi bậc thì vẫn phải gõ `/on-tap`.
 
 Lý do đổi (2026-08-26, cũ: 8 từ, luôn lấy lô hạn cũ nhất): quét theo lô làm lô cũ bị

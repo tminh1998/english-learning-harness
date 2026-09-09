@@ -133,7 +133,9 @@ CSS/JS **dùng chung** ở `wiki/assets/`. Trang bài học chỉ `<link>` tới
 `../../assets/lesson.css` và `<script src="../../assets/lesson.js">` — **tuyệt đối
 không nhúng style vào từng bài**, nếu không thì đổi giao diện phải sửa lại toàn bộ
 bài cũ. Trang có 4 tính năng: nút 🔊 phát âm (Web Speech API, offline), "Chế độ ôn
-tập" che mờ phần tiếng Việt (class `hide-me`), và nút sáng/tối.
+tập" che mờ phần tiếng Việt (class `hide-me`), nút sáng/tối, và **nút đổi chiều ôn
+nhanh** (Anh → Việt mặc định / Việt → Anh — JS tự dựng và tự chèn, file bài học
+không viết gì thêm; xem R9 mục 8).
 
 Cấu trúc một trang bài học: `header.hero` → `.toolbar` → `section.block` (Ôn nhanh
 đầu giờ — bọc `<details class="warm-toggle">` không `open`, trong có **hai phần:
