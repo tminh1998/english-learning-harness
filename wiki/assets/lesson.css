@@ -611,6 +611,20 @@ li.qa::before {
 }
 li.qa > .q { flex: 1 1 260px; line-height: 1.55; }
 
+/* Câu hỏi ôn nhanh là ĐÚNG khối nghĩa .vi-quick chép từ bài gốc (R9 mục 6):
+   dòng nghĩa gọn + dòng phụ .alt ngay dưới. Trông phải giống hệt khối nghĩa
+   trong bài học, chỉ nhỏ hơn cho vừa một dòng danh sách. */
+li.qa > .q .alt,
+details.ans > .a.vi-ans .alt,
+details.ans > .a .alt {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-dim);
+}
+
 /* nút đáp án: nằm cuối dòng câu hỏi */
 li.qa > details.ans {
   flex: 0 0 auto;

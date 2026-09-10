@@ -262,7 +262,7 @@ Cách tự kiểm trước khi đóng buổi: với **từng câu** ví dụ, ch
 
 ---
 
-### R9 — Ôn nhanh đầu giờ: 25 từ, nghĩa CHÉP TỪ BÀI GỐC, khối gập mặc định ĐÓNG
+### R9 — Ôn nhanh đầu giờ: 25 từ, hỏi bằng ĐÚNG khối nghĩa của bài gốc
 
 Từ **2026-08-26**, khối "Ôn nhanh đầu giờ" của mỗi buổi `/hoc` là một khối hỏi lại
 từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định làm hai phần
@@ -302,37 +302,43 @@ từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định là
    để `<details>` ngay dưới dòng đánh số, thụt vào 3 dấu cách.
    Vì sao: 25 câu mà đáp án dồn xuống cuối thì phải cuộn đi cuộn lại và đếm ngược
    xem câu 14 ứng với dòng nào — sai dòng là học sai từ.
-6. ⭐ **Nghĩa và ví dụ phải CHÉP LẠI TỪ BÀI GỐC, không được soạn lại** (đổi
-   2026-09-10). Hỏi gợi nhớ bằng tiếng Việt, đáp án luôn có `.hide-me` để "Chế độ
-   ôn tập" che được (R2). Nhưng nội dung hai vế **không** do agent nghĩ ra mỗi buổi:
+6. ⭐ **Câu hỏi = ĐÚNG khối nghĩa `.vi-quick` của bài đã dạy từ đó** (đổi 2026-09-10).
+   Mỗi từ trong trang bài học có sẵn một khối nghĩa hai dòng — dòng đậm là nghĩa
+   gọn, dòng nhỏ dưới nói rõ thêm:
 
-   | Vế | Lấy ở đâu | Lệnh |
-   |---|---|---|
-   | Câu hỏi gợi nhớ | **câu đầu dòng `**VI**`** trong bài học đã dạy từ đó | dòng `HOI` |
-   | Ví dụ trong đáp án | **câu ví dụ #1** của chính bài đó (bỏ markup) | dòng `VD` |
+   ```html
+   <p class="vi-quick hide-me">xoá sạch một loạt<span class="alt">dọn trắng theo một tiêu chí, không chừa cái nào</span></p>
+   ```
 
-   Lấy bằng lệnh, **không lấy bằng mắt** — cùng lý do với luật 1:
+   Đó là bản nghĩa đã chốt lúc dạy. Ôn nhanh phải hỏi **đúng bằng cụm đó**, giữ
+   nguyên cả hai dòng và giữ nguyên cả cấu trúc `<span class="alt">`:
+
+   ```html
+   <span class="q">xoá sạch một loạt<span class="alt">dọn trắng theo một tiêu chí, không chừa cái nào</span></span>
+   ```
+
+   Đáp án vẫn là `<b>từ</b> — <em>"câu ví dụ"</em>`, và **câu ví dụ cũng chép** —
+   lấy ví dụ #1 của chính bài đó. Lấy bằng lệnh, **không lấy bằng mắt**:
 
    ```bash
    # nối thẳng với lệnh bốc 20 từ ở luật 1, hoặc truyền từ làm tham số
-   sh tools/nghia.sh "dry run" "snapshot"
+   sh tools/nghia.sh "purge" "dry run"
    ```
 
-   Tool in ra `TU` (từ · nhóm · ngày học · file gốc), `HOI`, `VI` (cả dòng, để đối
-   chiếu) và `VD`. Câu đầu của `**VI**` mà cụt quá ("Bàn giao.") thì tool tự lấy
-   thêm câu thứ hai. Được phép **cắt bớt** cho gọn (bỏ vế "khác X là…", đổi dấu
-   chấm cuối thành dấu hỏi); **không** được diễn đạt lại bằng chữ của mình, và
-   không được đổi thuật ngữ đã chốt trong bài gốc.
+   Tool in ra `TU` (từ · nhóm · ngày học · file gốc), `NGHIA` (dòng đậm), `PHU`
+   (dòng `.alt`) và `VD` (câu ví dụ #1).
+
+   ⛔ **Không sửa chữ, không rút gọn, không thêm dấu hỏi.** Cụm nghĩa là bản đã
+   chốt — chỉ chép nguyên. Thấy nghĩa cũ viết chưa ổn thì **sửa ở bài gốc** rồi
+   chép lại, đừng sửa riêng trong khối ôn nhanh: sửa một chỗ là hai bản lệch nhau.
 
    Vì sao (2026-09-10, user báo): trước đây agent tự soạn câu gợi nhớ mỗi buổi nên
-   nghĩa trôi dần khỏi bài gốc — `dry run` bài gốc dạy "chạy thử một lượt cho đủ
-   các bước như thật, nhưng không ăn vào dữ liệu thật", ôn nhanh hôm sau lại hỏi
-   thành "chạy thử một lượt cho biết". Mỗi buổi lệch một chút, ba tuần sau thành
-   một từ khác. Ôn tập kiểu đó là học lại từ mới chứ không phải ôn — và người học
-   không có cách nào biết bản nào mới là bản đúng.
+   nghĩa trôi dần khỏi bài gốc — `dry run` bài gốc dạy "chạy thử, không ăn dữ liệu
+   thật", ôn nhanh hôm sau lại hỏi thành "chạy thử một lượt cho biết". Mỗi buổi
+   lệch một chút, ba tuần sau thành một từ khác. Ôn tập kiểu đó là học lại từ mới
+   chứ không phải ôn — và người học không có cách nào biết bản nào mới là bản đúng.
 
-   Từ nào tool báo `LOI` (không thấy khối trong bài gốc) → **sửa tool hoặc sửa bài
-   gốc**, đừng tự viết nghĩa thay vào.
+   Từ nào tool báo `LOI` → **sửa tool hoặc sửa bài gốc**, đừng tự viết nghĩa thay vào.
 7. **Không đủ 20 từ cũ** (những buổi đầu) → lấy hết những gì có, không bịa thêm từ.
 8. ⭐ **Hai chiều hỏi, mặc định Anh → Việt** (thêm 2026-09-09). Trên trang có nút
    *Chiều ôn*: **Anh → Việt** (hiện từ tiếng Anh + nút 🔊, đáp án là nghĩa Việt) và
@@ -365,9 +371,10 @@ Phase 0.5 ⛔ GATE R5: ls {lessons}/<tuần>/<hôm nay>*.md
          Có file -> KHÔNG sinh bài. Mở lại bài cũ, hỏi user, DỪNG tại đây.
 Phase 1  Ôn nhanh đầu giờ — 25 từ (R9): 5 từ của buổi LIỀN TRƯỚC + 20 từ BỐC
          NGẪU NHIÊN bằng lệnh trong {vocabIndex}. Rồi `sh tools/nghia.sh` cho cả
-         25 từ: câu hỏi = dòng HOI, ví dụ trong đáp án = dòng VD — CHÉP, không
-         soạn lại. Đáp án đi theo TỪNG câu (<li class="qa"> + <details class="ans">).
-         Cả khối bọc <details class="warm-toggle"> KHÔNG có `open` — vào trang là ẩn.
+         25 từ: câu hỏi = khối nghĩa .vi-quick của bài gốc (NGHIA + PHU, giữ cả
+         <span class="alt">), ví dụ trong đáp án = VD. CHÉP NGUYÊN, không soạn lại.
+         Đáp án đi theo TỪNG câu (<li class="qa"> + <details class="ans">). Cả
+         khối bọc <details class="warm-toggle"> KHÔNG có `open` — vào trang là ẩn.
 Phase 2  Chọn ứng viên: 2 IT + 2 business + 1 life, bám level
 Phase 3  ⛔ HARD GATE R1: grep {vocabIndex} từng từ. Trùng -> quay lại Phase 2
 Phase 4  Soạn bài: mỗi từ đủ mục `daily.mustInclude` + mẩu đọc + bài tập.

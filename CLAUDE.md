@@ -27,7 +27,7 @@ ENGLISH/                          ← {harness}
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
 │   │                               cfg · hnay · tuan · openit · keove · daylen
-│   ├── nghia.sh                  ← ⭐ trích NGHĨA GỐC + VÍ DỤ GỐC của từ cũ (R9)
+│   ├── nghia.sh                  ← ⭐ trích khối nghĩa .vi-quick của bài cũ (R9)
 │   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/
 │   └── setup-remote.sh           ← chạy 1 lần lúc dựng: tạo repo + bật Pages
 └── wiki/
@@ -103,18 +103,21 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
      | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
    ```
 
-   ⭐ **Nghĩa và ví dụ của 25 từ đó phải CHÉP từ bài gốc, không soạn lại** (2026-09-10).
+   ⭐ **Câu hỏi của 25 từ đó = ĐÚNG khối nghĩa `.vi-quick` của bài gốc** (2026-09-10).
    Nối thẳng đầu ra ở trên vào `tools/nghia.sh` — nó tìm bài đã dạy từ đó rồi in
-   `HOI` (câu đầu dòng `**VI**` — dùng làm câu hỏi) và `VD` (câu ví dụ #1 — dùng
-   trong ô đáp án):
+   `NGHIA` (dòng đậm), `PHU` (dòng `.alt`) và `VD` (câu ví dụ #1):
 
    ```bash
    <lệnh bốc ở trên> | sh tools/nghia.sh
-   sh tools/nghia.sh "dry run" "snapshot"      # hoặc tra lẻ
+   sh tools/nghia.sh "purge" "dry run"         # hoặc tra lẻ
    ```
 
-   Cắt bớt cho gọn thì được, viết lại bằng chữ của mình thì **không** — nghĩa trôi
-   khỏi bài gốc là ôn sai từ.
+   ```html
+   <span class="q">xoá sạch một loạt<span class="alt">dọn trắng theo một tiêu chí, không chừa cái nào</span></span>
+   ```
+
+   Chép **nguyên văn** — không sửa chữ, không rút gọn, không thêm dấu hỏi. Nghĩa cũ
+   viết chưa ổn thì sửa ở BÀI GỐC rồi chép lại, đừng sửa riêng ở khối ôn nhanh.
 
    Trên trang để **hai phần riêng**, ghi rõ phần nào là bài hôm qua, phần nào là bốc
    ngẫu. Và **cả cụm** bọc trong `<details class="warm-toggle">` **không có `open`**
@@ -129,7 +132,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 ```
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
 [ ] 25 từ ôn nhanh: 5 buổi trước + 20 bốc BẰNG LỆNH   R9 — khối ĐÓNG, đáp án theo TỪNG câu
-[ ] sh tools/nghia.sh cho cả 25 từ         R9 — câu hỏi = HOI, ví dụ = VD, CHÉP không soạn lại
+[ ] sh tools/nghia.sh cho cả 25 từ         R9 — câu hỏi = NGHIA + PHU (.vi-quick bài gốc), CHÉP NGUYÊN
 [ ] wiki/lessons/<tuần>/<ngày>.md          ôn nhanh + 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
@@ -226,7 +229,7 @@ macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng th�
 ```bash
 sh tools/build-index.sh                                    # phải in DA-DUNG-INDEX
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
-sh tools/nghia.sh "dry run"                                # phải in TU / HOI / VI / VD
+sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD
 awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \
   | sh tools/nghia.sh | grep -c '^VD '                     # phải bằng tổng số từ
 ```
