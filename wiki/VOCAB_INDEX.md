@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 120 từ đã học** · IT 48 · Business 48 · Life 24 · ad-hoc 0
+**Tổng: 125 từ đã học** · IT 50 · Business 50 · Life 25 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-09
+**Cập nhật:** 2026-09-10
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -139,6 +139,11 @@
 | 118 | narrow down | narrows down, narrowed down, narrowing down, narrow it down to, narrow (adj) | phrasal verb | Business | lọc lại còn vài cái | 2026-09-09 | lesson |
 | 119 | lead time | lead times, long-lead-time, lead-time estimate | noun | Business | cần báo trước bao lâu mới có | 2026-09-09 | lesson |
 | 120 | hit it off | hits it off, hitting it off, hit it off with | phrasal verb (idiom) | Life | vừa gặp đã hợp nhau | 2026-09-09 | lesson |
+| 121 | drift | drifts, drifted, drifting, config drift, schema drift, drift apart, drifter, adrift | noun (cũng là verb) | IT | lệch dần khỏi chuẩn, không ai cố ý | 2026-09-10 | lesson |
+| 122 | purge | purges, purged, purging, a purge, cache purge, purgeable | verb (cũng là noun) | IT | xoá sạch cả một loạt | 2026-09-10 | lesson |
+| 123 | hand over | hands over, handed over, handing over, handover, hand-over, handover doc | phrasal verb (danh từ: handover) | Business | bàn giao, trao lại quyền | 2026-09-10 | lesson |
+| 124 | chase up | chases up, chased up, chasing up, chase down, chase after, chase | phrasal verb | Business | hỏi thúc cho ra | 2026-09-10 | lesson |
+| 125 | stay up | stays up, stayed up, staying up, stay up late, stay awake | phrasal verb | Life | thức khuya | 2026-09-10 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

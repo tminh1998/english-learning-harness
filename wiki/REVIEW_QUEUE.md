@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-09: 115 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-10: 120 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -29,6 +29,9 @@
 - hạn 2026-09-06 — latency · stub · onboarding · pencil in · run errands
 - hạn 2026-09-08 — propagate · resilient · weigh in · discrepancy · doze off
 - hạn 2026-09-09 — provision · bump · run by · short notice · put up with
+- hạn 2026-09-10 — dry run · snapshot · narrow down · lead time · hit it off
+
+_Ghi chú 2026-09-10 (buổi #25): phần A hỏi lại 5 từ của buổi 09/09 (dry run · snapshot · narrow down · lead time · hit it off), phần B bốc ngẫu nhiên bằng lệnh trúng cold start · graceful degradation · verbose · technical debt · ballpark · pain point · feasible · awkward · bottleneck · push back · sort out · stub · prioritize · touch base · get the hang of · backward compatible · breaking change · wrap up · chip in · takeaway — chạm cả lô cũ nhất (13/08) lẫn lô 05/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **120/125 từ**, toàn bộ ở bậc 1._
 
 _Lý do đọng lại: `/on-tap` và `/kiem-tra` cần user trả lời mới chấm và lên/xuống bậc được — routine tự động chạy 7h sáng không làm thay được. Khối "Ôn nhanh đầu giờ" trên trang bài học **không** đổi bậc ở đây (hỏi-tự-trả-lời), nó chỉ giữ cho từ khỏi rơi khỏi tầm ngắm. Muốn thật sự xoá nợ thì phải gõ tay `/on-tap`, ưu tiên lô cũ nhất trước._
 
@@ -170,6 +173,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | narrow down | 1 | 2026-09-10 | 0 | 0 | 2026-09-09 |
 | lead time | 1 | 2026-09-10 | 0 | 0 | 2026-09-09 |
 | hit it off | 1 | 2026-09-10 | 0 | 0 | 2026-09-09 |
+| drift | 1 | 2026-09-11 | 0 | 0 | 2026-09-10 |
+| purge | 1 | 2026-09-11 | 0 | 0 | 2026-09-10 |
+| hand over | 1 | 2026-09-11 | 0 | 0 | 2026-09-10 |
+| chase up | 1 | 2026-09-11 | 0 | 0 | 2026-09-10 |
+| stay up | 1 | 2026-09-11 | 0 | 0 | 2026-09-10 |
 
 ## Đã thuộc (bậc 5, đúng)
 
