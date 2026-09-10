@@ -54,6 +54,24 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
      (`shuf` không có sẵn trên macOS nên dùng `awk`. Agent tự "chọn ngẫu nhiên" thì
      luôn trúng mấy từ vừa đọc thấy ở đầu bảng — phải chạy lệnh thật.)
 
+   ⭐ **Nghĩa + ví dụ CHÉP TỪ BÀI GỐC, không soạn lại** (đổi 2026-09-10). Nối đầu ra
+   ở trên vào `tools/nghia.sh` — nó tìm bài đã dạy từng từ rồi in ra:
+
+   ```bash
+   { <lệnh bốc ở trên>; } | sh tools/nghia.sh     # 20 từ phần B
+   sh tools/nghia.sh "dry run" "snapshot" ...     # 5 từ phần A
+   ```
+
+   | Dòng tool in | Dùng vào đâu |
+   |---|---|
+   | `HOI` | câu hỏi gợi nhớ tiếng Việt (câu đầu dòng `**VI**` của bài gốc) |
+   | `VD` | câu ví dụ trong ô đáp án (ví dụ #1 của bài gốc) |
+   | `VI` | cả dòng VI — chỉ để đối chiếu khi `HOI` chưa đủ rõ |
+
+   Được **cắt bớt** cho gọn (bỏ vế "khác X là…", đổi dấu chấm cuối thành dấu hỏi).
+   **Không** được diễn đạt lại bằng chữ của mình — mỗi buổi lệch một chút thì ba
+   tuần sau người học đang ôn một từ khác với từ đã học.
+
    Trên trang để **hai phần riêng biệt**, ghi rõ phần nào là bài hôm qua, phần nào
    là bốc ngẫu. Hỏi gợi nhớ bằng tiếng Việt. Chưa đủ 20 từ cũ → lấy hết những gì
    có, không bịa thêm.

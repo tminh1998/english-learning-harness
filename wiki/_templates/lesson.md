@@ -9,6 +9,9 @@
      · Phần A = ĐÚNG 5 từ của buổi LIỀN TRƯỚC.
      · Phần B = 20 từ bốc NGẪU NHIÊN trong TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên),
        bốc BẰNG LỆNH awk+rand, không bốc bằng mắt.
+     ⛔ CÂU HỎI VÀ VÍ DỤ PHẢI CHÉP TỪ BÀI GỐC (đổi 2026-09-10), không tự soạn lại:
+       `sh tools/nghia.sh "<từ>"` → dòng HOI = câu hỏi, dòng VD = ví dụ trong đáp
+       án. Cắt bớt cho gọn thì được, viết lại bằng chữ của mình thì KHÔNG.
      ⛔ Cả khối gói trong <details> ngoài cùng, KHÔNG có `open` — mở file ra là
      khối đang ẩn, khớp với bản HTML.
      ⛔ ĐÁP ÁN ĐI THEO TỪNG CÂU (đổi 2026-09-04), không gộp ở cuối nữa: mỗi câu

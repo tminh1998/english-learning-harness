@@ -27,6 +27,7 @@ ENGLISH/                          ← {harness}
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
 │   │                               cfg · hnay · tuan · openit · keove · daylen
+│   ├── nghia.sh                  ← ⭐ trích NGHĨA GỐC + VÍ DỤ GỐC của từ cũ (R9)
 │   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/
 │   └── setup-remote.sh           ← chạy 1 lần lúc dựng: tạo repo + bật Pages
 └── wiki/
@@ -102,6 +103,19 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
      | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
    ```
 
+   ⭐ **Nghĩa và ví dụ của 25 từ đó phải CHÉP từ bài gốc, không soạn lại** (2026-09-10).
+   Nối thẳng đầu ra ở trên vào `tools/nghia.sh` — nó tìm bài đã dạy từ đó rồi in
+   `HOI` (câu đầu dòng `**VI**` — dùng làm câu hỏi) và `VD` (câu ví dụ #1 — dùng
+   trong ô đáp án):
+
+   ```bash
+   <lệnh bốc ở trên> | sh tools/nghia.sh
+   sh tools/nghia.sh "dry run" "snapshot"      # hoặc tra lẻ
+   ```
+
+   Cắt bớt cho gọn thì được, viết lại bằng chữ của mình thì **không** — nghĩa trôi
+   khỏi bài gốc là ôn sai từ.
+
    Trên trang để **hai phần riêng**, ghi rõ phần nào là bài hôm qua, phần nào là bốc
    ngẫu. Và **cả cụm** bọc trong `<details class="warm-toggle">` **không có `open`**
    — vào trang là đang ẩn, bấm mới mở. `<details>` gốc của trình duyệt, **không viết
@@ -115,6 +129,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 ```
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
 [ ] 25 từ ôn nhanh: 5 buổi trước + 20 bốc BẰNG LỆNH   R9 — khối ĐÓNG, đáp án theo TỪNG câu
+[ ] sh tools/nghia.sh cho cả 25 từ         R9 — câu hỏi = HOI, ví dụ = VD, CHÉP không soạn lại
 [ ] wiki/lessons/<tuần>/<ngày>.md          ôn nhanh + 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
@@ -205,12 +220,15 @@ từ. (Sửa *code* của harness thì branch/PR vẫn bình thường.)
 grep VOCAB_INDEX không thấy trùng, 5 file state đã cập nhật khớp nhau, và
 `sh tools/build-index.sh` chạy không lỗi.
 
-Hai script trong `tools/` là **shell POSIX thuần** (`/bin/sh`), chạy được trên cả
+Ba script trong `tools/` là **shell POSIX thuần** (`/bin/sh`), chạy được trên cả
 macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng thì test bằng:
 
 ```bash
 sh tools/build-index.sh                                    # phải in DA-DUNG-INDEX
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
+sh tools/nghia.sh "dry run"                                # phải in TU / HOI / VI / VD
+awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \
+  | sh tools/nghia.sh | grep -c '^VD '                     # phải bằng tổng số từ
 ```
 
 ## Source of truth (thứ tự ưu tiên)
