@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 125 từ đã học** · IT 50 · Business 50 · Life 25 · ad-hoc 0
+**Tổng: 130 từ đã học** · IT 52 · Business 52 · Life 26 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-10
+**Cập nhật:** 2026-09-11
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -144,6 +144,11 @@
 | 123 | hand over | hands over, handed over, handing over, handover, hand-over, handover doc | phrasal verb (danh từ: handover) | Business | bàn giao, trao lại quyền | 2026-09-10 | lesson |
 | 124 | chase up | chases up, chased up, chasing up, chase down, chase after, chase | phrasal verb | Business | hỏi thúc cho ra | 2026-09-10 | lesson |
 | 125 | stay up | stays up, stayed up, staying up, stay up late, stay awake | phrasal verb | Life | thức khuya | 2026-09-10 | lesson |
+| 126 | backoff | back off, back-off, backs off, backed off, backing off, exponential backoff, jittered backoff | noun (động từ: back off) | IT | chờ lâu dần rồi mới thử lại | 2026-09-11 | lesson |
+| 127 | blast radius | blast, blasts, blast-radius analysis, radius, radii | noun (đếm được) | IT | hỏng thì kéo theo bao nhiêu | 2026-09-11 | lesson |
+| 128 | sticking point | stick, stuck, sticky, sticking points, stick to sth, sticking-point | noun (đếm được) | Business | chỗ còn mắc, chưa gỡ được | 2026-09-11 | lesson |
+| 129 | pitch | pitches, pitched, pitching, a pitch, sales pitch, elevator pitch, pitch in | verb (cũng là noun) | Business | trình bày để bên kia gật | 2026-09-11 | lesson |
+| 130 | swamped | swamp, swamps, swamping, be swamped with, a swamp | adjective (đi sau be/get) | Life | ngập đầu, không thở nổi | 2026-09-11 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
