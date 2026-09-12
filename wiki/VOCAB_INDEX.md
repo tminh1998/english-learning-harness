@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 130 từ đã học** · IT 52 · Business 52 · Life 26 · ad-hoc 0
+**Tổng: 135 từ đã học** · IT 54 · Business 54 · Life 27 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-11
+**Cập nhật:** 2026-09-12
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -149,6 +149,11 @@
 | 128 | sticking point | stick, stuck, sticky, sticking points, stick to sth, sticking-point | noun (đếm được) | Business | chỗ còn mắc, chưa gỡ được | 2026-09-11 | lesson |
 | 129 | pitch | pitches, pitched, pitching, a pitch, sales pitch, elevator pitch, pitch in | verb (cũng là noun) | Business | trình bày để bên kia gật | 2026-09-11 | lesson |
 | 130 | swamped | swamp, swamps, swamping, be swamped with, a swamp | adjective (đi sau be/get) | Life | ngập đầu, không thở nổi | 2026-09-11 | lesson |
+| 131 | cascade | cascades, cascaded, cascading, cascading failure, cascading delete, a cascade of | verb (cũng là noun) | IT | đổ dây chuyền, hỏng cái này kéo cái kia | 2026-09-12 | lesson |
+| 132 | flush | flushes, flushed, flushing, flush out, auto-flush, cache flush, a flush | verb (cũng là noun) | IT | đẩy hết chỗ đang đọng ra | 2026-09-12 | lesson |
+| 133 | firm up | firms up, firmed up, firming up, firm (adj), firm (n), firmly | phrasal verb | Business | chốt cho chắc | 2026-09-12 | lesson |
+| 134 | off the table | on the table, take sth off the table, put sth off the table, back on the table, table | idiom (đi sau be/take/put) | Business | dẹp, khỏi bàn nữa | 2026-09-12 | lesson |
+| 135 | call it a day | calls it a day, called it a day, calling it a day, call it a night, call it quits, call time on | idiom | Life | thôi, nghỉ tay | 2026-09-12 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
