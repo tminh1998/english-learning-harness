@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 135 từ đã học** · IT 54 · Business 54 · Life 27 · ad-hoc 0
+**Tổng: 140 từ đã học** · IT 56 · Business 56 · Life 28 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-12
+**Cập nhật:** 2026-09-14
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -154,6 +154,11 @@
 | 133 | firm up | firms up, firmed up, firming up, firm (adj), firm (n), firmly | phrasal verb | Business | chốt cho chắc | 2026-09-12 | lesson |
 | 134 | off the table | on the table, take sth off the table, put sth off the table, back on the table, table | idiom (đi sau be/take/put) | Business | dẹp, khỏi bàn nữa | 2026-09-12 | lesson |
 | 135 | call it a day | calls it a day, called it a day, calling it a day, call it a night, call it quits, call time on | idiom | Life | thôi, nghỉ tay | 2026-09-12 | lesson |
+| 136 | shard | shards, sharded, sharding, shard key, resharding, unsharded | noun (cũng là verb) | IT | một mảnh dữ liệu tách ra, mỗi máy giữ một phần | 2026-09-14 | lesson |
+| 137 | observability | observe, observed, observing, observable, unobservable, observer, o11y | noun (không đếm được) | IT | nhìn được vào bên trong hệ thống đang chạy | 2026-09-14 | lesson |
+| 138 | blocker | block, blocks, blocked, blocking, blockers, unblock, be blocked on, roadblock | noun (đếm được) | Business | thứ chặn không cho làm tiếp | 2026-09-14 | lesson |
+| 139 | bottom line | the bottom line, bottom, bottom out, bottomed out, bottom-up, top line | noun (hay đi với `the`) | Business | chốt lại là; hoặc lãi/lỗ cuối cùng | 2026-09-14 | lesson |
+| 140 | take it easy | takes it easy, took it easy, taking it easy, take things easy, take it easy on sb, easy, easily, go easy on sb | idiom | Life | thong thả thôi, nghỉ cho khoẻ | 2026-09-14 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
