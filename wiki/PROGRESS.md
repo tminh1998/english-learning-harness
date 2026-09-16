@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-09-15 (buổi #27)
+**Cập nhật:** 2026-09-16 (buổi #28)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 135 · **đã biết sẵn** 5 (hotfix · overwrite · cherry-pick · debounce · payload — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 54 · Business 54 · Life 27                                                           |
-| Số buổi học          | 27                                                                                      |
-| Streak hiện tại      | 1 buổi (từ 2026-09-15 — Thứ Bảy 12/09 và Thứ Hai 14/09 bận, không học, hai bài đã xoá nên chuỗi đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 140 · **đã biết sẵn** 5 (hotfix · overwrite · cherry-pick · debounce · payload — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 56 · Business 56 · Life 28                                                           |
+| Số buổi học          | 28                                                                                      |
+| Streak hiện tại      | 2 buổi (từ 2026-09-15 — Thứ Bảy 12/09 và Thứ Hai 14/09 bận, không học, hai bài đã xoá nên chuỗi đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-09-15 (Thứ Ba) — buổi #27                                                          |
+| Buổi gần nhất        | 2026-09-16 (Thứ Tư) — buổi #28                                                          |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -45,6 +45,7 @@
 | 2026-09-10 | 2026-W37 | #25 | drift · purge · hand over · chase up · stay up |
 | 2026-09-11 | 2026-W37 | #26 | backoff · blast radius · sticking point · pitch · swamped |
 | 2026-09-15 | 2026-W38 | #27 | heartbeat · dangling · quote · off the table · night owl |
+| 2026-09-16 | 2026-W38 | #28 | ingest · quarantine · hash out · manage expectations · rain check |
 
 ## Kết quả quiz tuần
 
@@ -101,6 +102,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
 
 🔁 **Sửa lại 2026-09-01 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `debounce` và `payload` — hai suất IT của buổi #17. Theo R1.b: hai từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), và được thay bằng `failover` + `graceful degradation` — cùng nhóm IT, đã qua lại hard gate R1. Bài `.md` và `.html` đã viết lại toàn bộ: khối từ, ví dụ (R8 vẫn đúng), mẩu đọc, bài tập, đáp án, ghi chú. Tổng số từ vẫn là 85 vì thay 2 ăn 2; số từ "đã biết sẵn" lên 5. Đây là lần thứ hai user loại từ vì đã biết (lần đầu 2026-08-24 với `hotfix` · `overwrite` · `cherry-pick`) — cả 5 từ bị loại đều thuộc nhóm "lệnh/khái niệm gặp hằng ngày", đúng cảnh báo trong `memory/tu-da-biet-khong-day-lai.md`.
+
+⚠️ **Cập nhật 2026-09-16:** vốn từ lên **140 từ**, nợ ôn tập lên **135/140 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #28 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 15/09 (heartbeat · dangling · quote · off the table · night owl), phần B bốc ngẫu nhiên bằng lệnh trúng backoff · feature flag · deprecate · provision · brittle · bottleneck · onboarding · cutover · takeaway · run by · pitch · stateless · bandwidth · pain point · bear with · catch up · run out of · spin up · sticking point · align — chạm cả lô cũ nhất (13/08) lẫn lô 11/09. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Một ứng viên bị hard gate R1 loại trong buổi này: `red flag` (đụng `flag` trong word family của `feature flag`) — thay bằng `manage expectations`. Tuần 2026-W38 đã có 10 từ (15/09 → 16/09); W37 vẫn **chưa có điểm quiz** — năm tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W37, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-09-15:** mở tuần **2026-W38**. **Hai bài đã xoá hẳn** theo yêu cầu người học — bận, chưa học: Thứ Bảy 12/09 (cascade · flush · firm up · off the table · call it a day) và Thứ Hai 14/09 (shard · observability · blocker · bottom line · take it easy). Đã gỡ file bài, gỡ 10 từ đó khỏi `VOCAB_INDEX.md` và `REVIEW_QUEUE.md` (sau này được phép dạy lại — `off the table` đã được dạy lại ngay buổi 15/09), và gỡ khỏi bảng ôn tuần `recap/2026-W37`. Thứ Bảy 12/09 và Thứ Hai 14/09 đều là ngày học theo lịch mà không học nên **streak đứt**: chuỗi dài nhất là 26 buổi (13/08 → 11/09), chuỗi hiện tại bắt đầu lại từ 15/09. Vốn từ nay **135 từ**, nợ ôn tập **130/135 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #27 (15/09) chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 11/09 (buổi thật liền trước), phần B bốc ngẫu nhiên bằng lệnh trúng leeway · wrap up · grab a bite · dry run · scope creep · edge case · chip in · truncate · feature flag · backfill · stay up · bear with · sleep in · outstanding · escalate · loop in · throughput · clarify · downstream · defer. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W37 khép lại với **25 từ** mà vẫn **chưa có điểm quiz** — năm tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W37, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 

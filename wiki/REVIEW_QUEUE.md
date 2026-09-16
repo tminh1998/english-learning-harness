@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-15: 130 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-16: 135 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -32,6 +32,9 @@
 - hạn 2026-09-10 — dry run · snapshot · narrow down · lead time · hit it off
 - hạn 2026-09-11 — drift · purge · hand over · chase up · stay up
 - hạn 2026-09-12 — backoff · blast radius · sticking point · pitch · swamped
+- hạn 2026-09-16 — heartbeat · dangling · quote · off the table · night owl
+
+_Ghi chú 2026-09-16 (buổi #28): phần A hỏi lại 5 từ của buổi 15/09 (heartbeat · dangling · quote · off the table · night owl), phần B bốc ngẫu nhiên bằng lệnh trúng backoff · feature flag · deprecate · provision · brittle · bottleneck · onboarding · cutover · takeaway · run by · pitch · stateless · bandwidth · pain point · bear with · catch up · run out of · spin up · sticking point · align — chạm cả lô cũ nhất (13/08) lẫn lô 11/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **135/140 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-15 (buổi #27): phần A hỏi lại 5 từ của buổi 11/09 (backoff · blast radius · sticking point · pitch · swamped) — buổi thật liền trước sau khi xoá hai bài 12/09 và 14/09; phần B bốc ngẫu nhiên bằng lệnh trúng leeway · wrap up · grab a bite · dry run · scope creep · edge case · chip in · truncate · feature flag · backfill · stay up · bear with · sleep in · outstanding · escalate · loop in · throughput · clarify · downstream · defer. **Hai bài đã xoá hẳn** theo yêu cầu người học vì bận chưa học: Thứ Bảy 12/09 (cascade · flush · firm up · off the table · call it a day) và Thứ Hai 14/09 (shard · observability · blocker · bottom line · take it easy) — 10 từ đó trả lại, sau này được phép dạy lại (`off the table` đã được dạy lại ngay buổi 15/09). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **130/135 từ**, toàn bộ ở bậc 1._
 
@@ -194,6 +197,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | quote | 1 | 2026-09-16 | 0 | 0 | 2026-09-15 |
 | off the table | 1 | 2026-09-16 | 0 | 0 | 2026-09-15 |
 | night owl | 1 | 2026-09-16 | 0 | 0 | 2026-09-15 |
+| ingest | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
+| quarantine | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
+| hash out | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
+| manage expectations | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
+| rain check | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
 
 ## Đã thuộc (bậc 5, đúng)
 
