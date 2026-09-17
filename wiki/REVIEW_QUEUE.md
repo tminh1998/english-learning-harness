@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-16: 135 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-17: 140 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -33,6 +33,9 @@
 - hạn 2026-09-11 — drift · purge · hand over · chase up · stay up
 - hạn 2026-09-12 — backoff · blast radius · sticking point · pitch · swamped
 - hạn 2026-09-16 — heartbeat · dangling · quote · off the table · night owl
+- hạn 2026-09-17 — ingest · quarantine · hash out · manage expectations · rain check
+
+_Ghi chú 2026-09-17 (buổi #29): phần A hỏi lại 5 từ của buổi 16/09 (ingest · quarantine · hash out · manage expectations · rain check), phần B bốc ngẫu nhiên bằng lệnh trúng flaky · bottleneck · latency · chip in · graceful degradation · touch base · regression · backoff · bump · stateless · catch up · under the weather · fallback · milestone · worn out · throughput · ballpark · cold start · resilient · out of the blue — chạm cả lô cũ nhất (13/08) lẫn lô 11/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **140/145 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-16 (buổi #28): phần A hỏi lại 5 từ của buổi 15/09 (heartbeat · dangling · quote · off the table · night owl), phần B bốc ngẫu nhiên bằng lệnh trúng backoff · feature flag · deprecate · provision · brittle · bottleneck · onboarding · cutover · takeaway · run by · pitch · stateless · bandwidth · pain point · bear with · catch up · run out of · spin up · sticking point · align — chạm cả lô cũ nhất (13/08) lẫn lô 11/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **135/140 từ**, toàn bộ ở bậc 1._
 
@@ -202,6 +205,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | hash out | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
 | manage expectations | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
 | rain check | 1 | 2026-09-17 | 0 | 0 | 2026-09-16 |
+| stack trace | 1 | 2026-09-18 | 0 | 0 | 2026-09-17 |
+| memory leak | 1 | 2026-09-18 | 0 | 0 | 2026-09-17 |
+| kick off | 1 | 2026-09-18 | 0 | 0 | 2026-09-17 |
+| on the same page | 1 | 2026-09-18 | 0 | 0 | 2026-09-17 |
+| commute | 1 | 2026-09-18 | 0 | 0 | 2026-09-17 |
 
 ## Đã thuộc (bậc 5, đúng)
 

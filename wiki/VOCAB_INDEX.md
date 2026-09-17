@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 140 từ đã học** · IT 56 · Business 56 · Life 28 · ad-hoc 0
+**Tổng: 145 từ đã học** · IT 58 · Business 58 · Life 29 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-16
+**Cập nhật:** 2026-09-17
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -159,6 +159,11 @@
 | 138 | hash out | hashes out, hashed out, hashing out, hash sth out with sb, hash | phrasal verb | Business | ngồi bàn cho ra nhẽ | 2026-09-16 | lesson |
 | 139 | manage expectations | manage sb's expectations, set expectations, reset expectations, expectation, expectations, expect, unexpected | cụm động từ | Business | nắn kỳ vọng từ đầu | 2026-09-16 | lesson |
 | 140 | rain check | rain checks, take a rain check on sth, raincheck | noun (idiom) | Life | để hôm khác nhé | 2026-09-16 | lesson |
+| 141 | stack trace | stack traces, stacktrace, traceback, trace, stack | noun | IT | vết lỗi in ra lúc nổ | 2026-09-17 | lesson |
+| 142 | memory leak | memory leaks, leak, leaks, leaky, leaking, leak memory | noun | IT | rò bộ nhớ, xài xong không trả | 2026-09-17 | lesson |
+| 143 | kick off | kicks off, kicked off, kicking off, kick-off, kickoff, kick things off, kick | phrasal verb | Business | mở màn, bắt đầu chính thức | 2026-09-17 | lesson |
+| 144 | on the same page | get on the same page, keep sb on the same page, be on a different page, same page, page | idiom | Business | hiểu giống nhau | 2026-09-17 | lesson |
+| 145 | commute | commutes, commuted, commuting, commuter, commuter train, commute to work | noun (cũng là verb) | Life | quãng đi làm hằng ngày | 2026-09-17 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
