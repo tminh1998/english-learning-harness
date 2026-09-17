@@ -201,111 +201,111 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>stack trace
-        <button class="say" data-say="stack trace" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>single point of failure
+        <button class="say" data-say="single point of failure" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/stæk treɪs/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˈsɪŋ.ɡəl pɔɪnt əv ˈfeɪl.jər/ · <em>noun (đếm được) · viết tắt SPOF</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">vết lỗi in ra lúc nổ<span class="alt">danh sách hàm đã gọi, đọc ngược lên là ra chỗ hỏng</span></p>
+  <p class="vi-quick hide-me">điểm chết duy nhất<span class="alt">nó hỏng là cả hệ thống sập theo, không có gì đỡ thay</span></p>
 
-  <p class="def"><span class="tag">EN</span>The list of function calls a program had open at the moment an error happened, printed so you can see where the error came from.
-    <span class="def-vi hide-me">→ Danh sách các hàm mà chương trình đang gọi dở ngay lúc lỗi xảy ra, được in ra để mình nhìn được lỗi bắt nguồn từ đâu.</span>
+  <p class="def"><span class="tag">EN</span>One part of a system that brings everything down when it stops working, because nothing else can take over its job.
+    <span class="def-vi hide-me">→ Một phần của hệ thống mà hễ nó ngừng chạy là mọi thứ sập theo, vì không có gì khác làm thay được việc của nó.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác "log": log là mọi thứ chương trình in ra, stack trace là đúng cái cục in lúc nổ, đọc từ dưới lên. Xin khách hay xin đồng nghiệp thì nói <code>the full stack trace</code> — nửa vời thì vô dụng.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hay viết tắt <code>SPOF</code>. Không chỉ là server: một người duy nhất biết deploy, một API key duy nhất, một vendor duy nhất cũng là SPOF. Nói với khách thì đây là cách gọn nhất để giải thích vì sao phải tốn thêm tiền cho dự phòng.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">The <b>stack trace</b> points straight at the date parser, so that's our <span class="rev">culprit</span>.</span>
-      <span class="vi hide-me">→ Stack trace chỉ thẳng vào chỗ parse ngày, thủ phạm là nó chứ không đâu khác.</span>
+      <span class="en">Right now the database is a <b>single point of failure</b>, so we need a replica to <span class="rev">fail over</span> to before launch.</span>
+      <span class="vi hide-me">→ Giờ database đang là điểm chết duy nhất, nó sập là sập hết, nên trước khi launch phải có thêm replica để còn failover sang.</span>
     </li>
     <li>
-      <span class="en">I <span class="rev">bumped</span> the log level so the full <b>stack trace</b> shows up instead of one useless line.</span>
-      <span class="vi hide-me">→ Mình nâng log level lên rồi, giờ nó in ra nguyên stack trace chứ không phải mỗi một dòng chẳng nói lên gì.</span>
+      <span class="en">Only Nam knows how the payment job works, so he's a <b>single point of failure</b> — let's ask him to write a <span class="rev">handover</span> doc.</span>
+      <span class="vi hide-me">→ Cả team chỉ mỗi Nam biết cái job thanh toán chạy thế nào, cậu ấy mà nghỉ là tắc — nhờ cậu ấy viết tài liệu bàn giao đi.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>the full stack trace</code> · <code>paste / attach the stack trace</code> · <code>the stack trace points to…</code> · <code>read the stack trace from the bottom up</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Hai chữ rời, không viết liền "stacktrace", và không đảo thành "trace stack". Đọc <em>treɪs</em> (vần với "face"), không phải "trát".</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">stack traces · traceback (bản Python) · trace · stack</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a single point of failure</code> · <code>remove / get rid of a single point of failure</code> · <code>turn into a single point of failure</code> · <code>no single point of failure</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Giữ nguyên cụm, đừng rút thành "single failure point". <code>failure</code> không thêm s; số nhiều là <code>single points of failure</code>. Đọc <em>FAIL-yer</em>, hai âm tiết, không phải "phai-lua".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">single points of failure · SPOF · point of failure</span></div>
   </div>
 </article>
 
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>memory leak
-        <button class="say" data-say="memory leak" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>load shedding
+        <button class="say" data-say="load shedding" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈmem.ər.i liːk/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ləʊd ˈʃed.ɪŋ/ · <em>noun (không đếm được) · động từ: shed load</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">rò bộ nhớ, xài xong không trả<span class="alt">chạy càng lâu càng phình, tới lúc chết hẳn</span></p>
+  <p class="vi-quick hide-me">chủ động bỏ bớt request lúc quá tải<span class="alt">từ chối một phần để phần còn lại vẫn chạy, thay vì sập hết</span></p>
 
-  <p class="def"><span class="tag">EN</span>A bug where a program keeps holding memory it no longer needs and never gives it back, so it grows until it crashes.
-    <span class="def-vi hide-me">→ Lỗi mà chương trình cứ giữ mãi phần bộ nhớ không còn dùng tới và không bao giờ trả lại, nên nó phình dần cho tới lúc chết.</span>
+  <p class="def"><span class="tag">EN</span>Deliberately rejecting some requests when a system is overloaded, so it can keep serving the rest instead of falling over completely.
+    <span class="def-vi hide-me">→ Cố ý từ chối bớt một phần request khi hệ thống quá tải, để vẫn phục vụ được phần còn lại thay vì sập hẳn.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Dấu hiệu nhận ra: chạy một lúc thì ổn, để lâu mới chết, restart phát là hết — nên hay bị đổ oan cho tải cao. Nói về triệu chứng thì dùng động từ: <code>the worker leaks memory</code>.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Gốc từ ngành điện: cắt điện luân phiên từng khu để cả lưới khỏi sập. Khác <code>throttle</code> — throttle giới hạn tốc độ từng bên gọi ngay từ đầu, còn load shedding là lúc đã quá tải thì vứt bớt, thường trả <code>503</code> cho mấy request ít quan trọng.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">The pod restarts every six hours — that's a <b>memory leak</b>, not a <span class="rev">cold start</span> problem.</span>
-      <span class="vi hide-me">→ Cứ sáu tiếng pod lại restart một lần — cái đó là rò bộ nhớ, chứ không phải chuyện cold start.</span>
+      <span class="en">When traffic <span class="rev">spikes</span>, <b>load shedding</b> returns 503 for search, so checkout keeps working.</span>
+      <span class="vi hide-me">→ Lúc traffic tăng vọt thì load shedding trả 503 cho phần search, nhờ vậy checkout vẫn chạy bình thường.</span>
     </li>
     <li>
-      <span class="en">We found the <b>memory leak</b> in a listener nobody removed; the fix is one line, but I'd still run a <span class="rev">smoke test</span> before we ship it.</span>
-      <span class="vi hide-me">→ Bọn mình tìm ra chỗ rò bộ nhớ ở một cái listener quên gỡ; sửa đúng một dòng, nhưng mình vẫn muốn chạy smoke test rồi hẵng đẩy lên.</span>
+      <span class="en">I'd rather let <b>load shedding</b> drop a few requests than watch the whole API fall over — that's <span class="rev">graceful degradation</span> in practice.</span>
+      <span class="vi hide-me">→ Mình thà để load shedding vứt bớt vài request còn hơn ngồi nhìn cả API sập — graceful degradation ngoài đời nó là vậy đó.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>a memory leak in the worker</code> · <code>chase down / track down a memory leak</code> · <code>plug a memory leak</code> · <code>it leaks memory</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v"><em>leak</em> là âm dài /liːk/, đọc ngắn thành "lick" là ra nghĩa khác hẳn. Và đừng nói "lose memory" — mất trí nhớ mới là lose memory.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">memory leaks · leak · leaky · leaking · leak memory</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>turn on / enable load shedding</code> · <code>shed load</code> · <code>start shedding load at 90% CPU</code> · <code>priority-based load shedding</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v"><code>shed</code> là động từ bất quy tắc: shed – shed – shed, không có "shedded". Không đếm được: không nói "a load shedding". <em>shed</em> /ʃed/ âm ngắn, đừng kéo thành "sheet".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">shed load · shed · shedding · load shedder</span></div>
   </div>
 </article>
 
 <article class="word" data-cat="biz">
   <div class="word-head">
     <div>
-      <h2><span class="num">3</span>kick off
-        <button class="say" data-say="kick off the project" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">3</span>loose ends
+        <button class="say" data-say="tie up a few loose ends" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌkɪk ˈɒf/ · <em>phrasal verb (danh từ: kick-off)</em></div>
+      <div class="ipa">/luːs endz/ · <em>noun (số nhiều) · hay đi với tie up</em></div>
     </div>
     <span class="badge biz">Giao tiếp</span>
   </div>
 
-  <p class="vi-quick hide-me">mở màn, bắt đầu chính thức<span class="alt">nổ phát súng đầu cho dự án hoặc buổi họp</span></p>
+  <p class="vi-quick hide-me">mấy việc lặt vặt còn dở<span class="alt">phần đuôi chưa gói lại, bỏ đó thì sau thành chuyện</span></p>
 
-  <p class="def"><span class="tag">EN</span>To start something officially, especially a project, a meeting or a phase of work.
-    <span class="def-vi hide-me">→ Bắt đầu một việc gì đó một cách chính thức, nhất là một dự án, một buổi họp hay một giai đoạn công việc.</span>
+  <p class="def"><span class="tag">EN</span>Small tasks or details that are still unfinished, especially near the end of a project or before you go away.
+    <span class="def-vi hide-me">→ Những việc nhỏ hay chi tiết còn dang dở, nhất là lúc dự án sắp xong hoặc trước khi mình đi nghỉ.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Nghe hào hứng hơn "start", nên rất hợp email khách và standup. Gốc từ cú giao bóng mở đầu trận bóng. Danh từ <code>kick-off</code> = buổi họp đầu dự án — cái mà bên mình hay gọi là "họp kickoff".</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Gần như luôn đi với <code>tie up</code>: <code>tie up a few loose ends</code> = gói nốt mấy việc lặt vặt. Rất hợp email cuối dự án hoặc trước kỳ nghỉ — nghe chủ động, không nghe như đang nợ việc lớn.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">We'd like to <b>kick off</b> the migration on Monday, as soon as you <span class="rev">sign off</span> on the scope.</span>
-      <span class="vi hide-me">→ Bên em muốn khởi động phần migration vào thứ Hai, ngay khi anh chị duyệt xong phạm vi công việc ạ.</span>
+      <span class="en">Before we <span class="rev">wrap up</span> the project, we'd like to tie up a few <b>loose ends</b> with your team.</span>
+      <span class="vi hide-me">→ Trước khi chốt lại dự án, bên em muốn cùng bên anh chị gói nốt mấy việc còn dở ạ.</span>
     </li>
     <li>
-      <span class="en">Let's <b>kick off</b> with a quick <span class="rev">recap</span> of last week so nobody is lost.</span>
-      <span class="vi hide-me">→ Mở màn bằng một lượt tóm tắt nhanh tuần trước đi, để không ai bị hụt.</span>
+      <span class="en">I'm off next week, so today I'm tying up <b>loose ends</b> and writing down the <span class="rev">action items</span> for whoever covers for me.</span>
+      <span class="vi hide-me">→ Tuần sau mình nghỉ, nên hôm nay dọn nốt mấy việc lặt vặt và ghi lại các action item cho người làm thay.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>kick off a project / a sprint / the meeting</code> · <code>a kick-off call</code> · <code>kick things off</code> · <code>kick off with…</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đại từ phải chèn vào giữa: <code>kick it off</code>, không nói "kick off it". Danh từ viết có gạch nối <code>kick-off</code>, động từ viết rời.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">kicks off · kicked off · kicking off · kick-off (noun) · kickoff meeting</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>tie up (a few) loose ends</code> · <code>leave loose ends</code> · <code>there are still some loose ends</code> · <code>no loose ends</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v"><em>loose</em> /luːs/ (lỏng) khác <em>lose</em> /luːz/ (làm mất) — viết "lose ends" là lỗi rất hay gặp. Còn <code>at a loose end</code> lại là "rảnh rỗi không biết làm gì", nghĩa khác hẳn.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">a loose end · tie up loose ends · at a loose end (khác nghĩa) · loose · loosen</span></div>
   </div>
 </article>
 
@@ -388,17 +388,17 @@
   <p class="sub">Hai đồng nghiệp gặp nhau ở quán cà phê dưới nhà, trước giờ standup</p>
   <div class="passage">
     — My <b>commute</b> took an hour today; one broken traffic light and the whole road stops.<br>
-    — Same here. Did you see the alert? The service restarts every three hours and the <b>stack trace</b> just points at the logger.<br>
-    — That smells like a <b>memory leak</b> in the worker we shipped on Friday, so it's a <span class="rev">regression</span>, not traffic.<br>
-    — Then let's <b>kick off</b> a debugging session at ten and get everyone <b>on the same page</b> before the client asks for a date.
+    — Same here. Did you see the alert? The auth service went down and took every app with it — it's a <b>single point of failure</b>.<br>
+    — And there's no <b>load shedding</b> in front of it, so one <span class="rev">spike</span> at nine was enough to kill it.<br>
+    — Then let's fix that before we tie up any <b>loose ends</b>, and get everyone <b>on the same page</b> before the client asks for a date.
   </div>
   <details>
     <summary>Bản dịch</summary>
     <p class="hide-me">
       — Hôm nay đi làm mất cả tiếng, chỉ một cái đèn đỏ hỏng mà tắc cả đường.<br>
-      — Mình cũng vậy. Cậu xem cái alert chưa? Service cứ ba tiếng restart một lần mà stack trace thì chỉ trỏ vào chỗ logger.<br>
-      — Nghe như rò bộ nhớ ở cái worker đẩy lên hôm thứ Sáu, tức là mình làm hỏng chứ không phải tại tải.<br>
-      — Vậy mười giờ mở một buổi ngồi debug đi, cho cả nhóm hiểu giống nhau trước khi khách hỏi ngày.
+      — Mình cũng vậy. Cậu xem cái alert chưa? Service auth sập là kéo sập theo mọi app — nó đúng là điểm chết duy nhất.<br>
+      — Mà phía trước lại không có load shedding, nên chỉ một đợt traffic tăng vọt lúc chín giờ là đủ làm nó chết.<br>
+      — Vậy xử cái đó trước đã rồi hẵng dọn mấy việc lặt vặt, và cho cả nhóm hiểu giống nhau trước khi khách hỏi ngày.
     </p>
   </details>
 </section>
@@ -407,19 +407,19 @@
   <h2>Bài tập</h2>
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
-    <li><strong>Điền từ</strong> — "It's fine on day one but eats 4 GB by Friday, and a restart clears it: classic ______."</li>
+    <li><strong>Điền từ</strong> — "If this one Redis box dies, login, cart and checkout all die with it: it's a ______."</li>
     <li><strong>Sửa lỗi</strong> — "Just to make sure we are in the same page, the demo is on the 25th, right?"</li>
-    <li><strong>Dịch Việt-Anh</strong> — "Bên em muốn khởi động dự án vào thứ Hai tuần sau ạ."</li>
-    <li><strong>Chọn collocation</strong> — (a) <code>Could you paste the full stack trace?</code> · (b) <code>Could you paste the full trace stack?</code></li>
+    <li><strong>Dịch Việt-Anh</strong> — "Trước khi đóng dự án, bên em muốn gói nốt mấy việc lặt vặt còn dở ạ."</li>
+    <li><strong>Chọn câu đúng</strong> — (a) <code>We shedded load when CPU hit 90%.</code> · (b) <code>We shed load when CPU hit 90%.</code></li>
     <li><strong>Dịch Việt-Anh</strong> — "Đường đi làm của mình mỗi chiều mất bốn mươi phút."</li>
   </ol>
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>a memory leak</b> — dấu hiệu kinh điển: để lâu mới chết, restart là hết. Nói về triệu chứng thì dùng động từ: <code>it leaks memory</code>.</li>
+      <li><b>a single point of failure</b> — một máy chết mà kéo sập cả ba chức năng; gọi tắt là <code>SPOF</code>, chữa bằng cách thêm bản dự phòng để còn chỗ failover.</li>
       <li><b>on</b> the same page — giới từ là <code>on</code>, không phải "in"; và luôn số ít <code>the same page</code>.</li>
-      <li>"We'd like to <b>kick off</b> the project next Monday." — đại từ mới chèn vào giữa (<code>kick it off</code>); danh từ thì là <code>the kick-off</code>.</li>
-      <li><b>(a)</b> — luôn là <code>stack trace</code>, không đảo thành "trace stack", cũng không viết liền "stacktrace".</li>
+      <li>"Before we close the project, we'd like to tie up a few <b>loose ends</b>." — <code>tie up</code> đi với <code>loose ends</code> gần như cố định; viết <code>loose</code>, không phải "lose".</li>
+      <li><b>(b)</b> — <code>shed</code> bất quy tắc: shed – shed – shed, không có "shedded".</li>
       <li>"My <b>commute</b> is forty minutes each way." — dùng danh từ tự nhiên hơn hẳn; "each way" là cách nói "mỗi chiều".</li>
     </ol>
   </details>

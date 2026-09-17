@@ -14,7 +14,7 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 145 từ đã học** · IT 58 · Business 58 · Life 29 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 5 từ — xem bảng cuối file
+**Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
 **Cập nhật:** 2026-09-17
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -159,9 +159,9 @@
 | 138 | hash out | hashes out, hashed out, hashing out, hash sth out with sb, hash | phrasal verb | Business | ngồi bàn cho ra nhẽ | 2026-09-16 | lesson |
 | 139 | manage expectations | manage sb's expectations, set expectations, reset expectations, expectation, expectations, expect, unexpected | cụm động từ | Business | nắn kỳ vọng từ đầu | 2026-09-16 | lesson |
 | 140 | rain check | rain checks, take a rain check on sth, raincheck | noun (idiom) | Life | để hôm khác nhé | 2026-09-16 | lesson |
-| 141 | stack trace | stack traces, stacktrace, traceback, trace, stack | noun | IT | vết lỗi in ra lúc nổ | 2026-09-17 | lesson |
-| 142 | memory leak | memory leaks, leak, leaks, leaky, leaking, leak memory | noun | IT | rò bộ nhớ, xài xong không trả | 2026-09-17 | lesson |
-| 143 | kick off | kicks off, kicked off, kicking off, kick-off, kickoff, kick things off, kick | phrasal verb | Business | mở màn, bắt đầu chính thức | 2026-09-17 | lesson |
+| 141 | single point of failure | single points of failure, SPOF, point of failure | noun (đếm được) | IT | điểm chết duy nhất | 2026-09-17 | lesson |
+| 142 | load shedding | shed load, shed, sheds, shedding, load shedder | noun (không đếm được) | IT | chủ động bỏ bớt request lúc quá tải | 2026-09-17 | lesson |
+| 143 | loose ends | a loose end, tie up loose ends, tying up loose ends, at a loose end, loose, loosen | noun (số nhiều) | Business | mấy việc lặt vặt còn dở | 2026-09-17 | lesson |
 | 144 | on the same page | get on the same page, keep sb on the same page, be on a different page, same page, page | idiom | Business | hiểu giống nhau | 2026-09-17 | lesson |
 | 145 | commute | commutes, commuted, commuting, commuter, commuter train, commute to work | noun (cũng là verb) | Life | quãng đi làm hằng ngày | 2026-09-17 | lesson |
 
@@ -182,6 +182,9 @@
 | cherry-pick | cherry pick, cherry-picks, cherry-picked, cherry-picking | verb (cũng là noun) | IT | nhặt riêng một commit đem sang nhánh khác | 2026-08-24 |
 | debounce | debounces, debounced, debouncing, debouncer, a debounce, bounce | verb (cũng là noun) | IT | chờ gõ xong hẵng chạy, gom một tràng thành một lần | 2026-09-01 |
 | payload | payloads, payload size, max payload, pay, load | noun (đếm được) | IT | phần dữ liệu thật gửi đi, không tính header | 2026-09-01 |
+| stack trace | stack traces, stacktrace, traceback, trace, stack | noun | IT | vết lỗi in ra lúc chương trình nổ | 2026-09-17 |
+| memory leak | memory leaks, leak, leaks, leaky, leaking, leak memory | noun | IT | rò bộ nhớ, xài xong không trả | 2026-09-17 |
+| kick off | kicks off, kicked off, kicking off, kick-off, kickoff, kick things off, kick it off | phrasal verb | Business | mở màn, bắt đầu chính thức | 2026-09-17 |
 
 <!--
 LUẬT GHI:
