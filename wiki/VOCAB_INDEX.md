@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 145 từ đã học** · IT 58 · Business 58 · Life 29 · ad-hoc 0
+**Tổng: 150 từ đã học** · IT 60 · Business 60 · Life 30 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-17
+**Cập nhật:** 2026-09-18
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -164,6 +164,11 @@
 | 143 | loose ends | a loose end, tie up loose ends, tying up loose ends, at a loose end, loose, loosen | noun (số nhiều) | Business | mấy việc lặt vặt còn dở | 2026-09-17 | lesson |
 | 144 | on the same page | get on the same page, keep sb on the same page, be on a different page, same page, page | idiom | Business | hiểu giống nhau | 2026-09-17 | lesson |
 | 145 | commute | commutes, commuted, commuting, commuter, commuter train, commute to work | noun (cũng là verb) | Life | quãng đi làm hằng ngày | 2026-09-17 | lesson |
+| 146 | postmortem | postmortems, post-mortem, post mortem, a postmortem review, blameless postmortem | noun (đếm được) | IT | buổi mổ xẻ sau sự cố | 2026-09-18 | lesson |
+| 147 | runbook | runbooks, run-book, run book, runbook entry, runbook step | noun (đếm được) | IT | sổ tay các bước xử lý | 2026-09-18 | lesson |
+| 148 | due diligence | do due diligence, carry out due diligence, due-diligence checklist, due-diligence questionnaire, diligence, diligent, diligently | noun (không đếm được) | Business | kiểm tra kỹ trước khi ký | 2026-09-18 | lesson |
+| 149 | buffer | buffers, buffered, buffering, buffer time, buffer zone, build in a buffer | noun (cũng là verb) | Business | chừa dư ra phòng hờ | 2026-09-18 | lesson |
+| 150 | rush hour | rush hours, rush-hour traffic, the morning rush, the evening rush, rush | noun | Life | giờ cao điểm | 2026-09-18 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
