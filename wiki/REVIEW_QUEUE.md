@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-18: 145 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-19: 150 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -35,6 +35,9 @@
 - hạn 2026-09-16 — heartbeat · dangling · quote · off the table · night owl
 - hạn 2026-09-17 — ingest · quarantine · hash out · manage expectations · rain check
 - hạn 2026-09-18 — single point of failure · load shedding · loose ends · on the same page · commute
+- hạn 2026-09-19 — postmortem · runbook · due diligence · buffer · rush hour
+
+_Ghi chú 2026-09-19 (buổi #31): phần A hỏi lại 5 từ của buổi 18/09 (postmortem · runbook · due diligence · buffer · rush hour), phần B bốc ngẫu nhiên bằng lệnh trúng load shedding · race condition · bump · brittle · come across · iron out · stay up · scope creep · boilerplate · clarify · bring up · flaky · canary release · pain point · backport · resilient · dangling · tentative · sleep in · cutover — chạm cả lô cũ nhất (13/08) lẫn lô 17/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **150/155 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-18 (buổi #30): phần A hỏi lại 5 từ của buổi 17/09 (single point of failure · load shedding · loose ends · on the same page · commute), phần B bốc ngẫu nhiên bằng lệnh trúng throttle · truncate · verbose · heads-up · deprecate · nail down · lead time · catch up · spin up · manage expectations · sign off · outstanding · run errands · action item · stateless · spare · backport · immutable · pencil in · under the weather — chạm cả lô cũ nhất (13/08) lẫn lô 16/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **145/150 từ**, toàn bộ ở bậc 1._
 
@@ -220,6 +223,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | due diligence | 1 | 2026-09-19 | 0 | 0 | 2026-09-18 |
 | buffer | 1 | 2026-09-19 | 0 | 0 | 2026-09-18 |
 | rush hour | 1 | 2026-09-19 | 0 | 0 | 2026-09-18 |
+| contention | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
+| telemetry | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
+| reservations | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
+| red tape | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
+| tag along | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
 
 ## Đã thuộc (bậc 5, đúng)
 

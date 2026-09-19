@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 150 từ đã học** · IT 60 · Business 60 · Life 30 · ad-hoc 0
+**Tổng: 155 từ đã học** · IT 62 · Business 62 · Life 31 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-18
+**Cập nhật:** 2026-09-19
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -169,6 +169,11 @@
 | 148 | due diligence | do due diligence, carry out due diligence, due-diligence checklist, due-diligence questionnaire, diligence, diligent, diligently | noun (không đếm được) | Business | kiểm tra kỹ trước khi ký | 2026-09-18 | lesson |
 | 149 | buffer | buffers, buffered, buffering, buffer time, buffer zone, build in a buffer | noun (cũng là verb) | Business | chừa dư ra phòng hờ | 2026-09-18 | lesson |
 | 150 | rush hour | rush hours, rush-hour traffic, the morning rush, the evening rush, rush | noun | Life | giờ cao điểm | 2026-09-18 | lesson |
+| 151 | contention | contend, contending, contentious, lock contention, under contention | noun (không đếm được) | IT | tranh nhau một chỗ, chậm vì phải xếp hàng | 2026-09-19 | lesson |
+| 152 | telemetry | telemetry data, telemetric, telemeter, OpenTelemetry, send telemetry | noun (không đếm được) | IT | số liệu máy tự gửi về | 2026-09-19 | lesson |
+| 153 | reservations | reservation, without reservation, reserved, reserve, have reservations about | noun (số nhiều) | Business | còn gợn, chưa yên tâm | 2026-09-19 | lesson |
+| 154 | red tape | red tapes, red-tape delays, bureaucracy, bureaucratic, cut through red tape | noun (không đếm được) | Business | thủ tục rườm rà | 2026-09-19 | lesson |
+| 155 | tag along | tags along, tagged along, tagging along, tagalong, tag along with sb | phrasal verb | Life | đi ké, bám theo | 2026-09-19 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
