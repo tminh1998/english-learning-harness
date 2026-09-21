@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-21: 155 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-21: 150 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -36,11 +36,10 @@
 - hạn 2026-09-17 — ingest · quarantine · hash out · manage expectations · rain check
 - hạn 2026-09-18 — single point of failure · load shedding · loose ends · on the same page · commute
 - hạn 2026-09-19 — postmortem · runbook · due diligence · buffer · rush hour
-- hạn 2026-09-20 — contention · telemetry · reservations · red tape · tag along
 
-_Ghi chú 2026-09-21 (buổi #32): phần A hỏi lại 5 từ của buổi 19/09 (contention · telemetry · reservations · red tape · tag along), phần B bốc ngẫu nhiên bằng lệnh trúng purge · drag on · outstanding · stakeholder · discrepancy · stub · brittle · cold start · heartbeat · spare · rain check · get the hang of · worn out · stay up · align · runbook · edge case · bandwidth · pitch · hand over — chạm cả lô cũ nhất (14/08) lẫn lô 18/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **155/160 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-09-21 (buổi #31): phần A hỏi lại 5 từ của buổi 18/09 (postmortem · runbook · due diligence · buffer · rush hour), phần B bốc ngẫu nhiên bằng lệnh trúng purge · drag on · outstanding · stakeholder · discrepancy · stub · brittle · cold start · heartbeat · spare · rain check · get the hang of · worn out · stay up · align · fed up · edge case · bandwidth · pitch · hand over — chạm cả lô cũ nhất (14/08) lẫn lô 18/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **150/155 từ**, toàn bộ ở bậc 1._
 
-_Ghi chú 2026-09-19 (buổi #31): phần A hỏi lại 5 từ của buổi 18/09 (postmortem · runbook · due diligence · buffer · rush hour), phần B bốc ngẫu nhiên bằng lệnh trúng load shedding · race condition · bump · brittle · come across · iron out · stay up · scope creep · boilerplate · clarify · bring up · flaky · canary release · pain point · backport · resilient · dangling · tentative · sleep in · cutover — chạm cả lô cũ nhất (13/08) lẫn lô 17/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **150/155 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-09-21 (xoá bài 19/09): người học báo thứ Bảy 19/09 không học — gỡ 5 từ contention · telemetry · reservations · red tape · tag along khỏi vốn từ và lịch ôn; bài 21/09 lùi thành buổi #31, phần A đổi sang 5 từ của 18/09, `runbook` ở phần B bốc lại thành `fed up`._
 
 _Ghi chú 2026-09-18 (buổi #30): phần A hỏi lại 5 từ của buổi 17/09 (single point of failure · load shedding · loose ends · on the same page · commute), phần B bốc ngẫu nhiên bằng lệnh trúng throttle · truncate · verbose · heads-up · deprecate · nail down · lead time · catch up · spin up · manage expectations · sign off · outstanding · run errands · action item · stateless · spare · backport · immutable · pencil in · under the weather — chạm cả lô cũ nhất (13/08) lẫn lô 16/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **145/150 từ**, toàn bộ ở bậc 1._
 
@@ -226,11 +225,6 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | due diligence | 1 | 2026-09-19 | 0 | 0 | 2026-09-18 |
 | buffer | 1 | 2026-09-19 | 0 | 0 | 2026-09-18 |
 | rush hour | 1 | 2026-09-19 | 0 | 0 | 2026-09-18 |
-| contention | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
-| telemetry | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
-| reservations | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
-| red tape | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
-| tag along | 1 | 2026-09-20 | 0 | 0 | 2026-09-19 |
 | drain | 1 | 2026-09-22 | 0 | 0 | 2026-09-21 |
 | fan-out | 1 | 2026-09-22 | 0 | 0 | 2026-09-21 |
 | carve out | 1 | 2026-09-22 | 0 | 0 | 2026-09-21 |
