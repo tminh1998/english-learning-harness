@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-22: 155 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-23: 160 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -37,6 +37,9 @@
 - hạn 2026-09-18 — single point of failure · load shedding · loose ends · on the same page · commute
 - hạn 2026-09-19 — postmortem · runbook · due diligence · buffer · rush hour
 - hạn 2026-09-22 — drain · fan-out · carve out · ground rules · settle in
+- hạn 2026-09-23 — shard · contention · contingency · scale back · show up
+
+_Ghi chú 2026-09-23 (buổi #33): phần A hỏi lại 5 từ của buổi 22/09 (shard · contention · contingency · scale back · show up), phần B bốc ngẫu nhiên bằng lệnh trúng spike · drag on · pain point · run errands · escalate · verbose · deliverable · drain · pencil in · hand over · backport · boilerplate · sign off · leeway · stay up · follow up · rush hour · commute · recap · hash out — chạm cả lô cũ nhất (13/08) lẫn lô 21/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **160/165 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-22 (buổi #32): phần A hỏi lại 5 từ của buổi 21/09 (drain · fan-out · carve out · ground rules · settle in), phần B bốc ngẫu nhiên bằng lệnh trúng bottleneck · scope creep · immutable · align · stateless · verbose · backport · sticking point · bandwidth · put up with · rain check · feasible · technical debt · iron out · purge · feature flag · dry run · deliverable · heartbeat · bump — chạm cả lô cũ nhất (14/08) lẫn lô 16/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **155/160 từ**, toàn bộ ở bậc 1. `contention` được dạy lại trong buổi này — nó nằm trong 5 từ của bài 19/09 đã xoá hẳn hôm 21/09, đã trả khỏi `VOCAB_INDEX.md` nên hard gate R1 sạch (cùng tiền lệ với `off the table`)._
 
@@ -238,6 +241,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | contingency | 1 | 2026-09-23 | 0 | 0 | 2026-09-22 |
 | scale back | 1 | 2026-09-23 | 0 | 0 | 2026-09-22 |
 | show up | 1 | 2026-09-23 | 0 | 0 | 2026-09-22 |
+| saturation | 1 | 2026-09-24 | 0 | 0 | 2026-09-23 |
+| skew | 1 | 2026-09-24 | 0 | 0 | 2026-09-23 |
+| on the fence | 1 | 2026-09-24 | 0 | 0 | 2026-09-23 |
+| waive | 1 | 2026-09-24 | 0 | 0 | 2026-09-23 |
+| binge-watch | 1 | 2026-09-24 | 0 | 0 | 2026-09-23 |
 
 ## Đã thuộc (bậc 5, đúng)
 

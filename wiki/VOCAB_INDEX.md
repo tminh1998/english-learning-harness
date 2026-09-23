@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 160 từ đã học** · IT 64 · Business 64 · Life 32 · ad-hoc 0
+**Tổng: 165 từ đã học** · IT 66 · Business 66 · Life 33 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-22
+**Cập nhật:** 2026-09-23
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -179,6 +179,11 @@
 | 158 | contingency | contingencies, contingent, contingent on, contingency plan, contingency budget | noun (đếm được) | Business | phương án phòng khi hỏng | 2026-09-22 | lesson |
 | 159 | scale back | scales back, scaled back, scaling back, a scaling-back, scale up, scale down | phrasal verb | Business | thu nhỏ lại cho vừa sức | 2026-09-22 | lesson |
 | 160 | show up | shows up, showed up, shown up, a no-show, show sb up | phrasal verb | Life | có mặt, ló mặt tới | 2026-09-22 | lesson |
+| 161 | saturation | saturate, saturates, saturated, saturating, saturation point, unsaturated, oversaturated | noun (không đếm được) | IT | đã chạm trần, hết chỗ nhận thêm | 2026-09-23 | lesson |
+| 162 | skew | skews, skewed, skewing, skewness, data skew, clock skew, right-skewed | noun (cũng là verb) | IT | lệch, dồn hết về một bên | 2026-09-23 | lesson |
+| 163 | on the fence | fence, fences, sit on the fence, come down off the fence, fence-sitter, fence-sitting | idiom (đi sau be) | Business | còn lưỡng lự, chưa ngả bên nào | 2026-09-23 | lesson |
+| 164 | waive | waives, waived, waiving, waiver, waivable, unwaived | verb | Business | bỏ qua, không đòi nữa | 2026-09-23 | lesson |
+| 165 | binge-watch | binge-watches, binge-watched, binge-watching, binge, binges, bingeing, a binge, binge on | verb | Life | cày phim một lèo | 2026-09-23 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
