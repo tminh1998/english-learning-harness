@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 165 từ đã học** · IT 66 · Business 66 · Life 33 · ad-hoc 0
+**Tổng: 170 từ đã học** · IT 68 · Business 68 · Life 34 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-23
+**Cập nhật:** 2026-09-24
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -184,6 +184,11 @@
 | 163 | on the fence | fence, fences, sit on the fence, come down off the fence, fence-sitter, fence-sitting | idiom (đi sau be) | Business | còn lưỡng lự, chưa ngả bên nào | 2026-09-23 | lesson |
 | 164 | waive | waives, waived, waiving, waiver, waivable, unwaived | verb | Business | bỏ qua, không đòi nữa | 2026-09-23 | lesson |
 | 165 | binge-watch | binge-watches, binge-watched, binge-watching, binge, binges, bingeing, a binge, binge on | verb | Life | cày phim một lèo | 2026-09-23 | lesson |
+| 166 | eviction | evict, evicts, evicted, evicting, evictions, eviction policy, evicted entry | noun | IT | đẩy bớt ra cho có chỗ | 2026-09-24 | lesson |
+| 167 | cardinality | cardinal, cardinalities, high-cardinality, low-cardinality, cardinality estimate, cardinality explosion | noun (không đếm được) | IT | số giá trị khác nhau | 2026-09-24 | lesson |
+| 168 | concession | concede, concedes, conceded, conceding, concessions, concessionary | noun (đếm được) | Business | nhượng một bước | 2026-09-24 | lesson |
+| 169 | draw the line | draws the line, drew the line, drawn the line, draw a line in the sand, borderline | idiom | Business | vạch ra tới đây thôi | 2026-09-24 | lesson |
+| 170 | splurge | splurges, splurged, splurging, a splurge, splurge-worthy | verb (cũng là noun) | Life | vung tay tiêu một phát | 2026-09-24 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
