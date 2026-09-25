@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-24: 165 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-25: 170 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -39,6 +39,9 @@
 - hạn 2026-09-22 — drain · fan-out · carve out · ground rules · settle in
 - hạn 2026-09-23 — shard · contention · contingency · scale back · show up
 - hạn 2026-09-24 — saturation · skew · on the fence · waive · binge-watch
+- hạn 2026-09-25 — eviction · cardinality · concession · draw the line · splurge
+
+_Ghi chú 2026-09-25 (buổi #35): phần A hỏi lại 5 từ của buổi 24/09 (eviction · cardinality · concession · draw the line · splurge), phần B bốc ngẫu nhiên bằng lệnh trúng outstanding · provision · sleep in · dangling · drag on · sanity check · run out of · ingest · propagate · onboarding · downstream · under the weather · circle back · accommodate · hash out · feature flag · sticking point · sort out · catch up · discrepancy — chạm cả lô cũ nhất (13/08) lẫn lô 23/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **170/175 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-24 (buổi #34): phần A hỏi lại 5 từ của buổi 23/09 (saturation · skew · on the fence · waive · binge-watch), phần B bốc ngẫu nhiên bằng lệnh trúng quote · fed up · resilient · put off · purge · breaking change · manage expectations · culprit · stateless · graceful degradation · off the table · downstream · dangling · immutable · contention · buffer · on track · backpressure · turnaround · hash out — chạm cả lô cũ nhất (13/08) lẫn lô 22/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **165/170 từ**, toàn bộ ở bậc 1._
 
@@ -254,6 +257,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | concession | 1 | 2026-09-25 | 0 | 0 | 2026-09-24 |
 | draw the line | 1 | 2026-09-25 | 0 | 0 | 2026-09-24 |
 | splurge | 1 | 2026-09-25 | 0 | 0 | 2026-09-24 |
+| replay | 1 | 2026-09-26 | 0 | 0 | 2026-09-25 |
+| idle | 1 | 2026-09-26 | 0 | 0 | 2026-09-25 |
+| call out | 1 | 2026-09-26 | 0 | 0 | 2026-09-25 |
+| de-risk | 1 | 2026-09-26 | 0 | 0 | 2026-09-25 |
+| chill out | 1 | 2026-09-26 | 0 | 0 | 2026-09-25 |
 
 ## Đã thuộc (bậc 5, đúng)
 

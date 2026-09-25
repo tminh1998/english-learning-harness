@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 170 từ đã học** · IT 68 · Business 68 · Life 34 · ad-hoc 0
+**Tổng: 175 từ đã học** · IT 70 · Business 70 · Life 35 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-24
+**Cập nhật:** 2026-09-25
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -189,6 +189,11 @@
 | 168 | concession | concede, concedes, conceded, conceding, concessions, concessionary | noun (đếm được) | Business | nhượng một bước | 2026-09-24 | lesson |
 | 169 | draw the line | draws the line, drew the line, drawn the line, draw a line in the sand, borderline | idiom | Business | vạch ra tới đây thôi | 2026-09-24 | lesson |
 | 170 | splurge | splurges, splurged, splurging, a splurge, splurge-worthy | verb (cũng là noun) | Life | vung tay tiêu một phát | 2026-09-24 | lesson |
+| 171 | replay | replays, replayed, replaying, replayable, a replay, replay log, event replay | verb (cũng là noun) | IT | chạy lại y nguyên | 2026-09-25 | lesson |
+| 172 | idle | idles, idled, idling, idly, idleness, idle timeout, sit idle | adjective (cũng là verb) | IT | nằm không, chẳng làm gì | 2026-09-25 | lesson |
+| 173 | call out | calls out, called out, calling out, call sth out, a call-out | phrasal verb | Business | nói thẳng ra chỗ đó | 2026-09-25 | lesson |
+| 174 | de-risk | de-risks, de-risked, de-risking, derisk, a de-risking step, risk, risky, at risk | verb | Business | gỡ bớt rủi ro trước | 2026-09-25 | lesson |
+| 175 | chill out | chills out, chilled out, chilling out, chilled-out, chill, chill vibes | phrasal verb | Life | thư giãn, hạ hoả | 2026-09-25 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
