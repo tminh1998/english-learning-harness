@@ -201,37 +201,37 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>replay
-        <button class="say" data-say="replay the events" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>flush
+        <button class="say" data-say="flush the cache" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌriːˈpleɪ/ (động từ) · /ˈriː.pleɪ/ (danh từ) · <em>verb (cũng là noun)</em></div>
+      <div class="ipa">/flʌʃ/ · <em>verb (cũng là noun)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">chạy lại y nguyên<span class="alt">phát lại đúng chuỗi event đã lưu, theo đúng thứ tự cũ</span></p>
+  <p class="vi-quick hide-me">xả hết chỗ đang giữ tạm<span class="alt">ghi nốt buffer xuống đích, hoặc dọn trắng cache cho nạp lại từ đầu</span></p>
 
-  <p class="def"><span class="tag">EN</span>To replay is to run a saved sequence of events, messages or requests through the system again, in the same order.
-    <span class="def-vi hide-me">→ Replay là cho cả một chuỗi event, message hay request đã lưu chạy lại qua hệ thống một lần nữa, theo đúng thứ tự cũ.</span>
+  <p class="def"><span class="tag">EN</span>To flush something is to push out everything it is holding temporarily — either by writing it to its destination or by clearing it so the next read starts fresh.
+    <span class="def-vi hide-me">→ Flush một cái gì là đẩy hết chỗ nó đang giữ tạm ra — ghi xuống đích, hoặc dọn trắng để lần đọc sau nạp lại từ đầu.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>retry</code>: <code>retry</code> là thử lại <b>một</b> lần gọi đang hỏng, <code>replay</code> là tua lại <b>cả đoạn băng</b> đã ghi. Gặp nhiều ở queue, event sourcing, webhook — chỗ nào có log giữ lại được thì chỗ đó replay được.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>purge</code> (xoá cho mất hẳn theo một tiêu chí) và khác <code>eviction</code> (hệ thống tự bỏ bớt cho có chỗ): <code>flush</code> là mình chủ động xả cả mẻ. Gặp nhiều ở log agent, buffer ghi file, cache CDN.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">The queue still has everything from 2 a.m., so we can <b>replay</b> the batch and the <span class="rev">discrepancy</span> in the invoice totals should disappear.</span>
-      <span class="vi hide-me">→ Hàng đợi vẫn còn nguyên từ 2 giờ sáng, nên mình chạy lại lô đó là chỗ vênh trong hoá đơn sẽ hết.</span>
+      <span class="en">The dashboard looked wrong all morning because the agent only <b>flushes</b> its buffer once a minute, so every <span class="rev">discrepancy</span> fixed itself sixty seconds later.</span>
+      <span class="vi hide-me">→ Cả buổi sáng dashboard nhìn sai là vì con agent một phút mới xả buffer một lần, nên chỗ vênh nào cũng tự hết sau sáu mươi giây.</span>
     </li>
     <li>
-      <span class="en">I'll <b>replay</b> the failed webhooks after lunch — give me a <span class="rev">heads-up</span> if the client calls before that.</span>
-      <span class="vi hide-me">→ Chiều tớ chạy lại mấy cái webhook hỏng; khách có gọi trước đó thì báo tớ một tiếng nhé.</span>
+      <span class="en"><b>Flush</b> the cache right after the deploy, otherwise the pricing page keeps serving <span class="rev">stale</span> numbers to customers.</span>
+      <span class="vi hide-me">→ Deploy xong là xả cache ngay, không thì trang giá cứ trả số cũ cho khách.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>replay the events</code>, <code>replay a message / a request</code>, <code>event replay</code>, <code>replay from a snapshot</code>, <code>a replay log</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Trọng âm đổi theo loại từ: động từ nhấn cuối /ˌriːˈpleɪ/, danh từ nhấn đầu /ˈriː.pleɪ/. <code>re-</code> đã là "lại" nên đừng viết "replay again". Và đừng dùng thay <code>retry</code> — hai việc khác nhau.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">replays, replayed, replaying, replayable, a replay, replay log</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>flush the cache</code>, <code>flush the buffer</code>, <code>flush to disk</code>, <code>flush the queue</code>, <code>auto-flush</code>, <code>a cache flush</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /flʌʃ/, nguyên âm ngắn như <code>much</code> — <code>flash</code> /flæʃ/ là từ khác hẳn. Có tân ngữ thẳng: <code>flush the cache</code>; còn <code>flush sth out</code> là <i>lùa ra, làm lộ ra</i> — nghĩa khác. Ngoài IT thì <code>flush</code> còn là <i>xả bồn cầu</i>, <code>flushed</code> là <i>đỏ mặt</i>, nên nói với khách cứ gắn kèm tân ngữ cho rõ.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">flushes, flushed, flushing, a flush, a cache flush, auto-flush, flush to disk</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Thread trên Slack kênh #incident, sáng hôm sau</p>
-  <div class="passage">Morning. The consumer died around 2 a.m., so most of the fleet has been sitting <b>idle</b> since then and nothing moved. Plan for today: <b>replay</b> the stuck batch first, then check the totals against the invoice. I also want to <b>call out</b> that nothing alerted for four hours — that's the real bug, not the crash. To <b>de-risk</b> tonight's run I'll add the lag alarm before anything else, and the <span class="rev">runbook</span> still has no step for this, so I'll write one. If it holds until five, everybody can <b>chill out</b> for the weekend.</div>
+  <div class="passage">Morning. The consumer died around 2 a.m., so most of the fleet has been sitting <b>idle</b> since then and nothing moved. Plan for today: restart the consumer, then <b>flush</b> the cache so the totals stop disagreeing with the invoice. I also want to <b>call out</b> that nothing alerted for four hours — that's the real bug, not the crash. To <b>de-risk</b> tonight's run I'll add the lag alarm before anything else, and the <span class="rev">runbook</span> still has no step for this, so I'll write one. If it holds until five, everybody can <b>chill out</b> for the weekend.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Chào buổi sáng. Con consumer chết tầm 2 giờ sáng, nên gần như cả cụm nằm không từ đó tới giờ, chẳng có gì chạy. Kế hoạch hôm nay: chạy lại cái lô đang kẹt trước đã, rồi đối chiếu tổng số với hoá đơn. Tớ cũng muốn nói thẳng một chuyện: suốt bốn tiếng không có cảnh báo nào — đó mới là lỗi thật, chứ không phải vụ chết service. Để tối nay chạy cho bớt rủi ro, tớ sẽ thêm cảnh báo lag trước tiên, và sổ tay xử lý vẫn chưa có bước nào cho ca này nên tớ viết thêm. Nếu tới 5 giờ vẫn ổn thì cả nhà nghỉ ngơi cuối tuần thoải mái.</p>
+    <p class="hide-me">Chào buổi sáng. Con consumer chết tầm 2 giờ sáng, nên gần như cả cụm nằm không từ đó tới giờ, chẳng có gì chạy. Kế hoạch hôm nay: bật lại con consumer trước, rồi xả cache cho tổng số thôi lệch với hoá đơn. Tớ cũng muốn nói thẳng một chuyện: suốt bốn tiếng không có cảnh báo nào — đó mới là lỗi thật, chứ không phải vụ chết service. Để tối nay chạy cho bớt rủi ro, tớ sẽ thêm cảnh báo lag trước tiên, và sổ tay xử lý vẫn chưa có bước nào cho ca này nên tớ viết thêm. Nếu tới 5 giờ vẫn ổn thì cả nhà nghỉ ngơi cuối tuần thoải mái.</p>
   </details>
 </section>
 
@@ -397,7 +397,7 @@
   <h2>Bài tập</h2>
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
-    <li><b>Điền từ</b> — The queue kept every message, so we can just ______ them in order instead of re-entering anything by hand.</li>
+    <li><b>Điền từ</b> — The log agent keeps everything in memory and only ______ its buffer once a minute, so the graph is always a minute behind.</li>
     <li><b>Điền từ</b> — Four servers ran all weekend with nothing to do; they were completely ______.</li>
     <li><b>Sửa lỗi</b> — "Please call out to the missing test in your review comment."</li>
     <li><b>Chọn cụm đúng</b> — (a) a short pilot will <b>de-risk the rollout</b> · (b) a short pilot will <b>de-risk against the rollout</b></li>
@@ -406,7 +406,7 @@
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>replay</b> — <code>replay the messages</code>. Đừng viết "replay again": <code>re-</code> đã là "lại" rồi. Và đây không phải <code>retry</code> — <code>retry</code> là thử lại một lần gọi đang hỏng.</li>
+      <li><b>flushes</b> — <code>flush the buffer</code> / <code>flush to disk</code>. Khác <code>purge</code> (xoá cho mất hẳn) và khác <code>eviction</code> (hệ thống tự bỏ bớt cho có chỗ). Và đừng viết thành <code>flash</code> — khác nguyên âm là khác từ.</li>
       <li><b>idle</b> — <code>sit idle</code> / <code>be idle</code>. Máy <code>idle</code> là <b>vẫn chạy mà không có việc</b>, khác <code>down</code> (chết) và khác <code>free</code> (còn chỗ trống).</li>
       <li><b>Please call out the missing test in your review comment.</b> — <code>call out + sth</code>, không có <code>to</code>. (<code>call out to sb</code> là <i>gọi với theo ai đó</i>.) Nếu là đại từ thì phải tách: <code>call it out</code>.</li>
       <li><b>(a) de-risk the rollout</b> — có tân ngữ thẳng, không thêm giới từ. Viết có gạch nối: <code>de-risk</code>.</li>

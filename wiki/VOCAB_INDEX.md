@@ -189,7 +189,7 @@
 | 168 | concession | concede, concedes, conceded, conceding, concessions, concessionary | noun (đếm được) | Business | nhượng một bước | 2026-09-24 | lesson |
 | 169 | draw the line | draws the line, drew the line, drawn the line, draw a line in the sand, borderline | idiom | Business | vạch ra tới đây thôi | 2026-09-24 | lesson |
 | 170 | splurge | splurges, splurged, splurging, a splurge, splurge-worthy | verb (cũng là noun) | Life | vung tay tiêu một phát | 2026-09-24 | lesson |
-| 171 | replay | replays, replayed, replaying, replayable, a replay, replay log, event replay | verb (cũng là noun) | IT | chạy lại y nguyên | 2026-09-25 | lesson |
+| 171 | flush | flushes, flushed, flushing, a flush, a cache flush, auto-flush, flush to disk | verb (cũng là noun) | IT | xả hết chỗ đang giữ tạm | 2026-09-25 | lesson |
 | 172 | idle | idles, idled, idling, idly, idleness, idle timeout, sit idle | adjective (cũng là verb) | IT | nằm không, chẳng làm gì | 2026-09-25 | lesson |
 | 173 | call out | calls out, called out, calling out, call sth out, a call-out | phrasal verb | Business | nói thẳng ra chỗ đó | 2026-09-25 | lesson |
 | 174 | de-risk | de-risks, de-risked, de-risking, derisk, a de-risking step, risk, risky, at risk | verb | Business | gỡ bớt rủi ro trước | 2026-09-25 | lesson |
@@ -215,6 +215,7 @@
 | stack trace | stack traces, stacktrace, traceback, trace, stack | noun | IT | vết lỗi in ra lúc chương trình nổ | 2026-09-17 |
 | memory leak | memory leaks, leak, leaks, leaky, leaking, leak memory | noun | IT | rò bộ nhớ, xài xong không trả | 2026-09-17 |
 | kick off | kicks off, kicked off, kicking off, kick-off, kickoff, kick things off, kick it off | phrasal verb | Business | mở màn, bắt đầu chính thức | 2026-09-17 |
+| replay | replays, replayed, replaying, replayable, a replay, replay log, event replay | verb (cũng là noun) | IT | chạy lại y nguyên chuỗi event/message đã lưu | 2026-09-25 |
 
 <!--
 LUẬT GHI:

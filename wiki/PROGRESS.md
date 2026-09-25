@@ -52,7 +52,7 @@
 | 2026-09-22 | 2026-W39 | #32 | shard · contention · contingency · scale back · show up |
 | 2026-09-23 | 2026-W39 | #33 | saturation · skew · on the fence · waive · binge-watch |
 | 2026-09-24 | 2026-W39 | #34 | eviction · cardinality · concession · draw the line · splurge |
-| 2026-09-25 | 2026-W39 | #35 | replay · idle · call out · de-risk · chill out |
+| 2026-09-25 | 2026-W39 | #35 | flush · idle · call out · de-risk · chill out |
 
 ## Kết quả quiz tuần
 
