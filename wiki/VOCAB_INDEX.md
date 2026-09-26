@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 175 từ đã học** · IT 70 · Business 70 · Life 35 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 8 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-25
+**Tổng: 180 từ đã học** · IT 72 · Business 72 · Life 36 · ad-hoc 0
+**Đã biết sẵn (không dạy):** 9 từ — xem bảng cuối file
+**Cập nhật:** 2026-09-26
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -194,6 +194,11 @@
 | 173 | call out | calls out, called out, calling out, call sth out, a call-out | phrasal verb | Business | nói thẳng ra chỗ đó | 2026-09-25 | lesson |
 | 174 | de-risk | de-risks, de-risked, de-risking, derisk, a de-risking step, risk, risky, at risk | verb | Business | gỡ bớt rủi ro trước | 2026-09-25 | lesson |
 | 175 | chill out | chills out, chilled out, chilling out, chilled-out, chill, chill vibes | phrasal verb | Life | thư giãn, hạ hoả | 2026-09-25 | lesson |
+| 176 | hydrate | hydrates, hydrated, hydrating, hydration, rehydrate, dehydrate, hydration mismatch | verb | IT | làm HTML tĩnh sống lại | 2026-09-26 | lesson |
+| 177 | coalesce | coalesces, coalesced, coalescing, coalescence, request coalescing, write coalescing | verb | IT | gộp nhiều cái thành một | 2026-09-26 | lesson |
+| 178 | walk back | walks back, walked back, walking back, walk it back, a walk-back | phrasal verb | Business | rút lại điều đã nói | 2026-09-26 | lesson |
+| 179 | nudge | nudges, nudged, nudging, a nudge, a gentle nudge, nudge theory | verb (cũng là noun) | Business | nhắc nhẹ một cái | 2026-09-26 | lesson |
+| 180 | head out | heads out, headed out, heading out, head off, head home | phrasal verb | Life | đi thôi, rời chỗ này | 2026-09-26 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

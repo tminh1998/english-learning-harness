@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-09-25 (buổi #35)
+**Cập nhật:** 2026-09-26 (buổi #36)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 175 · **đã biết sẵn** 8 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 70 · Business 70 · Life 35                                                           |
-| Số buổi học          | 35                                                                                      |
-| Streak hiện tại      | 5 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 180 · **đã biết sẵn** 9 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 72 · Business 72 · Life 36                                                           |
+| Số buổi học          | 36                                                                                      |
+| Streak hiện tại      | 6 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-09-25 (Thứ Sáu) — buổi #35                                                         |
+| Buổi gần nhất        | 2026-09-26 (Thứ Bảy) — buổi #36                                                         |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -53,6 +53,7 @@
 | 2026-09-23 | 2026-W39 | #33 | saturation · skew · on the fence · waive · binge-watch |
 | 2026-09-24 | 2026-W39 | #34 | eviction · cardinality · concession · draw the line · splurge |
 | 2026-09-25 | 2026-W39 | #35 | flush · idle · call out · de-risk · chill out |
+| 2026-09-26 | 2026-W39 | #36 | hydrate · coalesce · walk back · nudge · head out |
 
 ## Kết quả quiz tuần
 
