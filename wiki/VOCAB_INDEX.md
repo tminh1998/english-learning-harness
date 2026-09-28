@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 180 từ đã học** · IT 72 · Business 72 · Life 36 · ad-hoc 0
+**Tổng: 185 từ đã học** · IT 74 · Business 74 · Life 37 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 9 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-26
+**Cập nhật:** 2026-09-28
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -199,6 +199,11 @@
 | 178 | walk back | walks back, walked back, walking back, walk it back, a walk-back | phrasal verb | Business | rút lại điều đã nói | 2026-09-26 | lesson |
 | 179 | nudge | nudges, nudged, nudging, a nudge, a gentle nudge, nudge theory | verb (cũng là noun) | Business | nhắc nhẹ một cái | 2026-09-26 | lesson |
 | 180 | head out | heads out, headed out, heading out, head off, head home | phrasal verb | Life | đi thôi, rời chỗ này | 2026-09-26 | lesson |
+| 181 | circuit breaker | circuit breakers, breaker, trip the breaker, circuit-breaker pattern, open / half-open / closed, short-circuit | noun (đếm được) | IT | cầu dao tự cắt khi lỗi | 2026-09-28 | lesson |
+| 182 | preflight | a preflight request, preflight response, preflight check, pre-flight, preflights, OPTIONS preflight | noun (hay dùng như tính từ) | IT | cú hỏi trước xin phép | 2026-09-28 | lesson |
+| 183 | firm up | firms up, firmed up, firming up, firm sth up, firm it up, firm (adj) | phrasal verb (tách được) | Business | chốt cho chắc | 2026-09-28 | lesson |
+| 184 | roadmap | roadmaps, road map, product roadmap, roadmapping, on the roadmap, roadmap item | noun (đếm được) | Business | lộ trình sắp làm gì | 2026-09-28 | lesson |
+| 185 | cut it close | cuts it close, cut it close, cutting it close, cut it fine, a close call | idiom | Life | sát nút, suýt không kịp | 2026-09-28 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

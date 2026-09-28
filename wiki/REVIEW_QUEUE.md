@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-26: 175 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-09-28: 180 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -41,6 +41,9 @@
 - hạn 2026-09-24 — saturation · skew · on the fence · waive · binge-watch
 - hạn 2026-09-25 — eviction · cardinality · concession · draw the line · splurge
 - hạn 2026-09-26 — flush · idle · call out · de-risk · chill out
+- hạn 2026-09-27 — hydrate · coalesce · walk back · nudge · head out
+
+_Ghi chú 2026-09-28 (buổi #37): phần A hỏi lại 5 từ của buổi 26/09 (hydrate · coalesce · walk back · nudge · head out), phần B bốc ngẫu nhiên bằng lệnh trúng put off · call out · run out of · manage expectations · sleep in · postmortem · deprecate · culprit · fan-out · night owl · dangling · outstanding · fed up · touch base · escalate · circle back · get the hang of · deliverable · spike · loop in — chạm từ lô cũ nhất (13/08) tới lô 26/09. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **180/185 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-26 (buổi #36): phần A hỏi lại 5 từ của buổi 25/09 (flush · idle · call out · de-risk · chill out), phần B bốc ngẫu nhiên bằng lệnh trúng quarantine · backport · runbook · carve out · pitch · backward compatible · throughput · defer · lead time · milestone · regression · iron out · backoff · wrap up · sanity check · propagate · ramp up · on track · saturation · hand over — chạm cả lô cũ nhất (17/08) lẫn lô 23/09. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **175/180 từ**, toàn bộ ở bậc 1._
 
@@ -270,6 +273,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | walk back | 1 | 2026-09-27 | 0 | 0 | 2026-09-26 |
 | nudge | 1 | 2026-09-27 | 0 | 0 | 2026-09-26 |
 | head out | 1 | 2026-09-27 | 0 | 0 | 2026-09-26 |
+| circuit breaker | 1 | 2026-09-29 | 0 | 0 | 2026-09-28 |
+| preflight | 1 | 2026-09-29 | 0 | 0 | 2026-09-28 |
+| firm up | 1 | 2026-09-29 | 0 | 0 | 2026-09-28 |
+| roadmap | 1 | 2026-09-29 | 0 | 0 | 2026-09-28 |
+| cut it close | 1 | 2026-09-29 | 0 | 0 | 2026-09-28 |
 
 ## Đã thuộc (bậc 5, đúng)
 
