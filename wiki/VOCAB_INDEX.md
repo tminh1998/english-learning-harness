@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 185 từ đã học** · IT 74 · Business 74 · Life 37 · ad-hoc 0
+**Tổng: 190 từ đã học** · IT 76 · Business 76 · Life 38 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 9 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-28
+**Cập nhật:** 2026-09-29
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -204,6 +204,11 @@
 | 183 | firm up | firms up, firmed up, firming up, firm sth up, firm it up, firm (adj) | phrasal verb (tách được) | Business | chốt cho chắc | 2026-09-28 | lesson |
 | 184 | roadmap | roadmaps, road map, product roadmap, roadmapping, on the roadmap, roadmap item | noun (đếm được) | Business | lộ trình sắp làm gì | 2026-09-28 | lesson |
 | 185 | cut it close | cuts it close, cut it close, cutting it close, cut it fine, a close call | idiom | Life | sát nút, suýt không kịp | 2026-09-28 | lesson |
+| 186 | observability | observe, observes, observed, observable, observability, observer, unobservable, o11y | noun (không đếm được) | IT | soi được bên trong hệ thống | 2026-09-29 | lesson |
+| 187 | checksum | checksums, checksummed, checksumming, checksum mismatch, check sum, hash, digest | noun (đếm được; cũng là verb) | IT | mã ngắn để soi dữ liệu còn nguyên không | 2026-09-29 | lesson |
+| 188 | take ownership | own, owns, owned, owner, ownership, take ownership of, own it, sense of ownership | idiom (cụm động từ) | Business | nhận là việc của mình | 2026-09-29 | lesson |
+| 189 | invoice | invoices, invoiced, invoicing, invoice number, invoice date, bill | noun (đếm được; cũng là verb) | Business | giấy đòi tiền gửi khách | 2026-09-29 | lesson |
+| 190 | leftovers | leftover, leftover rice, be left over, left over, leftovers | noun (số nhiều) | Life | đồ ăn còn lại từ bữa trước | 2026-09-29 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

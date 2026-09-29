@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-09-28 (buổi #37)
+**Cập nhật:** 2026-09-29 (buổi #38)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 185 · **đã biết sẵn** 9 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 74 · Business 74 · Life 37                                                           |
-| Số buổi học          | 37                                                                                      |
-| Streak hiện tại      | 7 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 190 · **đã biết sẵn** 9 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 76 · Business 76 · Life 38                                                           |
+| Số buổi học          | 38                                                                                      |
+| Streak hiện tại      | 8 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-09-28 (Thứ Hai) — buổi #37                                                         |
+| Buổi gần nhất        | 2026-09-29 (Thứ Ba) — buổi #38                                                         |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -55,6 +55,7 @@
 | 2026-09-25 | 2026-W39 | #35 | flush · idle · call out · de-risk · chill out |
 | 2026-09-26 | 2026-W39 | #36 | hydrate · coalesce · walk back · nudge · head out |
 | 2026-09-28 | 2026-W40 | #37 | circuit breaker · preflight · firm up · roadmap · cut it close |
+| 2026-09-29 | 2026-W40 | #38 | observability · checksum · take ownership · invoice · leftovers |
 
 ## Kết quả quiz tuần
 
