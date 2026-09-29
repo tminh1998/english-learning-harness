@@ -79,6 +79,21 @@ grep -rnF "<NGHIA cũ>" wiki/lessons wiki/recap wiki/VOCAB_INDEX.md
 Chỉ thay chỗ nào đúng là nghĩa **của từ này** (một cụm ngắn có thể trùng ở từ khác).
 "Giữ bản hiện tại" và "Bỏ qua" → không sửa file bài nào.
 
+⭐ **Rồi sửa luôn cả bài gốc theo cách dịch mới** (user đòi 2026-09-29: đổi mỗi dòng
+nghĩa gọn là chưa đủ). Trong **cả `.md` lẫn `.html`** của ngày đó, mọi câu tiếng Việt
+đang diễn đạt từ này theo kiểu cũ đều viết lại cho khớp bản của user:
+
+| Chỗ trong bài | Ví dụ (invoice: `giấy đòi tiền gửi khách` → `Hóa đơn`) |
+|---|---|
+| `**VI**` (.md) · `GHI CHÚ` (.html) | "**Giấy đòi tiền** mình gửi cho khách" → "**Hóa đơn** mình gửi cho khách" |
+| `.def-vi` (.html) | "Invoice là tờ giấy mình gửi khách" → "Invoice là hóa đơn mình gửi khách" |
+| câu dịch ví dụ | "ăn đồ hôm qua" → "ăn đồ thừa hôm qua" |
+| bản dịch mẩu đọc · câu đề bài tập tiếng Việt · Ghi chú buổi học (.md) | cùng kiểu |
+
+Dùng đúng chữ và cách viết của user (vd `hóa đơn` chứ không `hoá đơn`) ở mọi chỗ trong
+bài cho đồng bộ. Chỉ đổi phần nói về **nghĩa** của từ — sắc thái, bẫy, collocation
+giữ nguyên. Sửa xong thì grep lại cụm cũ trong hai file cho chắc không còn sót.
+
 ## 4. Ghi vào sổ cách dịch — phần để agent học
 
 Mở `wiki/memory/cach-dich-cua-user.md`:

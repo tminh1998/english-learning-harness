@@ -209,22 +209,22 @@
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">soi được bên trong hệ thống<span class="alt">log, metric, trace đủ nhiều để hỏi "sao nó lỗi" mà không phải deploy thêm code</span></p>
+  <p class="vi-quick hide-me">khả năng quan sát<span class="alt">log, metric, trace đủ nhiều để hỏi "sao nó lỗi" mà không phải deploy thêm code</span></p>
 
   <p class="def"><span class="tag">EN</span>Observability is how well you can work out what is going on inside a running system just from what it already sends out: logs, metrics and traces.
-    <span class="def-vi hide-me">→ Observability là mức độ mình lần ra được chuyện gì đang diễn ra bên trong một hệ thống đang chạy, chỉ dựa vào những gì nó đã tự nhả ra: log, metric và trace.</span>
+    <span class="def-vi hide-me">→ Observability là khả năng quan sát — mức độ mình lần ra được chuyện gì đang diễn ra bên trong một hệ thống đang chạy, chỉ dựa vào những gì nó đã tự nhả ra: log, metric và trace.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Đừng lẫn với <code>monitoring</code>: monitoring là dashboard dựng sẵn cho những câu hỏi mình <i>đã biết trước</i> ("CPU bao nhiêu phần trăm"), còn observability là khi sự cố lạ xảy ra, mình hỏi được câu <b>chưa ai nghĩ tới</b> mà không phải sửa code rồi deploy lại. Trong nghề nói nguyên tiếng Anh, viết tắt <code>o11y</code>. Dạng <code>observable</code> nghĩa thường hơn ("thấy được"), đừng dùng thay.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Đừng lẫn với <code>monitoring</code>: monitoring là dashboard dựng sẵn cho những câu hỏi mình <i>đã biết trước</i> ("CPU bao nhiêu phần trăm"), còn observability là khi sự cố lạ xảy ra, mình hỏi được câu <b>chưa ai nghĩ tới</b> mà không phải sửa code rồi deploy lại. Tài liệu tiếng Việt gọi là khả năng quan sát; nói trong team thì hay giữ nguyên tiếng Anh, viết tắt <code>o11y</code>. Dạng <code>observable</code> nghĩa thường hơn ("thấy được"), đừng dùng thay.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
       <span class="en">Adding request IDs and structured logs finally gave us real <b>observability</b> — last night we found the bad <span class="rev">shard</span> in four minutes instead of guessing.</span>
-      <span class="vi hide-me">→ Thêm request ID với log có cấu trúc vào thì mới thật sự soi được bên trong — tối qua tìm ra con shard lỗi trong bốn phút, không phải đoán nữa.</span>
+      <span class="vi hide-me">→ Thêm request ID với log có cấu trúc vào thì hệ thống mới thật sự có khả năng quan sát — tối qua tìm ra con shard lỗi trong bốn phút, không phải đoán nữa.</span>
     </li>
     <li>
       <span class="en">Their platform has almost no <b>observability</b>, so every incident turns into a <span class="rev">postmortem</span> full of "we think".</span>
-      <span class="vi hide-me">→ Nền tảng bên họ gần như không soi được gì, nên sự cố nào rồi cũng thành một bản postmortem toàn chữ "bọn em nghĩ là".</span>
+      <span class="vi hide-me">→ Nền tảng bên họ gần như không có khả năng quan sát, nên sự cố nào rồi cũng thành một bản postmortem toàn chữ "bọn em nghĩ là".</span>
     </li>
   </ul>
 
@@ -389,7 +389,7 @@
   <div class="passage">Morning — standup in five. The overnight import died again, and I want to fix our <b>observability</b> before we touch the job itself: right now nobody can tell which step failed without SSH-ing into the box. The file isn't the problem — the <b>checksum</b> matched on both ends, so nothing got <span class="rev">truncated</span> in transit. I'll <b>take ownership</b> of this one and report back by lunch. Separately, finance needs the September <b>invoice</b> out today, so ping me if you logged hours that aren't in the sheet yet. Oh, and there are <b>leftovers</b> from yesterday's launch lunch in the fridge — help yourselves before they go off.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Chào cả nhà — năm phút nữa standup. Job import chạy đêm lại chết, mà mình muốn sửa chuyện soi log trước đã rồi hãy đụng vào job: giờ chẳng ai biết nó chết ở bước nào nếu không SSH vào máy. File thì không phải vấn đề — checksum hai đầu khớp nhau, nên không có gì bị cắt cụt lúc truyền. Việc này mình nhận, trưa báo lại. Chuyện khác: bên tài chính cần xuất hóa đơn tháng Chín hôm nay, ai còn giờ chưa nhập vào sheet thì nhắn mình. À, đồ ăn thừa từ bữa trưa ăn mừng ra mắt hôm qua vẫn còn trong tủ lạnh — mọi người lấy ăn đi kẻo hỏng.</p>
+    <p class="hide-me">Chào cả nhà — năm phút nữa standup. Job import chạy đêm lại chết, mà mình muốn cải thiện khả năng quan sát trước đã rồi hãy đụng vào job: giờ chẳng ai biết nó chết ở bước nào nếu không SSH vào máy. File thì không phải vấn đề — checksum hai đầu khớp nhau, nên không có gì bị cắt cụt lúc truyền. Việc này mình nhận, trưa báo lại. Chuyện khác: bên tài chính cần xuất hóa đơn tháng Chín hôm nay, ai còn giờ chưa nhập vào sheet thì nhắn mình. À, đồ ăn thừa từ bữa trưa ăn mừng ra mắt hôm qua vẫn còn trong tủ lạnh — mọi người lấy ăn đi kẻo hỏng.</p>
   </details>
 </section>
 

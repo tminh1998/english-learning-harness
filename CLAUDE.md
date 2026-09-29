@@ -62,6 +62,12 @@ giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
 hôm nay", không khối "Tự viết", không nhãn `.pattern-tag`, không thư mục
 `wiki/grammar/`. Bài học = ôn nhanh → 5 từ → mẩu đọc → bài tập.
 
+**Sửa nghĩa = sửa cả bài của ngày đó.** User nhắn "X thành Y" trong chat (không gõ
+`/dich`) thì vẫn làm đủ Flow E: sửa mọi câu tiếng Việt nói về từ đó trong cả `.md` lẫn
+`.html` của bài hôm học từ đó, cột `Nghĩa gọn` trong VOCAB_INDEX, khối ôn nhanh + recap
+đang chép lại, và ghi vào `wiki/memory/cach-dich-cua-user.md`. Chỉ đổi dòng nghĩa gọn
+là chưa xong.
+
 `/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa học thì mở bài gần
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
 buổi → mở buổi mới nhất, liệt kê các buổi còn lại.

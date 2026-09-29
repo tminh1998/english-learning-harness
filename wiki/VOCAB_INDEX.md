@@ -204,7 +204,7 @@
 | 183 | firm up | firms up, firmed up, firming up, firm sth up, firm it up, firm (adj) | phrasal verb (tách được) | Business | chốt cho chắc | 2026-09-28 | lesson |
 | 184 | roadmap | roadmaps, road map, product roadmap, roadmapping, on the roadmap, roadmap item | noun (đếm được) | Business | lộ trình sắp làm gì | 2026-09-28 | lesson |
 | 185 | cut it close | cuts it close, cut it close, cutting it close, cut it fine, a close call | idiom | Life | sát nút, suýt không kịp | 2026-09-28 | lesson |
-| 186 | observability | observe, observes, observed, observable, observability, observer, unobservable, o11y | noun (không đếm được) | IT | soi được bên trong hệ thống | 2026-09-29 | lesson |
+| 186 | observability | observe, observes, observed, observable, observability, observer, unobservable, o11y | noun (không đếm được) | IT | khả năng quan sát | 2026-09-29 | lesson |
 | 187 | checksum | checksums, checksummed, checksumming, checksum mismatch, check sum, hash, digest | noun (đếm được; cũng là verb) | IT | Kiểm tra tính toàn vẹn | 2026-09-29 | lesson |
 | 188 | take ownership | own, owns, owned, owner, ownership, take ownership of, own it, sense of ownership | idiom (cụm động từ) | Business | nhận là việc của mình | 2026-09-29 | lesson |
 | 189 | invoice | invoices, invoiced, invoicing, invoice number, invoice date, bill | noun (đếm được; cũng là verb) | Business | Hóa đơn | 2026-09-29 | lesson |
