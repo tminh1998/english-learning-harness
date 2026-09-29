@@ -463,7 +463,9 @@ Phase 4  daylen "dich: <ngày> — <từ>"  (R6)
 từ đó: tìm ngày đã học trong `{vocabIndex}`, rồi **sửa cả bài của ngày đó** (`.md` +
 `.html`: nghĩa gọn, `**VI**`/`GHI CHÚ`, `.def-vi`, câu dịch ví dụ, bản dịch mẩu đọc, đề
 bài tập, ghi chú buổi học), cột `Nghĩa gọn`, khối ôn nhanh bài sau + recap, rồi ghi sổ.
-Sửa mỗi dòng nghĩa gọn là **chưa xong**.
+Sửa mỗi dòng nghĩa gọn là **chưa xong**. Xong thì `daylen` **ngay, không hỏi**.
+
+⭐ `/dich` luôn hỏi lại **tất cả** các từ của bài ngày đó, kể cả từ đã dịch lần trước.
 
 Chép **đúng chữ user gõ**, không làm mượt. Không gợi ý sẵn bản dịch trong form —
 thứ cần học là lời của user. Không đụng REVIEW_QUEUE / PROGRESS: dịch lại không phải

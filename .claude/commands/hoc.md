@@ -133,6 +133,10 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
       máy user ở chỗ khác nên không mở hộ được).
     - `CHUA-CAU-HINH-PAGES` → báo user điền `remote.pagesBaseUrl` trong config.
 11. Tóm tắt trong chat: 5 từ (mỗi từ 2-3 dòng) + đường dẫn/link bài.
+    Thêm **một dòng** nói nghĩa gọn hôm nay đã áp quy luật nào trong
+    `wiki/memory/cach-dich-cua-user.md` (vd "invoice-kiểu: dùng từ Việt chuẩn `hợp đồng`
+    thay vì diễn giải") — để user thấy agent có học cách dịch của mình, và gõ `/dich`
+    sửa nếu vẫn chưa trúng.
     Đừng dán lại toàn bộ bài — trang HTML là nơi để đọc kỹ.
 
 ## Luật render HTML

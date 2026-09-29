@@ -39,10 +39,15 @@ Chưa có bài nào → báo rồi dừng.
 
 ## 2. Hiện form cho user dịch
 
-Dùng **AskUserQuestion** — 5 từ nên gọi **hai lần** (lần 1: từ 1-4, lần 2: từ 5),
-vì mỗi lần tối đa 4 câu. Mỗi câu hỏi:
+⭐ **Hỏi lại TẤT CẢ các từ của bài ngày đó, lần nào gõ `/dich` cũng vậy** (user chốt
+2026-09-29). Không bỏ từ nào vì "đã dịch rồi", không tự chọn ra vài từ — user muốn
+được xem lại và quyết lại nghĩa của từng từ. Từ đã dịch trước đó thì option "Giữ bản
+hiện tại" hiện đúng bản user đã chốt lần trước.
 
-- `header`: `Từ 1/5`, `Từ 2/5`…
+Dùng **AskUserQuestion** — mỗi lần tối đa 4 câu, nên 5 từ gọi **hai lần** (lần 1: từ
+1-4, lần 2: từ 5); ngày có buổi #2 (`<ngày>-2`) thì hỏi nốt các từ đó. Mỗi câu hỏi:
+
+- `header`: `Từ 1/5`, `Từ 2/5`… (tổng = số từ thật của ngày đó)
 - `question`: `<từ> — "<câu ví dụ VD, cắt gọn>". Bạn dịch từ này thế nào?`
 - `options` (đúng hai, user tự gõ bản của mình vào ô **Other**):
   1. `Giữ bản hiện tại` — `description` = `<NGHIA> · <PHU>` nguyên văn
@@ -109,14 +114,18 @@ Mở `wiki/memory/cach-dich-cua-user.md`:
    - Quy luật cũ bị bản dịch mới nói ngược lại → sửa hoặc xoá, đừng để hai luật cãi nhau.
 3. Cập nhật dòng `Cập nhật:` ở đầu file.
 
-## 5. Lưu lên GitHub
+## 5. Lưu lên GitHub — LUÔN LUÔN, không hỏi
+
+⛔ Sửa xong là **đẩy lên ngay**, không hỏi user có muốn push không (user chốt
+2026-09-29: "khi sửa xong luôn phải đẩy lên git"). User hay đọc bài trên GitHub Pages /
+điện thoại — chưa push thì user vẫn thấy bản cũ và tưởng chưa sửa.
 
 ```bash
 daylen "dich: $D — <các từ user dịch lại, cách nhau dấu phẩy>"
 ```
 
 Không in `DA-PUSH` → nói thẳng là chưa lưu lên GitHub, kèm lỗi. Không có từ nào đổi
-và sổ cũng không đổi → bỏ qua bước này.
+và sổ cũng không đổi → bỏ qua bước này. (Sổ có thêm dòng "Giữ" cũng là có đổi → push.)
 
 ## 6. Báo lại trong chat
 

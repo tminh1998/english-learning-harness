@@ -66,7 +66,8 @@ hôm nay", không khối "Tự viết", không nhãn `.pattern-tag`, không thư
 `/dich`) thì vẫn làm đủ Flow E: sửa mọi câu tiếng Việt nói về từ đó trong cả `.md` lẫn
 `.html` của bài hôm học từ đó, cột `Nghĩa gọn` trong VOCAB_INDEX, khối ôn nhanh + recap
 đang chép lại, và ghi vào `wiki/memory/cach-dich-cua-user.md`. Chỉ đổi dòng nghĩa gọn
-là chưa xong.
+là chưa xong. Sửa xong là **`daylen` ngay, không hỏi** — user đọc bài trên Pages, chưa
+push thì user vẫn thấy bản cũ. `/dich` luôn hỏi lại **tất cả** từ của bài ngày đó.
 
 `/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa học thì mở bài gần
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
