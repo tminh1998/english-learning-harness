@@ -23,7 +23,7 @@ ENGLISH/                          ← {harness}
 ├── CLAUDE.md                     ← file này
 ├── README.md                     ← hướng dẫn dùng cho người học
 ├── index.html                    ← mục lục cho GitHub Pages — SINH RA, đừng sửa tay
-├── .claude/commands/             ← 6 slash command (xem bảng dưới)
+├── .claude/commands/             ← 8 slash command (xem bảng dưới)
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
 │   │                               cfg · hnay · tuan · openit · keove · daylen
@@ -52,6 +52,7 @@ ENGLISH/                          ← {harness}
 | `/on-tap` | Ôn nhanh các từ tới hạn (spaced repetition) | đọc REVIEW_QUEUE |
 | `/on-tap-tuan` | Bảng ôn tuần — trang ĐỂ ĐỌC, nghĩa Việt hiện sẵn | Flow D |
 | `/tra-tu` | Dán 1 từ/câu bắt gặp khi đọc doc, xem phim, đọc email | Flow C |
+| `/dich` | Tự dịch lại 5 từ của một buổi bằng lời mình — agent học theo cho bài sau | Flow E |
 | `/tien-do` | Xem đã học bao nhiêu, chỗ nào yếu | đọc PROGRESS + quiz cũ |
 
 `/hoc` không tham số = bài hôm nay. `/hoc <chủ đề>` = ưu tiên chủ đề đó nhưng vẫn

@@ -230,9 +230,17 @@ ra. Luật này áp cho **mọi** chỗ có tiếng Việt: cột `Nghĩa gọn`
 4. **Nghĩa gọn viết như nói, không như từ điển.** Ngắn, có hình ảnh, đọc phát hiểu.
    - ✗ "quỹ thời gian / sức làm còn rảnh" → ✓ "còn rảnh sức mà nhận việc không"
    - ✗ "xung đột khi gộp code" → ✓ "hai nhánh sửa cùng chỗ, Git chịu"
+   - ⚠️ Nhưng **tiếng Việt đã có từ chuẩn thì dùng đúng từ đó**, đừng diễn giải:
+     ✗ "giấy đòi tiền gửi khách" → ✓ "Hóa đơn" (user tự sửa qua `/dich`, 2026-09-29 —
+     xem `{memory}/cach-dich-cua-user.md`). Hình ảnh chỉ dành cho từ chưa có tên Việt.
 
 5. **Đọc to lên một lượt trước khi ghi file.** Câu nào phải đọc hai lần mới xuôi thì
    viết lại. Đây là kiểm tra cuối, không bỏ qua được.
+
+6. **Bắt chước cách dịch của chính user.** User tự dịch lại từ bằng `/dich` (Flow E);
+   mỗi bản được ghi vào `{memory}/cach-dich-cua-user.md`. Trước khi viết nghĩa Việt
+   cho bài mới, đọc mục **Quy luật rút ra** của sổ đó và viết theo — quy luật trong sổ
+   thắng thói quen dịch của agent, chỉ đứng sau mục 2 và 3 ở trên.
 
 ---
 
@@ -436,6 +444,23 @@ Bốn luật riêng:
 
 Chỉ gom từ **trong tuần đó**, không kéo từ tuần khác, không thêm từ mới. Đây là bản
 phái sinh nên **được phép ghi đè** — R5 không áp dụng.
+
+### Flow E — User tự dịch lại (`/dich`)
+
+```text
+Phase 0  Auto-discovery + lấy 5 từ của ngày cần dịch (mặc định hôm nay)
+         -> sh tools/nghia.sh cho 5 từ đó: NGHIA + PHU hiện tại
+Phase 1  Form (AskUserQuestion): mỗi từ "Giữ bản hiện tại" / "Bỏ qua" / tự gõ bản mới
+Phase 2  Từ có bản mới -> thay NGHIA ở MỌI chỗ đang chép nó: .vi-quick bài gốc,
+         cột Nghĩa gọn VOCAB_INDEX, khối ôn nhanh các bài sau, recap (grep -rnF)
+Phase 3  {memory}/cach-dich-cua-user.md: +1 dòng nhật ký mỗi từ (cả "Giữ"),
+         đọc lại cả bảng -> sửa "Quy luật rút ra" (lặp >= 2 lần mới thành luật)
+Phase 4  daylen "dich: <ngày> — <từ>"  (R6)
+```
+
+Chép **đúng chữ user gõ**, không làm mượt. Không gợi ý sẵn bản dịch trong form —
+thứ cần học là lời của user. Không đụng REVIEW_QUEUE / PROGRESS: dịch lại không phải
+một buổi học.
 
 ### Flow C — Tra từ bắt gặp ngoài đời (ad-hoc)
 

@@ -38,6 +38,10 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    Chỉ khi user **nói rõ ở lượt sau** là muốn buổi #2 mới đi tiếp từ bước 2,
    ghi ra `<YYYY-MM-DD>-2.md` + `.html`. Rỗng → đi tiếp bình thường.
 2. Đọc `.learning-config.yml`, `wiki/memory/MEMORY.md`, `wiki/PROGRESS.md`.
+   ⭐ Đọc kỹ `wiki/memory/cach-dich-cua-user.md` — sổ bản dịch user tự viết qua
+   `/dich`. Mọi nghĩa Việt của bài mới (`.vi-quick`, cột `Nghĩa gọn`, `**VI**`, câu
+   dịch) viết theo mục **Quy luật rút ra** trong đó, và bắt chước giọng của các dòng
+   gần nhất trong nhật ký — nghĩa gọn phải nghe như chính user tự nói.
 3. ⭐ **Ôn nhanh đầu giờ — 25 từ (R9), chia hai phần cố định** (`review.warmup`):
 
    - **5 từ của buổi LIỀN TRƯỚC** — lấy từ `wiki/PROGRESS.md` (bảng "Nhật ký buổi
