@@ -14,8 +14,8 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 195 từ đã học** · IT 78 · Business 78 · Life 39 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 9 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-29
+**Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
+**Cập nhật:** 2026-09-30
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -209,7 +209,7 @@
 | 188 | take ownership | own, owns, owned, owner, ownership, take ownership of, own it, sense of ownership | idiom (cụm động từ) | Business | nhận là việc của mình | 2026-09-29 | lesson |
 | 189 | invoice | invoices, invoiced, invoicing, invoice number, invoice date, bill | noun (đếm được; cũng là verb) | Business | Hóa đơn | 2026-09-29 | lesson |
 | 190 | leftovers | leftover, leftover rice, be left over, left over, leftovers | noun (số nhiều) | Life | Đồ ăn thừa | 2026-09-29 | lesson |
-| 191 | code freeze | code freezes, code-freeze, freeze, froze, frozen, freezes, a freeze, freeze window, feature freeze | noun (đếm được) | IT | đóng băng code | 2026-09-30 | lesson |
+| 191 | bus factor | bus factors, truck factor, lorry factor, hit by a bus, key-person risk | noun (đếm được) | IT | rủi ro dồn vào một người | 2026-09-30 | lesson |
 | 192 | footprint | footprints, memory footprint, disk footprint, carbon footprint, small-footprint, foot print, print | noun (đếm được) | IT | mức chiếm dụng tài nguyên | 2026-09-30 | lesson |
 | 193 | churn | churns, churned, churning, churn rate, customer churn, churn through, code churn, high-churn | noun (không đếm được; cũng là verb) | Business | tỷ lệ khách rời bỏ | 2026-09-30 | lesson |
 | 194 | red tape | red-tape, red tapes, tape, bureaucracy, bureaucratic, cut through red tape | noun (không đếm được) | Business | thủ tục rườm rà | 2026-09-30 | lesson |
@@ -236,6 +236,7 @@
 | memory leak | memory leaks, leak, leaks, leaky, leaking, leak memory | noun | IT | rò bộ nhớ, xài xong không trả | 2026-09-17 |
 | kick off | kicks off, kicked off, kicking off, kick-off, kickoff, kick things off, kick it off | phrasal verb | Business | mở màn, bắt đầu chính thức | 2026-09-17 |
 | replay | replays, replayed, replaying, replayable, a replay, replay log, event replay | verb (cũng là noun) | IT | chạy lại y nguyên chuỗi event/message đã lưu | 2026-09-25 |
+| code freeze | code freezes, code-freeze, freeze, froze, frozen, freezes, a freeze, freeze window, feature freeze, frozen repo | noun (đếm được) | IT | đóng băng code, chỉ còn sửa lỗi chặn release | 2026-09-30 |
 
 <!--
 LUẬT GHI:
