@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 190 từ đã học** · IT 76 · Business 76 · Life 38 · ad-hoc 0
+**Tổng: 195 từ đã học** · IT 78 · Business 78 · Life 39 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 9 từ — xem bảng cuối file
 **Cập nhật:** 2026-09-29
 
@@ -209,6 +209,11 @@
 | 188 | take ownership | own, owns, owned, owner, ownership, take ownership of, own it, sense of ownership | idiom (cụm động từ) | Business | nhận là việc của mình | 2026-09-29 | lesson |
 | 189 | invoice | invoices, invoiced, invoicing, invoice number, invoice date, bill | noun (đếm được; cũng là verb) | Business | Hóa đơn | 2026-09-29 | lesson |
 | 190 | leftovers | leftover, leftover rice, be left over, left over, leftovers | noun (số nhiều) | Life | Đồ ăn thừa | 2026-09-29 | lesson |
+| 191 | code freeze | code freezes, code-freeze, freeze, froze, frozen, freezes, a freeze, freeze window, feature freeze | noun (đếm được) | IT | đóng băng code | 2026-09-30 | lesson |
+| 192 | footprint | footprints, memory footprint, disk footprint, carbon footprint, small-footprint, foot print, print | noun (đếm được) | IT | mức chiếm dụng tài nguyên | 2026-09-30 | lesson |
+| 193 | churn | churns, churned, churning, churn rate, customer churn, churn through, code churn, high-churn | noun (không đếm được; cũng là verb) | Business | tỷ lệ khách rời bỏ | 2026-09-30 | lesson |
+| 194 | red tape | red-tape, red tapes, tape, bureaucracy, bureaucratic, cut through red tape | noun (không đếm được) | Business | thủ tục rườm rà | 2026-09-30 | lesson |
+| 195 | stuffed | stuff, stuffs, stuffing, be stuffed, stuffed full, overstuffed | adjective | Life | no căng bụng | 2026-09-30 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
