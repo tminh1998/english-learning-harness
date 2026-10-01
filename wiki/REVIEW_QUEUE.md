@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-09-30: 190 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-01: 195 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -44,6 +44,9 @@
 - hạn 2026-09-27 — hydrate · coalesce · walk back · nudge · head out
 - hạn 2026-09-29 — circuit breaker · preflight · firm up · roadmap · cut it close
 - hạn 2026-09-30 — observability · checksum · take ownership · invoice · leftovers
+- hạn 2026-10-01 — bus factor · footprint · churn · red tape · stuffed
+
+_Ghi chú 2026-10-01 (buổi #40): phần A hỏi lại 5 từ của buổi 30/09 (bus factor · footprint · churn · red tape · stuffed), phần B bốc ngẫu nhiên bằng lệnh trúng provision · regression · spin up · under the weather · stub · come across · prioritize · flush · invoice · stale · stakeholder · manage expectations · cutover · on the same page · culprit · onboarding · de-risk · weigh in · escalate · workaround — chạm từ lô cũ nhất (13/08) tới lô 29/09. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **195/200 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-09-29 (buổi #38): phần A hỏi lại 5 từ của buổi 28/09 (circuit breaker · preflight · firm up · roadmap · cut it close), phần B bốc ngẫu nhiên bằng lệnh trúng feasible · chip in · backpressure · stale · circle back · draw the line · show up · granular · technical debt · settle in · manage expectations · provision · resilient · out of the blue · action item · drift · sort out · run out of · sanity check · deliverable — chạm từ lô cũ nhất (14/08) tới lô 24/09. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **185/190 từ**, toàn bộ ở bậc 1._
 
@@ -292,6 +295,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | churn | 1 | 2026-10-01 | 0 | 0 | 2026-09-30 |
 | red tape | 1 | 2026-10-01 | 0 | 0 | 2026-09-30 |
 | stuffed | 1 | 2026-10-01 | 0 | 0 | 2026-09-30 |
+| sidecar | 1 | 2026-10-02 | 0 | 0 | 2026-10-01 |
+| thundering herd | 1 | 2026-10-02 | 0 | 0 | 2026-10-01 |
+| take it offline | 1 | 2026-10-02 | 0 | 0 | 2026-10-01 |
+| par for the course | 1 | 2026-10-02 | 0 | 0 | 2026-10-01 |
+| craving | 1 | 2026-10-02 | 0 | 0 | 2026-10-01 |
 
 ## Đã thuộc (bậc 5, đúng)
 

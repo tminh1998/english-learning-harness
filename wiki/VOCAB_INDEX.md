@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 195 từ đã học** · IT 78 · Business 78 · Life 39 · ad-hoc 0
+**Tổng: 200 từ đã học** · IT 80 · Business 80 · Life 40 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-09-30
+**Cập nhật:** 2026-10-01
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -214,6 +214,11 @@
 | 193 | churn | churns, churned, churning, churn rate, customer churn, churn through, code churn, high-churn | noun (không đếm được; cũng là verb) | Business | tỷ lệ khách rời bỏ | 2026-09-30 | lesson |
 | 194 | red tape | red-tape, red tapes, tape, bureaucracy, bureaucratic, cut through red tape | noun (không đếm được) | Business | thủ tục rườm rà | 2026-09-30 | lesson |
 | 195 | stuffed | stuff, stuffs, stuffing, be stuffed, stuffed full, overstuffed | adjective | Life | no căng bụng | 2026-09-30 | lesson |
+| 196 | sidecar | sidecars, sidecar container, sidecar pattern, sidecar proxy, side-car | noun (đếm được) | IT | container chạy kèm | 2026-10-01 | lesson |
+| 197 | thundering herd | thundering herds, the thundering herd problem, herd, cache stampede, dogpile | noun | IT | cả đàn ùa vào cùng lúc | 2026-10-01 | lesson |
+| 198 | take it offline | take this offline, take that offline, took it offline, taking it offline, an offline conversation, go offline | idiom (cụm động từ) | Business | để ra ngoài bàn riêng | 2026-10-01 | lesson |
+| 199 | par for the course | par, on par with, below par, up to par, above par | idiom | Business | chuyện thường thôi | 2026-10-01 | lesson |
+| 200 | craving | crave, craves, craved, craving, cravings, food craving, a craving for | noun (đếm được; động từ crave) | Life | cơn thèm | 2026-10-01 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

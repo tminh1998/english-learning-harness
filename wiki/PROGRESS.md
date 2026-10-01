@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-09-30 (buổi #39)
+**Cập nhật:** 2026-10-01 (buổi #40)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 195 · **đã biết sẵn** 10 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 78 · Business 78 · Life 39                                                           |
-| Số buổi học          | 39                                                                                      |
-| Streak hiện tại      | 9 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 200 · **đã biết sẵn** 10 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 80 · Business 80 · Life 40                                                           |
+| Số buổi học          | 40                                                                                      |
+| Streak hiện tại      | 10 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-09-30 (Thứ Tư) — buổi #39                                                         |
+| Buổi gần nhất        | 2026-10-01 (Thứ Năm) — buổi #40                                                         |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -57,6 +57,7 @@
 | 2026-09-28 | 2026-W40 | #37 | circuit breaker · preflight · firm up · roadmap · cut it close |
 | 2026-09-29 | 2026-W40 | #38 | observability · checksum · take ownership · invoice · leftovers |
 | 2026-09-30 | 2026-W40 | #39 | bus factor · footprint · churn · red tape · stuffed |
+| 2026-10-01 | 2026-W40 | #40 | sidecar · thundering herd · take it offline · par for the course · craving |
 
 ## Kết quả quiz tuần
 
@@ -131,6 +132,8 @@ Vốn từ nay **155 từ** — nợ ôn tập **150/155 từ quá hạn**, vẫ
 ⚠️ **Cập nhật 2026-09-17:** vốn từ lên **145 từ**, nợ ôn tập lên **140/145 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #29 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 16/09 (ingest · quarantine · hash out · manage expectations · rain check), phần B bốc ngẫu nhiên bằng lệnh trúng flaky · bottleneck · latency · chip in · graceful degradation · touch base · regression · backoff · bump · stateless · catch up · under the weather · fallback · milestone · worn out · throughput · ballpark · cold start · resilient · out of the blue — chạm cả lô cũ nhất (13/08) lẫn lô 11/09. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W38 đã có 15 từ (15/09 → 17/09); W37 vẫn **chưa có điểm quiz** — năm tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W37, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 🔁 **Sửa lại 2026-09-17 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `stack trace`, `memory leak`, `kick off` — ba suất của buổi #29. Theo R1.b: ba từ chuyển xuống bảng **Đã biết sẵn** cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), thay bằng `single point of failure` + `load shedding` (IT) và `loose ends` (Business), đã qua hard gate R1. Bài `.md` và `.html` viết lại khối từ, ví dụ (R8 vẫn đúng), mẩu đọc, bài tập, đáp án, ghi chú. Tổng vẫn **145 từ** (thay 3 ăn 3); số từ "đã biết sẵn" lên **8**. Lần thứ ba user loại từ vì đã biết — lại đúng nhóm dev gặp hằng ngày (debug/log) và cụm business quá phổ biến (`kick off`): chọn IT ở tầng thiết kế hệ thống, Business ở tầng ít gặp hơn.
+
+⚠️ **Cập nhật 2026-10-01:** cột mốc **200 từ** — nợ ôn tập lên **195/200 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #40 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 30/09 (bus factor · footprint · churn · red tape · stuffed), phần B bốc ngẫu nhiên bằng lệnh trúng provision · regression · spin up · under the weather · stub · come across · prioritize · flush · invoice · stale · stakeholder · manage expectations · cutover · on the same page · culprit · onboarding · de-risk · weigh in · escalate · workaround — chạm cả lô cũ nhất (13/08) lẫn lô 29/09. Câu hỏi ôn nhanh chép nguyên khối nghĩa `.vi-quick` của bài gốc qua `tools/nghia.sh`, cả 25 từ đều có `NGHIA`/`PHU`/`VD` nên không phải tự soạn lại câu nào. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai ứng viên bị hard gate R1 loại trong buổi này: `low-hanging fruit` (đụng `hang` trong word family của `get the hang of`) và `for the record` (đụng `track record` trong họ từ của `on track`) — thay bằng `take it offline` và `par for the course`. Nghĩa gọn hôm nay viết theo `memory/cach-dich-cua-user.md`: quy luật 1 cho từ đời sống có tên Việt quen miệng (`craving` → `cơn thèm`, hai chữ, không diễn giải "tự nhiên muốn ăn một món"), còn hai từ IT là tên pattern/hiện tượng chưa có tên Việt chuẩn nên giữ cụm diễn giải ngắn theo mục **Đang quan sát** (`sidecar` → `container chạy kèm`, `thundering herd` → `cả đàn ùa vào cùng lúc`). Tuần 2026-W40 đã có 20 từ (28/09 → 01/10); W39 vẫn **chưa có điểm quiz** — tuần thứ bảy liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W39, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-09-30:** vốn từ lên **195 từ**, nợ ôn tập lên **190/195 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #39 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 29/09 (observability · checksum · take ownership · invoice · leftovers), phần B bốc ngẫu nhiên bằng lệnh trúng run errands · preflight · backoff · under the weather · idle · align · drag on · weigh in · tentative · stakeholder · draw the line · flush · commute · dangling · roadmap · run out of · stale · rain check · verbose · doze off — chạm cả lô cũ nhất (13/08) lẫn lô 28/09. Câu hỏi ôn nhanh chép nguyên khối nghĩa `.vi-quick` của bài gốc qua `tools/nghia.sh`, cả 25 từ đều có `NGHIA`/`PHU`/`VD` nên không phải tự soạn lại câu nào. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai ứng viên bị hard gate R1 loại trong buổi này: `quota` (đụng `quotation` trong word family của `quote`) và `hard stop` (đụng `stop by` trong word family của `drop by`) — thay bằng `footprint` và `red tape`. Sau khi bài ra, user báo **đã biết `code freeze`** → chuyển sang bảng ⛔, thay bằng `bus factor` (IT, tầng khái niệm team — hiếm khi nói ra chủ động dù hiểu). Nghĩa gọn hôm nay viết theo `memory/cach-dich-cua-user.md`: quy luật 2 cho từ IT (`footprint` → `mức chiếm dụng tài nguyên`, không dùng hình ảnh "ăn bao nhiêu RAM") và quy luật 1 cho từ có tên Việt chuẩn (`red tape` → `thủ tục rườm rà`, `churn` → `tỷ lệ khách rời bỏ`). Tuần 2026-W40 đã có 15 từ (28/09 → 30/09); W39 vẫn **chưa có điểm quiz** — tuần thứ bảy liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W39, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
