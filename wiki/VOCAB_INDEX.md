@@ -52,7 +52,7 @@
 | 31 | technical debt | tech debt, debt, debts, in debt, indebted, debt-heavy | noun (không đếm được) | IT | nợ phải trả sau vì làm nhanh cho kịp | 2026-08-20 | lesson |
 | 32 | backward compatible | backwards compatible, backward compatibility, compatible, incompatible | adjective | IT | bản mới vẫn chạy với bản cũ, khách khỏi sửa | 2026-08-20 | lesson |
 | 33 | loop in | loop sb in, looped in, looping in, in the loop, out of the loop, keep sb in the loop | phrasal verb | Business | kéo thêm người vào cuộc | 2026-08-20 | lesson |
-| 34 | bandwidth | mental bandwidth, a bandwidth issue, no bandwidth | noun (không đếm được) | Business | còn rảnh sức mà nhận việc không | 2026-08-20 | lesson |
+| 34 | bandwidth | mental bandwidth, a bandwidth issue, no bandwidth | noun (không đếm được) | Business | Băng thông | 2026-08-20 | lesson |
 | 35 | catch up | caught up, catching up, a catch-up, catch up with, catch up on, catch up to | phrasal verb | Life | gặp hàn huyên; làm bù cho kịp | 2026-08-20 | lesson |
 | 36 | feature flag | feature flags, feature-flagged, feature toggle, flag | noun | IT | công tắc bật/tắt tính năng, khỏi deploy lại | 2026-08-21 | lesson |
 | 37 | breaking change | breaking changes, break, broke, broken, backward-breaking | noun | IT | thay đổi phá tương thích, client cũ phải sửa | 2026-08-21 | lesson |

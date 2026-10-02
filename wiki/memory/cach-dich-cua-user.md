@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-09-29 · **Số bản dịch đã ghi:** 6 (4 đổi · 2 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-02 · **Số bản dịch đã ghi:** 7 (5 đổi · 2 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -36,13 +36,15 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    - `giấy đòi tiền gửi khách` → **`Hóa đơn`**
    - `đồ ăn còn lại từ bữa trước` → **`Đồ ăn thừa`**
    - `soi được bên trong hệ thống` → **`khả năng quan sát`**
-   _(4 lần, 2026-09-29. Quy luật này đứng trên R7 mục 4 "có hình ảnh" khi đã có từ chuẩn.)_
+   - `còn rảnh sức mà nhận việc không` → **`Băng thông`** (nghĩa bóng vẫn gọi đúng tên từ Việt có sẵn)
+   _(5 lần, 2026-09-29 → 2026-10-02. Quy luật này đứng trên R7 mục 4 "có hình ảnh" khi đã có từ chuẩn.)_
 
 2. **Thuật ngữ IT: nghĩa gọn dùng tên Việt chuẩn trong tài liệu/sách, kể cả khi dev
    hay nói tiếng Anh.** User chọn cách gọi kiểu giáo trình (thường là Hán-Việt), không
    chọn cách nói hình ảnh bình dân.
    - `mã ngắn để soi dữ liệu còn nguyên không` → **`Kiểm tra tính toàn vẹn`**
    - `soi được bên trong hệ thống` → **`khả năng quan sát`**
+   - `còn rảnh sức mà nhận việc không` → **`Băng thông`** (nghĩa bóng vẫn gọi đúng tên từ Việt có sẵn)
    _(2 lần, 2026-09-29.)_ Chỉ áp cho **nghĩa gọn của chính từ đang học**. Các thuật
    ngữ khác trong câu ví dụ / mẩu đọc vẫn theo R7 mục 2: `deploy`, `cache`, `log`…
    để nguyên tiếng Anh.
@@ -72,3 +74,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-09-29 | invoice | giấy đòi tiền gửi khách · liệt kê đã làm gì, bao nhiêu tiền… | Hóa đơn | dùng thẳng từ chuẩn, 2 chữ thay vì cụm diễn giải 5 chữ |
 | 2026-09-29 | leftovers | đồ ăn còn lại từ bữa trước · cất đi để bữa sau hâm lại ăn… | Đồ ăn thừa | từ đời thường quen miệng, ngắn hơn một nửa |
 | 2026-09-29 | observability (lần 2) | soi được bên trong hệ thống · log, metric, trace đủ nhiều để hỏi "sao nó lỗi"… | khả năng quan sát | **đổi ý** so với lần đầu (Giữ) — thuật ngữ Việt chuẩn thay cho diễn giải hình ảnh "soi" |
+| 2026-10-02 | bandwidth | còn rảnh sức mà nhận việc không · thời gian, người, sức — gộp lại một chữ | Băng thông | nhắn thẳng trong chat — dùng tên Việt có sẵn kể cả khi từ đang dùng **nghĩa bóng** (sức làm việc); phần "nghĩa bóng" dồn xuống `PHU` |
