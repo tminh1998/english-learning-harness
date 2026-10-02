@@ -44,7 +44,6 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    chọn cách nói hình ảnh bình dân.
    - `mã ngắn để soi dữ liệu còn nguyên không` → **`Kiểm tra tính toàn vẹn`**
    - `soi được bên trong hệ thống` → **`khả năng quan sát`**
-   - `còn rảnh sức mà nhận việc không` → **`Băng thông`** (nghĩa bóng vẫn gọi đúng tên từ Việt có sẵn)
    _(2 lần, 2026-09-29.)_ Chỉ áp cho **nghĩa gọn của chính từ đang học**. Các thuật
    ngữ khác trong câu ví dụ / mẩu đọc vẫn theo R7 mục 2: `deploy`, `cache`, `log`…
    để nguyên tiếng Anh.
