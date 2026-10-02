@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 200 từ đã học** · IT 80 · Business 80 · Life 40 · ad-hoc 0
+**Tổng: 205 từ đã học** · IT 82 · Business 82 · Life 41 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-01
+**Cập nhật:** 2026-10-02
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -219,6 +219,11 @@
 | 198 | take it offline | take this offline, take that offline, took it offline, taking it offline, an offline conversation, go offline | idiom (cụm động từ) | Business | để ra ngoài bàn riêng | 2026-10-01 | lesson |
 | 199 | par for the course | par, on par with, below par, up to par, above par | idiom | Business | chuyện thường thôi | 2026-10-01 | lesson |
 | 200 | craving | crave, craves, craved, craving, cravings, food craving, a craving for | noun (đếm được; động từ crave) | Life | cơn thèm | 2026-10-01 | lesson |
+| 201 | instrument | instruments, instrumented, instrumenting, instrumentation, auto-instrumentation, well-instrumented | verb (danh từ: instrumentation) | IT | chèn mã đo vào code | 2026-10-02 | lesson |
+| 202 | scaffold | scaffolds, scaffolded, scaffolding, scaffold out, a scaffold | verb (cũng là noun) | IT | sinh sẵn bộ khung | 2026-10-02 | lesson |
+| 203 | in the weeds | weed, weeds, weedy, in the weeds, into the weeds, down in the weeds | idiom (cụm trạng từ) | Business | lún vào chi tiết vụn | 2026-10-02 | lesson |
+| 204 | split the difference | split, splits, splitting, split it down the middle, split the bill, difference, differences | idiom (cụm động từ) | Business | chia đôi khoảng cách | 2026-10-02 | lesson |
+| 205 | small talk | make small talk, small-talk (verb, ít dùng), chitchat, chit-chat, talk, talks | noun (không đếm được) | Life | chuyện xã giao | 2026-10-02 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
