@@ -209,10 +209,10 @@
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">chèn mã đo vào code<span class="alt">thêm sẵn log, metric, trace để sau này soi được, chứ không phải đợi có lỗi mới đi thêm</span></p>
+  <p class="vi-quick hide-me">Gắn công cụ đo / Theo dõi hệ thống<span class="alt">thêm sẵn log, metric, trace để sau này soi được, chứ không phải đợi có lỗi mới đi thêm</span></p>
 
   <p class="def"><span class="tag">EN</span>To instrument code is to add extra lines to it — logs, metrics, traces — whose only job is to report what the program is doing while it runs.
-    <span class="def-vi hide-me">→ Instrument code là thêm vào code những dòng chỉ làm đúng một việc: báo ra chương trình đang làm gì trong lúc chạy — log, metric, trace.</span>
+    <span class="def-vi hide-me">→ Instrument code là gắn công cụ đo vào code — những dòng chỉ làm đúng một việc là báo ra chương trình đang làm gì trong lúc chạy: log, metric, trace.</span>
   </p>
   <p class="def hide-me"><span class="tag">GHI CHÚ</span>Giọng kỹ thuật thuần, nói trong standup hay viết trong RFC đều được. Khác <code>monitor</code>: instrument là cài vào <i>trong</i> code, monitor là ngồi <i>ngoài</i> xem cái đã cài. Và nó là việc làm, còn <code>observability</code> là kết quả thu được — không instrument thì chẳng có gì để quan sát. Danh từ <code>instrumentation</code> mới là dạng hay gặp trong tên thư viện.</p>
 
@@ -220,11 +220,11 @@
   <ul class="examples">
     <li>
       <span class="en">The main <span class="rev">takeaway</span> from the incident review was that nobody had <b>instrumented</b> the retry path, so we were guessing for three hours.</span>
-      <span class="vi hide-me">→ Điều đọng lại sau buổi mổ lỗi: cái nhánh retry chẳng ai chèn mã đo vào, nên bọn mình đoán mò suốt ba tiếng.</span>
+      <span class="vi hide-me">→ Điều đọng lại sau buổi mổ lỗi: cái nhánh retry chẳng ai gắn công cụ đo vào, nên bọn mình đoán mò suốt ba tiếng.</span>
     </li>
     <li>
       <span class="en">Let's <b>instrument</b> the checkout endpoint first — we can't <span class="rev">nail down</span> where the time goes from the dashboard alone.</span>
-      <span class="vi hide-me">→ Chèn mã đo vào endpoint checkout trước đã — chỉ nhìn dashboard thì không truy ra được thời gian đi đâu.</span>
+      <span class="vi hide-me">→ Gắn công cụ đo vào endpoint checkout trước đã — chỉ nhìn dashboard thì không truy ra được thời gian đi đâu.</span>
     </li>
   </ul>
 
@@ -283,22 +283,22 @@
     <span class="badge biz">Giao tiếp</span>
   </div>
 
-  <p class="vi-quick hide-me">lún vào chi tiết vụn<span class="alt">đang sa đà vào tiểu tiết, mất cái nhìn tổng thể — hay nói giữa họp để kéo nhau ra</span></p>
+  <p class="vi-quick hide-me">chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải<span class="alt">đang sa đà vào tiểu tiết, mất cái nhìn tổng thể — hay nói giữa họp để kéo nhau ra</span></p>
 
   <p class="def"><span class="tag">EN</span>To be in the weeds is to be stuck arguing about small details while the group still needs the big picture.
-    <span class="def-vi hide-me">→ In the weeds là đang mắc vào tranh luận mấy chi tiết nhỏ trong khi cả nhóm vẫn đang cần bức tranh tổng.</span>
+    <span class="def-vi hide-me">→ In the weeds là đang chìm ngập trong tranh luận mấy chi tiết vụn vặt trong khi cả nhóm vẫn đang cần bức tranh tổng.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong họp đây là câu kéo nhau lên: <code>I think we're getting into the weeds</code>. Nói về mình hoặc về cả nhóm thì an toàn; chỉ mặt một người ("you're in the weeds") là hơi gắt. Trong ngành dịch vụ ở Mỹ còn một nghĩa nữa là "ngập việc tới cổ" — gần <code>swamped</code>; trong họp thì cứ hiểu theo nghĩa chi tiết vụn.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong họp đây là câu kéo nhau lên: <code>I think we're getting into the weeds</code>. Nói về mình hoặc về cả nhóm thì an toàn; chỉ mặt một người ("you're in the weeds") là hơi gắt. Trong ngành dịch vụ ở Mỹ còn một nghĩa nữa là "quá bận rộn/quá tải" — gần <code>swamped</code>; trong họp thì cứ hiểu theo nghĩa chi tiết vụn vặt.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
       <span class="en">We got <b>into the weeds</b> about cache <span class="rev">eviction</span> for twenty minutes while the client was just waiting for a date.</span>
-      <span class="vi hide-me">→ Bọn mình lún vào chuyện cache dọn key kiểu gì suốt hai mươi phút, trong khi khách chỉ đang chờ một cái hạn.</span>
+      <span class="vi hide-me">→ Bọn mình chìm ngập trong chuyện cache dọn key kiểu gì suốt hai mươi phút, trong khi khách chỉ đang chờ một cái hạn.</span>
     </li>
     <li>
       <span class="en">This is <b>in the weeds</b> for a first call — can we <span class="rev">take it offline</span> and bring the group a number tomorrow?</span>
-      <span class="vi hide-me">→ Chuyện này vụn quá cho buổi call đầu tiên — mình để ra ngoài bàn riêng, mai báo cả nhóm một con số nhé?</span>
+      <span class="vi hide-me">→ Chuyện này chi tiết vụn vặt quá cho buổi call đầu tiên — mình để ra ngoài bàn riêng, mai báo cả nhóm một con số nhé?</span>
     </li>
   </ul>
 
@@ -320,10 +320,10 @@
     <span class="badge biz">Giao tiếp</span>
   </div>
 
-  <p class="vi-quick hide-me">chia đôi khoảng cách<span class="alt">hai bên mỗi bên nhường một nửa, chốt ở giữa cho xong</span></p>
+  <p class="vi-quick hide-me">nhượng bộ đôi bên / lấy số ở giữa<span class="alt">hai bên mỗi bên nhường một nửa, chốt ở giữa cho xong</span></p>
 
   <p class="def"><span class="tag">EN</span>To split the difference is to settle a disagreement by having each side give up half of the gap between their two numbers.
-    <span class="def-vi hide-me">→ Split the difference là dàn xếp chỗ không thống nhất bằng cách mỗi bên nhường một nửa khoảng cách giữa hai con số của hai bên.</span>
+    <span class="def-vi hide-me">→ Split the difference là nhượng bộ đôi bên để dàn xếp chỗ không thống nhất: mỗi bên nhường một nửa khoảng cách giữa hai con số của hai bên.</span>
   </p>
   <p class="def hide-me"><span class="tag">GHI CHÚ</span>Phải có hai con số mới nói được — giá, hạn, số ngày. Giọng thực dụng, dùng với khách được. Khác <code>concession</code> (chỉ một bên nhường) và khác <code>meet halfway</code> (nhường nhau về thái độ, không nhất thiết là con số).</p>
 
@@ -331,11 +331,11 @@
   <ul class="examples">
     <li>
       <span class="en">Their <span class="rev">ballpark</span> was sixty days and ours was thirty, so we <b>split the difference</b> and committed to forty-five.</span>
-      <span class="vi hide-me">→ Khách ước chừng sáu mươi ngày, bên em ba mươi, nên hai bên chia đôi khoảng cách rồi chốt bốn mươi lăm ạ.</span>
+      <span class="vi hide-me">→ Khách ước chừng sáu mươi ngày, bên em ba mươi, nên hai bên cùng nhượng bộ, lấy số ở giữa, chốt bốn mươi lăm ạ.</span>
     </li>
     <li>
       <span class="en">They wanted the <span class="rev">cutover</span> on Friday night and we wanted Monday, so we <b>split the difference</b> and went with Saturday.</span>
-      <span class="vi hide-me">→ Khách muốn chuyển sang hệ thống mới tối thứ Sáu, bên em muốn thứ Hai, cuối cùng chia đôi, chốt thứ Bảy.</span>
+      <span class="vi hide-me">→ Khách muốn chuyển sang hệ thống mới tối thứ Sáu, bên em muốn thứ Hai, cuối cùng đôi bên nhượng bộ, lấy ngày ở giữa là thứ Bảy.</span>
     </li>
   </ul>
 
@@ -357,10 +357,10 @@
     <span class="badge life">Đời sống</span>
   </div>
 
-  <p class="vi-quick hide-me">chuyện xã giao<span class="alt">mấy câu thời tiết, cuối tuần, cà phê — nói cho ấm chỗ trước khi vào việc</span></p>
+  <p class="vi-quick hide-me">chuyện phiếm / trò chuyện xã giao<span class="alt">mấy câu thời tiết, cuối tuần, cà phê — nói cho ấm chỗ trước khi vào việc</span></p>
 
   <p class="def"><span class="tag">EN</span>Small talk is light, polite conversation about nothing important that people use to warm up before the real topic.
-    <span class="def-vi hide-me">→ Small talk là mấy câu chuyện nhẹ, lịch sự, chẳng về chuyện gì quan trọng, người ta nói để làm ấm không khí trước khi vào chuyện chính.</span>
+    <span class="def-vi hide-me">→ Small talk là chuyện phiếm: mấy câu chuyện nhẹ, lịch sự, chẳng về chuyện gì quan trọng, người ta nói để làm ấm không khí trước khi vào chuyện chính.</span>
   </p>
   <p class="def hide-me"><span class="tag">GHI CHÚ</span>Với khách Âu Mỹ, bỏ hẳn phần này mà vào việc luôn thì bị thấy lạnh; kéo quá năm phút trên call thì bị thấy lan man. Khác <code>chat</code>: chat là nói chuyện đã thân, small talk là nói với người chưa thân cho đỡ im. Chủ đề an toàn: thời tiết, chuyến đi, cuối tuần — tránh tiền lương và chính trị.</p>
 
@@ -368,11 +368,11 @@
   <ul class="examples">
     <li>
       <span class="en">Two minutes of <b>small talk</b> at the start of the call, then we checked we were <span class="rev">on the same page</span> about the scope.</span>
-      <span class="vi hide-me">→ Đầu call nói chuyện xã giao hai phút, rồi mới soát lại xem hai bên đã hiểu giống nhau về phạm vi công việc chưa.</span>
+      <span class="vi hide-me">→ Đầu call trò chuyện xã giao hai phút, rồi mới soát lại xem hai bên đã hiểu giống nhau về phạm vi công việc chưa.</span>
     </li>
     <li>
       <span class="en">Their dev lead skipped the <b>small talk</b> entirely and opened the <span class="rev">postmortem</span> with the timeline.</span>
-      <span class="vi hide-me">→ Anh dev lead bên họ bỏ hẳn phần xã giao, mở buổi mổ lỗi bằng cái timeline luôn.</span>
+      <span class="vi hide-me">→ Anh dev lead bên họ bỏ hẳn màn chuyện phiếm, mở buổi mổ lỗi bằng cái timeline luôn.</span>
     </li>
   </ul>
 
@@ -389,7 +389,7 @@
   <div class="passage">Before Thursday's call I <b>scaffolded</b> a throwaway dashboard so we'd have something to point at, and I <b>instrumented</b> the three slowest endpoints overnight. Two minutes of <b>small talk</b>, then straight to the numbers — and if we get <b>in the weeds</b> about which index to add, I'll suggest we <span class="rev">take it offline</span>. They're asking for a two-week fix and we think it's four, so worst case we <b>split the difference</b> and promise three. Honestly, a client reopening the timeline the day before a demo is <span class="rev">par for the course</span> here.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Trước buổi call thứ Năm mình sinh sẵn một cái dashboard dùng tạm để có chỗ mà chỉ, rồi tối qua chèn mã đo vào ba endpoint chậm nhất. Vào call thì xã giao hai phút, xong là vào số luôn — mà nếu cả nhóm lún vào chuyện thêm index nào thì mình sẽ đề nghị để ra ngoài bàn riêng. Khách đòi sửa trong hai tuần, bọn mình nghĩ phải bốn, nên cùng lắm thì chia đôi khoảng cách, hứa ba tuần. Nói thật, khách mở lại chuyện hạn đúng hôm trước demo thì ở đây là chuyện thường thôi.</p>
+    <p class="hide-me">Trước buổi call thứ Năm mình sinh sẵn một cái dashboard dùng tạm để có chỗ mà chỉ, rồi tối qua gắn công cụ đo vào ba endpoint chậm nhất. Vào call thì chuyện phiếm hai phút, xong là vào số luôn — mà nếu cả nhóm chìm ngập trong chuyện thêm index nào thì mình sẽ đề nghị để ra ngoài bàn riêng. Khách đòi sửa trong hai tuần, bọn mình nghĩ phải bốn, nên cùng lắm thì nhượng bộ đôi bên, lấy số ở giữa, hứa ba tuần. Nói thật, khách mở lại chuyện hạn đúng hôm trước demo thì ở đây là chuyện thường thôi.</p>
   </details>
 </section>
 
@@ -400,7 +400,7 @@
     <li><b>Điền từ</b> — Nobody ever ______ the worker queue, so when it slowed down last night we had no numbers at all.</li>
     <li><b>Sửa lỗi</b> — "I'm bad at small talks, so client dinners always make me nervous."</li>
     <li><b>Chọn cụm đúng</b> — (a) they said sixty days, we said thirty, so <code>let's split the difference</code> · (b) they said sixty days, we said thirty, so <code>let's split difference</code></li>
-    <li><b>Dịch Việt–Anh</b> — "Mình đang lún vào chi tiết rồi — để chuyện này ra ngoài bàn riêng nhé?"</li>
+    <li><b>Dịch Việt–Anh</b> — "Mình đang chìm ngập trong chi tiết vụn vặt rồi — để chuyện này ra ngoài bàn riêng nhé?"</li>
     <li><b>Viết một câu</b> — Bạn muốn khoe với đồng nghiệp rằng chỉ cần một lệnh CLI là ra sẵn khung cho một trang CRUD mới. Viết một câu tiếng Anh.</li>
   </ol>
   <details>
