@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-02: 200 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-03: 205 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -46,6 +46,9 @@
 - hạn 2026-09-30 — observability · checksum · take ownership · invoice · leftovers
 - hạn 2026-10-01 — bus factor · footprint · churn · red tape · stuffed
 - hạn 2026-10-02 — sidecar · thundering herd · take it offline · par for the course · craving
+- hạn 2026-10-03 — instrument · scaffold · in the weeds · split the difference · small talk
+
+_Ghi chú 2026-10-03 (buổi #42): phần A hỏi lại 5 từ của buổi 02/10 (instrument · scaffold · in the weeds · split the difference · small talk), phần B bốc ngẫu nhiên bằng lệnh trúng deliverable · graceful degradation · doze off · touch base · push back · run errands · defer · under the weather · cut it close · preflight · scale back · end up · backport · escalate · overhead · chill out · buffer · hash out · nudge · trade-off — chạm từ lô cũ nhất (14/08) tới lô 28/09. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **205/210 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-02 (buổi #41): phần A hỏi lại 5 từ của buổi 01/10 (sidecar · thundering herd · take it offline · par for the course · craving), phần B bốc ngẫu nhiên bằng lệnh trúng night owl · touch base · off the table · overhead · shard · throttle · throughput · stateless · leftovers · circle back · single point of failure · nail down · truncate · doze off · bandwidth · run errands · invoice · discrepancy · takeaway · drift — chạm từ lô cũ nhất (17/08) tới lô 29/09. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **200/205 từ**, toàn bộ ở bậc 1._
 
@@ -308,6 +311,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | in the weeds | 1 | 2026-10-03 | 0 | 0 | 2026-10-02 |
 | split the difference | 1 | 2026-10-03 | 0 | 0 | 2026-10-02 |
 | small talk | 1 | 2026-10-03 | 0 | 0 | 2026-10-02 |
+| noisy neighbor | 1 | 2026-10-04 | 0 | 0 | 2026-10-03 |
+| quorum | 1 | 2026-10-04 | 0 | 0 | 2026-10-03 |
+| low-hanging fruit | 1 | 2026-10-04 | 0 | 0 | 2026-10-03 |
+| bottom line | 1 | 2026-10-04 | 0 | 0 | 2026-10-03 |
+| pick up the tab | 1 | 2026-10-04 | 0 | 0 | 2026-10-03 |
 
 ## Đã thuộc (bậc 5, đúng)
 

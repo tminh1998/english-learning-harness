@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 205 từ đã học** · IT 82 · Business 82 · Life 41 · ad-hoc 0
+**Tổng: 210 từ đã học** · IT 84 · Business 84 · Life 42 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-02
+**Cập nhật:** 2026-10-03
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -224,6 +224,11 @@
 | 203 | in the weeds | weed, weeds, weedy, in the weeds, into the weeds, down in the weeds | idiom (cụm trạng từ) | Business | chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải | 2026-10-02 | lesson |
 | 204 | split the difference | split, splits, splitting, split it down the middle, split the bill, difference, differences | idiom (cụm động từ) | Business | nhượng bộ đôi bên / lấy số ở giữa | 2026-10-02 | lesson |
 | 205 | small talk | make small talk, small-talk (verb, ít dùng), chitchat, chit-chat, talk, talks | noun (không đếm được) | Life | chuyện phiếm / trò chuyện xã giao | 2026-10-02 | lesson |
+| 206 | noisy neighbor | noisy neighbors, noisy-neighbor problem, noisy-neighbor effect, noise, noisy, neighbor, neighbour | noun (đếm được) | IT | kẻ giành tài nguyên chung / láng giềng ồn ào | 2026-10-03 | lesson |
+| 207 | quorum | quorums, quorate, inquorate, quorum-based, write quorum, read quorum, quorum loss | noun (đếm được, thường số ít) | IT | túc số / quá bán mới chốt được | 2026-10-03 | lesson |
+| 208 | low-hanging fruit | low hanging fruit, low-hanging fruits, quick win, easy win, hang, hanging, fruit | noun (không đếm được) | Business | việc dễ mà hiệu quả ngay | 2026-10-03 | lesson |
+| 209 | bottom line | bottom lines, bottom-line, bottom-line impact, the bottom line is, bottom, line | noun (đếm được, thường số ít) | Business | chốt lại điều cốt yếu / lợi nhuận ròng | 2026-10-03 | lesson |
+| 210 | pick up the tab | picks up the tab, picked up the tab, picking up the tab, tab, run a tab, foot the bill, pick up | idiom (cụm động từ) | Life | bao cả bàn / trả tiền hộ | 2026-10-03 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
