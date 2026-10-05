@@ -1,4 +1,4 @@
-# lich.awk — hàm ngày tháng dùng chung cho build-recap.sh và build-index.sh.
+# lich.awk — hàm ngày tháng cho build-recap.sh.
 #
 #   awk -f tools/lich.awk -f <chương-trình>.awk ...
 #

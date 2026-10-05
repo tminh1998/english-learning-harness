@@ -23,7 +23,7 @@ ENGLISH/                          ← {harness}
 ├── CLAUDE.md                     ← file này
 ├── README.md                     ← hướng dẫn dùng cho người học
 ├── index.html                    ← mục lục cho GitHub Pages — SINH RA, đừng sửa tay
-│                                   cây Năm › Nửa năm › Quý › Tháng › Tuần + ô chọn năm
+│                                   (theo tuần, có ô chọn năm ở đầu)
 ├── .claude/commands/             ← 8 slash command (xem bảng dưới)
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
@@ -32,7 +32,7 @@ ENGLISH/                          ← {harness}
 │   ├── boc.sh                    ← ⭐ bốc 20 từ ôn nhanh, lâu chưa gặp nhất ra trước (R9)
 │   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/ (gọi build-recap.sh trước)
 │   ├── build-recap.sh            ← sinh bảng ôn tháng/quý/nửa năm/năm vào wiki/recap/
-│   ├── lich.awk                  ← hàm ngày tháng (tuần ISO, cộng ngày) cho hai script trên
+│   ├── lich.awk                  ← hàm ngày tháng (tuần ISO, cộng ngày) cho build-recap.sh
 │   └── setup-remote.sh           ← chạy 1 lần lúc dựng: tạo repo + bật Pages
 └── wiki/
     ├── VOCAB_INDEX.md            ← ⭐ mọi từ đã học — nguồn chống trùng (R1)
@@ -171,12 +171,11 @@ tập" che mờ phần tiếng Việt (class `hide-me`), nút sáng/tối, và *
 nhanh** (Anh → Việt mặc định / Việt → Anh — JS tự dựng và tự chèn, file bài học
 không viết gì thêm; xem R9 mục 8).
 
-**Mục lục + bảng ôn kỳ dài** (2026-10-05): `index.html` là cây
-`details.lv` Năm › Nửa năm › Quý › Tháng › Tuần, **mặc định mở hết**, mỗi tầng có
-nút 🔁 tới bảng ôn của kỳ đó; header có `select#year-pick` (mặc định năm hiện tại,
-giờ VN). Bảng ôn tháng/quý/nửa năm/năm do `tools/build-recap.sh` sinh — **không
-sửa tay**, nghĩa lấy từ `.vi-quick` bài gốc. Style cây ở `lesson.css`, JS ở
-`lesson.js` mục 5.
+**Mục lục + bảng ôn kỳ dài** (2026-10-05): `index.html` vẫn là danh sách
+theo tuần, gom trong `section.nam[data-year]`; header có `select#year-pick` (mặc định
+năm hiện tại, giờ VN), đầu mỗi năm có hàng `nav.ky-on` tới bảng ôn năm / nửa năm /
+quý / tháng. **Không gập/mở** (user bỏ 2026-10-05). Bảng ôn tháng/quý/nửa năm/năm do `tools/build-recap.sh` sinh — **không
+sửa tay**, nghĩa lấy từ `.vi-quick` bài gốc. Ô chọn năm: `lesson.js` mục 5.
 
 Cấu trúc một trang bài học: `header.hero` → `.toolbar` → `section.block` (Ôn nhanh
 đầu giờ — bọc `<details class="warm-toggle">` không `open`, trong có **hai phần:

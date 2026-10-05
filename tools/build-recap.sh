@@ -189,7 +189,6 @@ function viet(P,   j, f, y, n, m, dau, cuoi, nhan, x, i, g, gc, mon, sun, meta, 
   print "      <div class=\"toolbar\">" > f
   print "        <button id=\"quiz-mode\" aria-pressed=\"false\">🙈 Chế độ ôn tập</button>" > f
   print "        <button id=\"theme\">🌗 Theo hệ thống</button>" > f
-  print "        <button id=\"toggle-all\">⊟ Thu gọn tất cả</button>" > f
   print "        <span class=\"hint\">Bấm 🔊 để nghe · bật chế độ ôn tập để che cột tiếng Việt, bấm vào chỗ mờ để hiện lại</span>" > f
   print "      </div>" > f
   print "" > f
@@ -211,22 +210,22 @@ function viet(P,   j, f, y, n, m, dau, cuoi, nhan, x, i, g, gc, mon, sun, meta, 
     i = ds[P, x]
     g = (j == 4) ? ld_tuan(ngay[i]) : substr(ngay[i], 1, 7)
     if (g != gc) {
-      if (gc != "") print "          </tbody>\n        </table>\n        </div>\n      </details>" > f
+      if (gc != "") print "          </tbody>\n        </table>" > f
       gc = g
       if (j == 4) {
         mon = ld_cong(ngay[i], -ld_thu(ngay[i])); sun = ld_cong(mon, 6)
         meta = ld_dm(mon) "–" ld_dm(sun) " · " demCon[P, g] " từ" (substr(mon, 6, 2) != substr(sun, 6, 2) ? " · tuần vắt 2 tháng" : "")
-        con = coTuan[g] ? "<a class=\"lv-recap\" href=\"" g ".html\">🔁 Ôn tuần</a>" : ""
-        print "\n      <details class=\"lv lv-top lv-g\" open>\n        <summary><span class=\"lv-name\">Tuần " g "</span><span class=\"lv-meta\">" meta "</span>" con "</summary>" > f
+        con = coTuan[g] ? "<a class=\"nhom-on\" href=\"" g ".html\">🔁 Ôn tuần</a>" : ""
+        print "\n      <h2 class=\"nhom\"><span class=\"nhom-ten\">Tuần " g "</span><span class=\"nhom-meta\">" meta "</span>" con "</h2>" > f
       } else {
-        print "\n      <details class=\"lv lv-top lv-g\" open>\n        <summary><span class=\"lv-name\">" tenKy(g) "</span><span class=\"lv-meta\">" demCon[P, g] " từ</span><a class=\"lv-recap\" href=\"" g ".html\">🔁 Ôn tháng</a></summary>" > f
+        print "\n      <h2 class=\"nhom\"><span class=\"nhom-ten\">" tenKy(g) "</span><span class=\"nhom-meta\">" demCon[P, g] " từ</span><a class=\"nhom-on\" href=\"" g ".html\">🔁 Ôn tháng</a></h2>" > f
       }
-      print "        <div class=\"lv-body\">\n        <table class=\"tra-nhanh\">" > f
+      print "        <table class=\"tra-nhanh\">" > f
       print "          <thead><tr><th class=\"c-tu\">Từ</th><th class=\"c-vi\">Nghĩa tiếng Việt</th><th class=\"c-cum\">Cụm đi kèm · câu ví dụ</th></tr></thead>\n          <tbody>" > f
     }
     print row[i] > f
   }
-  print "          </tbody>\n        </table>\n        </div>\n      </details>" > f
+  print "          </tbody>\n        </table>" > f
   print "" > f
   print "      <footer>Sinh tự động bởi <code>tools/build-recap.sh</code> từ " buoi[P] + 0 " buổi học · nghĩa Việt chép nguyên khối nghĩa của bài gốc · <a href=\"../../index.html\">← Mục lục</a></footer>" > f
   print "    </div>" > f

@@ -4,40 +4,9 @@
    lesson.css, sáng/tối tự theo.
    Sinh bởi tools/build-index.sh — đừng sửa index.html bằng tay. */
 
-/* Khối "Tra cứu" cuối trang. Danh sách bài học nằm trong cây details.lv —
-   style của cây ở lesson.css (dùng chung với bảng ôn tháng/quý/năm). */
 .week {
   margin: 2rem 0;
 }
-
-/* Cây bài học — tầng Năm cách xa nhau, thẻ buổi học sát tiêu đề tuần */
-section.nam { margin: 1.25rem 0 2rem; }
-.lv-w > .lv-body > .lesson:last-child { margin-bottom: .75rem; }
-
-/* Ô chọn năm trong header — lesson.js mục 5 chọn sẵn năm hiện tại */
-.year-pick {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  margin-top: 1rem;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-dim);
-}
-
-.year-pick select {
-  font: inherit;
-  font-weight: 700;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: .3rem .8rem;
-  cursor: pointer;
-}
-
-.year-pick select:hover,
-.year-pick select:focus-visible { border-color: var(--accent); }
 
 .week > h2 {
   font-size: .8rem;
@@ -96,6 +65,14 @@ section.nam { margin: 1.25rem 0 2rem; }
 .w.biz  { background: var(--biz-bg);  color: var(--biz); }
 .w.life { background: var(--life-bg); color: var(--life); }
 
+/* Bảng ôn tuần — nổi hơn các buổi lẻ, vì đây là trang hay mở nhất */
+.lesson.recap {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.lesson.recap .lesson-date { color: var(--accent-text); }
+
 .quiz-link,
 .repo-link {
   margin: 0 0 .6rem;
@@ -117,3 +94,59 @@ section.nam { margin: 1.25rem 0 2rem; }
 @media (max-width: 34rem) {
   .lesson-words { margin-left: 0; width: 100%; }
 }
+
+/* Ô chọn năm trong header — lesson.js mục 5 chỉ hiện các tuần của năm đang chọn,
+   mặc định năm hiện tại */
+.year-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.year-pick select {
+  font: inherit;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .3rem .8rem;
+  cursor: pointer;
+}
+
+.year-pick select:hover,
+.year-pick select:focus-visible { border-color: var(--accent); }
+
+/* Link bảng ôn tháng / quý / nửa năm / năm — đầu mỗi năm (tools/build-recap.sh) */
+.ky-on {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem;
+  margin: 1.5rem 0 0;
+  font-size: .85rem;
+}
+
+.ky-on .k {
+  margin-right: .25rem;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.ky-on a {
+  padding: .15rem .7rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--accent-text);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ky-on a:hover,
+.ky-on a:focus-visible { border-color: var(--accent); }

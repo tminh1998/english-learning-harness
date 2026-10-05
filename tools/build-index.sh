@@ -9,11 +9,9 @@
 # Sinh máy móc từ nội dung `wiki/lessons/` nên không bao giờ lệch với bài thật.
 # Đừng sửa tay `index.html` — lần chạy sau sẽ ghi đè.
 #
-# Mục lục là một cây gập/mở: Năm › Nửa năm › Quý › Tháng › Tuần › buổi học, mặc
-# định mở hết, đầu trang có ô chọn năm (lesson.js mục 5 — mặc định năm hiện tại).
-# Buổi học xếp vào kỳ theo NGÀY HỌC: tuần vắt qua hai tháng hiện ở cả hai tháng,
-# mỗi bên đúng phần buổi của mình. Mỗi kỳ có link bảng ôn riêng — bảng ôn
-# tháng/quý/nửa năm/năm do tools/build-recap.sh sinh, script này gọi nó trước.
+# Mỗi năm một khối (ô chọn năm ở đầu trang — lesson.js mục 5, mặc định năm hiện
+# tại), trong năm là từng tuần ISO như cũ. Đầu mỗi năm có hàng link tới bảng ôn
+# tháng/quý/nửa năm/năm — các trang đó do tools/build-recap.sh sinh, gọi trước ở đây.
 
 set -e
 . "$(dirname "$0")/openit.sh"
@@ -65,65 +63,51 @@ done > "$TMP/buoi"
 
 ls wiki/recap | sed -n 's/^\([0-9]\{4\}-W[0-9][0-9]\)\.html$/\1/p' > "$TMP/recap-tuan"
 ls wiki/quiz  | sed -n 's/^\([0-9]\{4\}-W[0-9][0-9]\)\.md$/\1/p'    > "$TMP/quiz-tuan"
+ls wiki/recap | sed -n -e 's/^\([0-9]\{4\}\)\.html$/\1/p' -e 's/^\([0-9]\{4\}-[0-9][0-9]\)\.html$/\1/p' \
+  -e 's/^\([0-9]\{4\}-[QH][0-9]\)\.html$/\1/p' > "$TMP/recap-ky"
 
-# ── Cây Năm › Nửa năm › Quý › Tháng › Tuần (mới nhất lên đầu) ──
-cat > "$TMP/cay.awk" <<'AWK'
+# ── Theo năm (cho ô chọn năm), trong năm là từng tuần ISO — mới nhất lên đầu ──
+cat > "$TMP/nam.awk" <<'AWK'
 FILENAME == ARGV[1] { coRecap[$1] = 1; next }
 FILENAME == ARGV[2] { coQuiz[$1] = 1; next }
-{
-  n++; tenf[n] = $1; href[n] = $2; sotu[n] = $3; chip[n] = $4
-  d = substr($1, 1, 10); y = substr(d, 1, 4)
-  # khoá từng tầng — tháng/tuần gắn kèm tầng cha để tuần vắt tháng tách làm hai
-  K[1, n] = y
-  K[2, n] = y "-H" ld_nua(d)
-  K[3, n] = y "-Q" ld_quy(d)
-  K[4, n] = substr(d, 1, 7)
-  K[5, n] = substr(d, 1, 7) "|" ld_tuan(d)
-  for (t = 1; t <= 5; t++) { buoi[t, K[t, n]]++; tu[t, K[t, n]] += $3 }
-}
+FILENAME == ARGV[3] { ky[++nk] = $1; next }
+{ n++; tenf[n] = $1; href[n] = $2; chip[n] = $4 }
 
-function meta(t, k) { return buoi[t, k] " buổi · " tu[t, k] " từ" }
-function pill(href, chu) { return "<a class=\"lv-recap\" href=\"" href "\">🔁 " chu "</a>" }
-
-function mo(t, i,   k, y, d, wk, mon, sun, ten, phu, nut, lop) {
-  k = K[t, i]; y = substr(k, 1, 4)
-  if (t == 1) {
-    printf "      <section class=\"nam\" data-year=\"%s\">\n", y
-    ten = "Năm " y; nut = pill("wiki/recap/" y ".html", "Ôn cả năm"); lop = "lv-y lv-top"
-  } else if (t == 2) {
-    ten = (substr(k, 7) == "1" ? "Nửa đầu năm " : "Nửa cuối năm ") y
-    nut = pill("wiki/recap/" k ".html", "Ôn nửa năm"); lop = "lv-h"
-  } else if (t == 3) {
-    ten = "Quý " substr(k, 7) "/" y; nut = pill("wiki/recap/" k ".html", "Ôn quý"); lop = "lv-q"
-  } else if (t == 4) {
-    ten = "Tháng " (substr(k, 6, 2) + 0) "/" y; nut = pill("wiki/recap/" k ".html", "Ôn tháng"); lop = "lv-m"
-  } else {
-    wk = substr(k, 9); d = substr(tenf[i], 1, 10)
-    mon = ld_cong(d, -ld_thu(d)); sun = ld_cong(mon, 6)
-    ten = "Tuần " wk
-    phu = ld_dm(mon) "–" ld_dm(sun) " · "
-    if (substr(mon, 6, 2) != substr(sun, 6, 2)) phu = phu "phần tháng " (substr(k, 6, 2) + 0) " · "
-    nut = coRecap[wk] ? pill("wiki/recap/" wk ".html", "Ôn tuần") : ""; lop = "lv-w"
+# Hàng link bảng ôn kỳ dài của năm y: cả năm · nửa năm · quý · tháng
+function kyOn(y,   s, t, x, k, loai) {
+  s = ""
+  for (t = 1; t <= 4; t++) for (x = 1; x <= nk; x++) {
+    k = ky[x]; if (substr(k, 1, 4) != y) continue
+    loai = length(k) == 4 ? 1 : (substr(k, 6, 1) == "H" ? 2 : (substr(k, 6, 1) == "Q" ? 3 : 4))
+    if (loai != t) continue
+    if (t == 1) s = s "<a href=\"wiki/recap/" k ".html\">Cả năm " y "</a>"
+    else if (t == 2) s = s "<a href=\"wiki/recap/" k ".html\">" (substr(k, 7) == "1" ? "Nửa đầu năm" : "Nửa cuối năm") "</a>"
+    else if (t == 3) s = s "<a href=\"wiki/recap/" k ".html\">Quý " substr(k, 7) "</a>"
+    else s = s "<a href=\"wiki/recap/" k ".html\">Tháng " (substr(k, 6, 2) + 0) "</a>"
   }
-  printf "      <details class=\"lv %s\" open>\n", lop
-  printf "        <summary><span class=\"lv-name\">%s</span><span class=\"lv-meta\">%s%s</span>%s</summary>\n", ten, phu, meta(t, k), nut
-  printf "        <div class=\"lv-body\">\n"
-  if (t == 5 && coQuiz[wk]) printf "        <p class=\"quiz-link\"><a href=\"wiki/quiz/%s.md\">📝 Bài kiểm tra tuần %s</a></p>\n", wk, wk
-}
-
-function dong(t) {
-  printf "        </div>\n      </details>\n"
-  if (t == 1) printf "      </section>\n"
+  return s
 }
 
 END {
-  sau = 0                                  # số tầng đang mở
   for (i = 1; i <= n; i++) {
-    for (t = 1; t <= 5; t++) if (K[t, i] != dang[t]) break
-    while (sau >= t) dong(sau--)           # đóng từ tầng sâu nhất lên tới tầng đổi
-    for (; t <= 5; t++) { mo(t, i); dang[t] = K[t, i]; sau = t }
-    for (t2 = sau + 1; t2 <= 5; t2++) dang[t2] = ""
-
+    y = substr(tenf[i], 1, 4)
+    split(href[i], p, "/"); wk = p[3]          # wiki/lessons/<tuần>/<ngày>.html
+    if (y != yc) {
+      if (wc != "") printf "      </section>\n"
+      if (yc != "") printf "      </section>\n"
+      printf "      <section class=\"nam\" data-year=\"%s\">\n", y
+      s = kyOn(y)
+      if (s != "") printf "      <nav class=\"ky-on\"><span class=\"k\">🔁 Bảng ôn %s:</span>%s</nav>\n", y, s
+      yc = y; wc = ""
+    }
+    if (wk != wc) {
+      if (wc != "") printf "      </section>\n"
+      printf "      <section class=\"week\">\n        <h2>Tuần %s</h2>\n", wk
+      # Bảng ôn tuần (trang để đọc) — đặt TRƯỚC danh sách buổi vì hay mở nhất
+      if (coRecap[wk]) printf "        <a class=\"lesson recap\" href=\"wiki/recap/%s.html\"><span class=\"lesson-date\">🔁 Bảng ôn cả tuần %s</span></a>\n", wk, wk
+      if (coQuiz[wk]) printf "        <p class=\"quiz-link\"><a href=\"wiki/quiz/%s.md\">📝 Bài kiểm tra tuần %s</a></p>\n", wk, wk
+      wc = wk
+    }
     ngay = tenf[i]; nhan = ""
     if (ngay ~ /-[0-9]$/) { nhan = " · buổi #" substr(ngay, 12); ngay = substr(ngay, 1, 10) }
     printf "        <a class=\"lesson\" href=\"%s\">\n", href[i]
@@ -131,7 +115,8 @@ END {
     printf "          <span class=\"lesson-words\">%s</span>\n", chip[i]
     printf "        </a>\n"
   }
-  while (sau >= 1) dong(sau--)
+  if (wc != "") printf "      </section>\n"
+  if (yc != "") printf "      </section>\n"
 }
 AWK
 
@@ -164,12 +149,11 @@ HEAD
 
       <div class="toolbar">
         <button id="theme">🌗 Theo hệ thống</button>
-        <button id="toggle-all">⊟ Thu gọn tất cả</button>
-        <span class="hint">Bấm tên kỳ để gập/mở · 🔁 mở bảng ôn của kỳ đó</span>
+        <span class="hint">Bấm vào một buổi để mở bài học đầy đủ</span>
       </div>
 HEAD2
 
-  awk -F"$TAB" -f tools/lich.awk -f "$TMP/cay.awk" "$TMP/recap-tuan" "$TMP/quiz-tuan" "$TMP/buoi"
+  awk -F"$TAB" -f "$TMP/nam.awk" "$TMP/recap-tuan" "$TMP/quiz-tuan" "$TMP/recap-ky" "$TMP/buoi"
 
   cat <<'FOOT'
       <section class="week">

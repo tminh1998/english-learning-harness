@@ -155,7 +155,42 @@
 .c-cum .vd b { color: var(--accent); }
 .c-cum .vd code { font-size: 12px; margin: 0; padding: 0 4px; }
 
-.lv-g .tra-nhanh { margin-top: 4px; }
+/* Tiêu đề nhóm (tuần trong trang tháng, tháng trong trang quý/nửa năm/năm) */
+h2.nhom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  margin: 34px 0 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.nhom-ten {
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.nhom-meta {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+.nhom-on {
+  margin-left: auto;
+  padding: 2px 11px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--accent-text);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nhom-on:hover { border-color: var(--accent); }
+h2.nhom + .tra-nhanh { margin-top: 4px; }
 
 /* ── Điện thoại: bảng đổ thành khối, không cuộn ngang ─────── */
 

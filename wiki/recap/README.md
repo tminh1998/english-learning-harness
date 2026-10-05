@@ -37,7 +37,7 @@ buổi học các trang này tự cập nhật.
 
 - Một bảng tra nhanh: từ + IPA + 🔊 · **nghĩa Việt** (khối `.vi-quick` của bài gốc,
   có `hide-me`) · 3 cụm đi kèm + câu ví dụ #1. Bấm ngày học dưới từ để mở bài gốc.
-- Gom thành nhóm gập/mở được, mặc định mở: trang tháng gom theo tuần, trang quý /
+- Chia nhóm (không gập/mở): trang tháng gom theo tuần, trang quý /
   nửa năm / năm gom theo tháng. Mỗi nhóm có link xuống bảng ôn của nhóm đó.
 - Từ xếp vào kỳ theo **ngày học**: tuần vắt hai tháng thì mỗi tháng giữ phần của mình.
 - Kỳ chưa hết vẫn có trang, ghi "đang diễn ra".

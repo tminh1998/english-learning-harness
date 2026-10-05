@@ -90,10 +90,9 @@ Mỗi buổi `/hoc` sinh một trang mở thẳng trong trình duyệt:
   chỗ mờ thì hiện ra
 - **🌗 Sáng / tối**, đọc tốt trên điện thoại, in ra giấy được (Cmd+P)
 
-Trang **mục lục** (`index.html`, cũng là trang chủ trên GitHub Pages) xếp bài thành
-cây **Năm › Nửa năm › Quý › Tháng › Tuần**, tầng nào cũng gập/mở được (mặc định mở
-hết), đầu trang có ô **chọn năm** — mặc định năm hiện tại. Mỗi tầng có nút
-**🔁 Ôn** mở bảng ôn của đúng kỳ đó: mọi từ học trong tháng/quý/nửa năm/năm, nghĩa
+Trang **mục lục** (`index.html`, cũng là trang chủ trên GitHub Pages) xếp bài theo
+tuần, đầu trang có ô **chọn năm** — mặc định năm hiện tại. Đầu mỗi năm có hàng nút
+**🔁 Bảng ôn** cả năm / nửa năm / quý / tháng: mọi từ học trong tháng/quý/nửa năm/năm, nghĩa
 Việt ngay cột kế bên, bật 🙈 để tự kiểm tra.
 
 Muốn đổi giao diện cho **tất cả** bài học (kể cả bài cũ): sửa

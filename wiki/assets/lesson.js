@@ -3,7 +3,7 @@
    2. Chế độ ôn tập: che mờ toàn bộ phần tiếng Việt để tự kiểm tra, bấm để hiện.
    3. Nút đổi sáng/tối, nhớ lựa chọn trong localStorage.
    4. Ôn nhanh đầu giờ: nút đổi chiều Anh->Việt / Việt->Anh (mặc định Anh->Việt).
-   5. Cây theo kỳ (mục lục + bảng ôn kỳ dài): chọn năm, gập/mở tất cả. */
+   5. Mục lục: ô chọn năm — chỉ hiện các tuần của năm đang chọn. */
 
 (function () {
   'use strict';
@@ -172,27 +172,11 @@
 
   if (warmSec) { setupWarmDir(warmSec); }
 
-  /* ── 5. Cây theo kỳ: chọn năm + gập/mở tất cả (từ 2026-10-05) ──────
-     Mục lục và bảng ôn tháng/quý/nửa năm/năm dựng bằng <details class="lv" open>
-     gốc của trình duyệt — tắt JS vẫn gập/mở được từng tầng. JS chỉ thêm:
-       · #year-pick : chỉ hiện section.nam của năm đang chọn. Mặc định năm hiện
-         tại theo giờ VN; năm đó chưa có bài (vd sáng 1/1) thì lấy năm mới nhất.
-       · #toggle-all: còn tầng nào đang đóng thì mở hết, không thì đóng hết —
-         chỉ tính phần đang hiện (năm đang chọn). */
+  /* ── 5. Mục lục: chọn năm (từ 2026-10-05) ─────────────────────────
+     index.html gom mỗi năm vào một section.nam[data-year]. Ô #year-pick chỉ hiện
+     năm đang chọn — mặc định năm hiện tại theo giờ VN; năm đó chưa có bài
+     (vd sáng 1/1) thì lấy năm mới nhất. Tắt JS thì hiện tất cả các năm. */
   var yearSel = document.getElementById('year-pick');
-  var allBtn = document.getElementById('toggle-all');
-
-  function shownLv() {
-    return [].filter.call(document.querySelectorAll('details.lv'), function (d) {
-      return !d.closest('[hidden]');
-    });
-  }
-
-  function syncAllBtn() {
-    if (!allBtn) { return; }
-    var anyClosed = shownLv().some(function (d) { return !d.open; });
-    allBtn.textContent = anyClosed ? '⊞ Mở tất cả' : '⊟ Thu gọn tất cả';
-  }
 
   if (yearSel) {
     var nowYear = String(new Date().getFullYear());
@@ -205,24 +189,11 @@
       document.querySelectorAll('section.nam').forEach(function (s) {
         s.hidden = s.dataset.year !== y;
       });
-      syncAllBtn();
     };
 
     var have = [].map.call(yearSel.options, function (o) { return o.value; });
     yearSel.value = have.indexOf(nowYear) >= 0 ? nowYear : have[0];
     showYear(yearSel.value);
     yearSel.addEventListener('change', function () { showYear(yearSel.value); });
-  }
-
-  if (allBtn) {
-    allBtn.addEventListener('click', function () {
-      var list = shownLv();
-      var open = list.some(function (d) { return !d.open; });
-      list.forEach(function (d) { d.open = open; });
-      syncAllBtn();
-    });
-    /* `toggle` không nổi bọt — bắt ở pha capture để nghe mọi details */
-    document.addEventListener('toggle', syncAllBtn, true);
-    syncAllBtn();
   }
 }());
