@@ -76,6 +76,8 @@ wiki/
 │                        2026-08-12.html    bản trình bày (mở bằng trình duyệt)
 ├── quiz/2026-W33.md                   đề kiểm tra tuần (+ file -key.md riêng)
 ├── recap/2026-W33.md                  bảng ôn cả tuần (+ .html)
+│        2026-10.html · 2026-Q4.html   bảng ôn tháng · quý · nửa năm · năm
+│        2026-H2.html · 2026.html      (sinh tự động, mở từ mục lục)
 └── memory/MEMORY.md      rule đã học về cách học của bạn
 ```
 
@@ -87,6 +89,12 @@ Mỗi buổi `/hoc` sinh một trang mở thẳng trong trình duyệt:
 - **🙈 Chế độ ôn tập** — che mờ toàn bộ phần tiếng Việt để tự kiểm tra, bấm vào
   chỗ mờ thì hiện ra
 - **🌗 Sáng / tối**, đọc tốt trên điện thoại, in ra giấy được (Cmd+P)
+
+Trang **mục lục** (`index.html`, cũng là trang chủ trên GitHub Pages) xếp bài thành
+cây **Năm › Nửa năm › Quý › Tháng › Tuần**, tầng nào cũng gập/mở được (mặc định mở
+hết), đầu trang có ô **chọn năm** — mặc định năm hiện tại. Mỗi tầng có nút
+**🔁 Ôn** mở bảng ôn của đúng kỳ đó: mọi từ học trong tháng/quý/nửa năm/năm, nghĩa
+Việt ngay cột kế bên, bật 🙈 để tự kiểm tra.
 
 Muốn đổi giao diện cho **tất cả** bài học (kể cả bài cũ): sửa
 `wiki/assets/lesson.css`, không phải sửa từng bài.

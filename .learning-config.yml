@@ -46,6 +46,8 @@ paths:
   recap: "./wiki/recap" # ⭐ bảng ôn tuần: recap/YYYY-Www.md + .html — trang ĐỂ ĐỌC,
   # gom mọi từ trong tuần, nghĩa Việt HIỆN SẴN ngay cột kế bên (khác quiz: quiz giấu
   # đáp án để chấm điểm). Sinh mỗi Chủ nhật 7h sáng, xem Flow D trong AGENTS.md.
+  # Cùng thư mục: bảng ôn THÁNG / QUÝ / NỬA NĂM / NĂM (YYYY-MM · YYYY-Qn · YYYY-Hn ·
+  # YYYY .html) — SINH MÁY bởi tools/build-recap.sh mỗi lần build-index, đừng sửa tay.
   memory: "./wiki/memory" # rule đã học VỀ CÁCH HỌC của learner
   templates: "./wiki/_templates"
   assets: "./wiki/assets" # lesson.css + lesson.js — giao diện DÙNG CHUNG mọi bài học

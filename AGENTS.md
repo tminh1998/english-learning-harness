@@ -455,6 +455,20 @@ Bốn luật riêng:
 Chỉ gom từ **trong tuần đó**, không kéo từ tuần khác, không thêm từ mới. Đây là bản
 phái sinh nên **được phép ghi đè** — R5 không áp dụng.
 
+#### Bảng ôn tháng / quý / nửa năm / năm — SINH MÁY, không có flow riêng (từ 2026-10-05)
+
+`{recap}/YYYY-MM.html` · `YYYY-Qn.html` · `YYYY-Hn.html` · `YYYY.html` do
+`tools/build-recap.sh` sinh, và `build-index.sh` gọi nó trước tiên — nên mọi flow
+đã chạy `build-index.sh` (A, D, E) là các bảng này tự cập nhật, **agent không soạn
+gì**. Không có `.md` đi kèm, không có mục "chỗ dễ sai" (cái đó là việc của bảng tuần).
+
+- Từ xếp vào kỳ theo **ngày học** trong `{vocabIndex}`, không theo tuần ISO: tuần vắt
+  hai tháng thì mỗi tháng giữ đúng phần của mình.
+- Mỗi từ: nghĩa = **khối `.vi-quick` bài gốc** qua `tools/nghia.sh` (cùng nguồn R9),
+  IPA + 3 cụm đi kèm + câu ví dụ #1 lấy từ `.md` bài gốc. Cột nghĩa có `hide-me`.
+- ⛔ **Không sửa tay** — lần build sau ghi đè. Nghĩa sai thì sửa ở bài gốc rồi build lại.
+- Kỳ chưa hết vẫn sinh, ghi "đang diễn ra".
+
 ### Flow E — User tự dịch lại (`/dich`)
 
 ```text
@@ -465,7 +479,7 @@ Phase 2  Từ có bản mới -> thay NGHIA ở MỌI chỗ đang chép nó: .vi
          cột Nghĩa gọn VOCAB_INDEX, khối ôn nhanh các bài sau, recap (grep -rnF)
 Phase 3  {memory}/cach-dich-cua-user.md: +1 dòng nhật ký mỗi từ (cả "Giữ"),
          đọc lại cả bảng -> sửa "Quy luật rút ra" (lặp >= 2 lần mới thành luật)
-Phase 4  daylen "dich: <ngày> — <từ>"  (R6)
+Phase 4  sh tools/build-index.sh -> daylen "dich: <ngày> — <từ>"  (R6)
 ```
 
 ⭐ **User nhắn sửa nghĩa ngay trong chat cũng là Flow E** (chốt 2026-09-29) — vd

@@ -4,9 +4,40 @@
    lesson.css, sáng/tối tự theo.
    Sinh bởi tools/build-index.sh — đừng sửa index.html bằng tay. */
 
+/* Khối "Tra cứu" cuối trang. Danh sách bài học nằm trong cây details.lv —
+   style của cây ở lesson.css (dùng chung với bảng ôn tháng/quý/năm). */
 .week {
   margin: 2rem 0;
 }
+
+/* Cây bài học — tầng Năm cách xa nhau, thẻ buổi học sát tiêu đề tuần */
+section.nam { margin: 1.25rem 0 2rem; }
+.lv-w > .lv-body > .lesson:last-child { margin-bottom: .75rem; }
+
+/* Ô chọn năm trong header — lesson.js mục 5 chọn sẵn năm hiện tại */
+.year-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.year-pick select {
+  font: inherit;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .3rem .8rem;
+  cursor: pointer;
+}
+
+.year-pick select:hover,
+.year-pick select:focus-visible { border-color: var(--accent); }
 
 .week > h2 {
   font-size: .8rem;
@@ -64,14 +95,6 @@
 .w.it   { background: var(--it-bg);   color: var(--it); }
 .w.biz  { background: var(--biz-bg);  color: var(--biz); }
 .w.life { background: var(--life-bg); color: var(--life); }
-
-/* Bảng ôn tuần — nổi hơn các buổi lẻ, vì đây là trang hay mở nhất */
-.lesson.recap {
-  background: var(--accent-bg);
-  border-color: var(--accent);
-}
-
-.lesson.recap .lesson-date { color: var(--accent-text); }
 
 .quiz-link,
 .repo-link {

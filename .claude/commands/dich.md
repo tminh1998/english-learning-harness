@@ -73,7 +73,8 @@ gốc ghi một nẻo:
 |---|---|
 | Bài gốc `<ngày>.html` | dòng đậm trong `<p class="vi-quick">` (và `<span class="alt">` nếu user viết `\|`) |
 | `wiki/VOCAB_INDEX.md` | cột `Nghĩa gọn` của đúng dòng từ đó |
-| Khối ôn nhanh các bài **sau** ngày đó + `wiki/recap/*` | chỗ nào đang chép nguyên văn nghĩa cũ |
+| Khối ôn nhanh các bài **sau** ngày đó + `wiki/recap/<tuần>.*` | chỗ nào đang chép nguyên văn nghĩa cũ |
+| Bảng ôn tháng/quý/nửa năm/năm (`wiki/recap/2026-10.html`, `2026-Q4.html`…) | **không sửa tay** — sinh máy từ `.vi-quick`, `sh tools/build-index.sh` là tự khớp |
 
 Tìm chỗ chép lại bằng lệnh, đừng đoán:
 
@@ -121,6 +122,7 @@ Mở `wiki/memory/cach-dich-cua-user.md`:
 điện thoại — chưa push thì user vẫn thấy bản cũ và tưởng chưa sửa.
 
 ```bash
+sh tools/build-index.sh      # sinh lại bảng ôn tháng/quý/nửa năm/năm theo nghĩa mới
 daylen "dich: $D — <các từ user dịch lại, cách nhau dấu phẩy>"
 ```
 

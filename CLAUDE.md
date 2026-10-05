@@ -23,13 +23,16 @@ ENGLISH/                          ← {harness}
 ├── CLAUDE.md                     ← file này
 ├── README.md                     ← hướng dẫn dùng cho người học
 ├── index.html                    ← mục lục cho GitHub Pages — SINH RA, đừng sửa tay
+│                                   cây Năm › Nửa năm › Quý › Tháng › Tuần + ô chọn năm
 ├── .claude/commands/             ← 8 slash command (xem bảng dưới)
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
 │   │                               cfg · hnay · tuan · openit · keove · daylen
 │   ├── nghia.sh                  ← ⭐ trích khối nghĩa .vi-quick của bài cũ (R9)
 │   ├── boc.sh                    ← ⭐ bốc 20 từ ôn nhanh, lâu chưa gặp nhất ra trước (R9)
-│   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/
+│   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/ (gọi build-recap.sh trước)
+│   ├── build-recap.sh            ← sinh bảng ôn tháng/quý/nửa năm/năm vào wiki/recap/
+│   ├── lich.awk                  ← hàm ngày tháng (tuần ISO, cộng ngày) cho hai script trên
 │   └── setup-remote.sh           ← chạy 1 lần lúc dựng: tạo repo + bật Pages
 └── wiki/
     ├── VOCAB_INDEX.md            ← ⭐ mọi từ đã học — nguồn chống trùng (R1)
@@ -38,7 +41,8 @@ ENGLISH/                          ← {harness}
     ├── assets/lesson.css + .js   ← giao diện DÙNG CHUNG cho mọi trang bài học
     ├── lessons/YYYY-Www/YYYY-MM-DD.md  + .html   ← bản đọc nhanh + bản trình bày
     ├── quiz/YYYY-Www.md  +  YYYY-Www-key.md     ← đề và đáp án TÁCH FILE (R2)
-    ├── recap/YYYY-Www.md + .html ← bảng ôn tuần (Chủ nhật)
+    ├── recap/YYYY-Www.md + .html ← bảng ôn tuần (Chủ nhật, agent soạn)
+    ├── recap/YYYY-MM · -Qn · -Hn · YYYY .html ← bảng ôn tháng/quý/nửa năm/năm — SINH MÁY
     ├── memory/MEMORY.md          ← rule đã học về cách học của user
     └── _templates/               ← khuôn lesson.md / lesson.html / quiz / memory
 ```
@@ -167,6 +171,13 @@ tập" che mờ phần tiếng Việt (class `hide-me`), nút sáng/tối, và *
 nhanh** (Anh → Việt mặc định / Việt → Anh — JS tự dựng và tự chèn, file bài học
 không viết gì thêm; xem R9 mục 8).
 
+**Mục lục + bảng ôn kỳ dài** (2026-10-05): `index.html` là cây
+`details.lv` Năm › Nửa năm › Quý › Tháng › Tuần, **mặc định mở hết**, mỗi tầng có
+nút 🔁 tới bảng ôn của kỳ đó; header có `select#year-pick` (mặc định năm hiện tại,
+giờ VN). Bảng ôn tháng/quý/nửa năm/năm do `tools/build-recap.sh` sinh — **không
+sửa tay**, nghĩa lấy từ `.vi-quick` bài gốc. Style cây ở `lesson.css`, JS ở
+`lesson.js` mục 5.
+
 Cấu trúc một trang bài học: `header.hero` → `.toolbar` → `section.block` (Ôn nhanh
 đầu giờ — bọc `<details class="warm-toggle">` không `open`, trong có **hai phần:
 5 từ buổi trước + 20 từ bốc ngẫu**, mỗi câu một `li.qa` kèm `details.ans` riêng)
@@ -243,7 +254,7 @@ Các script trong `tools/` là **shell POSIX thuần** (`/bin/sh`), chạy đư�
 macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng thì test bằng:
 
 ```bash
-sh tools/build-index.sh                                    # phải in DA-DUNG-INDEX
+sh tools/build-index.sh                                    # phải in DA-DUNG-RECAP rồi DA-DUNG-INDEX
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
 sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD
 sh tools/boc.sh -v                                         # 20 dòng, ngày gặp cuối tăng dần

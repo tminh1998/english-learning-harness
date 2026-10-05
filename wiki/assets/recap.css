@@ -1,4 +1,5 @@
-/* recap.css — style riêng cho BẢNG ÔN TUẦN (`wiki/recap/YYYY-Www.html`).
+/* recap.css — style riêng cho BẢNG ÔN: tuần (`wiki/recap/YYYY-Www.html`, soạn tay)
+   và tháng/quý/nửa năm/năm (`YYYY-MM` · `YYYY-Qn` · `YYYY-Hn` · `YYYY.html`, sinh máy).
    Dùng chung biến màu + .wrap/.hero/.badge/.toolbar/.hide-me của lesson.css.
    File này chỉ thêm phần bảng tra nhanh và bảng cặp dễ nhầm.
 
@@ -99,6 +100,62 @@
 .de-nham .dung { color: var(--biz); font-weight: 600; white-space: nowrap; }
 .de-nham .sai  { color: var(--warn); text-decoration: line-through; white-space: nowrap; }
 .de-nham .visao { font-size: 13.5px; color: var(--text-dim); }
+
+/* ── Bảng ôn kỳ dài (tháng/quý/nửa năm/năm — tools/build-recap.sh) ── */
+
+/* Đường dẫn ngược lên: Mục lục › Năm › Nửa năm › Quý › Tháng */
+.crumbs {
+  margin-bottom: 10px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+}
+.crumbs a { color: var(--accent-text); text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+
+/* Lối tắt xuống kỳ con (trang năm, trang nửa năm) */
+.ky-con {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 0 18px;
+  font-size: 13.5px;
+}
+.ky-con .k { color: var(--text-dim); margin-right: 4px; }
+.ky-con a {
+  padding: 2px 11px;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  color: var(--accent-text);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.ky-con a:hover { border-color: var(--accent); }
+
+/* Ngày học dưới từ — bấm để mở bài gốc */
+.c-tu .ngay {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-dim);
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+.c-tu a.ngay:hover { color: var(--accent); }
+
+/* Câu ví dụ #1 của bài gốc, nằm dưới cụm đi kèm */
+.c-cum .vd {
+  display: block;
+  margin-top: 6px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.c-cum .vd b { color: var(--accent); }
+.c-cum .vd code { font-size: 12px; margin: 0; padding: 0 4px; }
+
+.lv-g .tra-nhanh { margin-top: 4px; }
 
 /* ── Điện thoại: bảng đổ thành khối, không cuộn ngang ─────── */
 
