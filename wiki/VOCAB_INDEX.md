@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 210 từ đã học** · IT 84 · Business 84 · Life 42 · ad-hoc 0
+**Tổng: 215 từ đã học** · IT 86 · Business 86 · Life 43 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-03
+**Cập nhật:** 2026-10-05
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -229,6 +229,11 @@
 | 208 | low-hanging fruit | low hanging fruit, low-hanging fruits, quick win, easy win, hang, hanging, fruit | noun (không đếm được) | Business | việc dễ mà hiệu quả ngay | 2026-10-03 | lesson |
 | 209 | bottom line | bottom lines, bottom-line, bottom-line impact, the bottom line is, bottom, line | noun (đếm được, thường số ít) | Business | chốt lại điều cốt yếu / lợi nhuận ròng | 2026-10-03 | lesson |
 | 210 | pick up the tab | picks up the tab, picked up the tab, picking up the tab, tab, run a tab, foot the bill, pick up | idiom (cụm động từ) | Life | bao cả bàn / trả tiền hộ | 2026-10-03 | lesson |
+| 211 | reflow | reflows, reflowed, reflowing, re-flow, reflow the layout, layout reflow, forced synchronous reflow | noun (đếm được; cũng là verb) | IT | tính lại bố cục trang / dựng lại layout | 2026-10-05 | lesson |
+| 212 | shim | shims, shimmed, shimming, a shim layer, compatibility shim, browser shim, shim in | noun (đếm được; cũng là verb) | IT | lớp đệm tương thích | 2026-10-05 | lesson |
+| 213 | upfront | up front, up-front, upfront payment, upfront cost, upfront fee, be upfront about sth, be upfront with sb | adjective + adverb | Business | nói thẳng từ đầu / trả trước | 2026-10-05 | lesson |
+| 214 | retainer | retainers, retainer fee, retainer agreement, on retainer, retain, retained, retaining | noun (đếm được) | Business | hợp đồng trả phí định kỳ | 2026-10-05 | lesson |
+| 215 | tag along | tags along, tagged along, tagging along, tag along with sb, a tagalong | phrasal verb | Life | đi theo cho vui | 2026-10-05 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
