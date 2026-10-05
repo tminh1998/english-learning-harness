@@ -46,23 +46,24 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 
    - **5 từ của buổi LIỀN TRƯỚC** — lấy từ `wiki/PROGRESS.md` (bảng "Nhật ký buổi
      học", dòng cuối) hoặc file bài học gần nhất. Đúng thứ tự trong bài.
-   - **20 từ BỐC NGẪU NHIÊN** trong **toàn bộ** `wiki/VOCAB_INDEX.md` — không phải
-     chỉ từ tới hạn trong REVIEW_QUEUE. Bốc **bằng lệnh**, không bốc bằng mắt:
+   - **20 từ DÀN ĐỀU** trong **toàn bộ** `wiki/VOCAB_INDEX.md` — không phải chỉ từ
+     tới hạn trong REVIEW_QUEUE. Bốc **bằng lệnh**, không bốc bằng mắt:
 
      ```bash
-     grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
-       | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
-       | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
+     sh tools/boc.sh            # in 20 từ; thêm -v để xem ngày "gặp lần cuối"
      ```
 
-     (`shuf` không có sẵn trên macOS nên dùng `awk`. Agent tự "chọn ngẫu nhiên" thì
-     luôn trúng mấy từ vừa đọc thấy ở đầu bảng — phải chạy lệnh thật.)
+     (Đổi 2026-10-05: `boc.sh` lấy từ **lâu chưa gặp nhất** ở khối ôn nhanh của các
+     bài trước, nên phần B hôm nay **không trùng** phần ôn nhanh của mấy buổi gần đây
+     — phải quay hết một vòng vốn từ mới tới lượt từ cũ lặp lại. Nó tự loại 5 từ của
+     buổi liền trước. Đừng quay lại lệnh `awk rand()` cũ — rand thuần hay trúng lại từ
+     hôm qua vừa ôn.)
 
    ⭐ **Câu hỏi = ĐÚNG khối nghĩa `.vi-quick` của bài gốc** (đổi 2026-09-10), không
    tự soạn lại. Nối đầu ra ở trên vào `tools/nghia.sh`:
 
    ```bash
-   { <lệnh bốc ở trên>; } | sh tools/nghia.sh     # 20 từ phần B
+   sh tools/boc.sh | sh tools/nghia.sh            # 20 từ phần B
    sh tools/nghia.sh "purge" "dry run" ...        # 5 từ phần A
    ```
 
@@ -172,7 +173,7 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
   `<details>` đó: `<summary>` gồm `<h2>Ôn nhanh đầu giờ <span class="cnt">25 từ</span></h2>`
   + `<span class="wt-state"></span>` (để **rỗng**, chữ "bấm để mở / bấm để ẩn" do CSS
   sinh), rồi **hai** danh sách tách nhau (`<div class="warm-part">`): phần A "5 từ
-  buổi trước", phần B "20 từ bốc ngẫu nhiên".
+  buổi trước", phần B "20 từ cũ dàn đều cả vốn từ".
 - Mỗi câu ôn nhanh: `<ol class="ex qa-list">` → `<li class="qa">` chứa **đúng hai**
   con — `<span class="q">` (câu hỏi tiếng Việt) và `<details class="ans">` (nút đáp
   án). Trong `details.ans`: `<summary>đáp án</summary>` + `<span class="a hide-me">`

@@ -28,6 +28,7 @@ ENGLISH/                          ← {harness}
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
 │   │                               cfg · hnay · tuan · openit · keove · daylen
 │   ├── nghia.sh                  ← ⭐ trích khối nghĩa .vi-quick của bài cũ (R9)
+│   ├── boc.sh                    ← ⭐ bốc 20 từ ôn nhanh, lâu chưa gặp nhất ra trước (R9)
 │   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/
 │   └── setup-remote.sh           ← chạy 1 lần lúc dựng: tạo repo + bật Pages
 └── wiki/
@@ -101,22 +102,25 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 
 8. **Ôn nhanh đầu giờ = 25 từ, chia 5 + 20, KHỐI GẬP MẶC ĐỊNH ĐÓNG (R9)** — 15 từ
    từ **2026-08-26**, nâng lên 25 từ **2026-09-04**.
-   **5** từ đầu là đúng 5 từ của **buổi liền trước**; **20** từ sau **bốc ngẫu nhiên
-   bằng lệnh** trong toàn bộ `wiki/VOCAB_INDEX.md` (không phải chỉ từ tới hạn, và
-   **không** bốc bằng mắt — agent tự chọn thì luôn trúng mấy từ ở đầu bảng):
+   **5** từ đầu là đúng 5 từ của **buổi liền trước**; **20** từ sau **bốc bằng lệnh**
+   trong toàn bộ `wiki/VOCAB_INDEX.md` (không phải chỉ từ tới hạn, và **không** bốc
+   bằng mắt — agent tự chọn thì luôn trúng mấy từ ở đầu bảng):
 
    ```bash
-   grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
-     | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
-     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
+   sh tools/boc.sh            # 20 từ; -v để xem ngày "gặp lần cuối"
    ```
+
+   ⭐ **Dàn đều, không lặp giữa các buổi** (2026-10-05): `boc.sh` lấy từ **lâu chưa
+   gặp nhất** ở khối ôn nhanh của các bài trước (chưa từng ôn thì tính từ ngày học).
+   Phần B của 06/10 khác hết phần ôn của 05/10; 07/10 khác cả 05 lẫn 06; … cho tới
+   khi quay hết một vòng vốn từ. Không quay lại lệnh `awk rand()` cũ.
 
    ⭐ **Câu hỏi của 25 từ đó = ĐÚNG khối nghĩa `.vi-quick` của bài gốc** (2026-09-10).
    Nối thẳng đầu ra ở trên vào `tools/nghia.sh` — nó tìm bài đã dạy từ đó rồi in
    `NGHIA` (dòng đậm), `PHU` (dòng `.alt`) và `VD` (câu ví dụ #1):
 
    ```bash
-   <lệnh bốc ở trên> | sh tools/nghia.sh
+   sh tools/boc.sh | sh tools/nghia.sh
    sh tools/nghia.sh "purge" "dry run"         # hoặc tra lẻ
    ```
 
@@ -139,7 +143,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 
 ```
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
-[ ] 25 từ ôn nhanh: 5 buổi trước + 20 bốc BẰNG LỆNH   R9 — khối ĐÓNG, đáp án theo TỪNG câu
+[ ] 25 từ ôn nhanh: 5 buổi trước + 20 từ sh tools/boc.sh   R9 — khối ĐÓNG, đáp án theo TỪNG câu
 [ ] sh tools/nghia.sh cho cả 25 từ         R9 — câu hỏi = NGHIA + PHU (.vi-quick bài gốc), CHÉP NGUYÊN
 [ ] wiki/lessons/<tuần>/<ngày>.md          ôn nhanh + 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
@@ -207,6 +211,10 @@ chấm điểm và cập nhật bậc trong REVIEW_QUEUE được.
 từng câu** (`ol.ex.qa-list` → `li.qa` → `span.q` + `details.ans`), và dòng tóm tắt cuối
 đổi sang "25 từ … 20 từ phần B". Bài đầu tiên chạy luật mới: **2026-09-04**.
 
+✅ **2026-10-05 — prompt routine `/hoc` ĐÃ sửa** lần nữa: phần B bốc bằng
+`sh tools/boc.sh` (lâu chưa gặp nhất ra trước, không trùng các buổi gần đây) thay cho
+lệnh `awk rand()` cũ. Bài đầu tiên chạy luật mới: **2026-10-06**.
+
 ⚠️ Prompt routine **không nằm trong repo** — cứ đổi luật ở đây là phải sửa tay bên kia,
 nếu không bài do routine 7h sáng sinh ra sẽ theo luật cũ.
 
@@ -231,13 +239,14 @@ từ. (Sửa *code* của harness thì branch/PR vẫn bình thường.)
 grep VOCAB_INDEX không thấy trùng, 5 file state đã cập nhật khớp nhau, và
 `sh tools/build-index.sh` chạy không lỗi.
 
-Ba script trong `tools/` là **shell POSIX thuần** (`/bin/sh`), chạy được trên cả
+Các script trong `tools/` là **shell POSIX thuần** (`/bin/sh`), chạy được trên cả
 macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng thì test bằng:
 
 ```bash
 sh tools/build-index.sh                                    # phải in DA-DUNG-INDEX
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
 sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD
+sh tools/boc.sh -v                                         # 20 dòng, ngày gặp cuối tăng dần
 awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \
   | sh tools/nghia.sh | grep -c '^VD '                     # phải bằng tổng số từ
 ```

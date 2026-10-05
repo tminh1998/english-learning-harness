@@ -44,9 +44,9 @@
 <!-- ══ A. ÔN NHANH ĐẦU GIỜ — 25 TỪ ═══════════════════════════════════════
      ⛔ R9: 25 từ, chia CỐ ĐỊNH hai phần (config `review.warmup`):
         · Phần A = ĐÚNG 5 từ của buổi LIỀN TRƯỚC.
-        · Phần B = 20 từ bốc NGẪU NHIÊN trong TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên).
-          Bốc BẰNG LỆNH awk+rand — agent tự "chọn ngẫu nhiên" thì luôn trúng mấy từ
-          ở đầu bảng.
+        · Phần B = 20 từ DÀN ĐỀU TOÀN BỘ VOCAB_INDEX (trừ 5 từ trên).
+          Bốc BẰNG LỆNH `sh tools/boc.sh` — lâu chưa gặp nhất ra trước, không trùng
+          phần ôn của mấy buổi gần đây.
      ⛔ Cả khối bọc trong <details class="warm-toggle"> và KHÔNG có thuộc tính
         `open` — vào trang là khối đang ẩn, người học bấm mới mở. Đừng thêm `open`.
      ⛔ ĐÁP ÁN ĐI THEO TỪNG CÂU, không gộp ở cuối khối nữa (đổi 2026-09-04):
@@ -74,7 +74,7 @@
       <span class="wt-state"></span><!-- chữ do CSS sinh, để RỖNG -->
     </summary>
 
-    <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B bốc ngẫu nhiên trong cả vốn từ — quên vài từ là bình thường.</p>
+    <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B là từ cũ lâu chưa gặp — quên vài từ là bình thường.</p>
 
     <div class="warm-part">
       <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — {{YYYY-MM-DD}}</div>
@@ -90,7 +90,7 @@
     </div>
 
     <div class="warm-part">
-      <div class="wp-head"><span class="wp-tag b">B</span>20 từ bốc ngẫu nhiên trong cả vốn từ</div>
+      <div class="wp-head"><span class="wp-tag b">B</span>20 từ cũ dàn đều cả vốn từ</div>
       <ol class="ex qa-list">
         <li class="qa">
           <span class="q">{{câu gợi nhớ bằng tiếng Việt}}</span>

@@ -28,7 +28,7 @@
 
 <!-- … đủ 5 câu … -->
 
-### B. 20 từ bốc ngẫu nhiên trong cả vốn từ
+### B. 20 từ cũ dàn đều cả vốn từ
 
 1. {{câu gợi nhớ bằng tiếng Việt}}
    <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></details>

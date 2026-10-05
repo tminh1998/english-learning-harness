@@ -279,17 +279,23 @@ từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định là
 | Phần | Bao nhiêu | Lấy ở đâu |
 |---|---|---|
 | Từ buổi liền trước | **5** | đúng 5 từ của buổi học gần nhất, theo thứ tự trong bài |
-| Bốc ngẫu nhiên | **20** | **toàn bộ** `{vocabIndex}`, trừ 5 từ ở trên |
+| Dàn đều cả vốn từ | **20** | **toàn bộ** `{vocabIndex}`, trừ 5 từ ở trên — từ **lâu chưa gặp nhất** ra trước |
 
-1. **20 từ kia phải bốc BẰNG LỆNH, không bốc bằng mắt.** Agent tự "chọn ngẫu nhiên"
-   thì luôn trúng mấy từ vừa đọc thấy ở đầu bảng. `shuf` không có sẵn trên macOS
-   nên dùng `awk`:
+1. **20 từ kia phải bốc BẰNG LỆNH, không bốc bằng mắt** — agent tự chọn thì luôn
+   trúng mấy từ vừa đọc thấy ở đầu bảng:
 
    ```bash
-   grep -E '^\| [0-9]+ \|' wiki/VOCAB_INDEX.md | grep -v '| <ngày buổi trước> |' \
-     | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//' \
-     | awk 'BEGIN{srand()}{print rand()"\t"$0}' | sort -n | cut -f2- | head -20
+   sh tools/boc.sh            # 20 từ, mỗi dòng một từ; -v để xem ngày gặp lần cuối
    ```
+
+   ⭐ **Dàn đều, không lặp giữa các buổi** (2026-10-05, user yêu cầu). Mỗi từ có một
+   ngày "gặp lần cuối" = buổi gần nhất nó có mặt ở khối ôn nhanh (phần A hoặc B);
+   chưa từng có mặt thì lấy ngày học. `boc.sh` xếp tăng dần theo ngày đó (cùng ngày
+   thì xáo ngẫu nhiên) rồi lấy 20 từ đầu. Nên phần B của bài 06/10 khác hết phần ôn
+   của 05/10, bài 07/10 khác cả 05 lẫn 06, … cho tới khi đã quay hết một vòng vốn từ
+   (~tổng từ / 20 buổi) mới tới lượt từ cũ nhất quay lại. Script đọc đáp án
+   `<summary>đáp án</summary> <b>từ</b>` trong bản `.md` của các bài trước — **giữ
+   đúng khuôn đó** trong template, đổi khuôn là script mù.
 
 2. **Phạm vi là mọi từ đã học**, không phải chỉ từ tới hạn trong `{reviewQueue}`.
    Từ đã lên bậc cao vẫn có thể trúng — đó là chủ ý, để không từ nào rơi hẳn ra
@@ -329,8 +335,8 @@ từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định là
    lấy ví dụ #1 của chính bài đó. Lấy bằng lệnh, **không lấy bằng mắt**:
 
    ```bash
-   # nối thẳng với lệnh bốc 20 từ ở luật 1, hoặc truyền từ làm tham số
-   sh tools/nghia.sh "purge" "dry run"
+   sh tools/boc.sh | sh tools/nghia.sh      # 20 từ phần B (luật 1)
+   sh tools/nghia.sh "purge" "dry run"      # hoặc truyền từ làm tham số
    ```
 
    Tool in ra `TU` (từ · nhóm · ngày học · file gốc), `NGHIA` (dòng đậm), `PHU`
@@ -366,6 +372,10 @@ lúc trí nhớ sắp phai.
 Lý do nâng 10 → 20 (2026-09-04): vốn từ đã qua 90 từ, bốc 10 mỗi buổi thì một từ chỉ
 quay lại sau khoảng 9 buổi — quá thưa so với nợ ôn tập đang đọng. Bốc 20 rút xuống
 còn 4-5 buổi. Cái giá là trang dài gấp đôi, nên đi kèm bắt buộc với luật 4 và 5.
+
+Lý do bỏ rand thuần (2026-10-05): mỗi buổi bốc độc lập nên hôm nay hay trúng lại từ
+vừa ôn hôm qua, trong khi có từ cả tháng không quay lại. Chọn theo "lâu chưa gặp
+nhất" thì vẫn phủ toàn bộ vốn từ nhưng các buổi liền nhau không bao giờ đụng nhau.
 
 ---
 
