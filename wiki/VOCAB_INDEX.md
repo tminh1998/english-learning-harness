@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 215 từ đã học** · IT 86 · Business 86 · Life 43 · ad-hoc 0
+**Tổng: 220 từ đã học** · IT 88 · Business 88 · Life 44 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-05
+**Cập nhật:** 2026-10-06
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -234,6 +234,11 @@
 | 213 | upfront | up front, up-front, upfront payment, upfront cost, upfront fee, be upfront about sth, be upfront with sb | adjective + adverb | Business | nói thẳng từ đầu / trả trước | 2026-10-05 | lesson |
 | 214 | retainer | retainers, retainer fee, retainer agreement, on retainer, retain, retained, retaining | noun (đếm được) | Business | hợp đồng trả phí định kỳ | 2026-10-05 | lesson |
 | 215 | tag along | tags along, tagged along, tagging along, tag along with sb, a tagalong | phrasal verb | Life | đi theo cho vui | 2026-10-05 | lesson |
+| 216 | happy path | happy paths, happy-path, happy-path test, sad path, unhappy path | noun (đếm được) | IT | luồng chạy chuẩn / trường hợp suôn sẻ | 2026-10-06 | lesson |
+| 217 | orphan | orphans, orphaned, orphaning, an orphan, orphaned record, orphan process, orphaned branch | verb (cũng là noun; hay dùng dạng orphaned) | IT | mồ côi / bị bỏ lại không ai trỏ tới | 2026-10-06 | lesson |
+| 218 | fine print | the small print, fine-print clause, in fine print, print | noun (không đếm được) | Business | điều khoản in chữ nhỏ | 2026-10-06 | lesson |
+| 219 | rapport | rapport with sb, build rapport, rapport-building, en rapport | noun (hầu như không đếm được) | Business | quan hệ tin cậy / sự ăn ý | 2026-10-06 | lesson |
+| 220 | unplug | unplugs, unplugged, unplugging, unplug from sth, plug in, plugged in | verb | Life | ngắt kết nối, nghỉ hẳn | 2026-10-06 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

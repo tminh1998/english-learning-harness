@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-05: 210 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-06: 215 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -48,6 +48,9 @@
 - hạn 2026-10-02 — sidecar · thundering herd · take it offline · par for the course · craving
 - hạn 2026-10-03 — instrument · scaffold · in the weeds · split the difference · small talk
 - hạn 2026-10-04 — noisy neighbor · quorum · low-hanging fruit · bottom line · pick up the tab
+- hạn 2026-10-06 — reflow · shim · upfront · retainer · tag along
+
+_Ghi chú 2026-10-06 (buổi #44): phần A hỏi lại 5 từ của buổi 05/10 (reflow · shim · upfront · retainer · tag along), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng rollback · race condition · caveat · deadlock · canary release · walk through · keep an eye on · smoke test · hassle · bring up · hit it off · awkward · snapshot · chase up · narrow down · drop by · short notice · idempotent · failover · buy-in — chạm từ lô cũ nhất (15/08) tới lô 11/09, và **không trùng một từ nào** với phần ôn của buổi 05/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **215/220 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-05 (buổi #43): phần A hỏi lại 5 từ của buổi 03/10 (noisy neighbor · quorum · low-hanging fruit · bottom line · pick up the tab), phần B bốc ngẫu nhiên bằng lệnh trúng throttle · weigh in · swamped · flush · footprint · out of the blue · provision · drag on · touch base · rush hour · escalate · night owl · reach out · backward compatible · instrument · eviction · catch up · invoice · dangling · hash out — chạm từ lô cũ nhất (15/08) tới lô 02/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **210/215 từ**, toàn bộ ở bậc 1._
 
@@ -324,6 +327,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | upfront | 1 | 2026-10-06 | 0 | 0 | 2026-10-05 |
 | retainer | 1 | 2026-10-06 | 0 | 0 | 2026-10-05 |
 | tag along | 1 | 2026-10-06 | 0 | 0 | 2026-10-05 |
+| happy path | 1 | 2026-10-07 | 0 | 0 | 2026-10-06 |
+| orphan | 1 | 2026-10-07 | 0 | 0 | 2026-10-06 |
+| fine print | 1 | 2026-10-07 | 0 | 0 | 2026-10-06 |
+| rapport | 1 | 2026-10-07 | 0 | 0 | 2026-10-06 |
+| unplug | 1 | 2026-10-07 | 0 | 0 | 2026-10-06 |
 
 ## Đã thuộc (bậc 5, đúng)
 
