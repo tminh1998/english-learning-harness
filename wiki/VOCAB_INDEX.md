@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 220 từ đã học** · IT 88 · Business 88 · Life 44 · ad-hoc 0
+**Tổng: 225 từ đã học** · IT 90 · Business 90 · Life 45 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-06
+**Cập nhật:** 2026-10-07
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -239,6 +239,11 @@
 | 218 | fine print | the small print, fine-print clause, in fine print, print | noun (không đếm được) | Business | điều khoản in chữ nhỏ | 2026-10-06 | lesson |
 | 219 | rapport | rapport with sb, build rapport, rapport-building, en rapport | noun (hầu như không đếm được) | Business | quan hệ tin cậy / sự ăn ý | 2026-10-06 | lesson |
 | 220 | unplug | unplugs, unplugged, unplugging, unplug from sth, plug in, plugged in | verb | Life | ngắt kết nối, nghỉ hẳn | 2026-10-06 | lesson |
+| 221 | polyfill | polyfills, polyfilled, polyfilling, to polyfill sth, polyfill bundle, polyfilled API | noun (đếm được; cũng là verb) | IT | mã bù tính năng thiếu / vá cho browser cũ | 2026-10-07 | lesson |
+| 222 | soft delete | soft-delete, soft-deletes, soft-deleted, soft-deleting, soft deletion, hard delete, undelete, deleted_at | noun (đếm được; cũng là verb) | IT | xoá mềm | 2026-10-07 | lesson |
+| 223 | cadence | cadences, cadenced, release cadence, meeting cadence, reporting cadence, cadential | noun (đếm được, hầu như luôn số ít) | Business | nhịp đều đặn / tần suất lặp lại | 2026-10-07 | lesson |
+| 224 | blocker | blockers, block, blocked, blocking, unblock, unblocked, blocking issue, blocked on sth | noun (đếm được) | Business | vướng mắc / thứ chặn đường | 2026-10-07 | lesson |
+| 225 | chores | chore, household chores, chore list, choreless, do the chores, a chore | noun (đếm được, hay dùng số nhiều) | Life | việc nhà | 2026-10-07 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
