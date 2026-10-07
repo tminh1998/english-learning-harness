@@ -145,7 +145,7 @@
 | 124 | chase up | chases up, chased up, chasing up, chase down, chase after, chase | phrasal verb | Business | hỏi thúc cho ra | 2026-09-10 | lesson |
 | 125 | stay up | stays up, stayed up, staying up, stay up late, stay awake | phrasal verb | Life | thức khuya | 2026-09-10 | lesson |
 | 126 | backoff | back off, back-off, backs off, backed off, backing off, exponential backoff, jittered backoff | noun (động từ: back off) | IT | chờ lâu dần rồi mới thử lại | 2026-09-11 | lesson |
-| 127 | blast radius | blast, blasts, blast-radius analysis, radius, radii | noun (đếm được) | IT | hỏng thì kéo theo bao nhiêu | 2026-09-11 | lesson |
+| 127 | blast radius | blast, blasts, blast-radius analysis, radius, radii | noun (đếm được) | IT | phạm vi ảnh hưởng | 2026-09-11 | lesson |
 | 128 | sticking point | stick, stuck, sticky, sticking points, stick to sth, sticking-point | noun (đếm được) | Business | chỗ còn mắc, chưa gỡ được | 2026-09-11 | lesson |
 | 129 | pitch | pitches, pitched, pitching, a pitch, sales pitch, elevator pitch, pitch in | verb (cũng là noun) | Business | trình bày để bên kia gật | 2026-09-11 | lesson |
 | 130 | swamped | swamp, swamps, swamping, be swamped with, a swamp | adjective (đi sau be/get) | Life | ngập đầu, không thở nổi | 2026-09-11 | lesson |
@@ -240,7 +240,7 @@
 | 219 | rapport | rapport with sb, build rapport, rapport-building, en rapport | noun (hầu như không đếm được) | Business | quan hệ tin cậy / sự ăn ý | 2026-10-06 | lesson |
 | 220 | unplug | unplugs, unplugged, unplugging, unplug from sth, plug in, plugged in | verb | Life | ngắt kết nối, nghỉ hẳn | 2026-10-06 | lesson |
 | 221 | polyfill | polyfills, polyfilled, polyfilling, to polyfill sth, polyfill bundle, polyfilled API | noun (đếm được; cũng là verb) | IT | mã bù tính năng thiếu / vá cho browser cũ | 2026-10-07 | lesson |
-| 222 | tombstone | tombstones, tombstoned, tombstoning, tombstone marker, tombstone record, tomb | noun (đếm được) | IT | bia mộ dữ liệu / bản ghi báo đã xoá | 2026-10-07 | lesson |
+| 222 | tombstone | tombstones, tombstoned, tombstoning, tombstone marker, tombstone record, tomb | noun (đếm được) | IT | bản ghi đánh dấu đã xóa | 2026-10-07 | lesson |
 | 223 | cadence | cadences, cadenced, release cadence, meeting cadence, reporting cadence, cadential | noun (đếm được, hầu như luôn số ít) | Business | nhịp đều đặn / tần suất lặp lại | 2026-10-07 | lesson |
 | 224 | blocker | blockers, block, blocked, blocking, unblock, unblocked, blocking issue, blocked on sth | noun (đếm được) | Business | vướng mắc / thứ chặn đường | 2026-10-07 | lesson |
 | 225 | chores | chore, household chores, chore list, choreless, do the chores, a chore | noun (đếm được, hay dùng số nhiều) | Life | việc nhà | 2026-10-07 | lesson |

@@ -246,7 +246,7 @@
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">hỏng thì kéo theo bao nhiêu<span class="alt">phạm vi thiệt hại nếu cái này chết</span></p>
+  <p class="vi-quick hide-me">phạm vi ảnh hưởng<span class="alt">hỏng thì kéo theo bao nhiêu — cái này chết thì thiệt hại tới đâu</span></p>
 
   <p class="def"><span class="tag">EN</span>How much of a system, or how many users, one change or one failure can damage.
     <span class="def-vi hide-me">→ Một thay đổi hoặc một sự cố có thể làm hỏng tới đâu — bao nhiêu phần hệ thống, bao nhiêu người dùng.</span>
@@ -257,7 +257,7 @@
   <ul class="examples">
     <li>
       <span class="en">Before you touch the auth module, ask what the <b>blast radius</b> is — every <span class="rev">stakeholder</span> on that call will feel it.</span>
-      <span class="vi hide-me">→ Trước khi động vào module auth thì hỏi xem hỏng ra là kéo theo tới đâu — mọi bên liên quan hôm họp đều dính hết.</span>
+      <span class="vi hide-me">→ Trước khi động vào module auth thì hỏi xem phạm vi ảnh hưởng tới đâu — mọi bên liên quan hôm họp đều dính hết.</span>
     </li>
     <li>
       <span class="en">A <span class="rev">canary release</span> is how we keep the <b>blast radius</b> down to five percent of traffic.</span>
@@ -389,7 +389,7 @@
   <div class="passage">Quick brain dump before my next call — I'm <b>swamped</b> today. The demo went fine; the only <b>sticking point</b> left is their audit export, everything else they can live with. I'll <b>pitch</b> it as a two-sprint job and keep the <b>blast radius</b> small by writing to a separate table. Oh, and their importer hammers us the second it fails, so I asked them to add exponential <b>backoff</b> — otherwise we'll have to <span class="rev">throttle</span> them at the gateway.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Ghi vội mấy ý trước khi mình vào cuộc họp sau — hôm nay mình ngập đầu. Buổi demo ổn; chỗ duy nhất còn mắc là phần xuất log audit, mấy cái khác bên họ chịu được hết. Mình sẽ trình bày phần đó theo hướng gọn trong hai sprint, và ghi sang một bảng riêng cho hỏng cũng không kéo theo gì nhiều. À, cái importer bên họ cứ lỗi phát là dập liên tục, nên mình đã bảo họ thêm exponential backoff — không thì bọn mình phải throttle họ ở gateway thôi.</p>
+    <p class="hide-me">Ghi vội mấy ý trước khi mình vào cuộc họp sau — hôm nay mình ngập đầu. Buổi demo ổn; chỗ duy nhất còn mắc là phần xuất log audit, mấy cái khác bên họ chịu được hết. Mình sẽ trình bày phần đó theo hướng gọn trong hai sprint, và ghi sang một bảng riêng để thu hẹp phạm vi ảnh hưởng. À, cái importer bên họ cứ lỗi phát là dập liên tục, nên mình đã bảo họ thêm exponential backoff — không thì bọn mình phải throttle họ ở gateway thôi.</p>
   </details>
 </section>
 

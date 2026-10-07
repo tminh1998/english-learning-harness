@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-02 · **Số bản dịch đã ghi:** 12 (9 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-07 · **Số bản dịch đã ghi:** 14 (11 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -50,7 +50,12 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    - `mã ngắn để soi dữ liệu còn nguyên không` → **`Kiểm tra tính toàn vẹn`**
    - `soi được bên trong hệ thống` → **`khả năng quan sát`**
    - `chèn mã đo vào code` → **`Gắn công cụ đo / Theo dõi hệ thống`**
-   _(3 lần, 2026-09-29 → 2026-10-02.)_ Chỉ áp cho **nghĩa gọn của chính từ đang học**.
+   - `hỏng thì kéo theo bao nhiêu` → **`phạm vi ảnh hưởng`**
+   - `bia mộ dữ liệu / bản ghi báo đã xoá` → **`bản ghi đánh dấu đã xóa`**
+   _(5 lần, 2026-09-29 → 2026-10-07.)_ Chỉ áp cho **nghĩa gọn của chính từ đang học**.
+   ⚠️ **Thuật ngữ IT mượn ẩn dụ (bia mộ, vụ nổ…) thì KHÔNG dịch theo hình ảnh** —
+   gọi thẳng cái nó *là* hoặc cái nó *làm*. `tombstone` ≠ "bia mộ dữ liệu",
+   `blast radius` ≠ "bán kính vụ nổ". Hình ảnh gốc để dành cho dòng `Bẫy` / `GHI CHÚ`.
    Các thuật ngữ khác trong câu ví dụ / mẩu đọc vẫn theo R7 mục 2: `deploy`, `cache`,
    `log`… để nguyên tiếng Anh.
 
@@ -62,8 +67,10 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    - `Gắn công cụ đo / Theo dõi hệ thống` (hành động / mục đích)
    - `chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải` (nghĩa 1 / nghĩa 2)
    _(4 lần, 2026-10-02.)_ Khi viết bài mới: từ nào có một từ Việt chuẩn đủ trọn nghĩa
-   thì ghi một cái thôi (vd `Hóa đơn`, `Băng thông`); từ nào một cách gọi bị hụt nghĩa
-   thì ghi hai, nối bằng ` / `.
+   thì ghi một cái thôi (vd `Hóa đơn`, `Băng thông`, `phạm vi ảnh hưởng`, `bản ghi
+   đánh dấu đã xóa`); từ nào một cách gọi bị hụt nghĩa thì ghi hai, nối bằng ` / `.
+   Đừng ghép vế thứ hai chỉ để chứa hình ảnh — `tombstone` user gạch vế "bia mộ dữ
+   liệu", giữ một vế chức năng (2026-10-07).
 
 4. **Từ có hai nghĩa thì nghĩa gọn ghi cả hai, đừng chôn nghĩa thứ hai xuống
    GHI CHÚ.** `in the weeds`: agent để "ngập việc tới cổ" trong ghi chú, user đưa
@@ -104,3 +111,5 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-02 | in the weeds | lún vào chi tiết vụn · đang sa đà vào tiểu tiết, mất cái nhìn tổng thể… | chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải | đưa **nghĩa thứ hai** (agent để ở GHI CHÚ) lên nghĩa gọn; `chìm ngập` thay `lún`, `vụn vặt` thay `vụn` |
 | 2026-10-02 | split the difference | chia đôi khoảng cách · hai bên mỗi bên nhường một nửa… | nhượng bộ đôi bên / lấy số ở giữa | bỏ bản **dịch sát chữ** của idiom; từ Việt chuẩn (`nhượng bộ`) + vế cụ thể |
 | 2026-10-02 | small talk | chuyện xã giao · mấy câu thời tiết, cuối tuần, cà phê… | chuyện phiếm / trò chuyện xã giao | thêm từ đời thường `chuyện phiếm` đứng trước, giữ `xã giao` làm vế hai (user gõ "xã gia", xác nhận là "xã giao") |
+| 2026-10-07 | blast radius | hỏng thì kéo theo bao nhiêu · phạm vi thiệt hại nếu cái này chết | phạm vi ảnh hưởng | nhắn thẳng trong chat — bỏ câu diễn giải bình dân, dùng **thuật ngữ chuẩn** (đúng chữ agent đã dùng trong câu dịch ví dụ); hình ảnh "kéo theo" dồn xuống `PHU` |
+| 2026-10-07 | tombstone | bia mộ dữ liệu / bản ghi báo đã xoá · xoá xong chưa biến mất ngay mà để lại một dấu "đã xoá"… | bản ghi đánh dấu đã xóa | bỏ vế **dịch sát hình ảnh** ("bia mộ"), chỉ giữ một vế gọi theo **chức năng**; không cần hai vế khi một cụm đã đủ nghĩa |
