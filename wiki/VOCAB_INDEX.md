@@ -240,7 +240,7 @@
 | 219 | rapport | rapport with sb, build rapport, rapport-building, en rapport | noun (hầu như không đếm được) | Business | quan hệ tin cậy / sự ăn ý | 2026-10-06 | lesson |
 | 220 | unplug | unplugs, unplugged, unplugging, unplug from sth, plug in, plugged in | verb | Life | ngắt kết nối, nghỉ hẳn | 2026-10-06 | lesson |
 | 221 | polyfill | polyfills, polyfilled, polyfilling, to polyfill sth, polyfill bundle, polyfilled API | noun (đếm được; cũng là verb) | IT | mã bù tính năng thiếu / vá cho browser cũ | 2026-10-07 | lesson |
-| 222 | soft delete | soft-delete, soft-deletes, soft-deleted, soft-deleting, soft deletion, hard delete, undelete, deleted_at | noun (đếm được; cũng là verb) | IT | xoá mềm | 2026-10-07 | lesson |
+| 222 | tombstone | tombstones, tombstoned, tombstoning, tombstone marker, tombstone record, tomb | noun (đếm được) | IT | bia mộ dữ liệu / bản ghi báo đã xoá | 2026-10-07 | lesson |
 | 223 | cadence | cadences, cadenced, release cadence, meeting cadence, reporting cadence, cadential | noun (đếm được, hầu như luôn số ít) | Business | nhịp đều đặn / tần suất lặp lại | 2026-10-07 | lesson |
 | 224 | blocker | blockers, block, blocked, blocking, unblock, unblocked, blocking issue, blocked on sth | noun (đếm được) | Business | vướng mắc / thứ chặn đường | 2026-10-07 | lesson |
 | 225 | chores | chore, household chores, chore list, choreless, do the chores, a chore | noun (đếm được, hay dùng số nhiều) | Life | việc nhà | 2026-10-07 | lesson |
@@ -267,6 +267,7 @@
 | kick off | kicks off, kicked off, kicking off, kick-off, kickoff, kick things off, kick it off | phrasal verb | Business | mở màn, bắt đầu chính thức | 2026-09-17 |
 | replay | replays, replayed, replaying, replayable, a replay, replay log, event replay | verb (cũng là noun) | IT | chạy lại y nguyên chuỗi event/message đã lưu | 2026-09-25 |
 | code freeze | code freezes, code-freeze, freeze, froze, frozen, freezes, a freeze, freeze window, feature freeze, frozen repo | noun (đếm được) | IT | đóng băng code, chỉ còn sửa lỗi chặn release | 2026-09-30 |
+| soft delete | soft-delete, soft-deletes, soft-deleted, soft-deleting, soft deletion, hard delete, undelete, deleted_at | noun (đếm được; cũng là verb) | IT | xoá mềm, chỉ đánh dấu đã xoá chứ không xoá hẳn dòng | 2026-10-07 |
 
 <!--
 LUẬT GHI:

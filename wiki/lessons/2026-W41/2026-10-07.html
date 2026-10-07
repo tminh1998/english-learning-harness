@@ -238,37 +238,37 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>soft delete
-        <button class="say" data-say="soft delete" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>tombstone
+        <button class="say" data-say="tombstone" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌsɒft dɪˈliːt/ · <em>noun (đếm được; cũng là verb, viết <code>soft-delete</code>)</em></div>
+      <div class="ipa">/ˈtuːmstəʊn/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">xoá mềm<span class="alt">chỉ đánh dấu bản ghi là "đã xoá" chứ không xoá hẳn dòng đó khỏi database — vẫn lấy lại được</span></p>
+  <p class="vi-quick hide-me">bia mộ dữ liệu / bản ghi báo đã xoá<span class="alt">xoá xong chưa biến mất ngay mà để lại một dấu "đã xoá" — để các node khác thấy mà xoá theo, tới hạn mới dọn hẳn</span></p>
 
-  <p class="def"><span class="tag">EN</span>A way of removing a record by marking it as deleted instead of actually erasing the row, so it can still be read or restored later.
-    <span class="def-vi hide-me">→ Cách xoá một bản ghi bằng việc đánh dấu nó là đã xoá chứ không xoá hẳn dòng đó đi, nên sau này vẫn đọc lại hoặc lấy lại được.</span>
+  <p class="def"><span class="tag">EN</span>A marker written in place of a deleted record, so that other replicas and later processes know the record was deleted, not just missing. The marker itself is cleaned up later, during compaction.
+    <span class="def-vi hide-me">→ Một dấu ghi vào chỗ bản ghi vừa bị xoá, để các replica khác và các tiến trình chạy sau biết là bản ghi đã bị xoá chứ không phải bị thiếu. Chính cái dấu đó về sau cũng bị dọn, lúc compaction.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trái với <code>hard delete</code> (xoá thật). Dùng khi khách có thể đổi ý, hoặc khi luật bắt giữ lại dữ liệu. Cái giá phải trả: từ đó mọi query đều phải thêm <code>where deleted_at is null</code> — quên một chỗ là dữ liệu đã xoá lại hiện ra.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hay gặp ở Cassandra, Kafka (log compaction: gửi message có key mà value là <code>null</code>), DynamoDB, mấy hệ đồng bộ nhiều node. Vì sao phải có: xoá trắng luôn thì một replica đang lệch sẽ tưởng bản ghi bị <em>thiếu</em> và đồng bộ ngược nó về — dữ liệu đã xoá "sống lại". Khác <code>soft delete</code>: soft delete là cột <code>deleted_at</code> để người dùng còn restore; tombstone là dấu nội bộ của hệ thống, sớm muộn gì cũng bị compaction dọn. Cái giá: tombstone dồn nhiều thì đọc chậm, vì query phải lội qua cả đống dấu xoá.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">We <b>soft delete</b> the uploads instead of running a <span class="rev">purge</span>, so a client who changes their mind the next morning can still get the file back.</span>
-      <span class="vi hide-me">→ Bọn mình xoá mềm mấy file upload chứ không purge hẳn, để sáng hôm sau khách đổi ý thì vẫn lấy lại được file.</span>
+      <span class="en">Cassandra doesn't erase the row right away — it writes a <b>tombstone</b>, and the real <span class="rev">purge</span> only happens at compaction, ten days later.</span>
+      <span class="vi hide-me">→ Cassandra không xoá dòng đó ngay đâu — nó ghi một tombstone, còn purge thật thì phải đợi tới lúc compaction, mười ngày sau.</span>
     </li>
     <li>
-      <span class="en"><b>Soft-deleting</b> the parent row without touching the children is exactly how we ended up with that pile of <span class="rev">orphaned</span> records last month.</span>
-      <span class="vi hide-me">→ Xoá mềm dòng cha mà không đụng tới mấy dòng con — tháng trước bọn mình ra cả đống bản ghi orphan đúng vì chuyện đó.</span>
+      <span class="en">The jobs table had piled up so many <b>tombstones</b> that read <span class="rev">latency</span> tripled before anyone noticed.</span>
+      <span class="vi hide-me">→ Bảng jobs dồn nhiều tombstone tới mức latency lúc đọc tăng gấp ba mà chưa ai để ý.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>soft-delete a record</code> · <code>soft delete vs hard delete</code> · <code>a soft-deleted row</code> · <code>deleted_at timestamp</code> · <code>restore a soft-deleted item</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ viết rời (<code>a soft delete</code>), còn động từ và tính từ thì gạch nối (<code>soft-delete the row</code>, <code>a soft-deleted row</code>). Đừng nói "delete softly" — không ai nói vậy. Và đừng gọi nó là "fake delete": với người dùng thì nó xoá thật, chỉ dữ liệu là còn.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">soft-delete (v), soft-deletes, soft-deleted, soft-deleting, soft deletion, hard delete, undelete</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>write / leave a tombstone</code> · <code>a tombstone marker</code> · <code>too many tombstones</code> · <code>tombstones get compacted</code> · <code>tombstone record</code> · <code>gc_grace_seconds</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /ˈtuːmstəʊn/ ("tum-stôn"): chữ <b>b câm</b>, như trong <code>tomb</code>, <code>bomb</code>, <code>comb</code> — không phải "tom-bờ-stôn". Đừng dùng thay <code>soft delete</code>: soft delete để <em>người dùng</em> lấy lại, tombstone là dấu để <em>hệ thống</em> lan việc xoá rồi tự dọn. Ngoài đời <code>tombstone</code> là bia mộ — nghĩa IT mượn đúng hình ảnh đó: chỗ này từng có một bản ghi.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">tombstones, tombstoned, tombstoning, tombstone marker, tombstone record, tomb</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Standup Thứ Tư trên Slack</p>
-  <div class="passage">Standup, Wednesday — two things from me. The <b>soft delete</b> work is done, but I've left the <b>polyfill</b> for the old date picker in: dropping it is a one-line change, and I'd rather ship that on its own so a <span class="rev">rollback</span> stays easy. Second, the client asked whether we can move to a monthly reporting <b>cadence</b> instead of weekly — that's not my call, so could someone <span class="rev">run it by</span> the account manager first? My only <b>blocker</b> is still the staging key, same as yesterday. Once that's cleared and the sprint closes I'm off: two days of <b>chores</b> waiting for me at home.</div>
+  <div class="passage">Standup, Wednesday — two things from me. The delete endpoint is done: it writes a <b>tombstone</b>, so the other regions drop the row too. I've left the <b>polyfill</b> for the old date picker in, though: dropping it is a one-line change, and I'd rather ship that on its own so a <span class="rev">rollback</span> stays easy. Second, the client asked whether we can move to a monthly reporting <b>cadence</b> instead of weekly — that's not my call, so could someone <span class="rev">run it by</span> the account manager first? My only <b>blocker</b> is still the staging key, same as yesterday. Once that's cleared and the sprint closes I'm off: two days of <b>chores</b> waiting for me at home.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Standup Thứ Tư — mình có hai việc. Phần xoá mềm xong rồi, nhưng mình vẫn để nguyên cái polyfill cho date picker cũ: bỏ nó đi chỉ sửa một dòng, mà mình muốn đẩy riêng một PR cho dễ rollback. Việc thứ hai: khách hỏi có chuyển nhịp báo cáo sang hằng tháng thay vì hằng tuần được không — cái đó không phải mình quyết, nhờ ai hỏi ý anh account manager trước nhé. Vướng mắc duy nhất của mình vẫn là cái staging key, y như hôm qua. Gỡ xong cái đó mà sprint đóng lại là mình nghỉ: về nhà còn hai ngày việc nhà đang đợi.</p>
+    <p class="hide-me">Standup Thứ Tư — mình có hai việc. Endpoint xoá xong rồi: nó ghi một tombstone để các region khác cũng xoá theo dòng đó. Còn cái polyfill cho date picker cũ thì mình vẫn để nguyên: bỏ nó đi chỉ sửa một dòng, mà mình muốn đẩy riêng một PR cho dễ rollback. Việc thứ hai: khách hỏi có chuyển nhịp báo cáo sang hằng tháng thay vì hằng tuần được không — cái đó không phải mình quyết, nhờ ai hỏi ý anh account manager trước nhé. Vướng mắc duy nhất của mình vẫn là cái staging key, y như hôm qua. Gỡ xong cái đó mà sprint đóng lại là mình nghỉ: về nhà còn hai ngày việc nhà đang đợi.</p>
   </details>
 </section>
 
@@ -401,7 +401,7 @@
     <li><b>Sửa lỗi</b> — "Can we make the chores on Saturday morning instead?"</li>
     <li><b>Dịch Việt → Anh</b> — "Vướng mắc duy nhất của mình là chưa ai sign off cái thiết kế."</li>
     <li><b>Chọn collocation</b> — Khách muốn đổi nhịp họp: (a) <code>change the cadence</code> · (b) <code>change the cadences</code> · (c) <code>change how cadence</code></li>
-    <li><b>Điền từ (hai chữ)</b> — "Don't purge the record if the client might change their mind — ______ it instead."</li>
+    <li><b>Điền từ</b> — "Cassandra doesn't erase a deleted row right away; it writes a ______ first, so a replica that was offline won't bring the row back."</li>
   </ol>
   <details>
     <summary>Đáp án</summary>
@@ -410,7 +410,7 @@
       <li><b>do</b> the chores — "do the chores", không bao giờ "make the chores".</li>
       <li>"My only <b>blocker</b> is that nobody has <b>signed off</b> on the design yet." — blocker là <em>việc</em>, nên câu bắt đầu bằng "My only blocker is that…", không phải "My blocker is somebody".</li>
       <li><b>(a) <code>change the cadence</code></b> — <code>cadence</code> hầu như luôn số ít; muốn nói tần suất thì để vào tính từ ("a monthly cadence"), đừng đếm số nhiều.</li>
-      <li><b>soft-delete</b> (hoặc <code>soft delete</code>) — đánh dấu đã xoá chứ không xoá thật, nên còn restore được; <code>purge</code> là xoá sạch không lấy lại được.</li>
+      <li><b>tombstone</b> — dấu "đã xoá" để replica đang lệch biết là bản ghi bị xoá chứ không phải bị thiếu, nên không đồng bộ ngược nó về; tới lúc compaction mới purge hẳn cả dấu lẫn dữ liệu.</li>
     </ol>
   </details>
 </section>

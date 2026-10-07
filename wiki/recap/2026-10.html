@@ -278,12 +278,12 @@
             </tr>
             <tr data-cat="it">
               <td class="c-tu">
-                <span class="tu"><b>soft delete</b> <button class="say" data-say="soft delete">🔊</button></span>
-                <span class="ipa">/ˌsɒft dɪˈliːt/ · noun (đếm được; cũng là verb)</span>
+                <span class="tu"><b>tombstone</b> <button class="say" data-say="tombstone">🔊</button></span>
+                <span class="ipa">/ˈtuːmstəʊn/ · noun (đếm được)</span>
                 <a class="ngay" href="../lessons/2026-W41/2026-10-07.html">học 07/10</a>
               </td>
-              <td class="c-vi hide-me">xoá mềm<span class="phu">chỉ đánh dấu bản ghi là &quot;đã xoá&quot; chứ không xoá hẳn dòng đó khỏi database — vẫn lấy lại được</span></td>
-              <td class="c-cum"><code>soft-delete a record</code><code>soft delete vs hard delete</code><code>a soft-deleted row</code><span class="vd">We soft delete the uploads instead of running a purge, so a client who changes their mind the next morning can still get the file back.</span></td>
+              <td class="c-vi hide-me">bia mộ dữ liệu / bản ghi báo đã xoá<span class="phu">xoá xong chưa biến mất ngay mà để lại một dấu &quot;đã xoá&quot; — để các node khác thấy mà xoá theo, tới hạn mới dọn hẳn</span></td>
+              <td class="c-cum"><code>write / leave a tombstone</code><code>a tombstone marker</code><code>too many tombstones</code><span class="vd">Cassandra doesn't erase the row right away — it writes a tombstone, and the real purge only happens at compaction, ten days later.</span></td>
             </tr>
             <tr data-cat="biz">
               <td class="c-tu">
