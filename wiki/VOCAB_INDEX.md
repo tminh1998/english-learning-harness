@@ -169,7 +169,7 @@
 | 148 | due diligence | do due diligence, carry out due diligence, due-diligence checklist, due-diligence questionnaire, diligence, diligent, diligently | noun (không đếm được) | Business | kiểm tra kỹ trước khi ký | 2026-09-18 | lesson |
 | 149 | buffer | buffers, buffered, buffering, buffer time, buffer zone, build in a buffer | noun (cũng là verb) | Business | chừa dư ra phòng hờ | 2026-09-18 | lesson |
 | 150 | rush hour | rush hours, rush-hour traffic, the morning rush, the evening rush, rush | noun | Life | giờ cao điểm | 2026-09-18 | lesson |
-| 151 | drain | drains, drained, draining, connection draining, drain down, a drain | verb (cũng là noun) | IT | rút hết việc rồi mới tắt | 2026-09-21 | lesson |
+| 151 | drain | drains, drained, draining, connection draining, drain down, a drain | verb (cũng là noun) | IT | ngưng nhận công việc mới và làm nốt việc đang dở | 2026-09-21 | lesson |
 | 152 | fan-out | fan out, fans out, fanned out, fanning out, fanout, fan-in, fan-out/fan-in | noun (động từ: fan out) | IT | một việc đẻ ra nhiều việc | 2026-09-21 | lesson |
 | 153 | carve out | carves out, carved out, carving out, carve-out, carve sth out of sth | phrasal verb | Business | tách riêng ra một phần | 2026-09-21 | lesson |
 | 154 | ground rules | ground rule, set the ground rules, lay down the ground rules, basic ground rules | noun (luôn số nhiều) | Business | luật chơi chốt trước | 2026-09-21 | lesson |

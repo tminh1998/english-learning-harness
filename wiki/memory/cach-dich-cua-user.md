@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-07 · **Số bản dịch đã ghi:** 14 (11 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-08 · **Số bản dịch đã ghi:** 15 (12 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -86,6 +86,10 @@ sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắ
 - **Không có từ Việt tương đương thì cụm diễn giải ngắn (≤ 5 chữ) là ổn.** Hai lần
   user giữ: `nhận là việc của mình` (take ownership), `sinh sẵn bộ khung` (scaffold).
   Đã đủ 2 lần nhưng cả hai đều là "Giữ" chứ chưa phải user tự viết, nên vẫn để đây.
+  ⚠️ Ngược lại (2026-10-08): `drain` — từ chỉ một **quy trình nhiều bước**, user tự viết
+  `ngưng nhận công việc mới và làm nốt việc đang dở` (11 chữ). Tức là ngắn không quan
+  trọng bằng **đủ các bước**: thà dài mà rõ từng bước còn hơn gọn mà phải đoán.
+  Gặp lần 2 thì nâng thành luật.
 - **User thích từ có sắc thái "ngập / chìm" hơn "lún"**: `lún vào chi tiết vụn` →
   `chìm ngập trong chi tiết vụn vặt`, và dùng `vụn vặt` thay vì `vụn`. 1 lần.
 - User viết hoa chữ đầu ở vài bản (`Hóa đơn`, `Băng thông`, `Gắn công cụ đo / Theo
@@ -113,3 +117,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-02 | small talk | chuyện xã giao · mấy câu thời tiết, cuối tuần, cà phê… | chuyện phiếm / trò chuyện xã giao | thêm từ đời thường `chuyện phiếm` đứng trước, giữ `xã giao` làm vế hai (user gõ "xã gia", xác nhận là "xã giao") |
 | 2026-10-07 | blast radius | hỏng thì kéo theo bao nhiêu · phạm vi thiệt hại nếu cái này chết | phạm vi ảnh hưởng | nhắn thẳng trong chat — bỏ câu diễn giải bình dân, dùng **thuật ngữ chuẩn** (đúng chữ agent đã dùng trong câu dịch ví dụ); hình ảnh "kéo theo" dồn xuống `PHU` |
 | 2026-10-07 | tombstone | bia mộ dữ liệu / bản ghi báo đã xoá · xoá xong chưa biến mất ngay mà để lại một dấu "đã xoá"… | bản ghi đánh dấu đã xóa | bỏ vế **dịch sát hình ảnh** ("bia mộ"), chỉ giữ một vế gọi theo **chức năng**; không cần hai vế khi một cụm đã đủ nghĩa |
+| 2026-10-08 | drain | rút hết việc rồi mới tắt · chặn request mới, chờ mấy cái đang chạy xong đã | ngưng nhận công việc mới và làm nốt việc đang dở | nhắn thẳng trong chat — không có từ Việt chuẩn nên user **mô tả đủ hai vế hành động** (dừng nhận + làm nốt), bỏ vế kết quả "rồi mới tắt"; dài 11 chữ, vượt ngưỡng ≤ 5 chữ của mục "Đang quan sát" |
