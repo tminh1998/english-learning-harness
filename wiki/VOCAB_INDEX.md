@@ -244,7 +244,7 @@
 | 223 | cadence | cadences, cadenced, release cadence, meeting cadence, reporting cadence, cadential | noun (đếm được, hầu như luôn số ít) | Business | nhịp đều đặn / tần suất lặp lại | 2026-10-07 | lesson |
 | 224 | blocker | blockers, block, blocked, blocking, unblock, unblocked, blocking issue, blocked on sth | noun (đếm được) | Business | vướng mắc / thứ chặn đường | 2026-10-07 | lesson |
 | 225 | chores | chore, household chores, chore list, choreless, do the chores, a chore | noun (đếm được, hay dùng số nhiều) | Life | việc nhà | 2026-10-07 | lesson |
-| 226 | wire up | wires up, wired up, wiring up, wire sth up to sth, wire, wiring, hard-wired | phrasal verb | IT | đấu nối / gắn vào cho chạy được | 2026-10-08 | lesson |
+| 226 | wire up | wires up, wired up, wiring up, wire sth up to sth, wire, wiring, hard-wired | phrasal verb | IT | đấu nối, tích hợp | 2026-10-08 | lesson |
 | 227 | dedupe | dedupes, deduped, deduping, deduplicate, deduplication, dedup, a dedupe step | verb (cũng dùng như noun) | IT | lọc trùng / loại bỏ bản trùng | 2026-10-08 | lesson |
 | 228 | go-live | go live, goes live, went live, going live, the go-live date, post-go-live, pre-go-live | noun (đếm được) | Business | vận hành chính thức / ngày chạy thật | 2026-10-08 | lesson |
 | 229 | give or take | give or take a day, give or take a bit, give and take, a give-and-take relationship | idiom (cụm trạng ngữ) | Business | xê xích chừng đó / cộng trừ một chút | 2026-10-08 | lesson |
