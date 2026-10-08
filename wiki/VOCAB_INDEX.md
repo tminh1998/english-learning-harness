@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 225 từ đã học** · IT 90 · Business 90 · Life 45 · ad-hoc 0
+**Tổng: 230 từ đã học** · IT 92 · Business 92 · Life 46 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-07
+**Cập nhật:** 2026-10-08
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -244,6 +244,11 @@
 | 223 | cadence | cadences, cadenced, release cadence, meeting cadence, reporting cadence, cadential | noun (đếm được, hầu như luôn số ít) | Business | nhịp đều đặn / tần suất lặp lại | 2026-10-07 | lesson |
 | 224 | blocker | blockers, block, blocked, blocking, unblock, unblocked, blocking issue, blocked on sth | noun (đếm được) | Business | vướng mắc / thứ chặn đường | 2026-10-07 | lesson |
 | 225 | chores | chore, household chores, chore list, choreless, do the chores, a chore | noun (đếm được, hay dùng số nhiều) | Life | việc nhà | 2026-10-07 | lesson |
+| 226 | wire up | wires up, wired up, wiring up, wire sth up to sth, wire, wiring, hard-wired | phrasal verb | IT | đấu nối / gắn vào cho chạy được | 2026-10-08 | lesson |
+| 227 | dedupe | dedupes, deduped, deduping, deduplicate, deduplication, dedup, a dedupe step | verb (cũng dùng như noun) | IT | lọc trùng / loại bỏ bản trùng | 2026-10-08 | lesson |
+| 228 | go-live | go live, goes live, went live, going live, the go-live date, post-go-live, pre-go-live | noun (đếm được) | Business | vận hành chính thức / ngày chạy thật | 2026-10-08 | lesson |
+| 229 | give or take | give or take a day, give or take a bit, give and take, a give-and-take relationship | idiom (cụm trạng ngữ) | Business | xê xích chừng đó / cộng trừ một chút | 2026-10-08 | lesson |
+| 230 | sweet tooth | sweet teeth, have a sweet tooth, got a sweet tooth, sweet-toothed, sweets, sweeten, sweetener | noun (đếm được, hầu như luôn số ít) | Life | hảo ngọt | 2026-10-08 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
