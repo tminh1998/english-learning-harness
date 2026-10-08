@@ -238,74 +238,74 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>dedupe
-        <button class="say" data-say="dedupe the events by id" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>poison message
+        <button class="say" data-say="a poison message keeps crashing the consumer" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌdiːˈduːp/ · <em>verb (cũng dùng như noun)</em></div>
+      <div class="ipa">/ˈpɔɪzən ˌmesɪdʒ/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">lọc trùng / loại bỏ bản trùng<span class="alt">nhiều bản giống nhau thì chỉ giữ một, thường so theo một id hoặc một khoá</span></p>
+  <p class="vi-quick hide-me">message lỗi làm kẹt queue<span class="alt">consumer đọc tới là chết, retry bao nhiêu lần cũng chết — cả hàng phía sau đứng theo</span></p>
 
-  <p class="def"><span class="tag">EN</span>To remove repeated items from a list, table, or stream so that only one copy of each is kept, usually by comparing one key.
-    <span class="def-vi hide-me">→ Bỏ những món lặp lại trong một danh sách, một bảng hay một stream để mỗi món chỉ còn một bản, thường bằng cách so một khoá.</span>
+  <p class="def"><span class="tag">EN</span>A message in a queue that makes the consumer fail every time it tries to process it, so it keeps being retried and holds up every message behind it.
+    <span class="def-vi hide-me">→ Một message trong queue mà lần nào consumer xử lý cũng lỗi, nên cứ bị retry mãi và giữ chân mọi message xếp sau nó.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Là bản nói ngắn của <code>deduplicate</code> — dev gần như luôn nói <code>dedupe</code>, <code>deduplicate</code> chỉ gặp trong tài liệu. Hay đi với queue (message gửi lại nhiều lần), với event log, với danh sách khách nhập từ nhiều nguồn. Đừng lẫn với <code>distinct</code> trong SQL: <code>distinct</code> là một <em>cách</em> dedupe, còn dedupe là <em>việc</em> cần làm.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Thường là dữ liệu hỏng hoặc sai format: thiếu field, JSON không parse được, id trỏ vào bản ghi đã xoá. Không phải mã độc — chữ <code>poison</code> chỉ là hình ảnh "một viên thuốc độc làm chết cả hàng". Cách xử chuẩn: đặt số lần retry tối đa, quá số đó thì đẩy message sang một queue riêng (dead letter queue) để hàng chính chạy tiếp, rồi người vào xem sau.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">Could you <b>dedupe</b> the contact list before the <span class="rev">invoice</span> run? Two rows have the same company twice.</span>
-      <span class="vi hide-me">→ Nhờ cậu lọc trùng danh sách liên hệ trước khi chạy hóa đơn nhé? Có hai dòng cùng một công ty bị lặp.</span>
+      <span class="en">One <b>poison message</b> was crashing the consumer on every retry, and the queue behind it kept growing — a textbook <span class="rev">bottleneck</span>.</span>
+      <span class="vi hide-me">→ Có một message lỗi làm consumer chết ở mọi lần retry, còn queue phía sau thì cứ phình ra — nút thắt cổ chai đúng kiểu sách vở.</span>
     </li>
     <li>
-      <span class="en">We <b>deduped</b> the retry log by request id and the <span class="rev">bottleneck</span> disappeared — half the rows were the same call.</span>
-      <span class="vi hide-me">→ Bọn mình lọc trùng log retry theo request id là nút thắt cổ chai hết luôn — một nửa số dòng là cùng một lần gọi.</span>
+      <span class="en">After three failed attempts we park the <b>poison message</b> in a separate queue, so the <span class="rev">downstream</span> services keep getting fresh data.</span>
+      <span class="vi hide-me">→ Thử ba lần vẫn hỏng thì bọn mình đẩy message lỗi đó sang một queue riêng, để mấy service phía sau vẫn nhận được dữ liệu mới.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>dedupe by &lt;key&gt;</code> · <code>dedupe a list / a queue / events</code> · <code>deduping logic</code> · <code>a dedupe step</code> · <code>deduplication</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc hai âm tiết <b>dee-DOOP</b>, không phải "đề-đúp". Viết <code>dedupe</code> có <code>e</code> cuối, không phải "dedup". Là động từ ngoại động nên phải có đối tượng: "we dedupe <b>the events</b>", đừng nói "we dedupe" rồi bỏ lửng.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">dedupes, deduped, deduping, deduplicate, deduplication, a dedupe step</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a poison message</code> · <code>poison pill</code> · <code>move / park a poison message to a DLQ</code> · <code>poison message handling</code> · <code>max retries before a message is treated as poison</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v"><code>poison</code> ở đây là danh từ đứng làm tính từ — nói <code>a poison message</code>, ít gặp "poisoned message". Đừng nhầm với <span class="rev">flaky</span> (học 15/08 — lúc được lúc không): poison message thì <b>lần nào cũng hỏng</b>, retry thêm chỉ làm kẹt nặng hơn. Đọc /ˈpɔɪzən/ — âm giữa là /z/, không phải "poi-sơn".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">poison messages, poison pill, poison queue, poisoned message</span></div>
   </div>
 </article>
 
 <article class="word" data-cat="biz">
   <div class="word-head">
     <div>
-      <h2><span class="num">3</span>go-live
-        <button class="say" data-say="the go-live date is Friday" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">3</span>hard stop
+        <button class="say" data-say="I have a hard stop at five" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈɡəʊ laɪv/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˌhɑːd ˈstɒp/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge biz">Giao tiếp</span>
   </div>
 
-  <p class="vi-quick hide-me">vận hành chính thức / ngày chạy thật<span class="alt">mốc hệ thống mở cho người dùng thật — trước đó còn là thử, sau đó là thật</span></p>
+  <p class="vi-quick hide-me">giờ phải dừng, không lùi được<span class="alt">báo trước trong cuộc họp: tới giờ đó mình bắt buộc phải rời đi</span></p>
 
-  <p class="def"><span class="tag">EN</span>The moment a system is switched on for real users, and the end of the testing period.
-    <span class="def-vi hide-me">→ Thời điểm hệ thống được bật cho người dùng thật, và cũng là lúc hết giai đoạn chạy thử.</span>
+  <p class="def"><span class="tag">EN</span>A fixed time when you must leave a meeting or end a call, said in advance so the others can plan around it.
+    <span class="def-vi hide-me">→ Một mốc giờ cố định mà mình buộc phải rời cuộc họp hay kết thúc cuộc gọi, nói trước để mọi người sắp xếp theo.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Đây là chữ khách và PM dùng trong email, lịch, biên bản họp. Khác <span class="rev">cutover</span> (học 24/08): cutover là <em>việc chuyển</em> từ hệ thống cũ sang mới, go-live là <em>mốc</em> bắt đầu dùng thật — một đêm cutover có thể dẫn tới go-live sáng hôm sau. Gạch nối khi làm danh từ (<code>the go-live</code>), bỏ gạch nối khi dùng như động từ (<code>we go live on Friday</code>).</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Câu cửa miệng ở đầu cuộc họp với khách và với team nước ngoài: "I have a hard stop at five". Nói ra không bị coi là bất lịch sự — ngược lại, nó giúp người chủ trì dồn việc quan trọng lên trước. Cái bất lịch sự là im lặng rồi tới phút cuối mới xin rời.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en"><b>Go-live</b> is set for Friday night, so we'll <span class="rev">drain</span> the old nodes right after the final sync.</span>
-      <span class="vi hide-me">→ Go-live chốt tối Thứ Sáu ạ, nên ngay sau lần sync cuối bên em sẽ rút hết việc khỏi mấy node cũ.</span>
+      <span class="en">I've got a <b>hard stop</b> at five, so let me <span class="rev">recap</span> the action items now instead of rushing them at the end.</span>
+      <span class="vi hide-me">→ Năm giờ là em phải dừng rồi ạ, nên em xin tóm lại mấy đầu việc luôn bây giờ, khỏi phải vội vàng ở cuối.</span>
     </li>
     <li>
-      <span class="en">Could we push <b>go-live</b> to Monday? One <span class="rev">shim</span> for the older browsers still needs testing.</span>
-      <span class="vi hide-me">→ Bên em xin đẩy go-live sang Thứ Hai được không ạ? Còn một cái shim cho mấy browser cũ chưa test xong.</span>
+      <span class="en">Sorry, I have a <b>hard stop</b> at noon — could we <span class="rev">pencil in</span> another half hour on Thursday for the rest?</span>
+      <span class="vi hide-me">→ Xin lỗi anh/chị, mười hai giờ em phải dừng rồi — mình ghi tạm thêm nửa tiếng vào Thứ Năm để bàn nốt được không ạ?</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>the go-live date</code> · <code>before / after go-live</code> · <code>push back go-live</code> · <code>a smooth go-live</code> · <code>go-live checklist</code> · <code>go live</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ thì <b>có gạch nối</b> và không chia: "the go-live is Friday", không phải "the go-lives". Động từ thì <b>bỏ gạch nối, tách ra</b>: "we go live", "we went live", không bao giờ "we go-lived". Đừng dùng thay <code>release</code>: sản phẩm release nhiều lần, còn go-live thường chỉ một lần cho mỗi hệ thống.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">go live (v.), went live, going live, the go-live date, post-go-live, pre-go-live</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>have / have got a hard stop at &lt;giờ&gt;</code> · <code>a hard stop in ten minutes</code> · <code>I need to hard-stop at…</code> (ít gặp) · <code>soft stop</code> (ngược lại: giờ dự kiến, lùi được)</span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Là <b>danh từ</b>, đi với <code>have/got</code>: "I <b>have a</b> hard stop at five", đừng nói "I hard stop at five". Không phải <code>deadline</code>: deadline là hạn giao việc, hard stop là giờ mình rời một cuộc họp. Nói ở <b>đầu</b> buổi, đừng đợi tới phút cuối.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">hard stops, have a hard stop, got a hard stop, soft stop</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Tin nhắn trong nhóm, hai hôm trước ngày chạy thật</p>
-  <div class="passage"><b>Go-live</b> is Friday, so here's where we stand. The new export is <b>wired up</b> to the reporting service at last, and we <b>dedupe</b> by order id now, so your team won't see the same line twice on an <span class="rev">invoice</span>. The switch itself takes about two hours, <b>give or take</b>, and two of us will <span class="rev">keep an eye on</span> the dashboards until midnight. One of us is also bringing a box of biscuits — half the team has a <b>sweet tooth</b>, which is honestly how we survive a late <span class="rev">cutover</span>.</div>
+  <div class="passage">Quick update before Friday, because I've got a <b>hard stop</b> at six today. The new export is <b>wired up</b> to the reporting service at last, and we've pulled out the <b>poison message</b> that kept crashing it every night, so your team won't get half-finished <span class="rev">invoices</span> any more. The switch itself takes about two hours, <b>give or take</b>, and two of us will <span class="rev">keep an eye on</span> the dashboards until midnight. One of us is also bringing a box of biscuits — half the team has a <b>sweet tooth</b>, which is honestly how we survive a late <span class="rev">cutover</span>.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Go-live là Thứ Sáu, nên cập nhật tình hình thế này. Phần export mới cuối cùng cũng tích hợp được vào service báo cáo, và giờ bọn mình lọc trùng theo order id rồi, nên team bạn sẽ không còn thấy một dòng lặp hai lần trên hóa đơn nữa. Bản thân việc chuyển mất chừng hai tiếng, xê xích chút, và hai người bọn mình sẽ ngồi trông dashboard tới nửa đêm. Có một người mang theo hộp bánh — nửa team hảo ngọt, thật ra nhờ thế mới trụ được mấy đêm cutover muộn.</p>
+    <p class="hide-me">Cập nhật nhanh trước Thứ Sáu nhé, vì hôm nay sáu giờ là mình phải dừng rồi. Phần export mới cuối cùng cũng tích hợp được vào service báo cáo, và bọn mình đã gỡ được cái message lỗi đêm nào cũng làm nó sập, nên team bạn sẽ không còn nhận hóa đơn làm dở dang nữa. Bản thân việc chuyển mất chừng hai tiếng, xê xích chút, và hai người bọn mình sẽ ngồi trông dashboard tới nửa đêm. Có một người mang theo hộp bánh — nửa team hảo ngọt, thật ra nhờ thế mới trụ được mấy đêm cutover muộn.</p>
   </details>
 </section>
 
@@ -398,8 +398,8 @@
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
     <li><b>Điền từ</b> — "The button is on the page but clicking it does nothing — I forgot to ______ it ______ to the click handler."</li>
-    <li><b>Sửa lỗi</b> — "We will go-live the system on Friday night."</li>
-    <li><b>Dịch Việt → Anh</b> — "Bảng này có mấy dòng trùng, nhờ cậu lọc trùng theo email trước khi import nhé."</li>
+    <li><b>Sửa lỗi</b> — "Sorry, I hard stop at five today, so let's keep it short."</li>
+    <li><b>Dịch Việt → Anh</b> — "Có một message lỗi cứ làm consumer chết hoài, cậu chuyển nó sang queue riêng giúp mình nhé."</li>
     <li><b>Chọn collocation</b> — Nói "ba tuần, xê xích chừng đó": (a) <code>three weeks, give or take</code> · (b) <code>three weeks, give and take</code> · (c) <code>three weeks, giving or taking</code></li>
     <li><b>Điền từ</b> — "I can't walk past a bakery without going in — I've got a real ______ ______."</li>
   </ol>
@@ -407,8 +407,8 @@
     <summary>Đáp án</summary>
     <ol>
       <li><b>wire</b> it <b>up</b> — <code>wire sth up to sth</code>. Tách được nên đại từ nằm giữa: "wire <b>it</b> up", không bao giờ "wire up it".</li>
-      <li>"We will <b>go live</b> on Friday night." (hoặc "<b>The go-live</b> is on Friday night.") — <code>go-live</code> có gạch nối là danh từ, không chia được; muốn làm động từ thì bỏ gạch nối và tách ra: go live / went live.</li>
-      <li>"This table has some duplicate rows — could you <b>dedupe</b> it by email before the import?" — <code>dedupe by &lt;khoá&gt;</code> là khuôn chuẩn, và <code>dedupe</code> là động từ ngoại động nên phải có "it".</li>
+      <li>"Sorry, I <b>have a hard stop</b> at five today, so let's keep it short." — <code>hard stop</code> là danh từ, phải đi với <code>have/got</code> + <code>a</code>; không dùng như động từ.</li>
+      <li>"There's a <b>poison message</b> that keeps crashing the consumer — could you move it to a separate queue?" — danh từ đếm được nên có <code>a</code>; "keeps crashing" vì lần nào xử lý cũng hỏng.</li>
       <li><b>(a) <code>three weeks, give or take</code></b> — cụm cố định, đặt <b>sau</b> con số. <code>give and take</code> là chuyện khác: có qua có lại khi thương lượng.</li>
       <li><b>sweet tooth</b> — luôn đi với <code>have/got</code> và luôn số ít: "I've got a real sweet tooth".</li>
     </ol>
