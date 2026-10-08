@@ -248,7 +248,7 @@
 | 227 | outbox | outboxes, outbox pattern, transactional outbox, outbox table, outbox relay, inbox pattern | noun (đếm được) | IT | bảng chờ gửi event | 2026-10-08 | lesson |
 | 228 | put a pin in it | put a pin in that, put a pin in sth, putting a pin in, puts a pin in, pin | idiom (cụm động từ) | Business | tạm gác lại, bàn sau | 2026-10-08 | lesson |
 | 229 | give or take | give or take a day, give or take a bit, give and take, a give-and-take relationship | idiom (cụm trạng ngữ) | Business | xấp xỉ, khoảng chừng, cộng trừ không đáng kể | 2026-10-08 | lesson |
-| 230 | sweet tooth | sweet teeth, have a sweet tooth, got a sweet tooth, sweet-toothed, sweets, sweeten, sweetener | noun (đếm được, hầu như luôn số ít) | Life | hảo ngọt | 2026-10-08 | lesson |
+| 230 | sweet tooth | sweet teeth, have a sweet tooth, got a sweet tooth, sweet-toothed, sweets, sweeten, sweetener | noun (đếm được, hầu như luôn số ít) | Life | thích ăn đồ ngọt | 2026-10-08 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
