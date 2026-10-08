@@ -238,74 +238,74 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>poison message
-        <button class="say" data-say="a poison message keeps crashing the consumer" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>outbox
+        <button class="say" data-say="write the event to the outbox in the same transaction" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈpɔɪzən ˌmesɪdʒ/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˈaʊtbɒks/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">message lỗi làm kẹt queue<span class="alt">consumer đọc tới là chết, retry bao nhiêu lần cũng chết — cả hàng phía sau đứng theo</span></p>
+  <p class="vi-quick hide-me">bảng chờ gửi event<span class="alt">ghi event vào cùng transaction với dữ liệu, worker gửi lên queue sau — lưu được là gửi được</span></p>
 
-  <p class="def"><span class="tag">EN</span>A message in a queue that makes the consumer fail every time it tries to process it, so it keeps being retried and holds up every message behind it.
-    <span class="def-vi hide-me">→ Một message trong queue mà lần nào consumer xử lý cũng lỗi, nên cứ bị retry mãi và giữ chân mọi message xếp sau nó.</span>
+  <p class="def"><span class="tag">EN</span>A table where a service writes the events it needs to publish, in the same transaction as the data change, so that a separate worker can send them to the queue later and nothing gets lost.
+    <span class="def-vi hide-me">→ Một bảng mà service ghi các event cần gửi đi vào đó, chung transaction với lần sửa dữ liệu, để một worker riêng gửi chúng lên queue sau và không mất cái nào.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Thường là dữ liệu hỏng hoặc sai format: thiếu field, JSON không parse được, id trỏ vào bản ghi đã xoá. Không phải mã độc — chữ <code>poison</code> chỉ là hình ảnh "một viên thuốc độc làm chết cả hàng". Cách xử chuẩn: đặt số lần retry tối đa, quá số đó thì đẩy message sang một queue riêng (dead letter queue) để hàng chính chạy tiếp, rồi người vào xem sau.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hay nghe dưới tên <code>outbox pattern</code> / <code>transactional outbox</code>. Nó giải bài toán "dual write": lưu DB xong rồi mới publish riêng thì có lúc lưu được mà gửi trượt, hoặc gửi rồi mà DB rollback. Ghi chung một transaction thì hoặc cả hai cùng có, hoặc cả hai cùng không. Đổi lại, worker có thể gửi một event hai lần — nên bên nhận phải <span class="rev">idempotent</span>.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">One <b>poison message</b> was crashing the consumer on every retry, and the queue behind it kept growing — a textbook <span class="rev">bottleneck</span>.</span>
-      <span class="vi hide-me">→ Có một message lỗi làm consumer chết ở mọi lần retry, còn queue phía sau thì cứ phình ra — nút thắt cổ chai đúng kiểu sách vở.</span>
+      <span class="en">The relay may send an <b>outbox</b> row twice, so every consumer has to be <span class="rev">idempotent</span>.</span>
+      <span class="vi hide-me">→ Worker đọc outbox có thể gửi một dòng hai lần, nên consumer nào cũng phải idempotent — nhận hai lần vẫn ra y nguyên.</span>
     </li>
     <li>
-      <span class="en">After three failed attempts we park the <b>poison message</b> in a separate queue, so the <span class="rev">downstream</span> services keep getting fresh data.</span>
-      <span class="vi hide-me">→ Thử ba lần vẫn hỏng thì bọn mình đẩy message lỗi đó sang một queue riêng, để mấy service phía sau vẫn nhận được dữ liệu mới.</span>
+      <span class="en">If the broker goes down, events just wait in the <b>outbox</b>, and the <span class="rev">downstream</span> services catch up once it's back.</span>
+      <span class="vi hide-me">→ Broker có sập thì event cứ nằm chờ trong outbox, lên lại là mấy service phía sau tự đuổi kịp.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>a poison message</code> · <code>poison pill</code> · <code>move / park a poison message to a DLQ</code> · <code>poison message handling</code> · <code>max retries before a message is treated as poison</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v"><code>poison</code> ở đây là danh từ đứng làm tính từ — nói <code>a poison message</code>, ít gặp "poisoned message". Đừng nhầm với <span class="rev">flaky</span> (học 15/08 — lúc được lúc không): poison message thì <b>lần nào cũng hỏng</b>, retry thêm chỉ làm kẹt nặng hơn. Đọc /ˈpɔɪzən/ — âm giữa là /z/, không phải "poi-sơn".</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">poison messages, poison pill, poison queue, poisoned message</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>outbox pattern</code> · <code>transactional outbox</code> · <code>write to the outbox</code> · <code>an outbox table</code> · <code>outbox relay / poller</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Không phải hộp thư đi của Outlook — cùng hình ảnh "chờ gửi" nhưng ở đây là <b>một bảng trong DB</b>. Outbox chỉ bảo đảm gửi <b>ít nhất một lần</b>, không phải đúng một lần: đừng hứa với khách "không bao giờ trùng". Viết liền một chữ: <code>outbox</code>, không phải "out box".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">outboxes, outbox pattern, transactional outbox, outbox relay, inbox pattern</span></div>
   </div>
 </article>
 
 <article class="word" data-cat="biz">
   <div class="word-head">
     <div>
-      <h2><span class="num">3</span>hard stop
-        <button class="say" data-say="I have a hard stop at five" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">3</span>put a pin in it
+        <button class="say" data-say="let's put a pin in that and come back to it" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌhɑːd ˈstɒp/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˌpʊt ə ˈpɪn ɪn ɪt/ · <em>idiom (cụm động từ)</em></div>
     </div>
     <span class="badge biz">Giao tiếp</span>
   </div>
 
-  <p class="vi-quick hide-me">giờ phải dừng, không lùi được<span class="alt">báo trước trong cuộc họp: tới giờ đó mình bắt buộc phải rời đi</span></p>
+  <p class="vi-quick hide-me">tạm gác lại, bàn sau<span class="alt">đánh dấu chuyện này để quay lại — không bỏ, chỉ là chưa bàn bây giờ</span></p>
 
-  <p class="def"><span class="tag">EN</span>A fixed time when you must leave a meeting or end a call, said in advance so the others can plan around it.
-    <span class="def-vi hide-me">→ Một mốc giờ cố định mà mình buộc phải rời cuộc họp hay kết thúc cuộc gọi, nói trước để mọi người sắp xếp theo.</span>
+  <p class="def"><span class="tag">EN</span>To stop talking about something for now and agree to come back to it later, so the meeting can move on.
+    <span class="def-vi hide-me">→ Thôi bàn một chuyện ngay lúc này và thống nhất lát nữa quay lại, để cuộc họp đi tiếp được.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Câu cửa miệng ở đầu cuộc họp với khách và với team nước ngoài: "I have a hard stop at five". Nói ra không bị coi là bất lịch sự — ngược lại, nó giúp người chủ trì dồn việc quan trọng lên trước. Cái bất lịch sự là im lặng rồi tới phút cuối mới xin rời.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hình ảnh là cắm cái ghim lên bản đồ để nhớ chỗ mà quay lại. Rất hợp khi họp với khách lan sang chuyện ngoài lề: gác lịch sự mà người ta vẫn thấy ý mình được ghi nhận. Ba mức nên phân biệt: <code>put a pin in it</code> (tạm gác, <b>chắc chắn</b> quay lại) · <span class="rev">circle back</span> (học 29/08 — quay lại sau) · <span class="rev">off the table</span> (học 15/09 — dẹp hẳn).</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">I've got a <b>hard stop</b> at five, so let me <span class="rev">recap</span> the action items now instead of rushing them at the end.</span>
-      <span class="vi hide-me">→ Năm giờ là em phải dừng rồi ạ, nên em xin tóm lại mấy đầu việc luôn bây giờ, khỏi phải vội vàng ở cuối.</span>
+      <span class="en">Let's <b>put a pin in</b> the reporting module for now — the client is still <span class="rev">on the fence</span> about it.</span>
+      <span class="vi hide-me">→ Cái module báo cáo mình tạm gác lại đã, khách vẫn còn lưỡng lự chưa ngả bên nào.</span>
     </li>
     <li>
-      <span class="en">Sorry, I have a <b>hard stop</b> at noon — could we <span class="rev">pencil in</span> another half hour on Thursday for the rest?</span>
-      <span class="vi hide-me">→ Xin lỗi anh/chị, mười hai giờ em phải dừng rồi — mình ghi tạm thêm nửa tiếng vào Thứ Năm để bàn nốt được không ạ?</span>
+      <span class="en">Could we <b>put a pin in</b> this and <span class="rev">follow up</span> by email? I'd like to check the numbers with my team first.</span>
+      <span class="vi hide-me">→ Chuyện này mình tạm gác lại rồi em gửi email trao đổi tiếp được không ạ? Em muốn xem lại số liệu với team trước.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>have / have got a hard stop at &lt;giờ&gt;</code> · <code>a hard stop in ten minutes</code> · <code>I need to hard-stop at…</code> (ít gặp) · <code>soft stop</code> (ngược lại: giờ dự kiến, lùi được)</span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Là <b>danh từ</b>, đi với <code>have/got</code>: "I <b>have a</b> hard stop at five", đừng nói "I hard stop at five". Không phải <code>deadline</code>: deadline là hạn giao việc, hard stop là giờ mình rời một cuộc họp. Nói ở <b>đầu</b> buổi, đừng đợi tới phút cuối.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">hard stops, have a hard stop, got a hard stop, soft stop</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>let's put a pin in that</code> · <code>put a pin in sth for now</code> · <code>put a pin in it and come back to it</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đừng rút thành "<b>pin</b> it" — <code>pin</code> động từ là <b>ghim lên đầu</b> (pin a message in Slack), nghĩa khác hẳn. Giới từ là <code>in</code>, không phải "on". Tân ngữ đứng sau <code>in</code>: "put a pin in <b>the budget question</b>".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">put a pin in that, putting a pin in, put a pin in sth</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Tin nhắn trong nhóm, hai hôm trước ngày chạy thật</p>
-  <div class="passage">Quick update before Friday, because I've got a <b>hard stop</b> at six today. The new export is <b>wired up</b> to the reporting service at last, and we've pulled out the <b>poison message</b> that kept crashing it every night, so your team won't get half-finished <span class="rev">invoices</span> any more. The switch itself takes about two hours, <b>give or take</b>, and two of us will <span class="rev">keep an eye on</span> the dashboards until midnight. One of us is also bringing a box of biscuits — half the team has a <b>sweet tooth</b>, which is honestly how we survive a late <span class="rev">cutover</span>.</div>
+  <div class="passage">Quick update before Friday: we've <b>put a pin in</b> the new PDF layout until after the switch. The new export is <b>wired up</b> to the reporting service at last, and every change is written to an <b>outbox</b> first, so your team won't miss a single <span class="rev">invoice</span> even if the queue goes down. The switch itself takes about two hours, <b>give or take</b>, and two of us will <span class="rev">keep an eye on</span> the dashboards until midnight. One of us is also bringing a box of biscuits — half the team has a <b>sweet tooth</b>, which is honestly how we survive a late <span class="rev">cutover</span>.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Cập nhật nhanh trước Thứ Sáu nhé, vì hôm nay sáu giờ là mình phải dừng rồi. Phần export mới cuối cùng cũng tích hợp được vào service báo cáo, và bọn mình đã gỡ được cái message lỗi đêm nào cũng làm nó sập, nên team bạn sẽ không còn nhận hóa đơn làm dở dang nữa. Bản thân việc chuyển mất chừng hai tiếng, xê xích chút, và hai người bọn mình sẽ ngồi trông dashboard tới nửa đêm. Có một người mang theo hộp bánh — nửa team hảo ngọt, thật ra nhờ thế mới trụ được mấy đêm cutover muộn.</p>
+    <p class="hide-me">Cập nhật nhanh trước Thứ Sáu: cái layout PDF mới bọn mình tạm gác lại, chuyển xong mới làm. Phần export mới cuối cùng cũng tích hợp được vào service báo cáo, và mọi thay đổi giờ đều ghi vào outbox trước, nên kể cả queue có sập thì team bạn cũng không sót một hóa đơn nào. Bản thân việc chuyển mất chừng hai tiếng, xê xích chút, và hai người bọn mình sẽ ngồi trông dashboard tới nửa đêm. Có một người mang theo hộp bánh — nửa team hảo ngọt, thật ra nhờ thế mới trụ được mấy đêm cutover muộn.</p>
   </details>
 </section>
 
@@ -398,8 +398,8 @@
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
     <li><b>Điền từ</b> — "The button is on the page but clicking it does nothing — I forgot to ______ it ______ to the click handler."</li>
-    <li><b>Sửa lỗi</b> — "Sorry, I hard stop at five today, so let's keep it short."</li>
-    <li><b>Dịch Việt → Anh</b> — "Có một message lỗi cứ làm consumer chết hoài, cậu chuyển nó sang queue riêng giúp mình nhé."</li>
+    <li><b>Sửa lỗi</b> — "Let's pin this and come back to it after lunch."</li>
+    <li><b>Dịch Việt → Anh</b> — "Đừng publish thẳng lên queue, cậu ghi event vào outbox cùng transaction luôn nhé."</li>
     <li><b>Chọn collocation</b> — Nói "ba tuần, xê xích chừng đó": (a) <code>three weeks, give or take</code> · (b) <code>three weeks, give and take</code> · (c) <code>three weeks, giving or taking</code></li>
     <li><b>Điền từ</b> — "I can't walk past a bakery without going in — I've got a real ______ ______."</li>
   </ol>
@@ -407,8 +407,8 @@
     <summary>Đáp án</summary>
     <ol>
       <li><b>wire</b> it <b>up</b> — <code>wire sth up to sth</code>. Tách được nên đại từ nằm giữa: "wire <b>it</b> up", không bao giờ "wire up it".</li>
-      <li>"Sorry, I <b>have a hard stop</b> at five today, so let's keep it short." — <code>hard stop</code> là danh từ, phải đi với <code>have/got</code> + <code>a</code>; không dùng như động từ.</li>
-      <li>"There's a <b>poison message</b> that keeps crashing the consumer — could you move it to a separate queue?" — danh từ đếm được nên có <code>a</code>; "keeps crashing" vì lần nào xử lý cũng hỏng.</li>
+      <li>"Let's <b>put a pin in</b> this and come back to it after lunch." — <code>pin</code> đứng một mình là ghim lên đầu; muốn nói "tạm gác lại" phải đủ cụm <code>put a pin in</code>.</li>
+      <li>"Don't publish straight to the queue — write the event to the <b>outbox</b> in the same transaction." — <code>write to the outbox</code>; có <code>the</code> vì là bảng outbox của chính service đó.</li>
       <li><b>(a) <code>three weeks, give or take</code></b> — cụm cố định, đặt <b>sau</b> con số. <code>give and take</code> là chuyện khác: có qua có lại khi thương lượng.</li>
       <li><b>sweet tooth</b> — luôn đi với <code>have/got</code> và luôn số ít: "I've got a real sweet tooth".</li>
     </ol>

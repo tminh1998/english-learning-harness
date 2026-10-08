@@ -245,8 +245,8 @@
 | 224 | blocker | blockers, block, blocked, blocking, unblock, unblocked, blocking issue, blocked on sth | noun (đếm được) | Business | vướng mắc / thứ chặn đường | 2026-10-07 | lesson |
 | 225 | chores | chore, household chores, chore list, choreless, do the chores, a chore | noun (đếm được, hay dùng số nhiều) | Life | việc nhà | 2026-10-07 | lesson |
 | 226 | wire up | wires up, wired up, wiring up, wire sth up to sth, wire, wiring, hard-wired | phrasal verb | IT | đấu nối, tích hợp | 2026-10-08 | lesson |
-| 227 | poison message | poison messages, poison pill, poison queue, poisoned message | noun (đếm được) | IT | message lỗi làm kẹt queue | 2026-10-08 | lesson |
-| 228 | hard stop | hard stops, have a hard stop, got a hard stop, hard-stop, soft stop | noun (đếm được) | Business | giờ phải dừng, không lùi được | 2026-10-08 | lesson |
+| 227 | outbox | outboxes, outbox pattern, transactional outbox, outbox table, outbox relay, inbox pattern | noun (đếm được) | IT | bảng chờ gửi event | 2026-10-08 | lesson |
+| 228 | put a pin in it | put a pin in that, put a pin in sth, putting a pin in, puts a pin in, pin | idiom (cụm động từ) | Business | tạm gác lại, bàn sau | 2026-10-08 | lesson |
 | 229 | give or take | give or take a day, give or take a bit, give and take, a give-and-take relationship | idiom (cụm trạng ngữ) | Business | xê xích chừng đó / cộng trừ một chút | 2026-10-08 | lesson |
 | 230 | sweet tooth | sweet teeth, have a sweet tooth, got a sweet tooth, sweet-toothed, sweets, sweeten, sweetener | noun (đếm được, hầu như luôn số ít) | Life | hảo ngọt | 2026-10-08 | lesson |
 
@@ -275,6 +275,8 @@
 | soft delete | soft-delete, soft-deletes, soft-deleted, soft-deleting, soft deletion, hard delete, undelete, deleted_at | noun (đếm được; cũng là verb) | IT | xoá mềm, chỉ đánh dấu đã xoá chứ không xoá hẳn dòng | 2026-10-07 |
 | dedupe | dedupes, deduped, deduping, dedup, deduplicate, deduplicates, deduplicated, deduplication, a dedupe step | verb (cũng là noun) | IT | lọc trùng, nhiều bản giống nhau chỉ giữ một | 2026-10-08 |
 | go-live | go live, goes live, went live, going live, gone live, the go-live date, post-go-live, pre-go-live, live date | noun (đếm được; v: go live) | Business | mốc hệ thống chạy thật cho người dùng | 2026-10-08 |
+| poison message | poison messages, poison pill, poison queue, poisoned message, poison | noun (đếm được) | IT | message lỗi làm kẹt queue, retry mãi vẫn chết | 2026-10-08 |
+| hard stop | hard stops, have a hard stop, got a hard stop, hard-stop, soft stop | noun (đếm được) | Business | giờ phải dừng, không lùi được | 2026-10-08 |
 
 <!--
 LUẬT GHI:
