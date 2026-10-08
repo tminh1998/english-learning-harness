@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-08 · **Số bản dịch đã ghi:** 15 (12 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-08 · **Số bản dịch đã ghi:** 17 (14 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -77,6 +77,14 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    lên nghĩa gọn: `… / quá bận rộn/quá tải`. _(1 lần, đi kèm luật 3 — áp luôn vì là
    trường hợp riêng của luật 3.)_
 
+5. **Hai từ gần nghĩa thì tách bằng danh từ đầu, đừng để trùng nghĩa gọn.** Trước
+   2026-10-08 `fallback` và `contingency` cùng mang chữ "phương án". User tách:
+   `contingency` → **`Phương án dự phòng`** (kế hoạch do *người* lập),
+   `fallback` → **`Cơ chế dự phòng`** (thứ *kỹ thuật* tự chạy). Viết nghĩa gọn cho từ
+   mới thì grep cột `Nghĩa gọn` trong VOCAB_INDEX trước: đã có từ khác mang đúng chữ
+   đó thì chọn danh từ đầu khác (`phương án` / `cơ chế` / `quy trình` / `khả năng`…).
+   _(1 lần nhưng gồm 2 từ — áp luôn.)_
+
 **Cách áp dụng khi viết nghĩa gọn:** hỏi trước "người Việt, hay sách tiếng Việt, gọi
 cái này là gì?". Có câu trả lời → ghi đúng từ đó. Một chữ chưa đủ → thêm vế thứ hai
 sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắn.
@@ -118,3 +126,5 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-07 | blast radius | hỏng thì kéo theo bao nhiêu · phạm vi thiệt hại nếu cái này chết | phạm vi ảnh hưởng | nhắn thẳng trong chat — bỏ câu diễn giải bình dân, dùng **thuật ngữ chuẩn** (đúng chữ agent đã dùng trong câu dịch ví dụ); hình ảnh "kéo theo" dồn xuống `PHU` |
 | 2026-10-07 | tombstone | bia mộ dữ liệu / bản ghi báo đã xoá · xoá xong chưa biến mất ngay mà để lại một dấu "đã xoá"… | bản ghi đánh dấu đã xóa | bỏ vế **dịch sát hình ảnh** ("bia mộ"), chỉ giữ một vế gọi theo **chức năng**; không cần hai vế khi một cụm đã đủ nghĩa |
 | 2026-10-08 | drain | rút hết việc rồi mới tắt · chặn request mới, chờ mấy cái đang chạy xong đã | ngưng nhận công việc mới và làm nốt việc đang dở | nhắn thẳng trong chat — không có từ Việt chuẩn nên user **mô tả đủ hai vế hành động** (dừng nhận + làm nốt), bỏ vế kết quả "rồi mới tắt"; dài 11 chữ, vượt ngưỡng ≤ 5 chữ của mục "Đang quan sát" |
+| 2026-10-08 | contingency | phương án phòng khi hỏng · chưa chắc xảy ra, nhưng phải có sẵn đường lui | Phương án dự phòng | nhắn thẳng trong chat, đi cặp với `fallback` — từ chuẩn Hán-Việt; danh từ đầu **`Phương án`** = kế hoạch do người lập |
+| 2026-10-08 | fallback | phương án dự phòng · cái chính hỏng thì tự chạy cái này | Cơ chế dự phòng | đổi cùng lúc với `contingency` để **tách hai từ gần nghĩa**: `Cơ chế` = thứ kỹ thuật tự chạy, `Phương án` = kế hoạch của người |

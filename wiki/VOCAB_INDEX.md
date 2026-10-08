@@ -59,7 +59,7 @@
 | 38 | stakeholder | stakeholders, stake, stakeholding | noun | Business | bên liên quan, người cần hỏi ý | 2026-08-21 | lesson |
 | 39 | align | aligns, aligned, aligning, alignment, misalign, realign | verb | Business | ngồi lại thống nhất cho cùng hướng | 2026-08-21 | lesson |
 | 40 | out of the blue | a bolt from/out of the blue, come out of the blue | idiom | Life | tự dưng, bất thình lình | 2026-08-21 | lesson |
-| 41 | fallback | fallbacks, fall back, falls back, fell back, fallen back, fall back on | noun (v: fall back on/to) | IT | đường lui dựng sẵn, cái chính hỏng thì chạy cái này | 2026-08-22 | lesson |
+| 41 | fallback | fallbacks, fall back, falls back, fell back, fallen back, fall back on | noun (v: fall back on/to) | IT | Cơ chế dự phòng | 2026-08-22 | lesson |
 | 42 | brittle | brittleness, more brittle, the most brittle | adjective | IT | giòn, đụng nhẹ là gãy | 2026-08-22 | lesson |
 | 43 | bring up | brings up, brought up, bringing up, upbringing | phrasal verb | Business | nêu ra cho cả nhóm cùng bàn | 2026-08-22 | lesson |
 | 44 | turnaround | turnarounds, turnaround time, turn around, turned around, turning around | noun | Business | nhận việc tới lúc trả xong mất bao lâu | 2026-08-22 | lesson |
@@ -176,7 +176,7 @@
 | 155 | settle in | settles in, settled in, settling in, settle into, settle in nicely | phrasal verb | Life | quen dần chỗ mới | 2026-09-21 | lesson |
 | 156 | shard | shards, sharded, sharding, shard key, a sharded cluster, re-shard, resharding | noun (cũng là verb) | IT | cắt dữ liệu ra nhiều mảnh | 2026-09-22 | lesson |
 | 157 | contention | contend, contends, contended, contending, contentious, a point of contention | noun (không đếm được) | IT | tranh nhau một chỗ | 2026-09-22 | lesson |
-| 158 | contingency | contingencies, contingent, contingent on, contingency plan, contingency budget | noun (đếm được) | Business | phương án phòng khi hỏng | 2026-09-22 | lesson |
+| 158 | contingency | contingencies, contingent, contingent on, contingency plan, contingency budget | noun (đếm được) | Business | Phương án dự phòng | 2026-09-22 | lesson |
 | 159 | scale back | scales back, scaled back, scaling back, a scaling-back, scale up, scale down | phrasal verb | Business | thu nhỏ lại cho vừa sức | 2026-09-22 | lesson |
 | 160 | show up | shows up, showed up, shown up, a no-show, show sb up | phrasal verb | Life | có mặt, ló mặt tới | 2026-09-22 | lesson |
 | 161 | saturation | saturate, saturates, saturated, saturating, saturation point, unsaturated, oversaturated | noun (không đếm được) | IT | đã chạm trần, hết chỗ nhận thêm | 2026-09-23 | lesson |
