@@ -188,7 +188,7 @@
 | 167 | cardinality | cardinal, cardinalities, high-cardinality, low-cardinality, cardinality estimate, cardinality explosion | noun (không đếm được) | IT | số giá trị khác nhau | 2026-09-24 | lesson |
 | 168 | concession | concede, concedes, conceded, conceding, concessions, concessionary | noun (đếm được) | Business | nhượng một bước | 2026-09-24 | lesson |
 | 169 | draw the line | draws the line, drew the line, drawn the line, draw a line in the sand, borderline | idiom | Business | vạch ra tới đây thôi | 2026-09-24 | lesson |
-| 170 | splurge | splurges, splurged, splurging, a splurge, splurge-worthy | verb (cũng là noun) | Life | vung tay tiêu một phát | 2026-09-24 | lesson |
+| 170 | splurge | splurges, splurged, splurging, a splurge, splurge-worthy | verb (cũng là noun) | Life | Sự phung phí | 2026-09-24 | lesson |
 | 171 | flush | flushes, flushed, flushing, a flush, a cache flush, auto-flush, flush to disk | verb (cũng là noun) | IT | xả hết chỗ đang giữ tạm | 2026-09-25 | lesson |
 | 172 | idle | idles, idled, idling, idly, idleness, idle timeout, sit idle | adjective (cũng là verb) | IT | nằm không, chẳng làm gì | 2026-09-25 | lesson |
 | 173 | call out | calls out, called out, calling out, call sth out, a call-out | phrasal verb | Business | nói thẳng ra chỗ đó | 2026-09-25 | lesson |
