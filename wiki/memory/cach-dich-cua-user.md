@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-08 · **Số bản dịch đã ghi:** 17 (14 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-09 · **Số bản dịch đã ghi:** 18 (15 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -131,3 +131,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-08 | wire up | đấu nối / gắn vào cho chạy được · gắn phần mới vào đúng chỗ — thêm route, truyền props, bind event… | đấu nối, tích hợp | nhắn thẳng trong chat — giữ `đấu nối`, bỏ vế diễn giải "gắn vào cho chạy được", thay bằng **thuật ngữ chuẩn** `tích hợp` (= integrate); vế diễn giải dồn xuống `PHU`. User gõ "đấu nối , tích hợp" — bỏ khoảng trắng trước dấu phẩy |
 | 2026-10-08 | give or take | xê xích chừng đó / cộng trừ một chút · dán ngay sau con số để nói "khoảng đó, hơn kém một chút"… | xấp xỉ, khoảng chừng, cộng trừ không đáng kể | nhắn thẳng trong chat — bỏ `xê xích` (khẩu ngữ), đưa **từ chuẩn** `xấp xỉ` lên đầu; giữ `cộng trừ` nhưng đổi `một chút` → `không đáng kể`; ba vế ngăn bằng dấu phẩy như `wire up` |
 | 2026-10-08 | sweet tooth | hảo ngọt · thích đồ ngọt, thấy bánh kẹo là khó chối | thích ăn đồ ngọt | nhắn thẳng trong chat — bỏ từ Hán-Việt ít dùng trong văn nói (`hảo ngọt`), lấy **cách nói đời thường** (chính là vế PHU cũ của agent, thêm chữ `ăn`) |
+| 2026-10-09 | ingest | nuốt dữ liệu từ ngoài vào · nhận, parse rồi ghi xuống kho — không chỉ là đọc file | Parse dữ liệu rồi lưu lại | bỏ hình ảnh **"nuốt"**, dịch thẳng **hai bước chức năng** (parse → lưu); giữ `Parse` bằng tiếng Anh vì là thuật ngữ dev (R7); hai vế nối bằng `rồi` như `drain` |

@@ -154,7 +154,7 @@
 | 133 | quote | quotes, quoted, quoting, quotation, a quote for sth, quote sb a price | noun (cũng là verb) | Business | báo giá gửi khách | 2026-09-15 | lesson |
 | 134 | off the table | on the table, take sth off the table, back on the table, put sth on the table | idiom | Business | dẹp, khỏi bàn nữa | 2026-09-15 | lesson |
 | 135 | night owl | night owls, be a night owl, early bird | noun | Life | cú đêm | 2026-09-15 | lesson |
-| 136 | ingest | ingests, ingested, ingesting, ingestion, ingestion pipeline, ingestion lag | verb | IT | nuốt dữ liệu từ ngoài vào | 2026-09-16 | lesson |
+| 136 | ingest | ingests, ingested, ingesting, ingestion, ingestion pipeline, ingestion lag | verb | IT | Parse dữ liệu rồi lưu lại | 2026-09-16 | lesson |
 | 137 | quarantine | quarantines, quarantined, quarantining, in quarantine, quarantine queue | verb (cũng là noun) | IT | tách riêng ra một góc | 2026-09-16 | lesson |
 | 138 | hash out | hashes out, hashed out, hashing out, hash sth out with sb, hash | phrasal verb | Business | ngồi bàn cho ra nhẽ | 2026-09-16 | lesson |
 | 139 | manage expectations | manage sb's expectations, set expectations, reset expectations, expectation, expectations, expect, unexpected | cụm động từ | Business | nắn kỳ vọng từ đầu | 2026-09-16 | lesson |
