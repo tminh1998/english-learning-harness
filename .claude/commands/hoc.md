@@ -42,6 +42,9 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    `/dich`. Mọi nghĩa Việt của bài mới (`.vi-quick`, cột `Nghĩa gọn`, `**VI**`, câu
    dịch) viết theo mục **Quy luật rút ra** trong đó, và bắt chước giọng của các dòng
    gần nhất trong nhật ký — nghĩa gọn phải nghe như chính user tự nói.
+   Câu ví dụ / mẩu đọc mượn **từ cũ** (R8) mà phải dịch từ đó ra tiếng Việt → dùng
+   đúng cột `Nghĩa gọn` **hiện tại** trong VOCAB_INDEX (user có thể đã đổi qua `/dich`),
+   không dùng nghĩa nhớ từ bài cũ.
 3. ⭐ **Ôn nhanh đầu giờ — 25 từ (R9), chia hai phần cố định** (`review.warmup`):
 
    - **5 từ của buổi LIỀN TRƯỚC** — lấy từ `wiki/PROGRESS.md` (bảng "Nhật ký buổi

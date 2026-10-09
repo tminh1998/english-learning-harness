@@ -472,24 +472,28 @@ gì**. Không có `.md` đi kèm, không có mục "chỗ dễ sai" (cái đó l
 ### Flow E — User tự dịch lại (`/dich`)
 
 ```text
-Phase 0  Auto-discovery + lấy 5 từ của ngày cần dịch (mặc định hôm nay)
-         -> sh tools/nghia.sh cho 5 từ đó: NGHIA + PHU hiện tại
-Phase 1  Form (AskUserQuestion): mỗi từ "Giữ bản hiện tại" / "Bỏ qua" / tự gõ bản mới
-Phase 2  Từ có bản mới -> thay NGHIA ở MỌI chỗ đang chép nó: .vi-quick bài gốc,
-         cột Nghĩa gọn VOCAB_INDEX, khối ôn nhanh các bài sau, recap (grep -rnF)
-Phase 3  {memory}/cach-dich-cua-user.md: +1 dòng nhật ký mỗi từ (cả "Giữ"),
-         đọc lại cả bảng -> sửa "Quy luật rút ra" (lặp >= 2 lần mới thành luật)
-Phase 4  sh tools/build-index.sh -> daylen "dich: <ngày> — <từ>"  (R6)
+Phase 0  keove + hnay; tìm bài hôm nay. Có "<từ> => <nghĩa>" trong lệnh -> nhảy Phase 3
+Phase 1  Hỏi TỪ (AskUserQuestion): tối đa 3 từ bài hôm nay + "Xong"; gõ từ bất kỳ vào Other
+         -> sh tools/nghia.sh "<từ>": NGHIA + PHU hiện tại (LOI = chưa học -> hỏi lại)
+Phase 2  Hỏi NGHĨA của đúng từ đó: "Giữ bản hiện tại" / "Bỏ qua" / tự gõ bản mới
+Phase 3  Áp nghĩa mới: nguồn (.vi-quick bài gốc + cột Nghĩa gọn VOCAB_INDEX -> mọi
+         khối ôn nhanh về sau tự đúng), BÀI HÔM NAY, bản chép lại (grep -rnF), viết
+         lại câu Việt của bài gốc
+Phase 4  {memory}/cach-dich-cua-user.md: +1 dòng nhật ký (cả "Giữ"), sửa "Quy luật rút ra"
+Phase 5  sh tools/build-index.sh -> daylen "dich: <từ> -> <nghĩa>"  (R6) -> quay lại Phase 1
 ```
 
 ⭐ **User nhắn sửa nghĩa ngay trong chat cũng là Flow E** (chốt 2026-09-29) — vd
-"observability thành khả năng quan sát", không cần gõ `/dich`. Làm luôn từ Phase 2 cho
+"observability thành khả năng quan sát", không cần gõ `/dich`. Làm luôn từ Phase 3 cho
 từ đó: tìm ngày đã học trong `{vocabIndex}`, rồi **sửa cả bài của ngày đó** (`.md` +
 `.html`: nghĩa gọn, `**VI**`/`GHI CHÚ`, `.def-vi`, câu dịch ví dụ, bản dịch mẩu đọc, đề
 bài tập, ghi chú buổi học), cột `Nghĩa gọn`, khối ôn nhanh bài sau + recap, rồi ghi sổ.
 Sửa mỗi dòng nghĩa gọn là **chưa xong**. Xong thì `daylen` **ngay, không hỏi**.
 
-⭐ `/dich` luôn hỏi lại **tất cả** các từ của bài ngày đó, kể cả từ đã dịch lần trước.
+⭐ `/dich` làm **từng từ một** (chốt 2026-10-09, thay luật cũ "hỏi lại tất cả 5 từ"):
+hỏi từ → hỏi nghĩa → áp + push → hỏi từ tiếp, tới khi user chọn "Xong". Nghĩa mới
+phải hiện ở **bài hôm nay** và **mọi bài về sau** (ôn nhanh, câu ví dụ mượn từ cũ).
+Chi tiết: `.claude/commands/dich.md`.
 
 Chép **đúng chữ user gõ**, không làm mượt. Không gợi ý sẵn bản dịch trong form —
 thứ cần học là lời của user. Không đụng REVIEW_QUEUE / PROGRESS: dịch lại không phải

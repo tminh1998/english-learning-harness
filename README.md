@@ -12,7 +12,7 @@ Mở Claude Code tại thư mục này rồi gõ:
 | `/on-tap` | Ôn nhanh các từ tới hạn theo lịch spaced repetition (có chấm điểm) |
 | `/on-tap-tuan` | **Bảng ôn tuần** — mọi từ trong tuần, nghĩa Việt ngay cạnh từ, để đọc lướt |
 | `/tra-tu <từ/câu>` | Gặp từ lạ khi đọc doc, email khách, phim, truyện → tra và lưu lại |
-| `/dich [ngày]` | Tự dịch lại 5 từ của một buổi bằng lời mình → agent học cách dịch đó cho các bài sau |
+| `/dich [từ => nghĩa]` | Tự dịch lại nghĩa từng từ bằng lời mình (agent hỏi từ nào, nghĩa gì) → áp vào bài hôm nay + về sau, agent học cách dịch đó |
 | `/kiem-tra` | **Chủ nhật** — kiểm tra toàn bộ từ đã học trong tuần (có chấm điểm) |
 | `/tien-do` | Xem đã học bao nhiêu, đang yếu chỗ nào |
 | `/open` | Mở lại trang HTML bài hôm nay (`/open 2026-08-12` để mở đúng ngày) |

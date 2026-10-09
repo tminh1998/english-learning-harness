@@ -57,7 +57,7 @@ ENGLISH/                          ← {harness}
 | `/on-tap` | Ôn nhanh các từ tới hạn (spaced repetition) | đọc REVIEW_QUEUE |
 | `/on-tap-tuan` | Bảng ôn tuần — trang ĐỂ ĐỌC, nghĩa Việt hiện sẵn | Flow D |
 | `/tra-tu` | Dán 1 từ/câu bắt gặp khi đọc doc, xem phim, đọc email | Flow C |
-| `/dich` | Tự dịch lại 5 từ của một buổi bằng lời mình — agent học theo cho bài sau | Flow E |
+| `/dich` | Tự dịch lại nghĩa một từ bằng lời mình — hỏi từng từ, áp vào bài hôm nay + về sau | Flow E |
 | `/tien-do` | Xem đã học bao nhiêu, chỗ nào yếu | đọc PROGRESS + quiz cũ |
 
 `/hoc` không tham số = bài hôm nay. `/hoc <chủ đề>` = ưu tiên chủ đề đó nhưng vẫn
@@ -72,7 +72,8 @@ hôm nay", không khối "Tự viết", không nhãn `.pattern-tag`, không thư
 `.html` của bài hôm học từ đó, cột `Nghĩa gọn` trong VOCAB_INDEX, khối ôn nhanh + recap
 đang chép lại, và ghi vào `wiki/memory/cach-dich-cua-user.md`. Chỉ đổi dòng nghĩa gọn
 là chưa xong. Sửa xong là **`daylen` ngay, không hỏi** — user đọc bài trên Pages, chưa
-push thì user vẫn thấy bản cũ. `/dich` luôn hỏi lại **tất cả** từ của bài ngày đó.
+push thì user vẫn thấy bản cũ. `/dich` hỏi **từng từ một** (từ nào → nghĩa gì → áp +
+push → từ tiếp), nghĩa mới phải hiện ở bài hôm nay và mọi khối ôn nhanh về sau.
 
 `/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa học thì mở bài gần
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
