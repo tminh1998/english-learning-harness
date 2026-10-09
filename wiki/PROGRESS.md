@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-10-08 (buổi #46)
+**Cập nhật:** 2026-10-09 (buổi #47)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 230 · **đã biết sẵn** 10 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 92 · Business 92 · Life 46                                                           |
-| Số buổi học          | 46                                                                                      |
-| Streak hiện tại      | 16 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 235 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 94 · Business 94 · Life 47                                                           |
+| Số buổi học          | 47                                                                                      |
+| Streak hiện tại      | 17 buổi (từ 2026-09-21 — Thứ Bảy 19/09 bận, không học, bài đã xoá nên chuỗi 15/09 → 18/09 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-10-08 (Thứ Năm) — buổi #46 |
+| Buổi gần nhất        | 2026-10-09 (Thứ Sáu) — buổi #47 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -64,6 +64,7 @@
 | 2026-10-06 | 2026-W41 | #44 | happy path · orphan · fine print · rapport · unplug |
 | 2026-10-07 | 2026-W41 | #45 | polyfill · tombstone · cadence · blocker · chores |
 | 2026-10-08 | 2026-W41 | #46 | wire up · outbox · put a pin in it · give or take · sweet tooth |
+| 2026-10-09 | 2026-W41 | #47 | bulkhead · audit trail · rubber-stamp · play it by ear · recharge |
 
 ## Kết quả quiz tuần
 
@@ -120,6 +121,10 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
 
 🔁 **Sửa lại 2026-09-01 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `debounce` và `payload` — hai suất IT của buổi #17. Theo R1.b: hai từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), và được thay bằng `failover` + `graceful degradation` — cùng nhóm IT, đã qua lại hard gate R1. Bài `.md` và `.html` đã viết lại toàn bộ: khối từ, ví dụ (R8 vẫn đúng), mẩu đọc, bài tập, đáp án, ghi chú. Tổng số từ vẫn là 85 vì thay 2 ăn 2; số từ "đã biết sẵn" lên 5. Đây là lần thứ hai user loại từ vì đã biết (lần đầu 2026-08-24 với `hotfix` · `overwrite` · `cherry-pick`) — cả 5 từ bị loại đều thuộc nhóm "lệnh/khái niệm gặp hằng ngày", đúng cảnh báo trong `memory/tu-da-biet-khong-day-lai.md`.
+
+⚠️ **Cập nhật 2026-10-09:** vốn từ lên **235 từ**, nợ ôn tập lên **230/235 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #47 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 08/10 (wire up · outbox · put a pin in it · give or take · sweet tooth), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước) trúng immutable · breaking change · quote · purge · skew · waive · feature flag · sticking point · ingest · splurge · accommodate · concession · downstream · cardinality · ramp up · pitch · lead time · saturation · quarantine · runbook — không trùng phần ôn của bốn buổi 05/10 → 08/10. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Sáu ứng viên bị hard gate R1 loại trong buổi này, đều vì nằm trong cột họ từ của từ cũ: `cut corners` (`corner case` ← `edge case`) · `dead letter queue` (`queue` ← `quarantine` + `poison message` ở bảng ⛔) · `sunk cost` (`overhead cost` ← `overhead`) · `comfort food` (`food craving` ← `craving`) · `wind down` (`wind up` ← `end up`) · `picky eater` (`pick` ← `cherry-pick` + `pick up the tab`) — thay bằng `bulkhead`, `audit trail`, `rubber-stamp`, `play it by ear`, `recharge`. Tuần 2026-W41 đã có 25 từ (05/10 → 09/10); W40 vẫn **chưa có điểm quiz** — năm tuần liên tiếp như vậy. Mai Thứ Bảy là buổi cuối của tuần W41, Chủ nhật routine sẽ sinh bảng ôn `/on-tap-tuan`; muốn có điểm thật thì phải gõ tay `/kiem-tra`, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
+
+_(Ghi thêm: dòng "đã biết sẵn" ở bảng chỉ số và ở `VOCAB_INDEX.md` trước đó ghi 10 từ nhưng bảng ⛔ đã có 15 dòng — đã sửa lại thành 15 và liệt kê đủ `soft delete` · `dedupe` · `go-live` · `poison message` · `hard stop`.)_
 
 ⚠️ **Cập nhật 2026-10-08:** vốn từ lên **230 từ**, nợ ôn tập lên **225/230 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #46 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 07/10 (polyfill · tombstone · cadence · blocker · chores), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước) trúng put up with · bottleneck · ground rules · dry run · heartbeat · scope creep · drain · sign off · recap · leeway · boilerplate · pain point · follow up · pencil in · stay up · contingency · binge-watch · on the fence · turnaround · contention — lô 22/09 → 24/09 theo ngày "gặp lần cuối", không trùng phần ôn của ba buổi 05/10 → 07/10. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai ứng viên bị hard gate R1 loại trong buổi này: `jitter` (nằm trong họ từ của `backoff` — "jittered backoff") và `billable` (chữ `bill` nằm trong họ từ của `invoice`) — thay bằng `wire up` và `give or take`. Tuần 2026-W41 đã có 20 từ (05/10 → 08/10); W40 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W40, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 

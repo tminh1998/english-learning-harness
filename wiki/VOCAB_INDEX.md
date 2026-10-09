@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 230 từ đã học** · IT 92 · Business 92 · Life 46 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 10 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-08
+**Tổng: 235 từ đã học** · IT 94 · Business 94 · Life 47 · ad-hoc 0
+**Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
+**Cập nhật:** 2026-10-09
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -249,6 +249,11 @@
 | 228 | put a pin in it | put a pin in that, put a pin in sth, putting a pin in, puts a pin in, pin | idiom (cụm động từ) | Business | tạm gác lại, bàn sau | 2026-10-08 | lesson |
 | 229 | give or take | give or take a day, give or take a bit, give and take, a give-and-take relationship | idiom (cụm trạng ngữ) | Business | xấp xỉ, khoảng chừng, cộng trừ không đáng kể | 2026-10-08 | lesson |
 | 230 | sweet tooth | sweet teeth, have a sweet tooth, got a sweet tooth, sweet-toothed, sweets, sweeten, sweetener | noun (đếm được, hầu như luôn số ít) | Life | thích ăn đồ ngọt | 2026-10-08 | lesson |
+| 231 | bulkhead | bulkheads, bulk head, bulkhead pattern, bulkhead isolation, bulkheaded, bulkhead sth off | noun (đếm được) | IT | cách ly tài nguyên theo nhóm | 2026-10-09 | lesson |
+| 232 | audit trail | audit trails, audit, audits, audited, auditing, auditor, audit log, auditable, auditability, trail | noun (đếm được) | IT | nhật ký kiểm toán / vết ai làm gì lúc nào | 2026-10-09 | lesson |
+| 233 | rubber-stamp | rubber-stamps, rubber-stamped, rubber-stamping, a rubber stamp, rubber stamp, rubber-stamp approval, rubber-stamp exercise | verb (cũng là noun) | Business | duyệt cho có lệ | 2026-10-09 | lesson |
+| 234 | play it by ear | plays it by ear, played it by ear, playing it by ear, play sth by ear, play by ear, by ear | idiom (cụm động từ) | Business | tới đâu tính đó | 2026-10-09 | lesson |
+| 235 | recharge | recharges, recharged, recharging, rechargeable, a recharge, recharge your batteries, charge | verb | Life | nạp lại năng lượng | 2026-10-09 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
