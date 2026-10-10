@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-09: 230 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-10: 235 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -52,6 +52,7 @@
 - hạn 2026-10-07 — happy path · orphan · fine print · rapport · unplug
 - hạn 2026-10-08 — polyfill · tombstone · cadence · blocker · chores
 - hạn 2026-10-09 — wire up · outbox · put a pin in it · give or take · sweet tooth
+- hạn 2026-10-10 — bulkhead · audit trail · rubber-stamp · play it by ear · recharge
 
 _Ghi chú 2026-10-06 (buổi #44): phần A hỏi lại 5 từ của buổi 05/10 (reflow · shim · upfront · retainer · tag along), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng rollback · race condition · caveat · deadlock · canary release · walk through · keep an eye on · smoke test · hassle · bring up · hit it off · awkward · snapshot · chase up · narrow down · drop by · short notice · idempotent · failover · buy-in — chạm từ lô cũ nhất (15/08) tới lô 11/09, và **không trùng một từ nào** với phần ôn của buổi 05/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **215/220 từ**, toàn bộ ở bậc 1._
 
@@ -350,6 +351,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | rubber-stamp | 1 | 2026-10-10 | 0 | 0 | 2026-10-09 |
 | play it by ear | 1 | 2026-10-10 | 0 | 0 | 2026-10-09 |
 | recharge | 1 | 2026-10-10 | 0 | 0 | 2026-10-09 |
+| eventual consistency | 1 | 2026-10-11 | 0 | 0 | 2026-10-10 |
+| read replica | 1 | 2026-10-11 | 0 | 0 | 2026-10-10 |
+| back-and-forth | 1 | 2026-10-11 | 0 | 0 | 2026-10-10 |
+| sunset | 1 | 2026-10-11 | 0 | 0 | 2026-10-10 |
+| pet peeve | 1 | 2026-10-11 | 0 | 0 | 2026-10-10 |
 
 ## Đã thuộc (bậc 5, đúng)
 
