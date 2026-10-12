@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 245 từ đã học** · IT 98 · Business 98 · Life 49 · ad-hoc 0
+**Tổng: 240 từ đã học** · IT 96 · Business 96 · Life 48 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-12
 
@@ -254,16 +254,11 @@
 | 233 | rubber-stamp | rubber-stamps, rubber-stamped, rubber-stamping, a rubber stamp, rubber stamp, rubber-stamp approval, rubber-stamp exercise | verb (cũng là noun) | Business | duyệt cho có lệ | 2026-10-09 | lesson |
 | 234 | play it by ear | plays it by ear, played it by ear, playing it by ear, play sth by ear, play by ear, by ear | idiom (cụm động từ) | Business | tới đâu tính đó | 2026-10-09 | lesson |
 | 235 | recharge | recharges, recharged, recharging, rechargeable, a recharge, recharge your batteries, charge | verb | Life | nạp lại năng lượng | 2026-10-09 | lesson |
-| 236 | eventual consistency | eventually consistent, eventual, eventually, consistency, consistent, inconsistent, inconsistency, strong consistency | noun (không đếm được) | IT | nhất quán sau cùng | 2026-10-10 | lesson |
-| 237 | read replica | read replicas, replica, replicas, replicate, replicated, replicating, replication, replica lag, read-only replica | noun (đếm được) | IT | bản sao chỉ để đọc | 2026-10-10 | lesson |
-| 238 | back-and-forth | back and forth, go back and forth, a lot of back-and-forth, back-and-forth emails, forth | noun (không đếm được) | Business | trao đổi qua lại | 2026-10-10 | lesson |
-| 239 | sunset | sunsets, sunsetted, sunsetting, sunset date, sunset clause, sunset period | verb (cũng là noun) | Business | ngừng cung cấp theo lịch | 2026-10-10 | lesson |
-| 240 | pet peeve | pet peeves, peeve, peeves, peeved, peeving, pet project | noun (đếm được) | Life | chuyện nhỏ mà mình cực ghét | 2026-10-10 | lesson |
-| 241 | upsert | upserts, upserted, upserting, an upsert, upsert query | verb (cũng là noun) | IT | thêm mới nếu chưa có, cập nhật nếu đã có | 2026-10-12 | lesson |
-| 242 | reconcile | reconciles, reconciled, reconciling, reconciliation, a reconciliation loop, irreconcilable | verb | IT | đối chiếu rồi sửa chỗ lệch | 2026-10-12 | lesson |
-| 243 | backlog | backlogs, backlogged, backlog item, product backlog, sprint backlog, a backlog of sth | noun (đếm được) | Business | việc tồn đọng chưa làm / danh sách việc chờ xếp ưu tiên | 2026-10-12 | lesson |
-| 244 | addendum | addenda, addendums, an addendum to sth, add, addition, additional | noun (đếm được) | Business | phụ lục hợp đồng | 2026-10-12 | lesson |
-| 245 | stock up | stocks up, stocked up, stocking up, stock up on sth, well-stocked, restock, in stock, out of stock | phrasal verb | Life | mua trữ sẵn | 2026-10-12 | lesson |
+| 236 | upsert | upserts, upserted, upserting, an upsert, upsert query | verb (cũng là noun) | IT | thêm mới nếu chưa có, cập nhật nếu đã có | 2026-10-12 | lesson |
+| 237 | reconcile | reconciles, reconciled, reconciling, reconciliation, a reconciliation loop, irreconcilable | verb | IT | đối chiếu rồi sửa chỗ lệch | 2026-10-12 | lesson |
+| 238 | backlog | backlogs, backlogged, backlog item, product backlog, sprint backlog, a backlog of sth | noun (đếm được) | Business | việc tồn đọng chưa làm / danh sách việc chờ xếp ưu tiên | 2026-10-12 | lesson |
+| 239 | addendum | addenda, addendums, an addendum to sth, add, addition, additional | noun (đếm được) | Business | phụ lục hợp đồng | 2026-10-12 | lesson |
+| 240 | stock up | stocks up, stocked up, stocking up, stock up on sth, well-stocked, restock, in stock, out of stock | phrasal verb | Life | mua trữ sẵn | 2026-10-12 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
