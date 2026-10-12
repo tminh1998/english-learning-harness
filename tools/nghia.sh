@@ -20,6 +20,11 @@
 #   NGHIA  <dòng nghĩa gọn — dòng in đậm trong .vi-quick>
 #   PHU    <dòng phụ — <span class="alt"> trong .vi-quick>
 #   VD     <câu ví dụ #1 trong bài .md, đã bỏ markup>
+#   DICH   <câu dịch của ví dụ #1 — dòng "→" ngay dưới nó trong bài .md>
+#   DNVI   <định nghĩa tiếng Việt — <span class="def-vi"> trong bài .html, bỏ dấu →>
+#
+# Bảng ôn tuần (/on-tap-tuan) chép NGHIA · PHU · VD · DICH · DNVI nguyên văn từ
+# đây — nghĩa Việt của bảng ôn là nghĩa của bài đã học, không dịch lại.
 
 set -e
 . "$(dirname "$0")/openit.sh"
@@ -76,7 +81,10 @@ doc_vi_quick() {
           q = index(con, ">"); if (q > 0) con = substr(con, q + 1)
           r = index(con, "</span"); phu = (r > 0) ? substr(con, 1, r - 1) : con
         }
-        print sach(chinh) "\t" sach(phu)
+        # Định nghĩa tiếng Việt: <span class="def-vi hide-me">→ ...</span>
+        dn = giua(kh[i], "class=\"def-vi", "</span")
+        sub(/^[^>]*>/, "", dn); dn = sach(dn); sub(/^→[[:space:]]*/, "", dn)
+        print sach(chinh) "\t" sach(phu) "\t" dn
         exit
       }
     }
@@ -121,10 +129,12 @@ tra_mot_tu() {
 
   printf 'NGHIA  %s\n' "$(printf '%s' "$vq" | cut -f1)"
   printf 'PHU    %s\n' "$(printf '%s' "$vq" | cut -f2)"
+  dnvi=$(printf '%s' "$vq" | cut -f3)
 
-  # Ví dụ #1 lấy ở bản .md cho gọn (bản HTML có thêm <span class="rev">).
+  # Ví dụ #1 + dòng dịch "→" ngay dưới nó, lấy ở bản .md cho gọn (bản HTML có
+  # thêm <span class="rev">). awk in hai dòng: câu tiếng Anh rồi câu dịch.
   if [ -n "$md" ]; then
-    vd=$(awk -v w="$tu" '
+    vd2=$(awk -v w="$tu" '
       function chuanhoa(s) {
         gsub(/\([^)]*\)/, " ", s); gsub(/[^[:alnum:] -]/, " ", s)
         gsub(/[[:space:]]+/, " ", s); gsub(/^ | $/, "", s)
@@ -137,10 +147,15 @@ tra_mot_tu() {
         inb = (chuanhoa(h) == muc)
       }
       inb && /^[*_]+Ví dụ[*_]+/ { v = 1; next }
-      inb && v && /^- / { sub(/^- /, ""); print; exit }
+      inb && v && da { if ($0 ~ /^[[:space:]]+→/) { sub(/^[[:space:]]+→[[:space:]]*/, ""); print }; exit }
+      inb && v && /^- / { sub(/^- /, ""); print; da = 1 }
     ' "$md" | sed -e 's/\*\*//g' -e 's/[_*]//g')
+    vd=$(printf '%s\n' "$vd2" | sed -n 1p)
+    dich=$(printf '%s\n' "$vd2" | sed -n 2p)
     [ -n "$vd" ] && printf 'VD     %s\n' "$vd"
+    [ -n "$dich" ] && printf 'DICH   %s\n' "$dich"
   fi
+  [ -n "$dnvi" ] && printf 'DNVI   %s\n' "$dnvi"
   echo
 }
 

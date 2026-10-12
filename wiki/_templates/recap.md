@@ -14,14 +14,14 @@
 
 <!--
   ⭐ PHẦN QUAN TRỌNG NHẤT. Nghĩa Việt phải nằm NGAY CỘT KẾ BÊN từ tiếng Anh.
-  Cột nghĩa: in đậm nghĩa gọn 2-6 chữ, rồi gạch ngang + một vế giải thích ngắn
-  chỗ người Việt hay hiểu sai. Đừng chép nguyên đoạn VI dài của bài học sang.
+  Cột nghĩa = **NGHIA** — PHU, chép NGUYÊN VĂN từ `sh tools/nghia.sh` (khối
+  .vi-quick bài gốc). KHÔNG dịch lại, không viết lại cho hay hơn.
   Xếp theo nhóm: IT trước, Business, rồi Life.
 -->
 
 | Từ | Nghĩa tiếng Việt | Nhóm | Cụm hay đi kèm |
 | --- | --- | --- | --- |
-| **<word>** /<ipa>/ (<v/n/phr v>) | **<nghĩa gọn>** — <vế làm rõ chỗ dễ hiểu sai> | <IT/Business/Life> | `<collocation 1>` · `<collocation 2>` |
+| **<word>** /<ipa>/ (<v/n/phr v>) | **<NGHIA>** — <PHU> | <IT/Business/Life> | `<collocation 1>` · `<collocation 2>` |
 
 ## <N> chỗ dễ sai
 
@@ -38,12 +38,13 @@
 ## Chi tiết — mỗi từ một câu thật
 
 <!--
-  ĐÚNG MỘT câu ví dụ mỗi từ, kèm bản dịch. Chọn câu đắt nhất trong bài gốc.
+  ĐÚNG MỘT câu ví dụ mỗi từ = VD + DICH của nghia.sh (ví dụ #1 bài gốc), chép
+  nguyên văn — không chọn câu khác, không tự dịch.
   Bảng ôn dài bằng bài học gốc thì không ai đọc lại.
 -->
 
 1. **<word>** — _<câu tiếng Anh, bọc **from** quanh từ đang ôn>_
-   → <bản dịch tiếng Việt>
+   → <DICH>
 
 ## Tự kiểm tra — <N> câu
 

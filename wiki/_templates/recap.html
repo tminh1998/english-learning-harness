@@ -33,6 +33,8 @@
 
       <!-- ══════ 1. BẢNG TRA NHANH ══════
         ⭐ Phần chính. Nghĩa Việt nằm NGAY CỘT KẾ BÊN từ tiếng Anh.
+        Nghĩa = NGHIA + PHU của `sh tools/nghia.sh` (khối .vi-quick bài gốc),
+        chép NGUYÊN VĂN — KHÔNG dịch lại, không viết lại cho hay hơn.
         `<td class="c-vi hide-me">` — class hide-me là bắt buộc: nó cho nút
         "Chế độ ôn tập" che cột này đi, biến chính bảng thành bài tự kiểm tra.
         `data-cat` trên <tr>: it | biz | life — quyết định màu vạch trái.
@@ -62,8 +64,8 @@
               <span class="ipa">/<ipa>/ · <động từ|danh từ|phrasal verb></span>
             </td>
             <td class="c-vi hide-me">
-              <nghĩa gọn 2-6 chữ>
-              <span class="phu"><vế làm rõ chỗ người Việt hay hiểu sai></span>
+              <NGHIA>
+              <span class="phu"><PHU></span>
             </td>
             <td class="c-cum">
               <code><collocation 1></code><code><collocation 2></code>
@@ -97,7 +99,9 @@
       <!-- ══════ 3. CHI TIẾT ══════
         ĐÚNG MỘT câu ví dụ mỗi từ. Bảng ôn dài bằng bài gốc thì không ai đọc lại.
         Tái dùng nguyên cấu trúc article.word của lesson.html để giao diện đồng nhất.
-        Mọi đoạn tiếng Việt phải có class hide-me.
+        Mọi đoạn tiếng Việt phải có class hide-me, và đều CHÉP từ nghia.sh:
+        vi-quick = NGHIA + PHU · def-vi = DNVI · câu thật = VD + DICH (ví dụ #1).
+        Định nghĩa tiếng Anh chép từ p.def của bài gốc. Không tự dịch chỗ nào.
       -->
 
       <h2>Chi tiết — mỗi từ một câu thật</h2>
@@ -109,17 +113,17 @@
           <span class="ipa">/<ipa>/ <em><part of speech></em></span>
           <button class="say" data-say="<word>">🔊</button>
         </div>
-        <p class="vi-quick hide-me"><nghĩa gọn><span class="alt"><nghĩa phụ></span></p>
+        <p class="vi-quick hide-me"><NGHIA><span class="alt"><PHU></span></p>
         <p class="def">
-          <định nghĩa tiếng Anh>
-          <span class="def-vi hide-me">→ <dịch trọn câu định nghĩa></span>
+          <định nghĩa tiếng Anh — chép từ bài gốc>
+          <span class="def-vi hide-me">→ <DNVI></span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
             <span class="v"
-              ><câu tiếng Anh, bọc <b> quanh từ đang ôn>
-              <span class="hide-me">→ <bản dịch></span></span
+              ><VD — bọc <b> quanh từ đang ôn>
+              <span class="hide-me">→ <DICH></span></span
             >
           </div>
         </div>

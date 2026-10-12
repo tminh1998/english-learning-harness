@@ -57,8 +57,8 @@
               <span class="ipa">/ˈriː.floʊ/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              browser đo và xếp lại cả trang
-              <span class="phu"><b>repaint</b> chỉ vẽ lại màu — reflow là tính lại chỗ, nặng hơn nhiều</span>
+              tính lại bố cục trang / dựng lại layout
+              <span class="phu">đổi một kích thước là browser phải đo lại cả cây DOM rồi xếp lại chỗ — làm nhiều thì trang giật</span>
             </td>
             <td class="c-cum">
               <code>trigger a reflow</code><code>force a synchronous reflow</code>
@@ -74,8 +74,8 @@
               <span class="ipa">/ʃɪm/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              lớp đệm chèn giữa hai bên cho khớp
-              <span class="phu">không sửa bên nào cả, và luôn ngầm hiểu là <b>tạm</b></span>
+              lớp đệm tương thích
+              <span class="phu">mẩu code mỏng chèn vào giữa hai bên cho khớp nhau, không phải sửa bên nào cả</span>
             </td>
             <td class="c-cum">
               <code>write a shim</code><code>a compatibility shim</code>
@@ -91,8 +91,8 @@
               <span class="ipa">/ˈhæp.i pæθ/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              luồng user làm đúng, không lỗi
-              <span class="phu">không phải lời khen — "chỉ test happy path" nghĩa là bài test còn mỏng</span>
+              luồng chạy chuẩn / trường hợp suôn sẻ
+              <span class="phu">user làm đúng như mình nghĩ, không lỗi, không thiếu dữ liệu</span>
             </td>
             <td class="c-cum">
               <code>the happy path</code><code>a happy-path test</code>
@@ -108,8 +108,8 @@
               <span class="ipa">/ˈɔːr.fən/ · động từ</span>
             </td>
             <td class="c-vi hide-me">
-              bỏ lại không ai trỏ tới
-              <span class="phu">cái <b>đích</b> còn mà người trỏ mất — <b>dangling</b> thì ngược lại</span>
+              mồ côi / bị bỏ lại không ai trỏ tới
+              <span class="phu">bản ghi, file, process vẫn còn nằm đó nhưng cái sinh ra nó đã mất — không ai dùng, cũng không ai dọn</span>
             </td>
             <td class="c-cum">
               <code>orphaned records</code><code>an orphaned process</code>
@@ -125,8 +125,8 @@
               <span class="ipa">/ˈpɒliˌfɪl/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              code tự làm lại hàm browser còn thiếu
-              <span class="phu">điền vào chỗ <b>hoàn toàn không có</b> — khác shim, đứng giữa hai bên đã có</span>
+              mã bù tính năng thiếu / vá cho browser cũ
+              <span class="phu">browser cũ chưa có sẵn hàm nào thì nạp thêm một đoạn code tự làm lại đúng hàm đó</span>
             </td>
             <td class="c-cum">
               <code>ship a polyfill</code><code>drop a polyfill</code>
@@ -142,8 +142,8 @@
               <span class="ipa">/ˈtuːmstəʊn/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              dấu "đã xoá" để lại thay bản ghi
-              <span class="phu">dấu nội bộ của hệ thống, compaction mới dọn — <b>soft delete</b> là để người dùng restore</span>
+              bản ghi đánh dấu đã xóa
+              <span class="phu">xoá xong chưa biến mất ngay mà để lại một dấu "đã xoá" — để các node khác thấy mà xoá theo, tới hạn mới dọn hẳn</span>
             </td>
             <td class="c-cum">
               <code>write a tombstone</code><code>too many tombstones</code>
@@ -159,8 +159,8 @@
               <span class="ipa">/ˌwaɪə(r) ˈʌp/ · phrasal verb</span>
             </td>
             <td class="c-vi hide-me">
-              đấu nối cho chạy thật
-              <span class="phu">nối cái đã có cho thông mạch — <b>set up</b> mới là dựng từ đầu</span>
+              đấu nối, tích hợp
+              <span class="phu">gắn phần mới vào đúng chỗ cho chạy được — thêm route, truyền props, bind event — không chỉ nằm đó</span>
             </td>
             <td class="c-cum">
               <code>wire sth up to sth</code><code>get it wired up</code>
@@ -176,8 +176,8 @@
               <span class="ipa">/ˈaʊtbɒks/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              bảng trong DB chờ gửi event
-              <span class="phu">ghi cùng transaction với dữ liệu — không phải hộp thư đi của Outlook</span>
+              bảng chờ gửi event
+              <span class="phu">ghi event vào cùng transaction với dữ liệu, worker gửi lên queue sau — lưu được là gửi được</span>
             </td>
             <td class="c-cum">
               <code>the outbox pattern</code><code>write to the outbox</code>
@@ -193,8 +193,8 @@
               <span class="ipa">/ˈbʌlkhed/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              chia sẵn tài nguyên thành từng phần có hạn
-              <span class="phu">dựng vách <b>trước khi</b> có gì hỏng — circuit breaker mới là ngắt lúc đang hỏng</span>
+              cách ly tài nguyên theo nhóm
+              <span class="phu">mỗi nhóm một pool riêng, một nhóm cạn thì nhóm khác vẫn chạy — chặn hỏng lan ra cả hệ thống</span>
             </td>
             <td class="c-cum">
               <code>a bulkhead between A and B</code><code>the bulkhead pattern</code>
@@ -210,8 +210,8 @@
               <span class="ipa">/ˈɔːdɪt treɪl/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              vết ai làm gì lúc nào, không ai sửa được
-              <span class="phu">để trả lời <b>"ai làm"</b> — khác log, log chỉ để dev debug</span>
+              nhật ký kiểm toán / vết ai làm gì lúc nào
+              <span class="phu">ghi lại từng thay đổi kèm người và thời điểm — chỉ ghi thêm, không sửa, không xoá</span>
             </td>
             <td class="c-cum">
               <code>maintain an audit trail</code><code>a full audit trail</code>
@@ -227,8 +227,8 @@
               <span class="ipa">/ˌʌpˈfrʌnt/ · tính từ + trạng từ</span>
             </td>
             <td class="c-vi hide-me">
-              nói thẳng ngay từ đầu / trả trước
-              <span class="phu">nghĩa "nói thẳng" là <b>lời khen</b> — nghe ra là chủ động báo tin xấu, không phải xin lỗi</span>
+              nói thẳng từ đầu / trả trước
+              <span class="phu">nghĩa 1 là thật thà nói rõ ngay chứ không giấu; nghĩa 2 là tiền trả trước khi làm</span>
             </td>
             <td class="c-cum">
               <code>be upfront about sth</code><code>pay 30% upfront</code>
@@ -244,8 +244,8 @@
               <span class="ipa">/rɪˈteɪ.nər/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              phí đều hằng tháng để giữ sẵn người
-              <span class="phu">khách giữ chỗ <b>người</b> — không phải mua sản phẩm (subscription) hay đặt trước một lần (deposit)</span>
+              hợp đồng trả phí định kỳ
+              <span class="phu">khách trả một khoản đều hằng tháng để giữ sẵn người làm — tháng đó có việc hay không vẫn trả</span>
             </td>
             <td class="c-cum">
               <code>on a retainer</code><code>a monthly retainer</code>
@@ -262,7 +262,7 @@
             </td>
             <td class="c-vi hide-me">
               điều khoản in chữ nhỏ
-              <span class="phu">chỗ giấu giới hạn, phụ phí, ngoại lệ — <b>fine</b> ở đây là nhỏ mảnh, không phải đẹp</span>
+              <span class="phu">chỗ ghi giới hạn, phụ phí, ngoại lệ — đọc kỹ chỗ đó mới biết mình đang hứa cái gì</span>
             </td>
             <td class="c-cum">
               <code>read the fine print</code><code>buried in the fine print</code>
@@ -278,8 +278,8 @@
               <span class="ipa">/ræˈpɔːr/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              sự ăn ý, tin được nhau
-              <span class="phu">họ thoải mái với <b>mình</b> — buy-in mới là họ đồng ý với <b>việc</b> mình làm</span>
+              quan hệ tin cậy / sự ăn ý
+              <span class="phu">nói chuyện thấy hợp, tin được nhau — có cái này thì email khó mấy cũng gửi được</span>
             </td>
             <td class="c-cum">
               <code>build rapport with sb</code><code>establish rapport</code>
@@ -295,8 +295,8 @@
               <span class="ipa">/ˈkeɪdəns/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              bao lâu làm lại một lần
-              <span class="phu">nhịp <b>đều đặn</b> đã chốt — còn deadline là <b>ngày nào</b></span>
+              nhịp đều đặn / tần suất lặp lại
+              <span class="phu">bao lâu làm lại một lần — họp, release, báo cáo… theo một nhịp đã chốt</span>
             </td>
             <td class="c-cum">
               <code>a weekly cadence</code><code>release cadence</code>
@@ -312,8 +312,8 @@
               <span class="ipa">/ˈblɒkə(r)/ · danh từ</span>
             </td>
             <td class="c-vi hide-me">
-              thứ chặn đường, gỡ xong mới đi tiếp
-              <span class="phu">là <b>việc hoặc vấn đề</b>, không phải người</span>
+              vướng mắc / thứ chặn đường
+              <span class="phu">cái làm mình không đi tiếp được, phải gỡ xong mới làm tiếp</span>
             </td>
             <td class="c-cum">
               <code>any blockers?</code><code>I'm blocked on sth</code>
@@ -329,8 +329,8 @@
               <span class="ipa">/ˌpʊt ə ˈpɪn ɪn ɪt/ · idiom</span>
             </td>
             <td class="c-vi hide-me">
-              tạm gác lại, chắc chắn bàn sau
-              <span class="phu">không bỏ — dẹp hẳn mới là <b>off the table</b></span>
+              tạm gác lại, bàn sau
+              <span class="phu">đánh dấu chuyện này để quay lại — không bỏ, chỉ là chưa bàn bây giờ</span>
             </td>
             <td class="c-cum">
               <code>let's put a pin in that</code><code>put a pin in sth for now</code>
@@ -346,8 +346,8 @@
               <span class="ipa">/ˌɡɪv ɔː ˈteɪk/ · idiom</span>
             </td>
             <td class="c-vi hide-me">
-              khoảng đó, hơn kém chút
-              <span class="phu"><b>đã có số rồi</b>, chỉ nới hai đầu — chưa có số chắc mới là ballpark</span>
+              xấp xỉ, khoảng chừng, cộng trừ không đáng kể
+              <span class="phu">dán ngay sau con số để nói "khoảng đó, hơn kém một chút" — đưa ra số mà vẫn chừa đường lùi</span>
             </td>
             <td class="c-cum">
               <code>three weeks, give or take</code><code>give or take a day</code>
@@ -363,8 +363,8 @@
               <span class="ipa">/ˌrʌbə ˈstæmp/ · động từ</span>
             </td>
             <td class="c-vi hide-me">
-              nhìn qua rồi gật cho đủ thủ tục
-              <span class="phu">luôn là <b>lời phê</b> — duyệt đàng hoàng thì nói sign off</span>
+              duyệt cho có lệ
+              <span class="phu">nhìn qua rồi gật — chữ ký chỉ để đủ thủ tục, không ai đọc kỹ</span>
             </td>
             <td class="c-cum">
               <code>rubber-stamp a PR</code><code>just a rubber stamp</code>
@@ -381,7 +381,7 @@
             </td>
             <td class="c-vi hide-me">
               tới đâu tính đó
-              <span class="phu">nghe ra là <b>bên mình linh động</b>, không phải chưa chuẩn bị — nhưng đừng dùng cho ngày go-live hay giá</span>
+              <span class="phu">không chốt trước kịch bản, nhìn tình hình rồi xoay</span>
             </td>
             <td class="c-cum">
               <code>let's play it by ear</code><code>play sth by ear</code>
@@ -397,8 +397,8 @@
               <span class="ipa">/ˌtæɡ əˈlɒŋ/ · phrasal verb</span>
             </td>
             <td class="c-vi hide-me">
-              nhập vào nhóm người ta đang đi
-              <span class="phu">mình là người theo ké, giọng suồng sã — với khách thì nói <b>join</b></span>
+              đi theo cho vui
+              <span class="phu">nhập vào nhóm người ta đang đi đâu đó, không phải việc của mình nhưng được cho theo</span>
             </td>
             <td class="c-cum">
               <code>tag along with sb</code><code>mind if I tag along?</code>
@@ -414,8 +414,8 @@
               <span class="ipa">/ʌnˈplʌɡ/ · động từ</span>
             </td>
             <td class="c-vi hide-me">
-              cất máy, rời màn hình một hai hôm
-              <span class="phu">không phải nghỉ phép dài — <b>log off</b> chỉ là thoát ra, hết giờ lại vào</span>
+              ngắt kết nối, nghỉ hẳn
+              <span class="phu">cất máy, tắt thông báo một hai hôm cho đầu nhẹ ra — không phải nghỉ phép dài, chỉ là rời màn hình</span>
             </td>
             <td class="c-cum">
               <code>unplug from work</code><code>unplug and recharge</code>
@@ -431,8 +431,8 @@
               <span class="ipa">/tʃɔːz/ · danh từ (hay dùng số nhiều)</span>
             </td>
             <td class="c-vi hide-me">
-              việc nhà lặp đi lặp lại
-              <span class="phu">việc <b>ở trong nhà</b> — ra ngoài làm lặt vặt mới là run errands</span>
+              việc nhà
+              <span class="phu">quét nhà, rửa bát, giặt đồ — mấy việc lặp đi lặp lại, chẳng ai thích nhưng vẫn phải làm</span>
             </td>
             <td class="c-cum">
               <code>do the chores</code><code>household chores</code>
@@ -449,7 +449,7 @@
             </td>
             <td class="c-vi hide-me">
               thích ăn đồ ngọt
-              <span class="phu">luôn nói <b>have</b> a sweet tooth — và đừng dịch sát thành "răng ngọt"</span>
+              <span class="phu">thấy bánh kẹo là khó chối — tiếng Anh luôn nói dạng "có": I have a sweet tooth</span>
             </td>
             <td class="c-cum">
               <code>have a sweet tooth</code><code>a serious sweet tooth</code>
@@ -465,8 +465,8 @@
               <span class="ipa">/ˌriːˈtʃɑːdʒ/ · động từ</span>
             </td>
             <td class="c-vi hide-me">
-              nghỉ cho lại sức
-              <span class="phu">nhấn vào <b>kết quả</b>: nghỉ xong là đủ sức làm tiếp — khác unplug (cắt hẳn)</span>
+              nạp lại năng lượng
+              <span class="phu">nghỉ cho lại sức sau đợt căng — nghĩa gốc là sạc pin</span>
             </td>
             <td class="c-cum">
               <code>recharge your batteries</code><code>take a break to recharge</code>
@@ -708,26 +708,16 @@
           <span class="ipa">/ˈriː.floʊ/ <em>noun</em></span>
           <button class="say" data-say="reflow">🔊</button>
         </div>
-        <p class="vi-quick hide-me">browser đo và xếp lại cả trang<span class="alt">nặng hơn repaint nhiều</span></p>
+        <p class="vi-quick hide-me">tính lại bố cục trang / dựng lại layout<span class="alt">đổi một kích thước là browser phải đo lại cả cây DOM rồi xếp lại chỗ — làm nhiều thì trang giật</span></p>
         <p class="def">
-          The work the browser does to measure the page and lay everything out again
-          after something changes an element's size or position.
-          <span class="def-vi hide-me"
-            >→ Việc browser phải làm để đo lại trang rồi xếp lại toàn bộ bố cục, sau khi
-            có gì đó đổi kích thước hay vị trí của một element.</span
-          >
+          A reflow is the work the browser does to measure the page and lay everything out again after something changes an element's size or position.
+          <span class="def-vi hide-me">→ Reflow là phần việc browser phải làm để đo lại trang và xếp lại chỗ cho mọi thứ, sau khi có cái gì đó làm đổi kích thước hay vị trí của một element.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >The culprit wasn't the API at all — reading <code>offsetHeight</code>
-              inside the loop forced a synchronous <b>reflow</b> on every row.
-              <span class="hide-me"
-                >→ Thủ phạm chẳng phải API: đọc <code>offsetHeight</code> ngay trong
-                vòng lặp làm browser phải tính lại bố cục ở từng dòng.</span
-              ></span
-            >
+            <span class="v">We throttle the resize handler, otherwise dragging the window edge triggers a <b>reflow</b> on every single pixel.
+              <span class="hide-me">→ Bọn mình bóp cái resize handler lại cho chạy thưa ra, không thì kéo mép cửa sổ một cái là trang phải dựng lại layout theo từng pixel.</span></span>
           </div>
         </div>
       </article>
@@ -739,26 +729,16 @@
           <span class="ipa">/ʃɪm/ <em>noun</em></span>
           <button class="say" data-say="shim">🔊</button>
         </div>
-        <p class="vi-quick hide-me">lớp đệm tương thích<span class="alt">chèn giữa hai bên cho khớp</span></p>
+        <p class="vi-quick hide-me">lớp đệm tương thích<span class="alt">mẩu code mỏng chèn vào giữa hai bên cho khớp nhau, không phải sửa bên nào cả</span></p>
         <p class="def">
-          A thin piece of code you put between two parts of a system so an old interface
-          still fits a new one, without changing either side.
-          <span class="def-vi hide-me"
-            >→ Mẩu code mỏng chèn vào giữa hai phần của hệ thống để interface cũ vẫn
-            khớp với cái mới, không phải sửa bên nào cả.</span
-          >
+          A shim is a thin piece of code you put between two parts of a system so an old interface still fits a new one, without changing either side.
+          <span class="def-vi hide-me">→ Shim là một mẩu code mỏng mình đặt vào giữa hai phần của hệ thống, để interface cũ vẫn khớp được với cái mới mà không phải sửa bên nào.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >A twenty-line <b>shim</b> keeps the old v1 payload shape backward
-              compatible, so none of the mobile clients have to ship an update.
-              <span class="hide-me"
-                >→ Một lớp đệm hai mươi dòng là bản mới vẫn chạy được với payload kiểu
-                v1, mấy client mobile khỏi phải ra bản cập nhật.</span
-              ></span
-            >
+            <span class="v">A twenty-line <b>shim</b> keeps the old v1 payload shape backward compatible, so none of the mobile clients have to ship an update.
+              <span class="hide-me">→ Một lớp đệm hai mươi dòng là bản mới vẫn chạy được với payload kiểu v1, mấy client mobile khỏi phải ra bản cập nhật.</span></span>
           </div>
         </div>
       </article>
@@ -770,26 +750,16 @@
           <span class="ipa">/ˈhæp.i pæθ/ <em>noun</em></span>
           <button class="say" data-say="the happy path">🔊</button>
         </div>
-        <p class="vi-quick hide-me">luồng chạy suôn sẻ<span class="alt">user làm đúng, không lỗi</span></p>
+        <p class="vi-quick hide-me">luồng chạy chuẩn / trường hợp suôn sẻ<span class="alt">user làm đúng như mình nghĩ, không lỗi, không thiếu dữ liệu</span></p>
         <p class="def">
-          The route through a feature where the user does everything the expected way and
-          nothing goes wrong.
-          <span class="def-vi hide-me"
-            >→ Đường đi qua một tính năng khi user làm đúng hệt như mình nghĩ và không
-            có gì sai cả.</span
-          >
+          The happy path is the route through a feature where the user does everything the expected way and nothing goes wrong.
+          <span class="def-vi hide-me">→ Happy path là đường đi qua một tính năng khi user làm đúng mọi thứ theo cách mình trông đợi và không có gì sai sót.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >The <b>happy path</b> works fine; it's the edge case where the token
-              expires mid-upload that still fails.
-              <span class="hide-me"
-                >→ Luồng chuẩn thì chạy ngon; chỗ còn hỏng là cái trường hợp hiếm kia:
-                token hết hạn ngay giữa lúc đang upload.</span
-              ></span
-            >
+            <span class="v">The <b>happy path</b> works fine; it's the edge case where the token expires mid-upload that still fails.
+              <span class="hide-me">→ Luồng chuẩn thì chạy ngon; chỗ còn hỏng là cái trường hợp hiếm kia: token hết hạn ngay giữa lúc đang upload.</span></span>
           </div>
         </div>
       </article>
@@ -801,26 +771,16 @@
           <span class="ipa">/ˈɔːr.fən/ <em>verb</em></span>
           <button class="say" data-say="orphaned records">🔊</button>
         </div>
-        <p class="vi-quick hide-me">bỏ lại không ai trỏ tới<span class="alt">mồ côi, không ai dọn</span></p>
+        <p class="vi-quick hide-me">mồ côi / bị bỏ lại không ai trỏ tới<span class="alt">bản ghi, file, process vẫn còn nằm đó nhưng cái sinh ra nó đã mất — không ai dùng, cũng không ai dọn</span></p>
         <p class="def">
-          To leave something behind with nothing pointing to it any more, so nobody owns
-          it and nothing cleans it up.
-          <span class="def-vi hide-me"
-            >→ Bỏ lại một thứ mà không còn gì trỏ tới nó nữa, nên không ai dùng, cũng
-            không ai dọn.</span
-          >
+          To orphan something is to leave it behind with nothing pointing to it any more, so nobody owns it and nothing cleans it up.
+          <span class="def-vi hide-me">→ Orphan một thứ gì là bỏ nó lại mà không còn cái gì trỏ tới nó nữa, nên không ai sở hữu nó và cũng không có gì dọn nó đi.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Deleting the parent row without a cascade left twelve thousand
-              <b>orphaned</b> records, which is why the nightly snapshot doubled in size.
-              <span class="hide-me"
-                >→ Xoá dòng cha mà không cascade nên còn lại mười hai nghìn bản ghi mồ
-                côi — thế nên cái snapshot chạy đêm phình lên gấp đôi.</span
-              ></span
-            >
+            <span class="v">Deleting the parent row without a cascade left twelve thousand <b>orphaned</b> records, which is why the nightly snapshot doubled in size.
+              <span class="hide-me">→ Xoá dòng cha mà không cascade nên còn lại mười hai nghìn bản ghi mồ côi — thế nên cái snapshot chạy đêm phình lên gấp đôi.</span></span>
           </div>
         </div>
       </article>
@@ -832,26 +792,16 @@
           <span class="ipa">/ˈpɒliˌfɪl/ <em>noun</em></span>
           <button class="say" data-say="polyfill">🔊</button>
         </div>
-        <p class="vi-quick hide-me">mã bù tính năng thiếu<span class="alt">điền vào chỗ hoàn toàn không có</span></p>
+        <p class="vi-quick hide-me">mã bù tính năng thiếu / vá cho browser cũ<span class="alt">browser cũ chưa có sẵn hàm nào thì nạp thêm một đoạn code tự làm lại đúng hàm đó</span></p>
         <p class="def">
-          A piece of code that adds a feature an older browser does not have, so the rest
-          of your code can use that feature as if it were built in.
-          <span class="def-vi hide-me"
-            >→ Một đoạn code thêm vào tính năng mà browser cũ chưa có, để phần code còn
-            lại dùng được như thể nó có sẵn.</span
-          >
+          A piece of code that adds a feature an older browser does not have, so the rest of your code can use that feature as if it were built in.
+          <span class="def-vi hide-me">→ Một đoạn code thêm vào một tính năng mà browser cũ không có, để phần code còn lại cứ dùng tính năng đó như thể nó có sẵn.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Dropping that <b>polyfill</b> cut 14 KB off the bundle, which is the
-              cheapest win we've had on latency all month.
-              <span class="hide-me"
-                >→ Bỏ cái polyfill đó đi là bundle nhẹ được 14 KB — cả tháng nay bọn
-                mình chưa có cách nào giảm latency rẻ như thế.</span
-              ></span
-            >
+            <span class="v">We ship a polyfill for <code>Intl.DateTimeFormat</code> so the invoice dates stay backward compatible with the two Android browsers your team still uses.
+              <span class="hide-me">→ Bên em nạp thêm một polyfill cho <code>Intl.DateTimeFormat</code> để ngày trên hóa đơn vẫn backward compatible với hai browser Android mà team anh/chị còn dùng ạ.</span></span>
           </div>
         </div>
       </article>
@@ -863,26 +813,16 @@
           <span class="ipa">/ˈtuːmstəʊn/ <em>noun</em></span>
           <button class="say" data-say="tombstone">🔊</button>
         </div>
-        <p class="vi-quick hide-me">dấu đánh dấu đã xoá<span class="alt">compaction mới dọn hẳn</span></p>
+        <p class="vi-quick hide-me">bản ghi đánh dấu đã xóa<span class="alt">xoá xong chưa biến mất ngay mà để lại một dấu "đã xoá" — để các node khác thấy mà xoá theo, tới hạn mới dọn hẳn</span></p>
         <p class="def">
-          A marker written in place of a deleted record, so that other replicas and later
-          processes know the record was deleted, not just missing.
-          <span class="def-vi hide-me"
-            >→ Một dấu ghi vào chỗ bản ghi đã xoá, để các replica khác và các tiến trình
-            sau biết là nó bị xoá, chứ không phải thiếu.</span
-          >
+          A marker written in place of a deleted record, so that other replicas and later processes know the record was deleted, not just missing. The marker itself is cleaned up later, during compaction.
+          <span class="def-vi hide-me">→ Một dấu ghi vào chỗ bản ghi vừa bị xoá, để các replica khác và các tiến trình chạy sau biết là bản ghi đã bị xoá chứ không phải bị thiếu. Chính cái dấu đó về sau cũng bị dọn, lúc compaction.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Cassandra doesn't erase the row right away — it writes a <b>tombstone</b>,
-              and the real purge only happens at compaction, ten days later.
-              <span class="hide-me"
-                >→ Cassandra không xoá dòng đó ngay đâu — nó ghi một tombstone, còn purge
-                thật thì phải đợi tới lúc compaction, mười ngày sau.</span
-              ></span
-            >
+            <span class="v">Cassandra doesn't erase the row right away — it writes a tombstone, and the real purge only happens at compaction, ten days later.
+              <span class="hide-me">→ Cassandra không xoá dòng đó ngay đâu — nó ghi một tombstone, còn purge thật thì phải đợi tới lúc compaction, mười ngày sau.</span></span>
           </div>
         </div>
       </article>
@@ -894,26 +834,16 @@
           <span class="ipa">/ˌwaɪə(r) ˈʌp/ <em>phrasal verb</em></span>
           <button class="say" data-say="wire it up to the API">🔊</button>
         </div>
-        <p class="vi-quick hide-me">đấu nối, tích hợp<span class="alt">nối cho thông mạch cái đã có</span></p>
+        <p class="vi-quick hide-me">đấu nối, tích hợp<span class="alt">gắn phần mới vào đúng chỗ cho chạy được — thêm route, truyền props, bind event — không chỉ nằm đó</span></p>
         <p class="def">
-          To connect a piece of code to the rest of the system — a route, a handler, an
-          event — so that it actually runs instead of just sitting there.
-          <span class="def-vi hide-me"
-            >→ Nối một mẩu code vào phần còn lại của hệ thống — route, handler, event —
-            để nó chạy thật chứ không nằm đó không.</span
-          >
+          To connect a piece of code to the rest of the system — a route, a handler, an event, a service — so that it actually runs instead of just sitting there.
+          <span class="def-vi hide-me">→ Đấu nối một đoạn code vào phần còn lại của hệ thống — một route, một handler, một event, một service — để nó chạy thật chứ không chỉ nằm đó.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >The component is finished, but nothing is <b>wired up</b> to the API yet,
-              so the missing key is still a blocker for me.
-              <span class="hide-me"
-                >→ Component thì xong rồi, nhưng chưa đấu nối gì vào API cả, nên thiếu
-                cái key đó vẫn đang là vướng mắc của mình.</span
-              ></span
-            >
+            <span class="v">The component is finished, but nothing is wired up to the API yet, so the missing key is still a blocker for me.
+              <span class="hide-me">→ Component thì xong rồi, nhưng chưa đấu nối gì vào API cả, nên thiếu cái key đó vẫn đang là vướng mắc của mình.</span></span>
           </div>
         </div>
       </article>
@@ -925,27 +855,16 @@
           <span class="ipa">/ˈaʊtbɒks/ <em>noun</em></span>
           <button class="say" data-say="the outbox pattern">🔊</button>
         </div>
-        <p class="vi-quick hide-me">bảng chờ gửi event<span class="alt">lưu được là gửi được</span></p>
+        <p class="vi-quick hide-me">bảng chờ gửi event<span class="alt">ghi event vào cùng transaction với dữ liệu, worker gửi lên queue sau — lưu được là gửi được</span></p>
         <p class="def">
-          A table where a service writes the events it needs to publish, in the same
-          transaction as the data change, so a separate worker can send them to the queue
-          later and nothing gets lost.
-          <span class="def-vi hide-me"
-            >→ Một bảng để service ghi những event cần gửi, ghi cùng transaction với
-            thay đổi dữ liệu, để một worker riêng gửi lên queue sau mà không mất gì.</span
-          >
+          A table where a service writes the events it needs to publish, in the same transaction as the data change, so that a separate worker can send them to the queue later and nothing gets lost.
+          <span class="def-vi hide-me">→ Một bảng mà service ghi các event cần gửi đi vào đó, chung transaction với lần sửa dữ liệu, để một worker riêng gửi chúng lên queue sau và không mất cái nào.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >If the broker goes down, events just wait in the <b>outbox</b>, and the
-              downstream services catch up once it's back.
-              <span class="hide-me"
-                >→ Broker có sập thì event cứ nằm chờ trong outbox, lên lại là mấy
-                service phía sau tự đuổi kịp.</span
-              ></span
-            >
+            <span class="v">The relay may send an outbox row twice, so every consumer has to be idempotent.
+              <span class="hide-me">→ Worker đọc outbox có thể gửi một dòng hai lần, nên consumer nào cũng phải idempotent — nhận hai lần vẫn ra y nguyên.</span></span>
           </div>
         </div>
       </article>
@@ -957,28 +876,16 @@
           <span class="ipa">/ˈbʌlkhed/ <em>noun</em></span>
           <button class="say" data-say="bulkhead">🔊</button>
         </div>
-        <p class="vi-quick hide-me">cách ly tài nguyên theo nhóm<span class="alt">chia sẵn hạn mức từ đầu</span></p>
+        <p class="vi-quick hide-me">cách ly tài nguyên theo nhóm<span class="alt">mỗi nhóm một pool riêng, một nhóm cạn thì nhóm khác vẫn chạy — chặn hỏng lan ra cả hệ thống</span></p>
         <p class="def">
-          A boundary that gives each part of a system its own limited share of resources,
-          so that one part failing or filling up cannot drag the rest down with it.
-          <span class="def-vi hide-me"
-            >→ Một vách chia cho mỗi phần của hệ thống một phần tài nguyên có hạn riêng,
-            để một phần hỏng hay cạn thì không kéo cả phần còn lại xuống theo.</span
-          >
+          A boundary that gives each part of a system its own limited share of resources, so that one part failing or filling up cannot drag the rest down with it.
+          <span class="def-vi hide-me">→ Một ranh giới chia cho mỗi phần của hệ thống một phần tài nguyên riêng, có hạn, để một phần hỏng hay đầy ứ cũng không kéo sập phần còn lại theo nó.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Give the PDF exporter its own thread pool as a <b>bulkhead</b> — then a
-              slow vendor API keeps the blast radius to one feature instead of the whole
-              app.
-              <span class="hide-me"
-                >→ Cho phần export PDF một thread pool riêng để cách ly — vendor API có
-                chậm thì phạm vi ảnh hưởng cũng chỉ gói trong một tính năng, không lan ra
-                cả app.</span
-              ></span
-            >
+            <span class="v">Give the PDF exporter its own thread pool as a <b>bulkhead</b> — then a slow vendor API keeps the blast radius to one feature instead of the whole app.
+              <span class="hide-me">→ Cho phần export PDF một thread pool riêng để cách ly — vendor API có chậm thì phạm vi ảnh hưởng cũng chỉ gói trong một tính năng, không lan ra cả app.</span></span>
           </div>
         </div>
       </article>
@@ -990,26 +897,16 @@
           <span class="ipa">/ˈɔːdɪt treɪl/ <em>noun</em></span>
           <button class="say" data-say="an audit trail">🔊</button>
         </div>
-        <p class="vi-quick hide-me">nhật ký ai làm gì lúc nào<span class="alt">chỉ ghi thêm, không ai sửa</span></p>
+        <p class="vi-quick hide-me">nhật ký kiểm toán / vết ai làm gì lúc nào<span class="alt">ghi lại từng thay đổi kèm người và thời điểm — chỉ ghi thêm, không sửa, không xoá</span></p>
         <p class="def">
-          A permanent record of who did what, and when, kept so that any change can be
-          traced back afterwards.
-          <span class="def-vi hide-me"
-            >→ Một bản ghi giữ vĩnh viễn về ai làm gì, lúc nào, để sau này lần lại được
-            mọi thay đổi.</span
-          >
+          A permanent record of who did what, and when, kept so that any change can be traced back afterwards.
+          <span class="def-vi hide-me">→ Một bản ghi lưu lâu dài về việc ai đã làm gì, vào lúc nào, giữ lại để sau này truy lại được mọi thay đổi.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Every permission change goes into an append-only table, so the
-              <b>audit trail</b> stays immutable even for admins.
-              <span class="hide-me"
-                >→ Mỗi lần đổi quyền đều ghi vào một bảng chỉ thêm dòng, nên nhật ký kiểm
-                toán không ai sửa được, kể cả admin.</span
-              ></span
-            >
+            <span class="v">Every permission change goes into an append-only table, so the <b>audit trail</b> stays immutable even for admins.
+              <span class="hide-me">→ Mỗi lần đổi quyền đều ghi vào một bảng chỉ thêm dòng, nên nhật ký kiểm toán không ai sửa được, kể cả admin.</span></span>
           </div>
         </div>
       </article>
@@ -1021,26 +918,16 @@
           <span class="ipa">/ˌʌpˈfrʌnt/ <em>adjective + adverb</em></span>
           <button class="say" data-say="be upfront about it">🔊</button>
         </div>
-        <p class="vi-quick hide-me">nói thẳng từ đầu / trả trước<span class="alt">một chữ hai nghĩa</span></p>
+        <p class="vi-quick hide-me">nói thẳng từ đầu / trả trước<span class="alt">nghĩa 1 là thật thà nói rõ ngay chứ không giấu; nghĩa 2 là tiền trả trước khi làm</span></p>
         <p class="def">
-          If you are upfront about something you say it honestly and early instead of
-          hiding it; money paid upfront is paid before the work starts.
-          <span class="def-vi hide-me"
-            >→ Nói thẳng và nói sớm chứ không giấu; còn tiền trả upfront là trả trước
-            khi bắt đầu làm.</span
-          >
+          If you are upfront about something you say it honestly and early instead of hiding it; money paid upfront is paid before the work starts.
+          <span class="def-vi hide-me">→ Upfront về chuyện gì là nói thật và nói sớm chứ không giấu đi; còn tiền trả upfront là tiền trả trước khi bắt đầu làm.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >I'd rather be <b>upfront</b> about this: we can hit the 20th, but only
-              with a two-day buffer on the test data.
-              <span class="hide-me"
-                >→ Em xin nói thẳng luôn ạ: bên em kịp ngày 20, nhưng phải chừa dư hai
-                ngày cho dữ liệu test.</span
-              ></span
-            >
+            <span class="v">I'd rather be <b>upfront</b> about this: we can hit the 20th, but only with a two-day buffer on the test data.
+              <span class="hide-me">→ Em xin nói thẳng luôn ạ: bên em kịp ngày 20, nhưng phải chừa dư hai ngày cho dữ liệu test.</span></span>
           </div>
         </div>
       </article>
@@ -1052,26 +939,16 @@
           <span class="ipa">/rɪˈteɪ.nər/ <em>noun</em></span>
           <button class="say" data-say="on a monthly retainer">🔊</button>
         </div>
-        <p class="vi-quick hide-me">hợp đồng trả phí định kỳ<span class="alt">khách giữ chỗ người</span></p>
+        <p class="vi-quick hide-me">hợp đồng trả phí định kỳ<span class="alt">khách trả một khoản đều hằng tháng để giữ sẵn người làm — tháng đó có việc hay không vẫn trả</span></p>
         <p class="def">
-          A fixed fee a client pays regularly, usually every month, to keep your time
-          reserved for them whether or not there is work that month.
-          <span class="def-vi hide-me"
-            >→ Một khoản phí cố định khách trả đều, thường là hằng tháng, để giữ sẵn
-            thời gian của mình cho họ — tháng đó có việc hay không vẫn trả.</span
-          >
+          A retainer is a fixed fee a client pays regularly, usually every month, to keep your time reserved for them whether or not there is work that month.
+          <span class="def-vi hide-me">→ Retainer là một khoản phí cố định khách trả đều đặn, thường là hằng tháng, để giữ chỗ thời gian của mình cho họ — bất kể tháng đó có việc hay không.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Putting us on a monthly <b>retainer</b> means you always have some of our
-              bandwidth reserved, even in a quiet month.
-              <span class="hide-me"
-                >→ Ký hợp đồng trả phí định kỳ hằng tháng thì anh chị luôn giữ sẵn được
-                một phần băng thông của bên em, kể cả tháng ít việc ạ.</span
-              ></span
-            >
+            <span class="v">Putting us on a monthly <b>retainer</b> means you always have some of our bandwidth reserved, even in a quiet month.
+              <span class="hide-me">→ Ký hợp đồng trả phí định kỳ hằng tháng thì anh chị luôn giữ sẵn được một phần băng thông của bên em, kể cả tháng ít việc ạ.</span></span>
           </div>
         </div>
       </article>
@@ -1083,25 +960,16 @@
           <span class="ipa">/ˌfaɪn ˈprɪnt/ <em>noun</em></span>
           <button class="say" data-say="read the fine print">🔊</button>
         </div>
-        <p class="vi-quick hide-me">điều khoản in chữ nhỏ<span class="alt">chỗ giấu giới hạn và phụ phí</span></p>
+        <p class="vi-quick hide-me">điều khoản in chữ nhỏ<span class="alt">chỗ ghi giới hạn, phụ phí, ngoại lệ — đọc kỹ chỗ đó mới biết mình đang hứa cái gì</span></p>
         <p class="def">
-          The part of a contract written in small type, where the limits, the fees and
-          the exceptions are hidden.
-          <span class="def-vi hide-me"
-            >→ Phần hợp đồng in chữ nhỏ, chỗ giấu các giới hạn, phụ phí và ngoại lệ.</span
-          >
+          The fine print is the part of a contract written in small type, where the limits, the fees and the exceptions are hidden.
+          <span class="def-vi hide-me">→ Fine print là phần hợp đồng được in bằng cỡ chữ nhỏ, chỗ mà các giới hạn, các khoản phí và các ngoại lệ được giấu vào.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Before you sign off on the agreement, please read the <b>fine print</b> on
-              clause 7 — it caps our support hours at twenty a month.
-              <span class="hide-me"
-                >→ Trước khi anh duyệt hợp đồng, anh đọc kỹ phần chữ nhỏ ở điều 7 giúp em
-                ạ — chỗ đó chốt số giờ support là hai mươi giờ một tháng.</span
-              ></span
-            >
+            <span class="v">Before you sign off on the agreement, please read the <b>fine print</b> on clause 7 — it caps our support hours at twenty a month.
+              <span class="hide-me">→ Trước khi anh duyệt hợp đồng, anh đọc kỹ phần chữ nhỏ ở điều 7 giúp em ạ — chỗ đó chốt số giờ support là hai mươi giờ một tháng.</span></span>
           </div>
         </div>
       </article>
@@ -1113,26 +981,16 @@
           <span class="ipa">/ræˈpɔːr/ <em>noun</em></span>
           <button class="say" data-say="build rapport">🔊</button>
         </div>
-        <p class="vi-quick hide-me">quan hệ tin cậy, sự ăn ý<span class="alt">họ thoải mái với mình</span></p>
+        <p class="vi-quick hide-me">quan hệ tin cậy / sự ăn ý<span class="alt">nói chuyện thấy hợp, tin được nhau — có cái này thì email khó mấy cũng gửi được</span></p>
         <p class="def">
-          The easy, trusting feeling between two people that makes working together
-          smooth.
-          <span class="def-vi hide-me"
-            >→ Cái cảm giác thoải mái, tin được nhau giữa hai người, nhờ đó làm việc với
-            nhau trôi chảy.</span
-          >
+          Rapport is the easy, trusting feeling between two people that makes working together smooth.
+          <span class="def-vi hide-me">→ Rapport là cái cảm giác thoải mái và tin nhau giữa hai người, nhờ nó mà làm việc cùng nhau trôi chảy.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Five minutes of small talk at the start of every call is how we built
-              <b>rapport</b> with their product owner.
-              <span class="hide-me"
-                >→ Mỗi buổi gọi mở đầu bằng năm phút chuyện phiếm — nhờ vậy bọn mình mới
-                ăn ý được với bên product owner của họ.</span
-              ></span
-            >
+            <span class="v">Five minutes of small talk at the start of every call is how we built <b>rapport</b> with their product owner.
+              <span class="hide-me">→ Mỗi buổi gọi mở đầu bằng năm phút chuyện phiếm — nhờ vậy bọn mình mới ăn ý được với bên product owner của họ.</span></span>
           </div>
         </div>
       </article>
@@ -1144,26 +1002,16 @@
           <span class="ipa">/ˈkeɪdəns/ <em>noun</em></span>
           <button class="say" data-say="a weekly cadence">🔊</button>
         </div>
-        <p class="vi-quick hide-me">nhịp đều đặn<span class="alt">bao lâu làm lại một lần</span></p>
+        <p class="vi-quick hide-me">nhịp đều đặn / tần suất lặp lại<span class="alt">bao lâu làm lại một lần — họp, release, báo cáo… theo một nhịp đã chốt</span></p>
         <p class="def">
-          The regular rhythm at which something repeats, such as how often a team meets,
-          reports, or ships.
-          <span class="def-vi hide-me"
-            >→ Nhịp đều đặn mà một việc lặp lại — kiểu bao lâu thì team họp, báo cáo, hay
-            release một lần.</span
-          >
+          The regular rhythm at which something repeats, such as how often a team meets, reports, or ships.
+          <span class="def-vi hide-me">→ Nhịp đều mà một việc gì đó lặp lại, ví dụ nhóm họp, báo cáo hay release bao lâu một lần.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Would a fortnightly <b>cadence</b> work better for you than weekly? We'd
-              still touch base on Slack in between if anything comes up.
-              <span class="hide-me"
-                >→ Nhịp hai tuần một lần có tiện cho anh/chị hơn hằng tuần không ạ? Giữa
-                hai buổi bên em vẫn touch base qua Slack nếu có gì phát sinh.</span
-              ></span
-            >
+            <span class="v">Would a fortnightly cadence work better for you than weekly? We'd still touch base on Slack in between if anything comes up.
+              <span class="hide-me">→ Nhịp hai tuần một lần có tiện cho anh/chị hơn hằng tuần không ạ? Giữa hai buổi bên em vẫn touch base qua Slack nếu có gì phát sinh.</span></span>
           </div>
         </div>
       </article>
@@ -1175,24 +1023,16 @@
           <span class="ipa">/ˈblɒkə(r)/ <em>noun</em></span>
           <button class="say" data-say="any blockers">🔊</button>
         </div>
-        <p class="vi-quick hide-me">vướng mắc chặn đường<span class="alt">là việc, không phải người</span></p>
+        <p class="vi-quick hide-me">vướng mắc / thứ chặn đường<span class="alt">cái làm mình không đi tiếp được, phải gỡ xong mới làm tiếp</span></p>
         <p class="def">
           Something that stops work from moving forward until it is resolved.
-          <span class="def-vi hide-me"
-            >→ Thứ làm công việc không đi tiếp được cho tới khi nó được gỡ.</span
-          >
+          <span class="def-vi hide-me">→ Thứ làm công việc không chạy tiếp được cho tới khi nó được gỡ.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Quick heads-up at standup: the missing API key is a <b>blocker</b> for me,
-              I can't test anything until it lands.
-              <span class="hide-me"
-                >→ Nói trước ở standup luôn: thiếu cái API key đang là vướng mắc của
-                mình, chưa có nó thì chưa test được gì cả.</span
-              ></span
-            >
+            <span class="v">Quick heads-up at standup: the missing API key is a blocker for me, I can't test anything until it lands.
+              <span class="hide-me">→ Nói trước ở standup luôn: thiếu cái API key đang là vướng mắc của mình, chưa có nó thì chưa test được gì cả.</span></span>
           </div>
         </div>
       </article>
@@ -1204,26 +1044,16 @@
           <span class="ipa">/ˌpʊt ə ˈpɪn ɪn ɪt/ <em>idiom</em></span>
           <button class="say" data-say="let's put a pin in that">🔊</button>
         </div>
-        <p class="vi-quick hide-me">tạm gác lại, bàn sau<span class="alt">chắc chắn quay lại</span></p>
+        <p class="vi-quick hide-me">tạm gác lại, bàn sau<span class="alt">đánh dấu chuyện này để quay lại — không bỏ, chỉ là chưa bàn bây giờ</span></p>
         <p class="def">
-          To stop talking about something for now and agree to come back to it later, so
-          the meeting can move on.
-          <span class="def-vi hide-me"
-            >→ Tạm thôi bàn chuyện đó và nhất trí sẽ quay lại sau, để buổi họp đi tiếp
-            được.</span
-          >
+          To stop talking about something for now and agree to come back to it later, so the meeting can move on.
+          <span class="def-vi hide-me">→ Thôi bàn một chuyện ngay lúc này và thống nhất lát nữa quay lại, để cuộc họp đi tiếp được.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Could we <b>put a pin in</b> this and follow up by email? I'd like to
-              check the numbers with my team first.
-              <span class="hide-me"
-                >→ Chuyện này mình tạm gác lại rồi em gửi email trao đổi tiếp được không
-                ạ? Em muốn xem lại số liệu với team trước.</span
-              ></span
-            >
+            <span class="v">Let's put a pin in the reporting module for now — the client is still on the fence about it.
+              <span class="hide-me">→ Cái module báo cáo mình tạm gác lại đã, khách vẫn còn lưỡng lự chưa ngả bên nào.</span></span>
           </div>
         </div>
       </article>
@@ -1235,26 +1065,16 @@
           <span class="ipa">/ˌɡɪv ɔː ˈteɪk/ <em>idiom</em></span>
           <button class="say" data-say="three weeks, give or take">🔊</button>
         </div>
-        <p class="vi-quick hide-me">xấp xỉ, cộng trừ chút<span class="alt">đã có số, chỉ nới hai đầu</span></p>
+        <p class="vi-quick hide-me">xấp xỉ, khoảng chừng, cộng trừ không đáng kể<span class="alt">dán ngay sau con số để nói "khoảng đó, hơn kém một chút" — đưa ra số mà vẫn chừa đường lùi</span></p>
         <p class="def">
-          Used right after a number to say it is close but not exact, and could be a
-          little more or a little less.
-          <span class="def-vi hide-me"
-            >→ Dán ngay sau một con số để nói là gần đúng chứ không chính xác, có thể hơn
-            hoặc kém một chút.</span
-          >
+          Used right after a number to say it is close but not exact, and could be a little more or a little less.
+          <span class="def-vi hide-me">→ Đặt ngay sau một con số để nói con số đó gần đúng chứ không chính xác, có thể hơn một chút hoặc kém một chút.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Our usual turnaround on a bug report is two days, <b>give or take</b> half
-              a day if we're waiting on your reply.
-              <span class="hide-me"
-                >→ Thường một báo lỗi bên em xử trong hai ngày ạ, cộng trừ nửa ngày nếu
-                còn phải chờ anh/chị trả lời.</span
-              ></span
-            >
+            <span class="v">Migrating the whole table takes about four hours, give or take, depending on how many orphan rows we hit.
+              <span class="hide-me">→ Chuyển cả bảng mất xấp xỉ bốn tiếng, tuỳ gặp bao nhiêu dòng mồ côi.</span></span>
           </div>
         </div>
       </article>
@@ -1266,26 +1086,16 @@
           <span class="ipa">/ˌrʌbə ˈstæmp/ <em>verb</em></span>
           <button class="say" data-say="rubber-stamp a decision">🔊</button>
         </div>
-        <p class="vi-quick hide-me">duyệt cho có lệ<span class="alt">luôn mang ý phê</span></p>
+        <p class="vi-quick hide-me">duyệt cho có lệ<span class="alt">nhìn qua rồi gật — chữ ký chỉ để đủ thủ tục, không ai đọc kỹ</span></p>
         <p class="def">
-          To approve something formally without really examining it, because the approval
-          is treated as a formality.
-          <span class="def-vi hide-me"
-            >→ Duyệt một thứ về mặt hình thức mà không xem kỹ, vì cái duyệt đó chỉ được
-            coi là thủ tục.</span
-          >
+          To approve something formally without really examining it, because the approval is treated as a formality.
+          <span class="def-vi hide-me">→ Duyệt một thứ cho đúng thủ tục mà không thật sự xem xét, vì việc duyệt đó chỉ được coi là hình thức.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >Please don't <b>rubber-stamp</b> this one — I'd rather you read the
-              migration script before you sign off.
-              <span class="hide-me"
-                >→ Cái này cậu đừng duyệt cho có lệ nhé — mình muốn cậu đọc cái script
-                migration đã rồi hãy duyệt.</span
-              ></span
-            >
+            <span class="v">Please don't <b>rubber-stamp</b> this one — I'd rather you read the migration script before you sign off.
+              <span class="hide-me">→ Cái này cậu đừng duyệt cho có lệ nhé — mình muốn cậu đọc cái script migration đã rồi hãy duyệt.</span></span>
           </div>
         </div>
       </article>
@@ -1297,25 +1107,16 @@
           <span class="ipa">/ˌpleɪ ɪt baɪ ˈɪə(r)/ <em>idiom</em></span>
           <button class="say" data-say="let's play it by ear">🔊</button>
         </div>
-        <p class="vi-quick hide-me">tới đâu tính đó<span class="alt">linh động, không phải chưa chuẩn bị</span></p>
+        <p class="vi-quick hide-me">tới đâu tính đó<span class="alt">không chốt trước kịch bản, nhìn tình hình rồi xoay</span></p>
         <p class="def">
-          To decide what to do as the situation develops, instead of fixing a plan in
-          advance.
-          <span class="def-vi hide-me"
-            >→ Tình hình tới đâu thì quyết tới đó, chứ không chốt trước kế hoạch.</span
-          >
+          To decide what to do as the situation develops, instead of fixing a plan in advance.
+          <span class="def-vi hide-me">→ Quyết định làm gì tuỳ theo tình hình diễn ra tới đâu, chứ không chốt sẵn một kế hoạch từ trước.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >We'll <b>play it by ear</b> on the night of the cutover: if the data copy
-              is slow, we stop and finish on Sunday.
-              <span class="hide-me"
-                >→ Đêm chuyển sang hệ mới thì tới đâu mình tính đó: phần copy dữ liệu mà
-                chậm thì mình dừng, Chủ nhật làm nốt.</span
-              ></span
-            >
+            <span class="v">The client hasn't confirmed the time yet, so the agenda is still tentative — let's <b>play it by ear</b>.
+              <span class="hide-me">→ Khách chưa xác nhận giờ nên agenda vẫn còn ghi tạm thôi — tới đâu mình tính đó.</span></span>
           </div>
         </div>
       </article>
@@ -1327,25 +1128,16 @@
           <span class="ipa">/ˌtæɡ əˈlɒŋ/ <em>phrasal verb</em></span>
           <button class="say" data-say="mind if I tag along">🔊</button>
         </div>
-        <p class="vi-quick hide-me">đi theo cho vui<span class="alt">mình là người theo ké</span></p>
+        <p class="vi-quick hide-me">đi theo cho vui<span class="alt">nhập vào nhóm người ta đang đi đâu đó, không phải việc của mình nhưng được cho theo</span></p>
         <p class="def">
-          If you tag along you go somewhere with other people who were already going,
-          just because you would like to come too.
-          <span class="def-vi hide-me"
-            >→ Nhập vào nhóm người ta đang đi đâu đó, chỉ vì mình cũng muốn đi.</span
-          >
+          If you tag along you go somewhere with other people who were already going, just because you would like to come too.
+          <span class="def-vi hide-me">→ Tag along là đi cùng một nhóm người vốn đã định đi chỗ đó rồi, chỉ vì mình cũng muốn đi theo.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >The team is going to grab a bite after the demo, so I asked whether I
-              could <b>tag along</b>.
-              <span class="hide-me"
-                >→ Team rủ nhau đi ăn gì sau buổi demo, nên mình hỏi xem có đi theo được
-                không.</span
-              ></span
-            >
+            <span class="v">The team is going to grab a bite after the demo, so I asked whether I could <b>tag along</b>.
+              <span class="hide-me">→ Team rủ nhau đi ăn gì sau buổi demo, nên mình hỏi xem có đi theo được không.</span></span>
           </div>
         </div>
       </article>
@@ -1357,24 +1149,16 @@
           <span class="ipa">/ʌnˈplʌɡ/ <em>verb</em></span>
           <button class="say" data-say="unplug for the weekend">🔊</button>
         </div>
-        <p class="vi-quick hide-me">cất máy nghỉ hẳn<span class="alt">rời màn hình một hai hôm</span></p>
+        <p class="vi-quick hide-me">ngắt kết nối, nghỉ hẳn<span class="alt">cất máy, tắt thông báo một hai hôm cho đầu nhẹ ra — không phải nghỉ phép dài, chỉ là rời màn hình</span></p>
         <p class="def">
-          To stop using your phone and your laptop for a while so your head can rest.
-          <span class="def-vi hide-me"
-            >→ Ngừng dùng điện thoại và máy tính một thời gian cho đầu được nghỉ.</span
-          >
+          To unplug is to stop using your phone and your laptop for a while so your head can rest.
+          <span class="def-vi hide-me">→ Unplug là ngưng dùng điện thoại với laptop một quãng cho đầu mình được nghỉ.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >I'm going to <b>unplug</b> for the weekend once we wrap up the release
-              notes.
-              <span class="hide-me"
-                >→ Chốt xong cái release notes là mình cất máy nghỉ hẳn hai ngày cuối
-                tuần.</span
-              ></span
-            >
+            <span class="v">I'm going to <b>unplug</b> for the weekend once we wrap up the release notes.
+              <span class="hide-me">→ Chốt xong cái release notes là mình cất máy nghỉ hẳn hai ngày cuối tuần.</span></span>
           </div>
         </div>
       </article>
@@ -1386,26 +1170,16 @@
           <span class="ipa">/tʃɔːz/ <em>noun</em></span>
           <button class="say" data-say="do the chores">🔊</button>
         </div>
-        <p class="vi-quick hide-me">việc nhà<span class="alt">việc ở trong nhà</span></p>
+        <p class="vi-quick hide-me">việc nhà<span class="alt">quét nhà, rửa bát, giặt đồ — mấy việc lặp đi lặp lại, chẳng ai thích nhưng vẫn phải làm</span></p>
         <p class="def">
-          Small routine jobs around the house that have to be done regularly, like
-          washing up or doing the laundry.
-          <span class="def-vi hide-me"
-            >→ Mấy việc nhỏ lặp đi lặp lại trong nhà, phải làm thường xuyên, kiểu rửa bát
-            hay giặt đồ.</span
-          >
+          Small routine jobs around the house that have to be done regularly, like washing up or doing the laundry.
+          <span class="def-vi hide-me">→ Mấy việc nhỏ lặp lại quanh nhà mà cứ phải làm đều đều, kiểu rửa bát hay giặt đồ.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >My plan for the weekend is simple: get the <b>chores</b> out of the way on
-              Saturday morning, then unplug completely.
-              <span class="hide-me"
-                >→ Kế hoạch cuối tuần của mình đơn giản thôi: sáng Thứ Bảy làm cho xong
-                việc nhà, rồi ngắt kết nối hẳn.</span
-              ></span
-            >
+            <span class="v">I was too worn out after the release to do any chores, so the washing-up sat there until Sunday.
+              <span class="hide-me">→ Release xong mình mệt rã rời, chẳng làm nổi việc nhà nào, nên đống bát cứ để đó tới Chủ nhật.</span></span>
           </div>
         </div>
       </article>
@@ -1417,24 +1191,16 @@
           <span class="ipa">/ˌswiːt ˈtuːθ/ <em>noun</em></span>
           <button class="say" data-say="I have a sweet tooth">🔊</button>
         </div>
-        <p class="vi-quick hide-me">thích ăn đồ ngọt<span class="alt">luôn nói "have a sweet tooth"</span></p>
+        <p class="vi-quick hide-me">thích ăn đồ ngọt<span class="alt">thấy bánh kẹo là khó chối — tiếng Anh luôn nói dạng "có": I have a sweet tooth</span></p>
         <p class="def">
           A liking for sweet food, especially cakes, sweets, and desserts.
-          <span class="def-vi hide-me"
-            >→ Cái tật thích đồ ngọt, nhất là bánh, kẹo và món tráng miệng.</span
-          >
+          <span class="def-vi hide-me">→ Cái tật thích đồ ngọt, nhất là bánh, kẹo và món tráng miệng.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >I've got a serious <b>sweet tooth</b>, so there's always chocolate in my
-              drawer for when a release drags on.
-              <span class="hide-me"
-                >→ Mình thích ăn đồ ngọt lắm, nên trong ngăn bàn lúc nào cũng có thanh
-                chocolate để dành mấy hôm release dây dưa.</span
-              ></span
-            >
+            <span class="v">I've got a serious sweet tooth, so there's always chocolate in my drawer for when a release drags on.
+              <span class="hide-me">→ Mình thích ăn đồ ngọt lắm, nên trong ngăn bàn lúc nào cũng có thanh chocolate để dành mấy hôm release dây dưa.</span></span>
           </div>
         </div>
       </article>
@@ -1446,24 +1212,16 @@
           <span class="ipa">/ˌriːˈtʃɑːdʒ/ <em>verb</em></span>
           <button class="say" data-say="recharge your batteries">🔊</button>
         </div>
-        <p class="vi-quick hide-me">nạp lại năng lượng<span class="alt">nghỉ xong là đủ sức làm tiếp</span></p>
+        <p class="vi-quick hide-me">nạp lại năng lượng<span class="alt">nghỉ cho lại sức sau đợt căng — nghĩa gốc là sạc pin</span></p>
         <p class="def">
           To rest until your energy comes back, after a period of hard work.
-          <span class="def-vi hide-me"
-            >→ Nghỉ cho tới khi lại sức, sau một đợt làm căng.</span
-          >
+          <span class="def-vi hide-me">→ Nghỉ cho tới khi lại sức, sau một đợt làm việc căng.</span>
         </p>
         <div class="rows">
           <div class="r">
             <span class="k">Câu thật</span>
-            <span class="v"
-              >I was worn out after three nights of on-call, so I took Monday off just to
-              <b>recharge</b>.
-              <span class="hide-me"
-                >→ Ba đêm trực liên tiếp xong mình mệt rã rời, nên xin nghỉ Thứ Hai cho
-                lại sức.</span
-              ></span
-            >
+            <span class="v">I was worn out after three nights of on-call, so I took Monday off just to <b>recharge</b>.
+              <span class="hide-me">→ Ba đêm trực liên tiếp xong mình mệt rã rời, nên xin nghỉ Thứ Hai cho lại sức.</span></span>
           </div>
         </div>
       </article>

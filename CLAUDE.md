@@ -28,7 +28,7 @@ ENGLISH/                          ← {harness}
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
 │   │                               cfg · hnay · tuan · openit · keove · daylen
-│   ├── nghia.sh                  ← ⭐ trích khối nghĩa .vi-quick của bài cũ (R9)
+│   ├── nghia.sh                  ← ⭐ trích nghĩa bài cũ: .vi-quick, ví dụ #1 + câu dịch, def-vi (R9 + bảng ôn tuần)
 │   ├── boc.sh                    ← ⭐ bốc 20 từ ôn nhanh, lâu chưa gặp nhất ra trước (R9)
 │   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/ (gọi build-recap.sh trước)
 │   ├── build-recap.sh            ← sinh bảng ôn tháng/quý/nửa năm/năm vào wiki/recap/
@@ -55,7 +55,7 @@ ENGLISH/                          ← {harness}
 | `/open` | Mở lại trang bài học đã có — **không** sinh gì mới | `find` + `open` |
 | `/kiem-tra` | Cuối tuần, kiểm tra từ đã học trong tuần | Flow B |
 | `/on-tap` | Ôn nhanh các từ tới hạn (spaced repetition) | đọc REVIEW_QUEUE |
-| `/on-tap-tuan` | Bảng ôn tuần — trang ĐỂ ĐỌC, nghĩa Việt hiện sẵn | Flow D |
+| `/on-tap-tuan` | Bảng ôn tuần — trang ĐỂ ĐỌC, nghĩa Việt hiện sẵn, **chép từ bài đã học** | Flow D |
 | `/tra-tu` | Dán 1 từ/câu bắt gặp khi đọc doc, xem phim, đọc email | Flow C |
 | `/dich` | Tự dịch lại nghĩa một từ bằng lời mình — hỏi từng từ, áp vào bài hôm nay + về sau | Flow E |
 | `/tien-do` | Xem đã học bao nhiêu, chỗ nào yếu | đọc PROGRESS + quiz cũ |
@@ -74,6 +74,11 @@ hôm nay", không khối "Tự viết", không nhãn `.pattern-tag`, không thư
 là chưa xong. Sửa xong là **`daylen` ngay, không hỏi** — user đọc bài trên Pages, chưa
 push thì user vẫn thấy bản cũ. `/dich` hỏi **từng từ một** (từ nào → nghĩa gì → áp +
 push → từ tiếp), nghĩa mới phải hiện ở bài hôm nay và mọi khối ôn nhanh về sau.
+
+**Bảng ôn tuần không dịch lại** (2026-10-12). Mọi chữ tiếng Việt nói về nghĩa trên
+`wiki/recap/YYYY-Www.*` — cột nghĩa, `.vi-quick`, `def-vi`, câu ví dụ + câu dịch — chép
+**nguyên văn** từ bài đã học trong tuần qua `sh tools/nghia.sh` (`NGHIA` · `PHU` · `VD` ·
+`DICH` · `DNVI`). Chỉ cột "Vì sao" (chỗ dễ sai) và phần tự kiểm tra là agent tự viết.
 
 `/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa học thì mở bài gần
 nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
@@ -231,7 +236,11 @@ nếu không bài do routine 7h sáng sinh ra sẽ theo luật cũ.
 
 ID để tra: `/hoc` = `trig_01QfWZkEggCXjyrR4nKvaM3U`,
 `/on-tap-tuan` = `trig_01DeXAVcCXsfXb3B62b9wKEq` (routine ôn tuần không đụng khối ôn
-nhanh nên không ảnh hưởng). Sửa bằng `/schedule` hoặc tại claude.ai/code/routines.
+nhanh nên không ảnh hưởng bởi R9).
+
+✅ **2026-10-12 — prompt routine `/on-tap-tuan` ĐÃ sửa**: nghĩa Việt của bảng ôn tuần
+chép nguyên văn từ bài đã học qua `tools/nghia.sh`, không dịch lại. Bảng đầu tiên chạy
+luật mới: **2026-W42** (Chủ nhật 18/10). Sửa bằng `/schedule` hoặc tại claude.ai/code/routines.
 
 _(2026-08-26: cả hai prompt đã được viết lại một lần cho luật bỏ ngữ pháp + ôn nhanh
 15 từ. Cứ đổi luật trong repo là phải sửa tay ở cả hai chỗ.)_
@@ -256,10 +265,10 @@ macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng th�
 ```bash
 sh tools/build-index.sh                                    # phải in DA-DUNG-RECAP rồi DA-DUNG-INDEX
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
-sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD
+sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD / DICH / DNVI
 sh tools/boc.sh -v                                         # 20 dòng, ngày gặp cuối tăng dần
 awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \
-  | sh tools/nghia.sh | grep -c '^VD '                     # phải bằng tổng số từ
+  | sh tools/nghia.sh | grep -c '^DICH '                   # phải bằng tổng số từ (VD, DNVI cũng vậy)
 ```
 
 ## Source of truth (thứ tự ưu tiên)

@@ -423,8 +423,9 @@ Phase 7  daylen "kiem-tra: <tuần> — <điểm>"  (R6)
 
 ```text
 Phase 0  Auto-discovery + xác định tuần ISO cần ôn
-Phase 1  Đọc MỌI file {lessons}/<tuần>/*.md -> gom từ + IPA + nghĩa + collocation
-         + mục Bẫy + câu ví dụ đắt nhất. Không có buổi nào -> báo rồi dừng.
+Phase 1  Đọc MỌI file {lessons}/<tuần>/*.md -> gom từ + IPA + collocation + mục Bẫy.
+         Nghĩa + ví dụ + câu dịch + định nghĩa VI: sh tools/nghia.sh (chép, không dịch).
+         Không có buổi nào -> báo rồi dừng.
 Phase 2  Ghi {recap}/<tuần>.md   theo {templates}/recap.md
 Phase 3  Ghi {recap}/<tuần>.html theo {templates}/recap.html
 Phase 4  sh tools/build-index.sh -> daylen "recap: <tuần> — <N> từ"  (R6)
@@ -441,16 +442,18 @@ Phase 5  openit + tóm tắt: bao nhiêu từ, phân bố nhóm, 2-3 chỗ dễ 
 
 Bốn luật riêng:
 
-1. **Nghĩa Việt nằm ngay cột kế bên** — lý do trang này tồn tại. Nghĩa gọn 2-6
-   chữ, in đậm, rồi một vế làm rõ chỗ người Việt hay hiểu sai. Không chép nguyên
-   đoạn VI dài của bài học sang.
+1. **Nghĩa Việt = nghĩa của bài đã học, không dịch lại** (2026-10-12). Cột nghĩa
+   và `p.vi-quick` = `NGHIA` + `PHU`; câu ví dụ + câu dịch = `VD` + `DICH` (ví dụ #1);
+   `span.def-vi` = `DNVI` — tất cả chép **nguyên văn** đầu ra `tools/nghia.sh`, cùng
+   nguồn với R9 và bảng ôn tháng/quý. Nghĩa chưa ổn → sửa bài gốc (Flow E), rồi chép lại.
 2. **Cột nghĩa Việt mang class `hide-me`** — để nút "Chế độ ôn tập" che được. Cùng
    một bảng: mặc định để hiểu, bật lên thành bài tự kiểm tra. Thiếu class này là
    hỏng nửa công dụng.
 3. **Mục "chỗ dễ sai" quan trọng hơn mục định nghĩa** — rút từ phần **Bẫy**, xếp
    thành Đúng / Sai / Vì sao. Ưu tiên giới từ đi kèm, cặp từ dễ lẫn, viết liền hay
    tách, động từ bất quy tắc.
-4. **Mỗi từ đúng một câu ví dụ.** Bảng ôn dài bằng bài gốc thì không ai đọc lại.
+4. **Mỗi từ đúng một câu ví dụ** — ví dụ #1 bài gốc kèm câu dịch của chính bài đó.
+   Bảng ôn dài bằng bài gốc thì không ai đọc lại.
 
 Chỉ gom từ **trong tuần đó**, không kéo từ tuần khác, không thêm từ mới. Đây là bản
 phái sinh nên **được phép ghi đè** — R5 không áp dụng.

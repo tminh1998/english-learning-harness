@@ -20,8 +20,15 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
 2. Đọc **mọi** file `wiki/lessons/<tuần>/*.md`. Không có file nào → báo tuần này
    chưa học buổi nào rồi dừng, **đừng bịa từ**.
 3. Gom danh sách từ: tất cả từ mới của các buổi trong tuần. Với mỗi từ lấy sẵn
-   IPA, từ loại, nghĩa Việt, collocation, mục **Bẫy**, và câu ví dụ đắt nhất.
-   ⛔ Chỉ lấy từ **trong tuần đó**. Không kéo từ tuần khác, không thêm từ mới.
+   IPA, từ loại, collocation, mục **Bẫy** từ bài `.md`. ⛔ Chỉ lấy từ **trong tuần
+   đó**. Không kéo từ tuần khác, không thêm từ mới.
+   **Mọi chữ tiếng Việt nói về nghĩa thì lấy bằng lệnh, không tự viết:**
+
+   ```bash
+   sh tools/nghia.sh "reflow" "shim" "happy path" ...   # đủ mọi từ mới của tuần
+   ```
+
+   Mỗi từ ra `NGHIA` · `PHU` · `VD` · `DICH` · `DNVI` — xem luật 1.
 4. **Ghi bản Markdown** theo `wiki/_templates/recap.md` → `wiki/recap/<tuần>.md`.
 5. **Ghi bản HTML** theo `wiki/_templates/recap.html` → `wiki/recap/<tuần>.html`.
 6. `sh tools/build-index.sh` rồi `daylen "recap: <tuần> — <N> từ"` (R6).
@@ -33,11 +40,19 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
 
 ## Bốn luật riêng của bảng ôn
 
-1. **Nghĩa Việt nằm ngay cột kế bên** — đây là lý do trang này tồn tại. Cột nghĩa
-   in đậm, nổi hơn mọi cột khác. Viết nghĩa gọn **2-6 chữ**, rồi gạch ngang thêm
-   một vế làm rõ chỗ người Việt hay hiểu sai (vd: *deliverable* — hạng mục bàn
-   giao — **thứ khách nhận được**, không phải việc mình làm). Đừng chép nguyên
-   đoạn VI dài của bài học sang.
+1. **Nghĩa Việt = nghĩa của bài đã học, KHÔNG dịch lại** (user chốt 2026-10-12).
+   Bảng ôn là để nhớ lại đúng cái đã học — dịch lại một kiểu khác là người học
+   đang ôn một nghĩa chưa từng học. Chép **nguyên văn** đầu ra `tools/nghia.sh`:
+
+   | Chỗ trên bảng ôn | Lấy từ |
+   |---|---|
+   | Cột nghĩa (`.md`: `**NGHIA** — PHU`; `.html`: `td.c-vi` = NGHIA + `span.phu`) | `NGHIA` + `PHU` (khối `.vi-quick` bài gốc) |
+   | `p.vi-quick` trong mục Chi tiết | `NGHIA` + `<span class="alt">PHU</span>` |
+   | Câu ví dụ + câu dịch | `VD` + `DICH` (ví dụ #1 bài gốc — giữ `**từ**`/`<b>`, bỏ dấu từ cũ) |
+   | `span.def-vi` | `DNVI` (định nghĩa EN đi kèm cũng chép từ bài gốc) |
+
+   Không sửa chữ, không rút gọn, không "viết cho hay hơn". Nghĩa cũ chưa ổn thì sửa
+   ở **bài gốc** (Flow E) rồi chép lại. Cột nghĩa vẫn in đậm, nổi hơn mọi cột khác.
 
 2. **Cột nghĩa Việt phải mang class `hide-me`** — để nút "Chế độ ôn tập" của
    `lesson.js` che được. Cùng một bảng: mặc định để hiểu, bật lên thành bài tự
@@ -49,9 +64,12 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
    viết liền hay tách (`a workaround` / `work around it`), động từ bất quy tắc
    (`came`, `ran`). Nhớ nghĩa thì dễ, dùng đúng mới khó.
 
-4. **Mỗi từ đúng MỘT câu ví dụ.** Chọn câu đắt nhất trong bài gốc, không bê cả bài
-   sang. Bảng ôn dài bằng bài học gốc thì không ai đọc lại — mà không đọc lại thì
-   trang này vô nghĩa.
+4. **Mỗi từ đúng MỘT câu ví dụ** — ví dụ #1 của bài gốc (`VD` + `DICH`), không
+   chọn câu khác rồi tự dịch. Bảng ôn dài bằng bài học gốc thì không ai đọc lại —
+   mà không đọc lại thì trang này vô nghĩa.
+
+Phần tự viết duy nhất là cột **Vì sao** ở mục "chỗ dễ sai" (rút từ **Bẫy**) và
+phần **Tự kiểm tra** — đó là giải thích cách dùng, không phải nghĩa của từ.
 
 ## Ghi đè
 
