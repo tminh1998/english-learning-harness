@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 240 từ đã học** · IT 96 · Business 96 · Life 48 · ad-hoc 0
+**Tổng: 245 từ đã học** · IT 98 · Business 98 · Life 49 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-12
+**Cập nhật:** 2026-10-13
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -259,6 +259,11 @@
 | 238 | backlog | backlogs, backlogged, backlog item, product backlog, sprint backlog, a backlog of sth | noun (đếm được) | Business | việc tồn đọng chưa làm / danh sách việc chờ xếp ưu tiên | 2026-10-12 | lesson |
 | 239 | addendum | addenda, addendums, an addendum to sth, add, addition, additional | noun (đếm được) | Business | phụ lục hợp đồng | 2026-10-12 | lesson |
 | 240 | stock up | stocks up, stocked up, stocking up, stock up on sth, well-stocked, restock, in stock, out of stock | phrasal verb | Life | mua trữ sẵn | 2026-10-12 | lesson |
+| 241 | thrash | thrashes, thrashed, thrashing, disk thrashing, GC thrashing, thrash about, thrash on sth | verb (dạng hay dùng nhất: thrashing) | IT | trì trệ / quay vòng mà không ra việc | 2026-10-13 | lesson |
+| 242 | clobber | clobbers, clobbered, clobbering, get clobbered, clobber sth | verb | IT | đè mất cái đang có | 2026-10-13 | lesson |
+| 243 | stipulate | stipulates, stipulated, stipulating, stipulation, as stipulated in, unless otherwise stipulated | verb | Business | quy định rõ trong hợp đồng | 2026-10-13 | lesson |
+| 244 | expedite | expedites, expedited, expediting, expedited review, expedited shipping, expeditious, expedition | verb | Business | đẩy nhanh tiến độ | 2026-10-13 | lesson |
+| 245 | power nap | power naps, power-nap, power-napped, power-napping, nap, naps, napping, a catnap, take a nap | noun (đếm được; v: power-nap) | Life | giấc ngủ ngắn lấy sức | 2026-10-13 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
