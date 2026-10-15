@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-10-14 (buổi #50)
+**Cập nhật:** 2026-10-15 (buổi #51)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 250 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 100 · Business 100 · Life 50                                                           |
-| Số buổi học          | 50                                                                                      |
-| Streak hiện tại      | 3 buổi (từ 2026-10-12 — Thứ Bảy 10/10 không học, bài đã xoá nên chuỗi 21/09 → 09/10 (17 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 255 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 102 · Business 102 · Life 51                                                           |
+| Số buổi học          | 51                                                                                      |
+| Streak hiện tại      | 4 buổi (từ 2026-10-12 — Thứ Bảy 10/10 không học, bài đã xoá nên chuỗi 21/09 → 09/10 (17 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-10-14 (Thứ Tư) — buổi #50 |
+| Buổi gần nhất        | 2026-10-15 (Thứ Năm) — buổi #51 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -68,6 +68,7 @@
 | 2026-10-12 | 2026-W42 | #48 | upsert · reconcile · backlog · addendum · stock up |
 | 2026-10-13 | 2026-W42 | #49 | thrash · clobber · stipulate · expedite · power nap |
 | 2026-10-14 | 2026-W42 | #50 | scrape · read replica · good faith · squeeze in · potluck |
+| 2026-10-15 | 2026-W42 | #51 | stagger · sunset · retrospective · prerequisite · on a whim |
 
 ## Kết quả quiz tuần
 
@@ -124,6 +125,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
 
 🔁 **Sửa lại 2026-09-01 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `debounce` và `payload` — hai suất IT của buổi #17. Theo R1.b: hai từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), và được thay bằng `failover` + `graceful degradation` — cùng nhóm IT, đã qua lại hard gate R1. Bài `.md` và `.html` đã viết lại toàn bộ: khối từ, ví dụ (R8 vẫn đúng), mẩu đọc, bài tập, đáp án, ghi chú. Tổng số từ vẫn là 85 vì thay 2 ăn 2; số từ "đã biết sẵn" lên 5. Đây là lần thứ hai user loại từ vì đã biết (lần đầu 2026-08-24 với `hotfix` · `overwrite` · `cherry-pick`) — cả 5 từ bị loại đều thuộc nhóm "lệnh/khái niệm gặp hằng ngày", đúng cảnh báo trong `memory/tu-da-biet-khong-day-lai.md`.
+
+⚠️ **Cập nhật 2026-10-15:** vốn từ lên **255 từ**, nợ ôn tập lên **250/255 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #51 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 14/10 (scrape · read replica · good faith · squeeze in · potluck), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật 2026-10-05) trúng onboarding · bus factor · de-risk · prioritize · stakeholder · stub · off the table · truncate · sidecar · bandwidth · take it offline · single point of failure · nail down · craving · throughput · leftovers · thundering herd · takeaway · par for the course · stateless — lô 01/10 → 02/10 theo ngày "gặp lần cuối", **không trùng một từ nào** với phần ôn của ba buổi 12/10 → 14/10. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. **Hai ứng viên bị hard gate R1 loại trong buổi này:** `comfort food` — lần thứ hai bị chặn đúng cùng một lý do: chợ `food craving` nằm trong cột họ từ của `craving` (01/10), đã bị loại một lần hôm 09/10 — và `lint` (grep VOCAB_INDEX sạch, nhưng rơi đúng nhóm "từ lệnh git/CI hằng ngày" mà memory `tu-da-biet-khong-day-lai` dặn tránh). Thay bằng `sunset` và `on a whim`. Riêng `sunset` là **dạy lại** có phép: nó thuộc bài 10/10 đã xoá hẳn và đã gỡ khỏi VOCAB_INDEX hôm 12/10. Ba ứng viên nữa bị loại ngay vòng chọn: `connection pool` (chợ `connection` ← `connection draining` trong họ từ của `drain`), `turnkey` (`turn` ← `turnaround`), `window shopping` (`window` ← `freeze window` của `code freeze` ở bảng ⛔). Tuần 2026-W42 đã có 20 từ (12/10 → 15/10); W41 vẫn **chưa có điểm quiz** — sáu tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W41, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-10-13:** vốn từ lên **245 từ**, nợ ôn tập lên **240/245 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #49 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 12/10 (upsert · reconcile · backlog · addendum · stock up), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật 2026-10-05) trúng iron out · carve out · hand over · milestone · propagate · wrap up · on track · hydrate · head out · loop in · put off · fed up · sleep in · walk back · outstanding · coalesce · postmortem · fan-out · deprecate · call out — lô 26/09 → 28/09 theo ngày "gặp lần cuối", **không trùng một từ nào** với phần ôn của buổi 12/10. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai ứng viên bị hard gate R1 loại trong buổi này: `sanitize` (chữ `sane` / `insanity` nằm trong cột họ từ của `sanity check`, 29/08) và `headcount` (chữ `head` đụng cả `head out` 26/09 lẫn `heads-up` 17/08) — thay bằng `clobber` và `expedite`. Tuần 2026-W42 đã có 10 từ (12/10 → 13/10); W41 vẫn **chưa có điểm quiz** — sáu tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W41, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
