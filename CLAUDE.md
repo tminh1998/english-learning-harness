@@ -75,6 +75,16 @@ là chưa xong. Sửa xong là **`daylen` ngay, không hỏi** — user đọc b
 push thì user vẫn thấy bản cũ. `/dich` hỏi **từng từ một** (từ nào → nghĩa gì → áp +
 push → từ tiếp), nghĩa mới phải hiện ở bài hôm nay và mọi khối ôn nhanh về sau.
 
+**Bỏ bài = sửa cả mọi khối ôn nhanh dính tới bài đó** (2026-10-16). User bảo "bỏ bài
+ngày X" thì ngoài xoá file + gỡ 5 từ khỏi VOCAB_INDEX / REVIEW_QUEUE / PROGRESS / recap,
+phải sửa **mọi bài sau X** có khối ôn nhanh chịu ảnh hưởng:
+- **Phần A** của bài liền sau X → đổi sang 5 từ của buổi liền **trước** X (`nghia.sh`).
+- **Phần B** của các bài sau X → **bốc lại** bằng `sh tools/boc.sh <ngày bài đó>`: phần
+  ôn nhanh của X không còn tính là đã gặp, nên danh sách cũ đã né sai 20 từ.
+- Khối ôn nhanh nào (phần A hay B) còn chứa từ của bài X → thay luôn.
+- Câu ví dụ / mẩu đọc mượn từ của X làm `.rev` → đổi sang từ cũ khác (R8).
+Sửa xong mới `build-index.sh` + `daylen`.
+
 **Bảng ôn tuần không dịch lại** (2026-10-12). Mọi chữ tiếng Việt nói về nghĩa trên
 `wiki/recap/YYYY-Www.*` — cột nghĩa, `.vi-quick`, `def-vi`, câu ví dụ + câu dịch — chép
 **nguyên văn** từ bài đã học trong tuần qua `sh tools/nghia.sh` (`NGHIA` · `PHU` · `VD` ·
