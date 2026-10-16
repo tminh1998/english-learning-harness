@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 255 từ đã học** · IT 102 · Business 102 · Life 51 · ad-hoc 0
+**Tổng: 250 từ đã học** · IT 100 · Business 100 · Life 50 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-16
 
@@ -264,16 +264,11 @@
 | 243 | stipulate | stipulates, stipulated, stipulating, stipulation, as stipulated in, unless otherwise stipulated | verb | Business | quy định rõ trong hợp đồng | 2026-10-13 | lesson |
 | 244 | expedite | expedites, expedited, expediting, expedited review, expedited shipping, expeditious, expedition | verb | Business | đẩy nhanh tiến độ | 2026-10-13 | lesson |
 | 245 | power nap | power naps, power-nap, power-napped, power-napping, nap, naps, napping, a catnap, take a nap | noun (đếm được; v: power-nap) | Life | giấc ngủ ngắn lấy sức | 2026-10-13 | lesson |
-| 246 | scrape | scrapes, scraped, scraping, scraper, scrapers, web scraping, screen-scrape, a scrape, scrape interval | verb (cũng là noun) | IT | thu thập dữ liệu tự động | 2026-10-14 | lesson |
-| 247 | read replica | read replicas, replica, replicas, read-only replica, replicate, replicated, replicating, replication, replication lag, replica set, promote a replica | noun (đếm được) | IT | bản sao chỉ để đọc | 2026-10-14 | lesson |
-| 248 | good faith | in good faith, good-faith, a good-faith effort, good-faith deposit, bad faith, faith, faithful, faithfully | noun (không đếm được) | Business | thiện chí | 2026-10-14 | lesson |
-| 249 | squeeze in | squeezes in, squeezed in, squeezing in, squeeze sb in, squeeze it in, squeeze, squeezed, squeezing, a tight squeeze | phrasal verb | Business | chèn thêm vào lịch kín | 2026-10-14 | lesson |
-| 250 | potluck | potlucks, pot luck, pot-luck, a potluck lunch, potluck-style, take potluck | noun (đếm được) | Life | tiệc góp món | 2026-10-14 | lesson |
-| 251 | tree shaking | tree-shake, tree-shakes, tree-shaken, tree-shaking, tree-shakeable, tree-shakable, shake out, dead code elimination | noun (không đếm được) | IT | loại bỏ code không dùng | 2026-10-16 | lesson |
-| 252 | kill switch | kill switches, kill-switch, killswitch, kill, hit the kill switch, flip the kill switch | noun (đếm được) | IT | nút tắt khẩn cấp | 2026-10-16 | lesson |
-| 253 | deep dive | deep dives, deep-dive, deep-dived, deep-diving, a deep-dive session, dive into sth, dive deep | noun (đếm được; cũng là verb) | Business | phân tích chuyên sâu | 2026-10-16 | lesson |
-| 254 | set in stone | set sth in stone, is set in stone, carved in stone, written in stone, cast in stone, nothing is set in stone | idiom (cụm tính từ, đi với be) | Business | bất di bất dịch / không đổi được nữa | 2026-10-16 | lesson |
-| 255 | cabin fever | cabin, fever, feverish, a case of cabin fever, get cabin fever, stir-crazy | noun (không đếm được) | Life | cuồng chân | 2026-10-16 | lesson |
+| 246 | tree shaking | tree-shake, tree-shakes, tree-shaken, tree-shaking, tree-shakeable, tree-shakable, shake out, dead code elimination | noun (không đếm được) | IT | loại bỏ code không dùng | 2026-10-16 | lesson |
+| 247 | kill switch | kill switches, kill-switch, killswitch, kill, hit the kill switch, flip the kill switch | noun (đếm được) | IT | nút tắt khẩn cấp | 2026-10-16 | lesson |
+| 248 | deep dive | deep dives, deep-dive, deep-dived, deep-diving, a deep-dive session, dive into sth, dive deep | noun (đếm được; cũng là verb) | Business | phân tích chuyên sâu | 2026-10-16 | lesson |
+| 249 | set in stone | set sth in stone, is set in stone, carved in stone, written in stone, cast in stone, nothing is set in stone | idiom (cụm tính từ, đi với be) | Business | bất di bất dịch / không đổi được nữa | 2026-10-16 | lesson |
+| 250 | cabin fever | cabin, fever, feverish, a case of cabin fever, get cabin fever, stir-crazy | noun (không đếm được) | Life | cuồng chân | 2026-10-16 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
