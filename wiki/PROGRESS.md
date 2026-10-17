@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-10-16 (buổi #50)
+**Cập nhật:** 2026-10-17 (buổi #51)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 250 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 100 · Business 100 · Life 50                                                           |
-| Số buổi học          | 50                                                                                      |
-| Streak hiện tại      | 1 buổi (từ 2026-10-16 — bài Thứ Tư 14/10 và Thứ Năm 15/10 đã xoá nên chuỗi 12/10 → 13/10 (2 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 255 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 102 · Business 102 · Life 51                                                           |
+| Số buổi học          | 51                                                                                      |
+| Streak hiện tại      | 2 buổi (từ 2026-10-16 — bài Thứ Tư 14/10 và Thứ Năm 15/10 đã xoá nên chuỗi 12/10 → 13/10 (2 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-10-16 (Thứ Sáu) — buổi #50 |
+| Buổi gần nhất        | 2026-10-17 (Thứ Bảy) — buổi #51 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -68,6 +68,7 @@
 | 2026-10-12 | 2026-W42 | #48 | upsert · reconcile · backlog · addendum · stock up |
 | 2026-10-13 | 2026-W42 | #49 | thrash · clobber · stipulate · expedite · power nap |
 | 2026-10-16 | 2026-W42 | #50 | tree shaking · kill switch · deep dive · set in stone · cabin fever |
+| 2026-10-17 | 2026-W42 | #51 | code smell · eventual consistency · sunset · ironclad · homebody |
 
 ## Kết quả quiz tuần
 
@@ -175,6 +176,8 @@ Vốn từ nay **155 từ** — nợ ôn tập **150/155 từ quá hạn**, vẫ
 
 ⚠️ **Cập nhật 2026-10-03:** vốn từ lên **210 từ**, nợ ôn tập lên **205/210 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #42 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 02/10 (instrument · scaffold · in the weeds · split the difference · small talk), phần B bốc ngẫu nhiên bằng lệnh trúng deliverable · graceful degradation · doze off · touch base · push back · run errands · defer · under the weather · cut it close · preflight · scale back · end up · backport · escalate · overhead · chill out · buffer · hash out · nudge · trade-off — chạm từ lô cũ nhất (14/08) tới lô 28/09. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh`, không từ nào báo `LOI`. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai ứng viên bị hard gate R1 loại trong buổi này: `jitter` (đụng `jittered backoff` trong họ từ của `backoff`) và `bill` (đụng `bill` trong họ từ của `invoice`, và `split the bill` của `split the difference`) — thay bằng `quorum` và `pick up the tab`. Hôm nay là Thứ Bảy và tuần 2026-W40 đã đủ **30 từ** (28/09 → 03/10) — mai Chủ nhật routine sẽ tự sinh bảng ôn `/on-tap-tuan`, nhưng muốn có **điểm quiz đầu tiên** thì vẫn phải gõ tay `/kiem-tra`, và muốn nợ giảm thật thì phải gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
+
+⚠️ **Cập nhật 2026-10-17:** vốn từ lên **255 từ**, nợ ôn tập lên **250/255 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #51 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 16/10 (tree shaking · kill switch · deep dive · set in stone · cabin fever), phần B bốc bằng `tools/boc.sh` trúng on the same page · onboarding · stuffed · manage expectations · churn · culprit · par for the course · take it offline · circle back · leftovers · nail down · craving · off the table · bandwidth · shard · single point of failure · stateless · thundering herd · discrepancy · throughput — đều là lô 01/10 và 02/10, tức là `boc.sh` đã quay tới quãng lâu chưa gặp nhất và không trùng phần ôn của mấy buổi gần đây. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai ứng viên bị hard gate R1 loại trong buổi này: `rule of thumb` (đụng `rule` trong word family của `ground rules`) và `go the extra mile` (đụng `mile` trong word family của `milestone`) — thay bằng `ironclad` và `sunset`. Hôm nay là Thứ Bảy, tuần 2026-W42 khép lại với **20 từ** (12/10 · 13/10 · 16/10 · 17/10 — 14/10 và 15/10 đã xoá) và vẫn **chưa có điểm quiz** — tuần thứ chín liên tiếp như vậy. Mai Chủ nhật routine sẽ tự sinh bảng ôn `/on-tap-tuan`; muốn có điểm thật thì gõ tay `/kiem-tra` cho W42, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-09-16:** vốn từ lên **140 từ**, nợ ôn tập lên **135/140 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #28 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 15/09 (heartbeat · dangling · quote · off the table · night owl), phần B bốc ngẫu nhiên bằng lệnh trúng backoff · feature flag · deprecate · provision · brittle · bottleneck · onboarding · cutover · takeaway · run by · pitch · stateless · bandwidth · pain point · bear with · catch up · run out of · spin up · sticking point · align — chạm cả lô cũ nhất (13/08) lẫn lô 11/09. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Một ứng viên bị hard gate R1 loại trong buổi này: `red flag` (đụng `flag` trong word family của `feature flag`) — thay bằng `manage expectations`. Tuần 2026-W38 đã có 10 từ (15/09 → 16/09); W37 vẫn **chưa có điểm quiz** — năm tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W37, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 

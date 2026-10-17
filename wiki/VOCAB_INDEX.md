@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 250 từ đã học** · IT 100 · Business 100 · Life 50 · ad-hoc 0
+**Tổng: 255 từ đã học** · IT 102 · Business 102 · Life 51 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-16
+**Cập nhật:** 2026-10-17
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -269,6 +269,11 @@
 | 248 | deep dive | deep dives, deep-dive, deep-dived, deep-diving, a deep-dive session, dive into sth, dive deep | noun (đếm được; cũng là verb) | Business | phân tích chuyên sâu | 2026-10-16 | lesson |
 | 249 | set in stone | set sth in stone, is set in stone, carved in stone, written in stone, cast in stone, nothing is set in stone | idiom (cụm tính từ, đi với be) | Business | bất di bất dịch / không đổi được nữa | 2026-10-16 | lesson |
 | 250 | cabin fever | cabin, fever, feverish, a case of cabin fever, get cabin fever, stir-crazy | noun (không đếm được) | Life | cuồng chân | 2026-10-16 | lesson |
+| 251 | code smell | code smells, a code smell, code-smell, smell, smells, smelly, this code smells, design smell | noun (đếm được) | IT | dấu hiệu code có vấn đề | 2026-10-17 | lesson |
+| 252 | eventual consistency | eventually consistent, eventual, eventually, consistency, consistent, inconsistent, strong consistency, converge | noun (không đếm được) | IT | nhất quán sau cùng | 2026-10-17 | lesson |
+| 253 | sunset | sunsets, sunsetting, sunsetted, sunset a feature, the sunset date, sunset clause, be sunset | verb (cũng là noun) | Business | khai tử theo lịch | 2026-10-17 | lesson |
+| 254 | ironclad | iron-clad, ironclads, an ironclad guarantee, an ironclad contract, nothing is ironclad | adjective | Business | chặt chẽ không kẽ hở | 2026-10-17 | lesson |
+| 255 | homebody | homebodies, a bit of a homebody, a real homebody, homebound, stay-at-home | noun (đếm được) | Life | người thích ở nhà | 2026-10-17 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
