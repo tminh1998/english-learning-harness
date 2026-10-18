@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ôn tuần 2026-W42 — 20 từ</title>
+    <link rel="stylesheet" href="../assets/lesson.css" />
+    <link rel="stylesheet" href="../assets/recap.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div class="eyebrow">Bảng ôn tuần · 12/10–18/10/2026</div>
+        <h1>Tuần 2026-W42</h1>
+        <div class="mixline">
+          <span class="badge it">8 IT</span>
+          <span class="badge biz">8 Giao tiếp</span>
+          <span class="badge life">4 Đời sống</span>
+          <span class="badge">4 buổi học</span>
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+        <button id="theme">🌗 Theo hệ thống</button>
+        <span class="hint"
+          >Bấm 🔊 để nghe · bật chế độ ôn tập để che cột tiếng Việt, bấm vào chỗ mờ
+          để hiện lại</span
+        >
+      </div>
+
+      <!-- ══════ 1. BẢNG TRA NHANH — phần chính ══════ -->
+
+      <h2>Tra nhanh cả tuần</h2>
+      <p class="passage">
+        Hai mươi từ của tuần này, nghĩa Việt nằm ngay cột kế bên. Đọc lướt cả bảng
+        trước, từ nào không nhớ nổi nghĩa thì kéo xuống mục <b>Chi tiết</b> đọc kỹ
+        đúng từ đó. Tuần này nặng về chuyện ghi dữ liệu cho an toàn, cách tắt và khai
+        tử một tính năng, và cách giữ chữ trong hợp đồng với khách.
+      </p>
+
+      <table class="tra-nhanh">
+        <thead>
+          <tr>
+            <th class="c-tu">Từ</th>
+            <th class="c-vi">Nghĩa tiếng Việt</th>
+            <th class="c-cum">Cụm hay đi kèm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>upsert</b>
+                <button class="say" data-say="upsert every row">🔊</button></span
+              >
+              <span class="ipa">/ˈʌpsɜːt/ · động từ (cũng là danh từ)</span>
+            </td>
+            <td class="c-vi hide-me">
+              thêm mới nếu chưa có, cập nhật nếu đã có
+              <span class="phu">một lệnh làm cả hai việc — khỏi phải query kiểm tra trước rồi mới quyết định insert hay update</span>
+            </td>
+            <td class="c-cum">
+              <code>upsert a row / a record</code><code>upsert on &lt;key&gt;</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>reconcile</b>
+                <button class="say" data-say="reconcile the numbers">🔊</button></span
+              >
+              <span class="ipa">/ˈrekənsaɪl/ · động từ</span>
+            </td>
+            <td class="c-vi hide-me">
+              đối chiếu rồi sửa chỗ lệch
+              <span class="phu">so hai bên xem khác nhau ở đâu, rồi kéo cho về khớp — không chỉ là "so sánh", so xong là sửa luôn</span>
+            </td>
+            <td class="c-cum">
+              <code>reconcile X with Y</code><code>a reconciliation job / loop</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>thrash</b>
+                <button class="say" data-say="the server is thrashing">🔊</button></span
+              >
+              <span class="ipa">/θræʃ/ · động từ</span>
+            </td>
+            <td class="c-vi hide-me">
+              trì trệ / quay vòng mà không ra việc
+              <span class="phu">tốn hết sức vào chuyện tráo qua tráo lại — máy thì swap liên tục, người thì bàn đi bàn lại — còn việc chính thì không nhích</span>
+            </td>
+            <td class="c-cum">
+              <code>the server is thrashing</code><code>thrash on a decision</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>clobber</b>
+                <button class="say" data-say="it clobbered my config">🔊</button></span
+              >
+              <span class="ipa">/ˈklɒbə(r)/ · động từ</span>
+            </td>
+            <td class="c-vi hide-me">
+              đè mất cái đang có
+              <span class="phu">ghi đè kiểu phá — thường là vô ý, một lệnh hay một force-push xoá sổ bản người khác vừa sửa</span>
+            </td>
+            <td class="c-cum">
+              <code>clobber the config / my changes</code><code>get clobbered by a force-push</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>tree shaking</b>
+                <button class="say" data-say="enable tree shaking">🔊</button></span
+              >
+              <span class="ipa">/triː ˈʃeɪ.kɪŋ/ · danh từ (không đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              loại bỏ code không dùng
+              <span class="phu">lúc build, cái gì không ai import tới thì bị cắt khỏi bundle cho file nhẹ đi</span>
+            </td>
+            <td class="c-cum">
+              <code>enable tree shaking</code><code>a tree-shakeable library</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>kill switch</b>
+                <button class="say" data-say="hit the kill switch">🔊</button></span
+              >
+              <span class="ipa">/ˈkɪl swɪtʃ/ · danh từ (đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              nút tắt khẩn cấp
+              <span class="phu">bật lên là tắt ngay một tính năng đang chạy, không cần deploy lại</span>
+            </td>
+            <td class="c-cum">
+              <code>hit / flip the kill switch</code><code>wire up a kill switch</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>code smell</b>
+                <button class="say" data-say="a classic code smell">🔊</button></span
+              >
+              <span class="ipa">/ˈkəʊd smel/ · danh từ (đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              dấu hiệu code có vấn đề
+              <span class="phu">chạy vẫn đúng, test vẫn xanh, nhưng viết kiểu này là sắp có chuyện — hàm quá dài, ba chỗ copy y nhau, tên đặt lung tung</span>
+            </td>
+            <td class="c-cum">
+              <code>a classic code smell</code><code>spot a code smell</code>
+            </td>
+          </tr>
+          <tr data-cat="it">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>eventual consistency</b>
+                <button class="say" data-say="eventual consistency">🔊</button></span
+              >
+              <span class="ipa">/ɪˌven.tʃu.əl kənˈsɪs.tən.si/ · danh từ (không đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              nhất quán sau cùng
+              <span class="phu">ghi xong chưa thấy ngay — các bản sao đuổi theo nhau, một lát sau mới khớp</span>
+            </td>
+            <td class="c-cum">
+              <code>eventually consistent</code><code>a replication lag</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>backlog</b>
+                <button class="say" data-say="it's on our backlog">🔊</button></span
+              >
+              <span class="ipa">/ˈbæklɒɡ/ · danh từ (đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              việc tồn đọng chưa làm / danh sách việc chờ xếp ưu tiên
+              <span class="phu">đống việc dồn lại, hoặc danh sách việc đã nhận mà chưa tới lượt làm</span>
+            </td>
+            <td class="c-cum">
+              <code>on the backlog</code><code>a backlog of tickets / orders</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>addendum</b>
+                <button class="say" data-say="an addendum to the contract">🔊</button></span
+              >
+              <span class="ipa">/əˈdendəm/ · danh từ (đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              phụ lục hợp đồng
+              <span class="phu">ký thêm một tờ để sửa hoặc bù vào hợp đồng cũ, khỏi phải làm lại cả hợp đồng</span>
+            </td>
+            <td class="c-cum">
+              <code>an addendum to the contract</code><code>sign an addendum</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>stipulate</b>
+                <button class="say" data-say="the contract stipulates that">🔊</button></span
+              >
+              <span class="ipa">/ˈstɪpjuleɪt/ · động từ</span>
+            </td>
+            <td class="c-vi hide-me">
+              quy định rõ trong hợp đồng
+              <span class="phu">ghi hẳn thành điều khoản bắt buộc, không phải thoả thuận miệng</span>
+            </td>
+            <td class="c-cum">
+              <code>the contract stipulates that…</code><code>as stipulated in clause 4</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>expedite</b>
+                <button class="say" data-say="expedite the review">🔊</button></span
+              >
+              <span class="ipa">/ˈekspədaɪt/ · động từ</span>
+            </td>
+            <td class="c-vi hide-me">
+              đẩy nhanh tiến độ
+              <span class="phu">nhờ xử lý gấp hơn quy trình thường — thúc cho sớm, không phải làm tắt</span>
+            </td>
+            <td class="c-cum">
+              <code>expedite the review / the payment</code><code>expedited shipping</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>deep dive</b>
+                <button class="say" data-say="run a deep dive on it">🔊</button></span
+              >
+              <span class="ipa">/ˌdiːp ˈdaɪv/ · danh từ (cũng là động từ deep-dive)</span>
+            </td>
+            <td class="c-vi hide-me">
+              phân tích chuyên sâu
+              <span class="phu">dành hẳn một buổi, hoặc một tài liệu, mổ xẻ đúng một chủ đề — không bàn lan sang việc khác</span>
+            </td>
+            <td class="c-cum">
+              <code>do / run a deep dive on sth</code><code>a deep dive into the numbers</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>set in stone</b>
+                <button class="say" data-say="nothing is set in stone yet">🔊</button></span
+              >
+              <span class="ipa">/ˌset ɪn ˈstəʊn/ · thành ngữ (cụm tính từ, đi với be)</span>
+            </td>
+            <td class="c-vi hide-me">
+              bất di bất dịch / không đổi được nữa
+              <span class="phu">đã chốt hẳn, từ giờ không ai sửa — trong email khách hay dùng ở dạng phủ định</span>
+            </td>
+            <td class="c-cum">
+              <code>nothing is set in stone (yet)</code><code>the deadline is set in stone</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>sunset</b>
+                <button class="say" data-say="sunset the v1 API">🔊</button></span
+              >
+              <span class="ipa">/ˈsʌn.set/ · động từ (cũng là danh từ)</span>
+            </td>
+            <td class="c-vi hide-me">
+              khai tử theo lịch
+              <span class="phu">báo trước ngày tắt, cho khách thời gian chuyển sang cái mới, rồi mới tắt thật</span>
+            </td>
+            <td class="c-cum">
+              <code>sunset a feature / an API</code><code>the sunset date</code>
+            </td>
+          </tr>
+          <tr data-cat="biz">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>ironclad</b>
+                <button class="say" data-say="an ironclad guarantee">🔊</button></span
+              >
+              <span class="ipa">/ˈaɪən.klæd/ · tính từ</span>
+            </td>
+            <td class="c-vi hide-me">
+              chặt chẽ không kẽ hở
+              <span class="phu">hợp đồng, cam kết, bằng chứng — chắc tới mức không ai bẻ hay lách được</span>
+            </td>
+            <td class="c-cum">
+              <code>an ironclad contract / guarantee</code><code>nothing is ironclad</code>
+            </td>
+          </tr>
+          <tr data-cat="life">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>stock up</b>
+                <button class="say" data-say="stock up on noodles">🔊</button></span
+              >
+              <span class="ipa">/ˌstɒk ˈʌp/ · phrasal verb</span>
+            </td>
+            <td class="c-vi hide-me">
+              mua trữ sẵn
+              <span class="phu">mua nhiều để dành dùng dần — hay làm trước Tết, trước đợt lễ, hoặc trước một tuần biết chắc là sẽ bận</span>
+            </td>
+            <td class="c-cum">
+              <code>stock up on sth</code><code>stock up before the holiday</code>
+            </td>
+          </tr>
+          <tr data-cat="life">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>power nap</b>
+                <button class="say" data-say="take a power nap">🔊</button></span
+              >
+              <span class="ipa">/ˈpaʊə næp/ · danh từ (đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              giấc ngủ ngắn lấy sức
+              <span class="phu">nằm chừng 15-20 phút giữa ngày cho đầu tỉnh lại, không ngủ sâu</span>
+            </td>
+            <td class="c-cum">
+              <code>take / grab a power nap</code><code>a twenty-minute power nap</code>
+            </td>
+          </tr>
+          <tr data-cat="life">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>cabin fever</b>
+                <button class="say" data-say="I've got cabin fever">🔊</button></span
+              >
+              <span class="ipa">/ˈkæb.ɪn ˌfiː.və(r)/ · danh từ (không đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              cuồng chân
+              <span class="phu">ở trong nhà lâu quá, bứt rứt chỉ muốn ra ngoài cho thoáng</span>
+            </td>
+            <td class="c-cum">
+              <code>get / have cabin fever</code><code>a bad case of cabin fever</code>
+            </td>
+          </tr>
+          <tr data-cat="life">
+            <td class="c-tu">
+              <span class="tu"
+                ><b>homebody</b>
+                <button class="say" data-say="I'm more of a homebody">🔊</button></span
+              >
+              <span class="ipa">/ˈhəʊmˌbɒd.i/ · danh từ (đếm được)</span>
+            </td>
+            <td class="c-vi hide-me">
+              người thích ở nhà
+              <span class="phu">rủ đi đâu cũng thấy ở nhà vui hơn — không phải ngại người, chỉ là thích ở nhà</span>
+            </td>
+            <td class="c-cum">
+              <code>a bit of a homebody</code><code>I'm more of a homebody</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ══════ 2. CHỖ DỄ SAI ══════ -->
+
+      <h2>Mười hai chỗ dễ sai</h2>
+      <p class="passage">
+        Rút từ mục <b>Bẫy</b> của bốn buổi học. Đây là phần đáng đọc lại nhất — nhớ
+        nghĩa thì dễ, dùng đúng mới khó.
+      </p>
+
+      <table class="de-nham">
+        <tbody>
+          <tr>
+            <td class="dung">stock up <b>on</b> noodles</td>
+            <td class="sai">stock up noodles</td>
+            <td class="visao hide-me">
+              Thiếu <b>on</b> là lỗi gần như chắc chắn mắc. Bỏ luôn <i>up</i> thì
+              <i>I stocked noodles</i> nghe như bạn là người nhập hàng cho cửa hàng.
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">reconcile the report <b>with</b> the invoice</td>
+            <td class="sai">reconcile the report to the invoice</td>
+            <td class="visao hide-me">
+              Giới từ cố định là <b>with</b>. <i>reconcile A to B</i> lại mang nghĩa
+              khác hẳn: "đành chấp nhận B".
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">an addendum <b>to</b> the contract</td>
+            <td class="sai">an addendum of the contract</td>
+            <td class="visao hide-me">
+              Giới từ là <b>to</b>. Và đừng nhầm với <b>appendix</b>: appendix là phần
+              phụ lục <i>trong</i> một tài liệu để tham khảo, addendum là giấy ký
+              <i>sau khi</i> hợp đồng đã có hiệu lực.
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">a deep dive <b>on</b> / <b>into</b> the numbers</td>
+            <td class="sai">a deep dive about the numbers</td>
+            <td class="visao hide-me">
+              Chỉ <b>on</b> hoặc <b>into</b>, không bao giờ <i>about</i>. Động từ đi
+              kèm là <b>do</b> / <b>run</b>, đừng nói "make a deep dive".
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">the contract stipulates <b>that</b> we deliver two reports</td>
+            <td class="sai">the contract stipulates to deliver two reports</td>
+            <td class="visao hide-me">
+              Theo sau <b>stipulate</b> là <b>that +</b> mệnh đề hoặc một danh từ,
+              không phải <i>to do</i>. Trọng âm âm đầu: <b>STIP</b>-u-late.
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">the server is <b>thrashing</b> /θ/</td>
+            <td class="sai">the server is trashing /tr/</td>
+            <td class="visao hide-me">
+              <b>thrash</b> /θræʃ/ = quay vòng mà không ra việc; <b>trash</b> /træʃ/ =
+              rác, bỏ đi. Nói về máy thì không có tân ngữ: ❌ "the server thrashes the
+              memory"; nói về người thì thêm <i>on</i>:
+              <i>we thrashed on it all morning</i>.
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">it <b>clobbered</b> my config</td>
+            <td class="sai">it clobbered <b>on</b> my config</td>
+            <td class="visao hide-me">
+              <b>clobber</b> nhận tân ngữ trực tiếp, không có giới từ. Và đây là từ
+              suồng sã — viết email khách thì dùng <b>overwrite</b>.
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">tree shaking (hai chữ rời)</td>
+            <td class="sai">treeshaking</td>
+            <td class="visao hide-me">
+              Danh từ viết <b>rời</b>, tính từ mới có gạch nối:
+              <i>a tree-shakeable library</i>. Muốn nói dạng động từ là
+              <b>to tree-shake sth</b>, không bao giờ "to tree shaking".
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">the date <b>is</b> set in stone</td>
+            <td class="sai">the date has set in stone</td>
+            <td class="visao hide-me">
+              Thành ngữ này đi với <b>be</b>, không đi với <i>have</i>. Không mạo từ,
+              không số nhiều: đừng viết "set in a stone" / "set in stones".
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">eventually consistent</td>
+            <td class="sai">eventual consistent</td>
+            <td class="visao hide-me">
+              Dạng tính từ cần trạng từ <b>eventually</b> + tính từ
+              <b>consistent</b>. Danh từ <i>eventual consistency</i> không đếm được →
+              không nói "an eventual consistency".
+            </td>
+          </tr>
+          <tr>
+            <td class="dung">ironclad (liền một chữ)</td>
+            <td class="sai">iron clad</td>
+            <td class="visao hide-me">
+              Viết <b>liền</b> (có chỗ viết <i>iron-clad</i>), không tách rời. Đọc
+              /ˈaɪən/ — "ai-ơn", chữ <i>r</i> gần như không đọc. Là tính từ, không có
+              động từ "to ironclad".
+            </td>
+          </tr>
+          <tr>
+            <td class="dung"><b>take</b> a power nap</td>
+            <td class="sai">do / make a power nap</td>
+            <td class="visao hide-me">
+              Động từ đi kèm là <b>take</b> hoặc <b>grab</b>. Là danh từ đếm được:
+              <i>a power nap</i>, ❌ "some power nap". Gạch nối chỉ khi dùng làm động
+              từ: <i>I power-napped for twenty minutes</i>.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ══════ 3. CHI TIẾT TỪNG TỪ ══════ -->
+
+      <h2>Chi tiết — mỗi từ một câu thật</h2>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">1</span>
+          <h2>upsert</h2>
+          <span class="ipa">/ˈʌpsɜːt/ <em>verb (cũng là noun)</em></span>
+          <button class="say" data-say="upsert">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">thêm mới nếu chưa có, cập nhật nếu đã có<span class="alt">một lệnh làm cả hai việc — khỏi phải query kiểm tra trước rồi mới quyết định insert hay update</span></p>
+        <p class="def">
+          A single database write that inserts a new row if it is not there yet, or updates the existing one if it is.
+          <span class="def-vi hide-me">→ Một lệnh ghi duy nhất xuống database: chưa có dòng đó thì thêm mới, có rồi thì cập nhật dòng đang có.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">We changed the nightly import to <b>upsert</b> every row, so the job is now idempotent — rerunning it after a crash cannot create duplicates.
+              <span class="hide-me">→ Bọn mình đổi job import đêm sang upsert từng dòng, nên giờ job gọi lại mấy lần cũng vậy — chạy lại sau khi sập cũng không sinh ra bản trùng.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">2</span>
+          <h2>reconcile</h2>
+          <span class="ipa">/ˈrekənsaɪl/ <em>verb</em></span>
+          <button class="say" data-say="reconcile">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">đối chiếu rồi sửa chỗ lệch<span class="alt">so hai bên xem khác nhau ở đâu, rồi kéo cho về khớp — không chỉ là "so sánh", so xong là sửa luôn</span></p>
+        <p class="def">
+          To compare two sets of records, or the state you want against the state you actually have, and fix whatever does not match.
+          <span class="def-vi hide-me">→ So hai bộ dữ liệu, hoặc so trạng thái mình muốn với trạng thái đang có thật, rồi sửa những chỗ không khớp.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">A nightly job <b>reconciles</b> our order table with the warehouse feed, and this morning it reported one discrepancy — four orders the warehouse never saw.
+              <span class="hide-me">→ Một job chạy đêm đối chiếu bảng đơn hàng của bọn mình với dữ liệu kho, sáng nay nó báo một chỗ vênh giữa hai con số — bốn đơn mà kho chưa thấy bao giờ.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">3</span>
+          <h2>thrash</h2>
+          <span class="ipa">/θræʃ/ <em>verb</em></span>
+          <button class="say" data-say="thrash">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">trì trệ / quay vòng mà không ra việc<span class="alt">tốn hết sức vào chuyện tráo qua tráo lại — máy thì swap liên tục, người thì bàn đi bàn lại — còn việc chính thì không nhích</span></p>
+        <p class="def">
+          When a machine or a team thrashes, it burns almost all its effort switching between things instead of finishing them, so very little actually gets done.
+          <span class="def-vi hide-me">→ Khi một cái máy hay một team thrash, gần hết sức bị đốt vào việc tráo qua tráo lại giữa các việc thay vì làm xong việc nào, nên thực ra chẳng có gì nhích được.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">The box only has 2 GB of RAM, so the nightly import <b>thrashes</b> and throughput drops to a few rows a second.
+              <span class="hide-me">→ Con máy chỉ có 2 GB RAM nên job import đêm cứ trì trệ, throughput tụt còn vài dòng một giây.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">4</span>
+          <h2>clobber</h2>
+          <span class="ipa">/ˈklɒbə(r)/ <em>verb</em></span>
+          <button class="say" data-say="clobber">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">đè mất cái đang có<span class="alt">ghi đè kiểu phá — thường là vô ý, một lệnh hay một force-push xoá sổ bản người khác vừa sửa</span></p>
+        <p class="def">
+          To clobber something is to overwrite or wipe it out, usually by accident and usually with one careless command.
+          <span class="def-vi hide-me">→ Clobber một thứ gì là ghi đè hoặc xoá sổ nó, thường là vô ý và thường chỉ bằng một lệnh làm vội.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">Run the migration twice and the second pass <b>clobbers</b> every value the backfill just wrote.
+              <span class="hide-me">→ Chạy migration hai lần thì lượt sau đè mất hết giá trị mà job bù dữ liệu vừa ghi vào.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">5</span>
+          <h2>tree shaking</h2>
+          <span class="ipa">/triː ˈʃeɪ.kɪŋ/ <em>noun (không đếm được)</em></span>
+          <button class="say" data-say="tree shaking">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">loại bỏ code không dùng<span class="alt">lúc build, cái gì không ai import tới thì bị cắt khỏi bundle cho file nhẹ đi</span></p>
+        <p class="def">
+          Tree shaking is a build step that drops code nobody imports, so the final bundle ships less JavaScript.
+          <span class="def-vi hide-me">→ Tree shaking là một bước lúc build: code nào không ai import tới thì bị bỏ đi, nên bundle cuối cùng gửi xuống ít JavaScript hơn.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v"><b>Tree shaking</b> only works if the library ships ES modules — otherwise the bundler keeps everything and your footprint doubles.
+              <span class="hide-me">→ Tree shaking chỉ ăn khi thư viện xuất ES module — không thì bundler giữ nguyên tất, mức chiếm dụng tài nguyên phình lên gấp đôi.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">6</span>
+          <h2>kill switch</h2>
+          <span class="ipa">/ˈkɪl swɪtʃ/ <em>noun (đếm được)</em></span>
+          <button class="say" data-say="kill switch">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">nút tắt khẩn cấp<span class="alt">bật lên là tắt ngay một tính năng đang chạy, không cần deploy lại</span></p>
+        <p class="def">
+          A kill switch is a single control that turns a running feature off at once, without shipping a new release.
+          <span class="def-vi hide-me">→ Kill switch là một cái nút duy nhất, tắt ngay lập tức một tính năng đang chạy mà không phải đẩy ra bản release mới.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">Ops can hit the <b>kill switch</b> without waiting for anyone to sign off — that's the whole point of having one.
+              <span class="hide-me">→ Bên ops bấm kill switch được luôn, không phải chờ ai duyệt chính thức — có nó là để vậy.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">7</span>
+          <h2>code smell</h2>
+          <span class="ipa">/ˈkəʊd smel/ <em>noun (đếm được)</em></span>
+          <button class="say" data-say="code smell">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">dấu hiệu code có vấn đề<span class="alt">chạy vẫn đúng, test vẫn xanh, nhưng viết kiểu này là sắp có chuyện — hàm quá dài, ba chỗ copy y nhau, tên đặt lung tung</span></p>
+        <p class="def">
+          A code smell is a part of the code that still works but looks wrong enough to warn you about a deeper design problem.
+          <span class="def-vi hide-me">→ Code smell là một chỗ trong code vẫn chạy được, nhưng trông sai đủ để báo trước là thiết kế đang có vấn đề sâu hơn.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">That 400-line function is a classic <b>code smell</b> — it still works, but every change to it causes a regression somewhere else.
+              <span class="hide-me">→ Cái hàm 400 dòng đó là dấu hiệu code có vấn đề kinh điển — chạy vẫn đúng, nhưng sửa chỗ nào là chỗ khác lại hỏng.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="it">
+        <div class="word-head">
+          <span class="num">8</span>
+          <h2>eventual consistency</h2>
+          <span class="ipa">/ɪˌven.tʃu.əl kənˈsɪs.tən.si/ <em>noun (không đếm được)</em></span>
+          <button class="say" data-say="eventual consistency">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">nhất quán sau cùng<span class="alt">ghi xong chưa thấy ngay — các bản sao đuổi theo nhau, một lát sau mới khớp</span></p>
+        <p class="def">
+          Eventual consistency means every copy of the data will agree in the end, but for a short while after a write some copies can still be out of date.
+          <span class="def-vi hide-me">→ Nhất quán sau cùng nghĩa là cuối cùng rồi mọi bản sao của dữ liệu cũng khớp nhau, nhưng trong một khoảng ngắn sau khi ghi thì vài bản sao vẫn có thể còn là số cũ.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v"><b>Eventual consistency</b> is fine for the activity feed, but not for the balance screen — a customer seeing stale money is a support ticket.
+              <span class="hide-me">→ Nhất quán sau cùng thì ổn cho trang hoạt động, nhưng không ổn cho trang số dư — khách nhìn thấy số tiền cũ là bên support có việc ngay.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">9</span>
+          <h2>backlog</h2>
+          <span class="ipa">/ˈbæklɒɡ/ <em>noun (đếm được)</em></span>
+          <button class="say" data-say="backlog">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">việc tồn đọng chưa làm / danh sách việc chờ xếp ưu tiên<span class="alt">đống việc dồn lại, hoặc danh sách việc đã nhận mà chưa tới lượt làm</span></p>
+        <p class="def">
+          The list of work that has been asked for but not done yet, usually kept in priority order.
+          <span class="def-vi hide-me">→ Danh sách việc đã được yêu cầu nhưng chưa làm, thường giữ theo thứ tự ưu tiên.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">Your CSV export is on our <b>backlog</b> for next quarter — it sits behind the new onboarding flow, which has to land first.
+              <span class="hide-me">→ Phần export CSV của anh/chị bên em có trong danh sách việc chờ của quý sau ạ — nó xếp sau luồng onboarding khách mới, cái đó phải xong trước đã.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">10</span>
+          <h2>addendum</h2>
+          <span class="ipa">/əˈdendəm/ <em>noun (đếm được)</em></span>
+          <button class="say" data-say="addendum">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">phụ lục hợp đồng<span class="alt">ký thêm một tờ để sửa hoặc bù vào hợp đồng cũ, khỏi phải làm lại cả hợp đồng</span></p>
+        <p class="def">
+          A short document added to a contract that is already signed, to change or add something without rewriting the whole contract.
+          <span class="def-vi hide-me">→ Một văn bản ngắn thêm vào hợp đồng đã ký, để đổi hoặc bổ sung điều gì mà không phải viết lại cả hợp đồng.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">We can add the two extra reports, but it needs an <b>addendum</b> to the contract — otherwise this is just scope creep and the date slips.
+              <span class="hide-me">→ Bên em làm thêm được hai báo cáo đó ạ, nhưng phải có một phụ lục hợp đồng — không thì việc cứ phình ra ngoài thoả thuận và ngày giao sẽ trễ.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">11</span>
+          <h2>stipulate</h2>
+          <span class="ipa">/ˈstɪpjuleɪt/ <em>verb</em></span>
+          <button class="say" data-say="stipulate">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">quy định rõ trong hợp đồng<span class="alt">ghi hẳn thành điều khoản bắt buộc, không phải thoả thuận miệng</span></p>
+        <p class="def">
+          If a contract or a document stipulates something, it states it as a firm condition that both sides have to follow.
+          <span class="def-vi hide-me">→ Khi một hợp đồng hay một văn bản stipulate điều gì, nó ghi điều đó thành điều kiện bắt buộc mà cả hai bên phải làm theo.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">The contract <b>stipulates</b> two rounds of review, so a third round needs an addendum.
+              <span class="hide-me">→ Hợp đồng quy định rõ hai vòng review ạ, nên vòng thứ ba thì phải có phụ lục hợp đồng.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">12</span>
+          <h2>expedite</h2>
+          <span class="ipa">/ˈekspədaɪt/ <em>verb</em></span>
+          <button class="say" data-say="expedite">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">đẩy nhanh tiến độ<span class="alt">nhờ xử lý gấp hơn quy trình thường — thúc cho sớm, không phải làm tắt</span></p>
+        <p class="def">
+          To expedite something is to make an official process happen faster than it normally would.
+          <span class="def-vi hide-me">→ Expedite một việc là làm cho một quy trình chính thức chạy nhanh hơn bình thường.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">If you can <b>expedite</b> the signed quote, we can start the migration on Monday.
+              <span class="hide-me">→ Nếu anh/chị đẩy nhanh giúp bên em phần báo giá đã ký thì thứ Hai bên em chạy migration được ạ.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">13</span>
+          <h2>deep dive</h2>
+          <span class="ipa">/ˌdiːp ˈdaɪv/ <em>noun (cũng là verb deep-dive)</em></span>
+          <button class="say" data-say="deep dive">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">phân tích chuyên sâu<span class="alt">dành hẳn một buổi, hoặc một tài liệu, mổ xẻ đúng một chủ đề — không bàn lan sang việc khác</span></p>
+        <p class="def">
+          A deep dive is a session or a document that goes through one single topic in full detail.
+          <span class="def-vi hide-me">→ Deep dive là một buổi họp hoặc một tài liệu đi hết một chủ đề duy nhất, chi tiết tới tận cùng.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">The client asked for a <b>deep dive</b> on how our audit trail works before they sign the contract.
+              <span class="hide-me">→ Khách xin một buổi phân tích chuyên sâu về cách nhật ký kiểm toán bên em chạy, trước khi ký hợp đồng ạ.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">14</span>
+          <h2>set in stone</h2>
+          <span class="ipa">/ˌset ɪn ˈstəʊn/ <em>idiom (cụm tính từ, đi với be)</em></span>
+          <button class="say" data-say="set in stone">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">bất di bất dịch / không đổi được nữa<span class="alt">đã chốt hẳn, từ giờ không ai sửa — trong email khách hay dùng ở dạng phủ định</span></p>
+        <p class="def">
+          If something is set in stone, it has been fixed for good and cannot be changed any more.
+          <span class="def-vi hide-me">→ Một thứ đã set in stone là đã được cố định hẳn, và không thể đổi được nữa.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">The cutover date is <b>set in stone</b> — the client's old contract ends that day, so nothing moves.
+              <span class="hide-me">→ Mốc chuyển hẳn sang hệ mới đã chốt hẳn, không đổi được — hợp đồng cũ của khách hết đúng hôm đó, nên không dịch được gì cả.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">15</span>
+          <h2>sunset</h2>
+          <span class="ipa">/ˈsʌn.set/ <em>verb (cũng là noun)</em></span>
+          <button class="say" data-say="sunset">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">khai tử theo lịch<span class="alt">báo trước ngày tắt, cho khách thời gian chuyển sang cái mới, rồi mới tắt thật</span></p>
+        <p class="def">
+          To sunset a product or a feature is to announce a date after which it will no longer be supported, and then switch it off.
+          <span class="def-vi hide-me">→ Sunset một sản phẩm hay một tính năng là báo ra một mốc ngày mà sau đó nó không còn được hỗ trợ nữa, rồi tắt nó đi.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">We're going to <b>sunset</b> the v1 API in March, so the client needs a cutover plan before then.
+              <span class="hide-me">→ Tháng Ba bên mình khai tử API v1, nên khách phải có kế hoạch chuyển hẳn sang hệ mới trước đó ạ.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="biz">
+        <div class="word-head">
+          <span class="num">16</span>
+          <h2>ironclad</h2>
+          <span class="ipa">/ˈaɪən.klæd/ <em>adjective</em></span>
+          <button class="say" data-say="ironclad">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">chặt chẽ không kẽ hở<span class="alt">hợp đồng, cam kết, bằng chứng — chắc tới mức không ai bẻ hay lách được</span></p>
+        <p class="def">
+          Something ironclad is so strong or so carefully written that nobody can break it or argue their way out of it.
+          <span class="def-vi hide-me">→ Một thứ ironclad là thứ chắc, hoặc được viết kỹ, tới mức không ai phá được nó cũng không ai nói lý để lách ra được.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">The SLA isn't <b>ironclad</b> — there's a line in the fine print that lets them miss two hours a month.
+              <span class="hide-me">→ Cái SLA đó không chặt chẽ lắm — trong mấy dòng chữ nhỏ có câu cho phép họ hụt hai tiếng mỗi tháng.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="life">
+        <div class="word-head">
+          <span class="num">17</span>
+          <h2>stock up</h2>
+          <span class="ipa">/ˌstɒk ˈʌp/ <em>phrasal verb</em></span>
+          <button class="say" data-say="stock up">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">mua trữ sẵn<span class="alt">mua nhiều để dành dùng dần — hay làm trước Tết, trước đợt lễ, hoặc trước một tuần biết chắc là sẽ bận</span></p>
+        <p class="def">
+          To buy a lot of something now so that you have enough for later.
+          <span class="def-vi hide-me">→ Mua sẵn nhiều một thứ gì từ bây giờ để sau có đủ mà dùng.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">I <b>stock up</b> on instant noodles before every release week — by Thursday I am too worn out to cook.
+              <span class="hide-me">→ Trước tuần release nào mình cũng mua trữ sẵn mì gói — tới thứ Năm là mệt rã rời, chẳng nấu nổi nữa.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="life">
+        <div class="word-head">
+          <span class="num">18</span>
+          <h2>power nap</h2>
+          <span class="ipa">/ˈpaʊə næp/ <em>noun (đếm được)</em></span>
+          <button class="say" data-say="power nap">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">giấc ngủ ngắn lấy sức<span class="alt">nằm chừng 15-20 phút giữa ngày cho đầu tỉnh lại, không ngủ sâu</span></p>
+        <p class="def">
+          A power nap is a short sleep of about fifteen to twenty minutes taken during the day to get your focus back.
+          <span class="def-vi hide-me">→ Power nap là một giấc ngủ ngắn chừng mười lăm đến hai mươi phút ban ngày, ngủ để lấy lại sự tập trung.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">I take a <b>power nap</b> after lunch on days I have to stay up for a release.
+              <span class="hide-me">→ Hôm nào phải thức khuya trực release thì trưa mình ngủ ngắn một giấc lấy sức.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="life">
+        <div class="word-head">
+          <span class="num">19</span>
+          <h2>cabin fever</h2>
+          <span class="ipa">/ˈkæb.ɪn ˌfiː.və(r)/ <em>noun (không đếm được)</em></span>
+          <button class="say" data-say="cabin fever">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">cuồng chân<span class="alt">ở trong nhà lâu quá, bứt rứt chỉ muốn ra ngoài cho thoáng</span></p>
+        <p class="def">
+          Cabin fever is the restless, irritable feeling you get after being stuck indoors or in one place for too long.
+          <span class="def-vi hide-me">→ Cabin fever là cảm giác bứt rứt, dễ nổi nóng sau khi bị kẹt trong nhà hoặc ở một chỗ quá lâu.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">Three days of working from the sofa and I've got proper <b>cabin fever</b> — I don't even care that it's rush hour, I just need to walk somewhere.
+              <span class="hide-me">→ Ba ngày ngồi làm trên sofa là mình cuồng chân thật sự — giờ cao điểm hay không cũng chẳng quan tâm nữa, chỉ cần ra ngoài đi bộ một đoạn.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="word" data-cat="life">
+        <div class="word-head">
+          <span class="num">20</span>
+          <h2>homebody</h2>
+          <span class="ipa">/ˈhəʊmˌbɒd.i/ <em>noun (đếm được)</em></span>
+          <button class="say" data-say="homebody">🔊</button>
+        </div>
+        <p class="vi-quick hide-me">người thích ở nhà<span class="alt">rủ đi đâu cũng thấy ở nhà vui hơn — không phải ngại người, chỉ là thích ở nhà</span></p>
+        <p class="def">
+          A homebody is someone who is happiest at home and would rather stay in than go out.
+          <span class="def-vi hide-me">→ Homebody là người thấy vui nhất khi ở nhà, và thà ở nhà còn hơn đi ra ngoài.</span>
+        </p>
+        <div class="rows">
+          <div class="r">
+            <span class="k">Câu thật</span>
+            <span class="v">I'm a <b>homebody</b>, so three rainy days indoors doesn't give me cabin fever the way it does my flatmate.
+              <span class="hide-me">→ Mình thuộc dạng thích ở nhà, nên ba ngày mưa nằm trong nhà cũng chẳng cuồng chân như ông bạn cùng phòng.</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ══════ 4. TỰ KIỂM TRA ══════ -->
+
+      <h2>Tự kiểm tra — 6 câu</h2>
+      <p class="passage">
+        Trả lời trong đầu trước, rồi mới mở đáp án. Sai câu nào thì quay lên bảng đọc
+        lại đúng từ đó.
+      </p>
+
+      <ol>
+        <li>
+          Khách xin thêm hai báo cáo ngoài hợp đồng. Viết một câu lịch sự nói là làm
+          được, nhưng phải có giấy ký bổ sung.
+        </li>
+        <li>
+          Điền:
+          <i>The box only has 2 GB of RAM, so the nightly import ______ and throughput collapses.</i>
+        </li>
+        <li>
+          Chọn giới từ: <i>The client asked for a deep dive ___ the numbers.</i>
+          (on / about)
+        </li>
+        <li>
+          <i>eventual consistency</i> hay <i>eventually consistent</i>?
+          <i>The activity feed is ______, so a new post can take a second to show up.</i>
+        </li>
+        <li>Sửa lỗi: <i>I stocked up noodles before release week.</i></li>
+        <li>
+          Dịch sang tiếng Anh:
+          <i>Mốc chuyển hẳn sang hệ mới đã chốt hẳn rồi, không đổi được nữa.</i>
+        </li>
+      </ol>
+
+      <details>
+        <summary>Đáp án</summary>
+        <ol>
+          <li>
+            <b>We can add the two extra reports, but it would need an addendum to the
+            contract.</b>
+            — giới từ là <i>to</i>, không phải "of"; và đây là <b>addendum</b> (giấy ký
+            bổ sung) chứ không phải <b>appendix</b> (phụ lục tham khảo trong tài liệu).
+          </li>
+          <li>
+            <b>thrashes</b> — nói về máy thì <i>thrash</i> không có tân ngữ. Để ý /θ/
+            đầu lưỡi: <i>trashes</i> /tr/ là "bỏ vào rác", nghĩa khác hẳn.
+          </li>
+          <li>
+            <b>on</b> — <i>deep dive on</i> hoặc <i>deep dive into</i>, không bao giờ
+            <i>about</i>. Động từ đi kèm là <i>do</i> / <i>run</i>, không phải "make".
+          </li>
+          <li>
+            <b>eventually consistent</b> — chỗ này cần dạng tính từ (trạng từ + tính
+            từ), không phải danh từ. ❌ "eventual consistent" là lỗi hay gặp nhất của
+            từ này.
+          </li>
+          <li>
+            <b>I stocked up on noodles before release week.</b> — <i>stock up</i> bắt
+            buộc có <i>on</i> trước thứ mua.
+          </li>
+          <li>
+            <b>The cutover date is set in stone.</b> — đi với <i>be</i>, không phải
+            <i>have</i>; không mạo từ, không số nhiều.
+          </li>
+        </ol>
+      </details>
+
+      <div class="toolbar" style="margin-top: 28px">
+        <span class="hint" style="margin-left: 0"
+          >Nguồn: buổi 12/10 · 13/10 · 16/10 và 17/10 · Muốn chấm điểm và cập nhật lịch
+          ôn thì gõ <code>/on-tap</code> hoặc <code>/kiem-tra</code></span
+        >
+      </div>
+    </div>
+    <script src="../assets/lesson.js"></script>
+  </body>
+</html>
