@@ -10,7 +10,7 @@
 <div class="wrap">
 
 <header class="hero">
-  <div class="eyebrow">Tuần 2026-W43 · Buổi #52</div>
+  <div class="eyebrow">Tuần 2026-W43 · Buổi #51</div>
   <h1>Thứ Hai, 19 tháng 10 năm 2026</h1>
   <div class="mixline">
     <span class="badge it">2 IT</span>
@@ -35,36 +35,36 @@
     <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B là từ cũ lâu chưa gặp — quên vài từ là bình thường.</p>
 
     <div class="warm-part">
-      <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-10-17</div>
+      <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-10-16</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">dấu hiệu code có vấn đề<span class="alt">chạy vẫn đúng, test vẫn xanh, nhưng viết kiểu này là sắp có chuyện — hàm quá dài, ba chỗ copy y nhau, tên đặt lung tung</span></span>
+          <span class="q">loại bỏ code không dùng<span class="alt">lúc build, cái gì không ai import tới thì bị cắt khỏi bundle cho file nhẹ đi</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>code smell</b> — <em>"That 400-line function is a classic code smell — it still works, but every change to it causes a regression somewhere else."</em></span>
+            <span class="a hide-me"><b>tree shaking</b> — <em>"Tree shaking only works if the library ships ES modules — otherwise the bundler keeps everything and your footprint doubles."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">nhất quán sau cùng<span class="alt">ghi xong chưa thấy ngay — các bản sao đuổi theo nhau, một lát sau mới khớp</span></span>
+          <span class="q">nút tắt khẩn cấp<span class="alt">bật lên là tắt ngay một tính năng đang chạy, không cần deploy lại</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>eventual consistency</b> — <em>"Eventual consistency is fine for the activity feed, but not for the balance screen — a customer seeing stale money is a support ticket."</em></span>
+            <span class="a hide-me"><b>kill switch</b> — <em>"Ops can hit the kill switch without waiting for anyone to sign off — that's the whole point of having one."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">khai tử theo lịch<span class="alt">báo trước ngày tắt, cho khách thời gian chuyển sang cái mới, rồi mới tắt thật</span></span>
+          <span class="q">phân tích chuyên sâu<span class="alt">dành hẳn một buổi, hoặc một tài liệu, mổ xẻ đúng một chủ đề — không bàn lan sang việc khác</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>sunset</b> — <em>"We're going to sunset the v1 API in March, so the client needs a cutover plan before then."</em></span>
+            <span class="a hide-me"><b>deep dive</b> — <em>"The client asked for a deep dive on how our audit trail works before they sign the contract."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">chặt chẽ không kẽ hở<span class="alt">hợp đồng, cam kết, bằng chứng — chắc tới mức không ai bẻ hay lách được</span></span>
+          <span class="q">bất di bất dịch / không đổi được nữa<span class="alt">đã chốt hẳn, từ giờ không ai sửa — trong email khách hay dùng ở dạng phủ định</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>ironclad</b> — <em>"The SLA isn't ironclad — there's a line in the fine print that lets them miss two hours a month."</em></span>
+            <span class="a hide-me"><b>set in stone</b> — <em>"The cutover date is set in stone — the client's old contract ends that day, so nothing moves."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">người thích ở nhà<span class="alt">rủ đi đâu cũng thấy ở nhà vui hơn — không phải ngại người, chỉ là thích ở nhà</span></span>
+          <span class="q">cuồng chân<span class="alt">ở trong nhà lâu quá, bứt rứt chỉ muốn ra ngoài cho thoáng</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>homebody</b> — <em>"I'm a homebody, so three rainy days indoors doesn't give me cabin fever the way it does my flatmate."</em></span>
+            <span class="a hide-me"><b>cabin fever</b> — <em>"Three days of working from the sofa and I've got proper cabin fever — I don't even care that it's rush hour, I just need to walk somewhere."</em></span>
           </details>
         </li>
       </ol>
@@ -74,15 +74,51 @@
       <div class="wp-head"><span class="wp-tag b">B</span>20 từ cũ dàn đều cả vốn từ</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">container chạy kèm<span class="alt">đứng cùng pod với service chính, lo mấy việc phụ: gom log, bắn metric, làm proxy</span></span>
+          <span class="q">thủ phạm gây ra lỗi<span class="alt">thứ làm hỏng chuyện, truy mãi mới ra</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>sidecar</b> — <em>"We moved log shipping into a sidecar, so the app itself only has to flush its lines to stdout and forget about them."</em></span>
+            <span class="a hide-me"><b>culprit</b> — <em>"We chased that bug for two days; the culprit was a stale cache entry nobody had invalidated."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">cắt cụt cho ngắn lại<span class="alt">phần đuôi mất luôn, không làm tròn</span></span>
+          <span class="q">nắn kỳ vọng từ đầu<span class="alt">nói trước cái làm được tới đâu, đừng để khách tự tưởng</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>truncate</b> — <em>"The logger truncates every message over four kilobytes, so a verbose stack trace loses its last lines."</em></span>
+            <span class="a hide-me"><b>manage expectations</b> — <em>"I'd rather manage expectations now and tell them the lead time is six weeks than promise four and miss it."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tỷ lệ khách rời bỏ<span class="alt">trong kỳ có bao nhiêu phần trăm khách dùng xong rồi bỏ đi</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>churn</b> — <em>"Support says churn always goes up in the months when the app feels flaky, so stability is a sales problem too."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">đưa người mới vào guồng<span class="alt">khách mới hoặc người mới vào team</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>onboarding</b> — <em>"Their onboarding flow breaks on the very first login — looks like a race condition between the sign-up call and the profile call."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">hiểu giống nhau<span class="alt">cùng một cách hiểu, không ai đang làm theo ý khác</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>on the same page</b> — <em>"Can we have a short call so we're all on the same page about the next milestone?"</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">no căng bụng<span class="alt">ăn quá đà, không nhét thêm được miếng nào</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>stuffed</b> — <em>"I'm too stuffed to think straight — can we circle back on the estimate after lunch?"</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Đồ ăn thừa<span class="alt">cất đi để bữa sau hâm lại ăn — câu trả lời quen nhất cho "trưa nay ăn gì"</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>leftovers</b> — <em>"I'm having leftovers for lunch — I ran out of energy to cook anything after last night's release."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">điểm chết duy nhất<span class="alt">nó hỏng là cả hệ thống sập theo, không có gì đỡ thay</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>single point of failure</b> — <em>"Right now the database is a single point of failure, so we need a replica to fail over to before launch."</em></span>
           </details>
         </li>
         <li class="qa">
@@ -92,105 +128,69 @@
           </details>
         </li>
         <li class="qa">
+          <span class="q">cả đàn ùa vào cùng lúc<span class="alt">cache vừa hết hạn hoặc service vừa sống lại, nghìn request đổ vào một nhịp làm sập tiếp</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>thundering herd</b> — <em>"The token cache expired at midnight and every pod retried in the same second — the thundering herd took auth down again, so we added jittered backoff."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cơn thèm<span class="alt">tự nhiên muốn đúng một món, ăn cái khác không chịu</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>craving</b> — <em>"I got a craving for bún bò halfway through standup, so I headed out for lunch early."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cắt cụt cho ngắn lại<span class="alt">phần đuôi mất luôn, không làm tròn</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>truncate</b> — <em>"The logger truncates every message over four kilobytes, so a verbose stack trace loses its last lines."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chốt cứng cho hết lửng lơ<span class="alt">hoặc: truy cho ra đúng nguyên nhân</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>nail down</b> — <em>"Let's nail down the acceptance criteria this week, or we'll get scope creep in the last sprint again."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chuyện thường thôi<span class="alt">khó chịu nhưng đúng kiểu việc này, ai làm cũng gặp</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>par for the course</b> — <em>"Two weeks of red tape before they open a VPN account is par for the course with banks."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">dẹp, khỏi bàn nữa<span class="alt">phương án đó bị rút, không còn để thương lượng</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>off the table</b> — <em>"The client pushed back hard on the price, so a discount is off the table for this phase."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cắt dữ liệu ra nhiều mảnh<span class="alt">mỗi mảnh một máy, gộp hết lại mới đủ bộ</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>shard</b> — <em>"We sharded the orders table by customer ID last month, and that bottleneck in the nightly report is finally gone."</em></span>
+          </details>
+        </li>
+        <li class="qa">
           <span class="q">lệch dần khỏi chuẩn<span class="alt">tự trôi ra khỏi trạng thái đáng lẽ phải có</span></span>
           <details class="ans"><summary>đáp án</summary>
             <span class="a hide-me"><b>drift</b> — <em>"Six months of manual patches later, staging has drifted from production — and that timeout discrepancy is why the nightly job keeps dying."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">bê bản vá về nhánh cũ<span class="alt">khách chưa lên bản mới thì phải làm việc này</span></span>
+          <span class="q">Băng thông<span class="alt">nghĩa bóng: thời gian, người, sức còn rảnh để nhận thêm việc</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>backport</b> — <em>"We backported the security fix to 2.x so customers on the old release don't have to take a breaking change this month."</em></span>
+            <span class="a hide-me"><b>bandwidth</b> — <em>"We'd love to take that on, but we don't have the bandwidth until the client has signed off on this release."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">phản đối, không nhận ngay<span class="alt">nói “không” theo kiểu mở đàm phán, không đóng cửa</span></span>
+          <span class="q">container chạy kèm<span class="alt">đứng cùng pod với service chính, lo mấy việc phụ: gom log, bắn metric, làm proxy</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>push back</b> — <em>"I pushed back on the Friday deadline and asked for one more sprint; they agreed after I walked them through the regression list."</em></span>
+            <span class="a hide-me"><b>sidecar</b> — <em>"We moved log shipping into a sidecar, so the app itself only has to flush its lines to stdout and forget about them."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">hỏng một phần vẫn chạy tiếp<span class="alt">bớt tính năng chứ không sập cả trang</span></span>
+          <span class="q">chạy được bao nhiêu việc mỗi giây<span class="alt">sức tải: request/giây, job/phút, bản ghi/giờ</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>graceful degradation</b> — <em>"If the pricing service is down we show stale numbers with a warning instead of an error page — that's graceful degradation."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">sát nút, suýt không kịp<span class="alt">xong đúng phút cuối, chừa lại gần như không còn chỗ nào để hụt</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>cut it close</b> — <em>"We booked the flight forty minutes after the workshop ends — that's cutting it close, and there's no buffer if the taxi gets stuck."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">cú hỏi trước xin phép<span class="alt">browser gửi OPTIONS đi hỏi trước, server đồng ý rồi request thật mới đi</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>preflight</b> — <em>"Every cross-origin call pays for a preflight first, so a chatty page doubles its latency before a single byte of data arrives."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">thư giãn, hạ hoả<span class="alt">nghỉ cho nhẹ đầu; hoặc bảo ai đó bình tĩnh lại</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>chill out</b> — <em>"The release finally shipped, so tonight I'm just going to chill out and binge-watch something."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">chừa dư ra phòng hờ<span class="alt">cộng thêm ít ngày, ít tiền cho chắc ăn</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>buffer</b> — <em>"Let's add a two-day buffer before the demo, in case your team needs more lead time to review the test data."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải<span class="alt">đang sa đà vào tiểu tiết, mất cái nhìn tổng thể — hay nói giữa họp để kéo nhau ra</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>in the weeds</b> — <em>"We got into the weeds about cache eviction for twenty minutes while the client was just waiting for a date."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">chuyện phiếm / trò chuyện xã giao<span class="alt">mấy câu thời tiết, cuối tuần, cà phê — nói cho ấm chỗ trước khi vào việc</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>small talk</b> — <em>"Two minutes of small talk at the start of the call, then we checked we were on the same page about the scope."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">sinh sẵn bộ khung<span class="alt">chạy một lệnh là ra đủ file rỗng đúng chỗ, mình chỉ việc điền ruột</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>scaffold</b> — <em>"The CLI scaffolds a whole module in one command, which saved us when the client asked for a demo page on short notice."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">ngủ gật<span class="alt">thiếp đi một lúc, không định ngủ</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>doze off</b> — <em>"I dozed off twice during the retro — I was completely worn out after the release."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">gác lại làm sau<span class="alt">giọng trang trọng, hợp email khách</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>defer</b> — <em>"We'd like to defer the reporting module to phase two so the launch stays on track."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">món phải giao cho khách<span class="alt">khác task: task là việc mình làm</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>deliverable</b> — <em>"The deliverables for this sprint are the API docs and a working staging build — if you come across anything else in the contract, flag it now."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">thu nhỏ lại cho vừa sức<span class="alt">vẫn làm, chỉ làm ít đi so với kế hoạch ban đầu</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>scale back</b> — <em>"If the budget is fixed, we'd rather scale back the reporting module than ship something brittle."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">nhắc nhẹ một cái<span class="alt">thúc khẽ cho người ta nhớ, không làm căng, không gây áp lực</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>nudge</b> — <em>"Legal still hasn't signed the DPA, so I'll nudge them again tomorrow before the cutover."</em></span>
-          </details>
-        </li>
-        <li class="qa">
-          <span class="q">cái đánh đổi<span class="alt">được cái này thì mất cái kia</span></span>
-          <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>trade-off</b> — <em>"Every cache adds a trade-off. The team accepted stale data for faster pages."</em></span>
+            <span class="a hide-me"><b>throughput</b> — <em>"After we removed the bottleneck in the image resizer, throughput went from 40 to 300 requests a second."</em></span>
           </details>
         </li>
       </ol>
@@ -371,8 +371,8 @@
       <span class="vi hide-me">→ Thứ Sáu tiệc góp món của team mình mang món tráng miệng, việc dễ thôi vì cả team biết tỏng mình thích ăn đồ ngọt rồi.</span>
     </li>
     <li>
-      <span class="en">A <b>potluck</b> at someone's flat suits a <span class="rev">homebody</span> like me far better than a loud restaurant across town.</span>
-      <span class="vi hide-me">→ Tiệc góp món ở nhà ai đó thì hợp với đứa thích ở nhà như mình hơn hẳn một cái nhà hàng ồn ào tận bên kia thành phố.</span>
+      <span class="en">The best part of a <b>potluck</b> is the <span class="rev">leftovers</span> — everyone goes home with a box of somebody else's cooking.</span>
+      <span class="vi hide-me">→ Cái hay nhất của tiệc góp món là đồ ăn thừa — ai về cũng xách theo một hộp món người khác nấu.</span>
     </li>
   </ul>
 
