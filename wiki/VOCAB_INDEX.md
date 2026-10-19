@@ -14,7 +14,7 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 255 từ đã học** · IT 102 · Business 102 · Life 51 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
+**Đã biết sẵn (không dạy):** 18 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-19
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -269,9 +269,9 @@
 | 248 | deep dive | deep dives, deep-dive, deep-dived, deep-diving, a deep-dive session, dive into sth, dive deep | noun (đếm được; cũng là verb) | Business | phân tích chuyên sâu | 2026-10-16 | lesson |
 | 249 | set in stone | set sth in stone, is set in stone, carved in stone, written in stone, cast in stone, nothing is set in stone | idiom (cụm tính từ, đi với be) | Business | bất di bất dịch / không đổi được nữa | 2026-10-16 | lesson |
 | 250 | cabin fever | cabin, fever, feverish, a case of cabin fever, get cabin fever, stir-crazy | noun (không đếm được) | Life | cuồng chân | 2026-10-16 | lesson |
-| 251 | source map | source maps, sourcemap, map, mapping, source-mapped, inline source map, .map file | noun (đếm được) | IT | tệp ánh xạ về code nguồn | 2026-10-19 | lesson |
-| 252 | memoize | memoizes, memoized, memoizing, memoization, memoized function, memoizer, memoization cache | verb | IT | lưu kết quả để khỏi tính lại | 2026-10-19 | lesson |
-| 253 | change request | change requests, CR, request a change, requested change, change control, change order | noun (đếm được) | Business | yêu cầu thay đổi | 2026-10-19 | lesson |
+| 251 | strangler fig | strangler fig pattern, strangler pattern, strangler application, strangle, strangled, strangling, strangle the monolith | noun (hay đi kèm: pattern) | IT | thay hệ cũ từng khúc một | 2026-10-19 | lesson |
+| 252 | dark launch | dark launches, dark-launch, dark-launched, dark-launching, launch dark, run dark, dark-launched code | noun (đếm được; cũng là verb) | IT | chạy ngầm tính năng mới trên production | 2026-10-19 | lesson |
+| 253 | gold-plating | gold-plate, gold-plated, gold-plates, gold plating, gold-plater, a gold-plated solution | noun (không đếm được; v: gold-plate) | Business | làm thừa cái khách không xin | 2026-10-19 | lesson |
 | 254 | on the hook | off the hook, let sb off the hook, get sb off the hook, be on the hook for, hooked, hook sb into sth | idiom (đi sau be) | Business | bị buộc phải chịu trách nhiệm | 2026-10-19 | lesson |
 | 255 | potluck | potlucks, pot luck, potluck dinner, potluck supper, take pot luck, potluck-style | noun (đếm được) | Life | tiệc góp món | 2026-10-19 | lesson |
 
@@ -302,6 +302,9 @@
 | go-live | go live, goes live, went live, going live, gone live, the go-live date, post-go-live, pre-go-live, live date | noun (đếm được; v: go live) | Business | mốc hệ thống chạy thật cho người dùng | 2026-10-08 |
 | poison message | poison messages, poison pill, poison queue, poisoned message, poison | noun (đếm được) | IT | message lỗi làm kẹt queue, retry mãi vẫn chết | 2026-10-08 |
 | hard stop | hard stops, have a hard stop, got a hard stop, hard-stop, soft stop | noun (đếm được) | Business | giờ phải dừng, không lùi được | 2026-10-08 |
+| source map | source maps, sourcemap, source-mapped, inline source map, .map file | noun (đếm được) | IT | tệp ánh xạ từ bundle đã build về code nguồn | 2026-10-19 |
+| memoize | memoizes, memoized, memoizing, memoization, memoized function, memoizer, useMemo | verb | IT | lưu kết quả hàm để cùng input khỏi tính lại | 2026-10-19 |
+| change request | change requests, CR, request a change, requested change, change control, change order | noun (đếm được) | Business | yêu cầu thay đổi ngoài phạm vi đã ký, tính thêm tiền/thời gian | 2026-10-19 |
 
 <!--
 LUẬT GHI:
