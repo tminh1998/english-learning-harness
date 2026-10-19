@@ -271,7 +271,7 @@
 | 250 | cabin fever | cabin, fever, feverish, a case of cabin fever, get cabin fever, stir-crazy | noun (không đếm được) | Life | cuồng chân | 2026-10-16 | lesson |
 | 251 | strangler fig | strangler fig pattern, strangler pattern, strangler application, strangle, strangled, strangling, strangle the monolith | noun (hay đi kèm: pattern) | IT | thay hệ cũ từng khúc một | 2026-10-19 | lesson |
 | 252 | dark launch | dark launches, dark-launch, dark-launched, dark-launching, launch dark, run dark, dark-launched code | noun (đếm được; cũng là verb) | IT | chạy ngầm tính năng mới trên production | 2026-10-19 | lesson |
-| 253 | gold-plating | gold-plate, gold-plated, gold-plates, gold plating, gold-plater, a gold-plated solution | noun (không đếm được; v: gold-plate) | Business | làm thừa cái khách không xin | 2026-10-19 | lesson |
+| 253 | gold-plating | gold-plate, gold-plated, gold-plates, gold plating, gold-plater, a gold-plated solution | noun (không đếm được; v: gold-plate) | Business | Làm thừa cái khách yêu cầu | 2026-10-19 | lesson |
 | 254 | on the hook | off the hook, let sb off the hook, get sb off the hook, be on the hook for, hooked, hook sb into sth | idiom (đi sau be) | Business | bị buộc phải chịu trách nhiệm | 2026-10-19 | lesson |
 | 255 | potluck | potlucks, pot luck, potluck dinner, potluck supper, take pot luck, potluck-style | noun (đếm được) | Life | tiệc góp món | 2026-10-19 | lesson |
 
