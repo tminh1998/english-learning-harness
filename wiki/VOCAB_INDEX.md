@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 255 từ đã học** · IT 102 · Business 102 · Life 51 · ad-hoc 0
+**Tổng: 260 từ đã học** · IT 104 · Business 104 · Life 52 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 15 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-17
+**Cập nhật:** 2026-10-19
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -274,6 +274,11 @@
 | 253 | sunset | sunsets, sunsetting, sunsetted, sunset a feature, the sunset date, sunset clause, be sunset | verb (cũng là noun) | Business | khai tử theo lịch | 2026-10-17 | lesson |
 | 254 | ironclad | iron-clad, ironclads, an ironclad guarantee, an ironclad contract, nothing is ironclad | adjective | Business | chặt chẽ không kẽ hở | 2026-10-17 | lesson |
 | 255 | homebody | homebodies, a bit of a homebody, a real homebody, homebound, stay-at-home | noun (đếm được) | Life | người thích ở nhà | 2026-10-17 | lesson |
+| 256 | source map | source maps, sourcemap, map, mapping, source-mapped, inline source map, .map file | noun (đếm được) | IT | tệp ánh xạ về code nguồn | 2026-10-19 | lesson |
+| 257 | memoize | memoizes, memoized, memoizing, memoization, memoized function, memoizer, memoization cache | verb | IT | lưu kết quả để khỏi tính lại | 2026-10-19 | lesson |
+| 258 | change request | change requests, CR, request a change, requested change, change control, change order | noun (đếm được) | Business | yêu cầu thay đổi | 2026-10-19 | lesson |
+| 259 | on the hook | off the hook, let sb off the hook, get sb off the hook, be on the hook for, hooked, hook sb into sth | idiom (đi sau be) | Business | bị buộc phải chịu trách nhiệm | 2026-10-19 | lesson |
+| 260 | potluck | potlucks, pot luck, potluck dinner, potluck supper, take pot luck, potluck-style | noun (đếm được) | Life | tiệc góp món | 2026-10-19 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

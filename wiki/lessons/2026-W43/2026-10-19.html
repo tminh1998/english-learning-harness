@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-10-19 — 5 từ mới</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Tuần 2026-W43 · Buổi #52</div>
+  <h1>Thứ Hai, 19 tháng 10 năm 2026</h1>
+  <div class="mixline">
+    <span class="badge it">2 IT</span>
+    <span class="badge biz">2 Giao tiếp</span>
+    <span class="badge life">1 Đời sống</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+  <button id="theme">🌗 Theo hệ thống</button>
+  <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
+</div>
+
+<section class="block warmup">
+  <details class="warm-toggle">
+    <summary>
+      <h2>Ôn nhanh đầu giờ <span class="cnt">25 từ</span></h2>
+      <span class="wt-state"></span>
+    </summary>
+
+    <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B là từ cũ lâu chưa gặp — quên vài từ là bình thường.</p>
+
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-10-17</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">dấu hiệu code có vấn đề<span class="alt">chạy vẫn đúng, test vẫn xanh, nhưng viết kiểu này là sắp có chuyện — hàm quá dài, ba chỗ copy y nhau, tên đặt lung tung</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>code smell</b> — <em>"That 400-line function is a classic code smell — it still works, but every change to it causes a regression somewhere else."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nhất quán sau cùng<span class="alt">ghi xong chưa thấy ngay — các bản sao đuổi theo nhau, một lát sau mới khớp</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>eventual consistency</b> — <em>"Eventual consistency is fine for the activity feed, but not for the balance screen — a customer seeing stale money is a support ticket."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">khai tử theo lịch<span class="alt">báo trước ngày tắt, cho khách thời gian chuyển sang cái mới, rồi mới tắt thật</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>sunset</b> — <em>"We're going to sunset the v1 API in March, so the client needs a cutover plan before then."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chặt chẽ không kẽ hở<span class="alt">hợp đồng, cam kết, bằng chứng — chắc tới mức không ai bẻ hay lách được</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>ironclad</b> — <em>"The SLA isn't ironclad — there's a line in the fine print that lets them miss two hours a month."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">người thích ở nhà<span class="alt">rủ đi đâu cũng thấy ở nhà vui hơn — không phải ngại người, chỉ là thích ở nhà</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>homebody</b> — <em>"I'm a homebody, so three rainy days indoors doesn't give me cabin fever the way it does my flatmate."</em></span>
+          </details>
+        </li>
+      </ol>
+    </div>
+
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag b">B</span>20 từ cũ dàn đều cả vốn từ</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">container chạy kèm<span class="alt">đứng cùng pod với service chính, lo mấy việc phụ: gom log, bắn metric, làm proxy</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>sidecar</b> — <em>"We moved log shipping into a sidecar, so the app itself only has to flush its lines to stdout and forget about them."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cắt cụt cho ngắn lại<span class="alt">phần đuôi mất luôn, không làm tròn</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>truncate</b> — <em>"The logger truncates every message over four kilobytes, so a verbose stack trace loses its last lines."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">điều đọng lại sau buổi họp<span class="alt">thứ cần nhớ kể cả khi quên hết phần còn lại</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>takeaway</b> — <em>"The main takeaway from the incident review is that our retry logic can create a deadlock under load."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">lệch dần khỏi chuẩn<span class="alt">tự trôi ra khỏi trạng thái đáng lẽ phải có</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>drift</b> — <em>"Six months of manual patches later, staging has drifted from production — and that timeout discrepancy is why the nightly job keeps dying."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">bê bản vá về nhánh cũ<span class="alt">khách chưa lên bản mới thì phải làm việc này</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>backport</b> — <em>"We backported the security fix to 2.x so customers on the old release don't have to take a breaking change this month."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">phản đối, không nhận ngay<span class="alt">nói “không” theo kiểu mở đàm phán, không đóng cửa</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>push back</b> — <em>"I pushed back on the Friday deadline and asked for one more sprint; they agreed after I walked them through the regression list."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">hỏng một phần vẫn chạy tiếp<span class="alt">bớt tính năng chứ không sập cả trang</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>graceful degradation</b> — <em>"If the pricing service is down we show stale numbers with a warning instead of an error page — that's graceful degradation."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">sát nút, suýt không kịp<span class="alt">xong đúng phút cuối, chừa lại gần như không còn chỗ nào để hụt</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>cut it close</b> — <em>"We booked the flight forty minutes after the workshop ends — that's cutting it close, and there's no buffer if the taxi gets stuck."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cú hỏi trước xin phép<span class="alt">browser gửi OPTIONS đi hỏi trước, server đồng ý rồi request thật mới đi</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>preflight</b> — <em>"Every cross-origin call pays for a preflight first, so a chatty page doubles its latency before a single byte of data arrives."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">thư giãn, hạ hoả<span class="alt">nghỉ cho nhẹ đầu; hoặc bảo ai đó bình tĩnh lại</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>chill out</b> — <em>"The release finally shipped, so tonight I'm just going to chill out and binge-watch something."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chừa dư ra phòng hờ<span class="alt">cộng thêm ít ngày, ít tiền cho chắc ăn</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>buffer</b> — <em>"Let's add a two-day buffer before the demo, in case your team needs more lead time to review the test data."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải<span class="alt">đang sa đà vào tiểu tiết, mất cái nhìn tổng thể — hay nói giữa họp để kéo nhau ra</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>in the weeds</b> — <em>"We got into the weeds about cache eviction for twenty minutes while the client was just waiting for a date."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chuyện phiếm / trò chuyện xã giao<span class="alt">mấy câu thời tiết, cuối tuần, cà phê — nói cho ấm chỗ trước khi vào việc</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>small talk</b> — <em>"Two minutes of small talk at the start of the call, then we checked we were on the same page about the scope."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">sinh sẵn bộ khung<span class="alt">chạy một lệnh là ra đủ file rỗng đúng chỗ, mình chỉ việc điền ruột</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>scaffold</b> — <em>"The CLI scaffolds a whole module in one command, which saved us when the client asked for a demo page on short notice."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">ngủ gật<span class="alt">thiếp đi một lúc, không định ngủ</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>doze off</b> — <em>"I dozed off twice during the retro — I was completely worn out after the release."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">gác lại làm sau<span class="alt">giọng trang trọng, hợp email khách</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>defer</b> — <em>"We'd like to defer the reporting module to phase two so the launch stays on track."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">món phải giao cho khách<span class="alt">khác task: task là việc mình làm</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>deliverable</b> — <em>"The deliverables for this sprint are the API docs and a working staging build — if you come across anything else in the contract, flag it now."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">thu nhỏ lại cho vừa sức<span class="alt">vẫn làm, chỉ làm ít đi so với kế hoạch ban đầu</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>scale back</b> — <em>"If the budget is fixed, we'd rather scale back the reporting module than ship something brittle."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nhắc nhẹ một cái<span class="alt">thúc khẽ cho người ta nhớ, không làm căng, không gây áp lực</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>nudge</b> — <em>"Legal still hasn't signed the DPA, so I'll nudge them again tomorrow before the cutover."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cái đánh đổi<span class="alt">được cái này thì mất cái kia</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>trade-off</b> — <em>"Every cache adds a trade-off. The team accepted stale data for faster pages."</em></span>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </details>
+</section>
+
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">1</span>source map
+        <button class="say" data-say="source map" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈsɔːs mæp/ · <em>noun (đếm được)</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">tệp ánh xạ về code nguồn<span class="alt">trình debug nhờ nó mà chỉ đúng file và dòng mình viết, thay vì một dòng bundle.js đã minify</span></p>
+
+  <p class="def"><span class="tag">EN</span>A file that tells the browser which line of your original code a line of the built, minified bundle came from.
+    <span class="def-vi hide-me">→ Một tệp cho browser biết một dòng trong bundle đã build và minify thì vốn là dòng nào trong code gốc của mình.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Dev Việt nói nguyên tiếng Anh: "bật source map lên", "thiếu source map". Nó không sửa lỗi, nó chỉ dịch toạ độ lỗi về code mình viết — thiếu nó thì mọi lỗi production đều trông như nhau.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Without a <b>source map</b> the stack trace just points at <code>bundle.js</code> line 1, so finding the <span class="rev">culprit</span> takes an afternoon instead of a minute.</span>
+      <span class="vi hide-me">→ Không có source map thì cái stack trace chỉ trỏ vào <code>bundle.js</code> dòng 1, nên truy ra thủ phạm gây ra lỗi mất cả buổi chiều thay vì một phút.</span>
+    </li>
+    <li>
+      <span class="en">We stopped shipping <b>source maps</b> to production because they doubled the bundle's <span class="rev">footprint</span>, but we still upload them to the error tracker.</span>
+      <span class="vi hide-me">→ Bọn mình thôi đẩy source map lên production vì nó làm mức chiếm dụng tài nguyên của bundle đội lên gấp đôi, nhưng vẫn upload riêng cho con error tracker.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>generate a source map</code> · <code>ship source maps to production</code> · <code>upload source maps to Sentry</code> · <code>source maps are missing</code> · <code>inline source map</code> · <code>enable source maps</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Là <b>hai từ</b> (<code>source map</code>), không viết liền <code>sourcemap</code> trong văn bản trang trọng, dù tên file là <code>.map</code>. Đếm được: <code>a source map</code>, <code>source maps</code>. Đừng nói "source map code" — nó map <em>về</em> code, không phải một loại code.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">source maps, sourcemap (viết liền, informal), map (verb: map back to), mapping, source-mapped</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">2</span>memoize
+        <button class="say" data-say="memoize" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈmemoʊaɪz/ · <em>verb</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">lưu kết quả để khỏi tính lại<span class="alt">cùng một input thì trả luôn kết quả cũ, không chạy lại hàm</span></p>
+
+  <p class="def"><span class="tag">EN</span>To store the result of a function call so that the same input returns the saved answer instead of running the work again.
+    <span class="def-vi hide-me">→ Lưu lại kết quả của một lần gọi hàm, để lần sau cùng input đó thì trả về kết quả đã lưu chứ không chạy lại phần việc nữa.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>cache</code> ở chỗ hẹp hơn: <code>memoize</code> nói về đúng một hàm (<code>useMemo</code>, <code>memo</code>, <code>lru_cache</code>), còn <code>cache</code> là cả một tầng cho hệ thống. Nói "memoize cái selector này" thì tự nhiên, nói "memoize cái database" thì sai chỗ.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">We <b>memoized</b> the row renderer, and that killed the <span class="rev">reflow</span> we were getting on every single keystroke in the search box.</span>
+      <span class="vi hide-me">→ Bọn mình lưu lại kết quả render của từng dòng, thế là hết hẳn cái cảnh trang phải dựng lại layout mỗi lần gõ một chữ trong ô tìm kiếm.</span>
+    </li>
+    <li>
+      <span class="en"><b>Memoizing</b> every component has a <span class="rev">trade-off</span>: you save renders, but you have to get the dependency list exactly right or the UI shows a stale value.</span>
+      <span class="vi hide-me">→ Lưu kết quả cho mọi component là một cái đánh đổi: bớt được render, nhưng phải khai đúng danh sách dependency, không thì UI hiện ra số cũ.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>memoize a function</code> · <code>a memoized selector</code> · <code>memoize expensive computations</code> · <code>memoization cache</code> · <code>heavily memoized</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Không có chữ <code>r</code>: <b>memoize</b>, <b>không</b> phải "memorize" (= học thuộc lòng) — hai từ khác hẳn nghĩa, đọc cũng khác. Danh từ là <code>memoization</code> /ˌmeməwaɪˈzeɪʃn/, đừng viết "memoizing" khi làm tài liệu.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">memoizes, memoized, memoizing, memoization, memoized function, memoizer</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">3</span>change request
+        <button class="say" data-say="raise a change request" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/tʃeɪndʒ rɪˈkwest/ · <em>noun (đếm được)</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">yêu cầu thay đổi<span class="alt">việc ngoài spec đã ký thì lập một phiếu riêng, tính thêm thời gian và tiền</span></p>
+
+  <p class="def"><span class="tag">EN</span>A formal written ask to add or alter something that was not in the scope both sides already signed.
+    <span class="def-vi hide-me">→ Một yêu cầu viết ra đàng hoàng, xin thêm hoặc xin sửa một thứ không có trong phạm vi công việc mà hai bên đã ký.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Đây là <b>từ lịch sự để nói "cái này tính thêm"</b> — với khách thì nhẹ hơn hẳn so với "cái đó ngoài phạm vi rồi ạ". Viết tắt <code>CR</code> trong email và trên board.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Anything beyond the signed spec goes in as a <b>change request</b>, which is how we keep <span class="rev">scope creep</span> out of the last sprint.</span>
+      <span class="vi hide-me">→ Việc nào ngoài spec đã ký thì bên em ghi thành một yêu cầu thay đổi riêng ạ — đó là cách giữ cho sprint cuối không bị việc phình ra ngoài thoả thuận.</span>
+    </li>
+    <li>
+      <span class="en">The client asked us to <span class="rev">expedite</span> the <b>change request</b> so the new tax field lands before their audit in November.</span>
+      <span class="vi hide-me">→ Khách xin đẩy nhanh tiến độ cái yêu cầu thay đổi đó, để ô thuế mới kịp lên trước đợt audit tháng Mười Một của họ.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>raise / submit / file a change request</code> · <code>approve a change request</code> · <code>a pending change request</code> · <code>log it as a change request</code> · <code>the change request process</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Là <b>danh từ</b>, không phải động từ: viết <code>raise a change request</code>, <b>không</b> viết "I change request this". Và đừng rút thành "a change" — "a change" là bất kỳ thay đổi nào, còn <code>a change request</code> là cái phiếu có người duyệt, có giá.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">change requests, CR, request a change, requested change, change control, change order (hay dùng trong hợp đồng xây dựng/outsourcing)</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">4</span>on the hook
+        <button class="say" data-say="we're on the hook for it" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ɒn ðə hʊk/ · <em>idiom (đi sau be / leave sb)</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">bị buộc phải chịu trách nhiệm<span class="alt">đã cam kết rồi nên không rút ra được, hỏng thì mình đứng ra chịu</span></p>
+
+  <p class="def"><span class="tag">EN</span>Held responsible for something you can no longer back out of, usually because you already promised it.
+    <span class="def-vi hide-me">→ Bị quy trách nhiệm cho một việc mà mình không rút ra được nữa, thường là vì đã hứa rồi.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>take ownership</code> ở chỗ <b>không tự nguyện</b>: <code>take ownership</code> là mình nhận, <code>on the hook</code> là bị gán vào. Giọng hơi suồng sã — nói trong nội bộ được, đừng viết vào email cho khách.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Once you <span class="rev">sign off</span> on that estimate, we're <b>on the hook</b> for the date — so let's be sure the numbers are right first.</span>
+      <span class="vi hide-me">→ Cậu mà duyệt chính thức cái estimate đó thì bọn mình bị buộc phải chịu trách nhiệm với cái hạn luôn — nên soát lại cho chắc số đã.</span>
+    </li>
+    <li>
+      <span class="en">Read the <span class="rev">fine print</span> before you send it back: that clause leaves us <b>on the hook</b> for their downtime too, not just ours.</span>
+      <span class="vi hide-me">→ Đọc mấy điều khoản in chữ nhỏ trước khi gửi lại nhé — cái khoản đó bắt bên mình chịu trách nhiệm cho cả thời gian hệ thống của họ chết, không riêng gì bên mình.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>be on the hook for sth</code> · <code>leave sb on the hook</code> · <code>still on the hook</code> · <code>get sb off the hook</code> · <code>let sb off the hook</code> · <code>off the hook</code> (= thoát rồi)</span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Luôn có <code>the</code>: <code>on <b>the</b> hook</code>, không phải "on hook". Giới từ sau nó là <code>for</code>, không phải "to". Đừng lẫn với <code>off the hook</code> — ngược nghĩa hẳn (thoát trách nhiệm), hoặc nghĩa thứ hai "reo liên hồi": <code>the phone's been ringing off the hook</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">off the hook, let sb off the hook, get sb off the hook, hooked, hook sb into sth</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="life">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">5</span>potluck
+        <button class="say" data-say="a potluck dinner" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈpɒtlʌk/ · <em>noun (đếm được)</em></div>
+    </div>
+    <span class="badge life">Đời sống</span>
+  </div>
+
+  <p class="vi-quick hide-me">tiệc góp món<span class="alt">mỗi người mang một món tới góp, không ai phải nấu cả bữa</span></p>
+
+  <p class="def"><span class="tag">EN</span>A meal or party where every guest brings one dish to share, so nobody has to cook the whole thing.
+    <span class="def-vi hide-me">→ Một bữa ăn hay một buổi tiệc mà mỗi khách mang tới một món để cả nhà cùng ăn, nên không ai phải nấu trọn cả bữa.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Rất hay gặp ở công ty nước ngoài ("team potluck", "office potluck") và trong phim/truyện Mỹ. Bên Mỹ viết liền <code>potluck</code>, bên Anh/Úc hay viết tách <code>pot luck</code>.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">I'm bringing dessert to the team <b>potluck</b> on Friday, which is an easy job because everyone already knows about my <span class="rev">sweet tooth</span>.</span>
+      <span class="vi hide-me">→ Thứ Sáu tiệc góp món của team mình mang món tráng miệng, việc dễ thôi vì cả team biết tỏng mình thích ăn đồ ngọt rồi.</span>
+    </li>
+    <li>
+      <span class="en">A <b>potluck</b> at someone's flat suits a <span class="rev">homebody</span> like me far better than a loud restaurant across town.</span>
+      <span class="vi hide-me">→ Tiệc góp món ở nhà ai đó thì hợp với đứa thích ở nhà như mình hơn hẳn một cái nhà hàng ồn ào tận bên kia thành phố.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a potluck dinner</code> · <code>bring a dish to the potluck</code> · <code>host a potluck</code> · <code>potluck-style</code> · <code>it's a potluck, so bring something</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Trọng âm ở <b>âm đầu</b>: /ˈpɒtlʌk/ — "POT-luck", đừng đọc thành "pot-LUCK". Có một nghĩa thứ hai hẳn khác: <code>take pot luck</code> = nhắm mắt chọn bừa, được gì nhờ nấy — nghĩa này luôn viết <b>tách hai chữ</b>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">potlucks, pot luck, potluck dinner, potluck supper, take pot luck, potluck-style</span></div>
+  </div>
+</article>
+
+<section class="block">
+  <h2>Mẩu đọc</h2>
+  <p class="sub">Tin nhắn mở đầu tuần trong kênh #dev, sáng Thứ Hai</p>
+  <div class="passage">Morning. Three things, then I'll get out of your way. One: production builds now ship a <b>source map</b> to the error tracker, so this week's bug reports should finally point at real file names — please stop guessing from line numbers. Two: the search page got <b>memoized</b> on Friday and it's noticeably faster, but the client has sent a <b>change request</b> for two extra filter columns, so don't treat that screen as finished. Three, and this is the one that matters: we told them Thursday, which means we're <b>on the hook</b> for Thursday — if anything on your plate turns into a real <span class="rev">blocker</span>, say so today, not Wednesday night. Oh, and Friday is a <b>potluck</b>; the signup list is pinned.</div>
+  <details>
+    <summary>Bản dịch</summary>
+    <p class="hide-me">Chào cả nhà. Ba việc rồi mình để mọi người làm. Một: bản build production giờ đã đẩy source map lên con error tracker, nên mấy bug report tuần này cuối cùng cũng chỉ đúng tên file — đừng đoán theo số dòng nữa. Hai: trang tìm kiếm thứ Sáu vừa rồi đã được lưu lại kết quả nên nhanh hơn thấy rõ, nhưng khách vừa gửi một yêu cầu thay đổi xin thêm hai cột filter, nên đừng coi cái trang đó là xong. Ba, và đây là việc quan trọng nhất: mình đã nói với họ là thứ Năm, tức là bọn mình bị buộc phải chịu trách nhiệm với thứ Năm — việc của ai mà thành vướng mắc thật thì nói ngay hôm nay, đừng để tối thứ Tư. À, thứ Sáu có tiệc góp món; danh sách ghi tên mình ghim trên đầu kênh rồi.</p>
+  </details>
+</section>
+
+<section class="block">
+  <h2>Bài tập</h2>
+  <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li>Điền từ: "The error says <code>bundle.js:1:48201</code>. We forgot to upload the ______, so there's no way to tell which component threw."</li>
+    <li>Sửa lỗi: "I memorized the selector so it doesn't recompute on every render."</li>
+    <li>Chọn collocation đúng: (a) The client raised a change request for the extra column · (b) The client change requested the extra column · (c) The client made a change request of the extra column</li>
+    <li>Dịch Việt → Anh: "Bên em duyệt cái hạn đó thì bên em phải chịu trách nhiệm luôn, nên cho em soát lại số một lượt ạ."</li>
+    <li>Chữa câu cho đúng nghĩa: "It's a potluck, so don't bring anything — the host is cooking everything."</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol>
+      <li><b>source map</b> — <code>bundle.js:1:48201</code> là code đã minify; thứ duy nhất dịch được chỗ đó về file gốc là <code>source map</code>. Đếm được nên cần <code>the</code> / <code>a</code>.</li>
+      <li>"I <b>memoized</b> the selector" — <code>memorize</code> = học thuộc lòng (người làm), <code>memoize</code> = lưu kết quả hàm (máy làm). Đây là cái bẫy chính tả hay gặp nhất của từ này.</li>
+      <li><b>(a)</b> — <code>change request</code> là <b>danh từ</b>, đi với <code>raise</code> / <code>submit</code> / <code>file</code>. Không dùng được như động từ (b), và không nói "a change request <b>of</b>" (c) — giới từ đúng là <code>for</code>.</li>
+      <li>"If we <b>sign off</b> on that date, we're <b>on the hook</b> for it — so let me double-check the numbers first." (<code>on the hook</code> + <b>for</b>; câu này nói nội bộ được, với khách thì nên viết trang trọng hơn: "we would be committing to that date")</li>
+      <li>"It's a potluck, so <b>please bring a dish</b> — everyone brings something to share." — <code>potluck</code> nghĩa là <b>mỗi khách mang một món</b>; chủ nhà nấu hết thì đó không còn là potluck nữa.</li>
+    </ol>
+  </details>
+</section>
+
+<footer>
+  Bản Markdown: <a href="2026-10-19.md">2026-10-19.md</a> ·
+  Toàn bộ từ đã học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> ·
+  Lịch ôn: <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+  <br>Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại 5 từ của tuần 2026-W43.
+</footer>
+
+</div>
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>

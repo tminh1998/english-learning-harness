@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-10-17 (buổi #51)
+**Cập nhật:** 2026-10-19 (buổi #52)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 255 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 102 · Business 102 · Life 51                                                           |
-| Số buổi học          | 51                                                                                      |
-| Streak hiện tại      | 2 buổi (từ 2026-10-16 — bài Thứ Tư 14/10 và Thứ Năm 15/10 đã xoá nên chuỗi 12/10 → 13/10 (2 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 260 · **đã biết sẵn** 15 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 104 · Business 104 · Life 52                                                           |
+| Số buổi học          | 52                                                                                      |
+| Streak hiện tại      | 3 buổi (từ 2026-10-16 — bài Thứ Tư 14/10 và Thứ Năm 15/10 đã xoá nên chuỗi 12/10 → 13/10 (2 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-10-17 (Thứ Bảy) — buổi #51 |
+| Buổi gần nhất        | 2026-10-19 (Thứ Hai) — buổi #52 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -69,6 +69,7 @@
 | 2026-10-13 | 2026-W42 | #49 | thrash · clobber · stipulate · expedite · power nap |
 | 2026-10-16 | 2026-W42 | #50 | tree shaking · kill switch · deep dive · set in stone · cabin fever |
 | 2026-10-17 | 2026-W42 | #51 | code smell · eventual consistency · sunset · ironclad · homebody |
+| 2026-10-19 | 2026-W43 | #52 | source map · memoize · change request · on the hook · potluck |
 
 ## Kết quả quiz tuần
 
