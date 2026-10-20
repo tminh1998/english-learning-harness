@@ -201,37 +201,37 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>prefetch
-        <button class="say" data-say="prefetch the next page" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>leader election
+        <button class="say" data-say="the nodes hold a leader election" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌpriːˈfetʃ/ · <em>verb (cũng là noun)</em></div>
+      <div class="ipa">/ˈliːdər ɪˈlekʃən/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">Tải trước<span class="alt">kéo dữ liệu về sẵn lúc máy còn rảnh, tới lúc người dùng cần thì có ngay, không phải chờ</span></p>
+  <p class="vi-quick hide-me">Bầu chọn node chủ<span class="alt">các node tự bỏ phiếu chọn ra đúng một node cầm trịch; node đó chết thì bầu lại</span></p>
 
-  <p class="def"><span class="tag">EN</span>To fetch data or a file before anyone actually asks for it, so that when it is needed it is already there.
-    <span class="def-vi hide-me">→ Đi lấy dữ liệu hoặc một file về trước khi có ai thật sự hỏi tới nó, để lúc cần thì nó đã nằm sẵn ở đó rồi.</span>
+  <p class="def"><span class="tag">EN</span>The process by which the nodes in a cluster agree on exactly one of them to be in charge, and pick a new one when it goes down.
+    <span class="def-vi hide-me">→ Cách các node trong một cluster thống nhất chọn ra đúng một node đứng ra điều phối, và chọn node khác thay khi node đó chết.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>cache</code> ở chỗ cache là <em>giữ lại</em> cái đã lấy một lần, còn prefetch là <em>đi lấy trước</em> khi chưa ai hỏi tới. Trong frontend hay gặp ở <code>&lt;link rel="prefetch"&gt;</code>, <code>router.prefetch()</code>, hoặc prefetch dữ liệu trang kế khi chuột vừa hover lên link.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Node chủ (leader) thường là node <b>duy nhất</b> được nhận lệnh ghi, các node còn lại (follower) chỉ chép theo. Có hai điều phải đúng cùng lúc: lúc nào cũng <b>có</b> một leader (không thì chẳng ai nhận ghi), và <b>không bao giờ có hai</b> (không thì hai bên ghi đè lên nhau). Hiếm ai tự viết: dùng sẵn của etcd, ZooKeeper, Consul, hoặc thuật toán Raft. Controller trong Kubernetes chạy nhiều bản mà chỉ một bản thật sự làm việc cũng là nhờ leader election.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">We <b>prefetch</b> the next page of results while the user is still reading this one, so paging feels instant even when the connection is <span class="rev">flaky</span>.</span>
-      <span class="vi hide-me">→ Bên mình tải trước trang kết quả kế tiếp ngay lúc người dùng còn đang đọc trang này, nên bấm sang trang thấy ra liền, mạng chập chờn cũng không lộ.</span>
+      <span class="en">A node can only win the <b>leader election</b> if it gets votes from a <span class="rev">quorum</span> — that's what stops both halves of a broken network from each picking a leader of their own.</span>
+      <span class="vi hide-me">→ Node nào muốn thắng bầu chọn thì phải được quá bán số node bỏ phiếu — chính nhờ vậy mà mạng đứt làm đôi thì hai nửa cũng không tự dựng mỗi bên một node chủ riêng.</span>
     </li>
     <li>
-      <span class="en"><b>Prefetching</b> every route the moment the app boots adds real <span class="rev">overhead</span> on a cheap phone — load the two routes people actually click, not all forty.</span>
-      <span class="vi hide-me">→ Vừa mở app đã tải trước cả bốn mươi route thì máy yếu hao thêm thật đấy — chỉ tải trước hai route người ta hay bấm thôi, đừng tải hết.</span>
+      <span class="en">The <span class="rev">failover</span> took forty seconds, and almost all of it was the <b>leader election</b> — the nodes wait for three missed heartbeats before they even start voting.</span>
+      <span class="vi hide-me">→ Cú failover vừa rồi mất bốn mươi giây, mà gần hết là ngồi chờ bầu node chủ — các node phải lỡ liền ba nhịp heartbeat mới chịu bắt đầu bỏ phiếu.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>prefetch the next page</code> · <code>prefetch on hover</code> · <code>&lt;link rel="prefetch"&gt;</code> · <code>a prefetch hint</code> · <code>aggressive prefetching</code> · <code>prefetch and cache</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Trọng âm khi làm <b>động từ</b> rơi vào âm sau: /ˌpriːˈfetʃ/ — "pri-FETCH". Và đừng viết <code>pre-fetch</code> có gạch nối trong code hay doc: dạng chuẩn bây giờ là viết liền <code>prefetch</code>. Phân biệt với <code>preload</code>: <code>preload</code> là "cần ngay cho trang này, tải sớm đi"; <code>prefetch</code> là "chưa chắc cần, rảnh thì tải sẵn" — nên browser cho <code>preload</code> ưu tiên cao hơn hẳn.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">prefetches, prefetched, prefetching, a prefetch, prefetcher, prefetch hint, preload (từ gần nghĩa)</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>hold / run a leader election</code> · <code>win the leader election</code> · <code>trigger a new election</code> · <code>elect a new leader</code> · <code>leader and followers</code> · <code>election timeout</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Động từ đi kèm là <code>elect a leader</code> hoặc <code>hold / run / trigger an election</code>. Nói "the nodes <b>vote a leader</b>" là sai — phải là "vote <b>for</b> a leader". Và <code>leader</code> ở đây là một node / tiến trình chứ không phải người: đừng dịch thành "bầu trưởng nhóm". Doc cũ hay gọi là <code>master</code> / <code>primary</code>; nhiều project giờ bỏ chữ <code>master</code>, chỉ dùng <code>leader</code> hoặc <code>primary</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">leader elections, elect a leader, elected leader, re-election, leader, follower, leaderless, leader lease, election timeout</span></div>
   </div>
 </article>
 
@@ -312,37 +312,37 @@
 <article class="word" data-cat="biz">
   <div class="word-head">
     <div>
-      <h2><span class="num">4</span>green light
-        <button class="say" data-say="give us the green light" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">4</span>move the goalposts
+        <button class="say" data-say="please don't move the goalposts" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌɡriːn ˈlaɪt/ · <em>noun (đếm được; cũng là verb: green-light)</em></div>
+      <div class="ipa">/muːv ðə ˈɡəʊlpəʊsts/ · <em>idiom (moves / moved / moving the goalposts)</em></div>
     </div>
     <span class="badge biz">Giao tiếp</span>
   </div>
 
-  <p class="vi-quick hide-me">Đèn xanh / sự cho phép chính thức<span class="alt">người có quyền đã đồng ý, từ giờ được bắt tay vào làm</span></p>
+  <p class="vi-quick hide-me">đổi tiêu chí giữa chừng<span class="alt">đang làm gần tới đích thì bên kia đổi luôn thế nào mới gọi là đạt — làm xong rồi vẫn chưa được tính là xong</span></p>
 
-  <p class="def"><span class="tag">EN</span>Official permission from someone with authority to start doing something.
-    <span class="def-vi hide-me">→ Sự cho phép chính thức từ một người có quyền, để bắt đầu làm một việc gì.</span>
+  <p class="def"><span class="tag">EN</span>To change the rules or the target after people have already started working towards it, so that what used to count as success no longer does.
+    <span class="def-vi hide-me">→ Đổi luật hoặc đổi mục tiêu khi người ta đã bắt tay vào làm theo cái cũ, nên cái trước đây được tính là đạt thì giờ không còn được tính nữa.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Tiếng Việt cũng nói "bật đèn xanh" nên nghe là hiểu ngay. Nhẹ hơn <code>sign off</code> một chút: <code>sign off</code> là <b>duyệt xong một thứ cụ thể</b> (bản estimate, cái spec, con số), còn <code>green light</code> là <b>cho phép bắt đầu</b> cả việc đó. Làm động từ thì viết <code>green-light</code> / <code>green-lit</code>.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hình ảnh lấy từ bóng đá: bóng sắp vào lưới thì có người khiêng khung thành đi chỗ khác. Khác <code>scope creep</code>: scope creep là việc <b>phình thêm</b> dần dần; move the goalposts là <b>đổi luôn cái thước đo</b> "thế nào là xong" — tức là đổi <code>acceptance criteria</code> sau khi hai bên đã chốt. Câu này nghe hơi trách, nên nói với khách thì nói về <b>tình huống</b> ("it feels like the goalposts have moved"), đừng chỉ thẳng mặt "you're moving the goalposts".</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">Once your team gives us the <b>green light</b> on the spec, we'll <span class="rev">spin up</span> a staging environment the same day so you can try it out.</span>
-      <span class="vi hide-me">→ Bên anh bật đèn xanh cho cái spec là bên em dựng luôn một môi trường staging cho chạy ngay trong ngày để anh xem thử ạ.</span>
+      <span class="en">The export was <span class="rev">signed off</span> on Monday as CSV only, so adding Excel and PDF the day before the demo is <b>moving the goalposts</b> a bit — could we treat those two as phase two?</span>
+      <span class="vi hide-me">→ Phần export hôm thứ Hai đã duyệt chính thức là chỉ có CSV rồi ạ, giờ sát ngày demo thêm cả Excel lẫn PDF thì hơi giống đổi tiêu chí giữa chừng — hai phần đó mình để sang giai đoạn hai được không anh?</span>
     </li>
     <li>
-      <span class="en">Finance <b>green-lit</b> the extra licence this morning, so that <span class="rev">blocker</span> is gone — go ahead and open the PR.</span>
-      <span class="vi hide-me">→ Sáng nay bên tài chính đã cho phép mua thêm licence, nên cái vướng mắc đó hết rồi — cậu cứ mở PR đi.</span>
+      <span class="en">We're not against changes — but to <span class="rev">manage expectations</span> on both sides, let's agree that if anyone <b>moves the goalposts</b> again, the deadline moves with them.</span>
+      <span class="vi hide-me">→ Bên em không ngại thay đổi đâu ạ — nhưng để kỳ vọng hai bên khớp nhau ngay từ giờ, mình thống nhất là nếu tiêu chí lại đổi giữa chừng thì hạn giao cũng lùi theo anh nhé.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>give sb the green light</code> · <code>get the green light</code> · <code>get a green light on sth</code> · <code>green-light a project</code> · <code>a green light from legal</code> · <code>awaiting the green light</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Là <code>give the green light</code> / <code>get the green light</code> — <b>không</b> phải "open the green light" hay "make the green light". Nhớ giới từ: <code>the green light</code> <b>on</b> / <b>for</b> một việc, chứ không phải "about". Và dùng động từ thì phải có gạch nối: <code>green-light the migration</code>, quá khứ là <code>green-lit</code> (không phải "green-lighted" — dạng này có nhưng ít gặp hơn nhiều).</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">green-light, green-lights, green-lit, greenlight, greenlighting, a green light, red light (từ đối)</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>move the goalposts</code> · <code>keep moving the goalposts</code> · <code>the goalposts have moved</code> · <code>shift the goalposts</code> · <code>move the goalposts on sb</code> · <code>moving goalposts</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Luôn số nhiều <code>goalposts</code> (khung thành có hai cột) — "move the goalpost" nghe hụt. Viết liền <code>goalposts</code> hay tách <code>goal posts</code> đều được. Và idiom này <b>luôn mang ý phàn nàn</b>: chính mình chủ động đổi kế hoạch theo hướng tốt cho khách thì đừng dùng ("we moved the goalposts to help you" là sai giọng) — lúc đó nói <code>adjust the target</code> hoặc <code>revise the plan</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">moves the goalposts, moved the goalposts, moving the goalposts, moving goalposts, shift the goalposts, goalpost, goal posts</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Ghi chú gửi lại kênh team sau buổi họp planning đầu sprint</p>
-  <div class="passage">Notes from planning, for anyone who missed it. Finance gave us the <b>green light</b> on the search rewrite this morning, so it starts Monday. The thing we went round in circles on: the new read model only gives us <b>eventual consistency</b>, meaning a profile someone just edited can lag a second or two behind — so Hoa will <b>prefetch</b> the first page of results while the user is still typing, and that lag never reaches the screen. Before anyone opens an editor, though, please <span class="rev">nail down</span> the <b>acceptance criteria</b> in the ticket; I'd rather spend an hour there than a week arguing after the demo. Last thing, and I admit it's my own <b>pet peeve</b>: "done" is not a status, it's a checklist.</div>
+  <div class="passage">Notes from planning, for anyone who missed it. The search rewrite starts Monday, and this time the client has agreed not to <b>move the goalposts</b> once we start. The thing we went round in circles on: writes go to whichever node won the last <b>leader election</b>, but reads come from the replicas, so we only get <b>eventual consistency</b> — a profile someone just edited can lag a second or two behind. Hoa will show a small "saving…" hint so that lag never looks like a bug. Before anyone opens an editor, though, please <span class="rev">nail down</span> the <b>acceptance criteria</b> in the ticket; I'd rather spend an hour there than a week arguing after the demo. Last thing, and I admit it's my own <b>pet peeve</b>: "done" is not a status, it's a checklist.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Ghi lại buổi planning cho ai vắng. Sáng nay bên tài chính đã bật đèn xanh cho việc viết lại search, nên thứ Hai bắt đầu. Chuyện bọn mình bàn vòng vo mãi: read model mới chỉ cho nhất quán sau cùng, tức là profile ai vừa sửa có thể chậm một hai giây mới thấy — nên Hoa sẽ tải trước trang kết quả đầu ngay lúc người dùng còn đang gõ, thế là độ chậm đó không bao giờ hiện ra tới màn hình. Nhưng trước khi ai mở editor ra làm thì chốt cứng tiêu chí nghiệm thu trong ticket giúp mình; thà mất một tiếng ở chỗ đó còn hơn mất cả tuần tranh luận sau buổi demo. Việc cuối, và mình thừa nhận đây là điểm khó chịu riêng của mình: "xong" không phải một cái trạng thái, nó là một cái checklist.</p>
+    <p class="hide-me">Ghi lại buổi planning cho ai vắng. Thứ Hai bắt đầu viết lại search, và lần này khách đã đồng ý là bắt tay vào làm rồi thì không đổi tiêu chí giữa chừng nữa. Chuyện bọn mình bàn vòng vo mãi: ghi thì vào node chủ — node thắng lần bầu chọn gần nhất — còn đọc thì lấy từ replica, nên chỉ có nhất quán sau cùng: profile ai vừa sửa có thể chậm một hai giây mới thấy. Hoa sẽ hiện một dòng nhỏ "đang lưu…" để độ chậm đó không bị tưởng là bug. Nhưng trước khi ai mở editor ra làm thì chốt cứng tiêu chí nghiệm thu trong ticket giúp mình; thà mất một tiếng ở chỗ đó còn hơn mất cả tuần tranh luận sau buổi demo. Việc cuối, và mình thừa nhận đây là điểm khó chịu riêng của mình: "xong" không phải một cái trạng thái, nó là một cái checklist.</p>
   </details>
 </section>
 
@@ -397,18 +397,18 @@
   <h2>Bài tập</h2>
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
-    <li>Điền từ: "The router can ______ the next page while the user is still reading this one, so navigation feels instant."</li>
+    <li>Điền từ (2 chữ): "Every time the current leader stops sending heartbeats, the other etcd nodes hold a ______ ______."</li>
     <li>Sửa lỗi: "This acceptance criteria is not clear — can you add more detail?"</li>
-    <li>Chọn collocation đúng: (a) <code>give us the green light on the spec</code> · (b) <code>open us the green light on the spec</code> · (c) <code>make us a green light about the spec</code></li>
+    <li>Chọn câu hợp nhất để viết trong email gửi khách: (a) <code>You keep moving the goalposts.</code> · (b) <code>It feels like the goalposts have moved since we signed off on the spec.</code> · (c) <code>We moved the goalposts so you can launch earlier.</code></li>
     <li>Dịch Việt → Anh: "Bên em xin dùng nhất quán sau cùng cho phần báo cáo ạ, nên hai con số có thể lệch nhau chừng một phút."</li>
     <li>Chữa câu cho đúng nghĩa: "My pet peeve is my cat — I love how she falls asleep on my keyboard."</li>
   </ol>
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>prefetch</b> — "tải trước khi chưa ai hỏi tới". Ở đây <b>không</b> dùng <code>preload</code>: <code>preload</code> là thứ trang hiện tại cần ngay; trang kế thì chưa chắc người ta bấm, nên đúng là <code>prefetch</code>.</li>
+      <li><b>leader election</b> — node chủ im lặng (hết heartbeat) thì các node còn lại bầu node chủ mới. Động từ đi kèm là <code>hold</code> / <code>run</code> / <code>trigger</code> an election.</li>
       <li>"<b>These</b> acceptance criteria <b>are</b> not clear…" — <code>criteria</code> là số nhiều rồi, nên động từ phải là <code>are</code>. Nếu thật sự chỉ nói về <b>một</b> điều kiện thì dùng số ít: "This acceptance <b>criterion</b> is not clear."</li>
-      <li><b>(a)</b> — <code>give sb the green light</code> <b>on</b> sth. (b) sai động từ ("open" không đi với green light), (c) sai cả động từ lẫn giới từ (<code>make a green light</code>, <code>about</code>).</li>
+      <li><b>(b)</b> — nói về <b>tình huống</b> ("the goalposts have moved") và nhắc mốc đã chốt (<code>signed off on the spec</code>), nên nghe chắc mà không gay gắt. (a) đúng ngữ pháp nhưng chỉ thẳng mặt khách, nghe như cãi nhau. (c) sai giọng: idiom này luôn mang ý phàn nàn, không dùng cho chuyện mình đổi kế hoạch để giúp khách — chỗ đó nói <code>adjusted the plan</code>.</li>
       <li>"We'd like to use <b>eventual consistency</b> for the reporting side, so the two numbers can disagree for about a minute." (hoặc nói bằng tính từ, nghe tự nhiên hơn với dev: "…the reporting side is <b>eventually consistent</b>, so…")</li>
       <li>"My pet peeve is <b>people who let their cat sit on the keyboard during a call</b>." — hoặc đổi hẳn chủ đề. <code>pet peeve</code> là <b>điều làm mình khó chịu</b>, <code>pet</code> không có nghĩa "vật nuôi" ở đây; con mèo mình thích thì gọi là <code>my cat</code>, hoặc cùng lắm là <code>pet project</code> nếu nói về một việc mình tự làm vì thích.</li>
     </ol>

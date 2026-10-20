@@ -381,10 +381,10 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | gold-plating | 1 | 2026-10-20 | 0 | 0 | 2026-10-19 |
 | on the hook | 1 | 2026-10-20 | 0 | 0 | 2026-10-19 |
 | potluck | 1 | 2026-10-20 | 0 | 0 | 2026-10-19 |
-| prefetch | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
+| leader election | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
 | eventual consistency | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
 | acceptance criteria | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
-| green light | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
+| move the goalposts | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
 | pet peeve | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
 
 ## Đã thuộc (bậc 5, đúng)

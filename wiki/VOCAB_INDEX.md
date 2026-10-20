@@ -14,7 +14,7 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 260 từ đã học** · IT 104 · Business 104 · Life 52 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 18 từ — xem bảng cuối file
+**Đã biết sẵn (không dạy):** 20 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-20
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -274,10 +274,10 @@
 | 253 | gold-plating | gold-plate, gold-plated, gold-plates, gold plating, gold-plater, a gold-plated solution | noun (không đếm được; v: gold-plate) | Business | Làm thừa cái khách yêu cầu | 2026-10-19 | lesson |
 | 254 | on the hook | off the hook, let sb off the hook, get sb off the hook, be on the hook for, hooked, hook sb into sth | idiom (đi sau be) | Business | bị buộc phải chịu trách nhiệm | 2026-10-19 | lesson |
 | 255 | potluck | potlucks, pot luck, potluck dinner, potluck supper, take pot luck, potluck-style | noun (đếm được) | Life | tiệc góp món | 2026-10-19 | lesson |
-| 256 | prefetch | prefetches, prefetched, prefetching, a prefetch, prefetcher, prefetch hint, preload | verb (cũng là noun) | IT | Tải trước | 2026-10-20 | lesson |
+| 256 | leader election | leader elections, elect a leader, elected leader, re-election, leader, follower, leaderless, leader lease, election timeout | noun (đếm được) | IT | Bầu chọn node chủ | 2026-10-20 | lesson |
 | 257 | eventual consistency | eventually consistent, eventual, eventually, consistency, consistent, inconsistency, strong consistency, consistency model | noun (không đếm được) | IT | Nhất quán sau cùng | 2026-10-20 | lesson |
 | 258 | acceptance criteria | acceptance criterion, criteria, criterion, accept, accepted, acceptable, acceptance, acceptance test, user acceptance testing (UAT) | noun (số nhiều; số ít: criterion) | Business | Tiêu chí nghiệm thu | 2026-10-20 | lesson |
-| 259 | green light | green-light, green-lights, green-lit, greenlight, greenlighting, a green light, red light | noun (đếm được; v: green-light) | Business | Đèn xanh / sự cho phép chính thức | 2026-10-20 | lesson |
+| 259 | move the goalposts | moves the goalposts, moved the goalposts, moving the goalposts, moving goalposts, shift the goalposts, goalpost, goal posts | idiom | Business | đổi tiêu chí giữa chừng | 2026-10-20 | lesson |
 | 260 | pet peeve | pet peeves, a pet peeve of mine, peeve, peeved, peevish, pet project, pet theory | noun (đếm được) | Life | điểm khó chịu riêng của mình | 2026-10-20 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
@@ -310,6 +310,8 @@
 | source map | source maps, sourcemap, source-mapped, inline source map, .map file | noun (đếm được) | IT | tệp ánh xạ từ bundle đã build về code nguồn | 2026-10-19 |
 | memoize | memoizes, memoized, memoizing, memoization, memoized function, memoizer, useMemo | verb | IT | lưu kết quả hàm để cùng input khỏi tính lại | 2026-10-19 |
 | change request | change requests, CR, request a change, requested change, change control, change order | noun (đếm được) | Business | yêu cầu thay đổi ngoài phạm vi đã ký, tính thêm tiền/thời gian | 2026-10-19 |
+| prefetch | prefetches, prefetched, prefetching, pre-fetch, a prefetch, prefetcher, prefetch hint, rel="prefetch", preload | verb (cũng là noun) | IT | tải trước dữ liệu khi chưa ai hỏi tới | 2026-10-20 |
+| green light | green-light, green-lights, green-lit, greenlight, greenlighting, give the green light, get the green light, a green light | noun (đếm được; v: green-light) | Business | bật đèn xanh, cho phép chính thức bắt đầu | 2026-10-20 |
 
 <!--
 LUẬT GHI:
