@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 255 từ đã học** · IT 102 · Business 102 · Life 51 · ad-hoc 0
+**Tổng: 260 từ đã học** · IT 104 · Business 104 · Life 52 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 18 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-19
+**Cập nhật:** 2026-10-20
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -274,6 +274,11 @@
 | 253 | gold-plating | gold-plate, gold-plated, gold-plates, gold plating, gold-plater, a gold-plated solution | noun (không đếm được; v: gold-plate) | Business | Làm thừa cái khách yêu cầu | 2026-10-19 | lesson |
 | 254 | on the hook | off the hook, let sb off the hook, get sb off the hook, be on the hook for, hooked, hook sb into sth | idiom (đi sau be) | Business | bị buộc phải chịu trách nhiệm | 2026-10-19 | lesson |
 | 255 | potluck | potlucks, pot luck, potluck dinner, potluck supper, take pot luck, potluck-style | noun (đếm được) | Life | tiệc góp món | 2026-10-19 | lesson |
+| 256 | prefetch | prefetches, prefetched, prefetching, a prefetch, prefetcher, prefetch hint, preload | verb (cũng là noun) | IT | Tải trước | 2026-10-20 | lesson |
+| 257 | eventual consistency | eventually consistent, eventual, eventually, consistency, consistent, inconsistency, strong consistency, consistency model | noun (không đếm được) | IT | Nhất quán sau cùng | 2026-10-20 | lesson |
+| 258 | acceptance criteria | acceptance criterion, criteria, criterion, accept, accepted, acceptable, acceptance, acceptance test, user acceptance testing (UAT) | noun (số nhiều; số ít: criterion) | Business | Tiêu chí nghiệm thu | 2026-10-20 | lesson |
+| 259 | green light | green-light, green-lights, green-lit, greenlight, greenlighting, a green light, red light | noun (đếm được; v: green-light) | Business | Đèn xanh / sự cho phép chính thức | 2026-10-20 | lesson |
+| 260 | pet peeve | pet peeves, a pet peeve of mine, peeve, peeved, peevish, pet project, pet theory | noun (đếm được) | Life | điểm khó chịu riêng của mình | 2026-10-20 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
