@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-20: 255 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-21: 260 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -57,6 +57,9 @@
 - hạn 2026-10-14 — thrash · clobber · stipulate · expedite · power nap
 - hạn 2026-10-17 — tree shaking · kill switch · deep dive · set in stone · cabin fever
 - hạn 2026-10-20 — strangler fig · dark launch · gold-plating · on the hook · potluck
+- hạn 2026-10-21 — leader election · eventual consistency · acceptance criteria · move the goalposts · pet peeve
+
+_Ghi chú 2026-10-21 (buổi #53): phần A hỏi lại 5 từ của buổi 20/10 (leader election · eventual consistency · acceptance criteria · move the goalposts · pet peeve), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng scaffold · buffer · graceful degradation · doze off · run errands · escalate · backward compatible · noisy neighbor · eviction · rush hour · throttle · catch up · provision · touch base · footprint · weigh in · swamped · bottom line · instrument · out of the blue — chạm từ lô cũ nhất (18/08) tới lô 03/10, và **không trùng một từ nào** với phần ôn của buổi 20/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **260/265 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-13 (buổi #49): phần A hỏi lại 5 từ của buổi 12/10 (upsert · reconcile · backlog · addendum · stock up), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng iron out · carve out · hand over · milestone · propagate · wrap up · on track · hydrate · head out · loop in · put off · fed up · sleep in · walk back · outstanding · coalesce · postmortem · fan-out · deprecate · call out — chạm từ lô cũ nhất (14/08) tới lô 27/09, và **không trùng một từ nào** với phần ôn của buổi 12/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **240/245 từ**, toàn bộ ở bậc 1._
 
@@ -386,6 +389,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | acceptance criteria | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
 | move the goalposts | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
 | pet peeve | 1 | 2026-10-21 | 0 | 0 | 2026-10-20 |
+| starvation | 1 | 2026-10-22 | 0 | 0 | 2026-10-21 |
+| multi-tenancy | 1 | 2026-10-22 | 0 | 0 | 2026-10-21 |
+| upsell | 1 | 2026-10-22 | 0 | 0 | 2026-10-21 |
+| bake in | 1 | 2026-10-22 | 0 | 0 | 2026-10-21 |
+| peckish | 1 | 2026-10-22 | 0 | 0 | 2026-10-21 |
 
 ## Đã thuộc (bậc 5, đúng)
 

@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 260 từ đã học** · IT 104 · Business 104 · Life 52 · ad-hoc 0
+**Tổng: 265 từ đã học** · IT 106 · Business 106 · Life 53 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 20 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-20
 
@@ -279,6 +279,11 @@
 | 258 | acceptance criteria | acceptance criterion, criteria, criterion, accept, accepted, acceptable, acceptance, acceptance test, user acceptance testing (UAT) | noun (số nhiều; số ít: criterion) | Business | Tiêu chí nghiệm thu | 2026-10-20 | lesson |
 | 259 | move the goalposts | moves the goalposts, moved the goalposts, moving the goalposts, moving goalposts, shift the goalposts, goalpost, goal posts | idiom | Business | đổi tiêu chí giữa chừng | 2026-10-20 | lesson |
 | 260 | pet peeve | pet peeves, a pet peeve of mine, peeve, peeved, peevish, pet project, pet theory | noun (đếm được) | Life | điểm khó chịu riêng của mình | 2026-10-20 | lesson |
+| 261 | starvation | starve, starves, starved, starving, starvation, resource starvation, thread starvation, be starved of sth, starvation-free | noun (không đếm được) | IT | bị bỏ đói tài nguyên | 2026-10-21 | lesson |
+| 262 | multi-tenancy | multi-tenant, multitenancy, multi-tenanted, tenant, tenants, tenancy, single-tenant, tenant isolation, per-tenant | noun (không đếm được) | IT | Kiến trúc đa khách thuê | 2026-10-21 | lesson |
+| 263 | upsell | upsells, upsold, upselling, an upsell, upsell opportunity, cross-sell, downsell | verb (cũng là noun) | Business | Bán thêm gói cao hơn | 2026-10-21 | lesson |
+| 264 | bake in | bakes in, baked in, baking in, bake sth into sth, baked-in, half-baked | phrasal verb | Business | tính sẵn vào từ đầu | 2026-10-21 | lesson |
+| 265 | peckish | peck, pecks, pecked, pecking, peckish, a bit peckish, peckishness | adjective | Life | hơi đói bụng | 2026-10-21 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
