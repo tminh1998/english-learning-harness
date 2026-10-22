@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 265 từ đã học** · IT 106 · Business 106 · Life 53 · ad-hoc 0
+**Tổng: 270 từ đã học** · IT 108 · Business 108 · Life 54 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 20 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-20
+**Cập nhật:** 2026-10-22
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -284,6 +284,11 @@
 | 263 | upsell | upsells, upsold, upselling, an upsell, upsell opportunity, cross-sell, downsell | verb (cũng là noun) | Business | Bán thêm gói cao hơn | 2026-10-21 | lesson |
 | 264 | bake in | bakes in, baked in, baking in, bake sth into sth, baked-in, half-baked | phrasal verb | Business | tính sẵn vào từ đầu | 2026-10-21 | lesson |
 | 265 | peckish | peck, pecks, pecked, pecking, peckish, a bit peckish, peckishness | adjective | Life | hơi đói bụng | 2026-10-21 | lesson |
+| 266 | redact | redacts, redacted, redacting, redaction, redactions, unredacted, heavily redacted, self-redacting | verb | IT | che thông tin nhạy cảm | 2026-10-22 | lesson |
+| 267 | seed | seeds, seeded, seeding, seed data, seed script, seeder, re-seed, reseed, unseeded | verb (cũng là noun) | IT | nạp dữ liệu mẫu | 2026-10-22 | lesson |
+| 268 | pilot | pilots, piloted, piloting, pilot project, pilot programme, pilot program, pilot phase, pilot run, a pilot group | noun (đếm được; cũng là verb) | Business | thí điểm | 2026-10-22 | lesson |
+| 269 | good faith | in good faith, good-faith, bad faith, faith, faithful, faithfully, act in good faith, good-faith effort, a good-faith estimate | noun (không đếm được) | Business | thiện chí | 2026-10-22 | lesson |
+| 270 | couch potato | couch potatoes, couch-potato, couch, potato, potatoes | noun (đếm được) | Life | nằm lì xem TV / lười vận động | 2026-10-22 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
