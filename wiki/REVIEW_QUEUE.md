@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-22: 265 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-23: 270 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -59,8 +59,11 @@
 - hạn 2026-10-20 — strangler fig · dark launch · gold-plating · on the hook · potluck
 - hạn 2026-10-21 — leader election · eventual consistency · acceptance criteria · move the goalposts · pet peeve
 - hạn 2026-10-22 — starvation · multi-tenancy · upsell · bake in · peckish
+- hạn 2026-10-23 — redact · seed · pilot · good faith · couch potato
 
 _Ghi chú 2026-10-22 (buổi #54): phần A hỏi lại 5 từ của buổi 21/10 (starvation · multi-tenancy · upsell · bake in · peckish), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng quorum · hash out · invoice · low-hanging fruit · night owl · dangling · pick up the tab · reach out · flush · drag on · reflow · canary release · awkward · caveat · narrow down · walk through · race condition · tag along · smoke test · keep an eye on — chạm từ lô cũ nhất (17/08) tới lô 05/10, và **không trùng một từ nào** với phần ôn của buổi 21/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **265/270 từ**, toàn bộ ở bậc 1._
+
+_Ghi chú 2026-10-23 (buổi #55): phần A hỏi lại 5 từ của buổi 22/10 (redact · seed · pilot · good faith · couch potato), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng hassle · snapshot · rollback · bring up · buy-in · short notice · shim · failover · retainer · drop by · hit it off · upfront · idempotent · deadlock · chase up · cold start · happy path · clarify · bear with · load shedding — chạm từ lô cũ nhất (13/08) tới lô 06/10, và **không trùng một từ nào** với phần ôn của buổi 22/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **270/275 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-21 (buổi #53): phần A hỏi lại 5 từ của buổi 20/10 (leader election · eventual consistency · acceptance criteria · move the goalposts · pet peeve), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng scaffold · buffer · graceful degradation · doze off · run errands · escalate · backward compatible · noisy neighbor · eviction · rush hour · throttle · catch up · provision · touch base · footprint · weigh in · swamped · bottom line · instrument · out of the blue — chạm từ lô cũ nhất (18/08) tới lô 03/10, và **không trùng một từ nào** với phần ôn của buổi 20/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **260/265 từ**, toàn bộ ở bậc 1._
 
@@ -402,6 +405,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | pilot | 1 | 2026-10-23 | 0 | 0 | 2026-10-22 |
 | good faith | 1 | 2026-10-23 | 0 | 0 | 2026-10-22 |
 | couch potato | 1 | 2026-10-23 | 0 | 0 | 2026-10-22 |
+| monorepo | 1 | 2026-10-24 | 0 | 0 | 2026-10-23 |
+| code smell | 1 | 2026-10-24 | 0 | 0 | 2026-10-23 |
+| statement of work | 1 | 2026-10-24 | 0 | 0 | 2026-10-23 |
+| sunset | 1 | 2026-10-24 | 0 | 0 | 2026-10-23 |
+| take a breather | 1 | 2026-10-24 | 0 | 0 | 2026-10-23 |
 
 ## Đã thuộc (bậc 5, đúng)
 
