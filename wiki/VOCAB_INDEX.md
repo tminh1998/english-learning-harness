@@ -14,7 +14,7 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 275 từ đã học** · IT 110 · Business 110 · Life 55 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 20 từ — xem bảng cuối file
+**Đã biết sẵn (không dạy):** 22 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-23
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -289,8 +289,8 @@
 | 268 | pilot | pilots, piloted, piloting, pilot project, pilot programme, pilot program, pilot phase, pilot run, a pilot group | noun (đếm được; cũng là verb) | Business | thí điểm | 2026-10-22 | lesson |
 | 269 | good faith | in good faith, good-faith, bad faith, faith, faithful, faithfully, act in good faith, good-faith effort, a good-faith estimate | noun (không đếm được) | Business | thiện chí | 2026-10-22 | lesson |
 | 270 | couch potato | couch potatoes, couch-potato, couch, potato, potatoes | noun (đếm được) | Life | nằm lì xem TV / lười vận động | 2026-10-22 | lesson |
-| 271 | monorepo | monorepos, mono-repo, mono repo, monorepo tooling, polyrepo, multi-repo | noun (đếm được) | IT | một repo chứa nhiều project | 2026-10-23 | lesson |
-| 272 | code smell | code smells, smell, smells, smelly, design smell, test smell, smell test | noun (đếm được) | IT | dấu hiệu code có vấn đề | 2026-10-23 | lesson |
+| 271 | gossip protocol | gossip protocols, gossip, gossips, gossiped, gossiping, gossip-based, gossip round, epidemic protocol | noun (đếm được) | IT | giao thức lan truyền | 2026-10-23 | lesson |
+| 272 | yak shaving | yak shave, yak-shaving, shave a yak, shaving yaks, yak shaver | noun (không đếm được; v: shave a yak) | IT | việc phụ kéo theo việc phụ | 2026-10-23 | lesson |
 | 273 | statement of work | statements of work, SOW, SOWs, scope of work, work statement, statement | noun (đếm được; viết tắt SOW) | Business | bản mô tả công việc | 2026-10-23 | lesson |
 | 274 | sunset | sunsets, sunsetted, sunsetting, sunset date, sunset clause, end-of-life, EOL | verb (cũng là noun) | Business | ngừng hỗ trợ theo lịch hẹn trước | 2026-10-23 | lesson |
 | 275 | take a breather | breathers, a breather, breathe, breath, breathing, catch your breath, breathing space | idiom | Life | nghỉ xả hơi một lát | 2026-10-23 | lesson |
@@ -327,6 +327,8 @@
 | change request | change requests, CR, request a change, requested change, change control, change order | noun (đếm được) | Business | yêu cầu thay đổi ngoài phạm vi đã ký, tính thêm tiền/thời gian | 2026-10-19 |
 | prefetch | prefetches, prefetched, prefetching, pre-fetch, a prefetch, prefetcher, prefetch hint, rel="prefetch", preload | verb (cũng là noun) | IT | tải trước dữ liệu khi chưa ai hỏi tới | 2026-10-20 |
 | green light | green-light, green-lights, green-lit, greenlight, greenlighting, give the green light, get the green light, a green light | noun (đếm được; v: green-light) | Business | bật đèn xanh, cho phép chính thức bắt đầu | 2026-10-20 |
+| monorepo | monorepos, mono-repo, mono repo, monorepo tooling, polyrepo, multi-repo | noun (đếm được) | IT | một repo chứa nhiều project | 2026-10-23 |
+| code smell | code smells, smell, smells, smelly, design smell, test smell, smell test | noun (đếm được) | IT | dấu hiệu code có vấn đề | 2026-10-23 |
 
 <!--
 LUẬT GHI:

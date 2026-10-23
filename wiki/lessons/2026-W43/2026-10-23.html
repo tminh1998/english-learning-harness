@@ -201,74 +201,74 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>monorepo
-        <button class="say" data-say="move both apps into one monorepo" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>gossip protocol
+        <button class="say" data-say="the nodes talk through a gossip protocol" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈmɒnəʊˌriːpəʊ/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˈɡɒsɪp ˌprəʊtəkɒl/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">một repo chứa nhiều project<span class="alt">web, admin, SDK… nằm chung một kho code, chung một lần commit, chung CI</span></p>
+  <p class="vi-quick hide-me">giao thức lan truyền<span class="alt">mỗi node định kỳ kể cho vài node ngẫu nhiên điều mình biết, cứ thế lan ra cả cụm</span></p>
 
-  <p class="def"><span class="tag">EN</span>A single git repository that holds several projects or packages which used to live in repositories of their own.
-    <span class="def-vi hide-me">→ Một repo git duy nhất chứa nhiều project hay nhiều package mà trước đây mỗi cái nằm ở một repo riêng.</span>
+  <p class="def"><span class="tag">EN</span>A way for the nodes in a cluster to share information: each one regularly passes what it knows to a few random neighbours, until the whole cluster has heard it.
+    <span class="def-vi hide-me">→ Một cách để các node trong cụm chia sẻ thông tin: node nào cũng định kỳ chuyển những gì mình biết cho vài node hàng xóm chọn ngẫu nhiên, cho tới khi cả cụm đều nghe được.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trái nghĩa là <code>polyrepo</code> / <code>multi-repo</code> (mỗi project một repo). <b>Không</b> đồng nghĩa với <code>monolith</code>: monorepo nói về chỗ <b>chứa</b> code, monolith nói về chỗ <b>chạy</b> — một monorepo hoàn toàn có thể chứa hai chục microservice. Nhắc tới nó là nhắc tới cái giá đi kèm: CI phải biết chỉ build phần nào vừa đổi.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Không cần máy trung tâm nào điều phối. Hay dùng để báo cho nhau node nào còn sống, node nào chết, và để rải cấu hình — Cassandra, Consul, Redis Cluster đều có. Cái giá: tin phải qua vài vòng mới tới hết, nên cả cụm chỉ khớp nhau theo kiểu <code>eventual consistency</code> (đã học 20/10) chứ không tức thì.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">Since we moved both apps into a single <b>monorepo</b>, a <span class="rev">breaking change</span> in the shared UI package shows up in CI the same morning instead of three weeks later.</span>
-      <span class="vi hide-me">→ Từ lúc gộp cả hai app vào một monorepo, một thay đổi làm vỡ API ở package UI dùng chung là sáng đó CI đỏ luôn, chứ không phải ba tuần sau mới lòi ra.</span>
+      <span class="en">The nodes use a <b>gossip protocol</b> to spread who is alive, so a dead node is noticed within seconds and <span class="rev">leader election</span> can start right away.</span>
+      <span class="vi hide-me">→ Các node dùng giao thức lan truyền để báo cho nhau node nào còn sống, nên node nào chết là vài giây sau cả cụm biết, và việc bầu chọn node chủ bắt đầu được ngay.</span>
     </li>
     <li>
-      <span class="en">The <b>monorepo</b> keeps our <span class="rev">boilerplate</span> in one place, so a new service inherits the lint and CI config on day one.</span>
-      <span class="vi hide-me">→ Monorepo giữ đống code khung của bọn mình ở một chỗ, nên service mới dựng lên là có sẵn cấu hình lint với CI ngay từ đầu.</span>
+      <span class="en">With a <b>gossip protocol</b> there's no central registry to go down, so we get rid of one more <span class="rev">single point of failure</span> — the catch is that a new config takes a few rounds to reach every node.</span>
+      <span class="vi hide-me">→ Dùng giao thức lan truyền thì chẳng còn registry trung tâm nào để mà sập, nên bớt được thêm một điểm chết duy nhất — có điều cấu hình mới phải qua vài vòng mới tới được hết các node.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>move / migrate to a monorepo</code> · <code>a monorepo setup</code> · <code>monorepo tooling</code> · <code>split a monorepo</code> · <code>in the monorepo</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Viết <b>liền một chữ</b>: <code>monorepo</code>, không phải "mono repo" hay "mono-repo". Đừng lẫn với <code>monolith</code> (xem GHI CHÚ). Trọng âm ở âm đầu /ˈmɒnəʊ-/ — đọc "MO-nô-ri-pâu", không phải "mô-NÔ".</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">monorepos, mono-repo, mono repo, monorepo tooling, polyrepo, multi-repo</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>use / run a gossip protocol</code> · <code>spread sth via gossip</code> · <code>gossip-based membership</code> · <code>a gossip round</code> · <code>the nodes gossip with each other</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Ở đây <code>gossip</code> là thuật ngữ, <b>không</b> mang nghĩa chê "buôn chuyện" — câu <code>the nodes gossip with each other</code> là câu kỹ thuật bình thường. Đừng lẫn với <code>broadcast</code>: broadcast là một node gửi cho <b>tất cả</b> cùng lúc, còn gossip mỗi lần chỉ gửi cho <b>vài</b> node rồi để tin tự lan. Cả hai chữ đều nhấn âm đầu: /ˈɡɒsɪp/, /ˈprəʊtəkɒl/.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">gossip protocols, gossip, gossips, gossiped, gossiping, gossip-based, gossip round, epidemic protocol</span></div>
   </div>
 </article>
 
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>code smell
-        <button class="say" data-say="that is a code smell" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>yak shaving
+        <button class="say" data-say="a whole morning of yak shaving" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˌkəʊd ˈsmel/ · <em>noun (đếm được)</em></div>
+      <div class="ipa">/ˈjæk ˌʃeɪvɪŋ/ · <em>noun (không đếm được; v: shave a yak)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">dấu hiệu code có vấn đề<span class="alt">chạy vẫn đúng, nhưng cách viết báo trước là chỗ này sắp sinh lỗi hoặc rất khó sửa</span></p>
+  <p class="vi-quick hide-me">việc phụ kéo theo việc phụ<span class="alt">muốn làm A phải sửa B, sửa B lại phải nâng C… hết buổi mà việc chính chưa động tới</span></p>
 
-  <p class="def"><span class="tag">EN</span>A piece of code that still works but is written in a way that warns you of a deeper problem underneath.
-    <span class="def-vi hide-me">→ Một đoạn code vẫn chạy đúng, nhưng cách nó được viết ra báo trước rằng bên dưới còn một vấn đề sâu hơn.</span>
+  <p class="def"><span class="tag">EN</span>A long chain of small side tasks you have to finish one after another before you can even start the thing you actually set out to do.
+    <span class="def-vi hide-me">→ Một chuỗi dài những việc phụ nhỏ phải làm xong lần lượt từng cái, rồi mới bắt đầu được đúng cái việc mình định làm từ đầu.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong code review đây là chữ <b>nhẹ</b> hơn "bug" — nói "this is a code smell" là nêu nghi vấn chứ không khẳng định sai, nên người nghe đỡ tự ái. Khác <code>technical debt</code> (đã học 20/08): technical debt là món nợ đã biết và đã chấp nhận, còn code smell là cái <b>mùi</b> báo rằng có thể đang có nợ.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Từ lóng của dân dev, hình ảnh gốc là "cạo lông bò Tây Tạng" — nhưng đừng dịch sát chữ. Khác <code>scope creep</code> (đã học 15/08): scope creep là <b>việc chính phình ra</b> vì khách thêm yêu cầu; yak shaving thì việc chính vẫn y nguyên, chỉ có <b>đường tới nó dài ra</b>. Hay dùng để tự giễu khi giải thích vì sao chậm ("I've been yak shaving all morning"), hoặc để nhắc nhau dừng lại. Nói trong team thôi; với khách thì nói thẳng <code>we hit a few unexpected dependencies</code>.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">A function with eight boolean arguments is a <b>code smell</b>: it still works, but it's exactly the kind of <span class="rev">brittle</span> code that breaks the moment someone adds a ninth.</span>
-      <span class="vi hide-me">→ Một cái function tám tham số boolean là dấu hiệu có vấn đề: chạy thì vẫn chạy, nhưng đúng kiểu code dễ vỡ, ai thêm tham số thứ chín vào là sập.</span>
+      <span class="en">I only wanted to bump one library, but it needed a newer Node, which broke our already <span class="rev">flaky</span> test runner — a whole morning of <b>yak shaving</b>, and the actual fix is still one line.</span>
+      <span class="vi hide-me">→ Mình chỉ định nâng bản một cái thư viện thôi, mà nó đòi Node mới hơn, Node mới lại làm hỏng luôn cái test runner vốn đã chập chờn — mất trắng buổi sáng vì việc phụ kéo theo việc phụ, còn chỗ sửa thật thì vẫn chỉ một dòng.</span>
     </li>
     <li>
-      <span class="en">Don't call it a bug in review — call it a <b>code smell</b> and ask whether the <span class="rev">technical debt</span> is worth paying down this sprint.</span>
-      <span class="vi hide-me">→ Trong review đừng gọi nó là bug, cứ gọi là dấu hiệu code có vấn đề rồi hỏi xem món nợ kỹ thuật đó có đáng trả ngay sprint này không.</span>
+      <span class="en">Hard-coding the value is an ugly <span class="rev">trade-off</span>, but it beats another afternoon of <b>yak shaving</b>.</span>
+      <span class="vi hide-me">→ Hard-code giá trị thì xấu thật, nhưng đổi lại khỏi mất thêm một buổi chiều loay hoay với mấy việc phụ.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>a code smell</code> · <code>this function smells</code> · <code>catch a code smell in review</code> · <code>a design smell</code> · <code>the classic smell of sth</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đếm được, phải có mạo từ: <code>that's <b>a</b> code smell</code>, không nói "that's code smell". Nói <code>this function smells</code> thì được, nhưng <b>không</b> nói "this code is smelly" (nghe như code bốc mùi thật). Trong câu tiếng Việt nghiêm túc thì đừng dịch thành "mùi code" — người trong nghề chỉ nói vậy kiểu đùa.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">code smells, smell, smells, smelly, design smell, test smell, smell test</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a bit of yak shaving</code> · <code>turn into yak shaving</code> · <code>spend the morning yak shaving</code> · <code>pure yak shaving</code> · <code>shave a yak</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Không đếm được: <code>a lot of yak shaving</code>, <b>không</b> nói "a yak shaving". Muốn dùng như động từ thì <code>I've been yak shaving</code> hoặc <code>shave a yak</code>. <code>yak</code> /jæk/ mở đầu bằng âm /j/ như trong <code>yes</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">yak shave, yak-shaving, shave a yak, shaving yaks, yak shaver</span></div>
   </div>
 </article>
 
@@ -385,11 +385,11 @@
 
 <section class="block">
   <h2>Mẩu đọc</h2>
-  <p class="sub">Trích một RFC nội bộ: gộp ba repo lại</p>
-  <div class="passage">We're proposing one <b>monorepo</b> for the web client, the admin panel and the shared SDK. Three repos today means three copies of the same config and a release train nobody trusts; the auth helper that exists in all three is the clearest <b>code smell</b> we have. The plan is to <b>sunset</b> the standalone SDK repo at the end of Q1, keep its git history, and fold the remaining work into the <b>statement of work</b> we already signed for the platform rebuild — no new budget, no new <span class="rev">addendum</span>. If migration week goes badly we <span class="rev">roll back</span> to three repos, <b>take a breather</b>, and try again in the summer.</div>
+  <p class="sub">Trích một RFC nội bộ: bỏ service registry trung tâm</p>
+  <div class="passage">We're proposing to replace our central service registry with a <b>gossip protocol</b>: every node tells a few random peers who is alive, so the registry stops being a <span class="rev">single point of failure</span>. The old registry will be <b>sunset</b> at the end of Q1, and the work fits inside the <b>statement of work</b> we already signed for the platform rebuild — no new budget, no new <span class="rev">addendum</span>. One warning from the prototype: just getting the test cluster up turned into two days of <b>yak shaving</b> (a TLS upgrade, then a broken base image), so the estimate below already includes a buffer. If migration week goes badly we <span class="rev">roll back</span> to the registry, <b>take a breather</b>, and try again in the summer.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Bọn mình đề xuất gộp web client, trang admin và SDK dùng chung vào một monorepo. Ba repo như hiện nay nghĩa là ba bản cấu hình y hệt nhau và một lịch release chẳng ai tin; cái auth helper nằm ở cả ba chỗ là dấu hiệu code có vấn đề rõ nhất mà bọn mình đang có. Kế hoạch là cuối quý 1 ngừng hỗ trợ cái repo SDK đứng riêng, giữ nguyên lịch sử git của nó, rồi dồn phần việc còn lại vào bản mô tả công việc đã ký cho đợt dựng lại platform — không xin thêm ngân sách, không cần phụ lục mới. Tuần chuyển đổi mà hỏng thì bọn mình lùi về ba repo như cũ, nghỉ xả hơi một lát, tới hè làm lại.</p>
+    <p class="hide-me">Bọn mình đề xuất thay service registry trung tâm bằng giao thức lan truyền: node nào cũng kể cho vài node ngẫu nhiên biết node nào còn sống, nhờ vậy registry không còn là điểm chết duy nhất. Registry cũ sẽ ngừng hỗ trợ vào cuối quý 1, và phần việc này nằm gọn trong bản mô tả công việc đã ký cho đợt dựng lại platform — không xin thêm ngân sách, không cần phụ lục mới. Một lưu ý từ bản làm thử: riêng việc dựng được cụm test đã ngốn hai ngày vì việc phụ kéo theo việc phụ (nâng TLS xong lại vỡ base image), nên ước tính bên dưới đã cộng sẵn phần dự phòng. Tuần chuyển đổi mà hỏng thì bọn mình lùi về registry cũ, nghỉ xả hơi một lát, tới hè làm lại.</p>
   </details>
 </section>
 
@@ -397,20 +397,20 @@
   <h2>Bài tập</h2>
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
-    <li>Điền 1 từ: "Three copies of the same date-formatting helper in three services is a classic ______ — it works today, but it won't for long."</li>
+    <li>Điền 1 cụm từ: "Our nodes use a ______ to spread who is alive: each one tells a few random peers, and the news reaches the whole cluster within seconds."</li>
     <li>Chọn collocation đúng: "We're ______ the v1 API at the end of June." — (a) <code>sunsetting</code> · (b) <code>sunseting down</code> · (c) <code>making sunset</code></li>
     <li>Dịch Việt → Anh: "Việc nào không nằm trong bản mô tả công việc thì bên em phải làm phụ lục ạ."</li>
     <li>Sửa lỗi: "After the incident call we took a breath for ten minutes, then started the postmortem."</li>
-    <li>Sửa lỗi: "We moved all three projects into one mono repo last quarter, so now it is a monolith."</li>
+    <li>Sửa lỗi: "I spent the whole morning on a yak shaving: the upgrade needed a newer Node, which broke the test runner."</li>
   </ol>
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>code smell</b> — "is a classic <b>code smell</b>": code vẫn chạy đúng, chỉ là cách viết báo trước sắp có vấn đề. Nếu nó đã sai kết quả rồi thì mới là <code>bug</code>.</li>
+      <li><b>gossip protocol</b> — "use a <b>gossip protocol</b>": mỗi node chỉ kể cho <b>vài</b> node ngẫu nhiên rồi để tin tự lan. Nếu một node gửi một lúc cho tất cả thì là <code>broadcast</code>.</li>
       <li><b>(a)</b> <code>sunsetting</code> — động từ chia gấp đôi chữ <code>t</code>. <code>(b)</code> sai hai chỗ: thiếu một <code>t</code> và thêm <code>down</code> vô nghĩa; <code>(c)</code> không tồn tại.</li>
       <li>"Anything <b>outside the statement of work</b> has to go in as an <b>addendum</b>." — <code>statement <b>of</b> work</code> (không phải "for work"), và việc ngoài phạm vi thì đi kèm <code>addendum</code> (đã học 12/10).</li>
       <li>"…we took <b>a breather</b> for ten minutes…" — <code>take a breath</code> là <i>hít một hơi</i>; nghỉ vài phút là <code>take a breather</code>, có <code>-er</code> và đọc với âm /ð/.</li>
-      <li>"We moved all three projects into one <b>monorepo</b> last quarter, so now it is a monolith." → sửa hai chỗ: viết liền <code>monorepo</code>, và câu sau <b>sai logic</b> — gộp repo lại <b>không</b> biến hệ thống thành monolith. Monorepo là chỗ chứa code, monolith là chỗ chạy.</li>
+      <li>"I spent the whole morning <b>yak shaving</b>: …" (hoặc "on <b>a lot of</b> yak shaving") — <code>yak shaving</code> không đếm được nên không đi với <code>a</code>; dùng như động từ thì gọn nhất.</li>
     </ol>
   </details>
 </section>
