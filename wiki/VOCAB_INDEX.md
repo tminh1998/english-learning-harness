@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 275 từ đã học** · IT 110 · Business 110 · Life 55 · ad-hoc 0
+**Tổng: 280 từ đã học** · IT 112 · Business 112 · Life 56 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 22 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-23
+**Cập nhật:** 2026-10-24
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -294,6 +294,11 @@
 | 273 | statement of work | statements of work, SOW, SOWs, scope of work, work statement, statement | noun (đếm được; viết tắt SOW) | Business | bản mô tả công việc | 2026-10-23 | lesson |
 | 274 | sunset | sunsets, sunsetted, sunsetting, sunset date, sunset clause, end-of-life, EOL | verb (cũng là noun) | Business | ngừng hỗ trợ theo lịch hẹn trước | 2026-10-23 | lesson |
 | 275 | take a breather | breathers, a breather, breathe, breath, breathing, catch your breath, breathing space | idiom | Life | nghỉ xả hơi một lát | 2026-10-23 | lesson |
+| 276 | escape hatch | escape hatches, hatch, escape, escape route, escape clause, eject | noun (đếm được) | IT | đường lách khỏi khuôn chuẩn | 2026-10-24 | lesson |
+| 277 | chatty | chattier, chattiest, chat, chats, chatter, chatty protocol | adjective | IT | nhiều lượt gọi lẻ / nói nhiều | 2026-10-24 | lesson |
+| 278 | nitpick | nitpicks, nitpicked, nitpicking, nitpicky, nitpicker, a nit | verb (cũng là noun) | Business | bắt lỗi vụn vặt | 2026-10-24 | lesson |
+| 279 | in a nutshell | nutshell, nutshells, nut, shell, in short, in brief | idiom (cụm trạng từ) | Business | nói gọn lại là | 2026-10-24 | lesson |
+| 280 | blow off steam | blows off steam, blew off steam, blown off steam, blowing off steam, let off steam, steam | idiom (cụm động từ) | Life | giải toả bớt căng thẳng | 2026-10-24 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
