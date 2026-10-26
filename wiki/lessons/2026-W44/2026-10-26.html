@@ -238,37 +238,37 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">2</span>sandbox
-        <button class="say" data-say="a sandbox environment" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">2</span>saga
+        <button class="say" data-say="the saga pattern" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈsændbɒks/ · <em>noun (đếm được; cũng là verb)</em></div>
+      <div class="ipa">/ˈsɑːɡə/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">vùng chạy tách biệt<span class="alt">bản riêng để thử — key giả, tiền giả, hỏng thì hỏng một mình, không với được ra bản thật</span></p>
+  <p class="vi-quick hide-me">giao dịch phân tán / chuỗi bước có hoàn tác<span class="alt">nghiệp vụ dài chạy qua nhiều service, mỗi bước tự commit — bước sau hỏng thì chạy bước bù gỡ lại các bước trước</span></p>
 
-  <p class="def"><span class="tag">EN</span>A separate copy of a system where you can try things with fake data, because nothing you do there reaches the real one.
-    <span class="def-vi hide-me">→ Một bản riêng của hệ thống, chỗ mình thử gì cũng được với dữ liệu giả, vì làm gì trong đó cũng không chạm tới bản thật.</span>
+  <p class="def"><span class="tag">EN</span>A long piece of business work split into a chain of small steps across several services, where every step has an "undo" step that runs if a later one fails.
+    <span class="def-vi hide-me">→ Một nghiệp vụ dài chia thành chuỗi bước nhỏ ở nhiều service, bước nào cũng có một bước "gỡ" đi kèm, chạy khi bước phía sau hỏng.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hai chỗ hay gặp: sandbox của API/payment (khách tự lấy test key chạy thử trước khi chạy thật), và sandbox của browser/OS (thuộc tính <code>sandbox</code> của iframe, mỗi tab chạy trong hộp riêng). Dùng như động từ thì nghĩa là nhốt nó lại: <code>we sandbox every plugin</code>. Khác <code>dry run</code> (09/09): dry run chạy trên hệ thống thật nhưng không ghi gì; sandbox là một hệ thống khác hẳn. Khác <code>staging</code>: staging là bản gần giống production để nghiệm thu, sandbox là chỗ chơi với dữ liệu giả.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Dùng khi không gói được cả chuỗi vào một transaction database — mỗi service một database riêng. Ví dụ kinh điển là đặt hàng: giữ kho → trừ tiền → tạo đơn giao; trừ tiền hỏng thì chạy <b>bước bù</b> (<code>compensating transaction</code>) trả hàng lại kho. Hai kiểu: <code>orchestration</code> (một service đứng ra điều phối từng bước) và <code>choreography</code> (mỗi service nghe event rồi tự làm phần mình). Hay đi cặp với <code>outbox</code> (08/10) để event không rơi giữa đường.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">Point the integration at the <b>sandbox</b> first: the keys there are fake, so a wrong amount costs nobody anything and our <span class="rev">turnaround</span> on a fix is minutes instead of days.</span>
-      <span class="vi hide-me">→ Cứ trỏ phần tích hợp vào sandbox trước đã: key ở đó là key giả, nên nhập sai số tiền cũng chẳng ai mất gì, mà bên mình sửa xong trả lại chỉ mất vài phút chứ không phải vài ngày.</span>
+      <span class="en">Checkout is a <b>saga</b> now: if the payment step fails, a compensating step puts the stock back, and every step is <span class="rev">idempotent</span>, so a retry never charges anyone twice.</span>
+      <span class="vi hide-me">→ Giờ phần checkout chạy theo kiểu saga: bước trừ tiền mà hỏng thì có bước bù trả hàng lại vào kho, mà bước nào chạy lại cũng ra y nguyên, nên có retry thì cũng không ai bị trừ tiền hai lần.</span>
     </li>
     <li>
-      <span class="en">Plugins run in a <b>sandbox</b> now, so we no longer have to <span class="rev">put up with</span> one broken extension taking the whole editor down.</span>
-      <span class="vi hide-me">→ Giờ plugin chạy trong vùng tách biệt rồi, nên bọn mình không phải chịu đựng cái cảnh một extension hỏng là sập cả editor nữa.</span>
+      <span class="en">Your booking runs as a <b>saga</b> across three services, so an order may show as "pending" for a few seconds — that's <span class="rev">eventual consistency</span>, not a bug.</span>
+      <span class="vi hide-me">→ Việc đặt chỗ bên anh/chị chạy thành một chuỗi bước qua ba service, nên đơn có thể hiện "đang xử lý" vài giây — đó là nhất quán sau cùng, chờ một lúc là dữ liệu tự khớp, chứ không phải lỗi đâu ạ.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>a sandbox environment</code> · <code>test it in a sandbox</code> · <code>sandbox credentials / keys</code> · <code>a sandbox account</code> · <code>sandbox a plugin</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Giới từ là <b><code>in</code></b>: <code>test it in a sandbox</code>, không phải "on a sandbox". Viết <b>liền một chữ</b>, số nhiều <code>sandboxes</code> /ˈsændbɒksɪz/. Và sandbox <b>không</b> phải chỗ có dữ liệu thật — có dữ liệu thật của khách thì đó là <code>staging</code>; gọi lẫn hai cái là nói chuyện với khách rất dễ hiểu sai.</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">sandboxes, sandboxed, sandboxing, sandbox mode, sandbox environment, sandboxed iframe</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>the saga pattern</code> · <code>run sth as a saga</code> · <code>a saga step</code> · <code>a compensating transaction / action</code> · <code>an orchestrated saga</code> · <code>a choreography-based saga</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /ˈsɑːɡə/ (<b>SAH</b>-gơ), không phải "sây-ga". Saga <b>không</b> có rollback chung như transaction database: các bước trước đã commit thật rồi, "hoàn tác" là chạy bước bù — nên giữa chừng người dùng có thể thấy dữ liệu dở dang, phải thiết kế sẵn cho chuyện đó. Ngoài code, <code>saga</code> là chuyện lằng nhằng kéo dài: <code>the whole saga with the vendor</code> trong email là "cả câu chuyện dây dưa với bên vendor", không dính gì tới pattern.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">sagas, saga pattern, saga step, saga orchestrator, orchestrated saga, choreography-based saga, compensating transaction, compensating action, compensate</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Ghi chú cuối ngày gửi cả nhóm trước khi tắt máy</p>
-  <div class="passage">Quick notes before I log off. The client's <b>prerequisite</b> list is down to one item — the test credentials for their <b>sandbox</b> — and I've asked twice now, so that's the only <span class="rev">blocker</span> left on our side. We can't make the nightly job faster this week, but we can <b>mitigate</b> the timeouts by retrying with a longer <span class="rev">backoff</span>. I also turned <b>telemetry</b> on behind a flag, so by Wednesday we'll be arguing about real numbers instead of guesses. Then I went for a <b>stroll</b> around the block, because staring at that graph was never going to make it any faster.</div>
+  <div class="passage">Quick notes before I log off. The client's <b>prerequisite</b> list is down to one item — the test credentials for their payment API — and I've asked twice now, so that's the only <span class="rev">blocker</span> left on our side. Once they land, we can finally test checkout as a <b>saga</b>: if the payment step fails, the stock goes back on its own. We can't make the nightly job faster this week, but we can <b>mitigate</b> the timeouts by retrying with a longer <span class="rev">backoff</span>. I also turned <b>telemetry</b> on behind a flag, so by Wednesday we'll be arguing about real numbers instead of guesses. Then I went for a <b>stroll</b> around the block, because staring at that graph was never going to make it any faster.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Ghi nhanh vài dòng trước khi mình tắt máy. Danh sách điều kiện tiên quyết phía khách chỉ còn một món — bộ credential test cho sandbox của họ — mình hỏi hai lần rồi, nên đó là vướng mắc duy nhất còn lại của bên mình. Cái job chạy đêm thì tuần này chưa làm nhanh hơn được, nhưng giảm thiểu được chỗ timeout bằng cách retry với thời gian chờ lâu dần. Mình cũng bật telemetry sau một cái flag, nên tới Thứ Tư là bọn mình tranh luận bằng số thật chứ không phải đoán nữa. Xong rồi mình đi dạo một vòng quanh khu, vì ngồi nhìn cái graph đó mãi thì nó cũng chẳng nhanh lên được.</p>
+    <p class="hide-me">Ghi nhanh vài dòng trước khi mình tắt máy. Danh sách điều kiện tiên quyết phía khách chỉ còn một món — bộ credential test cho API thanh toán của họ — mình hỏi hai lần rồi, nên đó là vướng mắc duy nhất còn lại của bên mình. Có bộ đó là mình test được phần checkout theo kiểu saga: bước trừ tiền hỏng thì hàng tự được trả lại kho. Cái job chạy đêm thì tuần này chưa làm nhanh hơn được, nhưng giảm thiểu được chỗ timeout bằng cách retry với thời gian chờ lâu dần. Mình cũng bật telemetry sau một cái flag, nên tới Thứ Tư là bọn mình tranh luận bằng số thật chứ không phải đoán nữa. Xong rồi mình đi dạo một vòng quanh khu, vì ngồi nhìn cái graph đó mãi thì nó cũng chẳng nhanh lên được.</p>
   </details>
 </section>
 
@@ -400,7 +400,7 @@
     <li><b>Điền từ</b> — Our CLI collects anonymous ______ so we can see which commands actually get used; you can opt out in the config file.</li>
     <li><b>Sửa lỗi</b> — "Signing the SOW is a prerequisite of starting the discovery phase."</li>
     <li><b>Dịch Việt → Anh</b> — <span class="hide-me">"Chỗ nghẽn đó tuần này chưa dẹp được, nhưng bên em giảm thiểu rủi ro bằng cách thêm retry và chừa sẵn cơ chế dự phòng."</span></li>
-    <li><b>Chọn collocation</b> — (a) test it in a sandbox · (b) test it on a sandbox · (c) test it at a sandbox</li>
+    <li><b>Chọn collocation</b> — (a) an orchestrated saga · (b) an orchestral saga · (c) an orchestra saga</li>
     <li><b>Điền từ</b> — After the retro we went for a ______ around the block to clear our heads.</li>
   </ol>
   <details>
@@ -409,7 +409,7 @@
       <li><b>telemetry</b> — cả luồng số liệu chương trình tự gửi về. Một dòng chữ in ra thì mới là <code>log</code>; khả năng soi được bên trong hệ thống là <code>observability</code>.</li>
       <li>Signing the SOW is a prerequisite <b>for</b> starting the discovery phase. — giới từ là <code>for</code> (hoặc <code>to</code>), <b>không</b> phải <code>of</code>. Đây là lỗi hay gặp nhất của từ này.</li>
       <li><b>We can't remove that bottleneck this week, but we're mitigating the risk with retries and a fallback.</b> — <code>mitigate</code> đi thẳng với tân ngữ (<code>the risk</code>), đừng thêm <code>for</code> hay <code>against</code>.</li>
-      <li><b>(a) test it in a sandbox</b> — giới từ là <code>in</code>. <code>on a sandbox</code> / <code>at a sandbox</code> đều sai.</li>
+      <li><b>(a) an orchestrated saga</b> — có một service đứng ra điều phối từng bước. <code>orchestral</code> là của dàn nhạc giao hưởng, còn <code>orchestra saga</code> thì không ai nói. Kiểu còn lại là <code>a choreography-based saga</code>: không ai điều phối, mỗi service tự nghe event.</li>
       <li><b>stroll</b> — <code>go for a stroll</code> là cụm chuẩn. Nếu là nghỉ tay vài phút ngay tại chỗ thì đó là <code>take a breather</code>.</li>
     </ol>
   </details>

@@ -14,7 +14,7 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 285 từ đã học** · IT 114 · Business 114 · Life 57 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 22 từ — xem bảng cuối file
+**Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
 **Cập nhật:** 2026-10-26
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -300,7 +300,7 @@
 | 279 | in a nutshell | nutshell, nutshells, nut, shell, in short, in brief | idiom (cụm trạng từ) | Business | nói gọn lại là | 2026-10-24 | lesson |
 | 280 | blow off steam | blows off steam, blew off steam, blown off steam, blowing off steam, let off steam, steam | idiom (cụm động từ) | Life | giải toả bớt căng thẳng | 2026-10-24 | lesson |
 | 281 | telemetry | telemetric, telemeter, telemetry data, telemetry pipeline, remote telemetry | noun (không đếm được) | IT | dữ liệu đo xa / số liệu máy tự gửi về | 2026-10-26 | lesson |
-| 282 | sandbox | sandboxes, sandboxed, sandboxing, sandbox mode, sandbox environment, sandboxed iframe | noun (đếm được; cũng là verb) | IT | vùng chạy tách biệt | 2026-10-26 | lesson |
+| 282 | saga | sagas, saga pattern, saga step, saga orchestrator, orchestrated saga, choreography-based saga, compensating transaction, compensating action, compensate | noun (đếm được) | IT | giao dịch phân tán / chuỗi bước có hoàn tác | 2026-10-26 | lesson |
 | 283 | mitigate | mitigates, mitigated, mitigating, mitigation, mitigating factor, unmitigated | verb | Business | giảm thiểu tác động | 2026-10-26 | lesson |
 | 284 | prerequisite | prerequisites, requisite, prerequisite skills, co-requisite, precondition | noun (đếm được; cũng là adjective) | Business | điều kiện tiên quyết | 2026-10-26 | lesson |
 | 285 | stroll | strolls, strolled, strolling, a stroll, strolling pace, stroller | noun (đếm được; cũng là verb) | Life | đi dạo | 2026-10-26 | lesson |
@@ -339,6 +339,7 @@
 | green light | green-light, green-lights, green-lit, greenlight, greenlighting, give the green light, get the green light, a green light | noun (đếm được; v: green-light) | Business | bật đèn xanh, cho phép chính thức bắt đầu | 2026-10-20 |
 | monorepo | monorepos, mono-repo, mono repo, monorepo tooling, polyrepo, multi-repo | noun (đếm được) | IT | một repo chứa nhiều project | 2026-10-23 |
 | code smell | code smells, smell, smells, smelly, design smell, test smell, smell test | noun (đếm được) | IT | dấu hiệu code có vấn đề | 2026-10-23 |
+| sandbox | sandboxes, sandboxed, sandboxing, sandbox mode, sandbox environment, sandboxed iframe, sandbox account, sandbox keys | noun (đếm được; cũng là verb) | IT | vùng chạy tách biệt | 2026-10-26 |
 
 <!--
 LUẬT GHI:
