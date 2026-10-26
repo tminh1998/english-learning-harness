@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-24: 275 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-26: 280 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -61,6 +61,9 @@
 - hạn 2026-10-22 — starvation · multi-tenancy · upsell · bake in · peckish
 - hạn 2026-10-23 — redact · seed · pilot · good faith · couch potato
 - hạn 2026-10-24 — gossip protocol · yak shaving · statement of work · sunset · take a breather
+- hạn 2026-10-25 — escape hatch · chatty · nitpick · in a nutshell · blow off steam
+
+_Ghi chú 2026-10-26 (buổi #57): phần A hỏi lại 5 từ của buổi 24/10 (escape hatch · chatty · nitpick · in a nutshell · blow off steam), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng cadence · recap · contingency · pain point · sign off · ground rules · tombstone · put up with · scope creep · drain · leeway · on the fence · blocker · turnaround · follow up · stay up · polyfill · boilerplate · pencil in · contention — cả 20 từ đều có "gặp lần cuối" là 08/10, chạm từ lô cũ nhất (13/08) tới lô 07/10, và **không trùng một từ nào** với phần ôn của buổi 24/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **280/285 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-24 (buổi #56): phần A hỏi lại 5 từ của buổi 23/10 (gossip protocol · yak shaving · statement of work · sunset · take a breather), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng latency · run by · unplug · fine print · flaky · rapport · backfill · bump · heads-up · loose ends · due diligence · blast radius · edge case · worn out · grab a bite · fallback · brittle · spare · orphan · ballpark — cả 20 từ đều có "gặp lần cuối" là 07/10, chạm từ lô cũ nhất (14/08) tới lô 06/10, và **không trùng một từ nào** với phần ôn của buổi 23/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **275/280 từ**, toàn bộ ở bậc 1._
 
@@ -418,6 +421,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | nitpick | 1 | 2026-10-25 | 0 | 0 | 2026-10-24 |
 | in a nutshell | 1 | 2026-10-25 | 0 | 0 | 2026-10-24 |
 | blow off steam | 1 | 2026-10-25 | 0 | 0 | 2026-10-24 |
+| telemetry | 1 | 2026-10-27 | 0 | 0 | 2026-10-26 |
+| sandbox | 1 | 2026-10-27 | 0 | 0 | 2026-10-26 |
+| mitigate | 1 | 2026-10-27 | 0 | 0 | 2026-10-26 |
+| prerequisite | 1 | 2026-10-27 | 0 | 0 | 2026-10-26 |
+| stroll | 1 | 2026-10-27 | 0 | 0 | 2026-10-26 |
 
 ## Đã thuộc (bậc 5, đúng)
 

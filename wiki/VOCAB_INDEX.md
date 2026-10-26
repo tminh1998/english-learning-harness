@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 280 từ đã học** · IT 112 · Business 112 · Life 56 · ad-hoc 0
+**Tổng: 285 từ đã học** · IT 114 · Business 114 · Life 57 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 22 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-24
+**Cập nhật:** 2026-10-26
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -299,6 +299,11 @@
 | 278 | nitpick | nitpicks, nitpicked, nitpicking, nitpicky, nitpicker, a nit | verb (cũng là noun) | Business | bắt lỗi vụn vặt | 2026-10-24 | lesson |
 | 279 | in a nutshell | nutshell, nutshells, nut, shell, in short, in brief | idiom (cụm trạng từ) | Business | nói gọn lại là | 2026-10-24 | lesson |
 | 280 | blow off steam | blows off steam, blew off steam, blown off steam, blowing off steam, let off steam, steam | idiom (cụm động từ) | Life | giải toả bớt căng thẳng | 2026-10-24 | lesson |
+| 281 | telemetry | telemetric, telemeter, telemetry data, telemetry pipeline, remote telemetry | noun (không đếm được) | IT | dữ liệu đo xa / số liệu máy tự gửi về | 2026-10-26 | lesson |
+| 282 | sandbox | sandboxes, sandboxed, sandboxing, sandbox mode, sandbox environment, sandboxed iframe | noun (đếm được; cũng là verb) | IT | vùng chạy tách biệt | 2026-10-26 | lesson |
+| 283 | mitigate | mitigates, mitigated, mitigating, mitigation, mitigating factor, unmitigated | verb | Business | giảm thiểu tác động | 2026-10-26 | lesson |
+| 284 | prerequisite | prerequisites, requisite, prerequisite skills, co-requisite, precondition | noun (đếm được; cũng là adjective) | Business | điều kiện tiên quyết | 2026-10-26 | lesson |
+| 285 | stroll | strolls, strolled, strolling, a stroll, strolling pace, stroller | noun (đếm được; cũng là verb) | Life | đi dạo | 2026-10-26 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
