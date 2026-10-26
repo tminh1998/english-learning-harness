@@ -299,7 +299,7 @@
 | 278 | nitpick | nitpicks, nitpicked, nitpicking, nitpicky, nitpicker, a nit | verb (cũng là noun) | Business | bắt lỗi vụn vặt | 2026-10-24 | lesson |
 | 279 | in a nutshell | nutshell, nutshells, nut, shell, in short, in brief | idiom (cụm trạng từ) | Business | nói gọn lại là | 2026-10-24 | lesson |
 | 280 | blow off steam | blows off steam, blew off steam, blown off steam, blowing off steam, let off steam, steam | idiom (cụm động từ) | Life | giải toả bớt căng thẳng | 2026-10-24 | lesson |
-| 281 | telemetry | telemetric, telemeter, telemetry data, telemetry pipeline, remote telemetry | noun (không đếm được) | IT | dữ liệu đo xa / số liệu máy tự gửi về | 2026-10-26 | lesson |
+| 281 | telemetry | telemetric, telemeter, telemetry data, telemetry pipeline, remote telemetry | noun (không đếm được) | IT | tự thu thập dữ liệu gửi về | 2026-10-26 | lesson |
 | 282 | saga | sagas, saga pattern, saga step, saga orchestrator, orchestrated saga, choreography-based saga, compensating transaction, compensating action, compensate | noun (đếm được) | IT | giao dịch phân tán / chuỗi bước có hoàn tác | 2026-10-26 | lesson |
 | 283 | mitigate | mitigates, mitigated, mitigating, mitigation, mitigating factor, unmitigated | verb | Business | giảm thiểu tác động | 2026-10-26 | lesson |
 | 284 | prerequisite | prerequisites, requisite, prerequisite skills, co-requisite, precondition | noun (đếm được; cũng là adjective) | Business | điều kiện tiên quyết | 2026-10-26 | lesson |

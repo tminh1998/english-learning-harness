@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-19 · **Số bản dịch đã ghi:** 20 (17 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-26 · **Số bản dịch đã ghi:** 21 (18 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -85,6 +85,17 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    đó thì chọn danh từ đầu khác (`phương án` / `cơ chế` / `quy trình` / `khả năng`…).
    _(1 lần nhưng gồm 2 từ — áp luôn.)_
 
+6. **Từ chỉ một quá trình / luồng dữ liệu → nghĩa gọn kể thẳng các bước nó làm,
+   nói như một hành động — kể cả khi tiếng Anh là danh từ.** Không dịch gốc chữ,
+   không dùng hình ảnh; thà dài hơn 5 chữ mà đủ bước còn hơn gọn mà phải đoán.
+   - `rút hết việc rồi mới tắt` → **`ngưng nhận công việc mới và làm nốt việc đang dở`** (drain)
+   - `nuốt dữ liệu từ ngoài vào` → **`Parse dữ liệu rồi lưu lại`** (ingest)
+   - `dữ liệu đo xa / số liệu máy tự gửi về` → **`tự thu thập dữ liệu gửi về`** (telemetry —
+     danh từ, nhưng user nói thành hành động *thu thập → gửi về*)
+   _(3 lần, 2026-10-08 → 2026-10-26.)_ ⚠️ Từ ghép kiểu Hy Lạp/Latin (`tele-` + `-metry`)
+   thì **đừng** dịch sát gốc chữ thành Hán-Việt (`đo xa`) rồi ghép thêm vế thứ hai theo
+   luật 3 — user bỏ cả cụm hai vế, giữ một cụm chức năng.
+
 **Cách áp dụng khi viết nghĩa gọn:** hỏi trước "người Việt, hay sách tiếng Việt, gọi
 cái này là gì?". Có câu trả lời → ghi đúng từ đó. Một chữ chưa đủ → thêm vế thứ hai
 sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắn.
@@ -97,7 +108,7 @@ sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắ
   ⚠️ Ngược lại (2026-10-08): `drain` — từ chỉ một **quy trình nhiều bước**, user tự viết
   `ngưng nhận công việc mới và làm nốt việc đang dở` (11 chữ). Tức là ngắn không quan
   trọng bằng **đủ các bước**: thà dài mà rõ từng bước còn hơn gọn mà phải đoán.
-  Gặp lần 2 thì nâng thành luật.
+  → **Đã nâng thành quy luật 6** (2026-10-26, sau `ingest` và `telemetry`).
 - **User thích từ có sắc thái "ngập / chìm" hơn "lún"**: `lún vào chi tiết vụn` →
   `chìm ngập trong chi tiết vụn vặt`, và dùng `vụn vặt` thay vì `vụn`. 1 lần.
 - User viết hoa chữ đầu ở vài bản (`Hóa đơn`, `Băng thông`, `Gắn công cụ đo / Theo
@@ -136,3 +147,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-09 | ingest | nuốt dữ liệu từ ngoài vào · nhận, parse rồi ghi xuống kho — không chỉ là đọc file | Parse dữ liệu rồi lưu lại | bỏ hình ảnh **"nuốt"**, dịch thẳng **hai bước chức năng** (parse → lưu); giữ `Parse` bằng tiếng Anh vì là thuật ngữ dev (R7); hai vế nối bằng `rồi` như `drain` |
 | 2026-10-09 | splurge | vung tay tiêu một phát · chi hẳn một khoản to cho thứ mình thích, thường là tự thưởng | Sự phung phí | bỏ cụm khẩu ngữ 4 chữ, dùng **danh từ Hán-Việt 2 chữ** (`Sự` + từ chuẩn); chuyển động từ thành danh từ (từ vừa là verb vừa là noun); sắc thái "tự thưởng" dồn xuống `PHU` |
 | 2026-10-19 | gold-plating | làm thừa cái khách không xin · tự ý đánh bóng thêm ngoài yêu cầu — tốn giờ, dễ trễ hạn… | Làm thừa cái khách yêu cầu | bỏ vế **phủ định** `không xin`, nói theo mốc so sánh là **cái khách yêu cầu** (làm thừa ra so với yêu cầu); `yêu cầu` là chữ chuẩn của dự án thay cho khẩu ngữ `xin`; giữ nguyên dòng PHU |
+| 2026-10-26 | telemetry | dữ liệu đo xa / số liệu máy tự gửi về · log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay | tự thu thập dữ liệu gửi về | bỏ vế dịch **sát gốc chữ** `đo xa` (tele + metry) và bỏ luôn kiểu **hai vế** `/`; danh từ mà user nói thành **hành động hai bước** (thu thập → gửi về), giữ chữ `tự` của vế cũ; giữ nguyên dòng PHU — lần thứ 3 sau `drain`, `ingest` → nâng thành quy luật 6 |

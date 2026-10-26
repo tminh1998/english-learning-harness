@@ -209,22 +209,22 @@
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">dữ liệu đo xa / số liệu máy tự gửi về<span class="alt">log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay</span></p>
+  <p class="vi-quick hide-me">tự thu thập dữ liệu gửi về<span class="alt">log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay</span></p>
 
   <p class="def"><span class="tag">EN</span>Numbers and events that a program sends back by itself from wherever it runs, so the team can see how it behaves in the real world.
-    <span class="def-vi hide-me">→ Những con số và event mà chương trình tự gửi về từ chỗ nó đang chạy, để bên mình thấy được nó chạy thật ra sao.</span>
+    <span class="def-vi hide-me">→ Những con số và event mà chương trình tự thu thập rồi gửi về từ chỗ nó đang chạy, để bên mình thấy được nó chạy thật ra sao.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Đây là <b>bản thân đống số liệu</b>, khác hai từ đã học quanh nó: <code>observability</code> (29/09) là khả năng soi được bên trong, <code>instrument</code> (02/10) là việc gắn code đo vào. Trong CLI và app, câu <code>this tool collects anonymous telemetry</code> là chỗ người dùng tìm cách tắt — nên khi làm cho khách, bật telemetry là chuyện phải nói trước và ghi rõ thu những trường nào.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Đây là <b>phần dữ liệu tự thu thập gửi về</b>, khác hai từ đã học quanh nó: <code>observability</code> (29/09) là khả năng soi được bên trong, <code>instrument</code> (02/10) là việc gắn code đo vào. Trong CLI và app, câu <code>this tool collects anonymous telemetry</code> là chỗ người dùng tìm cách tắt — nên khi làm cho khách, bật telemetry là chuyện phải nói trước và ghi rõ thu những trường nào.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
       <span class="en">We don't ship any <b>telemetry</b> until the user opts in, and the first week of data already showed the biggest <span class="rev">pain point</span>: nobody ever finds the export button.</span>
-      <span class="vi hide-me">→ Bên mình không gửi số liệu nào về trước khi người dùng đồng ý, mà tuần đầu có dữ liệu là đã lộ ngay chỗ khách thấy khổ nhất: chẳng ai tìm ra cái nút export.</span>
+      <span class="vi hide-me">→ Bên mình không tự thu thập dữ liệu gửi về khi người dùng chưa đồng ý, mà tuần đầu có dữ liệu là đã lộ ngay chỗ khách thấy khổ nhất: chẳng ai tìm ra cái nút export.</span>
     </li>
     <li>
       <span class="en">Before we turn <b>telemetry</b> on in your tenant, we'd like you to <span class="rev">sign off</span> on exactly which fields we collect.</span>
-      <span class="vi hide-me">→ Trước khi bật phần thu số liệu trên tenant của anh/chị, bên em muốn anh/chị duyệt chính thức xem bên em thu đúng những trường nào ạ.</span>
+      <span class="vi hide-me">→ Trước khi bật phần tự thu thập dữ liệu gửi về trên tenant của anh/chị, bên em muốn anh/chị duyệt chính thức xem bên em thu đúng những trường nào ạ.</span>
     </li>
   </ul>
 
@@ -389,7 +389,7 @@
   <div class="passage">Quick notes before I log off. The client's <b>prerequisite</b> list is down to one item — the test credentials for their payment API — and I've asked twice now, so that's the only <span class="rev">blocker</span> left on our side. Once they land, we can finally test checkout as a <b>saga</b>: if the payment step fails, the stock goes back on its own. We can't make the nightly job faster this week, but we can <b>mitigate</b> the timeouts by retrying with a longer <span class="rev">backoff</span>. I also turned <b>telemetry</b> on behind a flag, so by Wednesday we'll be arguing about real numbers instead of guesses. Then I went for a <b>stroll</b> around the block, because staring at that graph was never going to make it any faster.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Ghi nhanh vài dòng trước khi mình tắt máy. Danh sách điều kiện tiên quyết phía khách chỉ còn một món — bộ credential test cho API thanh toán của họ — mình hỏi hai lần rồi, nên đó là vướng mắc duy nhất còn lại của bên mình. Có bộ đó là mình test được phần checkout theo kiểu saga: bước trừ tiền hỏng thì hàng tự được trả lại kho. Cái job chạy đêm thì tuần này chưa làm nhanh hơn được, nhưng giảm thiểu được chỗ timeout bằng cách retry với thời gian chờ lâu dần. Mình cũng bật telemetry sau một cái flag, nên tới Thứ Tư là bọn mình tranh luận bằng số thật chứ không phải đoán nữa. Xong rồi mình đi dạo một vòng quanh khu, vì ngồi nhìn cái graph đó mãi thì nó cũng chẳng nhanh lên được.</p>
+    <p class="hide-me">Ghi nhanh vài dòng trước khi mình tắt máy. Danh sách điều kiện tiên quyết phía khách chỉ còn một món — bộ credential test cho API thanh toán của họ — mình hỏi hai lần rồi, nên đó là vướng mắc duy nhất còn lại của bên mình. Có bộ đó là mình test được phần checkout theo kiểu saga: bước trừ tiền hỏng thì hàng tự được trả lại kho. Cái job chạy đêm thì tuần này chưa làm nhanh hơn được, nhưng giảm thiểu được chỗ timeout bằng cách retry với thời gian chờ lâu dần. Mình cũng bật phần tự thu thập dữ liệu gửi về (telemetry) sau một cái flag, nên tới Thứ Tư là bọn mình tranh luận bằng số thật chứ không phải đoán nữa. Xong rồi mình đi dạo một vòng quanh khu, vì ngồi nhìn cái graph đó mãi thì nó cũng chẳng nhanh lên được.</p>
   </details>
 </section>
 
@@ -406,7 +406,7 @@
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>telemetry</b> — cả luồng số liệu chương trình tự gửi về. Một dòng chữ in ra thì mới là <code>log</code>; khả năng soi được bên trong hệ thống là <code>observability</code>.</li>
+      <li><b>telemetry</b> — dữ liệu chương trình tự thu thập rồi gửi về. Một dòng chữ in ra thì mới là <code>log</code>; khả năng soi được bên trong hệ thống là <code>observability</code>.</li>
       <li>Signing the SOW is a prerequisite <b>for</b> starting the discovery phase. — giới từ là <code>for</code> (hoặc <code>to</code>), <b>không</b> phải <code>of</code>. Đây là lỗi hay gặp nhất của từ này.</li>
       <li><b>We can't remove that bottleneck this week, but we're mitigating the risk with retries and a fallback.</b> — <code>mitigate</code> đi thẳng với tân ngữ (<code>the risk</code>), đừng thêm <code>for</code> hay <code>against</code>.</li>
       <li><b>(a) an orchestrated saga</b> — có một service đứng ra điều phối từng bước. <code>orchestral</code> là của dàn nhạc giao hưởng, còn <code>orchestra saga</code> thì không ai nói. Kiểu còn lại là <code>a choreography-based saga</code>: không ai điều phối, mỗi service tự nghe event.</li>
