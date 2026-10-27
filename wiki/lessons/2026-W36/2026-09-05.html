@@ -38,33 +38,33 @@
       <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-09-04</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">Thả bản mới cho một ít user trước, ổn rồi mới mở cho tất cả — kiểu triển khai này gọi là gì?</span>
+          <span class="q">thả bản mới cho ít user trước<span class="alt">ổn rồi mới mở cho tất cả</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>canary release</b> — <em>"We rolled it out as a canary release to 5% of traffic."</em></span>
+            <span class="a hide-me"><b>canary release</b> — <em>"We'll ship it as a canary release to 5% of traffic first, so a regression only hits a handful of users."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Mấy service phía sau, bên nhận dữ liệu mình đẩy ra — gọi là gì?</span>
+          <span class="q">phía sau, bên nhận đồ mình đẩy ra<span class="alt">ngược với upstream</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>downstream</b> — <em>"Changing this field breaks every downstream service."</em></span>
+            <span class="a hide-me"><b>downstream</b> — <em>"If we change this response shape, every downstream service breaks — that's a breaking change, so it needs a migration note."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Điểm nhanh lại mấy ý chính trước khi tan họp?</span>
+          <span class="q">tóm nhanh lại mấy ý chính<span class="alt">kiểu "tóm lại là..."</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>recap</b> — <em>"Let me recap the three action items."</em></span>
+            <span class="a hide-me"><b>recap</b> — <em>"Let me recap the three action items before we drop off the call."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Câu lịch sự xin khách thông cảm chờ thêm một lát?</span>
+          <span class="q">thông cảm chờ chút<span class="alt">lịch sự hơn "wait a moment"</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>bear with</b> — <em>"Bear with us while we check the logs."</em></span>
+            <span class="a hide-me"><b>bear with</b> — <em>"Bear with us for one more day — we're still ironing out a couple of issues in the export."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Hôm nay người ngâm ngẩm, mệt mệt, chưa tới mức ốm hẳn?</span>
+          <span class="q">người ngâm ngẩm, mệt mệt<span class="alt">ốm nhẹ thôi, không nặng</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>under the weather</b> — <em>"I'm a bit under the weather today."</em></span>
+            <span class="a hide-me"><b>under the weather</b> — <em>"I'm a bit under the weather today, so I'll defer the demo to tomorrow."</em></span>
           </details>
         </li>
       </ol>
@@ -74,123 +74,123 @@
       <div class="wp-head"><span class="wp-tag b">B</span>20 từ bốc ngẫu nhiên trong cả vốn từ</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">Xài tới lúc hết sạch, không còn cái gì nữa?</span>
+          <span class="q">xài tới lúc hết sạch<span class="alt">hết giờ, hết pin, hết kiên nhẫn</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>run out of</b> — <em>"We ran out of time before the demo."</em></span>
+            <span class="a hide-me"><b>run out of</b> — <em>"We ran out of time to migrate, so the deprecated endpoint is still running in production."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Trường hợp hiếm, rìa rìa, lúc viết code không ai nghĩ tới?</span>
+          <span class="q">trường hợp biên<span class="alt">tình huống hiếm, không ai nghĩ tới</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>edge case</b> — <em>"That crash only happens in one edge case."</em></span>
+            <span class="a hide-me"><b>edge case</b> — <em>"The login flow works fine, but we missed an edge case — could you clarify what should happen if the email field is empty?"</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Bóp lại cho chậm bớt, giới hạn số request mỗi giây?</span>
+          <span class="q">bóp lại cho chậm bớt<span class="alt">trong dev = rate limiting</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>throttle</b> — <em>"The API throttles you after 100 requests a minute."</em></span>
+            <span class="a hide-me"><b>throttle</b> — <em>"The gateway will throttle any client that sends more than 100 requests per minute; if a real customer hits the limit, escalate it to me."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Duyệt chính thức, chốt hẳn để bên kia làm tiếp?</span>
+          <span class="q">duyệt chính thức, chốt<span class="alt">nghiệm thu — có người chịu trách nhiệm</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>sign off</b> — <em>"The client signed off on the design yesterday."</em></span>
+            <span class="a hide-me"><b>sign off</b> — <em>"Nothing goes to production until the client has signed off on the release notes and QA has closed the regression list."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Tình cờ vớ được một thứ trong lúc đang tìm cái khác?</span>
+          <span class="q">tình cờ vớ được<span class="alt">+ as = trông có vẻ, làm người ta thấy là</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>come across</b> — <em>"I came across this bug while reading the logs."</em></span>
+            <span class="a hide-me"><b>come across</b> — <em>"I came across an old photo of my grandmother while cleaning the attic."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Điều đọng lại, thứ đáng nhớ nhất rút ra sau buổi họp?</span>
+          <span class="q">điều đọng lại sau buổi họp<span class="alt">thứ cần nhớ kể cả khi quên hết phần còn lại</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>takeaway</b> — <em>"The main takeaway is that we need more tests."</em></span>
+            <span class="a hide-me"><b>takeaway</b> — <em>"The main takeaway from the incident review is that our retry logic can create a deadlock under load."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Mốc chuyển hẳn sang hệ mới rồi tắt hệ cũ?</span>
+          <span class="q">mốc chuyển hẳn sang hệ mới<span class="alt">tắt hệ cũ, bật hệ mới, không quay lại</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>cutover</b> — <em>"The cutover is scheduled for Saturday night."</em></span>
+            <span class="a hide-me"><b>cutover</b> — <em>"We scheduled the cutover for Saturday night. The team wrote a fallback plan for every step."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Hỏng một phần thì bớt tính năng chứ không sập cả trang?</span>
+          <span class="q">hỏng một phần vẫn chạy tiếp<span class="alt">bớt tính năng chứ không sập cả trang</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>graceful degradation</b> — <em>"Search falls back to a plain list — that's graceful degradation."</em></span>
+            <span class="a hide-me"><b>graceful degradation</b> — <em>"If the pricing service is down we show stale numbers with a warning instead of an error page — that's graceful degradation."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Không nhớ gì giữa các lần gọi, lần nào cũng như lần đầu?</span>
+          <span class="q">không nhớ gì giữa các lần gọi<span class="alt">mỗi request tự mang đủ đồ theo</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>stateless</b> — <em>"Keep the service stateless so we can scale it."</em></span>
+            <span class="a hide-me"><b>stateless</b> — <em>"Our auth service is stateless. The trade-off is one extra token lookup per request."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Gọi một lần hay năm lần thì kết quả vẫn y như nhau?</span>
+          <span class="q">chạy lại vẫn ra y nguyên<span class="alt">gọi nhiều lần cũng vô hại, không cộng dồn</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>idempotent</b> — <em>"Make the retry endpoint idempotent."</em></span>
+            <span class="a hide-me"><b>idempotent</b> — <em>"Make the payment endpoint idempotent so a double click doesn't charge the customer twice — cheaper than a rollback and an apology email."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Chuyện này để quay lại bàn sau, giờ đi tiếp đã?</span>
+          <span class="q">quay lại chuyện này sau<span class="alt">gác đó đã, xong việc kia rồi bàn tiếp</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>circle back</b> — <em>"Let's circle back to this after the demo."</em></span>
+            <span class="a hide-me"><b>circle back</b> — <em>"Let's park the pricing question and circle back once we have buy-in from finance."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Xếp việc nào lên làm trước?</span>
+          <span class="q">xếp lên làm trước<span class="alt">chọn cái này trước, cái kia phải chờ</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>prioritize</b> — <em>"We prioritized the login bug over the new page."</em></span>
+            <span class="a hide-me"><b>prioritize</b> — <em>"We prioritized the technical debt in the parser this sprint."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Soi nhanh một cái xem có sai lè ra không?</span>
+          <span class="q">soi nhanh xem có sai lè không<span class="alt">kiểm tra thô cho chắc, không phải test kỹ</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>sanity check</b> — <em>"Just a sanity check: is this the right database?"</em></span>
+            <span class="a hide-me"><b>sanity check</b> — <em>"Before we sign off on the release, let's run a quick sanity check on the staging numbers."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Khoảng du di, còn co giãn được một chút?</span>
+          <span class="q">khoảng du di<span class="alt">chỗ còn co giãn được, dư địa xoay xở</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>leeway</b> — <em>"We have a bit of leeway on the deadline."</em></span>
+            <span class="a hide-me"><b>leeway</b> — <em>"The client gave us some leeway on the deadline after we walked them through the scope creep."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Đường lui dựng sẵn, cái chính hỏng thì chạy cái này?</span>
+          <span class="q">Cơ chế dự phòng<span class="alt">cái chính hỏng thì tự chạy cái này</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>fallback</b> — <em>"If the cache is down, we use a fallback query."</em></span>
+            <span class="a hide-me"><b>fallback</b> — <em>"When the pricing API times out, the app falls back to the last cached rates — they're a bit stale, but an empty screen is worse."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Để mắt trông chừng, thỉnh thoảng ngó lại một cái?</span>
+          <span class="q">để mắt tới, trông chừng<span class="alt">theo dõi nhẹ, ngắt quãng</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>keep an eye on</b> — <em>"Keep an eye on the error rate tonight."</em></span>
+            <span class="a hide-me"><b>keep an eye on</b> — <em>"Can you keep an eye on the error logs this afternoon? The fix went out at noon — if they spike we roll back straight away."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Cắt cụt cho ngắn, phần đuôi mất luôn?</span>
+          <span class="q">cắt cụt cho ngắn lại<span class="alt">phần đuôi mất luôn, không làm tròn</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>truncate</b> — <em>"The log line was truncated at 200 characters."</em></span>
+            <span class="a hide-me"><b>truncate</b> — <em>"The logger truncates every message over four kilobytes, so a verbose stack trace loses its last lines."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Thu xếp chiều theo yêu cầu của khách?</span>
+          <span class="q">thu xếp chiều theo<span class="alt">sửa kế hoạch cho vừa yêu cầu của khách</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>accommodate</b> — <em>"We can accommodate the new deadline."</em></span>
+            <span class="a hide-me"><b>accommodate</b> — <em>"Our contract accommodates two revision rounds, and anything beyond that counts as scope creep."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Dẫn người ta đi từng bước cho hiểu?</span>
+          <span class="q">dẫn đi từng bước<span class="alt">hướng dẫn tường tận, có thứ tự</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>walk through</b> — <em>"Let me walk you through the flow."</em></span>
+            <span class="a hide-me"><b>walk through</b> — <em>"Let me walk you through the invoice line by line so you can see where the extra hours came from — most of them are scope creep from week three."</em></span>
           </details>
         </li>
         <li class="qa">
-          <span class="q">Món phải giao cho khách, ghi rõ tên trong hợp đồng?</span>
+          <span class="q">món phải giao cho khách<span class="alt">khác task: task là việc mình làm</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>deliverable</b> — <em>"The first deliverable is due on Friday."</em></span>
+            <span class="a hide-me"><b>deliverable</b> — <em>"The deliverables for this sprint are the API docs and a working staging build — if you come across anything else in the contract, flag it now."</em></span>
           </details>
         </li>
       </ol>

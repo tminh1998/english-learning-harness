@@ -55,14 +55,15 @@
           tiếng Việt) và <details class="ans"> (nút 👁 + đáp án). Không thêm con
           thứ ba, layout flex sẽ vỡ.
         · đáp án là <span class="a hide-me"> — .hide-me để "Chế độ ôn tập" che được
-          (R2), <b> quanh từ tiếng Anh, <em> quanh câu ví dụ ngắn.
+          (R2), <b> quanh từ tiếng Anh, <em> quanh VD (câu ví dụ #1 bài gốc, từ nghia.sh).
         · <details class="ans"> KHÔNG có `open`, và KHÔNG cần id — đừng thêm.
      ⛔ CÂU HỎI = ĐÚNG KHỐI NGHĨA .vi-quick CỦA BÀI GỐC (đổi 2026-09-10):
         `sh tools/nghia.sh "<từ>"` → NGHIA vào <span class="q">, PHU vào
         <span class="alt"> lồng ngay trong đó, VD vào <em> của ô đáp án. Chép
         NGUYÊN VĂN — không sửa chữ, không rút gọn, không thêm dấu hỏi. Nghĩa cũ
         viết chưa ổn thì sửa ở BÀI GỐC rồi chép lại.
-     Hỏi gợi nhớ bằng tiếng Việt.
+     ⛔⛔ LUẬT CỨNG, KHÔNG ĐƯỢC THAY ĐỔI (2026-10-27): bài gốc là chuẩn nghĩa (user đã
+        confirm) — không dịch lại. Ghi xong: sh tools/soat-nghia.sh <bài> phải in KHOP-HET.
      ℹ️ Nút "Chiều ôn" (Anh → Việt / Việt → Anh, mặc định Anh → Việt) do
         assets/lesson.js TỰ CHÈN và tự dựng chiều ngược từ <span class="q"> +
         <b> trong đáp án. KHÔNG viết nút đó vào file bài học, KHÔNG nhân đôi dữ
@@ -80,9 +81,9 @@
       <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — {{YYYY-MM-DD}}</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">{{câu gợi nhớ bằng tiếng Việt}}</span>
+          <span class="q">{{NGHIA}}<span class="alt">{{PHU}}</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></span>
+            <span class="a hide-me"><b>{{từ}}</b> — <em>"{{VD}}"</em></span>
           </details>
         </li>
         <!-- … đủ 5 câu … -->
@@ -93,9 +94,9 @@
       <div class="wp-head"><span class="wp-tag b">B</span>20 từ cũ dàn đều cả vốn từ</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">{{câu gợi nhớ bằng tiếng Việt}}</span>
+          <span class="q">{{NGHIA}}<span class="alt">{{PHU}}</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></span>
+            <span class="a hide-me"><b>{{từ}}</b> — <em>"{{VD}}"</em></span>
           </details>
         </li>
         <!-- … đủ 20 câu … -->

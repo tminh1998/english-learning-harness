@@ -23,15 +23,15 @@
 
 ### A. 5 từ của buổi trước ({{YYYY-MM-DD}})
 
-1. {{câu gợi nhớ bằng tiếng Việt}}
-   <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></details>
+1. {{NGHIA}} — {{PHU}}
+   <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{VD}}"</em></details>
 
 <!-- … đủ 5 câu … -->
 
 ### B. 20 từ cũ dàn đều cả vốn từ
 
-1. {{câu gợi nhớ bằng tiếng Việt}}
-   <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{câu ví dụ ngắn}}"</em></details>
+1. {{NGHIA}} — {{PHU}}
+   <details><summary>đáp án</summary> <b>{{từ}}</b> — <em>"{{VD}}"</em></details>
 
 <!-- … đủ 20 câu … -->
 

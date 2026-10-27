@@ -84,7 +84,7 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    cũ viết chưa ổn thì sửa ở bài gốc rồi chép lại — đừng sửa riêng ở khối ôn nhanh.
 
    Trên trang để **hai phần riêng biệt**, ghi rõ phần nào là bài hôm qua, phần nào
-   là bốc ngẫu. Hỏi gợi nhớ bằng tiếng Việt. Chưa đủ 20 từ cũ → lấy hết những gì
+   là bốc ngẫu. Câu hỏi = nghĩa chép từ bài gốc (NGHIA — PHU), không tự soạn. Chưa đủ 20 từ cũ → lấy hết những gì
    có, không bịa thêm.
 
    ⭐ **Cả cụm ôn nhanh phải gập được và mặc định ĐANG ẨN**: bọc trong

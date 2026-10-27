@@ -25,11 +25,11 @@ TMP=$(mktemp -d "${TMPDIR:-/tmp}/soat.XXXXXX")
 trap 'rm -rf "$TMP"' EXIT
 TAB=$(printf '\t')
 
-# Mặc định: mọi bài từ 2026-09-10 (ngày luật chép nguyên văn .vi-quick bắt đầu —
-# bài trước đó hỏi bằng câu tự soạn, không soát) + mọi bảng ôn tuần.
+# Mặc định: mọi bài từ 2026-09-04 (khuôn li.qa — bài trước đó còn khuôn ôn nhanh cũ,
+# câu hỏi tách khỏi đáp án, không soát được) + mọi bảng ôn tuần.
 if [ $# -eq 0 ]; then
   set -- $(find wiki/lessons -name '*.html' -o -name '*.md' | sort \
-           | awk -F/ '{ d = $NF; sub(/\.[a-z]+$/, "", d); if (d >= "2026-09-10") print }') \
+           | awk -F/ '{ d = $NF; sub(/\.[a-z]+$/, "", d); if (d >= "2026-09-04") print }') \
          $(find wiki/recap -name '*-W[0-9][0-9].html' -o -name '*-W[0-9][0-9].md' | sort)
 fi
 

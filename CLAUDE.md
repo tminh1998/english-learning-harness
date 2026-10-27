@@ -88,7 +88,8 @@ Sửa xong mới `build-index.sh` + `daylen`.
 
 ⛔⛔ **LUẬT CỨNG, KHÔNG ĐƯỢC THAY ĐỔI** (user chốt 2026-10-27): **5 từ bài hôm trước +
 20 từ ôn lại** trong khối ôn nhanh, và **bảng ôn tuần / tháng / quý / nửa năm / năm**,
-đều lấy bản dịch **từ các bài đã học** (`tools/nghia.sh`) — không dịch lại, không sửa
+đều lấy bản dịch **từ các bài đã học** (`tools/nghia.sh`) — **bài gốc là chuẩn nghĩa, user đã
+confirm**, áp cho mọi bài từ nay về sau — không dịch lại, không sửa
 chữ, không rút gọn. Ghi xong phải `sh tools/soat-nghia.sh <file>` in `KHOP-HET` mới được
 `daylen`. Bảng ôn tháng → năm do `build-recap.sh` sinh thẳng từ `nghia.sh`.
 
@@ -249,6 +250,10 @@ từng câu** (`ol.ex.qa-list` → `li.qa` → `span.q` + `details.ans`), và d�
 `sh tools/boc.sh` (lâu chưa gặp nhất ra trước, không trùng các buổi gần đây) thay cho
 lệnh `awk rand()` cũ. Bài đầu tiên chạy luật mới: **2026-10-06**.
 
+✅ **2026-10-27 — prompt CẢ HAI routine ĐÃ sửa** cho luật cứng "chép nghĩa bài gốc": `/hoc` bỏ
+chữ "câu gợi nhớ", câu hỏi ôn nhanh = NGHIA + PHU, đáp án = VD, và phải `soat-nghia.sh` ra
+`KHOP-HET` trước `build-index.sh`; `/on-tap-tuan` cũng thêm bước soát. Bài đầu tiên: **2026-10-28**.
+
 ⚠️ Prompt routine **không nằm trong repo** — cứ đổi luật ở đây là phải sửa tay bên kia,
 nếu không bài do routine 7h sáng sinh ra sẽ theo luật cũ.
 
@@ -285,7 +290,7 @@ sh tools/build-index.sh                                    # phải in DA-DUNG-R
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
 sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD / DICH / DNVI
 sh tools/boc.sh -v                                         # 20 dòng, ngày gặp cuối tăng dần
-sh tools/soat-nghia.sh                                     # phải in KHOP-HET (mọi bài từ 10/09 + bảng ôn tuần)
+sh tools/soat-nghia.sh                                     # phải in KHOP-HET (mọi bài từ 04/09 + bảng ôn tuần)
 awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \
   | sh tools/nghia.sh | grep -c '^DICH '                   # phải bằng tổng số từ (VD, DNVI cũng vậy)
 ```

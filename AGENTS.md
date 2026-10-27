@@ -356,7 +356,8 @@ từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định là
 
    ⛔⛔ **LUẬT CỨNG, KHÔNG ĐƯỢC THAY ĐỔI** (user chốt lại 2026-10-27): cả **5 từ buổi
    trước** lẫn **20 từ ôn lại** đều lấy bản dịch **từ bài đã học**, không dịch lại —
-   cùng luật với bảng ôn tuần / tháng / quý / nửa năm / năm (Flow D). Ghi bài xong
+   cùng luật với bảng ôn tuần / tháng / quý / nửa năm / năm (Flow D). **Bài gốc là chuẩn
+   nghĩa** — user đã confirm lại nghĩa ở đó, nên áp cho **mọi bài từ nay về sau**. Ghi bài xong
    phải **soát bằng lệnh**, phải in `KHOP-HET` mới được `daylen`:
 
    ```bash
