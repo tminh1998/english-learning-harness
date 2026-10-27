@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-10-27 — 5 từ mới</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Tuần 2026-W44 · Buổi #58</div>
+  <h1>Thứ Ba, 27 tháng 10 năm 2026</h1>
+  <div class="mixline">
+    <span class="badge it">2 IT</span>
+    <span class="badge biz">2 Giao tiếp</span>
+    <span class="badge life">1 Đời sống</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+  <button id="theme">🌗 Theo hệ thống</button>
+  <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
+</div>
+
+<section class="block warmup">
+  <details class="warm-toggle">
+    <summary>
+      <h2>Ôn nhanh đầu giờ <span class="cnt">25 từ</span></h2>
+      <span class="wt-state"></span>
+    </summary>
+
+    <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B là từ cũ lâu chưa gặp — quên vài từ là bình thường.</p>
+
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-10-26</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">tự thu thập dữ liệu gửi về<span class="alt">log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>telemetry</b> — <em>"We don't ship any telemetry until the user opts in, and the first week of data already showed the biggest pain point: nobody ever finds the export button."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">giao dịch phân tán / chuỗi bước có hoàn tác<span class="alt">nghiệp vụ dài chạy qua nhiều service, mỗi bước tự commit — bước sau hỏng thì chạy bước bù gỡ lại các bước trước</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>saga</b> — <em>"Checkout is a saga now: if the payment step fails, a compensating step puts the stock back, and every step is idempotent, so a retry never charges anyone twice."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">giảm thiểu tác động<span class="alt">dẹp hẳn thì chưa được, nhưng chặn bớt cho nó đỡ nặng — thêm retry, chừa đường lui, ghi rõ giới hạn trong hợp đồng</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>mitigate</b> — <em>"We can't remove the lock contention before the release, but we can mitigate it by moving the nightly report to a read replica."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">điều kiện tiên quyết<span class="alt">chưa có cái này thì chưa khởi động được cái kia — key, quyền truy cập, bản ký, một người duyệt</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>prerequisite</b> — <em>"The only prerequisite left on your side is the test credentials; without them we can't start the cutover rehearsal on Thursday."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">đi dạo<span class="alt">đi bộ chậm cho giãn người — không phải đi bộ thể dục cho đủ bước, cũng không phải đi cho nhanh tới chỗ nào</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>stroll</b> — <em>"I go for a twenty-minute stroll after lunch; on days when I'm swamped that's the only time my head is quiet."</em></span>
+          </details>
+        </li>
+      </ol>
+    </div>
+
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag b">B</span>20 từ cũ dàn đều cả vốn từ</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">việc nhà<span class="alt">quét nhà, rửa bát, giặt đồ — mấy việc lặp đi lặp lại, chẳng ai thích nhưng vẫn phải làm</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>chores</b> — <em>"I was too worn out after the release to do any chores, so the washing-up sat there until Sunday."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tín hiệu báo còn sống<span class="alt">gửi đều đặn; im mấy nhịp là bên kia coi như chết</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>heartbeat</b> — <em>"The standby node only takes over after three heartbeats in a row go missing, so one slow request never triggers a failover."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nút thắt cổ chai<span class="alt">chỗ nghẽn làm chậm cả hệ thống</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>bottleneck</b> — <em>"Profiling showed the N+1 query was the real bottleneck, not the network — it's still calling a deprecated helper in a loop."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cày phim một lèo<span class="alt">xem liền mấy tập không nghỉ, thường là cả buổi tối</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>binge-watch</b> — <em>"My weekend plan is simple: binge-watch the new season and put off everything else until Monday."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chạy thử, không ăn thật<span class="alt">diễn tập đủ các bước trước khi làm thật</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>dry run</b> — <em>"We'll do a dry run of the cutover on Saturday so nobody is guessing on the real night."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chỗ còn mắc, chưa gỡ được<span class="alt">đúng một điểm làm cả cuộc bàn bạc đứng lại</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>sticking point</b> — <em>"Everything in the contract is fine; the only sticking point is how long we keep the old API backward compatible."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">sổ tay các bước xử lý<span class="alt">gặp sự cố thì mở ra làm theo, khỏi phải nhớ, khỏi phải gọi ai</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>runbook</b> — <em>"The on-call runbook says to turn on load shedding before scaling up, so checkout stays alive while the new nodes boot."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Parse dữ liệu rồi lưu lại<span class="alt">nhận, parse rồi ghi xuống kho — không chỉ là đọc file</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>ingest</b> — <em>"We ingest the vendor feed every night, so when one file arrives late we just backfill the gap the next morning."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tạm gác lại, bàn sau<span class="alt">đánh dấu chuyện này để quay lại — không bỏ, chỉ là chưa bàn bây giờ</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>put a pin in it</b> — <em>"Let's put a pin in the reporting module for now — the client is still on the fence about it."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nhượng một bước<span class="alt">bỏ bớt yêu cầu của mình để chốt được deal</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>concession</b> — <em>"As a concession we waived the setup fee, and the client signed the same afternoon."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">phía sau, bên nhận đồ mình đẩy ra<span class="alt">ngược với upstream</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>downstream</b> — <em>"If we change this response shape, every downstream service breaks — that's a breaking change, so it needs a migration note."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">bỏ qua, không đòi nữa<span class="alt">chủ động miễn một khoản phí hay một điều khoản mà mình có quyền đòi</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>waive</b> — <em>"They agreed to waive the late fee after we walked through the cause of the delay with them."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tạo xong là không sửa được nữa<span class="alt">ai cũng vậy, không riêng ai</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>immutable</b> — <em>"Keep that config object immutable — if two workers mutate it at runtime we're back to the race condition we fixed last sprint."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">trình bày để bên kia gật<span class="alt">nói sao cho người nghe đồng ý cho cái mình xin</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>pitch</b> — <em>"I'm going to pitch the rewrite as a way to pay down our technical debt, not as a shiny new feature."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Sự phung phí<span class="alt">chi hẳn một khoản to cho thứ mình thích, thường là tự thưởng</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>splurge</b> — <em>"The migration stayed on track all week, so on Friday I splurged on a proper monitor."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">bảng chờ gửi event<span class="alt">ghi event vào cùng transaction với dữ liệu, worker gửi lên queue sau — lưu được là gửi được</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>outbox</b> — <em>"The relay may send an outbox row twice, so every consumer has to be idempotent."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tăng dần lên từng nấc<span class="alt">nâng dần quân số, tải, sản lượng</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>ramp up</b> — <em>"We'll ramp up traffic to the new version ten percent at a time and throttle anything that looks off."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tách riêng ra một góc<span class="alt">cách ly cái đang hỏng để nó khỏi kéo theo phần còn lại</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>quarantine</b> — <em>"That spec is flaky, not broken — let's quarantine it this week and fix the timing properly after the release."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">cần báo trước bao lâu<span class="alt">từ lúc đặt tới lúc thật sự có</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>lead time</b> — <em>"We need about two weeks' lead time to provision the new environment, so please let us know before the end of the month."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">báo giá<span class="alt">con số bên mình đưa cho khách trước khi làm</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>quote</b> — <em>"Bear with us until Thursday — the supplier hasn't sent their numbers, so I can't put a final quote in front of you yet."</em></span>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </details>
+</section>
+
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">1</span>soak test
+        <button class="say" data-say="run a soak test" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈsəʊk test/ · <em>noun (đếm được; cũng dùng như verb: soak-test)</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">kiểm thử độ bền<span class="alt">giữ tải bình thường chạy liên tục nhiều giờ, nhiều ngày — để mấy lỗi ngấm từ từ (rò bộ nhớ, đầy disk, connection không ai trả) có thời gian lộ ra</span></p>
+
+  <p class="def"><span class="tag">EN</span>A long test that holds a system under a normal, steady load for hours or days, to catch the things that only break slowly.
+    <span class="def-vi hide-me">→ Một đợt test dài, giữ hệ thống chạy ở mức tải thường ngày suốt nhiều giờ hoặc nhiều ngày, để bắt mấy thứ chỉ hỏng từ từ.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Chữ của test plan và của email bàn với khách chuyện trước mùa cao điểm. Khác <code>smoke test</code> (03/09): smoke test chạy một lượt vài phút xem còn sống không; soak test thì <b>thời lượng</b> mới là cái chính, tải vẫn để đúng mức thường ngày. Và khác <code>stress test</code>: stress test đẩy tải vượt ngưỡng xem chỗ nào vỡ trước.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">We ran a twelve-hour <b>soak test</b> over the weekend: <span class="rev">throughput</span> barely moved, but memory climbed the whole way.</span>
+      <span class="vi hide-me">→ Cuối tuần bọn mình chạy soak test mười hai tiếng: lượng request xử lý được gần như không đổi, nhưng bộ nhớ thì leo suốt.</span>
+    </li>
+    <li>
+      <span class="en">The client won't <span class="rev">sign off</span> on the go-live until we show them a <b>soak test</b> that runs a full week.</span>
+      <span class="vi hide-me">→ Khách chưa duyệt chốt mốc go-live chừng nào bên em chưa cho họ xem một đợt soak test chạy đủ một tuần ạ.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>run a soak test</code> · <code>a 72-hour soak test</code> · <code>soak-test the queue</code> · <code>soak testing</code> · <code>a soak test window</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đọc /səʊk/ (như <code>soak</code> trong "soak in water"), <b>không</b> phải "soap test" — viết sai chữ này trong test plan là lỗi hay gặp nhất. Dạng động từ có gạch nối: <code>soak-test the service</code>, còn danh từ thì hai chữ rời. Người Việt hay với lấy "endurance test" cho đủ sang; trong tài liệu dev và email khách thì <code>soak test</code> mới là chữ quen.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">soak tests, soak-test, soak-tested, soak testing, soak period, endurance test</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">2</span>error budget
+        <button class="say" data-say="burn through the error budget" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈerə ˌbʌdʒɪt/ · <em>noun (đếm được)</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">hạn mức lỗi cho phép<span class="alt">SLA hứa 99,9% thì mỗi tháng còn được chết chừng 43 phút — tiêu hết hạn đó là dừng làm tính năng, quay sang làm cho hệ thống ổn</span></p>
+
+  <p class="def"><span class="tag">EN</span>The amount of failure a service is allowed in a period, before the team has to stop shipping features and go fix reliability.
+    <span class="def-vi hide-me">→ Mức lỗi mà một service được phép mắc trong một kỳ, trước khi cả nhóm buộc phải dừng làm tính năng mới và quay sang sửa cho nó chạy ổn.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Chữ của SRE, hay gặp trong bản SLA, trong <code>postmortem</code> (18/09) và trong buổi bàn với khách về mức cam kết. Khác <code>leeway</code> (31/08): leeway là chỗ dư trong lịch; error budget là <b>mức được phép lỗi</b>, chốt bằng số và theo dõi như một cái quỹ.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Two <span class="rev">flaky</span> deploys burned half of this quarter's <b>error budget</b> in a single week.</span>
+      <span class="vi hide-me">→ Hai lần deploy chập chờn đã đốt nửa hạn mức lỗi của cả quý chỉ trong một tuần.</span>
+    </li>
+    <li>
+      <span class="en">If the <b>error budget</b> is gone, we <span class="rev">push back</span> on the new dashboard and spend the sprint on reliability instead.</span>
+      <span class="vi hide-me">→ Hết hạn mức lỗi thì bọn mình phản đối lại vụ dashboard mới, dành cả sprint quay sang làm cho hệ thống ổn đã.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>burn through the error budget</code> · <code>blow the error budget</code> · <code>have error budget left</code> · <code>an error budget policy</code> · <code>freeze releases when the budget is gone</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Mạo từ là <b><code>an</code></b> error budget (<code>error</code> mở đầu bằng nguyên âm), đừng viết "a error budget". Nó là <b>phần lỗi còn được phép</b>, không phải phần lỗi đã xảy ra: <code>we have 20% of our error budget left</code> nghĩa là còn được lỗi thêm 20% nữa. Và đừng dịch thành "ngân sách sai sót" rồi hiểu lầm là một khoản tiền — đây là hạn mức thời gian chết, không phải chi phí.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">error budgets, budget, budgeting, error-budget policy, burn rate, SLO, SLA</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">3</span>stopgap
+        <button class="say" data-say="a stopgap measure" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈstɒpɡæp/ · <em>noun (đếm được; cũng dùng như adjective: a stopgap solution)</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">biện pháp tạm thời<span class="alt">chỉ để cầm cự tới khi có bản làm cho tử tế — nói rõ là tạm ngay từ đầu, và kèm luôn hạn gỡ</span></p>
+
+  <p class="def"><span class="tag">EN</span>Something you put in place only to hold things together until the proper fix, or the proper person, arrives.
+    <span class="def-vi hide-me">→ Thứ mình đặt vào chỉ để giữ cho mọi thứ còn đứng được, tới lúc có bản sửa thật hoặc có đúng người vào làm.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Nói chữ này với khách là một cách giữ uy tín: bên mình không giả vờ đây là bản thật. Khác <code>workaround</code> (13/08): workaround là đi đường khác để né chỗ lỗi, sống lâu dài cũng được; stopgap là miếng vá giữ cho chạy và <b>có ngày tháo</b>.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">The hard-coded rate table is a <b>stopgap</b>: it clears the <span class="rev">blocker</span> for Thursday's demo and comes out the week after.</span>
+      <span class="vi hide-me">→ Cái bảng giá hard-code đó chỉ là biện pháp tạm thời: nó gỡ được vướng mắc cho buổi demo Thứ Năm, tuần sau là bỏ.</span>
+    </li>
+    <li>
+      <span class="en">We shipped a <b>stopgap</b> script to <span class="rev">backfill</span> last night's missing rows while we fix the importer properly.</span>
+      <span class="vi hide-me">→ Bọn mình đẩy tạm một script để bù lại mấy dòng mất đêm qua, trong lúc sửa cái importer cho tử tế.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a stopgap solution</code> · <code>a stopgap measure</code> · <code>as a stopgap</code> · <code>a stopgap until…</code> · <code>only a stopgap</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Viết liền một chữ: <code>stopgap</code>, không phải "stop gap" (dạng <code>stop-gap</code> cũng gặp, nhưng trong email cứ viết liền cho gọn). Đi với <b><code>until</code></b>, không phải "for": <code>a stopgap until the new API ships</code>. Trọng âm ở âm đầu — STOP-gap.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">stopgaps, stop-gap, stopgap measure, stopgap solution, stopgap funding</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">4</span>no-brainer
+        <button class="say" data-say="it's a no-brainer" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/nəʊ ˈbreɪnə/ · <em>noun (đếm được, hầu như luôn đi với <code>a</code>)</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">khỏi phải cân nhắc<span class="alt">rõ quá rồi, lợi hại thấy ngay — nói câu này là để chốt luôn, khỏi mất thêm một buổi họp</span></p>
+
+  <p class="def"><span class="tag">EN</span>A choice so obvious that nobody needs to stop and think about it.
+    <span class="def-vi hide-me">→ Một lựa chọn rõ tới mức chẳng ai cần dừng lại để nghĩ thêm.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Suồng sã nhẹ nhưng dùng với khách vẫn được, miễn là hai bên đang đồng ý với nhau. Khác <code>low-hanging fruit</code> (03/10): low-hanging fruit là <b>việc</b> dễ làm mà hiệu quả ngay; no-brainer là <b>quyết định</b> không cần nghĩ.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Once we put the two numbers side by side, moving to the managed plan was a <b>no-brainer</b> — we had <span class="rev">buy-in</span> before lunch.</span>
+      <span class="vi hide-me">→ Đặt hai con số cạnh nhau một cái là thấy chuyển sang gói managed khỏi phải cân nhắc — chưa tới trưa là mọi người đã đồng thuận.</span>
+    </li>
+    <li>
+      <span class="en">Putting a <span class="rev">circuit breaker</span> in front of that vendor API is a <b>no-brainer</b>: one timeout shouldn't be able to take checkout down.</span>
+      <span class="vi hide-me">→ Đặt một cầu dao tự cắt trước cái API của đối tác đó thì khỏi phải cân nhắc: một lần timeout không thể làm sập cả phần checkout được.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>it's a no-brainer</code> · <code>a complete no-brainer</code> · <code>that's a no-brainer for me</code> · <code>make it a no-brainer for the client</code> · <code>pretty much a no-brainer</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Luôn phải có mạo từ: <code>it's <b>a</b> no-brainer</code>, nói "it's no-brainer" là sai. Có gạch nối: <code>no-brainer</code>. Và nó nói về <b>lựa chọn</b>, không nói về người — đừng tưởng nó có nghĩa chê ai đó kém. Lúc khách đang thấy rủi ro thì tránh câu này: nghe như gạt ý họ đi cho nhanh.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">no-brainers, no brainer, brainer, brain, brainless, a no-brainer decision</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="life">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">5</span>window shopping
+        <button class="say" data-say="go window shopping" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈwɪndəʊ ˌʃɒpɪŋ/ · <em>noun (không đếm được; động từ: go window shopping / window-shop)</em></div>
+    </div>
+    <span class="badge life">Đời sống</span>
+  </div>
+
+  <p class="vi-quick hide-me">đi ngắm hàng, không mua<span class="alt">lượn mấy cửa hàng cho vui mắt, ngó giá rồi đi — chẳng ôm gì về</span></p>
+
+  <p class="def"><span class="tag">EN</span>Looking at things in shops for the fun of it, with no plan to buy anything.
+    <span class="def-vi hide-me">→ Đi ngó đồ trong mấy cửa hàng cho vui, chẳng có ý định mua gì.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Hay dùng dạng <code>go window shopping</code>. Nghĩa bóng trong công việc cũng y vậy: <code>we're just window shopping</code> = bên mình mới đang đi xem các bên, chưa chọn ai. Khác <code>browse</code>: browse là lướt xem (web, kệ sách, menu) nói chung; window shopping gắn hẳn với chuyện mua sắm và chuyện <b>không mua</b>.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">I went <b>window shopping</b> on Saturday with no plan to <span class="rev">splurge</span>, and somehow came home with a mechanical keyboard.</span>
+      <span class="vi hide-me">→ Thứ Bảy tớ đi ngắm hàng, chẳng tính phung phí gì, mà rồi cũng tha về được cái bàn phím cơ.</span>
+    </li>
+    <li>
+      <span class="en">We're only <b>window shopping</b> at this point — could you send us a <span class="rev">ballpark</span> figure for the enterprise plan?</span>
+      <span class="vi hide-me">→ Bên em giờ mới đang đi xem thôi ạ — anh/chị gửi giúp em con số áng chừng cho gói enterprise được không ạ?</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>go window shopping</code> · <code>do some window shopping</code> · <code>just window shopping</code> · <code>window-shop for sth</code> · <code>a bit of window shopping</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đi với <code>go</code>: <code>go window shopping</code>, <b>không</b> phải "go to window shopping" hay "make window shopping". Danh từ viết hai chữ rời (<code>window shopping</code>), làm động từ thì gạch nối (<code>window-shop</code>). Không thêm <code>s</code>: "go window shoppings" là sai. Khi người bán hỏi thì khách hay đáp <code>just browsing</code> — còn <code>window shopping</code> là chữ mình dùng để <b>kể lại</b> việc mình đã làm.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">window-shop, window-shopped, window-shopping, shop window, shopper, shopping, browse</span></div>
+  </div>
+</article>
+
+<section class="block">
+  <h2>Mẩu đọc</h2>
+  <p class="sub">email trả lời khách, bàn kế hoạch trước mùa cao điểm</p>
+  <div class="passage">Thanks for the quick call this morning. Before peak season we'd like to run a week-long <b>soak test</b> on checkout — the slow leaks only surface after a few days of steady load, so we need about two weeks' <span class="rev">lead time</span> to book the window. We'd also like to agree an <b>error budget</b> with your team: once it's spent, we stop shipping features and put the sprint into reliability instead. The proper importer fix won't land before Friday, so we're putting in a <b>stopgap</b> that parks the failed rows and retries them overnight; it comes out the day the real fix ships. And moving staging to the managed plan is a <b>no-brainer</b> at this price — though if you'd rather keep <b>window shopping</b> for a while, we're happy to send a comparison table first.</div>
+  <details>
+    <summary>Bản dịch</summary>
+    <p class="hide-me">Cảm ơn anh/chị đã dành thời gian gọi sáng nay ạ. Trước mùa cao điểm, bên em muốn chạy một đợt kiểm thử độ bền kéo dài một tuần cho phần checkout — mấy chỗ rò rỉ chậm chỉ lộ ra sau vài ngày chạy tải đều, nên bên em cần khoảng hai tuần báo trước để xin lịch ạ. Bên em cũng muốn chốt với nhóm anh/chị một hạn mức lỗi cho phép: tiêu hết hạn đó thì bên em dừng làm tính năng mới, dồn cả sprint vào chuyện làm cho hệ thống ổn. Bản sửa importer cho tử tế thì chưa kịp trước Thứ Sáu, nên bên em đặt một biện pháp tạm thời: mấy dòng lỗi được gom lại rồi chạy lại trong đêm; có bản sửa thật là bỏ ngay hôm đó. Còn chuyện chuyển staging sang gói managed thì với giá này là khỏi phải cân nhắc ạ — mà nếu anh/chị muốn đi ngắm thêm một thời gian nữa thì bên em gửi bảng so sánh trước cũng được ạ.</p>
+  </details>
+</section>
+
+<section class="block">
+  <h2>Bài tập</h2>
+  <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li><b>Điền từ</b> — Memory climbed steadily through the twelve-hour ______, even though every request still came back in under 200ms.</li>
+    <li><b>Sửa lỗi</b> — "This is only a stop gap for the new importer ships."</li>
+    <li><b>Dịch Việt → Anh</b> — "Hai lần deploy chập chờn đã đốt hết hạn mức lỗi của quý này, nên bọn mình phản đối lại vụ thêm tính năng."</li>
+    <li><b>Chọn collocation</b> — (a) go window shopping · (b) go to window shopping · (c) make window shopping</li>
+    <li><b>Điền từ</b> — At that price, with support included, switching is a ______ — I don't think we even need to model it.</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol>
+      <li><b>soak test</b> — thời lượng mới là cái chính, tải vẫn để mức thường ngày; lỗi kiểu rò bộ nhớ chỉ lộ ra sau nhiều giờ. Chạy nhanh một lượt xem còn sống không thì đó là <code>smoke test</code>.</li>
+      <li>This is only a <b>stopgap until</b> the new importer ships. — hai lỗi: <code>stop gap</code> phải viết liền thành <code>stopgap</code>, và giới từ là <code>until</code> chứ không phải <code>for</code>.</li>
+      <li><b>Two flaky deploys burned through this quarter's error budget, so we pushed back on the new feature.</b> — <code>burn through</code> là cụm quen đi với <code>error budget</code>; <code>push back on sth</code>, đừng bỏ <code>on</code>.</li>
+      <li><b>(a) go window shopping</b> — <code>go</code> + V-ing như <code>go shopping</code>, <code>go swimming</code>. Không có "go to window shopping", cũng không ai nói "make window shopping".</li>
+      <li><b>no-brainer</b> — phải có mạo từ <code>a</code>. Nếu muốn nói <i>việc</i> dễ làm mà hiệu quả ngay thì đó là <code>low-hanging fruit</code>, không phải no-brainer.</li>
+    </ol>
+  </details>
+</section>
+
+<footer>
+  Bản Markdown: <a href="2026-10-27.md">2026-10-27.md</a> ·
+  Toàn bộ từ đã học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> ·
+  Lịch ôn: <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+  <br>Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại 10 từ của tuần 2026-W44.
+</footer>
+
+</div>
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>

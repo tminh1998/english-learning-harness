@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-10-26 (buổi #57)
+**Cập nhật:** 2026-10-27 (buổi #58)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 285 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 114 · Business 114 · Life 57                                                           |
-| Số buổi học          | 57                                                                                      |
-| Streak hiện tại      | 7 buổi (2026-10-19 → 2026-10-26 — bài Thứ Bảy 17/10 đã xoá nên chuỗi 16/10 (1 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 290 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 116 · Business 116 · Life 58                                                           |
+| Số buổi học          | 58                                                                                      |
+| Streak hiện tại      | 8 buổi (2026-10-19 → 2026-10-27 — bài Thứ Bảy 17/10 đã xoá nên chuỗi 16/10 (1 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-10-26 (Thứ Hai) — buổi #57 |
+| Buổi gần nhất        | 2026-10-27 (Thứ Ba) — buổi #58 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -75,6 +75,7 @@
 | 2026-10-23 | 2026-W43 | #55 | gossip protocol · yak shaving · statement of work · sunset · take a breather |
 | 2026-10-24 | 2026-W43 | #56 | escape hatch · chatty · nitpick · in a nutshell · blow off steam |
 | 2026-10-26 | 2026-W44 | #57 | telemetry · saga · mitigate · prerequisite · stroll |
+| 2026-10-27 | 2026-W44 | #58 | soak test · error budget · stopgap · no-brainer · window shopping |
 
 ## Kết quả quiz tuần
 
@@ -129,6 +130,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-10-27:** vốn từ lên **290 từ**, nợ ôn tập lên **285/290 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #58 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 26/10 (telemetry · saga · mitigate · prerequisite · stroll), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật 2026-10-05) trúng chores · heartbeat · bottleneck · binge-watch · dry run · sticking point · runbook · ingest · put a pin in it · concession · downstream · waive · immutable · pitch · splurge · outbox · ramp up · quarantine · lead time · quote — lô "gặp lần cuối" 08/10 → 09/10, chạm từ lô cũ nhất (14/08, `bottleneck`) tới lô 08/10, và **không trùng một từ nào** với phần ôn của buổi 26/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh`, không từ nào báo `LOI`. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hard gate R1 loại bốn ứng viên trong buổi này, cả bốn đều vì đụng **cột họ từ** của từ cũ — grep từng chữ một trước khi soạn, đúng bài học rút ra hôm 20/10 và 23/10: `hot path` (`path` ← `happy path`, đã bị loại y vậy hôm 20/10) · `hand off` (`handover` ← `hand over`) · `jitter` (`jittered backoff` ← `backoff`) · `phased rollout` (quá sát `canary release` + `dark launch` + `ramp up`). Hai từ IT hôm nay chọn theo đúng bộ lọc trong `memory/tu-da-biet-khong-day-lai.md`: `soak test` được chính file đó nêu làm ví dụ an toàn, `error budget` là chữ của SLA/postmortem — dev đọc hiểu nhưng ít khi tự viết ra, và không phải thứ gõ trong code. Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: quy luật 2 cho hai từ IT (`soak test` → `kiểm thử độ bền`, `error budget` → `hạn mức lỗi cho phép` — tên kiểu giáo trình, gọi theo chức năng); quy luật 1 cho `stopgap` → `biện pháp tạm thời` và `no-brainer` → `khỏi phải cân nhắc` (idiom thì hỏi "người Việt nói việc này bằng chữ gì", không dịch sát chữ); `window shopping` → `đi ngắm hàng, không mua` theo mục **Đang quan sát** (chưa có từ Việt tương đương thì cụm diễn giải ngắn). Quy luật 5 đã soát: `biện pháp` không trùng danh từ đầu với `cách` (`workaround`), `phương án` (`contingency`) hay `cơ chế` (`fallback`). Tuần 2026-W44 đã có 10 từ (26/10 → 27/10); W43 vẫn **chưa có điểm quiz** — tám tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W43, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 🔁 **Sửa lại 2026-09-01 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `debounce` và `payload` — hai suất IT của buổi #17. Theo R1.b: hai từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), và được thay bằng `failover` + `graceful degradation` — cùng nhóm IT, đã qua lại hard gate R1. Bài `.md` và `.html` đã viết lại toàn bộ: khối từ, ví dụ (R8 vẫn đúng), mẩu đọc, bài tập, đáp án, ghi chú. Tổng số từ vẫn là 85 vì thay 2 ăn 2; số từ "đã biết sẵn" lên 5. Đây là lần thứ hai user loại từ vì đã biết (lần đầu 2026-08-24 với `hotfix` · `overwrite` · `cherry-pick`) — cả 5 từ bị loại đều thuộc nhóm "lệnh/khái niệm gặp hằng ngày", đúng cảnh báo trong `memory/tu-da-biet-khong-day-lai.md`.
 

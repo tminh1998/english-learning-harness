@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 285 từ đã học** · IT 114 · Business 114 · Life 57 · ad-hoc 0
+**Tổng: 290 từ đã học** · IT 116 · Business 116 · Life 58 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-26
+**Cập nhật:** 2026-10-27
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -304,6 +304,11 @@
 | 283 | mitigate | mitigates, mitigated, mitigating, mitigation, mitigating factor, unmitigated | verb | Business | giảm thiểu tác động | 2026-10-26 | lesson |
 | 284 | prerequisite | prerequisites, requisite, prerequisite skills, co-requisite, precondition | noun (đếm được; cũng là adjective) | Business | điều kiện tiên quyết | 2026-10-26 | lesson |
 | 285 | stroll | strolls, strolled, strolling, a stroll, strolling pace, stroller | noun (đếm được; cũng là verb) | Life | đi dạo | 2026-10-26 | lesson |
+| 286 | soak test | soak tests, soak-test, soak-tested, soak testing, soak period, endurance test | noun (đếm được; cũng dùng như verb) | IT | kiểm thử độ bền | 2026-10-27 | lesson |
+| 287 | error budget | error budgets, budget, budgeting, error-budget policy, burn rate, SLO, SLA | noun (đếm được) | IT | hạn mức lỗi cho phép | 2026-10-27 | lesson |
+| 288 | stopgap | stopgaps, stop-gap, stopgap measure, stopgap solution, stopgap funding | noun (đếm được; cũng dùng như adjective) | Business | biện pháp tạm thời | 2026-10-27 | lesson |
+| 289 | no-brainer | no-brainers, no brainer, brainer, brain, brainless, a no-brainer decision | noun (đếm được) | Business | khỏi phải cân nhắc | 2026-10-27 | lesson |
+| 290 | window shopping | window-shop, window-shopped, window-shopping, shop window, shopper, shopping, browse | noun (không đếm được; động từ: go window shopping) | Life | đi ngắm hàng, không mua | 2026-10-27 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
