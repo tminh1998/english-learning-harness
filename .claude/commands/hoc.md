@@ -112,9 +112,12 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 8. Cập nhật đủ **4 file state** (R3): lesson → `VOCAB_INDEX.md` (+5 dòng) →
    `REVIEW_QUEUE.md` (+5 dòng, next_review = hôm nay +1) → `PROGRESS.md` (streak,
    tổng từ, nhật ký buổi học).
-9. **Dựng lại trang mục lục + lưu lên GitHub** (R6 — chưa push là chưa có):
+9. **Dựng lại trang mục lục + lưu lên GitHub** (R6 — chưa push là chưa có).
+   ⛔ Trước đó **soát ôn nhanh** — 25 câu phải là nghĩa chép từ bài đã học (luật cứng,
+   user chốt 2026-10-27). Không in `KHOP-HET` thì chép lại từ `nghia.sh` rồi soát lại:
 
    ```bash
+   sh tools/soat-nghia.sh wiki/lessons/<tuần>/<ngày>.html wiki/lessons/<tuần>/<ngày>.md
    sh tools/build-index.sh
    daylen "hoc: $(hnay) — <5 từ, cách nhau bởi dấu phẩy>"
    ```

@@ -31,7 +31,9 @@ hiểu. Ai muốn tự kiểm tra thì bấm nút "Chế độ ôn tập" để 
    Mỗi từ ra `NGHIA` · `PHU` · `VD` · `DICH` · `DNVI` — xem luật 1.
 4. **Ghi bản Markdown** theo `wiki/_templates/recap.md` → `wiki/recap/<tuần>.md`.
 5. **Ghi bản HTML** theo `wiki/_templates/recap.html` → `wiki/recap/<tuần>.html`.
-6. `sh tools/build-index.sh` rồi `daylen "recap: <tuần> — <N> từ"` (R6).
+6. `sh tools/soat-nghia.sh wiki/recap/<tuần>.html wiki/recap/<tuần>.md` — phải in
+   `KHOP-HET` (luật cứng 2026-10-27: nghĩa Việt chép từ bài đã học, không dịch lại).
+   Rồi `sh tools/build-index.sh` và `daylen "recap: <tuần> — <N> từ"` (R6).
    Không mở branch, không tạo PR. `DA-PUSH` **hoặc** `KHONG-CO-GI-DE-LUU` đều là
    thành công (mã sau nghĩa là bảng ôn đã khớp sẵn, không cần sinh lại). Mã khác
    → báo thẳng cho user là chưa lưu được.

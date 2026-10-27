@@ -353,6 +353,18 @@ từ cũ. Từ **2026-09-04** khối này là **25 từ**, chia cố định là
    chứ không phải ôn — và người học không có cách nào biết bản nào mới là bản đúng.
 
    Từ nào tool báo `LOI` → **sửa tool hoặc sửa bài gốc**, đừng tự viết nghĩa thay vào.
+
+   ⛔⛔ **LUẬT CỨNG, KHÔNG ĐƯỢC THAY ĐỔI** (user chốt lại 2026-10-27): cả **5 từ buổi
+   trước** lẫn **20 từ ôn lại** đều lấy bản dịch **từ bài đã học**, không dịch lại —
+   cùng luật với bảng ôn tuần / tháng / quý / nửa năm / năm (Flow D). Ghi bài xong
+   phải **soát bằng lệnh**, phải in `KHOP-HET` mới được `daylen`:
+
+   ```bash
+   sh tools/soat-nghia.sh wiki/lessons/<tuần>/<ngày>.html wiki/lessons/<tuần>/<ngày>.md
+   ```
+
+   Lệch → chép lại từ `nghia.sh`. Bản `.md` cũng phải giữ nguyên dấu `—` của bài gốc
+   (2026-10-27 soát ra bản `.md` bài 13/10 tự đổi `—` thành `,` và cắt bớt chữ).
 7. **Không đủ 20 từ cũ** (những buổi đầu) → lấy hết những gì có, không bịa thêm từ.
 8. ⭐ **Hai chiều hỏi, mặc định Anh → Việt** (thêm 2026-09-09). Trên trang có nút
    *Chiều ôn*: **Anh → Việt** (hiện từ tiếng Anh + nút 🔊, đáp án là nghĩa Việt) và
@@ -446,6 +458,8 @@ Bốn luật riêng:
    và `p.vi-quick` = `NGHIA` + `PHU`; câu ví dụ + câu dịch = `VD` + `DICH` (ví dụ #1);
    `span.def-vi` = `DNVI` — tất cả chép **nguyên văn** đầu ra `tools/nghia.sh`, cùng
    nguồn với R9 và bảng ôn tháng/quý. Nghĩa chưa ổn → sửa bài gốc (Flow E), rồi chép lại.
+   ⛔ Luật cứng, không được thay đổi (2026-10-27). Ghi xong chạy
+   `sh tools/soat-nghia.sh wiki/recap/<tuần>.html wiki/recap/<tuần>.md` — phải in `KHOP-HET`.
 2. **Cột nghĩa Việt mang class `hide-me`** — để nút "Chế độ ôn tập" che được. Cùng
    một bảng: mặc định để hiểu, bật lên thành bài tự kiểm tra. Thiếu class này là
    hỏng nửa công dụng.

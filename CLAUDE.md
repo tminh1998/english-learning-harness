@@ -30,6 +30,7 @@ ENGLISH/                          ← {harness}
 │   │                               cfg · hnay · tuan · openit · keove · daylen
 │   ├── nghia.sh                  ← ⭐ trích nghĩa bài cũ: .vi-quick, ví dụ #1 + câu dịch, def-vi (R9 + bảng ôn tuần)
 │   ├── boc.sh                    ← ⭐ bốc 20 từ ôn nhanh, lâu chưa gặp nhất ra trước (R9)
+│   ├── soat-nghia.sh             ← ⛔ soát ôn nhanh + bảng ôn tuần có chép đúng nghĩa bài gốc không
 │   ├── build-index.sh            ← dựng lại index.html từ wiki/lessons/ (gọi build-recap.sh trước)
 │   ├── build-recap.sh            ← sinh bảng ôn tháng/quý/nửa năm/năm vào wiki/recap/
 │   ├── lich.awk                  ← hàm ngày tháng (tuần ISO, cộng ngày) cho build-recap.sh
@@ -84,6 +85,12 @@ phải sửa **mọi bài sau X** có khối ôn nhanh chịu ảnh hưởng:
 - Khối ôn nhanh nào (phần A hay B) còn chứa từ của bài X → thay luôn.
 - Câu ví dụ / mẩu đọc mượn từ của X làm `.rev` → đổi sang từ cũ khác (R8).
 Sửa xong mới `build-index.sh` + `daylen`.
+
+⛔⛔ **LUẬT CỨNG, KHÔNG ĐƯỢC THAY ĐỔI** (user chốt 2026-10-27): **5 từ bài hôm trước +
+20 từ ôn lại** trong khối ôn nhanh, và **bảng ôn tuần / tháng / quý / nửa năm / năm**,
+đều lấy bản dịch **từ các bài đã học** (`tools/nghia.sh`) — không dịch lại, không sửa
+chữ, không rút gọn. Ghi xong phải `sh tools/soat-nghia.sh <file>` in `KHOP-HET` mới được
+`daylen`. Bảng ôn tháng → năm do `build-recap.sh` sinh thẳng từ `nghia.sh`.
 
 **Bảng ôn tuần không dịch lại** (2026-10-12). Mọi chữ tiếng Việt nói về nghĩa trên
 `wiki/recap/YYYY-Www.*` — cột nghĩa, `.vi-quick`, `def-vi`, câu ví dụ + câu dịch — chép
@@ -165,6 +172,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 [ ] keove                                  chạy TRƯỚC khi làm gì (bài từ máy khác)
 [ ] 25 từ ôn nhanh: 5 buổi trước + 20 từ sh tools/boc.sh   R9 — khối ĐÓNG, đáp án theo TỪNG câu
 [ ] sh tools/nghia.sh cho cả 25 từ         R9 — câu hỏi = NGHIA + PHU (.vi-quick bài gốc), CHÉP NGUYÊN
+[ ] sh tools/soat-nghia.sh <ngày>.html <ngày>.md   ⛔ LUẬT CỨNG — phải in KHOP-HET
 [ ] wiki/lessons/<tuần>/<ngày>.md          ôn nhanh + 5 từ + mẩu đọc + bài tập
 [ ] wiki/lessons/<tuần>/<ngày>.html        render từ _templates/lesson.html
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
@@ -277,6 +285,7 @@ sh tools/build-index.sh                                    # phải in DA-DUNG-R
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
 sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD / DICH / DNVI
 sh tools/boc.sh -v                                         # 20 dòng, ngày gặp cuối tăng dần
+sh tools/soat-nghia.sh                                     # phải in KHOP-HET (mọi bài từ 10/09 + bảng ôn tuần)
 awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \
   | sh tools/nghia.sh | grep -c '^DICH '                   # phải bằng tổng số từ (VD, DNVI cũng vậy)
 ```

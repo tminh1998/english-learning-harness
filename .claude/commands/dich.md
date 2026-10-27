@@ -127,6 +127,7 @@ sửa xong luôn phải đẩy lên git"). User đọc trên Pages / điện tho
 thấy bản cũ. Đẩy từng từ cũng để VM cloud bị thu hồi giữa chừng không mất gì.
 
 ```bash
+sh tools/soat-nghia.sh       # mọi khối ôn nhanh + bảng ôn tuần còn chép nghĩa cũ → SAI, sửa tới KHOP-HET
 sh tools/build-index.sh      # sinh lại bảng ôn tháng/quý/nửa năm/năm theo nghĩa mới
 daylen "dich: <từ> -> <nghĩa mới>"
 ```
