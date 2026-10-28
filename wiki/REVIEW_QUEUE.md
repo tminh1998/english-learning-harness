@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-27: 285 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-28: 290 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -435,6 +435,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | stopgap | 1 | 2026-10-28 | 0 | 0 | 2026-10-27 |
 | no-brainer | 1 | 2026-10-28 | 0 | 0 | 2026-10-27 |
 | window shopping | 1 | 2026-10-28 | 0 | 0 | 2026-10-27 |
+| hotspot | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
+| dogfooding | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
+| white-label | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
+| retrospective | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
+| homebody | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
 
 ## Đã thuộc (bậc 5, đúng)
 

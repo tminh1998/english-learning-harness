@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 290 từ đã học** · IT 116 · Business 116 · Life 58 · ad-hoc 0
+**Tổng: 295 từ đã học** · IT 118 · Business 118 · Life 59 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-27
+**Cập nhật:** 2026-10-28
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -309,6 +309,11 @@
 | 288 | stopgap | stopgaps, stop-gap, stopgap measure, stopgap solution, stopgap funding | noun (đếm được; cũng dùng như adjective) | Business | biện pháp tạm thời | 2026-10-27 | lesson |
 | 289 | no-brainer | no-brainers, no brainer, brainer, brain, brainless, a no-brainer decision | noun (đếm được) | Business | khỏi phải cân nhắc | 2026-10-27 | lesson |
 | 290 | window shopping | window-shop, window-shopped, window-shopping, shop window, shopper, shopping, browse | noun (không đếm được; động từ: go window shopping) | Life | đi ngắm hàng, không mua | 2026-10-27 | lesson |
+| 291 | hotspot | hotspots, hot spot, hot-spot, hotspotting, CPU hotspot, partition hotspot | noun (đếm được) | IT | điểm nóng | 2026-10-28 | lesson |
+| 292 | dogfooding | dogfood, dogfoods, dogfooded, dogfooding, dog-fooding, eat your own dog food, dogfood build | noun (không đếm được; động từ: to dogfood sth) | IT | tự dùng sản phẩm của chính mình | 2026-10-28 | lesson |
+| 293 | white-label | white label, white-labels, white-labelled, white-labeled, white-labelling, white-label partner, white-labelling rights, private label | adjective (cũng là verb) | Business | sản phẩm nhãn trắng / khách gắn tên họ lên bán | 2026-10-28 | lesson |
+| 294 | retrospective | retrospectives, retro, retros, sprint retro, retrospectively, in retrospect | noun (đếm được) | Business | họp rút kinh nghiệm cuối sprint | 2026-10-28 | lesson |
+| 295 | homebody | homebodies, home, homey, stay-at-home, homebound, couch potato | noun (đếm được) | Life | người thích ở nhà | 2026-10-28 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
