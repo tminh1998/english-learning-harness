@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-26 · **Số bản dịch đã ghi:** 21 (18 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-28 · **Số bản dịch đã ghi:** 22 (19 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -66,7 +66,8 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    - `chuyện phiếm / trò chuyện xã giao` (đời thường / lịch sự)
    - `Gắn công cụ đo / Theo dõi hệ thống` (hành động / mục đích)
    - `chìm ngập trong chi tiết vụn vặt / quá bận rộn/quá tải` (nghĩa 1 / nghĩa 2)
-   _(4 lần, 2026-10-02.)_ Khi viết bài mới: từ nào có một từ Việt chuẩn đủ trọn nghĩa
+   - `Điểm nóng, chỗ chiếm tài nguyên nhiều` (từ chuẩn / chức năng — hotspot, 2026-10-28)
+   _(5 lần, 2026-10-02 → 2026-10-28.)_ Vế nối có thể là ` / ` hoặc dấu phẩy `, ` (`wire up`, `give or take`, `hotspot`) — giữ đúng dấu user gõ. Khi viết bài mới: từ nào có một từ Việt chuẩn đủ trọn nghĩa
    thì ghi một cái thôi (vd `Hóa đơn`, `Băng thông`, `phạm vi ảnh hưởng`, `bản ghi
    đánh dấu đã xóa`); từ nào một cách gọi bị hụt nghĩa thì ghi hai, nối bằng ` / `.
    Đừng ghép vế thứ hai chỉ để chứa hình ảnh — `tombstone` user gạch vế "bia mộ dữ
@@ -148,3 +149,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-09 | splurge | vung tay tiêu một phát · chi hẳn một khoản to cho thứ mình thích, thường là tự thưởng | Sự phung phí | bỏ cụm khẩu ngữ 4 chữ, dùng **danh từ Hán-Việt 2 chữ** (`Sự` + từ chuẩn); chuyển động từ thành danh từ (từ vừa là verb vừa là noun); sắc thái "tự thưởng" dồn xuống `PHU` |
 | 2026-10-19 | gold-plating | làm thừa cái khách không xin · tự ý đánh bóng thêm ngoài yêu cầu — tốn giờ, dễ trễ hạn… | Làm thừa cái khách yêu cầu | bỏ vế **phủ định** `không xin`, nói theo mốc so sánh là **cái khách yêu cầu** (làm thừa ra so với yêu cầu); `yêu cầu` là chữ chuẩn của dự án thay cho khẩu ngữ `xin`; giữ nguyên dòng PHU |
 | 2026-10-26 | telemetry | dữ liệu đo xa / số liệu máy tự gửi về · log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay | tự thu thập dữ liệu gửi về | bỏ vế dịch **sát gốc chữ** `đo xa` (tele + metry) và bỏ luôn kiểu **hai vế** `/`; danh từ mà user nói thành **hành động hai bước** (thu thập → gửi về), giữ chữ `tự` của vế cũ; giữ nguyên dòng PHU — lần thứ 3 sau `drain`, `ingest` → nâng thành quy luật 6 |
+| 2026-10-28 | hotspot | điểm nóng · chỗ ngốn gần hết thời gian chạy, hoặc chỗ hứng gần hết request — profiler chỉ vào đâu thì sửa đúng đó | Điểm nóng, chỗ chiếm tài nguyên nhiều | nhắn thẳng trong chat — giữ từ chuẩn `Điểm nóng` nhưng thấy **một mình nó hụt nghĩa** (dễ lẫn điểm nóng du lịch/Wi-Fi), ghép thêm vế **chức năng** `chỗ chiếm tài nguyên nhiều`; nối bằng dấu phẩy như `wire up`, `give or take`. User gõ "Điểm nóng , chỗ…" — bỏ khoảng trắng trước dấu phẩy; giữ nguyên dòng PHU |

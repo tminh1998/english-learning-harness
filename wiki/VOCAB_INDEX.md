@@ -309,7 +309,7 @@
 | 288 | stopgap | stopgaps, stop-gap, stopgap measure, stopgap solution, stopgap funding | noun (đếm được; cũng dùng như adjective) | Business | biện pháp tạm thời | 2026-10-27 | lesson |
 | 289 | no-brainer | no-brainers, no brainer, brainer, brain, brainless, a no-brainer decision | noun (đếm được) | Business | khỏi phải cân nhắc | 2026-10-27 | lesson |
 | 290 | window shopping | window-shop, window-shopped, window-shopping, shop window, shopper, shopping, browse | noun (không đếm được; động từ: go window shopping) | Life | đi ngắm hàng, không mua | 2026-10-27 | lesson |
-| 291 | hotspot | hotspots, hot spot, hot-spot, hotspotting, CPU hotspot, partition hotspot | noun (đếm được) | IT | điểm nóng | 2026-10-28 | lesson |
+| 291 | hotspot | hotspots, hot spot, hot-spot, hotspotting, CPU hotspot, partition hotspot | noun (đếm được) | IT | Điểm nóng, chỗ chiếm tài nguyên nhiều | 2026-10-28 | lesson |
 | 292 | dogfooding | dogfood, dogfoods, dogfooded, dogfooding, dog-fooding, eat your own dog food, dogfood build | noun (không đếm được; động từ: to dogfood sth) | IT | tự dùng sản phẩm của chính mình | 2026-10-28 | lesson |
 | 293 | white-label | white label, white-labels, white-labelled, white-labeled, white-labelling, white-label partner, white-labelling rights, private label | adjective (cũng là verb) | Business | sản phẩm nhãn trắng / khách gắn tên họ lên bán | 2026-10-28 | lesson |
 | 294 | retrospective | retrospectives, retro, retros, sprint retro, retrospectively, in retrospect | noun (đếm được) | Business | họp rút kinh nghiệm cuối sprint | 2026-10-28 | lesson |
