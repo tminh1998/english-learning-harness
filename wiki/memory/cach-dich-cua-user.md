@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-28 · **Số bản dịch đã ghi:** 22 (19 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-29 · **Số bản dịch đã ghi:** 23 (20 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -77,6 +77,11 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    GHI CHÚ.** `in the weeds`: agent để "ngập việc tới cổ" trong ghi chú, user đưa
    lên nghĩa gọn: `… / quá bận rộn/quá tải`. _(1 lần, đi kèm luật 3 — áp luôn vì là
    trường hợp riêng của luật 3.)_
+   ⭐ **Nghĩa user dùng hằng ngày đứng trước.** `nail down`: agent để "chốt cứng" làm
+   nghĩa gọn, "truy ra nguyên nhân" làm `PHU`; user đảo lên: **`Truy ra đúng nguyên nhân`**
+   — với dev, nghĩa debug gặp nhiều hơn nghĩa chốt scope. Bài mới: từ hai nghĩa thì
+   nghĩa dev/IT hay gặp nằm ở dòng đậm, nghĩa kia xuống `PHU`.
+   _(2 lần: `in the weeds` 2026-10-02 đưa nghĩa 2 lên, `nail down` 2026-10-29 đảo hẳn.)_
 
 5. **Hai từ gần nghĩa thì tách bằng danh từ đầu, đừng để trùng nghĩa gọn.** Trước
    2026-10-08 `fallback` và `contingency` cùng mang chữ "phương án". User tách:
@@ -150,3 +155,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-19 | gold-plating | làm thừa cái khách không xin · tự ý đánh bóng thêm ngoài yêu cầu — tốn giờ, dễ trễ hạn… | Làm thừa cái khách yêu cầu | bỏ vế **phủ định** `không xin`, nói theo mốc so sánh là **cái khách yêu cầu** (làm thừa ra so với yêu cầu); `yêu cầu` là chữ chuẩn của dự án thay cho khẩu ngữ `xin`; giữ nguyên dòng PHU |
 | 2026-10-26 | telemetry | dữ liệu đo xa / số liệu máy tự gửi về · log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay | tự thu thập dữ liệu gửi về | bỏ vế dịch **sát gốc chữ** `đo xa` (tele + metry) và bỏ luôn kiểu **hai vế** `/`; danh từ mà user nói thành **hành động hai bước** (thu thập → gửi về), giữ chữ `tự` của vế cũ; giữ nguyên dòng PHU — lần thứ 3 sau `drain`, `ingest` → nâng thành quy luật 6 |
 | 2026-10-28 | hotspot | điểm nóng · chỗ ngốn gần hết thời gian chạy, hoặc chỗ hứng gần hết request — profiler chỉ vào đâu thì sửa đúng đó | Điểm nóng, chỗ chiếm tài nguyên nhiều | nhắn thẳng trong chat — giữ từ chuẩn `Điểm nóng` nhưng thấy **một mình nó hụt nghĩa** (dễ lẫn điểm nóng du lịch/Wi-Fi), ghép thêm vế **chức năng** `chỗ chiếm tài nguyên nhiều`; nối bằng dấu phẩy như `wire up`, `give or take`. User gõ "Điểm nóng , chỗ…" — bỏ khoảng trắng trước dấu phẩy; giữ nguyên dòng PHU |
+| 2026-10-29 | nail down | chốt cứng cho hết lửng lơ · hoặc: truy cho ra đúng nguyên nhân | Truy ra đúng nguyên nhân | nhắn thẳng trong chat — **đảo hai nghĩa**: lấy nghĩa ở `PHU` (debug, tìm nguyên nhân) lên dòng đậm, bỏ chữ `cho` và `hoặc:`; nghĩa "chốt cứng" (chốt scope với khách) chuyển xuống `PHU` để không mất. Không có `\|` nên agent tự đảo PHU — báo user |

@@ -101,7 +101,7 @@
 | 80 | sleep in | sleeps in, slept in, sleeping in, a lie-in, oversleep | phrasal verb | Life | ngủ nướng | 2026-08-31 | lesson |
 | 81 | failover | failovers, fail over, failed over, failing over, fail-over, failover cluster | noun (động từ: fail over) | IT | tự chuyển sang hệ dự phòng khi hệ chính chết | 2026-09-01 | lesson |
 | 82 | graceful degradation | degrade, degrades, degraded, degrading, gracefully, degraded mode, fail gracefully | noun phrase | IT | hỏng một phần vẫn chạy tiếp, bớt tính năng chứ không sập | 2026-09-01 | lesson |
-| 83 | nail down | nails down, nailed down, nailing down, hard-to-nail-down, nail it | phrasal verb | Business | chốt cứng cho hết lửng lơ | 2026-09-01 | lesson |
+| 83 | nail down | nails down, nailed down, nailing down, hard-to-nail-down, nail it | phrasal verb | Business | Truy ra đúng nguyên nhân | 2026-09-01 | lesson |
 | 84 | outstanding | outstandingly, outstanding balance, stand out, standout | adjective | Business | còn tồn, chưa xong, chưa trả | 2026-09-01 | lesson |
 | 85 | spare | spares, spared, sparing, sparingly, spare part, to spare | adjective (cũng là verb) | Life | dư ra, đang không dùng tới | 2026-09-01 | lesson |
 | 86 | culprit | culprits, the usual culprits, culpable | noun | IT | thủ phạm gây ra lỗi | 2026-09-02 | lesson |
