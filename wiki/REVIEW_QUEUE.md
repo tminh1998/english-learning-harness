@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-28: 290 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-10-29: 295 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -64,6 +64,7 @@
 - hạn 2026-10-25 — escape hatch · chatty · nitpick · in a nutshell · blow off steam
 - hạn 2026-10-27 — telemetry · saga · mitigate · prerequisite · stroll
 - hạn 2026-10-28 — soak test · error budget · stopgap · no-brainer · window shopping
+- hạn 2026-10-29 — hotspot · dogfooding · white-label · retrospective · homebody
 
 _Ghi chú 2026-10-27 (buổi #58): phần A hỏi lại 5 từ của buổi 26/10 (telemetry · saga · mitigate · prerequisite · stroll), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chores · heartbeat · bottleneck · binge-watch · dry run · sticking point · runbook · ingest · put a pin in it · concession · downstream · waive · immutable · pitch · splurge · outbox · ramp up · quarantine · lead time · quote — "gặp lần cuối" là 08/10 và 09/10, chạm từ lô cũ nhất (14/08) tới lô 08/10, và **không trùng một từ nào** với phần ôn của buổi 26/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **285/290 từ**, toàn bộ ở bậc 1._
 
@@ -440,6 +441,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | white-label | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
 | retrospective | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
 | homebody | 1 | 2026-10-29 | 0 | 0 | 2026-10-28 |
+| read replica | 1 | 2026-10-30 | 0 | 0 | 2026-10-29 |
+| chaos engineering | 1 | 2026-10-30 | 0 | 0 | 2026-10-29 |
+| turnkey | 1 | 2026-10-30 | 0 | 0 | 2026-10-29 |
+| headcount | 1 | 2026-10-30 | 0 | 0 | 2026-10-29 |
+| creature of habit | 1 | 2026-10-30 | 0 | 0 | 2026-10-29 |
 
 ## Đã thuộc (bậc 5, đúng)
 

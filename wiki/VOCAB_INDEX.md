@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 295 từ đã học** · IT 118 · Business 118 · Life 59 · ad-hoc 0
+**Tổng: 300 từ đã học** · IT 120 · Business 120 · Life 60 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-28
+**Cập nhật:** 2026-10-29
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -314,6 +314,11 @@
 | 293 | white-label | white label, white-labels, white-labelled, white-labeled, white-labelling, white-label partner, white-labelling rights, private label | adjective (cũng là verb) | Business | sản phẩm nhãn trắng / khách gắn tên họ lên bán | 2026-10-28 | lesson |
 | 294 | retrospective | retrospectives, retro, retros, sprint retro, retrospectively, in retrospect | noun (đếm được) | Business | họp rút kinh nghiệm cuối sprint | 2026-10-28 | lesson |
 | 295 | homebody | homebodies, home, homey, stay-at-home, homebound, couch potato | noun (đếm được) | Life | người thích ở nhà | 2026-10-28 | lesson |
+| 296 | read replica | read replicas, replica, replicas, replicate, replicated, replication, replication lag, read-only replica | noun (đếm được) | IT | bản sao chỉ dùng để đọc | 2026-10-29 | lesson |
+| 297 | chaos engineering | chaos, chaotic, chaos experiment, chaos day, chaos monkey, game day, fault injection | noun (không đếm được) | IT | chủ động gây lỗi để đo sức chịu của hệ thống | 2026-10-29 | lesson |
+| 298 | turnkey | turn-key, turn key, turnkey solution, turnkey project, turnkey basis, key | adjective (cũng dùng như noun) | Business | chìa khóa trao tay / giao là dùng được ngay | 2026-10-29 | lesson |
+| 299 | headcount | head count, head-count, headcounts, headcount freeze, headcount budget, FTE | noun (đếm được, thường số ít) | Business | số lượng nhân sự / suất tuyển được duyệt | 2026-10-29 | lesson |
+| 300 | creature of habit | creatures of habit, habit, habits, habitual, habitually, out of habit, force of habit, routine | noun phrase (đếm được) | Life | người sống theo thói quen | 2026-10-29 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
