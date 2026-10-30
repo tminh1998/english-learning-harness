@@ -245,22 +245,22 @@
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">đối chiếu rồi sửa chỗ lệch<span class="alt">so hai bên xem khác nhau ở đâu, rồi kéo cho về khớp — không chỉ là "so sánh", so xong là sửa luôn</span></p>
+  <p class="vi-quick hide-me">tra soát<span class="alt">so hai bên xem khác nhau ở đâu, rồi kéo cho về khớp — không chỉ là "so sánh", so xong là sửa luôn</span></p>
 
   <p class="def"><span class="tag">EN</span>To compare two sets of records, or the state you want against the state you actually have, and fix whatever does not match.
     <span class="def-vi hide-me">→ So hai bộ dữ liệu, hoặc so trạng thái mình muốn với trạng thái đang có thật, rồi sửa những chỗ không khớp.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong hệ thống có <code>a reconciliation loop</code> (Kubernetes): cứ chạy lại, so cái mình khai với cái đang chạy thật rồi tự chỉnh. Trong chuyện tiền với khách thì là đối chiếu hai bảng số cho khớp. Khác <code>sanity check</code> (29/08): sanity check chỉ soi xem có sai lè không, còn reconcile là tìm ra <b>từng chỗ lệch</b> rồi sửa.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Trong hệ thống có <code>a reconciliation loop</code> (Kubernetes): cứ chạy lại, so cái mình khai với cái đang chạy thật rồi tự chỉnh. Trong chuyện tiền với khách thì là tra soát hai bảng số cho khớp. Khác <code>sanity check</code> (29/08): sanity check chỉ soi xem có sai lè không, còn reconcile là tìm ra <b>từng chỗ lệch</b> rồi sửa.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
       <span class="en">A nightly job <b>reconciles</b> our order table with the warehouse feed, and this morning it reported one <span class="rev">discrepancy</span> — four orders the warehouse never saw.</span>
-      <span class="vi hide-me">→ Một job chạy đêm đối chiếu bảng đơn hàng của bọn mình với dữ liệu kho, sáng nay nó báo một chỗ vênh giữa hai con số — bốn đơn mà kho chưa thấy bao giờ.</span>
+      <span class="vi hide-me">→ Một job chạy đêm tra soát bảng đơn hàng của bọn mình với dữ liệu kho, sáng nay nó báo một chỗ vênh giữa hai con số — bốn đơn mà kho chưa thấy bao giờ.</span>
     </li>
     <li>
       <span class="en">Before we invoice, we <b>reconcile</b> the hours in the report with your ticket list, so nobody has to argue about the numbers once the <span class="rev">invoice</span> goes out.</span>
-      <span class="vi hide-me">→ Trước khi xuất hoá đơn, bên em đối chiếu số giờ trong báo cáo với danh sách ticket của anh/chị ạ, để khi hoá đơn gửi đi rồi thì hai bên khỏi phải tranh cãi về con số.</span>
+      <span class="vi hide-me">→ Trước khi xuất hoá đơn, bên em tra soát số giờ trong báo cáo với danh sách ticket của anh/chị ạ, để khi hoá đơn gửi đi rồi thì hai bên khỏi phải tranh cãi về con số.</span>
     </li>
   </ul>
 
@@ -392,7 +392,7 @@
     <summary>Bản dịch</summary>
     <div class="hide-me">
       <p><b>Chuẩn bị mùa sale — biên bản, Thứ Hai 12/10 · Mai (PM), Tuấn (backend), Linh (ops)</b></p>
-      <p>1. <b>Dữ liệu.</b> Tuấn: năm ngoái dữ liệu kho bị nhân đôi ba mươi đơn vì job import cứ thế insert. Giờ nó upsert theo số đơn, và có một job chạy đêm đối chiếu bảng của bọn mình với bảng của kho, nên vẫn đúng tiến độ cho ngày 25.</p>
+      <p>1. <b>Dữ liệu.</b> Tuấn: năm ngoái dữ liệu kho bị nhân đôi ba mươi đơn vì job import cứ thế insert. Giờ nó upsert theo số đơn, và có một job chạy đêm tra soát bảng của bọn mình với bảng của kho, nên vẫn đúng tiến độ cho ngày 25.</p>
       <p>2. <b>Phạm vi.</b> Mọi thứ còn lại mà bên sale xin thì cho vào danh sách việc chờ. Hai cái báo cáo thêm mà marketing muốn thì nằm ngoài hợp đồng — phải có phụ lục hợp đồng rồi mới ai làm được.</p>
       <p>3. <b>Phòng trực.</b> Linh thứ Sáu đi mua trữ sẵn cà phê với mì gói, và giữ phòng họp nhỏ cho cả cuối tuần.</p>
     </div>
@@ -406,7 +406,7 @@
     <li><b>Điền từ</b> — "The import used to create duplicates, so we changed it to ______ on the order number instead."</li>
     <li><b>Sửa lỗi</b> — "Could you stock up coffee before the sale weekend?"</li>
     <li><b>Dịch Việt → Anh</b> — <span class="hide-me">"Bên em làm thêm được hai báo cáo đó ạ, nhưng phải có một phụ lục hợp đồng."</span></li>
-    <li><b>Chọn collocation</b> — <span class="hide-me">Nói "đối chiếu báo cáo với hoá đơn":</span> (a) <code>reconcile the report to the invoice</code> · (b) <code>reconcile the report with the invoice</code> · (c) <code>reconcile the report against invoice</code></li>
+    <li><b>Chọn collocation</b> — <span class="hide-me">Nói "tra soát báo cáo với hoá đơn":</span> (a) <code>reconcile the report to the invoice</code> · (b) <code>reconcile the report with the invoice</code> · (c) <code>reconcile the report against invoice</code></li>
     <li><b>Điền từ (đúng dạng)</b> — "Support has ______ ______ ______ forty tickets that nobody has looked at since August."</li>
   </ol>
   <details>

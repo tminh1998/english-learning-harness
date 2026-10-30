@@ -255,7 +255,7 @@
 | 234 | play it by ear | plays it by ear, played it by ear, playing it by ear, play sth by ear, play by ear, by ear | idiom (cụm động từ) | Business | tới đâu tính đó | 2026-10-09 | lesson |
 | 235 | recharge | recharges, recharged, recharging, rechargeable, a recharge, recharge your batteries, charge | verb | Life | nạp lại năng lượng | 2026-10-09 | lesson |
 | 236 | upsert | upserts, upserted, upserting, an upsert, upsert query | verb (cũng là noun) | IT | thêm mới nếu chưa có, cập nhật nếu đã có | 2026-10-12 | lesson |
-| 237 | reconcile | reconciles, reconciled, reconciling, reconciliation, a reconciliation loop, irreconcilable | verb | IT | đối chiếu rồi sửa chỗ lệch | 2026-10-12 | lesson |
+| 237 | reconcile | reconciles, reconciled, reconciling, reconciliation, a reconciliation loop, irreconcilable | verb | IT | tra soát | 2026-10-12 | lesson |
 | 238 | backlog | backlogs, backlogged, backlog item, product backlog, sprint backlog, a backlog of sth | noun (đếm được) | Business | việc tồn đọng chưa làm / danh sách việc chờ xếp ưu tiên | 2026-10-12 | lesson |
 | 239 | addendum | addenda, addendums, an addendum to sth, add, addition, additional | noun (đếm được) | Business | phụ lục hợp đồng | 2026-10-12 | lesson |
 | 240 | stock up | stocks up, stocked up, stocking up, stock up on sth, well-stocked, restock, in stock, out of stock | phrasal verb | Life | mua trữ sẵn | 2026-10-12 | lesson |

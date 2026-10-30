@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-30 · **Số bản dịch đã ghi:** 25 (22 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-30 · **Số bản dịch đã ghi:** 26 (23 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -52,8 +52,9 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    - `soi được bên trong hệ thống` → **`khả năng quan sát`**
    - `chèn mã đo vào code` → **`Gắn công cụ đo / Theo dõi hệ thống`**
    - `hỏng thì kéo theo bao nhiêu` → **`phạm vi ảnh hưởng`**
+   - `đối chiếu rồi sửa chỗ lệch` → **`tra soát`** (reconcile — tên chuẩn bên ngân hàng/kế toán, 2026-10-30)
    - `bia mộ dữ liệu / bản ghi báo đã xoá` → **`bản ghi đánh dấu đã xóa`**
-   _(5 lần, 2026-09-29 → 2026-10-07.)_ Chỉ áp cho **nghĩa gọn của chính từ đang học**.
+   _(6 lần, 2026-09-29 → 2026-10-30.)_ Chỉ áp cho **nghĩa gọn của chính từ đang học**.
    ⚠️ **Thuật ngữ IT mượn ẩn dụ (bia mộ, vụ nổ…) thì KHÔNG dịch theo hình ảnh** —
    gọi thẳng cái nó *là* hoặc cái nó *làm*. `tombstone` ≠ "bia mộ dữ liệu",
    `blast radius` ≠ "bán kính vụ nổ". Hình ảnh gốc để dành cho dòng `Bẫy` / `GHI CHÚ`.
@@ -102,6 +103,9 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    _(3 lần, 2026-10-08 → 2026-10-26.)_ ⚠️ Từ ghép kiểu Hy Lạp/Latin (`tele-` + `-metry`)
    thì **đừng** dịch sát gốc chữ thành Hán-Việt (`đo xa`) rồi ghép thêm vế thứ hai theo
    luật 3 — user bỏ cả cụm hai vế, giữ một cụm chức năng.
+   ⚠️ **Luật 6 chỉ áp khi KHÔNG có tên Việt chuẩn.** `reconcile` agent kể bước
+   `đối chiếu rồi sửa chỗ lệch` (theo luật 6) → user đổi thành **`tra soát`**: quá trình đã có
+   tên chuẩn trong nghề (ngân hàng, kế toán) thì gọi tên đó (luật 1 + 2), các bước để dòng PHU.
 
 7. **Thuật ngữ dev mà dev Việt quen nói bằng tiếng Anh thì để nguyên tiếng Anh ngay
    trong nghĩa gọn — kể cả khi sách có tên Hán-Việt.** R7 không chỉ áp cho câu ví dụ:
@@ -172,3 +176,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-29 | nail down | chốt cứng cho hết lửng lơ · hoặc: truy cho ra đúng nguyên nhân | Truy ra đúng nguyên nhân | nhắn thẳng trong chat — **đảo hai nghĩa**: lấy nghĩa ở `PHU` (debug, tìm nguyên nhân) lên dòng đậm, bỏ chữ `cho` và `hoặc:`; nghĩa "chốt cứng" (chốt scope với khách) chuyển xuống `PHU` để không mất. Không có `\|` nên agent tự đảo PHU — báo user |
 | 2026-10-30 | transitive dependency | phụ thuộc bắc cầu / package cài kèm chứ mình không khai · mình chỉ khai một package, nó kéo theo cả chùm package khác… | dependency được cài kèm | bỏ vế Hán-Việt **dịch sát gốc chữ** `phụ thuộc bắc cầu` (transitive = bắc cầu) dù đó là tên sách giáo trình; **giữ `dependency` bằng tiếng Anh** (dev nói vậy hằng ngày), thay `package` bằng `dependency`; bỏ vế phủ định `chứ mình không khai` và bỏ kiểu hai vế — một cụm duy nhất. Lấy đúng chữ `cài kèm` agent đã dùng trong câu dịch ví dụ; giữ nguyên dòng PHU — lần 2 giữ thuật ngữ dev tiếng Anh sau `Parse` (ingest) → nâng thành quy luật 7 |
 | 2026-10-30 | call out | nói thẳng ra chỗ đó · chỉ đích danh một điểm cho mọi người cùng thấy — khen hay nhắc lỗi đều dùng được | chỉ đích danh | nhắn thẳng trong chat — lấy đúng **cụm đầu dòng PHU** của agent lên dòng đậm (như `sweet tooth`, `nail down`); bỏ cụm khẩu ngữ 5 chữ `nói thẳng ra chỗ đó`, chọn **thành ngữ Việt có sẵn** 3 chữ chỉ đúng hành động (luật 1); giữ nguyên dòng PHU |
+| 2026-10-30 | reconcile | đối chiếu rồi sửa chỗ lệch · so hai bên xem khác nhau ở đâu, rồi kéo cho về khớp — không chỉ là "so sánh", so xong là sửa luôn | tra soát | nhắn thẳng trong chat — bỏ cụm kể hai bước 6 chữ, dùng **thuật ngữ Hán-Việt chuẩn 2 chữ** (ngân hàng / kế toán dùng `tra soát giao dịch`) — luật 1 + 2; hai bước "so → sửa" để ở dòng PHU. Ngược hướng luật 6: từ chỉ quá trình nhưng **đã có tên Việt chuẩn** thì gọi tên, không kể bước |
