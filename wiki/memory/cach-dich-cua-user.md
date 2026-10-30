@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-30 · **Số bản dịch đã ghi:** 24 (21 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-30 · **Số bản dịch đã ghi:** 25 (22 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -39,7 +39,8 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    - `còn rảnh sức mà nhận việc không` → **`Băng thông`** (nghĩa bóng vẫn gọi đúng tên từ Việt có sẵn)
    - `chia đôi khoảng cách` → **`nhượng bộ đôi bên`** (bỏ bản dịch sát chữ, dùng từ Việt chỉ đúng hành động)
    - `chuyện xã giao` → **`chuyện phiếm`**
-   _(7 lần, 2026-09-29 → 2026-10-02. Quy luật này đứng trên R7 mục 4 "có hình ảnh" khi đã có từ chuẩn.)_
+   - `nói thẳng ra chỗ đó` → **`chỉ đích danh`** (call out — thành ngữ Việt có sẵn, 2026-10-30)
+   _(8 lần, 2026-09-29 → 2026-10-30. Quy luật này đứng trên R7 mục 4 "có hình ảnh" khi đã có từ chuẩn.)_
    ⚠️ **Thành ngữ không dịch sát chữ.** `split the difference` ≠ "chia đôi khoảng
    cách": người Việt không nói thế. Hỏi "người Việt nói việc này bằng chữ gì?" chứ
    đừng dịch từng chữ của idiom.
@@ -127,6 +128,7 @@ sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắ
   `ngưng nhận công việc mới và làm nốt việc đang dở` (11 chữ). Tức là ngắn không quan
   trọng bằng **đủ các bước**: thà dài mà rõ từng bước còn hơn gọn mà phải đoán.
   → **Đã nâng thành quy luật 6** (2026-10-26, sau `ingest` và `telemetry`).
+- **User hay nhặt đúng cụm agent đã viết ở `PHU` hoặc câu dịch ví dụ lên làm nghĩa gọn**: `sweet tooth` (`thích ăn đồ ngọt` ← PHU), `blast radius` (`phạm vi ảnh hưởng` ← câu dịch), `nail down` (← PHU), `transitive dependency` (`cài kèm` ← câu dịch), `call out` (`chỉ đích danh` ← đầu PHU). Tức là bản tốt hay đã nằm sẵn trong bài, chỉ bị đặt sai chỗ: khi viết bài mới, cụm gọn và trúng nhất phải lên dòng đậm chứ đừng để dưới PHU.
 - **User thích từ có sắc thái "ngập / chìm" hơn "lún"**: `lún vào chi tiết vụn` →
   `chìm ngập trong chi tiết vụn vặt`, và dùng `vụn vặt` thay vì `vụn`. 1 lần.
 - User viết hoa chữ đầu ở vài bản (`Hóa đơn`, `Băng thông`, `Gắn công cụ đo / Theo
@@ -169,3 +171,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-28 | hotspot | điểm nóng · chỗ ngốn gần hết thời gian chạy, hoặc chỗ hứng gần hết request — profiler chỉ vào đâu thì sửa đúng đó | Điểm nóng, chỗ chiếm tài nguyên nhiều | nhắn thẳng trong chat — giữ từ chuẩn `Điểm nóng` nhưng thấy **một mình nó hụt nghĩa** (dễ lẫn điểm nóng du lịch/Wi-Fi), ghép thêm vế **chức năng** `chỗ chiếm tài nguyên nhiều`; nối bằng dấu phẩy như `wire up`, `give or take`. User gõ "Điểm nóng , chỗ…" — bỏ khoảng trắng trước dấu phẩy; giữ nguyên dòng PHU |
 | 2026-10-29 | nail down | chốt cứng cho hết lửng lơ · hoặc: truy cho ra đúng nguyên nhân | Truy ra đúng nguyên nhân | nhắn thẳng trong chat — **đảo hai nghĩa**: lấy nghĩa ở `PHU` (debug, tìm nguyên nhân) lên dòng đậm, bỏ chữ `cho` và `hoặc:`; nghĩa "chốt cứng" (chốt scope với khách) chuyển xuống `PHU` để không mất. Không có `\|` nên agent tự đảo PHU — báo user |
 | 2026-10-30 | transitive dependency | phụ thuộc bắc cầu / package cài kèm chứ mình không khai · mình chỉ khai một package, nó kéo theo cả chùm package khác… | dependency được cài kèm | bỏ vế Hán-Việt **dịch sát gốc chữ** `phụ thuộc bắc cầu` (transitive = bắc cầu) dù đó là tên sách giáo trình; **giữ `dependency` bằng tiếng Anh** (dev nói vậy hằng ngày), thay `package` bằng `dependency`; bỏ vế phủ định `chứ mình không khai` và bỏ kiểu hai vế — một cụm duy nhất. Lấy đúng chữ `cài kèm` agent đã dùng trong câu dịch ví dụ; giữ nguyên dòng PHU — lần 2 giữ thuật ngữ dev tiếng Anh sau `Parse` (ingest) → nâng thành quy luật 7 |
+| 2026-10-30 | call out | nói thẳng ra chỗ đó · chỉ đích danh một điểm cho mọi người cùng thấy — khen hay nhắc lỗi đều dùng được | chỉ đích danh | nhắn thẳng trong chat — lấy đúng **cụm đầu dòng PHU** của agent lên dòng đậm (như `sweet tooth`, `nail down`); bỏ cụm khẩu ngữ 5 chữ `nói thẳng ra chỗ đó`, chọn **thành ngữ Việt có sẵn** 3 chữ chỉ đúng hành động (luật 1); giữ nguyên dòng PHU |

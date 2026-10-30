@@ -191,7 +191,7 @@
 | 170 | splurge | splurges, splurged, splurging, a splurge, splurge-worthy | verb (cũng là noun) | Life | Sự phung phí | 2026-09-24 | lesson |
 | 171 | flush | flushes, flushed, flushing, a flush, a cache flush, auto-flush, flush to disk | verb (cũng là noun) | IT | xả hết chỗ đang giữ tạm | 2026-09-25 | lesson |
 | 172 | idle | idles, idled, idling, idly, idleness, idle timeout, sit idle | adjective (cũng là verb) | IT | nằm không, chẳng làm gì | 2026-09-25 | lesson |
-| 173 | call out | calls out, called out, calling out, call sth out, a call-out | phrasal verb | Business | nói thẳng ra chỗ đó | 2026-09-25 | lesson |
+| 173 | call out | calls out, called out, calling out, call sth out, a call-out | phrasal verb | Business | chỉ đích danh | 2026-09-25 | lesson |
 | 174 | de-risk | de-risks, de-risked, de-risking, derisk, a de-risking step, risk, risky, at risk | verb | Business | gỡ bớt rủi ro trước | 2026-09-25 | lesson |
 | 175 | chill out | chills out, chilled out, chilling out, chilled-out, chill, chill vibes | phrasal verb | Life | thư giãn, hạ hoả | 2026-09-25 | lesson |
 | 176 | hydrate | hydrates, hydrated, hydrating, hydration, rehydrate, dehydrate, hydration mismatch | verb | IT | làm HTML tĩnh sống lại | 2026-09-26 | lesson |
