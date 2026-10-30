@@ -209,7 +209,7 @@
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">phụ thuộc bắc cầu / package cài kèm chứ mình không khai<span class="alt">mình chỉ khai một package, nó kéo theo cả chùm package khác — lỗi nằm ở chùm đó mà package.json không hề ghi tên</span></p>
+  <p class="vi-quick hide-me">dependency được cài kèm<span class="alt">mình chỉ khai một package, nó kéo theo cả chùm package khác — lỗi nằm ở chùm đó mà package.json không hề ghi tên</span></p>
 
   <p class="def"><span class="tag">EN</span>A package that ends up in your project only because another package you installed depends on it.
     <span class="def-vi hide-me">→ Một package nằm trong project chỉ vì một package khác mà mình cài vào lại phụ thuộc vào nó.</span>
@@ -220,11 +220,11 @@
   <ul class="examples">
     <li>
       <span class="en">The crash came from a <b>transitive dependency</b> nobody on the team had heard of, and it took us most of Tuesday to <span class="rev">narrow down</span>.</span>
-      <span class="vi hide-me">→ Cái crash đó đến từ một package cài kèm mà cả team chưa nghe tên bao giờ, bọn mình mất gần hết ngày thứ Ba mới lọc ra được.</span>
+      <span class="vi hide-me">→ Cái crash đó đến từ một dependency được cài kèm mà cả team chưa nghe tên bao giờ, bọn mình mất gần hết ngày thứ Ba mới lọc ra được.</span>
     </li>
     <li>
       <span class="en">Before the client signs, their security team runs <span class="rev">due diligence</span> on every <b>transitive dependency</b> in the lockfile, not just the ones we listed.</span>
-      <span class="vi hide-me">→ (email khách) Trước khi ký, bên bảo mật của anh/chị kiểm tra kỹ từng package cài kèm trong lockfile ạ, không chỉ mấy cái bên em khai ra.</span>
+      <span class="vi hide-me">→ (email khách) Trước khi ký, bên bảo mật của anh/chị kiểm tra kỹ từng dependency được cài kèm trong lockfile ạ, không chỉ mấy cái bên em khai ra.</span>
     </li>
   </ul>
 
@@ -389,7 +389,7 @@
   <div class="passage">I've posted the <b>minutes</b> from this morning's client call in the channel, so please read them before you reply to anything. Two things came back to us: they want next month's fee <b>prorated</b> because they only went live on the 14th, and they want an answer on the nightly crash. The crash turned out to be a <b>transitive dependency</b> nobody had installed on purpose, so we pinned it and added a <b>watchdog</b> that restarts the worker the moment it goes quiet. I'm <span class="rev">worn out</span> after all that, so tonight is <b>comfort food</b> and nothing else.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Biên bản buổi gọi với khách sáng nay mình đã đăng trong channel, ai định trả lời gì thì đọc qua trước đã nhé. Có hai việc dội về bọn mình: khách muốn phí tháng sau tính theo tỷ lệ vì họ mới lên production ngày 14, và họ muốn có câu trả lời cho vụ crash đêm. Crash đó hoá ra đến từ một package cài kèm mà chẳng ai cố ý cài, nên bọn mình pin nó lại rồi thêm một bộ giám sát, worker im tiếng là nó khởi động lại ngay. Mình thì rã rời sau nguyên ngày đó, nên tối nay chỉ ăn món quen rồi nghỉ, không làm gì nữa.</p>
+    <p class="hide-me">Biên bản buổi gọi với khách sáng nay mình đã đăng trong channel, ai định trả lời gì thì đọc qua trước đã nhé. Có hai việc dội về bọn mình: khách muốn phí tháng sau tính theo tỷ lệ vì họ mới lên production ngày 14, và họ muốn có câu trả lời cho vụ crash đêm. Crash đó hoá ra đến từ một dependency được cài kèm mà chẳng ai cố ý cài, nên bọn mình pin nó lại rồi thêm một bộ giám sát, worker im tiếng là nó khởi động lại ngay. Mình thì rã rời sau nguyên ngày đó, nên tối nay chỉ ăn món quen rồi nghỉ, không làm gì nữa.</p>
   </details>
 </section>
 

@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-29 · **Số bản dịch đã ghi:** 23 (20 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-10-30 · **Số bản dịch đã ghi:** 24 (21 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -102,6 +102,18 @@ Liên quan: [[dich-tu-nhien]] · [[R7]]
    thì **đừng** dịch sát gốc chữ thành Hán-Việt (`đo xa`) rồi ghép thêm vế thứ hai theo
    luật 3 — user bỏ cả cụm hai vế, giữ một cụm chức năng.
 
+7. **Thuật ngữ dev mà dev Việt quen nói bằng tiếng Anh thì để nguyên tiếng Anh ngay
+   trong nghĩa gọn — kể cả khi sách có tên Hán-Việt.** R7 không chỉ áp cho câu ví dụ:
+   user tự gõ chữ tiếng Anh vào dòng đậm, rồi chỉ thêm phần tiếng Việt nói nó làm gì.
+   - `nuốt dữ liệu từ ngoài vào` → **`Parse dữ liệu rồi lưu lại`** (ingest)
+   - `phụ thuộc bắc cầu / package cài kèm chứ mình không khai` → **`dependency được cài kèm`**
+     (transitive dependency — bỏ tên giáo trình `phụ thuộc bắc cầu`)
+   _(2 lần, 2026-10-09 → 2026-10-30.)_ ⚠️ Giới hạn luật 2: tên Hán-Việt kiểu sách chỉ
+   dùng khi dev **không** quen nói tiếng Anh (`Kiểm tra tính toàn vẹn`, `phạm vi ảnh hưởng`).
+   Thuật ngữ ghép (`transitive dependency`): giữ danh từ dev quen (`dependency`), phần
+   tính từ khó (`transitive`) thì nói bằng chức năng (`được cài kèm`) chứ đừng dịch gốc
+   chữ (`bắc cầu`) — cùng hướng ⚠️ của luật 6 (`đo xa`).
+
 **Cách áp dụng khi viết nghĩa gọn:** hỏi trước "người Việt, hay sách tiếng Việt, gọi
 cái này là gì?". Có câu trả lời → ghi đúng từ đó. Một chữ chưa đủ → thêm vế thứ hai
 sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắn.
@@ -156,3 +168,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-26 | telemetry | dữ liệu đo xa / số liệu máy tự gửi về · log, metric, trace, số lần crash… chương trình tự bắn về để bên mình theo dõi, không ai ngồi thu tay | tự thu thập dữ liệu gửi về | bỏ vế dịch **sát gốc chữ** `đo xa` (tele + metry) và bỏ luôn kiểu **hai vế** `/`; danh từ mà user nói thành **hành động hai bước** (thu thập → gửi về), giữ chữ `tự` của vế cũ; giữ nguyên dòng PHU — lần thứ 3 sau `drain`, `ingest` → nâng thành quy luật 6 |
 | 2026-10-28 | hotspot | điểm nóng · chỗ ngốn gần hết thời gian chạy, hoặc chỗ hứng gần hết request — profiler chỉ vào đâu thì sửa đúng đó | Điểm nóng, chỗ chiếm tài nguyên nhiều | nhắn thẳng trong chat — giữ từ chuẩn `Điểm nóng` nhưng thấy **một mình nó hụt nghĩa** (dễ lẫn điểm nóng du lịch/Wi-Fi), ghép thêm vế **chức năng** `chỗ chiếm tài nguyên nhiều`; nối bằng dấu phẩy như `wire up`, `give or take`. User gõ "Điểm nóng , chỗ…" — bỏ khoảng trắng trước dấu phẩy; giữ nguyên dòng PHU |
 | 2026-10-29 | nail down | chốt cứng cho hết lửng lơ · hoặc: truy cho ra đúng nguyên nhân | Truy ra đúng nguyên nhân | nhắn thẳng trong chat — **đảo hai nghĩa**: lấy nghĩa ở `PHU` (debug, tìm nguyên nhân) lên dòng đậm, bỏ chữ `cho` và `hoặc:`; nghĩa "chốt cứng" (chốt scope với khách) chuyển xuống `PHU` để không mất. Không có `\|` nên agent tự đảo PHU — báo user |
+| 2026-10-30 | transitive dependency | phụ thuộc bắc cầu / package cài kèm chứ mình không khai · mình chỉ khai một package, nó kéo theo cả chùm package khác… | dependency được cài kèm | bỏ vế Hán-Việt **dịch sát gốc chữ** `phụ thuộc bắc cầu` (transitive = bắc cầu) dù đó là tên sách giáo trình; **giữ `dependency` bằng tiếng Anh** (dev nói vậy hằng ngày), thay `package` bằng `dependency`; bỏ vế phủ định `chứ mình không khai` và bỏ kiểu hai vế — một cụm duy nhất. Lấy đúng chữ `cài kèm` agent đã dùng trong câu dịch ví dụ; giữ nguyên dòng PHU — lần 2 giữ thuật ngữ dev tiếng Anh sau `Parse` (ingest) → nâng thành quy luật 7 |
