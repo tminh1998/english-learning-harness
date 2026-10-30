@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 300 từ đã học** · IT 120 · Business 120 · Life 60 · ad-hoc 0
+**Tổng: 305 từ đã học** · IT 122 · Business 122 · Life 61 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-29
+**Cập nhật:** 2026-10-30
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -319,6 +319,11 @@
 | 298 | turnkey | turn-key, turn key, turnkey solution, turnkey project, turnkey basis, key | adjective (cũng dùng như noun) | Business | chìa khóa trao tay / giao là dùng được ngay | 2026-10-29 | lesson |
 | 299 | headcount | head count, head-count, headcounts, headcount freeze, headcount budget, FTE | noun (đếm được, thường số ít) | Business | số lượng nhân sự / suất tuyển được duyệt | 2026-10-29 | lesson |
 | 300 | creature of habit | creatures of habit, habit, habits, habitual, habitually, out of habit, force of habit, routine | noun phrase (đếm được) | Life | người sống theo thói quen | 2026-10-29 | lesson |
+| 301 | transitive dependency | transitive dependencies, transitively, transitive closure, dependency, dependencies, dependent, depend on, dependency tree, direct dependency | noun (đếm được) | IT | phụ thuộc bắc cầu / package cài kèm chứ mình không khai | 2026-10-30 | lesson |
+| 302 | watchdog | watchdogs, watchdog timer, watch, watched, watching, watcher, watchful, keep watch | noun (đếm được; cũng là verb) | IT | bộ giám sát tự khởi động lại khi treo | 2026-10-30 | lesson |
+| 303 | minutes | minute, meeting minutes, minutes of meeting, MoM, minute-taker, to minute sth, minuted | noun (luôn số nhiều) | Business | biên bản họp | 2026-10-30 | lesson |
+| 304 | prorate | prorates, prorated, prorating, proration, pro rata, pro-rata basis | verb | Business | tính tiền theo tỷ lệ dùng thật | 2026-10-30 | lesson |
+| 305 | comfort food | comfort foods, comfort, comforting, comfortable, comfortably, discomfort, comfort eating | noun (hầu như không đếm được) | Life | món quen, ăn vào thấy dễ chịu | 2026-10-30 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
