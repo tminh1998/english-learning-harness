@@ -1,5 +1,5 @@
 ---
-description: Bài học mới hôm nay — 5 từ (2 IT + 2 giao tiếp + 1 đời sống), sinh trang HTML và mở trong trình duyệt
+description: Soạn sẵn bài của ngày học kế tiếp (ngày mai) — 5 từ (2 IT + 2 giao tiếp + 1 đời sống), sinh trang HTML và mở trong trình duyệt
 argument-hint: "[chủ đề tuỳ chọn, vd: docker, email khách hàng]"
 ---
 
@@ -8,6 +8,12 @@ Chạy **Flow A — Buổi học hằng ngày** trong `AGENTS.md`.
 Chủ đề ưu tiên (có thể rỗng): $ARGUMENTS
 Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life và vẫn phải qua hard gate.
 
+⭐ **Bài soạn trước một ngày** (chốt 2026-11-02): lệnh này sinh bài của **ngày `D` = `ngayhoc`**
+(ngày mai giờ VN; mai là Chủ nhật thì Thứ Hai), để user xem trước, tới ngày đó chỉ việc
+học. Tên file, tuần ISO, tiêu đề trang, `Ngày học`, `next_review`, nhật ký buổi học và
+commit **đều theo `D`**, không theo ngày chạy lệnh. Chữ "hôm nay / hôm qua" trong file
+này và trong trang bài học tính từ ngày `D`.
+
 ## Thứ tự bắt buộc
 
 0. **Về nhánh chính + kéo bài từ máy khác về** (R6) — user có thể đã học từ điện
@@ -15,9 +21,10 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    trần: trên VM cloud nó chạy giờ UTC, học buổi tối giờ VN sẽ ra sai ngày.
 
    ```bash
-   . tools/openit.sh          # ép TZ + có hnay/tuan/openit/keove/daylen
+   . tools/openit.sh          # ép TZ + có hnay/ngayhoc/tuan/openit/keove/daylen
    keove
-   hnay "%Y-%m-%d %A %G-W%V"
+   hnay "%Y-%m-%d %A %G-W%V"  # hôm nay
+   D=$(ngayhoc); echo "$D $(tuan "$D")"   # ⭐ ngày + tuần ISO của bài cần soạn
    ```
 
    `keove` in ra `DA-KEO-VE` là ổn. In `KHONG-KEO-DUOC` / `KHONG-CHUYEN-DUOC-NHANH`
@@ -27,13 +34,13 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 1b. ⛔ **GATE R5 — MỘT NGÀY MỘT BÀI.** Kiểm tra ngay sau khi có ngày:
 
    ```bash
-   find "wiki/lessons/$(tuan)" -maxdepth 1 -name "$(hnay)*.md" 2>/dev/null
+   D=$(ngayhoc); find "wiki/lessons/$(tuan "$D")" -maxdepth 1 -name "$D*.md" 2>/dev/null
    ```
 
    Có kết quả → **DỪNG. KHÔNG sinh bài mới, không đụng file state nào.**
-   Thay vào đó: mở lại trang HTML hôm nay bằng `openit`, tóm tắt các từ đã học,
-   rồi hỏi user muốn (a) ôn lại bài hôm nay, (b) `/on-tap` các từ tới hạn, hay
-   (c) học thêm buổi #2. Rồi kết thúc lượt, chờ user trả lời.
+   Thay vào đó: mở lại trang HTML của ngày `D` bằng `openit`, tóm tắt 5 từ trong bài,
+   rồi hỏi user muốn (a) xem lại bài đó, (b) `/on-tap` các từ tới hạn, hay
+   (c) soạn thêm buổi #2 cho ngày đó. Rồi kết thúc lượt, chờ user trả lời.
 
    Chỉ khi user **nói rõ ở lượt sau** là muốn buổi #2 mới đi tiếp từ bước 2,
    ghi ra `<YYYY-MM-DD>-2.md` + `.html`. Rỗng → đi tiếp bình thường.
@@ -110,7 +117,7 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 7. **Ghi bản HTML** theo `wiki/_templates/lesson.html` →
    `wiki/lessons/<YYYY-Www>/<YYYY-MM-DD>.html` — xem luật render bên dưới.
 8. Cập nhật đủ **4 file state** (R3): lesson → `VOCAB_INDEX.md` (+5 dòng) →
-   `REVIEW_QUEUE.md` (+5 dòng, next_review = hôm nay +1) → `PROGRESS.md` (streak,
+   `REVIEW_QUEUE.md` (+5 dòng, next_review = `D` +1) → `PROGRESS.md` (streak,
    tổng từ, nhật ký buổi học).
 9. **Dựng lại trang mục lục + lưu lên GitHub** (R6 — chưa push là chưa có).
    ⛔ Trước đó **soát ôn nhanh** — 25 câu phải là nghĩa chép từ bài đã học (luật cứng,
@@ -119,7 +126,7 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
    ```bash
    sh tools/soat-nghia.sh wiki/lessons/<tuần>/<ngày>.html wiki/lessons/<tuần>/<ngày>.md
    sh tools/build-index.sh
-   daylen "hoc: $(hnay) — <5 từ, cách nhau bởi dấu phẩy>"
+   daylen "hoc: $(ngayhoc) — <5 từ, cách nhau bởi dấu phẩy>"
    ```
 
    ⛔ **Không tự mở branch, không tạo pull request.** `daylen` push thẳng vào nhánh
@@ -193,7 +200,7 @@ Nếu có chủ đề, vẫn giữ nguyên tỷ lệ 2 IT + 2 business + 1 life 
 
 ## Nhắc lại luật R5
 
-Gõ `/hoc` lần thứ hai trong ngày **không** phải là tín hiệu "muốn học thêm" — đừng
+Gõ `/hoc` khi bài ngày `D` đã có **không** phải là tín hiệu "muốn học thêm" — đừng
 suy diễn như vậy. Người học hay gõ lại chỉ để mở bài ra đọc. Tự sinh thêm bài sẽ
 thổi phồng streak, tổng số từ và lịch ôn trong 3 file state — hỏng dữ liệu tiến độ,
 sửa lại rất mất công.

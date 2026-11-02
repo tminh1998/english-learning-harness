@@ -27,7 +27,7 @@ ENGLISH/                          ← {harness}
 ├── .claude/commands/             ← 8 slash command (xem bảng dưới)
 ├── tools/
 │   ├── openit.sh                 ← ⭐ chỗ DUY NHẤT biết Mac vs VM và biết git
-│   │                               cfg · hnay · tuan · openit · keove · daylen
+│   │                               cfg · hnay · ngayhoc · tuan · openit · keove · daylen
 │   ├── nghia.sh                  ← ⭐ trích nghĩa bài cũ: .vi-quick, ví dụ #1 + câu dịch, def-vi (R9 + bảng ôn tuần)
 │   ├── boc.sh                    ← ⭐ bốc 20 từ ôn nhanh, lâu chưa gặp nhất ra trước (R9)
 │   ├── soat-nghia.sh             ← ⛔ soát ôn nhanh + bảng ôn tuần có chép đúng nghĩa bài gốc không
@@ -42,7 +42,7 @@ ENGLISH/                          ← {harness}
     ├── assets/lesson.css + .js   ← giao diện DÙNG CHUNG cho mọi trang bài học
     ├── lessons/YYYY-Www/YYYY-MM-DD.md  + .html   ← bản đọc nhanh + bản trình bày
     ├── quiz/YYYY-Www.md  +  YYYY-Www-key.md     ← đề và đáp án TÁCH FILE (R2)
-    ├── recap/YYYY-Www.md + .html ← bảng ôn tuần (Chủ nhật, agent soạn)
+    ├── recap/YYYY-Www.md + .html ← bảng ôn tuần (agent soạn sẵn Thứ Bảy, đọc Chủ nhật)
     ├── recap/YYYY-MM · -Qn · -Hn · YYYY .html ← bảng ôn tháng/quý/nửa năm/năm — SINH MÁY
     ├── memory/MEMORY.md          ← rule đã học về cách học của user
     └── _templates/               ← khuôn lesson.md / lesson.html / quiz / memory
@@ -52,8 +52,8 @@ ENGLISH/                          ← {harness}
 
 | Lệnh | Dùng khi | Flow |
 |---|---|---|
-| `/hoc` | Học 5 từ mới hôm nay — sinh `.md` + `.html` rồi mở trình duyệt | Flow A (AGENTS.md) |
-| `/open` | Mở lại trang bài học đã có — **không** sinh gì mới | `find` + `open` |
+| `/hoc` | Soạn sẵn bài ngày mai, 5 từ mới — sinh `.md` + `.html` rồi mở trình duyệt | Flow A (AGENTS.md) |
+| `/open` | Mở lại trang bài học đã có (`/open mai` = bài soạn sẵn) — **không** sinh gì mới | `find` + `open` |
 | `/kiem-tra` | Cuối tuần, kiểm tra từ đã học trong tuần | Flow B |
 | `/on-tap` | Ôn nhanh các từ tới hạn (spaced repetition) | đọc REVIEW_QUEUE |
 | `/on-tap-tuan` | Bảng ôn tuần — trang ĐỂ ĐỌC, nghĩa Việt hiện sẵn, **chép từ bài đã học** | Flow D |
@@ -61,8 +61,14 @@ ENGLISH/                          ← {harness}
 | `/dich` | Tự dịch lại nghĩa một từ bằng lời mình — hỏi từng từ, áp vào bài hôm nay + về sau | Flow E |
 | `/tien-do` | Xem đã học bao nhiêu, chỗ nào yếu | đọc PROGRESS + quiz cũ |
 
-`/hoc` không tham số = bài hôm nay. `/hoc <chủ đề>` = ưu tiên chủ đề đó nhưng vẫn
-giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
+`/hoc` không tham số = soạn bài của ngày `ngayhoc`. `/hoc <chủ đề>` = ưu tiên chủ đề đó
+nhưng vẫn giữ nguyên tỷ lệ 2/2/1 và vẫn phải qua hard gate chống trùng.
+
+⭐ **Bài soạn trước một ngày** (user chốt 2026-11-02, bài đầu tiên: 2026-11-03). `/hoc`
+không sinh bài hôm nay nữa mà sinh bài của **`D=$(ngayhoc)`**: ngày mai giờ VN, mai là
+Chủ nhật thì Thứ Hai. Hôm nay user xem trước và sửa nghĩa, tới ngày `D` chỉ việc học.
+Tên file, tuần ISO, `Ngày học`, `next_review` (= `D` + 1), nhật ký và commit đều theo
+`D`. `sh tools/boc.sh` không tham số tự bốc cho `D`.
 
 ⛔ **Harness này KHÔNG dạy ngữ pháp** (bỏ từ 2026-08-26). Không sinh khối "Ngữ pháp
 hôm nay", không khối "Tự viết", không nhãn `.pattern-tag`, không thư mục
@@ -98,16 +104,18 @@ chữ, không rút gọn. Ghi xong phải `sh tools/soat-nghia.sh <file>` in `KH
 **nguyên văn** từ bài đã học trong tuần qua `sh tools/nghia.sh` (`NGHIA` · `PHU` · `VD` ·
 `DICH` · `DNVI`). Chỉ cột "Vì sao" (chỗ dễ sai) và phần tự kiểm tra là agent tự viết.
 
-`/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa học thì mở bài gần
-nhất và **nói rõ là bài cũ**. `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều
-buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
+`/open` chỉ đọc, không ghi: mở `<hôm nay>.html`; hôm nay chưa có bài thì mở bài gần
+nhất (không tính bài soạn sẵn cho ngày chưa tới) và **nói rõ là bài cũ**. `/open mai`
+mở bài soạn sẵn, `/open 2026-08-12` để mở đúng một ngày. Ngày có nhiều buổi → mở buổi
+mới nhất, liệt kê các buổi còn lại.
 
 ## Tám luật dễ vi phạm nhất — kiểm lại trước khi trả lời
 
-1. **Ngày tháng**: `. tools/openit.sh` rồi `hnay "%Y-%m-%d %A %G-W%V"`. Không suy
-   đoán từ context, và **không gọi `date` trần** — xem luật 5.
-2. **Một ngày một bài (R5)**: `/hoc` mà hôm nay đã có file bài học → **DỪNG**, mở
-   lại bài cũ + hỏi user. Không tự sinh buổi #2. Gõ lại `/hoc` **không** có nghĩa
+1. **Ngày tháng**: `. tools/openit.sh` rồi `hnay "%Y-%m-%d %A %G-W%V"`; ngày của bài
+   cần soạn là `ngayhoc`. Không suy đoán từ context, không tự cộng ngày, và **không
+   gọi `date` trần** — xem luật 5.
+2. **Một ngày một bài (R5)**: `/hoc` mà ngày `ngayhoc` đã có file bài học → **DỪNG**,
+   mở lại bài đó + hỏi user. Không tự sinh buổi #2. Gõ lại `/hoc` **không** có nghĩa
    là muốn học thêm.
 3. **Chống trùng (R1)**: grep `wiki/VOCAB_INDEX.md` cho **từng** ứng viên **trước
    khi** soạn bài. Trùng cả word family cũng là trùng.
@@ -179,7 +187,7 @@ buổi → mở buổi mới nhất, liệt kê các buổi còn lại.
 [ ] đọc to lại mọi câu tiếng Việt          R7 — máy móc thì viết lại
 [ ] MỌI câu ví dụ có ≥1 từ cũ, 2 câu khác nhau  R8 — mẩu đọc cũng vậy, đánh dấu .rev
 [ ] wiki/VOCAB_INDEX.md                    +5 dòng, đúng cột, sắp theo ngày
-[ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = hôm nay +1
+[ ] wiki/REVIEW_QUEUE.md                   +5 dòng, next_review = ngày của bài +1
 [ ] wiki/PROGRESS.md                       streak +1, tổng từ +5
 [ ] sh tools/build-index.sh                mục lục khớp lại với bài thật
 [ ] daylen "hoc: ..."                      phải in DA-PUSH; khác đi = BÁO USER
@@ -222,7 +230,7 @@ hình** — khác con Mac ở ba chỗ, và cả ba đều đủ sức làm hỏ
 
 Nên: mọi command đều mở đầu bằng `. tools/openit.sh` + `keove`, và kết thúc bằng
 `daylen "..."`. Đừng viết `date`, `open`, hay `git` trực tiếp vào command mới —
-sáu hàm trong `openit.sh` là giao diện duy nhất tới môi trường.
+bảy hàm trong `openit.sh` là giao diện duy nhất tới môi trường.
 
 ### Hai routine đang chạy tự động
 
@@ -231,8 +239,11 @@ trong repo — sửa luật ở đây không tự đổi prompt của routine, p
 
 | Cron (UTC) | Giờ VN | Chạy | Ghi chú |
 |---|---|---|---|
-| `0 0 * * 1-6` | 7h T2–T7 | `/hoc` | Chủ nhật **không** học từ mới |
-| `0 0 * * 0` | 7h Chủ nhật | `/on-tap-tuan` | gom cả tuần thành bảng ôn |
+| `0 0 * * 0-5` | 7h CN–T6 | `/hoc` | soạn bài **ngày hôm sau** (T2–T7); Chủ nhật **không** học từ mới |
+| `0 0 * * 6` | 7h Thứ Bảy | `/on-tap-tuan` | gom cả tuần thành bảng ôn, để đọc Chủ nhật |
+
+Mỗi sáng đúng một routine chạy, nên hai routine không bao giờ cùng push `index.html`.
+Bảng ôn tuần chạy Thứ Bảy vẫn đủ từ: bài Thứ Bảy đã được soạn từ sáng Thứ Sáu.
 
 Cả hai chạy khi **không có ai trả lời**, nên prompt của chúng dặn thêm: gặp gate R5
 thì dừng im lặng (đừng hỏi), phần "ôn nhanh đầu giờ" viết thẳng vào file thay vì hỏi
@@ -253,6 +264,10 @@ lệnh `awk rand()` cũ. Bài đầu tiên chạy luật mới: **2026-10-06**.
 ✅ **2026-10-27 — prompt CẢ HAI routine ĐÃ sửa** cho luật cứng "chép nghĩa bài gốc": `/hoc` bỏ
 chữ "câu gợi nhớ", câu hỏi ôn nhanh = NGHIA + PHU, đáp án = VD, và phải `soat-nghia.sh` ra
 `KHOP-HET` trước `build-index.sh`; `/on-tap-tuan` cũng thêm bước soát. Bài đầu tiên: **2026-10-28**.
+
+✅ **2026-11-02 — prompt + lịch CẢ HAI routine ĐÃ sửa** cho luật "soạn trước một ngày": `/hoc`
+chạy `0 0 * * 0-5` và sinh bài của `ngayhoc`; `/on-tap-tuan` chạy `0 0 * * 6`. Lần đầu theo
+lịch mới: `/hoc` sáng **2026-11-03** (sinh bài 04/11; bài 03/11 soạn tay ngày 02/11).
 
 ⚠️ Prompt routine **không nằm trong repo** — cứ đổi luật ở đây là phải sửa tay bên kia,
 nếu không bài do routine 7h sáng sinh ra sẽ theo luật cũ.
@@ -289,6 +304,7 @@ macOS lẫn Linux, không phụ thuộc `bash`/`node`/`python`. Sửa chúng th�
 sh tools/build-index.sh                                    # phải in DA-DUNG-RECAP rồi DA-DUNG-INDEX
 TZ=Pacific/Midway sh -c '. ./tools/openit.sh; hnay'        # phải ra ngày giờ VN
 sh tools/nghia.sh "purge"                                  # phải in TU / NGHIA / PHU / VD / DICH / DNVI
+sh -c '. ./tools/openit.sh; ngayhoc'                       # phải ra ngày mai giờ VN (Thứ Bảy thì ra Thứ Hai)
 sh tools/boc.sh -v                                         # 20 dòng, ngày gặp cuối tăng dần
 sh tools/soat-nghia.sh                                     # phải in KHOP-HET (mọi bài từ 04/09 + bảng ôn tuần)
 awk -F'|' '/^\| [0-9]+ \|/{print $3}' wiki/VOCAB_INDEX.md \

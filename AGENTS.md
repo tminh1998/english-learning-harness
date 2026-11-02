@@ -27,6 +27,7 @@ tuyệt đối.
 1. . tools/openit.sh                         -> cfg/hnay/tuan/openit/keove/daylen
 2. keove                                     -> VỀ NHÁNH CHÍNH + KÉO BÀI TỪ MÁY KHÁC (R6)
 3. hnay "%Y-%m-%d %A %G-W%V"                 -> ngày + tuần ISO thật, KHÔNG đoán
+   ngayhoc                                   -> ngày của bài cần soạn (Flow A, xem R5)
 4. Đọc .learning-config.yml                  -> learner, daily.mix, level, luật
 5. Đọc {memory}/MEMORY.md                    -> rule đã học về cách học của user
 6. Đọc {progress}                            -> streak, buổi gần nhất, level hiện tại
@@ -122,16 +123,22 @@ suất cao trong ngữ cảnh dev/khách hàng**, và ưu tiên dạy **collocat
 
 ### R5 — Một ngày một bài, không tự sinh thêm
 
-Hôm nay đã có file `{lessons}/<tuần>/<hôm nay>*.md` → **DỪNG, không sinh bài mới.**
-Kể cả khi user gõ lại `/hoc`. Kể cả khi user đưa kèm chủ đề. Kể cả khi bài hôm nay
+⭐ **Bài soạn trước một ngày** (chốt 2026-11-02, user yêu cầu): `/hoc` sinh bài của ngày
+`D = ngayhoc` — ngày mai giờ VN; mai là Chủ nhật thì Thứ Hai. Hôm nay user xem trước,
+sửa nghĩa nếu cần, tới ngày `D` chỉ việc học. Tên file, tuần ISO, `Ngày học`,
+`next_review` (= `D` + 1), nhật ký buổi học và commit đều theo `D`, không theo ngày
+chạy lệnh. Trong các luật, "bài hôm nay" của Flow A nghĩa là bài ngày `D`.
+
+Ngày `D` đã có file `{lessons}/<tuần của D>/<D>*.md` → **DỪNG, không sinh bài mới.**
+Kể cả khi user gõ lại `/hoc`. Kể cả khi user đưa kèm chủ đề. Kể cả khi bài đó
 mới tạo cách đây vài phút.
 
-Khi gặp trường hợp đó, agent chỉ được làm 3 việc: **mở lại** trang bài hôm nay,
-**tóm tắt** 5 từ đã học, và **hỏi** user muốn gì tiếp. Ba lựa chọn để user tự chọn:
-ôn lại bài hôm nay · ôn các từ tới hạn (`/on-tap`) · học thêm buổi #2.
+Khi gặp trường hợp đó, agent chỉ được làm 3 việc: **mở lại** trang bài ngày `D`,
+**tóm tắt** 5 từ trong bài, và **hỏi** user muốn gì tiếp. Ba lựa chọn để user tự chọn:
+xem lại bài đó · ôn các từ tới hạn (`/on-tap`) · soạn thêm buổi #2 cho ngày đó.
 
 Chỉ được sinh buổi #2 khi user **nói rõ ở lượt sau** là muốn học thêm — file
-`<hôm nay>-2.md` + `.html`. Suy diễn "chắc user muốn bài mới nên gõ lại `/hoc`"
+`<D>-2.md` + `.html`. Suy diễn "chắc user muốn bài mới nên gõ lại `/hoc`"
 là **vi phạm luật này**.
 
 Lý do: học nhồi 10 từ một ngày rồi nghỉ 3 ngày kém hơn hẳn 5 từ đều đặn; và mỗi
@@ -397,9 +404,9 @@ nhất" thì vẫn phủ toàn bộ vốn từ nhưng các buổi liền nhau kh
 ### Flow A — Buổi học hằng ngày
 
 ```text
-Phase 0  Auto-discovery (ở trên)
-Phase 0.5 ⛔ GATE R5: ls {lessons}/<tuần>/<hôm nay>*.md
-         Có file -> KHÔNG sinh bài. Mở lại bài cũ, hỏi user, DỪNG tại đây.
+Phase 0  Auto-discovery (ở trên). Ngày của bài: D = ngayhoc (soạn trước một ngày, R5)
+Phase 0.5 ⛔ GATE R5: ls {lessons}/<tuần của D>/<D>*.md
+         Có file -> KHÔNG sinh bài. Mở lại bài đó, hỏi user, DỪNG tại đây.
 Phase 1  Ôn nhanh đầu giờ — 25 từ (R9): 5 từ của buổi LIỀN TRƯỚC + 20 từ BỐC
          NGẪU NHIÊN bằng lệnh trong {vocabIndex}. Rồi `sh tools/nghia.sh` cho cả
          25 từ: câu hỏi = khối nghĩa .vi-quick của bài gốc (NGHIA + PHU, giữ cả
@@ -432,7 +439,7 @@ Phase 6  Từ sai -> reset interval về bậc 1 trong {reviewQueue}
 Phase 7  daylen "kiem-tra: <tuần> — <điểm>"  (R6)
 ```
 
-### Flow D — Bảng ôn tuần (Chủ nhật)
+### Flow D — Bảng ôn tuần (đọc Chủ nhật, routine soạn sẵn 7h sáng Thứ Bảy)
 
 ```text
 Phase 0  Auto-discovery + xác định tuần ISO cần ôn
@@ -490,8 +497,8 @@ gì**. Không có `.md` đi kèm, không có mục "chỗ dễ sai" (cái đó l
 ### Flow E — User tự dịch lại (`/dich`)
 
 ```text
-Phase 0  keove + hnay; tìm bài hôm nay. Có "<từ> => <nghĩa>" trong lệnh -> nhảy Phase 3
-Phase 1  Hỏi TỪ (AskUserQuestion): tối đa 3 từ bài hôm nay + "Xong"; gõ từ bất kỳ vào Other
+Phase 0  keove; tìm bài mới nhất (thường là bài ngày mai đã soạn sẵn). Có "<từ> => <nghĩa>" trong lệnh -> nhảy Phase 3
+Phase 1  Hỏi TỪ (AskUserQuestion): tối đa 3 từ bài mới nhất + "Xong"; gõ từ bất kỳ vào Other
          -> sh tools/nghia.sh "<từ>": NGHIA + PHU hiện tại (LOI = chưa học -> hỏi lại)
 Phase 2  Hỏi NGHĨA của đúng từ đó: "Giữ bản hiện tại" / "Bỏ qua" / tự gõ bản mới
 Phase 3  Áp nghĩa mới: nguồn (.vi-quick bài gốc + cột Nghĩa gọn VOCAB_INDEX -> mọi

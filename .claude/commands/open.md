@@ -1,12 +1,12 @@
 ---
-description: Mở trang HTML bài học hôm nay trong trình duyệt (không sinh bài mới)
-argument-hint: "[ngày YYYY-MM-DD — bỏ trống = hôm nay]"
+description: Mở trang HTML bài học hôm nay trong trình duyệt (không sinh bài mới); /open mai = bài đã soạn sẵn cho ngày mai
+argument-hint: "[mai | ngày YYYY-MM-DD — bỏ trống = hôm nay]"
 ---
 
 Chỉ **mở file có sẵn**. Tuyệt đối không sinh bài mới, không sửa VOCAB_INDEX /
 REVIEW_QUEUE / PROGRESS. Muốn học bài mới thì đó là việc của `/hoc`.
 
-Ngày cần mở (bỏ trống = hôm nay): $ARGUMENTS
+Ngày cần mở (bỏ trống = hôm nay, `mai` = bài soạn sẵn cho ngày học kế tiếp): $ARGUMENTS
 
 Chạy đúng đoạn này (một lần, không đoán ngày trong đầu):
 
@@ -14,14 +14,19 @@ Chạy đúng đoạn này (một lần, không đoán ngày trong đầu):
 . tools/openit.sh   # ép TZ + có hnay/tuan/openit/keove/daylen
 keove               # bài có thể vừa học ở máy khác (R6)
 
-D="${ARGUMENTS:-$(hnay)}"
+case "$ARGUMENTS" in
+  "")  D=$(hnay) ;;
+  mai) D=$(ngayhoc) ;;
+  *)   D="$ARGUMENTS" ;;
+esac
 W=$(tuan "$D")
 F=$(find "wiki/lessons/$W" -maxdepth 1 -name "$D*.html" 2>/dev/null | sort | tail -1)
 if [ -n "$F" ]; then
   openit "$F"
   echo "Các buổi cùng ngày:"; find "wiki/lessons/$W" -maxdepth 1 -name "$D*.html" | sort
 else
-  L=$(find wiki/lessons -name "*.html" 2>/dev/null | sort | tail -1)
+  # Bài gần nhất KHÔNG TÍNH bài soạn sẵn cho ngày chưa tới (mở bằng /open mai).
+  L=$(find wiki/lessons -name "*.html" 2>/dev/null | sort | awk -F/ -v d="$(hnay)" '$NF < d "z"' | tail -1)
   if [ -n "$L" ]; then
     echo "KHONG-CO-BAI-NGAY-$D"; openit "$L"
   else

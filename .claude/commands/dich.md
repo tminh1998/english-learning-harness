@@ -25,10 +25,14 @@ User chọn "Xong" thì dừng.
 ```bash
 . tools/openit.sh
 keove
-D=$(hnay)                                                     # hôm nay, giờ VN
-T=$(find wiki/lessons -name "$D*.html" 2>/dev/null | sort | tail -1)   # bài hôm nay (có thể rỗng)
-echo "HOM-NAY $D · BAI ${T:-chua-co}"
+T=$(find wiki/lessons -name "20*.html" 2>/dev/null | sort | tail -1)   # bài mới nhất
+D=$(basename "$T" .html | cut -c1-10)                                  # ngày của bài đó
+echo "BAI-MOI-NHAT $D · BAI ${T:-chua-co}"
 ```
+
+Bài soạn trước một ngày (2026-11-02), nên bài mới nhất thường là **bài ngày mai** user
+đang xem trước — đó là chỗ user sửa nghĩa nhiều nhất. Dưới đây "bài hôm nay" = `$T`. Từ
+đó có nằm ở bài của ngày đang học thì lệnh `grep -rnF` ở bước 3 tìm ra.
 
 `$ARGUMENTS` có dạng `<từ> => <nghĩa>` (hoặc `<từ> thành <nghĩa>`, `<từ>: <nghĩa>`)
 → vòng đầu **bỏ qua bước 1 và 2**, đi thẳng bước 3 với từ + nghĩa đó. Chỉ có `<từ>` →

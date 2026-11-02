@@ -8,14 +8,14 @@ Mở Claude Code tại thư mục này rồi gõ:
 
 | Lệnh | Làm gì |
 |---|---|
-| `/hoc` | Bài hôm nay — 5 từ mới (2 IT + 2 giao tiếp khách hàng + 1 đời sống), tự mở trang HTML |
+| `/hoc` | Soạn sẵn bài ngày mai — 5 từ mới (2 IT + 2 giao tiếp khách hàng + 1 đời sống), tự mở trang HTML |
 | `/on-tap` | Ôn nhanh các từ tới hạn theo lịch spaced repetition (có chấm điểm) |
 | `/on-tap-tuan` | **Bảng ôn tuần** — mọi từ trong tuần, nghĩa Việt ngay cạnh từ, để đọc lướt |
 | `/tra-tu <từ/câu>` | Gặp từ lạ khi đọc doc, email khách, phim, truyện → tra và lưu lại |
 | `/dich [từ => nghĩa]` | Tự dịch lại nghĩa từng từ bằng lời mình (agent hỏi từ nào, nghĩa gì) → áp vào bài hôm nay + về sau, agent học cách dịch đó |
 | `/kiem-tra` | **Chủ nhật** — kiểm tra toàn bộ từ đã học trong tuần (có chấm điểm) |
 | `/tien-do` | Xem đã học bao nhiêu, đang yếu chỗ nào |
-| `/open` | Mở lại trang HTML bài hôm nay (`/open 2026-08-12` để mở đúng ngày) |
+| `/open` | Mở lại trang HTML bài hôm nay (`/open mai` = bài soạn sẵn, `/open 2026-08-12` để mở đúng ngày) |
 
 Ba lệnh ôn dễ nhầm nhau — khác ở chỗ **nghĩa Việt có hiện sẵn không**:
 
@@ -31,11 +31,12 @@ Không cần gõ gì, không cần bật máy — hai routine chạy trên cloud
 
 | Khi nào | Chạy gì | Kết quả |
 |---|---|---|
-| **7h sáng T2–T7** | `/hoc` | 5 từ mới, đẩy thẳng lên GitHub |
-| **7h sáng Chủ nhật** | `/on-tap-tuan` | bảng ôn cả tuần (Chủ nhật không học từ mới) |
+| **7h sáng CN–T6** | `/hoc` | bài của **ngày hôm sau**, đẩy thẳng lên GitHub |
+| **7h sáng T7** | `/on-tap-tuan` | bảng ôn cả tuần cho Chủ nhật (Chủ nhật không học từ mới) |
 
-Sáng dậy mở [trang đọc](https://tminh1998.github.io/english-learning-harness) là có
-sẵn. Xem/sửa/tắt lịch tại [claude.ai/code/routines](https://claude.ai/code/routines).
+Sáng mở [trang đọc](https://tminh1998.github.io/english-learning-harness) là có sẵn bài
+của ngày mai để xem trước và sửa nghĩa, tới hôm sau chỉ việc học. Xem/sửa/tắt lịch tại
+[claude.ai/code/routines](https://claude.ai/code/routines).
 
 Hai việc **vẫn phải tự gõ** vì cần bạn trả lời: `/on-tap` và `/kiem-tra`. Máy không
 tự chấm điểm cho một người không ngồi đó trả lời được.

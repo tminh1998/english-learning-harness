@@ -4,7 +4,9 @@
 #   sh tools/boc.sh                    # in 20 từ, mỗi dòng một từ
 #   sh tools/boc.sh | sh tools/nghia.sh  # nối thẳng sang lấy nghĩa gốc
 #   sh tools/boc.sh -v                 # kèm ngày "gặp lần cuối" để kiểm tra
-#   sh tools/boc.sh 2026-10-06         # bốc cho một ngày khác hôm nay (thử/soát lại)
+#   sh tools/boc.sh 2026-10-06         # bốc cho một ngày cụ thể (thử/soát lại)
+#
+# Không truyền ngày = bốc cho bài CẦN SOẠN (`ngayhoc` — bài soạn trước một ngày).
 #
 # Vì sao không bốc ngẫu nhiên thuần nữa (chốt 2026-10-05, user yêu cầu): rand()
 # mỗi buổi độc lập nên hôm nay hay trúng lại từ vừa ôn hôm qua, còn có từ cả
@@ -24,7 +26,7 @@ set -e
 cd "$HARNESS"
 
 VERBOSE=0
-NGAY=$(hnay)
+NGAY=$(ngayhoc)
 for a in "$@"; do
   case "$a" in
     -v) VERBOSE=1 ;;

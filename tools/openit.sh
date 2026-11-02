@@ -9,8 +9,8 @@
 # Nhét `date` trần hay `open` trần vào command sẽ hỏng ở một trong hai nơi.
 # Mọi khác biệt môi trường gom hết vào file này.
 #
-# Cung cấp 6 hàm:
-#   cfg <key>   hnay [fmt]   tuan [YYYY-MM-DD]   openit <file>   keove   daylen <msg>
+# Cung cấp 7 hàm:
+#   cfg <key>   hnay [fmt]   ngayhoc   tuan [YYYY-MM-DD]   openit <file>   keove   daylen <msg>
 
 # ── Tìm {harness} = thư mục chứa .learning-config.yml (walk-up từ cwd) ──
 HARNESS=$(
@@ -43,6 +43,15 @@ _la_git() { g rev-parse --git-dir >/dev/null 2>&1; }
 
 # hnay [fmt] — ngày hôm nay theo giờ VN. Mặc định YYYY-MM-DD.
 hnay() { date "+${1:-%Y-%m-%d}"; }
+
+# ngayhoc — ngày của bài CẦN SOẠN: bài luôn được soạn trước một ngày (chốt 2026-11-02)
+# để user xem trước, hôm sau chỉ việc học. = ngày mai giờ VN; mai là Chủ nhật (không
+# học từ mới) thì nhảy sang Thứ Hai. `date -v` là BSD (macOS), `date -d` là GNU (Linux).
+ngayhoc() {
+  n=1
+  [ "$(date +%u)" = 6 ] && n=2
+  date -v+"$n"d +%Y-%m-%d 2>/dev/null || date -d "+$n day" +%Y-%m-%d
+}
 
 # tuan [YYYY-MM-DD] — tuần ISO (YYYY-Www). Bỏ trống = tuần này.
 # `date -j -f` là cú pháp BSD (macOS), `date -d` là GNU (Linux) — thử cả hai.
