@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-02 (buổi #62)
+**Cập nhật:** 2026-11-03 (buổi #63 — soạn sẵn ngày 02/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 310 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 124 · Business 124 · Life 62                                                           |
-| Số buổi học          | 62                                                                                      |
-| Streak hiện tại      | 1 buổi (từ 2026-11-02 — bài Thứ Bảy 31/10 đã xoá nên chuỗi 19/10 → 30/10 (11 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 315 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 126 · Business 126 · Life 63                                                           |
+| Số buổi học          | 63                                                                                      |
+| Streak hiện tại      | 2 buổi (2026-11-02 → 2026-11-03 — bài Thứ Bảy 31/10 đã xoá nên chuỗi 19/10 → 30/10 (11 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-02 (Thứ Hai) — buổi #62 |
+| Buổi gần nhất        | 2026-11-03 (Thứ Ba) — buổi #63 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -80,6 +80,7 @@
 | 2026-10-29 | 2026-W44 | #60 | read replica · chaos engineering · turnkey · headcount · creature of habit |
 | 2026-10-30 | 2026-W44 | #61 | transitive dependency · watchdog · minutes · prorate · comfort food |
 | 2026-11-02 | 2026-W45 | #62 | toil · fleet · sound out · onus · declutter |
+| 2026-11-03 | 2026-W45 | #63 | split-brain · golden path · overrun · redline · housewarming |
 
 ## Kết quả quiz tuần
 
@@ -134,6 +135,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-03 (soạn sẵn ngày 02/11):** vốn từ lên **315 từ**, nợ ôn tập lên **310/315 từ quá hạn**, vẫn toàn bộ ở bậc 1. Từ nay bài được **soạn trước một ngày** (luật R5): buổi #63 là bài đầu tiên theo luật này, nên các mốc ở bảng trên tính theo ngày của bài, không theo ngày soạn. Phần A hỏi lại 5 từ của buổi 02/11, phần B bốc bằng `sh tools/boc.sh`.
 
 ⚠️ **Cập nhật 2026-11-02 (xoá bài):** **Bài Thứ Bảy 31/10 đã xoá hẳn** theo yêu cầu người học: gỡ file bài, gỡ 5 từ write-ahead log · vacuum · earmark · deal-breaker · wind down khỏi `VOCAB_INDEX.md` và `REVIEW_QUEUE.md` (sau này được phép dạy lại), gỡ khỏi bảng ôn tuần `recap/2026-W44` (còn 25 từ, 16 chỗ dễ sai; câu tự kiểm tra 7 + 8 đổi sang minutes + homebody), và sửa lại bài 02/11: lùi thành **buổi #62**, phần A và phần B ôn nhanh làm lại (xem ghi chú dưới), câu ví dụ thứ hai của `sound out` đổi từ cũ `deal-breaker` → `sticking point`, câu ví dụ đầu của `declutter` đổi `wind down` → `unplug`. Thứ Bảy 31/10 là ngày học theo lịch nên **streak đứt**: chuỗi 19/10 → 30/10 dừng ở 11 buổi, chuỗi hiện tại bắt đầu lại từ 02/11. Tuần 2026-W44 khép lại với **25 từ** (26/10 → 30/10).
 

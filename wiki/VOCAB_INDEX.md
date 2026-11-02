@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 310 từ đã học** · IT 124 · Business 124 · Life 62 · ad-hoc 0
+**Tổng: 315 từ đã học** · IT 126 · Business 126 · Life 63 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-02
+**Cập nhật:** 2026-11-03
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -329,6 +329,11 @@
 | 308 | sound out | sounds out, sounded out, sounding out, sound sb out on sth, a sounding board | phrasal verb (tách được) | Business | thăm dò ý | 2026-11-02 | lesson |
 | 309 | onus | the onus is on sb, put the onus on sb, place the onus on, shift the onus, onus of proof | noun (không đếm được) | Business | nghĩa vụ thuộc về bên nào | 2026-11-02 | lesson |
 | 310 | declutter | declutters, decluttered, decluttering, a declutter, clutter, cluttered, uncluttered | verb | Life | dọn bớt đồ đạc cho gọn | 2026-11-02 | lesson |
+| 311 | split-brain | split-brain scenario, split-brain condition, split brain, split-brain resolution | noun (không đếm được; hay đứng trước danh từ khác) | IT | hai node cùng tưởng mình là primary | 2026-11-03 | lesson |
+| 312 | golden path | golden paths, paved road, paved path, golden-path template | noun phrase (đếm được) | IT | quy trình chuẩn dựng sẵn cho dev | 2026-11-03 | lesson |
+| 313 | overrun | overruns, overran, overrunning, cost overrun, budget overrun, schedule overrun | verb (bất quy tắc; cũng là noun) | Business | vượt ngân sách / vượt thời gian | 2026-11-03 | lesson |
+| 314 | redline | redlines, redlined, redlining, a redlined draft, markup | verb (cũng là noun đếm được) | Business | đánh dấu chỗ sửa trên hợp đồng | 2026-11-03 | lesson |
+| 315 | housewarming | housewarmings, housewarming party, housewarming gift, house-warming | noun (đếm được) | Life | Tân gia | 2026-11-03 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
