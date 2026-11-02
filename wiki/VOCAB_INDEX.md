@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 315 từ đã học** · IT 126 · Business 126 · Life 63 · ad-hoc 0
+**Tổng: 310 từ đã học** · IT 124 · Business 124 · Life 62 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
 **Cập nhật:** 2026-11-02
 
@@ -324,16 +324,11 @@
 | 303 | minutes | minute, meeting minutes, minutes of meeting, MoM, minute-taker, to minute sth, minuted | noun (luôn số nhiều) | Business | biên bản họp | 2026-10-30 | lesson |
 | 304 | prorate | prorates, prorated, prorating, proration, pro rata, pro-rata basis | verb | Business | tính tiền theo tỷ lệ dùng thật | 2026-10-30 | lesson |
 | 305 | comfort food | comfort foods, comfort, comforting, comfortable, comfortably, discomfort, comfort eating | noun (hầu như không đếm được) | Life | món quen, ăn vào thấy dễ chịu | 2026-10-30 | lesson |
-| 306 | write-ahead log | write-ahead logs, WAL, write-ahead logging, WAL file, WAL segment, redo log, commit log, log, logging | noun (đếm được; viết tắt WAL) | IT | log ghi trước khi đổi dữ liệu | 2026-10-31 | lesson |
-| 307 | vacuum | vacuums, vacuumed, vacuuming, autovacuum, VACUUM FULL, a vacuum, vacuum cleaner, bloat | verb (cũng là noun) | IT | dọn dòng đã xoá để lấy lại chỗ | 2026-10-31 | lesson |
-| 308 | earmark | earmarks, earmarked, earmarking, an earmark, earmarked funds, mark, marked | verb (cũng là noun) | Business | dành riêng cho một việc cụ thể | 2026-10-31 | lesson |
-| 309 | deal-breaker | deal-breakers, dealbreaker, deal breaker, break a deal, make-or-break, deal, breaker | noun (đếm được) | Business | điều kiện không nhượng được | 2026-10-31 | lesson |
-| 310 | wind down | winds down, wound down, winding down, a wind-down, wind-down period, wind up | phrasal verb | Life | hạ nhiệt cuối ngày / thu dần rồi dừng | 2026-10-31 | lesson |
-| 311 | toil | toils, toiled, toiling, toilsome, toil away, operational toil, toil budget | noun (không đếm được; cũng là verb) | IT | việc thủ công lặp lại | 2026-11-02 | lesson |
-| 312 | fleet | fleets, fleet-wide, a fleet of sth, the whole fleet, fleet management, fleet rollout | noun (đếm được) | IT | cả dàn máy cùng loại | 2026-11-02 | lesson |
-| 313 | sound out | sounds out, sounded out, sounding out, sound sb out on sth, a sounding board | phrasal verb (tách được) | Business | thăm dò ý | 2026-11-02 | lesson |
-| 314 | onus | the onus is on sb, put the onus on sb, place the onus on, shift the onus, onus of proof | noun (không đếm được) | Business | nghĩa vụ thuộc về bên nào | 2026-11-02 | lesson |
-| 315 | declutter | declutters, decluttered, decluttering, a declutter, clutter, cluttered, uncluttered | verb | Life | dọn bớt đồ đạc cho gọn | 2026-11-02 | lesson |
+| 306 | toil | toils, toiled, toiling, toilsome, toil away, operational toil, toil budget | noun (không đếm được; cũng là verb) | IT | việc thủ công lặp lại | 2026-11-02 | lesson |
+| 307 | fleet | fleets, fleet-wide, a fleet of sth, the whole fleet, fleet management, fleet rollout | noun (đếm được) | IT | cả dàn máy cùng loại | 2026-11-02 | lesson |
+| 308 | sound out | sounds out, sounded out, sounding out, sound sb out on sth, a sounding board | phrasal verb (tách được) | Business | thăm dò ý | 2026-11-02 | lesson |
+| 309 | onus | the onus is on sb, put the onus on sb, place the onus on, shift the onus, onus of proof | noun (không đếm được) | Business | nghĩa vụ thuộc về bên nào | 2026-11-02 | lesson |
+| 310 | declutter | declutters, decluttered, decluttering, a declutter, clutter, cluttered, uncluttered | verb | Life | dọn bớt đồ đạc cho gọn | 2026-11-02 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
