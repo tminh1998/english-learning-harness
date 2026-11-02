@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 310 từ đã học** · IT 124 · Business 124 · Life 62 · ad-hoc 0
+**Tổng: 315 từ đã học** · IT 126 · Business 126 · Life 63 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-10-31
+**Cập nhật:** 2026-11-02
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -329,6 +329,11 @@
 | 308 | earmark | earmarks, earmarked, earmarking, an earmark, earmarked funds, mark, marked | verb (cũng là noun) | Business | dành riêng cho một việc cụ thể | 2026-10-31 | lesson |
 | 309 | deal-breaker | deal-breakers, dealbreaker, deal breaker, break a deal, make-or-break, deal, breaker | noun (đếm được) | Business | điều kiện không nhượng được | 2026-10-31 | lesson |
 | 310 | wind down | winds down, wound down, winding down, a wind-down, wind-down period, wind up | phrasal verb | Life | hạ nhiệt cuối ngày / thu dần rồi dừng | 2026-10-31 | lesson |
+| 311 | toil | toils, toiled, toiling, toilsome, toil away, operational toil, toil budget | noun (không đếm được; cũng là verb) | IT | việc thủ công lặp lại | 2026-11-02 | lesson |
+| 312 | fleet | fleets, fleet-wide, a fleet of sth, the whole fleet, fleet management, fleet rollout | noun (đếm được) | IT | cả dàn máy cùng loại | 2026-11-02 | lesson |
+| 313 | sound out | sounds out, sounded out, sounding out, sound sb out on sth, a sounding board | phrasal verb (tách được) | Business | thăm dò ý | 2026-11-02 | lesson |
+| 314 | onus | the onus is on sb, put the onus on sb, place the onus on, shift the onus, onus of proof | noun (không đếm được) | Business | nghĩa vụ thuộc về bên nào | 2026-11-02 | lesson |
+| 315 | declutter | declutters, decluttered, decluttering, a declutter, clutter, cluttered, uncluttered | verb | Life | dọn bớt đồ đạc cho gọn | 2026-11-02 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

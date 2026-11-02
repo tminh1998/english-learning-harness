@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-10-31: 305 từ** — toàn bộ vốn từ trừ lô học hôm nay:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-02: 310 từ** — toàn bộ vốn từ trừ lô học hôm nay:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -67,6 +67,7 @@
 - hạn 2026-10-29 — hotspot · dogfooding · white-label · retrospective · homebody
 - hạn 2026-10-30 — read replica · chaos engineering · turnkey · headcount · creature of habit
 - hạn 2026-10-31 — transitive dependency · watchdog · minutes · prorate · comfort food
+- hạn 2026-11-01 — write-ahead log · vacuum · earmark · deal-breaker · wind down
 
 _Ghi chú 2026-10-31 (buổi #62): phần A hỏi lại 5 từ của buổi 30/10 (transitive dependency · watchdog · minutes · prorate · comfort food), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng bus factor · de-risk · commute · stub · verbose · stipulate · expedite · spin up · workaround · rain check · thrash · draw the line · tentative · clobber · regression · cutover · come across · idle · take ownership · stale — cả 20 từ đều có "gặp lần cuối" là 16/10, chạm từ lô cũ nhất (13/08) tới lô 13/10, và **không trùng một từ nào** với phần ôn của buổi 30/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`; `sh tools/soat-nghia.sh` in `KHOP-HET (125 chỗ khớp)`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **305/310 từ**, toàn bộ ở bậc 1._
 
@@ -460,6 +461,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | earmark | 1 | 2026-11-01 | 0 | 0 | 2026-10-31 |
 | deal-breaker | 1 | 2026-11-01 | 0 | 0 | 2026-10-31 |
 | wind down | 1 | 2026-11-01 | 0 | 0 | 2026-10-31 |
+| toil | 1 | 2026-11-03 | 0 | 0 | 2026-11-02 |
+| fleet | 1 | 2026-11-03 | 0 | 0 | 2026-11-02 |
+| sound out | 1 | 2026-11-03 | 0 | 0 | 2026-11-02 |
+| onus | 1 | 2026-11-03 | 0 | 0 | 2026-11-02 |
+| declutter | 1 | 2026-11-03 | 0 | 0 | 2026-11-02 |
 
 ## Đã thuộc (bậc 5, đúng)
 
