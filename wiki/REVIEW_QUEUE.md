@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-03: 310 từ** — toàn bộ vốn từ trừ lô của bài 03/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-04: 315 từ** — toàn bộ vốn từ trừ lô của bài 04/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -68,6 +68,7 @@
 - hạn 2026-10-30 — read replica · chaos engineering · turnkey · headcount · creature of habit
 - hạn 2026-10-31 — transitive dependency · watchdog · minutes · prorate · comfort food
 - hạn 2026-11-03 — toil · fleet · sound out · onus · declutter
+- hạn 2026-11-04 — split-brain · golden path · overrun · redline · housewarming
 
 _Ghi chú 2026-10-27 (buổi #58): phần A hỏi lại 5 từ của buổi 26/10 (telemetry · saga · mitigate · prerequisite · stroll), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chores · heartbeat · bottleneck · binge-watch · dry run · sticking point · runbook · ingest · put a pin in it · concession · downstream · waive · immutable · pitch · splurge · outbox · ramp up · quarantine · lead time · quote — "gặp lần cuối" là 08/10 và 09/10, chạm từ lô cũ nhất (14/08) tới lô 08/10, và **không trùng một từ nào** với phần ôn của buổi 26/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **285/290 từ**, toàn bộ ở bậc 1._
 
@@ -464,6 +465,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | overrun | 1 | 2026-11-04 | 0 | 0 | 2026-11-03 |
 | redline | 1 | 2026-11-04 | 0 | 0 | 2026-11-03 |
 | housewarming | 1 | 2026-11-04 | 0 | 0 | 2026-11-03 |
+| flame graph | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
+| guardrail | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
+| procurement | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
+| renewal | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
+| homesick | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
 
 ## Đã thuộc (bậc 5, đúng)
 

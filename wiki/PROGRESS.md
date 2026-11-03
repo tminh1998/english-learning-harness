@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-03 (buổi #63 — soạn sẵn ngày 02/11)
+**Cập nhật:** 2026-11-04 (buổi #64 — soạn sẵn sáng 03/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 315 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 126 · Business 126 · Life 63                                                           |
-| Số buổi học          | 63                                                                                      |
-| Streak hiện tại      | 2 buổi (2026-11-02 → 2026-11-03 — bài Thứ Bảy 31/10 đã xoá nên chuỗi 19/10 → 30/10 (11 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 320 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 128 · Business 128 · Life 64                                                           |
+| Số buổi học          | 64                                                                                      |
+| Streak hiện tại      | 3 buổi (2026-11-02 → 2026-11-04 — bài Thứ Bảy 31/10 đã xoá nên chuỗi 19/10 → 30/10 (11 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-03 (Thứ Ba) — buổi #63 |
+| Buổi gần nhất        | 2026-11-04 (Thứ Tư) — buổi #64 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -81,6 +81,7 @@
 | 2026-10-30 | 2026-W44 | #61 | transitive dependency · watchdog · minutes · prorate · comfort food |
 | 2026-11-02 | 2026-W45 | #62 | toil · fleet · sound out · onus · declutter |
 | 2026-11-03 | 2026-W45 | #63 | split-brain · golden path · overrun · redline · housewarming |
+| 2026-11-04 | 2026-W45 | #64 | flame graph · guardrail · procurement · renewal · homesick |
 
 ## Kết quả quiz tuần
 
@@ -135,6 +136,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-04 (soạn sẵn sáng 03/11):** vốn từ lên **320 từ**, nợ ôn tập lên **315/320 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #64 chạy luật R9 bản 25 từ: phần A hỏi lại 5 từ của buổi 03/11 (split-brain · golden path · overrun · redline · housewarming), phần B bốc bằng `sh tools/boc.sh` trúng manage expectations · churn · off the table · truncate · sidecar · par for the course · kill switch · set in stone · craving · throughput · split the difference · chill out · trade-off · circle back · potluck · deliverable · under the weather · take it offline · preflight · dark launch — lô "gặp lần cuối" 19/10 → 20/10, không trùng phần ôn của mấy buổi gần đây. Nghĩa của cả 25 câu chép nguyên văn từ bài gốc qua `tools/nghia.sh`, `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)**. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. ⚠️ Hard gate R1 loại **ba từ đã soạn gần xong bài** trong buổi này, cả ba đều vì đụng **cột họ từ** chứ không phải trùng lemma — grep cả cụm thì sạch, grep từng chữ mới ra: `sunk cost` (`cost` ← `overhead cost`, `upfront cost`, `cost overrun` — **lần thứ ba** bị loại đúng vì chữ này, sau 09/10 và 20/10) · `touchpoint` (`touch` ← `touch base`, `point` ← `pain point` + `action point` — cũng là lần thứ hai, sau 20/10) · `jet lag` (`lag` ← `ingestion lag` của `ingest`, `replication lag` của `read replica`). Thay bằng `procurement`, `renewal`, `homesick` — đã soát lại từng chữ một, sạch cả cột họ từ. Hai từ IT giữ nguyên (`flame graph`, `guardrail`: `flame`, `graph`, `guard`, `rail` đều sạch). Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: quy luật 1 cho `homesick` → `nhớ nhà` và `renewal` → `gia hạn hợp đồng` (tiếng Việt đã có đúng chữ thì dùng thẳng, không diễn giải); quy luật 3 ghép hai vế cho `procurement` → `thu mua / khâu duyệt mua của khách` vì riêng `thu mua` thì hụt nghĩa (dev gặp từ này ở nghĩa "chỗ hồ sơ đang nằm chờ"); hai từ IT theo ⚠️ của quy luật 2 — thuật ngữ mượn ẩn dụ thì gọi theo chức năng, không dịch theo hình ảnh (`flame graph` ≠ "biểu đồ ngọn lửa" → `biểu đồ chỉ ra hàm nào ngốn CPU`; `guardrail` ≠ "lan can" → `chốt tự động chặn việc làm sai`). Quy luật 5 đã soát: `gia hạn` không trùng danh từ đầu với `hợp đồng trả phí định kỳ` (`retainer`) hay `phụ lục hợp đồng` (`addendum`); `nhớ nhà` không trùng `người thích ở nhà` (`homebody`). Tuần 2026-W45 đã có 15 từ (02/11 → 04/11); W44 vẫn **chưa có điểm quiz** — chín tuần liên tiếp như vậy. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W44, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-11-03 (soạn sẵn ngày 02/11):** vốn từ lên **315 từ**, nợ ôn tập lên **310/315 từ quá hạn**, vẫn toàn bộ ở bậc 1. Từ nay bài được **soạn trước một ngày** (luật R5): buổi #63 là bài đầu tiên theo luật này, nên các mốc ở bảng trên tính theo ngày của bài, không theo ngày soạn. Phần A hỏi lại 5 từ của buổi 02/11, phần B bốc bằng `sh tools/boc.sh`.
 

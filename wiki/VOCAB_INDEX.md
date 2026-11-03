@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 315 từ đã học** · IT 126 · Business 126 · Life 63 · ad-hoc 0
+**Tổng: 320 từ đã học** · IT 128 · Business 128 · Life 64 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-03
+**Cập nhật:** 2026-11-04
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -334,6 +334,11 @@
 | 313 | overrun | overruns, overran, overrunning, cost overrun, budget overrun, schedule overrun | verb (bất quy tắc; cũng là noun) | Business | vượt ngân sách / vượt thời gian | 2026-11-03 | lesson |
 | 314 | redline | redlines, redlined, redlining, a redlined draft, markup | verb (cũng là noun đếm được) | Business | đánh dấu chỗ sửa trên hợp đồng | 2026-11-03 | lesson |
 | 315 | housewarming | housewarmings, housewarming party, housewarming gift, house-warming | noun (đếm được) | Life | Tân gia | 2026-11-03 | lesson |
+| 316 | flame graph | flame graphs, flamegraph, flame chart, icicle graph, differential flame graph | noun (đếm được) | IT | biểu đồ chỉ ra hàm nào ngốn CPU | 2026-11-04 | lesson |
+| 317 | guardrail | guardrails, guard rail, guard-rail, policy guardrail, guardrailed | noun (đếm được; hay dùng số nhiều) | IT | chốt tự động chặn việc làm sai | 2026-11-04 | lesson |
+| 318 | procurement | procure, procures, procured, procuring, procurement process, procurement team, procurement portal | noun (không đếm được; cũng dùng để gọi chính bộ phận đó) | Business | thu mua / khâu duyệt mua của khách | 2026-11-04 | lesson |
+| 319 | renewal | renew, renews, renewed, renewing, renewals, auto-renewal, renewal date, non-renewal | noun (đếm được) | Business | gia hạn hợp đồng | 2026-11-04 | lesson |
+| 320 | homesick | homesickness, homesick for sth, be homesick, get homesick, homesickly | adjective | Life | nhớ nhà | 2026-11-04 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
