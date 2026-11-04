@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-04: 315 từ** — toàn bộ vốn từ trừ lô của bài 04/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-05: 320 từ** — toàn bộ vốn từ trừ lô của bài 05/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -69,6 +69,9 @@
 - hạn 2026-10-31 — transitive dependency · watchdog · minutes · prorate · comfort food
 - hạn 2026-11-03 — toil · fleet · sound out · onus · declutter
 - hạn 2026-11-04 — split-brain · golden path · overrun · redline · housewarming
+- hạn 2026-11-05 — flame graph · guardrail · procurement · renewal · homesick
+
+_Ghi chú 2026-11-05 (buổi #65): phần A hỏi lại 5 từ của buổi 04/11 (flame graph · guardrail · procurement · renewal · homesick), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng overhead · backport · gold-plating · push back · cut it close · on the hook · small talk · nudge · defer · in the weeds · stateless · scale back · end up · strangler fig · discrepancy · buffer · throttle · scaffold · catch up · eviction — "gặp lần cuối" là 20/10 và 21/10, chạm từ lô cũ nhất (17/08) tới lô 19/10, và **không trùng một từ nào** với phần ôn của buổi 04/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`; `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **320/325 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-27 (buổi #58): phần A hỏi lại 5 từ của buổi 26/10 (telemetry · saga · mitigate · prerequisite · stroll), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chores · heartbeat · bottleneck · binge-watch · dry run · sticking point · runbook · ingest · put a pin in it · concession · downstream · waive · immutable · pitch · splurge · outbox · ramp up · quarantine · lead time · quote — "gặp lần cuối" là 08/10 và 09/10, chạm từ lô cũ nhất (14/08) tới lô 08/10, và **không trùng một từ nào** với phần ôn của buổi 26/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **285/290 từ**, toàn bộ ở bậc 1._
 
@@ -470,6 +473,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | procurement | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
 | renewal | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
 | homesick | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
+| least privilege | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
+| append-only | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
+| sunk cost | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
+| runway | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
+| jet lag | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
 
 ## Đã thuộc (bậc 5, đúng)
 

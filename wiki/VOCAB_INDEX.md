@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 320 từ đã học** · IT 128 · Business 128 · Life 64 · ad-hoc 0
+**Tổng: 325 từ đã học** · IT 130 · Business 130 · Life 65 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-04
+**Cập nhật:** 2026-11-05
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -339,6 +339,11 @@
 | 318 | procurement | procure, procures, procured, procuring, procurement process, procurement team, procurement portal | noun (không đếm được; cũng dùng để gọi chính bộ phận đó) | Business | thu mua / khâu duyệt mua của khách | 2026-11-04 | lesson |
 | 319 | renewal | renew, renews, renewed, renewing, renewals, auto-renewal, renewal date, non-renewal | noun (đếm được) | Business | gia hạn hợp đồng | 2026-11-04 | lesson |
 | 320 | homesick | homesickness, homesick for sth, be homesick, get homesick, homesickly | adjective | Life | nhớ nhà | 2026-11-04 | lesson |
+| 321 | least privilege | least-privilege, principle of least privilege, PoLP, privilege, privileges, privileged, unprivileged, over-privileged | noun phrase (không đếm được) | IT | nguyên tắc quyền tối thiểu | 2026-11-05 | lesson |
+| 322 | append-only | append, appends, appended, appending, append-only mode, appendable, append to sth | adjective | IT | chỉ ghi thêm, không sửa không xoá | 2026-11-05 | lesson |
+| 323 | sunk cost | sunk costs, sunk-cost, the sunk cost fallacy, sink, sank, sunk, sunken | noun (đếm được) | Business | chi phí chìm | 2026-11-05 | lesson |
+| 324 | runway | runways, cash runway, runway risk, extend the runway, out of runway, run out of runway | noun (đếm được, thường số ít) | Business | ngân sách còn đủ chạy bao lâu nữa | 2026-11-05 | lesson |
+| 325 | jet lag | jet-lagged, jetlag, jet-lag, be jet-lagged, get over jet lag, time zone | noun (không đếm được) | Life | lệch múi giờ | 2026-11-05 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
