@@ -334,7 +334,7 @@
 | 313 | overrun | overruns, overran, overrunning, cost overrun, budget overrun, schedule overrun | verb (bất quy tắc; cũng là noun) | Business | vượt ngân sách / vượt thời gian | 2026-11-03 | lesson |
 | 314 | redline | redlines, redlined, redlining, a redlined draft, markup | verb (cũng là noun đếm được) | Business | đánh dấu chỗ sửa trên hợp đồng | 2026-11-03 | lesson |
 | 315 | housewarming | housewarmings, housewarming party, housewarming gift, house-warming | noun (đếm được) | Life | Tân gia | 2026-11-03 | lesson |
-| 316 | flame graph | flame graphs, flamegraph, flame chart, icicle graph, differential flame graph | noun (đếm được) | IT | biểu đồ chỉ ra hàm nào ngốn CPU | 2026-11-04 | lesson |
+| 316 | flame graph | flame graphs, flamegraph, flame chart, icicle graph, differential flame graph | noun (đếm được) | IT | biểu đồ chỉ ra tác nhân ngốn cpu | 2026-11-04 | lesson |
 | 317 | guardrail | guardrails, guard rail, guard-rail, policy guardrail, guardrailed | noun (đếm được; hay dùng số nhiều) | IT | chốt tự động chặn việc làm sai | 2026-11-04 | lesson |
 | 318 | procurement | procure, procures, procured, procuring, procurement process, procurement team, procurement portal | noun (không đếm được; cũng dùng để gọi chính bộ phận đó) | Business | thu mua / khâu duyệt mua của khách | 2026-11-04 | lesson |
 | 319 | renewal | renew, renews, renewed, renewing, renewals, auto-renewal, renewal date, non-renewal | noun (đếm được) | Business | gia hạn hợp đồng | 2026-11-04 | lesson |

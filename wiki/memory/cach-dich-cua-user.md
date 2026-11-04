@@ -6,7 +6,7 @@ created: 2026-09-29
 evidence: 2026-09-29 — user yêu cầu "học hỏi cách dịch của tôi cho các bài sau", tạo lệnh /dich để tự dịch lại từ trong bài
 ---
 
-**Cập nhật:** 2026-10-30 · **Số bản dịch đã ghi:** 26 (23 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
+**Cập nhật:** 2026-11-04 · **Số bản dịch đã ghi:** 27 (24 đổi · 3 giữ — observability đổi ý từ giữ sang đổi)
 
 **Rule:** Trước khi viết `.vi-quick`, cột `Nghĩa gọn`, và các câu tiếng Việt khác cho
 bài mới, đọc mục **Quy luật rút ra** rồi viết theo đúng các quy luật đó. Nghĩa gọn
@@ -141,6 +141,7 @@ sau ` / `. Không có từ nào → mới viết một cụm diễn giải ngắ
   giữ nguyên đúng chữ user gõ — kể cả khoảng trắng quanh `/` (`quá bận rộn/quá tải`).
 
 - **Bỏ phủ định, đổi khẩu ngữ sang chữ chuẩn của dự án.** `gold-plating`: `làm thừa cái khách không xin` → `Làm thừa cái khách yêu cầu` — thay `không xin` bằng `yêu cầu` (chữ hay dùng trong spec/hợp đồng). Cùng hướng với `give or take` (`xê xích` → `xấp xỉ`) và `splurge` (`vung tay` → `phung phí`): user hay đổi khẩu ngữ sang chữ chuẩn hơn — nhưng `sweet tooth` thì ngược lại (`hảo ngọt` → `thích ăn đồ ngọt`), nên chưa thành luật. Gặp thêm một lần bỏ phủ định thì nâng thành luật.
+- **Nghĩa gọn nói theo vai trò, chi tiết kỹ thuật để dòng PHU.** `flame graph`: `hàm nào ngốn CPU` → `tác nhân ngốn cpu` — bỏ đơn vị cụ thể `hàm`, dùng danh từ khái quát `tác nhân`. 1 lần.
 
 ## Nhật ký bản dịch
 
@@ -177,3 +178,4 @@ Mới nhất ở cuối. `Giữ` = user thấy bản của agent ổn, không đ
 | 2026-10-30 | transitive dependency | phụ thuộc bắc cầu / package cài kèm chứ mình không khai · mình chỉ khai một package, nó kéo theo cả chùm package khác… | dependency được cài kèm | bỏ vế Hán-Việt **dịch sát gốc chữ** `phụ thuộc bắc cầu` (transitive = bắc cầu) dù đó là tên sách giáo trình; **giữ `dependency` bằng tiếng Anh** (dev nói vậy hằng ngày), thay `package` bằng `dependency`; bỏ vế phủ định `chứ mình không khai` và bỏ kiểu hai vế — một cụm duy nhất. Lấy đúng chữ `cài kèm` agent đã dùng trong câu dịch ví dụ; giữ nguyên dòng PHU — lần 2 giữ thuật ngữ dev tiếng Anh sau `Parse` (ingest) → nâng thành quy luật 7 |
 | 2026-10-30 | call out | nói thẳng ra chỗ đó · chỉ đích danh một điểm cho mọi người cùng thấy — khen hay nhắc lỗi đều dùng được | chỉ đích danh | nhắn thẳng trong chat — lấy đúng **cụm đầu dòng PHU** của agent lên dòng đậm (như `sweet tooth`, `nail down`); bỏ cụm khẩu ngữ 5 chữ `nói thẳng ra chỗ đó`, chọn **thành ngữ Việt có sẵn** 3 chữ chỉ đúng hành động (luật 1); giữ nguyên dòng PHU |
 | 2026-10-30 | reconcile | đối chiếu rồi sửa chỗ lệch · so hai bên xem khác nhau ở đâu, rồi kéo cho về khớp — không chỉ là "so sánh", so xong là sửa luôn | tra soát | nhắn thẳng trong chat — bỏ cụm kể hai bước 6 chữ, dùng **thuật ngữ Hán-Việt chuẩn 2 chữ** (ngân hàng / kế toán dùng `tra soát giao dịch`) — luật 1 + 2; hai bước "so → sửa" để ở dòng PHU. Ngược hướng luật 6: từ chỉ quá trình nhưng **đã có tên Việt chuẩn** thì gọi tên, không kể bước |
+| 2026-11-04 | flame graph | biểu đồ chỉ ra hàm nào ngốn CPU · mỗi thanh là một hàm, thanh càng rộng càng ăn nhiều thời gian chạy; xếp tầng lên nhau theo thứ tự gọi nhau | biểu đồ chỉ ra tác nhân ngốn cpu | nhắn thẳng trong chat — giữ khung câu của agent, chỉ đổi `hàm nào` → **`tác nhân`**: nói rộng theo vai trò (cái gây ra việc ngốn CPU) thay vì khoá vào một đơn vị code cụ thể; chi tiết "mỗi thanh là một hàm" vẫn ở `PHU`. User gõ `cpu` thường — giữ nguyên; giữ nguyên dòng PHU |
