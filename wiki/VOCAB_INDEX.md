@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 325 từ đã học** · IT 130 · Business 130 · Life 65 · ad-hoc 0
+**Tổng: 330 từ đã học** · IT 132 · Business 132 · Life 66 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-05
+**Cập nhật:** 2026-11-06
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -344,6 +344,11 @@
 | 323 | sunk cost | sunk costs, sunk-cost, the sunk cost fallacy, sink, sank, sunk, sunken | noun (đếm được) | Business | chi phí chìm | 2026-11-05 | lesson |
 | 324 | runway | runways, cash runway, runway risk, extend the runway, out of runway, run out of runway | noun (đếm được, thường số ít) | Business | ngân sách còn đủ chạy bao lâu nữa | 2026-11-05 | lesson |
 | 325 | jet lag | jet-lagged, jetlag, jet-lag, be jet-lagged, get over jet lag, time zone | noun (không đếm được) | Life | lệch múi giờ | 2026-11-05 | lesson |
+| 326 | flapping | flap, flaps, flapped, flapping, route flapping, flap detection, flapping alert, dampening | noun (không đếm được) | IT | đổi trạng thái lên xuống liên tục | 2026-11-06 | lesson |
+| 327 | data lineage | lineage, lineages, data-lineage, column-level lineage, lineage graph, trace lineage, provenance | noun (không đếm được) | IT | truy xuất nguồn gốc dữ liệu | 2026-11-06 | lesson |
+| 328 | escrow | escrowed, escrowing, escrow account, escrow agent, in escrow, source code escrow, hold in escrow | noun (không đếm được, cũng là verb) | Business | ký quỹ, nhờ bên thứ ba giữ hộ | 2026-11-06 | lesson |
+| 329 | bite the bullet | bit the bullet, bitten the bullet, biting the bullet, bite, bit, bitten, grin and bear it | idiom (verb phrase) | Business | cắn răng làm | 2026-11-06 | lesson |
+| 330 | laid-back | laid back, laidback, laid-back attitude, lay back, laid-back about sth, easygoing | adjective | Life | thoải mái, dễ tính | 2026-11-06 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
