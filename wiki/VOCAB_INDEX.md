@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 330 từ đã học** · IT 132 · Business 132 · Life 66 · ad-hoc 0
+**Tổng: 335 từ đã học** · IT 134 · Business 134 · Life 67 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-06
+**Cập nhật:** 2026-11-07
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -349,6 +349,11 @@
 | 328 | escrow | escrowed, escrowing, escrow account, escrow agent, in escrow, source code escrow, hold in escrow | noun (không đếm được, cũng là verb) | Business | ký quỹ, nhờ bên thứ ba giữ hộ | 2026-11-06 | lesson |
 | 329 | bite the bullet | bit the bullet, bitten the bullet, biting the bullet, bite, bit, bitten, grin and bear it | idiom (verb phrase) | Business | cắn răng làm | 2026-11-06 | lesson |
 | 330 | laid-back | laid back, laidback, laid-back attitude, lay back, laid-back about sth, easygoing | adjective | Life | thoải mái, dễ tính | 2026-11-06 | lesson |
+| 331 | service mesh | service meshes, mesh, meshes, meshed, mesh proxy, data plane, control plane, sidecar mesh | noun (đếm được) | IT | Lớp hạ tầng lo việc các service gọi nhau | 2026-11-07 | lesson |
+| 332 | index bloat | bloat, bloated, bloating, debloat, table bloat, bloat ratio, index bloating | noun (không đếm được) | IT | index phình to vì rác chưa dọn | 2026-11-07 | lesson |
+| 333 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | Không thương lượng được | 2026-11-07 | lesson |
+| 334 | liaison | liaisons, liaise, liaises, liaised, liaising, client liaison, liaison officer, liaison role | noun (đếm được) | Business | Đầu mối liên lạc | 2026-11-07 | lesson |
+| 335 | bookworm | bookworms, book worm, book-worm, worm, worms, bookish | noun (đếm được) | Life | Con mọt sách | 2026-11-07 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
