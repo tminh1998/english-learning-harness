@@ -354,6 +354,11 @@
 | 333 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | Không thương lượng được | 2026-11-07 | lesson |
 | 334 | liaison | liaisons, liaise, liaises, liaised, liaising, client liaison, liaison officer, liaison role | noun (đếm được) | Business | Đầu mối liên lạc | 2026-11-07 | lesson |
 | 335 | bookworm | bookworms, book worm, book-worm, worm, worms, bookish | noun (đếm được) | Life | Con mọt sách | 2026-11-07 | lesson |
+| 336 | vacuum | vacuums, vacuumed, vacuuming, autovacuum, a vacuum, vacuum cleaner, vacuum up, VACUUM FULL | verb (cũng là noun) | IT | Thu hồi chỗ chết trong bảng và index | 2026-11-09 | lesson |
+| 337 | connection pool | connection pools, pool, pools, pooled, pooling, connection pooling, pooler, thread pool, max pool size | noun (đếm được) | IT | Bộ connection mở sẵn để dùng lại | 2026-11-09 | lesson |
+| 338 | gatekeeper | gatekeepers, gatekeeping, gate-keeper, keep the gate, keeper, a gatekeeper check | noun (đếm được) | Business | Người gác cửa, lọc ai được gặp cấp trên | 2026-11-09 | lesson |
+| 339 | across the board | across-the-board, an across-the-board cut, an across-the-board increase, apply across the board, board | idiom (trạng từ; tính từ khi có gạch nối) | Business | Đồng loạt, không trừ ai | 2026-11-09 | lesson |
+| 340 | people person | people, person, persons, personable, sociable, a numbers person, not really a people person | noun (đếm được, hầu như luôn số ít) | Life | Người giỏi giao tiếp, thích chỗ đông người | 2026-11-09 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
