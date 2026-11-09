@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 335 từ đã học** · IT 134 · Business 134 · Life 67 · ad-hoc 0
+**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-07
+**Cập nhật:** 2026-11-10
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -359,6 +359,11 @@
 | 338 | gatekeeper | gatekeepers, gatekeeping, gate-keeper, keep the gate, keeper, a gatekeeper check | noun (đếm được) | Business | Người gác cửa, lọc ai được gặp cấp trên | 2026-11-09 | lesson |
 | 339 | across the board | across-the-board, an across-the-board cut, an across-the-board increase, apply across the board, board | idiom (trạng từ; tính từ khi có gạch nối) | Business | Đồng loạt, không trừ ai | 2026-11-09 | lesson |
 | 340 | people person | people, person, persons, personable, sociable, a numbers person, not really a people person | noun (đếm được, hầu như luôn số ít) | Life | Người giỏi giao tiếp, thích chỗ đông người | 2026-11-09 | lesson |
+| 341 | bisect | bisects, bisected, bisecting, bisection, git bisect, auto-bisect, bisectable | verb | IT | chia đôi dần để tìm commit gây lỗi | 2026-11-10 | lesson |
+| 342 | feature parity | parity, at parity, parity gap, near-parity, achieve parity, feature-parity checklist | noun (không đếm được) | IT | tương đương tính năng | 2026-11-10 | lesson |
+| 343 | payment terms | payment term, terms, terms and conditions, on these terms, net terms, payment schedule | noun (luôn số nhiều) | Business | điều khoản thanh toán | 2026-11-10 | lesson |
+| 344 | drop the ball | drops the ball, dropped the ball, dropping the ball, keep the ball rolling, the ball is in your court | idiom (cụm động từ) | Business | để lọt việc được giao | 2026-11-10 | lesson |
+| 345 | hand-me-down | hand-me-downs, hand me down, hand down, handed down, handing down, a hand-down | noun (đếm được; cũng là tính từ) | Life | đồ cũ được cho lại | 2026-11-10 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

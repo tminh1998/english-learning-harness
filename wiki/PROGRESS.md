@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-09 (buổi #68 — soạn sẵn sáng 08/11)
+**Cập nhật:** 2026-11-10 (buổi #69 — soạn sẵn sáng 09/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 340 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 136 · Business 136 · Life 68                                                           |
-| Số buổi học          | 68                                                                                      |
-| Streak hiện tại      | 7 buổi (2026-11-02 → 2026-11-09 — bài Thứ Bảy 31/10 đã xoá nên chuỗi 19/10 → 30/10 (11 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 345 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 138 · Business 138 · Life 69                                                           |
+| Số buổi học          | 69                                                                                      |
+| Streak hiện tại      | 8 buổi (2026-11-02 → 2026-11-10 — bài Thứ Bảy 31/10 đã xoá nên chuỗi 19/10 → 30/10 (11 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-09 (Thứ Hai) — buổi #68 |
+| Buổi gần nhất        | 2026-11-10 (Thứ Ba) — buổi #69 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -86,6 +86,7 @@
 | 2026-11-06 | 2026-W45 | #66 | flapping · data lineage · escrow · bite the bullet · laid-back |
 | 2026-11-07 | 2026-W45 | #67 | service mesh · index bloat · non-negotiable · liaison · bookworm |
 | 2026-11-09 | 2026-W46 | #68 | vacuum · connection pool · gatekeeper · across the board · people person |
+| 2026-11-10 | 2026-W46 | #69 | bisect · feature parity · payment terms · drop the ball · hand-me-down |
 
 ## Kết quả quiz tuần
 
@@ -140,6 +141,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-10:** vốn từ lên **345 từ**, nợ ôn tập lên **340/345 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #69 do routine 7h sáng 09/11 soạn sẵn cho Thứ Ba 10/11: phần A hỏi lại 5 từ của buổi 09/11 (vacuum · connection pool · gatekeeper · across the board · people person), phần B bốc bằng `sh tools/boc.sh` trúng clarify · short notice · seed · deadlock · upfront · failover · load shedding · happy path · rollback · retainer · ballpark · fallback · flaky · bump · grab a bite · spare · heads-up · run by · fine print · due diligence — lô "gặp lần cuối" là 23/10 và 24/10, không trùng phần ôn của mấy buổi gần đây. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)**. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hard gate R1 loại một loạt ứng viên trong buổi này, phần lớn vì đụng **lemma đã dạy**: `circuit breaker`, `quorum`, `thundering herd`, `red tape`, `rubber stamp`, `low-hanging fruit`, `statement of work`, `take it offline`, `par for the course`, `on the same page`, `upsell`, `walk back`, `rain check`, `potluck`, `cabin fever`, `commute`, `couch potato` — và `tail latency` (đụng lemma `latency`), `cut corners` (đụng `corner case` trong họ từ của `edge case`), `offboarding` (nằm thẳng trong họ từ của `onboarding`), `jitter` (`jittered backoff` của `backoff`), `burn rate` (họ từ của `error budget`), `replication lag` (họ từ của `read replica`). Hai ứng viên bị loại **không phải vì R1 mà vì trùng vùng nghĩa** (quy luật 5 trong `memory/cach-dich-cua-user.md`): `point of contact` (nghĩa gọn sẽ đụng `Đầu mối liên lạc` của `liaison`, học 07/11) và `attrition` (đụng `tỷ lệ khách rời bỏ` của `churn`). Một ghi chú về R1: `drop the ball` được chọn tuy grep `ball` có trúng chữ, nhưng chỉ trúng `ball park` — một biến thể trong cột họ từ của `ballpark` (áng chừng), chứ `ball` không đứng riêng ở cột đó và nghĩa hai cụm khác hẳn nhau. Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: quy luật 1 cho `payment terms` → `điều khoản thanh toán` và `hand-me-down` → `đồ cũ được cho lại` (tiếng Việt có sẵn cách gọi thì dùng thẳng, không diễn giải) · quy luật 2 cho `feature parity` → `tương đương tính năng` (tên Hán-Việt kiểu giáo trình, gọi theo chức năng) · quy luật 6 cho `bisect` → `chia đôi dần để tìm commit gây lỗi` (từ chỉ một quy trình thì kể thẳng các bước, và giữ `commit` bằng tiếng Anh theo quy luật 7) · quy luật 1 cho `drop the ball` → `để lọt việc được giao`, bỏ bản dịch sát chữ của idiom. Tuần 2026-W46 đã có 10 từ (09/11 → 10/11); W45 khép lại với **30 từ** mà vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W45, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-11-09:** mở tuần **2026-W46**, vốn từ lên **340 từ**, nợ ôn tập lên **335/340 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #68 do routine 7h sáng 08/11 soạn sẵn cho Thứ Hai 09/11: phần A hỏi lại 5 từ của buổi 07/11 (service mesh · index bloat · non-negotiable · liaison · bookworm), phần B bốc bằng `tools/boc.sh` trúng tag along · peckish · walk through · race condition · reach out · hassle · drop by · chase up · hit it off · pilot · snapshot · buy-in · cold start · bring up · bear with · good faith · idempotent · shim · couch potato · redact — lô lâu chưa gặp nhất là 22/10 và 23/10. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp) — 25 câu ôn nhanh đều chép nguyên văn nghĩa bài gốc theo luật cứng 2026-10-27. Một ghi chú về hard gate R1: `across the board` được chọn tuy grep `board` có trúng chữ, nhưng chỉ trúng dạng chuỗi con trong `onboard`/`offboarding` (họ từ của `onboarding`) và trong cụm `a sounding board` (collocation của `sound out`) — `board` không phải lemma nào đã dạy, cũng không đứng riêng trong cột họ từ. Ba ứng viên khác bị R1 loại thẳng trong buổi này: `tail latency` (đụng lemma `latency`), `stand firm` (đụng `firm (adj)` trong họ từ của `firm up`) và `billable` (đụng `bill` trong họ từ của `invoice`). Tuần 2026-W45 khép lại với **30 từ** mà vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra`, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 

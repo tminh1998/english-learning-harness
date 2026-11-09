@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-11-10 — 5 từ mới</title>
+<link rel="stylesheet" href="../../assets/lesson.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">Tuần 2026-W46 · Buổi #69</div>
+  <h1>Thứ Ba, 10/11/2026</h1>
+  <div class="mixline">
+    <span class="badge it">2 IT</span>
+    <span class="badge biz">2 Giao tiếp</span>
+    <span class="badge life">1 Đời sống</span>
+  </div>
+</header>
+
+<div class="toolbar">
+  <button id="quiz-mode" aria-pressed="false">🙈 Chế độ ôn tập</button>
+  <button id="theme">🌗 Theo hệ thống</button>
+  <span class="hint">Bấm 🔊 để nghe · chế độ ôn tập che nghĩa Việt, bấm vào chỗ mờ để hiện</span>
+</div>
+
+<section class="block warmup">
+  <details class="warm-toggle">
+    <summary>
+      <h2>Ôn nhanh đầu giờ <span class="cnt">25 từ</span></h2>
+      <span class="wt-state"></span>
+    </summary>
+
+    <p class="sub">Tự trả lời rồi mới bấm 👁 bên cạnh câu đó. Phần B là từ cũ lâu chưa gặp — quên vài từ là bình thường.</p>
+
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-11-09</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">Thu hồi chỗ chết trong bảng và index<span class="alt">xoá với update nhiều thì bảng còn giữ cả bản chết — chạy vacuum để trả lại chỗ đó, index khỏi phình, query nhanh lại</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>vacuum</b> — <em>"We finally ran a manual vacuum on the orders table, and the index bloat we measured last week dropped by half."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Bộ connection mở sẵn để dùng lại<span class="alt">mở connection tới database rất đắt, nên mở trước một nắm rồi cho request lần lượt mượn — xong thì trả lại chứ không đóng</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>connection pool</b> — <em>"Every time we spin up another worker it opens its own connection pool, so the database hits its limit long before the CPU does."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Người gác cửa, lọc ai được gặp cấp trên<span class="alt">muốn tới được người có quyền quyết thì phải qua họ trước — trợ lý, PM, hay chính người đầu mối bên khách</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>gatekeeper</b> — <em>"Linh is the gatekeeper for anything touching the payment module, so loop in her team before you promise the client a date."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Đồng loạt, không trừ ai<span class="alt">áp cho tất cả các bên, tất cả các hạng mục như nhau — chứ không phải chỉ một chỗ được</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>across the board</b> — <em>"After we added that one index, latency dropped across the board — not just on the report page."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Người giỏi giao tiếp, thích chỗ đông người<span class="alt">gặp ai cũng bắt chuyện được và thấy vui vì thế — ngược với tạng thích ngồi một mình</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>people person</b> — <em>"Put Huy on the kickoff call — he's a real people person and he'll touch base with every stakeholder before week two."</em></span>
+          </details>
+        </li>
+      </ol>
+    </div>
+
+    <div class="warm-part">
+      <div class="wp-head"><span class="wp-tag b">B</span>20 từ cũ dàn đều cả vốn từ</div>
+      <ol class="ex qa-list">
+        <li class="qa">
+          <span class="q">hỏi lại cho rõ<span class="alt">hỏi mà không làm khách phật ý</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>clarify</b> — <em>"Could you clarify whether the report should include cancelled orders?"</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">báo sát giờ<span class="alt">gấp quá, không kịp trở tay</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>short notice</b> — <em>"Sorry for the short notice, but could we pencil in a call tomorrow morning?"</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nạp dữ liệu mẫu<span class="alt">đổ sẵn một mớ bản ghi vào database trống để chạy thử, demo hay dựng lại môi trường</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>seed</b> — <em>"We provision a clean environment for every demo and seed it with twenty fake orders."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">kẹt cứng, bên nào cũng chờ<span class="alt">hai bên giữ khoá của nhau, không ai đi tiếp được</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>deadlock</b> — <em>"Two workers grabbed the same two rows in the opposite order and hit a deadlock, so the whole job looked flaky in CI."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nói thẳng từ đầu / trả trước<span class="alt">nghĩa 1 là thật thà nói rõ ngay chứ không giấu; nghĩa 2 là tiền trả trước khi làm</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>upfront</b> — <em>"I'd rather be upfront about this: we can hit the 20th, but only with a two-day buffer on the test data."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">tự chuyển sang hệ dự phòng<span class="alt">máy chính chết thì máy phụ tiếp quản</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>failover</b> — <em>"When the primary database locked up, failover moved every connection to the replica in under a minute — no rollback needed."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">chủ động bỏ bớt request lúc quá tải<span class="alt">từ chối một phần để phần còn lại vẫn chạy, thay vì sập hết</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>load shedding</b> — <em>"When traffic spikes, load shedding returns 503 for search, so checkout keeps working."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">luồng chạy chuẩn / trường hợp suôn sẻ<span class="alt">user làm đúng như mình nghĩ, không lỗi, không thiếu dữ liệu</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>happy path</b> — <em>"The happy path works fine; it's the edge case where the token expires mid-upload that still fails."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">quay về bản cũ<span class="alt">deploy hỏng thì lùi lại bản trước</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>rollback</b> — <em>"The deploy broke checkout, so we triggered an immediate rollback and escalated it to the on-call lead."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">hợp đồng trả phí định kỳ<span class="alt">khách trả một khoản đều hằng tháng để giữ sẵn người làm — tháng đó có việc hay không vẫn trả</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>retainer</b> — <em>"Putting us on a monthly retainer means you always have some of our bandwidth reserved, even in a quiet month."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">áng chừng, khoảng khoảng<span class="alt">a ballpark figure = con số áng chừng</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>ballpark</b> — <em>"I can't commit to a date yet, but if there's no scope creep a ballpark figure would be three weeks for the whole migration."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">Cơ chế dự phòng<span class="alt">cái chính hỏng thì tự chạy cái này</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>fallback</b> — <em>"When the pricing API times out, the app falls back to the last cached rates — they're a bit stale, but an empty screen is worse."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">lúc được lúc không<span class="alt">chập chờn, không đáng tin</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>flaky</b> — <em>"Please don't retry the build — that test is flaky; it only goes red on one edge case with timezones."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">nâng lên một nấc<span class="alt">hay nhất là nâng số version</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>bump</b> — <em>"I bumped the library to 4.2 and that flaky test finally went green."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">đi kiếm gì ăn nhanh<span class="alt">ăn tạm, xuề xoà, không phải bữa tử tế</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>grab a bite</b> — <em>"I was too worn out to cook last night, so we grabbed a bite at the noodle place next to the office."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">dư ra, đang không dùng tới<span class="alt">động từ: bớt cho ai một ít thời gian/tiền</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>spare</b> — <em>"I finally read that RFC in my spare time on Sunday, after I slept in."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">báo trước một tiếng<span class="alt">để người ta còn kịp chuẩn bị</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>heads-up</b> — <em>"Just a quick heads-up: the staging server will be down for an hour tomorrow morning while we rehearse a rollback."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">hỏi ý trước khi làm<span class="alt">đưa người ta xem cho ý kiến</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>run by</b> — <em>"Let me run the new pricing by the client before we sign off on it."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">điều khoản in chữ nhỏ<span class="alt">chỗ ghi giới hạn, phụ phí, ngoại lệ — đọc kỹ chỗ đó mới biết mình đang hứa cái gì</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>fine print</b> — <em>"Before you sign off on the agreement, please read the fine print on clause 7 — it caps our support hours at twenty a month."</em></span>
+          </details>
+        </li>
+        <li class="qa">
+          <span class="q">kiểm tra kỹ trước khi ký<span class="alt">soi cho hết rồi hẵng chốt, để sau khỏi ngã ngửa</span></span>
+          <details class="ans"><summary>đáp án</summary>
+            <span class="a hide-me"><b>due diligence</b> — <em>"We did our due diligence on that vendor for three weeks before anyone signed off on the contract."</em></span>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </details>
+</section>
+
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">1</span>bisect
+        <button class="say" data-say="bisect the commit range" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/baɪˈsekt/ · <em>verb</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">chia đôi dần để tìm commit gây lỗi<span class="alt">nửa này còn tốt thì lỗi nằm ở nửa kia — cứ chia đôi tiếp, mươi bước là ra đúng commit làm hỏng</span></p>
+
+  <p class="def"><span class="tag">EN</span>To bisect a range of commits is to keep halving it, testing the middle one each time, until you find the exact commit that broke something.
+    <span class="def-vi hide-me">→ Bisect một dải commit là cứ chia đôi dải đó, mỗi lần test đúng cái ở giữa, cho tới khi tìm ra đúng cái commit làm hỏng chuyện.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Dev Việt nói thẳng <code>bisect</code> hoặc "chạy git bisect", đừng dịch thành "phân đôi". Khác <code>narrow down</code> (học 09/09): <code>narrow down</code> là thu hẹp nói chung, còn <code>bisect</code> là chia đôi có phương pháp, mỗi bước bỏ được một nửa — hai trăm commit chỉ mất khoảng tám lần thử.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Just a <span class="rev">heads-up</span> — I'm going to <b>bisect</b> the release branch this afternoon, so CI will be tied up for a while.</span>
+      <span class="vi hide-me">→ Báo trước một tiếng — chiều nay mình bisect nhánh release nên CI sẽ bận một lúc đấy.</span>
+    </li>
+    <li>
+      <span class="en">Twelve steps in, the <b>bisect</b> pointed straight at the commit that caused the <span class="rev">regression</span>.</span>
+      <span class="vi hide-me">→ Đi mười hai bước là cái bisect chỉ thẳng vào đúng cái commit làm chỗ đang chạy tốt bỗng hỏng.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>git bisect</code> · <code>bisect the commit range</code> · <code>bisect start / good / bad</code> · <code>bisect down to one commit</code> · <code>run a bisect</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Trọng âm ở âm thứ hai: <b>/baɪ-SEKT/</b>, không phải "BI-sect". Đừng lẫn với <code>dissect</code> (mổ xẻ, phân tích chi tiết) — nghe gần mà khác hẳn. Là động từ có tân ngữ trực tiếp: <code>bisect the branch</code>, không phải <code>bisect for the branch</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">bisects, bisected, bisecting, bisection, git bisect, auto-bisect, bisectable</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="it">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">2</span>feature parity
+        <button class="say" data-say="reach feature parity" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˌfiːtʃə ˈpærəti/ · <em>noun (không đếm được)</em></div>
+    </div>
+    <span class="badge it">IT</span>
+  </div>
+
+  <p class="vi-quick hide-me">tương đương tính năng<span class="alt">bản mới làm được đủ mọi thứ bản cũ làm được — chưa đủ thì chưa tắt bản cũ</span></p>
+
+  <p class="def"><span class="tag">EN</span>Feature parity means a new version or platform can do everything the old one could, with nothing missing.
+    <span class="def-vi hide-me">→ Tương đương tính năng nghĩa là bản mới hay nền tảng mới làm được mọi thứ bản cũ làm được, không thiếu cái nào.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Chữ hay gặp lúc chốt phạm vi với khách và lúc bàn chuyện cutover. Nó không nói chuyện giao diện giống y hệt — chỉ nói <b>làm được việc gì</b>, nút nằm đâu thì khác được. <code>At parity</code> là đã bằng nhau rồi, <code>a parity gap</code> là chỗ còn thiếu.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">The client won't <span class="rev">sign off</span> on the migration until the new portal has <b>feature parity</b> with the one their staff use today.</span>
+      <span class="vi hide-me">→ Khách chưa duyệt chính thức đợt migration đâu, chừng nào cổng mới còn chưa tương đương tính năng với cái nhân viên họ đang dùng.</span>
+    </li>
+    <li>
+      <span class="en">We're two reports short of <b>feature parity</b>, so I'd push the <span class="rev">cutover</span> back by a week.</span>
+      <span class="vi hide-me">→ Còn thiếu hai cái báo cáo nữa mới tương đương tính năng, nên mình nghiêng về đẩy mốc chuyển hẳn sang hệ mới lùi một tuần.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>reach feature parity</code> · <code>achieve feature parity</code> · <code>feature parity with sth</code> · <code>be at parity</code> · <code>a parity gap</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v"><code>parity</code> đọc <b>/ˈpærəti/</b>, âm đầu như <code>parrot</code> và trọng âm ở đầu — không phải "pa-RI-ty". Danh từ không đếm được: <code>a feature parity</code> sai, nói <code>feature parity</code> trần hoặc <code>full feature parity</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">parity, at parity, parity gap, near-parity, achieve parity, feature-parity checklist</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">3</span>payment terms
+        <button class="say" data-say="agree on the payment terms" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˈpeɪmənt tɜːmz/ · <em>noun (luôn số nhiều)</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">điều khoản thanh toán<span class="alt">bao lâu phải trả, trả mấy đợt, trễ thì tính sao — nằm trong hợp đồng</span></p>
+
+  <p class="def"><span class="tag">EN</span>Payment terms are the part of a contract that says when the client has to pay, in how many instalments, and what happens if they pay late.
+    <span class="def-vi hide-me">→ Điều khoản thanh toán là phần hợp đồng ghi khi nào khách phải trả, trả mấy đợt, và trễ hạn thì xử lý thế nào.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span><code>Net 30</code> nghĩa là 30 ngày kể từ ngày nhận hóa đơn, <code>50/50</code> là trả nửa trước nửa sau. Khác <code>fine print</code> (học 06/10): fine print là chỗ chữ nhỏ chứa đủ loại giới hạn, còn payment terms chỉ nói riêng chuyện tiền. Trong email, câu <code>Could we revisit the payment terms?</code> là cách xin đổi mà vẫn lịch sự.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">Our standard <b>payment terms</b> are net 30, so the <span class="rev">invoice</span> we sent on the first is due at the end of the month.</span>
+      <span class="vi hide-me">→ Điều khoản thanh toán tiêu chuẩn bên em là net 30 ạ, nên hóa đơn bên em gửi hôm mùng một thì tới cuối tháng là tới hạn.</span>
+    </li>
+    <li>
+      <span class="en">They asked us to tie the <b>payment terms</b> to each <span class="rev">milestone</span> instead of paying everything after the launch.</span>
+      <span class="vi hide-me">→ Bên họ đề nghị gắn điều khoản thanh toán vào từng mốc lớn trong dự án, chứ không phải xong launch mới trả hết một lượt.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>net 30 payment terms</code> · <code>agree on payment terms</code> · <code>renegotiate the payment terms</code> · <code>standard payment terms</code> · <code>payment terms of 50/50</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đừng rút thành số ít <code>payment term</code> — nghe như một kỳ hạn lẻ chứ không phải cả bộ điều khoản. Và <code>term</code> ở đây là "điều khoản", không phải "học kỳ" hay "thuật ngữ".</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">payment term, terms, terms and conditions, on these terms, net terms, payment schedule</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="biz">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">4</span>drop the ball
+        <button class="say" data-say="I dropped the ball on that" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/drɒp ðə ˈbɔːl/ · <em>idiom (cụm động từ)</em></div>
+    </div>
+    <span class="badge biz">Giao tiếp</span>
+  </div>
+
+  <p class="vi-quick hide-me">để lọt việc được giao<span class="alt">nhận rồi mà không làm tới, tới lúc người khác phát hiện thì đã trễ</span></p>
+
+  <p class="def"><span class="tag">EN</span>To drop the ball is to fail to do something you were responsible for, so it quietly goes undone.
+    <span class="def-vi hide-me">→ Drop the ball là không làm cái việc mình chịu trách nhiệm, để nó nằm đó chẳng ai làm.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Tự nhận thì nghe thành thật và được việc (<code>I dropped the ball on that, sorry</code>); chỉ vào người khác thì nặng, email gửi khách nên đổi sang <code>this slipped through</code> cho nhẹ. Gốc từ bóng rổ: đang ôm bóng mà để rơi. Đừng lẫn với <code>drop by</code> (học 26/08) — ghé qua một lát, nghĩa khác hẳn.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">That <span class="rev">action item</span> had my name on it and I <b>dropped the ball</b> — the export script is still not scheduled.</span>
+      <span class="vi hide-me">→ Cái đầu việc chốt sau họp đó ghi tên mình mà mình để lọt — script export tới giờ vẫn chưa được hẹn giờ chạy.</span>
+    </li>
+    <li>
+      <span class="en">Nobody <span class="rev">chased up</span> their security questionnaire for three weeks, so we <b>dropped the ball</b> on that one and I've already told the client.</span>
+      <span class="vi hide-me">→ Suốt ba tuần chẳng ai hỏi thúc cho ra cái bản câu hỏi bảo mật của họ, nên chỗ đó bọn mình để lọt việc, và mình đã nói với khách rồi.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>drop the ball on sth</code> · <code>really dropped the ball</code> · <code>I dropped the ball</code> · <code>don't drop the ball</code> · <code>keep the ball rolling</code> (nghĩa ngược)</span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Phải có <code>the</code>: <code>drop ball</code> sai. Và luôn là <code>drop the ball ON something</code>, không dùng <code>about</code>. Nói về mình thì được, nói về đồng nghiệp trong email nhóm thì nên tránh — nghe như chỉ tay vào người ta.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">drops the ball, dropped the ball, dropping the ball, keep the ball rolling, the ball is in your court</span></div>
+  </div>
+</article>
+
+<article class="word" data-cat="life">
+  <div class="word-head">
+    <div>
+      <h2><span class="num">5</span>hand-me-down
+        <button class="say" data-say="a hand-me-down from my brother" title="Nghe phát âm">🔊</button>
+      </h2>
+      <div class="ipa">/ˌhænd mi ˈdaʊn/ · <em>noun (đếm được; cũng là tính từ)</em></div>
+    </div>
+    <span class="badge life">Đời sống</span>
+  </div>
+
+  <p class="vi-quick hide-me">đồ cũ được cho lại<span class="alt">anh chị dùng xong tới lượt em — quần áo, sách vở, cả điện thoại; nhà đông con thì chuyện thường</span></p>
+
+  <p class="def"><span class="tag">EN</span>A hand-me-down is something, usually clothing, that an older child or another person has finished with and passes on to you.
+    <span class="def-vi hide-me">→ Hand-me-down là món đồ, thường là quần áo, mà một đứa lớn hơn hoặc một người khác dùng xong rồi chuyển lại cho mình.</span>
+  </p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Nói về đồ nhà mình thì bình thường, không có ý chê; nhưng gọi đồ của người khác là <code>hand-me-down</code> thì hơi coi nhẹ nên tránh. Làm tính từ thì luôn có gạch nối: <code>a hand-me-down jacket</code>. Trong nghề cũng hay nói đùa về máy cũ: <code>a hand-me-down laptop</code>.</p>
+
+  <div class="ex-label">Ví dụ</div>
+  <ul class="examples">
+    <li>
+      <span class="en">When I <span class="rev">decluttered</span> the wardrobe I found three <b>hand-me-downs</b> from my brother that still had the tags on.</span>
+      <span class="vi hide-me">→ Lúc dọn bớt đồ đạc cho gọn trong tủ, mình tìm ra ba món đồ cũ anh để lại mà vẫn còn nguyên nhãn.</span>
+    </li>
+    <li>
+      <span class="en">My first work machine was a <b>hand-me-down</b> laptop from the design team, and it turned the build into a twenty-minute <span class="rev">hassle</span> every morning.</span>
+      <span class="vi hide-me">→ Cái máy đi làm đầu tiên của mình là con laptop cũ team design để lại, sáng nào build cũng thành hai mươi phút lích kích mất công.</span>
+    </li>
+  </ul>
+
+  <div class="rows">
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>a hand-me-down from sb</code> · <code>wear hand-me-downs</code> · <code>hand-me-down clothes</code> · <code>a hand-me-down laptop</code> · <code>hand sth down to sb</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Danh từ phải đủ hai gạch nối. Viết rời <code>hand me down</code> là cụm động từ (<code>hand me down that box</code> = đưa cái hộp đó xuống cho mình), nghĩa khác hẳn. Số nhiều thêm <code>s</code> ở cuối cụm: <code>hand-me-downs</code>, không phải <code>hands-me-down</code>.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">hand-me-downs, hand me down, hand down, handed down, handing down, a hand-down</span></div>
+  </div>
+</article>
+
+<section class="block">
+  <h2>Mẩu đọc</h2>
+  <p class="sub">Tin nhắn gửi PM trước buổi call với khách</p>
+  <div class="passage">Two things before the call. I <b>bisected</b> the release branch and the broken export comes from one commit on Tuesday, so it isn't the <span class="rev">regression</span> in the new portal that we were worried about. We're still one report short of <b>feature parity</b>, though — I'd rather say that out loud now than <b>drop the ball</b> on it twice. On the commercial side, their finance lead wants the <b>payment terms</b> split across the two <span class="rev">milestones</span> instead of one invoice at the end. One small thing: the test machine is a <b>hand-me-down</b> laptop that takes nine minutes to build, so don't trust the timings in my last message.</div>
+  <details>
+    <summary>Bản dịch</summary>
+    <p class="hide-me">Hai chuyện trước buổi call. Mình bisect nhánh release rồi: cái export hỏng là do đúng một commit hôm Thứ Ba, nên nó không phải chỗ đang chạy tốt bỗng hỏng ở cổng mới mà bọn mình lo. Có điều vẫn còn thiếu một cái báo cáo nữa mới tương đương tính năng — chuyện này mình nói thẳng ra luôn, còn hơn để lọt việc tới lần thứ hai. Về phần hợp đồng, bạn phụ trách tài chính bên họ muốn chia điều khoản thanh toán theo hai mốc lớn trong dự án, chứ không gộp một hóa đơn cuối kỳ. Còn chuyện nhỏ nữa: con máy test là laptop cũ được cho lại, build mất chín phút, nên đừng tin mấy con số thời gian trong tin nhắn trước của mình.</p>
+  </details>
+</section>
+
+<section class="block">
+  <h2>Bài tập</h2>
+  <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
+  <ol class="ex">
+    <li><b>Điền từ.</b> We ______ the last forty commits and the culprit turned out to be a one-line change in the date helper.</li>
+    <li><b>Chọn collocation đúng.</b> (a) <code>reach feature parity</code> · (b) <code>win feature parity</code> · (c) <code>make feature parity</code></li>
+    <li><b>Sửa lỗi.</b> <em>Sorry, I dropped ball on the security questionnaire — it's still sitting in my inbox.</em></li>
+    <li><b>Dịch Việt → Anh.</b> "Điều khoản thanh toán tiêu chuẩn bên em là net 30 ạ."</li>
+    <li><b>Điền từ.</b> My first laptop at work was a ______ from the design team — three years old and slow as anything.</li>
+  </ol>
+  <details>
+    <summary>Đáp án</summary>
+    <ol>
+      <li><b>bisected</b> — chia đôi dần dải commit để tìm ra đúng cái gây lỗi; <code>bisect</code> đi thẳng với tân ngữ: <code>bisect the last forty commits</code>.</li>
+      <li><b>(a)</b> <code>reach feature parity</code> — còn dùng được <code>achieve feature parity</code>; <code>win</code> và <code>make</code> đều không đi với <code>parity</code>.</li>
+      <li><b>dropped <u>the</u> ball</b> — thiếu mạo từ <code>the</code>. Câu đúng: <em>Sorry, I dropped the ball on the security questionnaire.</em></li>
+      <li><b>Our standard payment terms are net 30.</b> — luôn số nhiều <code>terms</code> + động từ <code>are</code>; <code>net 30</code> viết trần, không cần <code>days</code>.</li>
+      <li><b>hand-me-down</b> — món đồ người khác dùng xong chuyển lại; ở đây là danh từ nên phải đủ hai gạch nối.</li>
+    </ol>
+  </details>
+</section>
+
+<footer>
+  Bản Markdown: <a href="2026-11-10.md">2026-11-10.md</a> ·
+  Toàn bộ từ đã học: <a href="../../VOCAB_INDEX.md">VOCAB_INDEX.md</a> ·
+  Lịch ôn: <a href="../../REVIEW_QUEUE.md">REVIEW_QUEUE.md</a>
+  <br>Cuối tuần gõ <code>/kiem-tra</code> để kiểm tra lại các từ của tuần 2026-W46.
+</footer>
+
+</div>
+<script src="../../assets/lesson.js"></script>
+</body>
+</html>
