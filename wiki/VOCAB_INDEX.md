@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
+**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
 **Cập nhật:** 2026-11-10
 
@@ -364,6 +364,11 @@
 | 343 | payment terms | payment term, terms, terms and conditions, on these terms, net terms, payment schedule | noun (luôn số nhiều) | Business | điều khoản thanh toán | 2026-11-10 | lesson |
 | 344 | drop the ball | drops the ball, dropped the ball, dropping the ball, keep the ball rolling, the ball is in your court | idiom (cụm động từ) | Business | để lọt việc được giao | 2026-11-10 | lesson |
 | 345 | hand-me-down | hand-me-downs, hand me down, hand down, handed down, handing down, a hand-down | noun (đếm được; cũng là tính từ) | Life | đồ cũ được cho lại | 2026-11-10 | lesson |
+| 346 | heap dump | heap dumps, heap, dump, dumped, dumping, core dump, thread dump, memory dump, heap analysis | noun (đếm được) | IT | bản chụp toàn bộ heap | 2026-11-11 | lesson |
+| 347 | readiness probe | readiness probes, readiness, ready, liveness probe, startup probe, probe, health check, readinessProbe | noun (đếm được) | IT | phép kiểm container sẵn sàng nhận request chưa | 2026-11-11 | lesson |
+| 348 | haggle | haggles, haggled, haggling, a haggle, haggler, no-haggle pricing | verb | Business | mặc cả | 2026-11-11 | lesson |
+| 349 | shore up | shores up, shored up, shoring up, shore sth up, a shore-up, shoring | phrasal verb | Business | củng cố chỗ đang yếu | 2026-11-11 | lesson |
+| 350 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up, a cozy | adjective | Life | ấm cúng | 2026-11-11 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
