@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
+**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-10
+**Cập nhật:** 2026-11-11
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -369,6 +369,11 @@
 | 348 | haggle | haggles, haggled, haggling, a haggle, haggler, no-haggle pricing | verb | Business | mặc cả | 2026-11-11 | lesson |
 | 349 | shore up | shores up, shored up, shoring up, shore sth up, a shore-up, shoring | phrasal verb | Business | củng cố chỗ đang yếu | 2026-11-11 | lesson |
 | 350 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up, a cozy | adjective | Life | ấm cúng | 2026-11-11 | lesson |
+| 351 | downtime | down, be down, go down, bring sth down, uptime, outage, zero-downtime, downtime window, scheduled downtime | noun (không đếm được) | IT | thời gian ngừng hoạt động / lúc được nghỉ ngơi | 2026-11-12 | lesson |
+| 352 | watermark | watermarks, watermarked, watermarking, water-mark, watermark-free, visible / invisible watermark | noun (đếm được; cũng là verb) | IT | hình mờ | 2026-11-12 | lesson |
+| 353 | drill down | drills down, drilled down, drilling down, drill-down, drilldown, drill into, drill down to sth | phrasal verb | Business | đi sâu vào chi tiết sau con số tổng | 2026-11-12 | lesson |
+| 354 | in arrears | arrear, arrears, in arrears, fall into arrears, arrears balance, rent arrears, paid in arrears | cụm trạng từ (danh từ: arrears) | Business | trả sau / đang nợ quá hạn | 2026-11-12 | lesson |
+| 355 | mingle | mingles, mingled, mingling, mingler, mix and mingle, intermingle | verb | Life | giao lưu, đi bắt chuyện từng nhóm | 2026-11-12 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-11: 345 từ** — toàn bộ vốn từ trừ lô của bài 11/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-12: 350 từ** — toàn bộ vốn từ trừ lô của bài 11/12:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -75,6 +75,7 @@
 - hạn 2026-11-08 — service mesh · index bloat · non-negotiable · liaison · bookworm
 - hạn 2026-11-10 — vacuum · connection pool · gatekeeper · across the board · people person
 - hạn 2026-11-11 — bisect · feature parity · payment terms · drop the ball · hand-me-down
+- hạn 2026-11-12 — heap dump · readiness probe · haggle · shore up · cozy
 
 _Ghi chú 2026-11-07 (buổi #67): phần A hỏi lại 5 từ của buổi 06/11 (flapping · data lineage · escrow · bite the bullet · laid-back), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng keep an eye on · awkward · canary release · bake in · reflow · hash out · quorum · flush · pick up the tab · night owl · caveat · dangling · invoice · narrow down · starvation · drag on · upsell · low-hanging fruit · multi-tenancy · smoke test — cả 20 từ đều có "gặp lần cuối" là 22/10, chạm từ lô cũ nhất (17/08) tới lô 21/10, và **không trùng một từ nào** với phần ôn của buổi 06/11. Đây gần như đúng lô đã ôn ở buổi #54 (22/10) — vốn từ lại quay hết một vòng, nên lô cũ nhất tới lượt lại, đúng như R9 mô tả. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **330/335 từ**, toàn bộ ở bậc 1._
 
@@ -512,6 +513,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | haggle | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
 | shore up | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
 | cozy | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
+| downtime | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
+| watermark | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
+| drill down | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
+| in arrears | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
+| mingle | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
 
 ## Đã thuộc (bậc 5, đúng)
 
