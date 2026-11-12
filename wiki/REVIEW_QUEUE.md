@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-13: 355 từ** — toàn bộ vốn từ trừ lô của bài 13/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-13: 325 từ** — toàn bộ vốn từ trừ lô của bài 13/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -70,19 +70,7 @@
 - hạn 2026-11-03 — toil · fleet · sound out · onus · declutter
 - hạn 2026-11-04 — split-brain · golden path · overrun · redline · housewarming
 - hạn 2026-11-05 — flame graph · guardrail · procurement · renewal · homesick
-- hạn 2026-11-06 — least privilege · append-only · sunk cost · runway · jet lag
-- hạn 2026-11-07 — flapping · data lineage · escrow · bite the bullet · laid-back
-- hạn 2026-11-08 — service mesh · index bloat · non-negotiable · liaison · bookworm
-- hạn 2026-11-10 — vacuum · connection pool · gatekeeper · across the board · people person
-- hạn 2026-11-11 — bisect · feature parity · payment terms · drop the ball · hand-me-down
-- hạn 2026-11-12 — heap dump · readiness probe · haggle · shore up · cozy
 - hạn 2026-11-13 — downtime · watermark · drill down · in arrears · mingle
-
-_Ghi chú 2026-11-07 (buổi #67): phần A hỏi lại 5 từ của buổi 06/11 (flapping · data lineage · escrow · bite the bullet · laid-back), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng keep an eye on · awkward · canary release · bake in · reflow · hash out · quorum · flush · pick up the tab · night owl · caveat · dangling · invoice · narrow down · starvation · drag on · upsell · low-hanging fruit · multi-tenancy · smoke test — cả 20 từ đều có "gặp lần cuối" là 22/10, chạm từ lô cũ nhất (17/08) tới lô 21/10, và **không trùng một từ nào** với phần ôn của buổi 06/11. Đây gần như đúng lô đã ôn ở buổi #54 (22/10) — vốn từ lại quay hết một vòng, nên lô cũ nhất tới lượt lại, đúng như R9 mô tả. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **330/335 từ**, toàn bộ ở bậc 1._
-
-_Ghi chú 2026-11-06 (buổi #66): phần A hỏi lại 5 từ của buổi 05/11 (least privilege · append-only · sunk cost · runway · jet lag), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng instrument · eventual consistency · graceful degradation · footprint · doze off · rush hour · escalate · move the goalposts · weigh in · touch base · leader election · bottom line · acceptance criteria · pet peeve · run errands · provision · out of the blue · backward compatible · noisy neighbor · swamped — cả 20 từ đều có "gặp lần cuối" là 21/10, chạm từ lô cũ nhất (14/08) tới lô 20/10, và **không trùng một từ nào** với phần ôn của buổi 05/11. Đây đúng là lô đã ôn ở buổi 21/10: vốn từ vừa quay hết một vòng, nên từ cũ nhất bắt đầu tới lượt lại — đúng như R9 mô tả. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **325/330 từ**, toàn bộ ở bậc 1._
-
-_Ghi chú 2026-11-05 (buổi #65): phần A hỏi lại 5 từ của buổi 04/11 (flame graph · guardrail · procurement · renewal · homesick), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng overhead · backport · gold-plating · push back · cut it close · on the hook · small talk · nudge · defer · in the weeds · stateless · scale back · end up · strangler fig · discrepancy · buffer · throttle · scaffold · catch up · eviction — "gặp lần cuối" là 20/10 và 21/10, chạm từ lô cũ nhất (17/08) tới lô 19/10, và **không trùng một từ nào** với phần ôn của buổi 04/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`; `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **320/325 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-10-27 (buổi #58): phần A hỏi lại 5 từ của buổi 26/10 (telemetry · saga · mitigate · prerequisite · stroll), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chores · heartbeat · bottleneck · binge-watch · dry run · sticking point · runbook · ingest · put a pin in it · concession · downstream · waive · immutable · pitch · splurge · outbox · ramp up · quarantine · lead time · quote — "gặp lần cuối" là 08/10 và 09/10, chạm từ lô cũ nhất (14/08) tới lô 08/10, và **không trùng một từ nào** với phần ôn của buổi 26/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **285/290 từ**, toàn bộ ở bậc 1._
 
@@ -484,36 +472,6 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | procurement | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
 | renewal | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
 | homesick | 1 | 2026-11-05 | 0 | 0 | 2026-11-04 |
-| least privilege | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
-| append-only | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
-| sunk cost | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
-| runway | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
-| jet lag | 1 | 2026-11-06 | 0 | 0 | 2026-11-05 |
-| flapping | 1 | 2026-11-07 | 0 | 0 | 2026-11-06 |
-| data lineage | 1 | 2026-11-07 | 0 | 0 | 2026-11-06 |
-| escrow | 1 | 2026-11-07 | 0 | 0 | 2026-11-06 |
-| bite the bullet | 1 | 2026-11-07 | 0 | 0 | 2026-11-06 |
-| laid-back | 1 | 2026-11-07 | 0 | 0 | 2026-11-06 |
-| service mesh | 1 | 2026-11-08 | 0 | 0 | 2026-11-07 |
-| index bloat | 1 | 2026-11-08 | 0 | 0 | 2026-11-07 |
-| non-negotiable | 1 | 2026-11-08 | 0 | 0 | 2026-11-07 |
-| liaison | 1 | 2026-11-08 | 0 | 0 | 2026-11-07 |
-| bookworm | 1 | 2026-11-08 | 0 | 0 | 2026-11-07 |
-| vacuum | 1 | 2026-11-10 | 0 | 0 | 2026-11-09 |
-| connection pool | 1 | 2026-11-10 | 0 | 0 | 2026-11-09 |
-| gatekeeper | 1 | 2026-11-10 | 0 | 0 | 2026-11-09 |
-| across the board | 1 | 2026-11-10 | 0 | 0 | 2026-11-09 |
-| people person | 1 | 2026-11-10 | 0 | 0 | 2026-11-09 |
-| bisect | 1 | 2026-11-11 | 0 | 0 | 2026-11-10 |
-| feature parity | 1 | 2026-11-11 | 0 | 0 | 2026-11-10 |
-| payment terms | 1 | 2026-11-11 | 0 | 0 | 2026-11-10 |
-| drop the ball | 1 | 2026-11-11 | 0 | 0 | 2026-11-10 |
-| hand-me-down | 1 | 2026-11-11 | 0 | 0 | 2026-11-10 |
-| heap dump | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
-| readiness probe | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
-| haggle | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
-| shore up | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
-| cozy | 1 | 2026-11-12 | 0 | 0 | 2026-11-11 |
 | downtime | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
 | watermark | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
 | drill down | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |

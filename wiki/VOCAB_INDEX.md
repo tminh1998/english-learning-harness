@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 360 từ đã học** · IT 144 · Business 144 · Life 72 · ad-hoc 0
+**Tổng: 330 từ đã học** · IT 132 · Business 132 · Life 66 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
 **Cập nhật:** 2026-11-13
 
@@ -339,46 +339,16 @@
 | 318 | procurement | procure, procures, procured, procuring, procurement process, procurement team, procurement portal | noun (không đếm được; cũng dùng để gọi chính bộ phận đó) | Business | thu mua / khâu duyệt mua của khách | 2026-11-04 | lesson |
 | 319 | renewal | renew, renews, renewed, renewing, renewals, auto-renewal, renewal date, non-renewal | noun (đếm được) | Business | gia hạn hợp đồng | 2026-11-04 | lesson |
 | 320 | homesick | homesickness, homesick for sth, be homesick, get homesick, homesickly | adjective | Life | nhớ nhà | 2026-11-04 | lesson |
-| 321 | least privilege | least-privilege, principle of least privilege, PoLP, privilege, privileges, privileged, unprivileged, over-privileged | noun phrase (không đếm được) | IT | nguyên tắc quyền tối thiểu | 2026-11-05 | lesson |
-| 322 | append-only | append, appends, appended, appending, append-only mode, appendable, append to sth | adjective | IT | chỉ ghi thêm, không sửa không xoá | 2026-11-05 | lesson |
-| 323 | sunk cost | sunk costs, sunk-cost, the sunk cost fallacy, sink, sank, sunk, sunken | noun (đếm được) | Business | chi phí chìm | 2026-11-05 | lesson |
-| 324 | runway | runways, cash runway, runway risk, extend the runway, out of runway, run out of runway | noun (đếm được, thường số ít) | Business | ngân sách còn đủ chạy bao lâu nữa | 2026-11-05 | lesson |
-| 325 | jet lag | jet-lagged, jetlag, jet-lag, be jet-lagged, get over jet lag, time zone | noun (không đếm được) | Life | lệch múi giờ | 2026-11-05 | lesson |
-| 326 | flapping | flap, flaps, flapped, flapping, route flapping, flap detection, flapping alert, dampening | noun (không đếm được) | IT | đổi trạng thái lên xuống liên tục | 2026-11-06 | lesson |
-| 327 | data lineage | lineage, lineages, data-lineage, column-level lineage, lineage graph, trace lineage, provenance | noun (không đếm được) | IT | truy xuất nguồn gốc dữ liệu | 2026-11-06 | lesson |
-| 328 | escrow | escrowed, escrowing, escrow account, escrow agent, in escrow, source code escrow, hold in escrow | noun (không đếm được, cũng là verb) | Business | ký quỹ, nhờ bên thứ ba giữ hộ | 2026-11-06 | lesson |
-| 329 | bite the bullet | bit the bullet, bitten the bullet, biting the bullet, bite, bit, bitten, grin and bear it | idiom (verb phrase) | Business | cắn răng làm | 2026-11-06 | lesson |
-| 330 | laid-back | laid back, laidback, laid-back attitude, lay back, laid-back about sth, easygoing | adjective | Life | thoải mái, dễ tính | 2026-11-06 | lesson |
-| 331 | service mesh | service meshes, mesh, meshes, meshed, mesh proxy, data plane, control plane, sidecar mesh | noun (đếm được) | IT | Lớp hạ tầng lo việc các service gọi nhau | 2026-11-07 | lesson |
-| 332 | index bloat | bloat, bloated, bloating, debloat, table bloat, bloat ratio, index bloating | noun (không đếm được) | IT | index phình to vì rác chưa dọn | 2026-11-07 | lesson |
-| 333 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | Không thương lượng được | 2026-11-07 | lesson |
-| 334 | liaison | liaisons, liaise, liaises, liaised, liaising, client liaison, liaison officer, liaison role | noun (đếm được) | Business | Đầu mối liên lạc | 2026-11-07 | lesson |
-| 335 | bookworm | bookworms, book worm, book-worm, worm, worms, bookish | noun (đếm được) | Life | Con mọt sách | 2026-11-07 | lesson |
-| 336 | vacuum | vacuums, vacuumed, vacuuming, autovacuum, a vacuum, vacuum cleaner, vacuum up, VACUUM FULL | verb (cũng là noun) | IT | Thu hồi chỗ chết trong bảng và index | 2026-11-09 | lesson |
-| 337 | connection pool | connection pools, pool, pools, pooled, pooling, connection pooling, pooler, thread pool, max pool size | noun (đếm được) | IT | Bộ connection mở sẵn để dùng lại | 2026-11-09 | lesson |
-| 338 | gatekeeper | gatekeepers, gatekeeping, gate-keeper, keep the gate, keeper, a gatekeeper check | noun (đếm được) | Business | Người gác cửa, lọc ai được gặp cấp trên | 2026-11-09 | lesson |
-| 339 | across the board | across-the-board, an across-the-board cut, an across-the-board increase, apply across the board, board | idiom (trạng từ; tính từ khi có gạch nối) | Business | Đồng loạt, không trừ ai | 2026-11-09 | lesson |
-| 340 | people person | people, person, persons, personable, sociable, a numbers person, not really a people person | noun (đếm được, hầu như luôn số ít) | Life | Người giỏi giao tiếp, thích chỗ đông người | 2026-11-09 | lesson |
-| 341 | bisect | bisects, bisected, bisecting, bisection, git bisect, auto-bisect, bisectable | verb | IT | chia đôi dần để tìm commit gây lỗi | 2026-11-10 | lesson |
-| 342 | feature parity | parity, at parity, parity gap, near-parity, achieve parity, feature-parity checklist | noun (không đếm được) | IT | tương đương tính năng | 2026-11-10 | lesson |
-| 343 | payment terms | payment term, terms, terms and conditions, on these terms, net terms, payment schedule | noun (luôn số nhiều) | Business | điều khoản thanh toán | 2026-11-10 | lesson |
-| 344 | drop the ball | drops the ball, dropped the ball, dropping the ball, keep the ball rolling, the ball is in your court | idiom (cụm động từ) | Business | để lọt việc được giao | 2026-11-10 | lesson |
-| 345 | hand-me-down | hand-me-downs, hand me down, hand down, handed down, handing down, a hand-down | noun (đếm được; cũng là tính từ) | Life | đồ cũ được cho lại | 2026-11-10 | lesson |
-| 346 | heap dump | heap dumps, heap, dump, dumped, dumping, core dump, thread dump, memory dump, heap analysis | noun (đếm được) | IT | bản chụp toàn bộ heap | 2026-11-11 | lesson |
-| 347 | readiness probe | readiness probes, readiness, ready, liveness probe, startup probe, probe, health check, readinessProbe | noun (đếm được) | IT | phép kiểm container sẵn sàng nhận request chưa | 2026-11-11 | lesson |
-| 348 | haggle | haggles, haggled, haggling, a haggle, haggler, no-haggle pricing | verb | Business | mặc cả | 2026-11-11 | lesson |
-| 349 | shore up | shores up, shored up, shoring up, shore sth up, a shore-up, shoring | phrasal verb | Business | củng cố chỗ đang yếu | 2026-11-11 | lesson |
-| 350 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up, a cozy | adjective | Life | ấm cúng | 2026-11-11 | lesson |
-| 351 | downtime | down, be down, go down, bring sth down, uptime, outage, zero-downtime, downtime window, scheduled downtime | noun (không đếm được) | IT | thời gian ngừng hoạt động / lúc được nghỉ ngơi | 2026-11-12 | lesson |
-| 352 | watermark | watermarks, watermarked, watermarking, water-mark, watermark-free, visible / invisible watermark | noun (đếm được; cũng là verb) | IT | hình mờ | 2026-11-12 | lesson |
-| 353 | drill down | drills down, drilled down, drilling down, drill-down, drilldown, drill into, drill down to sth | phrasal verb | Business | đi sâu vào chi tiết sau con số tổng | 2026-11-12 | lesson |
-| 354 | in arrears | arrear, arrears, in arrears, fall into arrears, arrears balance, rent arrears, paid in arrears | cụm trạng từ (danh từ: arrears) | Business | trả sau / đang nợ quá hạn | 2026-11-12 | lesson |
-| 355 | mingle | mingles, mingled, mingling, mingler, mix and mingle, intermingle | verb | Life | giao lưu, đi bắt chuyện từng nhóm | 2026-11-12 | lesson |
-| 356 | triage | triages, triaged, triaging, bug triage, triage meeting, triage nurse, retriage | verb (cũng là noun) | IT | phân loại rồi xếp ưu tiên | 2026-11-13 | lesson |
-| 357 | viewport | viewports, viewport width, viewport height, in-viewport, viewport meta, vh, vw, view | noun (đếm được) | IT | khung nhìn / vùng đang thấy trên màn hình | 2026-11-13 | lesson |
-| 358 | dispute | disputes, disputed, disputing, a dispute, in dispute, disputable, indisputable | verb (cũng là noun) | Business | khiếu nại / tranh chấp | 2026-11-13 | lesson |
-| 359 | amend | amends, amended, amending, amendment, amendments, as amended, unamended | verb | Business | sửa đổi văn bản đã ký | 2026-11-13 | lesson |
-| 360 | cram | crams, crammed, cramming, crammed with, a cram session, crammer, cram school | verb | Life | nhồi nhét cho vừa / học nhồi trước kỳ thi | 2026-11-13 | lesson |
+| 321 | downtime | down, be down, go down, bring sth down, uptime, outage, zero-downtime, downtime window, scheduled downtime | noun (không đếm được) | IT | thời gian ngừng hoạt động / lúc được nghỉ ngơi | 2026-11-12 | lesson |
+| 322 | watermark | watermarks, watermarked, watermarking, water-mark, watermark-free, visible / invisible watermark | noun (đếm được; cũng là verb) | IT | hình mờ | 2026-11-12 | lesson |
+| 323 | drill down | drills down, drilled down, drilling down, drill-down, drilldown, drill into, drill down to sth | phrasal verb | Business | đi sâu vào chi tiết sau con số tổng | 2026-11-12 | lesson |
+| 324 | in arrears | arrear, arrears, in arrears, fall into arrears, arrears balance, rent arrears, paid in arrears | cụm trạng từ (danh từ: arrears) | Business | trả sau / đang nợ quá hạn | 2026-11-12 | lesson |
+| 325 | mingle | mingles, mingled, mingling, mingler, mix and mingle, intermingle | verb | Life | giao lưu, đi bắt chuyện từng nhóm | 2026-11-12 | lesson |
+| 326 | triage | triages, triaged, triaging, bug triage, triage meeting, triage nurse, retriage | verb (cũng là noun) | IT | phân loại rồi xếp ưu tiên | 2026-11-13 | lesson |
+| 327 | viewport | viewports, viewport width, viewport height, in-viewport, viewport meta, vh, vw, view | noun (đếm được) | IT | khung nhìn / vùng đang thấy trên màn hình | 2026-11-13 | lesson |
+| 328 | dispute | disputes, disputed, disputing, a dispute, in dispute, disputable, indisputable | verb (cũng là noun) | Business | khiếu nại / tranh chấp | 2026-11-13 | lesson |
+| 329 | amend | amends, amended, amending, amendment, amendments, as amended, unamended | verb | Business | sửa đổi văn bản đã ký | 2026-11-13 | lesson |
+| 330 | cram | crams, crammed, cramming, crammed with, a cram session, crammer, cram school | verb | Life | nhồi nhét cho vừa / học nhồi trước kỳ thi | 2026-11-13 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
