@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
+**Tổng: 360 từ đã học** · IT 144 · Business 144 · Life 72 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-11
+**Cập nhật:** 2026-11-13
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -374,6 +374,11 @@
 | 353 | drill down | drills down, drilled down, drilling down, drill-down, drilldown, drill into, drill down to sth | phrasal verb | Business | đi sâu vào chi tiết sau con số tổng | 2026-11-12 | lesson |
 | 354 | in arrears | arrear, arrears, in arrears, fall into arrears, arrears balance, rent arrears, paid in arrears | cụm trạng từ (danh từ: arrears) | Business | trả sau / đang nợ quá hạn | 2026-11-12 | lesson |
 | 355 | mingle | mingles, mingled, mingling, mingler, mix and mingle, intermingle | verb | Life | giao lưu, đi bắt chuyện từng nhóm | 2026-11-12 | lesson |
+| 356 | triage | triages, triaged, triaging, bug triage, triage meeting, triage nurse, retriage | verb (cũng là noun) | IT | phân loại rồi xếp ưu tiên | 2026-11-13 | lesson |
+| 357 | viewport | viewports, viewport width, viewport height, in-viewport, viewport meta, vh, vw, view | noun (đếm được) | IT | khung nhìn / vùng đang thấy trên màn hình | 2026-11-13 | lesson |
+| 358 | dispute | disputes, disputed, disputing, a dispute, in dispute, disputable, indisputable | verb (cũng là noun) | Business | khiếu nại / tranh chấp | 2026-11-13 | lesson |
+| 359 | amend | amends, amended, amending, amendment, amendments, as amended, unamended | verb | Business | sửa đổi văn bản đã ký | 2026-11-13 | lesson |
+| 360 | cram | crams, crammed, cramming, crammed with, a cram session, crammer, cram school | verb | Life | nhồi nhét cho vừa / học nhồi trước kỳ thi | 2026-11-13 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
