@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-13 (buổi #66 — xoá 6 bài 05/11 → 11/11 ngày 12/11)
+**Cập nhật:** 2026-11-14 (buổi #67 — soạn sẵn sáng 13/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 330 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 132 · Business 132 · Life 66                                                           |
-| Số buổi học          | 66                                                                                      |
-| Streak hiện tại      | 2 buổi (2026-11-12 → 2026-11-13 — 6 bài 05/11 → 11/11 đã xoá nên chuỗi 02/11 → 04/11 (3 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 335 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 134 · Business 134 · Life 67                                                           |
+| Số buổi học          | 67                                                                                      |
+| Streak hiện tại      | 3 buổi (2026-11-12 → 2026-11-14 — 6 bài 05/11 → 11/11 đã xoá nên chuỗi 02/11 → 04/11 (3 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-13 (Thứ Sáu) — buổi #66 |
+| Buổi gần nhất        | 2026-11-14 (Thứ Bảy) — buổi #67 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -84,6 +84,7 @@
 | 2026-11-04 | 2026-W45 | #64 | flame graph · guardrail · procurement · renewal · homesick |
 | 2026-11-12 | 2026-W46 | #65 | downtime · watermark · drill down · in arrears · mingle |
 | 2026-11-13 | 2026-W46 | #66 | triage · viewport · dispute · amend · cram |
+| 2026-11-14 | 2026-W46 | #67 | lint · minify · reimburse · forecast · thrifty |
 
 ## Kết quả quiz tuần
 
@@ -138,6 +139,12 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-14 (soạn sẵn sáng 13/11):** vốn từ lên **335 từ**, nợ ôn tập lên **330/335 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #67 do routine 7h sáng 13/11 soạn sẵn cho Thứ Bảy 14/11: phần A hỏi lại 5 từ của buổi 13/11 (triage · viewport · dispute · amend · cram), phần B bốc bằng `sh tools/boc.sh` trúng flush · walk through · multi-tenancy · canary release · reach out · night owl · keep an eye on · awkward · peckish · upsell · tag along · drag on · dangling · hash out · reflow · pick up the tab · narrow down · smoke test · low-hanging fruit · quorum — cả 20 từ đều có "gặp lần cuối" là 22/10, không trùng một từ nào với phần B của buổi 12/11 và 13/11. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)** ngay lần soát đầu. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**.
+
+⚠️ Hard gate R1 loại **ba từ đã soạn gần xong bài** trong buổi này, cả ba vì đụng **cột họ từ** chứ không phải trùng lemma — đúng kiểu đã làm hỏng buổi 04/11 và 11/11: `lazy loading` (`load` ← `payload` liệt kê thẳng `load` trong họ từ, cộng `load shedding`, `preload` của `prefetch`) · `line item` (`line` ← `bottom line`, `draw the line`, `redline`; `item` ← `action item`) · `touchpoint` (`touch` ← `touch base`, `point` ← `pain point`, `action point`, `sticking point`, `single point of failure` — **lần thứ ba** bị loại đúng vì cặp chữ này, sau 20/10 và 04/11; nên ghi vào đầu để lần sau khỏi soạn lại). Cũng loại ở bước ứng viên: `tail latency` (← lemma `latency`), `write amplification` (`write` ← `write-ahead`), `jitter` (← `jittered backoff` của `backoff`), `hydrate`, `shard`, `drift`, `tree shaking`, `bulkhead`, `circuit breaker`, `cardinality`, `eviction`, `polyfill`, `shim`, `thundering herd`, `seed data`, `clock skew`, `fan-out`, `stub`, `preflight`, `idle`, `churn`, `waive`, `retainer`, `handover`, `due diligence`, `change order`, `offboard`, `bottom line`, `markup`, `lead time`, `expedite`, `stipulate`, `invoice`, `audit`, `coalesce`, `binge-watch`, `potluck`, `commute`, `oversleep`, `craving`, `pet peeve`, `power nap`, `rain check`, `on the hook` trùng thẳng lemma hoặc họ từ. Hai từ bị loại không phải vì R1: `dead letter queue` (gần trùng **nghĩa** với `poison message` ở bảng ⛔ Đã biết sẵn — `poison queue` nằm ngay trong họ từ của nó, dạy lại là lãng phí một suất) và `wind down` / `unwind` (`wind` ← `wind up` trong họ từ của `end up`). `squeeze in` bị loại vì **trùng nghĩa gọn** với `cram` vừa học hôm 13/11 (`nhồi nhét cho vừa`) — quy luật 5 trong `memory/cach-dich-cua-user.md`. Năm từ chốt lại đều sạch cả cột họ từ (`lint`, `minif`, `reimburse`, `forecast`, `thrift` đều 0 kết quả grep).
+
+Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: quy luật 1 cho `forecast` → `dự báo` (tiếng Việt có sẵn đúng chữ thì dùng thẳng, 2 chữ, không diễn giải) và `thrifty` → `tiết kiệm, biết tính trước khi chi` (từ chuẩn + vế chức năng nối bằng dấu phẩy như `hotspot`, vì riêng `tiết kiệm` không chở được sắc thái **khen**) · quy luật 6 cho `lint` → `rà code theo quy ước, báo chỗ viết sai` và `minify` → `rút gọn code cho file nhẹ đi` (từ chỉ một quá trình, không có tên Việt chuẩn → kể thẳng việc nó làm, giữ `code` bằng tiếng Anh theo quy luật 7) · quy luật 1 cho `reimburse` → `hoàn lại tiền đã chi`. Quy luật 5 đã soát và đã tránh hai chỗ: `lint` lúc đầu viết `soi nhanh code`, đụng `soi nhanh xem có sai lè không` của `sanity check` → đổi sang `rà code theo quy ước`; `minify` lúc đầu viết `cắt hết chỗ dư`, đụng `cắt cụt cho ngắn, đuôi mất luôn` của `truncate` và `cắt dữ liệu ra nhiều mảnh` của `shard` → đổi sang `rút gọn code`. `hoàn lại tiền đã chi` cũng soát với `chuỗi bước có hoàn tác` (`saga`): khác chữ rõ. Tuần 2026-W46 nay có 15 từ (12/11 → 14/11); W45 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W45, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-11-12 (xoá bài):** **Sáu bài 05/11 · 06/11 · 07/11 · 09/11 · 10/11 · 11/11 đã xoá hẳn** theo yêu cầu người học: gỡ file bài, gỡ 30 từ least privilege · append-only · sunk cost · runway · jet lag (05/11) · flapping · data lineage · escrow · bite the bullet · laid-back (06/11) · service mesh · index bloat · non-negotiable · liaison · bookworm (07/11) · vacuum · connection pool · gatekeeper · across the board · people person (09/11) · bisect · feature parity · payment terms · drop the ball · hand-me-down (10/11) · heap dump · readiness probe · haggle · shore up · cozy (11/11) khỏi `VOCAB_INDEX.md` và `REVIEW_QUEUE.md` (sau này được phép dạy lại), gỡ khỏi bảng ôn tuần `recap/2026-W45` (còn 15 từ, 12 chỗ dễ sai; câu tự kiểm tra 2 + 6 đổi sang flame graph + renewal). Bài 12/11 lùi thành **buổi #65**: phần A đổi sang 5 từ của buổi 04/11, phần B bốc lại bằng `boc.sh 2026-11-12`; câu ví dụ thứ hai của `downtime` đổi từ cũ `cozy` → `recharge`, câu ví dụ đầu của `in arrears` đổi `payment terms` → `fine print`. Bài 13/11 lùi thành **buổi #66**: phần A giữ nguyên (5 từ của 12/11), phần B bốc lại bằng `boc.sh 2026-11-13` vì phần ôn của các bài đã xoá không còn tính là đã gặp. Ví dụ và mẩu đọc của 13/11 không mượn từ nào của các bài đã xoá. `soat-nghia.sh` in KHOP-HET cho cả hai bài và bảng ôn W45.
 

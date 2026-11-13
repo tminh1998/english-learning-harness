@@ -349,6 +349,11 @@
 | 328 | dispute | disputes, disputed, disputing, a dispute, in dispute, disputable, indisputable | verb (cũng là noun) | Business | khiếu nại / tranh chấp | 2026-11-13 | lesson |
 | 329 | amend | amends, amended, amending, amendment, amendments, as amended, unamended | verb | Business | sửa đổi văn bản đã ký | 2026-11-13 | lesson |
 | 330 | cram | crams, crammed, cramming, crammed with, a cram session, crammer, cram school | verb | Life | nhồi nhét cho vừa / học nhồi trước kỳ thi | 2026-11-13 | lesson |
+| 331 | lint | linter, linters, linting, linted, lint rule, lint-staged, unlinted | verb (cũng là noun; công cụ: linter) | IT | rà code theo quy ước, báo chỗ viết sai | 2026-11-14 | lesson |
+| 332 | minify | minifies, minified, minifying, minifier, minification, unminified | verb | IT | rút gọn code cho file nhẹ đi | 2026-11-14 | lesson |
+| 333 | reimburse | reimburses, reimbursed, reimbursing, reimbursement, reimbursable, non-reimbursable | verb | Business | hoàn lại tiền đã chi | 2026-11-14 | lesson |
+| 334 | forecast | forecasts, forecasting, forecaster, forecasted, weather forecast, over-forecast | noun (cũng là verb) | Business | dự báo | 2026-11-14 | lesson |
+| 335 | thrifty | thrift, thrifts, thriftily, thriftiness, unthrifty, thrift store, thrift shop, spendthrift | adjective | Life | tiết kiệm, biết tính trước khi chi | 2026-11-14 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
