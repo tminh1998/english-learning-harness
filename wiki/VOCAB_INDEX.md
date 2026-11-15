@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 330 từ đã học** · IT 132 · Business 132 · Life 66 · ad-hoc 0
+**Tổng: 340 từ đã học** · IT 136 · Business 136 · Life 68 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-13
+**Cập nhật:** 2026-11-16
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -354,6 +354,11 @@
 | 333 | reimburse | reimburses, reimbursed, reimbursing, reimbursement, reimbursable, non-reimbursable | verb | Business | hoàn lại tiền đã chi | 2026-11-14 | lesson |
 | 334 | forecast | forecasts, forecasting, forecaster, forecasted, weather forecast, over-forecast | noun (cũng là verb) | Business | dự báo | 2026-11-14 | lesson |
 | 335 | thrifty | thrift, thrifts, thriftily, thriftiness, unthrifty, thrift store, thrift shop, spendthrift | adjective | Life | tiết kiệm, biết tính trước khi chi | 2026-11-14 | lesson |
+| 336 | serialize | serializes, serialized, serializing, serialization, serializer, deserialize, deserialization, re-serialize | verb | IT | đổi object thành chuỗi để gửi đi hoặc lưu lại | 2026-11-16 | lesson |
+| 337 | compaction | compact, compacts, compacted, compacting, log compaction, auto-compaction, compaction job, compaction lag | noun (không đếm được) | IT | dồn các file lại, bỏ bản ghi đã bị ghi đè | 2026-11-16 | lesson |
+| 338 | out of pocket | out-of-pocket, out-of-pocket expenses, out-of-pocket costs, be left out of pocket, pay out of pocket | adjective + adverb | Business | tự bỏ tiền túi ra trước / đang đi vắng, không liên lạc được | 2026-11-16 | lesson |
+| 339 | goodwill | good will, goodwill gesture, a gesture of goodwill, goodwill payment, goodwill credit, ill will | noun (không đếm được) | Business | thiện chí | 2026-11-16 | lesson |
+| 340 | muggy | mugginess, muggier, muggiest, a muggy day, muggy weather | adjective | Life | nóng ẩm, oi bức | 2026-11-16 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
