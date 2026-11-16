@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 340 từ đã học** · IT 136 · Business 136 · Life 68 · ad-hoc 0
+**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-16
+**Cập nhật:** 2026-11-17
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -359,6 +359,11 @@
 | 338 | out of pocket | out-of-pocket, out-of-pocket expenses, out-of-pocket costs, be left out of pocket, pay out of pocket | adjective + adverb | Business | tự bỏ tiền túi ra trước / đang đi vắng, không liên lạc được | 2026-11-16 | lesson |
 | 339 | goodwill | good will, goodwill gesture, a gesture of goodwill, goodwill payment, goodwill credit, ill will | noun (không đếm được) | Business | thiện chí | 2026-11-16 | lesson |
 | 340 | muggy | mugginess, muggier, muggiest, a muggy day, muggy weather | adjective | Life | nóng ẩm, oi bức | 2026-11-16 | lesson |
+| 341 | transpile | transpiles, transpiled, transpiling, transpiler, transpilation, transpiled bundle | verb | IT | dịch code sang bản khác mà vẫn là code | 2026-11-17 | lesson |
+| 342 | garbage collection | garbage collector, garbage-collected, GC, GC pause, collect garbage, generational GC | noun (không đếm được) | IT | tự thu hồi bộ nhớ không còn ai dùng | 2026-11-17 | lesson |
+| 343 | reiterate | reiterates, reiterated, reiterating, reiteration, iterate, iteration | verb | Business | nhắc lại cho chắc | 2026-11-17 | lesson |
+| 344 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | không thương lượng được | 2026-11-17 | lesson |
+| 345 | grumpy | grumpier, grumpiest, grumpily, grumpiness, grump, grumble | adjective | Life | cáu bẳn, dễ gắt | 2026-11-17 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
