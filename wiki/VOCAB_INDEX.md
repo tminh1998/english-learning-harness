@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
+**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-17
+**Cập nhật:** 2026-11-18
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -364,6 +364,11 @@
 | 343 | reiterate | reiterates, reiterated, reiterating, reiteration, iterate, iteration | verb | Business | nhắc lại cho chắc | 2026-11-17 | lesson |
 | 344 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | không thương lượng được | 2026-11-17 | lesson |
 | 345 | grumpy | grumpier, grumpiest, grumpily, grumpiness, grump, grumble | adjective | Life | cáu bẳn, dễ gắt | 2026-11-17 | lesson |
+| 346 | write-ahead log | WAL, write-ahead logging, WAL segment, WAL file, log, logging, append-only log | noun (đếm được, thường số ít) | IT | ghi log trước rồi mới đổi dữ liệu thật | 2026-11-18 | lesson |
+| 347 | connection pool | pool, pools, pooled, pooling, connection pooling, pooled connection, thread pool | noun (đếm được) | IT | giữ sẵn connection để dùng lại | 2026-11-18 | lesson |
+| 348 | payment terms | term, terms, terms and conditions, payment schedule, pay, payable, prepayment | noun (số nhiều) | Business | điều khoản thanh toán | 2026-11-18 | lesson |
+| 349 | across the board | across-the-board, board, boards, blanket increase, wholesale | idiom (cụm trạng ngữ) | Business | đồng loạt, không trừ chỗ nào | 2026-11-18 | lesson |
+| 350 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up | adjective | Life | ấm cúng | 2026-11-18 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

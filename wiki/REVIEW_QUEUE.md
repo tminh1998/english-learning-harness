@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-17: 340 từ** — toàn bộ vốn từ trừ lô của bài 17/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-18: 345 từ** — toàn bộ vốn từ trừ lô của bài 18/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -74,6 +74,9 @@
 - hạn 2026-11-14 — triage · viewport · dispute · amend · cram
 - hạn 2026-11-15 — lint · minify · reimburse · forecast · thrifty
 - hạn 2026-11-17 — serialize · compaction · out of pocket · goodwill · muggy
+- hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
+
+_Ghi chú 2026-11-18 (buổi #70): phần A hỏi lại 5 từ của buổi 17/11 (transpile · garbage collection · reiterate · non-negotiable · grumpy), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng gossip protocol · orphan · fallback · edge case · backfill · spare · yak shaving · loose ends · latency · statement of work · blast radius · brittle · take a breather · bump · heads-up · tombstone · nitpick · recap · contention · pain point — chạm từ lô cũ nhất (14/08) tới lô 23/10, và **không trùng một từ nào** với phần ôn của buổi 17/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **345/350 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-11-17 (buổi #69): phần A hỏi lại 5 từ của buổi 16/11 (serialize · compaction · out of pocket · goodwill · muggy), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng cold start · buy-in · happy path · retainer · couch potato · idempotent · snapshot · good faith · shim · seed · sunset · run by · grab a bite · fine print · worn out · ballpark · unplug · rapport · due diligence · flaky — "gặp lần cuối" là 23/10 và 24/10, chạm từ lô cũ nhất (15/08) tới lô 23/10, và **không trùng một từ nào** với phần ôn của buổi 16/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
 
@@ -502,6 +505,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | reiterate | 1 | 2026-11-18 | 0 | 0 | 2026-11-17 |
 | non-negotiable | 1 | 2026-11-18 | 0 | 0 | 2026-11-17 |
 | grumpy | 1 | 2026-11-18 | 0 | 0 | 2026-11-17 |
+| write-ahead log | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
+| connection pool | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
+| payment terms | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
+| across the board | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
+| cozy | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 
 ## Đã thuộc (bậc 5, đúng)
 
