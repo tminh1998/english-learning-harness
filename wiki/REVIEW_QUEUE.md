@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-18: 345 từ** — toàn bộ vốn từ trừ lô của bài 18/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-18: 330 từ** — toàn bộ vốn từ trừ lô của bài 18/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -71,14 +71,11 @@
 - hạn 2026-11-04 — split-brain · golden path · overrun · redline · housewarming
 - hạn 2026-11-05 — flame graph · guardrail · procurement · renewal · homesick
 - hạn 2026-11-13 — downtime · watermark · drill down · in arrears · mingle
-- hạn 2026-11-14 — triage · viewport · dispute · amend · cram
-- hạn 2026-11-15 — lint · minify · reimburse · forecast · thrifty
-- hạn 2026-11-17 — serialize · compaction · out of pocket · goodwill · muggy
 - hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
 
-_Ghi chú 2026-11-18 (buổi #70): phần A hỏi lại 5 từ của buổi 17/11 (transpile · garbage collection · reiterate · non-negotiable · grumpy), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng gossip protocol · orphan · fallback · edge case · backfill · spare · yak shaving · loose ends · latency · statement of work · blast radius · brittle · take a breather · bump · heads-up · tombstone · nitpick · recap · contention · pain point — chạm từ lô cũ nhất (14/08) tới lô 23/10, và **không trùng một từ nào** với phần ôn của buổi 17/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **345/350 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-11-18 (buổi #67; bốc lại phần B ngày 17/11 sau khi xoá bài 13/11, 14/11, 16/11): phần A hỏi lại 5 từ của buổi 17/11 (transpile · garbage collection · reiterate · non-negotiable · grumpy), phần B bốc lại bằng `sh tools/boc.sh 2026-11-18` trúng tag along · multi-tenancy · reflow · canary release · awkward · flush · night owl · bake in · drag on · hash out · pick up the tab · reach out · low-hanging fruit · starvation · peckish · keep an eye on · dangling · race condition · invoice · caveat — **không trùng một từ nào** với phần ôn mới của buổi 17/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **330/335 từ**, toàn bộ ở bậc 1._
 
-_Ghi chú 2026-11-17 (buổi #69): phần A hỏi lại 5 từ của buổi 16/11 (serialize · compaction · out of pocket · goodwill · muggy), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng cold start · buy-in · happy path · retainer · couch potato · idempotent · snapshot · good faith · shim · seed · sunset · run by · grab a bite · fine print · worn out · ballpark · unplug · rapport · due diligence · flaky — "gặp lần cuối" là 23/10 và 24/10, chạm từ lô cũ nhất (15/08) tới lô 23/10, và **không trùng một từ nào** với phần ôn của buổi 16/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-11-17 (buổi #66; làm lại khối ôn nhanh ngày 17/11 sau khi xoá bài 13/11, 14/11, 16/11): phần A hỏi lại 5 từ của buổi 12/11 (downtime · watermark · drill down · in arrears · mingle), phần B bốc lại bằng `sh tools/boc.sh 2026-11-17` trúng eventual consistency · noisy neighbor · swamped · eviction · move the goalposts · doze off · pet peeve · provision · run errands · backward compatible · graceful degradation · rush hour · weigh in · leader election · out of the blue · acceptance criteria · scaffold · touch base · buffer · throttle — "gặp lần cuối" đều là 21/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
 
 _Ghi chú 2026-10-27 (buổi #58): phần A hỏi lại 5 từ của buổi 26/10 (telemetry · saga · mitigate · prerequisite · stroll), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chores · heartbeat · bottleneck · binge-watch · dry run · sticking point · runbook · ingest · put a pin in it · concession · downstream · waive · immutable · pitch · splurge · outbox · ramp up · quarantine · lead time · quote — "gặp lần cuối" là 08/10 và 09/10, chạm từ lô cũ nhất (14/08) tới lô 08/10, và **không trùng một từ nào** với phần ôn của buổi 26/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **285/290 từ**, toàn bộ ở bậc 1._
 
@@ -485,21 +482,6 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | drill down | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
 | in arrears | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
 | mingle | 1 | 2026-11-13 | 0 | 0 | 2026-11-12 |
-| triage | 1 | 2026-11-14 | 0 | 0 | 2026-11-13 |
-| viewport | 1 | 2026-11-14 | 0 | 0 | 2026-11-13 |
-| dispute | 1 | 2026-11-14 | 0 | 0 | 2026-11-13 |
-| amend | 1 | 2026-11-14 | 0 | 0 | 2026-11-13 |
-| cram | 1 | 2026-11-14 | 0 | 0 | 2026-11-13 |
-| lint | 1 | 2026-11-15 | 0 | 0 | 2026-11-14 |
-| minify | 1 | 2026-11-15 | 0 | 0 | 2026-11-14 |
-| reimburse | 1 | 2026-11-15 | 0 | 0 | 2026-11-14 |
-| forecast | 1 | 2026-11-15 | 0 | 0 | 2026-11-14 |
-| thrifty | 1 | 2026-11-15 | 0 | 0 | 2026-11-14 |
-| serialize | 1 | 2026-11-17 | 0 | 0 | 2026-11-16 |
-| compaction | 1 | 2026-11-17 | 0 | 0 | 2026-11-16 |
-| out of pocket | 1 | 2026-11-17 | 0 | 0 | 2026-11-16 |
-| goodwill | 1 | 2026-11-17 | 0 | 0 | 2026-11-16 |
-| muggy | 1 | 2026-11-17 | 0 | 0 | 2026-11-16 |
 | transpile | 1 | 2026-11-18 | 0 | 0 | 2026-11-17 |
 | garbage collection | 1 | 2026-11-18 | 0 | 0 | 2026-11-17 |
 | reiterate | 1 | 2026-11-18 | 0 | 0 | 2026-11-17 |

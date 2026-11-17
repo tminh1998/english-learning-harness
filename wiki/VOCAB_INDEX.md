@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
+**Tổng: 335 từ đã học** · IT 134 · Business 134 · Life 67 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
 **Cập nhật:** 2026-11-18
 
@@ -344,31 +344,16 @@
 | 323 | drill down | drills down, drilled down, drilling down, drill-down, drilldown, drill into, drill down to sth | phrasal verb | Business | đi sâu vào chi tiết sau con số tổng | 2026-11-12 | lesson |
 | 324 | in arrears | arrear, arrears, in arrears, fall into arrears, arrears balance, rent arrears, paid in arrears | cụm trạng từ (danh từ: arrears) | Business | trả sau / đang nợ quá hạn | 2026-11-12 | lesson |
 | 325 | mingle | mingles, mingled, mingling, mingler, mix and mingle, intermingle | verb | Life | giao lưu, đi bắt chuyện từng nhóm | 2026-11-12 | lesson |
-| 326 | triage | triages, triaged, triaging, bug triage, triage meeting, triage nurse, retriage | verb (cũng là noun) | IT | phân loại rồi xếp ưu tiên | 2026-11-13 | lesson |
-| 327 | viewport | viewports, viewport width, viewport height, in-viewport, viewport meta, vh, vw, view | noun (đếm được) | IT | khung nhìn / vùng đang thấy trên màn hình | 2026-11-13 | lesson |
-| 328 | dispute | disputes, disputed, disputing, a dispute, in dispute, disputable, indisputable | verb (cũng là noun) | Business | khiếu nại / tranh chấp | 2026-11-13 | lesson |
-| 329 | amend | amends, amended, amending, amendment, amendments, as amended, unamended | verb | Business | sửa đổi văn bản đã ký | 2026-11-13 | lesson |
-| 330 | cram | crams, crammed, cramming, crammed with, a cram session, crammer, cram school | verb | Life | nhồi nhét cho vừa / học nhồi trước kỳ thi | 2026-11-13 | lesson |
-| 331 | lint | linter, linters, linting, linted, lint rule, lint-staged, unlinted | verb (cũng là noun; công cụ: linter) | IT | rà code theo quy ước, báo chỗ viết sai | 2026-11-14 | lesson |
-| 332 | minify | minifies, minified, minifying, minifier, minification, unminified | verb | IT | rút gọn code cho file nhẹ đi | 2026-11-14 | lesson |
-| 333 | reimburse | reimburses, reimbursed, reimbursing, reimbursement, reimbursable, non-reimbursable | verb | Business | hoàn lại tiền đã chi | 2026-11-14 | lesson |
-| 334 | forecast | forecasts, forecasting, forecaster, forecasted, weather forecast, over-forecast | noun (cũng là verb) | Business | dự báo | 2026-11-14 | lesson |
-| 335 | thrifty | thrift, thrifts, thriftily, thriftiness, unthrifty, thrift store, thrift shop, spendthrift | adjective | Life | tiết kiệm, biết tính trước khi chi | 2026-11-14 | lesson |
-| 336 | serialize | serializes, serialized, serializing, serialization, serializer, deserialize, deserialization, re-serialize | verb | IT | đổi object thành chuỗi để gửi đi hoặc lưu lại | 2026-11-16 | lesson |
-| 337 | compaction | compact, compacts, compacted, compacting, log compaction, auto-compaction, compaction job, compaction lag | noun (không đếm được) | IT | dồn các file lại, bỏ bản ghi đã bị ghi đè | 2026-11-16 | lesson |
-| 338 | out of pocket | out-of-pocket, out-of-pocket expenses, out-of-pocket costs, be left out of pocket, pay out of pocket | adjective + adverb | Business | tự bỏ tiền túi ra trước / đang đi vắng, không liên lạc được | 2026-11-16 | lesson |
-| 339 | goodwill | good will, goodwill gesture, a gesture of goodwill, goodwill payment, goodwill credit, ill will | noun (không đếm được) | Business | thiện chí | 2026-11-16 | lesson |
-| 340 | muggy | mugginess, muggier, muggiest, a muggy day, muggy weather | adjective | Life | nóng ẩm, oi bức | 2026-11-16 | lesson |
-| 341 | transpile | transpiles, transpiled, transpiling, transpiler, transpilation, transpiled bundle | verb | IT | dịch code sang bản khác mà vẫn là code | 2026-11-17 | lesson |
-| 342 | garbage collection | garbage collector, garbage-collected, GC, GC pause, collect garbage, generational GC | noun (không đếm được) | IT | tự thu hồi bộ nhớ không còn ai dùng | 2026-11-17 | lesson |
-| 343 | reiterate | reiterates, reiterated, reiterating, reiteration, iterate, iteration | verb | Business | nhắc lại cho chắc | 2026-11-17 | lesson |
-| 344 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | không thương lượng được | 2026-11-17 | lesson |
-| 345 | grumpy | grumpier, grumpiest, grumpily, grumpiness, grump, grumble | adjective | Life | cáu bẳn, dễ gắt | 2026-11-17 | lesson |
-| 346 | write-ahead log | WAL, write-ahead logging, WAL segment, WAL file, log, logging, append-only log | noun (đếm được, thường số ít) | IT | ghi log trước rồi mới đổi dữ liệu thật | 2026-11-18 | lesson |
-| 347 | connection pool | pool, pools, pooled, pooling, connection pooling, pooled connection, thread pool | noun (đếm được) | IT | giữ sẵn connection để dùng lại | 2026-11-18 | lesson |
-| 348 | payment terms | term, terms, terms and conditions, payment schedule, pay, payable, prepayment | noun (số nhiều) | Business | điều khoản thanh toán | 2026-11-18 | lesson |
-| 349 | across the board | across-the-board, board, boards, blanket increase, wholesale | idiom (cụm trạng ngữ) | Business | đồng loạt, không trừ chỗ nào | 2026-11-18 | lesson |
-| 350 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up | adjective | Life | ấm cúng | 2026-11-18 | lesson |
+| 326 | transpile | transpiles, transpiled, transpiling, transpiler, transpilation, transpiled bundle | verb | IT | dịch code sang bản khác mà vẫn là code | 2026-11-17 | lesson |
+| 327 | garbage collection | garbage collector, garbage-collected, GC, GC pause, collect garbage, generational GC | noun (không đếm được) | IT | tự thu hồi bộ nhớ không còn ai dùng | 2026-11-17 | lesson |
+| 328 | reiterate | reiterates, reiterated, reiterating, reiteration, iterate, iteration | verb | Business | nhắc lại cho chắc | 2026-11-17 | lesson |
+| 329 | non-negotiable | negotiate, negotiates, negotiated, negotiating, negotiation, negotiable, negotiator, non-negotiables | adjective | Business | không thương lượng được | 2026-11-17 | lesson |
+| 330 | grumpy | grumpier, grumpiest, grumpily, grumpiness, grump, grumble | adjective | Life | cáu bẳn, dễ gắt | 2026-11-17 | lesson |
+| 331 | write-ahead log | WAL, write-ahead logging, WAL segment, WAL file, log, logging, append-only log | noun (đếm được, thường số ít) | IT | ghi log trước rồi mới đổi dữ liệu thật | 2026-11-18 | lesson |
+| 332 | connection pool | pool, pools, pooled, pooling, connection pooling, pooled connection, thread pool | noun (đếm được) | IT | giữ sẵn connection để dùng lại | 2026-11-18 | lesson |
+| 333 | payment terms | term, terms, terms and conditions, payment schedule, pay, payable, prepayment | noun (số nhiều) | Business | điều khoản thanh toán | 2026-11-18 | lesson |
+| 334 | across the board | across-the-board, board, boards, blanket increase, wholesale | idiom (cụm trạng ngữ) | Business | đồng loạt, không trừ chỗ nào | 2026-11-18 | lesson |
+| 335 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up | adjective | Life | ấm cúng | 2026-11-18 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

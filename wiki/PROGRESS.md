@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-18 (buổi #70 — soạn sẵn sáng 17/11)
+**Cập nhật:** 2026-11-18 (buổi #67 — soạn sẵn sáng 17/11; xoá bài 13/11, 14/11, 16/11 ngày 17/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 350 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 140 · Business 140 · Life 70                                                           |
-| Số buổi học          | 70                                                                                      |
-| Streak hiện tại      | 6 buổi (2026-11-12 → 2026-11-18 — 6 bài 05/11 → 11/11 đã xoá nên chuỗi 02/11 → 04/11 (3 buổi) đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 335 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 134 · Business 134 · Life 67                                                           |
+| Số buổi học          | 67                                                                                      |
+| Streak hiện tại      | 2 buổi (2026-11-17 → 2026-11-18 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-18 (Thứ Tư) — buổi #70 |
+| Buổi gần nhất        | 2026-11-18 (Thứ Tư) — buổi #67 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -83,11 +83,8 @@
 | 2026-11-03 | 2026-W45 | #63 | split-brain · golden path · overrun · redline · housewarming |
 | 2026-11-04 | 2026-W45 | #64 | flame graph · guardrail · procurement · renewal · homesick |
 | 2026-11-12 | 2026-W46 | #65 | downtime · watermark · drill down · in arrears · mingle |
-| 2026-11-13 | 2026-W46 | #66 | triage · viewport · dispute · amend · cram |
-| 2026-11-14 | 2026-W46 | #67 | lint · minify · reimburse · forecast · thrifty |
-| 2026-11-16 | 2026-W47 | #68 | serialize · compaction · out of pocket · goodwill · muggy |
-| 2026-11-17 | 2026-W47 | #69 | transpile · garbage collection · reiterate · non-negotiable · grumpy |
-| 2026-11-18 | 2026-W47 | #70 | write-ahead log · connection pool · payment terms · across the board · cozy |
+| 2026-11-17 | 2026-W47 | #66 | transpile · garbage collection · reiterate · non-negotiable · grumpy |
+| 2026-11-18 | 2026-W47 | #67 | write-ahead log · connection pool · payment terms · across the board · cozy |
 
 ## Kết quả quiz tuần
 
@@ -142,6 +139,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-17 (xoá bài):** **Ba bài 13/11 · 14/11 · 16/11 đã xoá hẳn** theo yêu cầu người học: gỡ file bài, gỡ 15 từ triage · viewport · dispute · amend · cram (13/11) · lint · minify · reimburse · forecast · thrifty (14/11) · serialize · compaction · out of pocket · goodwill · muggy (16/11) khỏi `VOCAB_INDEX.md` và `REVIEW_QUEUE.md` (sau này được phép dạy lại), gỡ khỏi bảng ôn tuần `recap/2026-W46` (còn 5 từ của buổi 12/11, 5 chỗ dễ sai; câu tự kiểm tra 3 → 6 viết lại cho downtime · watermark · in arrears · mingle). Vốn từ còn **335 từ** (IT 134 · Business 134 · Life 67), nợ ôn tập **330/335 từ quá hạn**. Bài 17/11 lùi thành **buổi #66**: phần A đổi sang 5 từ của buổi 12/11 (downtime · watermark · drill down · in arrears · mingle), phần B bốc lại bằng `boc.sh 2026-11-17` trúng eventual consistency · noisy neighbor · swamped · eviction · move the goalposts · doze off · pet peeve · provision · run errands · backward compatible · graceful degradation · rush hour · weigh in · leader election · out of the blue · acceptance criteria · scaffold · touch base · buffer · throttle; câu ví dụ thứ hai của `transpile` đổi từ cũ `minify` → `culprit`, của `garbage collection` đổi `serialize` → `ingest`. Bài 18/11 lùi thành **buổi #67**: phần B bốc lại bằng `boc.sh 2026-11-18` trúng tag along · multi-tenancy · reflow · canary release · awkward · flush · night owl · bake in · drag on · hash out · pick up the tab · reach out · low-hanging fruit · starvation · peckish · keep an eye on · dangling · race condition · invoice · caveat — không trùng từ nào với phần B mới của 17/11; câu ví dụ đầu của `write-ahead log` đổi `compaction` → `flush`, bài tập 5 đổi phương án nhiễu `muggy` → `stuffed`. `soat-nghia.sh` in **KHOP-HET**. Streak còn 2 buổi (17/11 → 18/11) vì 13/11, 14/11, 16/11 không còn bài.
 
 ⚠️ **Cập nhật 2026-11-18 (soạn sẵn sáng 17/11):** vốn từ lên **350 từ**, nợ ôn tập lên **345/350 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #70 do routine 7h sáng 17/11 soạn sẵn cho Thứ Tư 18/11: phần A hỏi lại 5 từ của buổi 17/11 (transpile · garbage collection · reiterate · non-negotiable · grumpy), phần B bốc bằng `sh tools/boc.sh` trúng gossip protocol · orphan · fallback · edge case · backfill · spare · yak shaving · loose ends · latency · statement of work · blast radius · brittle · take a breather · bump · heads-up · tombstone · nitpick · recap · contention · pain point — chạm từ lô cũ nhất (14/08) tới lô 23/10, không trùng một từ nào với phần B của buổi 16/11 và 17/11. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)** ngay lần soát đầu. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Bốn trong năm từ hôm nay — `connection pool` · `payment terms` · `across the board` · `cozy` — nằm trong lô 30 từ của sáu bài 05/11 → 11/11 đã xoá ngày 12/11, nên grep `VOCAB_INDEX` sạch và theo ghi chú hôm đó thì **được phép dạy lại**; `write-ahead log` là từ hoàn toàn mới. Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: **quy luật 1** cho `payment terms` → `điều khoản thanh toán` và `cozy` → `ấm cúng` (tiếng Việt có sẵn đúng chữ thì dùng thẳng, hình ảnh dồn xuống `PHU`) · **quy luật 7** cho `write-ahead log` → `ghi log trước rồi mới đổi dữ liệu thật` và `connection pool` → `giữ sẵn connection để dùng lại` (giữ `log`, `connection` bằng tiếng Anh thay vì tên giáo trình "nhật ký ghi trước", "vùng kết nối") · **quy luật 1 phần thành ngữ** cho `across the board` → `đồng loạt, không trừ chỗ nào` (hỏi "người Việt nói việc này bằng chữ gì", không dịch sát `board`). Tuần 2026-W47 nay có 15 từ (16/11 → 18/11); W46 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W46, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
