@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-18: 330 từ** — toàn bộ vốn từ trừ lô của bài 18/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-19: 335 từ** — toàn bộ vốn từ trừ lô của bài 19/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -72,6 +72,9 @@
 - hạn 2026-11-05 — flame graph · guardrail · procurement · renewal · homesick
 - hạn 2026-11-13 — downtime · watermark · drill down · in arrears · mingle
 - hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
+- hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
+
+_Ghi chú 2026-11-19 (buổi #68): phần A hỏi lại 5 từ của buổi 18/11 (write-ahead log · connection pool · payment terms · across the board · cozy), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng quorum · smoke test · narrow down · walk through · upsell · load shedding · seed · pilot · bear with · deadlock · couch potato · good faith · short notice · rollback · retainer · idempotent · bring up · buy-in · cold start · snapshot — "gặp lần cuối" là 22/10 và 23/10, và **không trùng một từ nào** với phần ôn của buổi 17/11 và 18/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **335/340 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-11-18 (buổi #67; bốc lại phần B ngày 17/11 sau khi xoá bài 13/11, 14/11, 16/11): phần A hỏi lại 5 từ của buổi 17/11 (transpile · garbage collection · reiterate · non-negotiable · grumpy), phần B bốc lại bằng `sh tools/boc.sh 2026-11-18` trúng tag along · multi-tenancy · reflow · canary release · awkward · flush · night owl · bake in · drag on · hash out · pick up the tab · reach out · low-hanging fruit · starvation · peckish · keep an eye on · dangling · race condition · invoice · caveat — **không trùng một từ nào** với phần ôn mới của buổi 17/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **330/335 từ**, toàn bộ ở bậc 1._
 
@@ -492,6 +495,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | payment terms | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 | across the board | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 | cozy | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
+| feature parity | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
+| flapping | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
+| counteroffer | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
+| sunk cost | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
+| run late | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
 
 ## Đã thuộc (bậc 5, đúng)
 

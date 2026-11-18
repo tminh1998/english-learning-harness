@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 335 từ đã học** · IT 134 · Business 134 · Life 67 · ad-hoc 0
+**Tổng: 340 từ đã học** · IT 136 · Business 136 · Life 68 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-18
+**Cập nhật:** 2026-11-19
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -354,6 +354,11 @@
 | 333 | payment terms | term, terms, terms and conditions, payment schedule, pay, payable, prepayment | noun (số nhiều) | Business | điều khoản thanh toán | 2026-11-18 | lesson |
 | 334 | across the board | across-the-board, board, boards, blanket increase, wholesale | idiom (cụm trạng ngữ) | Business | đồng loạt, không trừ chỗ nào | 2026-11-18 | lesson |
 | 335 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up | adjective | Life | ấm cúng | 2026-11-18 | lesson |
+| 336 | feature parity | parity, par, on par with, disparity, parity gap, at parity, feature-parity gap | noun (không đếm được) | IT | ngang bằng tính năng | 2026-11-19 | lesson |
+| 337 | flapping | flap, flaps, flapped, flap detection, anti-flap, dampening, a flapping alert | verb (dạng -ing, hay dùng như tính từ) | IT | nhảy trạng thái liên tục | 2026-11-19 | lesson |
+| 338 | counteroffer | counter, counters, countered, countering, counter-offer, counteroffers, offer, offers, offered, offering | noun (đếm được) | Business | phản đề nghị, chào lại mức khác | 2026-11-19 | lesson |
+| 339 | sunk cost | sink, sank, sunk, sunken, sunk costs, sunk-cost fallacy, sunken ship | noun (đếm được) | Business | chi phí chìm | 2026-11-19 | lesson |
+| 340 | run late | runs late, ran late, running late, late, later, lately, lateness, run behind, be late | phrasal verb (cụm động từ) | Life | trễ giờ, chạy quá giờ | 2026-11-19 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
