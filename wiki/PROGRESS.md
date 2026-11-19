@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-19 (buổi #68 — soạn sẵn sáng 18/11)
+**Cập nhật:** 2026-11-20 (buổi #69 — soạn sẵn sáng 19/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 340 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 136 · Business 136 · Life 68                                                           |
-| Số buổi học          | 68                                                                                      |
-| Streak hiện tại      | 3 buổi (2026-11-17 → 2026-11-19 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 345 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 138 · Business 138 · Life 69                                                           |
+| Số buổi học          | 69                                                                                      |
+| Streak hiện tại      | 4 buổi (2026-11-17 → 2026-11-20 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-19 (Thứ Năm) — buổi #68 |
+| Buổi gần nhất        | 2026-11-20 (Thứ Sáu) — buổi #69 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -86,6 +86,7 @@
 | 2026-11-17 | 2026-W47 | #66 | transpile · garbage collection · reiterate · non-negotiable · grumpy |
 | 2026-11-18 | 2026-W47 | #67 | write-ahead log · connection pool · payment terms · across the board · cozy |
 | 2026-11-19 | 2026-W47 | #68 | feature parity · flapping · counteroffer · sunk cost · run late |
+| 2026-11-20 | 2026-W47 | #69 | bit rot · bikeshedding · lowball · dial back · haggle |
 
 ## Kết quả quiz tuần
 
@@ -140,6 +141,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-20 (soạn sẵn sáng 19/11):** vốn từ lên **345 từ** (IT 138 · Business 138 · Life 69), nợ ôn tập lên **340/345 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #69 do routine 7h sáng 19/11 soạn sẵn cho Thứ Sáu 20/11: phần A hỏi lại 5 từ của buổi 19/11 (feature parity · flapping · counteroffer · sunk cost · run late), phần B bốc bằng `sh tools/boc.sh` trúng chase up · failover · hit it off · clarify · happy path · hassle · shim · redact · drop by · upfront · edge case · loose ends · fallback · bump · take a breather · rapport · flaky · worn out · grab a bite · unplug — "gặp lần cuối" là 23/10 và 24/10, **không trùng một từ nào** với phần B của buổi 18/11 và 19/11. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)** ngay lần soát đầu. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hard gate R1 loại một loạt ứng viên vì đụng **cột họ từ**: `sticky session` (`sticky` ← `sticking point`) · `tail latency` (← `latency`) · `zero-downtime` (← `downtime`) · `blue-green deployment` (`green` ← `green light` ở bảng ⛔ Đã biết sẵn) · `wind down` (`wind up` ← `end up`) · `stock up` · `rain check` · `night owl` · `due diligence` · `stopgap` · `take it offline` · `firm up` · `retainer` · `walk back` · `quorum` · `backoff` · `tree shaking` · `hydrate` · `circuit breaker` · `load shedding` · `eventual consistency` · `soak test` · `fan-out` · `polyfill` · `scaffold` · `dangling` · `flush` · `bus factor` · `orphan` · `shard` · `thundering herd` · `backlog` · `churn` trùng thẳng lemma hoặc trúng bảng **⛔ Đã biết sẵn** (R1.b). Năm từ chốt lại đều sạch cả cột họ từ. Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: **quy luật 1** cho `haggle` → `mặc cả` (tiếng Việt có sẵn đúng chữ thì dùng thẳng, hình ảnh chợ búa dồn xuống `PHU`) · **quy luật 2** cho `bit rot` → `suy biến dần theo thời gian` và `bikeshedding` → `tranh luận chuyện vặt` (thuật ngữ IT mượn ẩn dụ thì gọi thẳng cái nó *là*, không dịch hình ảnh "mục bit" hay "nhà để xe đạp") · **quy luật 1 phần thành ngữ** cho `lowball` → `chào giá thấp hẳn` và `dial back` → `giảm bớt mức độ` (hỏi "người Việt nói việc này bằng chữ gì", không dịch sát `ball` hay `dial`). Tuần 2026-W47 nay có 20 từ (17/11 → 20/11); W46 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W46, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-11-19 (soạn sẵn sáng 18/11):** vốn từ lên **340 từ** (IT 136 · Business 136 · Life 68), nợ ôn tập lên **335/340 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #68 do routine 7h sáng 18/11 soạn sẵn cho Thứ Năm 19/11: phần A hỏi lại 5 từ của buổi 18/11 (write-ahead log · connection pool · payment terms · across the board · cozy), phần B bốc bằng `sh tools/boc.sh` trúng quorum · smoke test · narrow down · walk through · upsell · load shedding · seed · pilot · bear with · deadlock · couch potato · good faith · short notice · rollback · retainer · idempotent · bring up · buy-in · cold start · snapshot — "gặp lần cuối" đều là 22/10 và 23/10, **không trùng một từ nào** với phần B của buổi 17/11 và 18/11. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)** ngay lần soát đầu. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**.
 

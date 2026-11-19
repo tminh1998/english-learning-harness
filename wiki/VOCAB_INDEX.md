@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 340 từ đã học** · IT 136 · Business 136 · Life 68 · ad-hoc 0
+**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-19
+**Cập nhật:** 2026-11-20
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -359,6 +359,11 @@
 | 338 | counteroffer | counter, counters, countered, countering, counter-offer, counteroffers, offer, offers, offered, offering | noun (đếm được) | Business | phản đề nghị, chào lại mức khác | 2026-11-19 | lesson |
 | 339 | sunk cost | sink, sank, sunk, sunken, sunk costs, sunk-cost fallacy, sunken ship | noun (đếm được) | Business | chi phí chìm | 2026-11-19 | lesson |
 | 340 | run late | runs late, ran late, running late, late, later, lately, lateness, run behind, be late | phrasal verb (cụm động từ) | Life | trễ giờ, chạy quá giờ | 2026-11-19 | lesson |
+| 341 | bit rot | rot, rots, rotted, rotting, rotten, bit-rot, bitrot, link rot, software rot, code rot | noun (không đếm được) | IT | suy biến dần theo thời gian | 2026-11-20 | lesson |
+| 342 | bikeshedding | bikeshed, bike shed, bike-shedding, bikesheds, bikeshedded, bikeshedder, law of triviality | noun (không đếm được) | IT | tranh luận chuyện vặt | 2026-11-20 | lesson |
+| 343 | lowball | lowballs, lowballed, lowballing, low-ball, a lowball offer, lowball bid, lowballer, highball | verb (cũng là noun) | Business | chào giá thấp hẳn | 2026-11-20 | lesson |
+| 344 | dial back | dials back, dialed back, dialled back, dialing back, dial sth back, dial it back, dial down, dial up, dial in | phrasal verb (tách được) | Business | giảm bớt mức độ | 2026-11-20 | lesson |
+| 345 | haggle | haggles, haggled, haggling, haggler, haggle over, haggle with, bargain | verb | Life | mặc cả | 2026-11-20 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
