@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-20 (buổi #69 — soạn sẵn sáng 19/11)
+**Cập nhật:** 2026-11-21 (buổi #70 — soạn sẵn sáng 20/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 345 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 138 · Business 138 · Life 69                                                           |
-| Số buổi học          | 69                                                                                      |
-| Streak hiện tại      | 4 buổi (2026-11-17 → 2026-11-20 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 350 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 140 · Business 140 · Life 70                                                           |
+| Số buổi học          | 70                                                                                      |
+| Streak hiện tại      | 5 buổi (2026-11-17 → 2026-11-21 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-20 (Thứ Sáu) — buổi #69 |
+| Buổi gần nhất        | 2026-11-21 (Thứ Bảy) — buổi #70 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -87,6 +87,7 @@
 | 2026-11-18 | 2026-W47 | #67 | write-ahead log · connection pool · payment terms · across the board · cozy |
 | 2026-11-19 | 2026-W47 | #68 | feature parity · flapping · counteroffer · sunk cost · run late |
 | 2026-11-20 | 2026-W47 | #69 | bit rot · bikeshedding · lowball · dial back · haggle |
+| 2026-11-21 | 2026-W47 | #70 | least privilege · cascading failure · point of contact · ad hoc · freshen up |
 
 ## Kết quả quiz tuần
 

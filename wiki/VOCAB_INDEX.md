@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
+**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-20
+**Cập nhật:** 2026-11-21
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -364,6 +364,11 @@
 | 343 | lowball | lowballs, lowballed, lowballing, low-ball, a lowball offer, lowball bid, lowballer, highball | verb (cũng là noun) | Business | chào giá thấp hẳn | 2026-11-20 | lesson |
 | 344 | dial back | dials back, dialed back, dialled back, dialing back, dial sth back, dial it back, dial down, dial up, dial in | phrasal verb (tách được) | Business | giảm bớt mức độ | 2026-11-20 | lesson |
 | 345 | haggle | haggles, haggled, haggling, haggler, haggle over, haggle with, bargain | verb | Life | mặc cả | 2026-11-20 | lesson |
+| 346 | least privilege | privilege, privileges, privileged, unprivileged, underprivileged, least-privilege, PoLP, principle of least privilege | noun (không đếm được) | IT | nguyên tắc quyền tối thiểu | 2026-11-21 | lesson |
+| 347 | cascading failure | cascade, cascades, cascaded, cascading, cascade into, cascading effect, cascading outage, cascading failures | noun (đếm được) | IT | sụp đổ dây chuyền | 2026-11-21 | lesson |
+| 348 | point of contact | contact, contacts, contacted, contacting, contact person, main contact, POC, single point of contact, points of contact | noun (đếm được) | Business | đầu mối liên hệ | 2026-11-21 | lesson |
+| 349 | ad hoc | ad-hoc, adhoc, ad hoc basis, ad hoc query, ad hoc testing, ad hoc meeting, ad hockery | adjective (cũng dùng như adverb) | Business | phát sinh ngoài kế hoạch / làm tạm cho đúng một việc | 2026-11-21 | lesson |
+| 350 | freshen up | fresh, freshly, freshness, freshen, freshens, freshened, freshening, refresh, refreshing, refreshment | phrasal verb (tách được) | Life | rửa mặt sửa soạn lại | 2026-11-21 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
