@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-21 (buổi #70 — soạn sẵn sáng 20/11)
+**Cập nhật:** 2026-11-23 (buổi #71 — soạn sẵn sáng 22/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 350 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 140 · Business 140 · Life 70                                                           |
-| Số buổi học          | 70                                                                                      |
-| Streak hiện tại      | 5 buổi (2026-11-17 → 2026-11-21 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 355 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 142 · Business 142 · Life 71                                                           |
+| Số buổi học          | 71                                                                                      |
+| Streak hiện tại      | 6 buổi (2026-11-17 → 2026-11-23 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-21 (Thứ Bảy) — buổi #70 |
+| Buổi gần nhất        | 2026-11-23 (Thứ Hai) — buổi #71 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -88,6 +88,7 @@
 | 2026-11-19 | 2026-W47 | #68 | feature parity · flapping · counteroffer · sunk cost · run late |
 | 2026-11-20 | 2026-W47 | #69 | bit rot · bikeshedding · lowball · dial back · haggle |
 | 2026-11-21 | 2026-W47 | #70 | least privilege · cascading failure · point of contact · ad hoc · freshen up |
+| 2026-11-23 | 2026-W48 | #71 | middleware · atomic · triage · vendor · cram |
 
 ## Kết quả quiz tuần
 
@@ -142,6 +143,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-23:** mở tuần **2026-W48**, vốn từ lên **355 từ**, nợ ôn tập lên **350/355 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #71 do routine 7h sáng Chủ nhật 22/11 soạn trước một ngày: phần A hỏi lại 5 từ của buổi 21/11 (least privilege · cascading failure · point of contact · ad hoc · freshen up), phần B bốc bằng `tools/boc.sh` trúng contention · ground rules · turnaround · cadence · follow up · sign off · blocker · escape hatch · recap · drain · chatty · boilerplate · pain point · pencil in · scope creep · put up with · nitpick · contingency · in a nutshell · polyfill — cả 20 từ đều đang ở mốc "gặp lần cuối" 2026-10-26, tức là một vòng vốn từ vừa quay hết. `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Ba ứng viên bị hard gate R1 loại trong buổi này: `line item` và `deadline` (đụng `line` trong word family của `bottom line`) và `rate limit` (đụng `rate-limit` trong word family của `throttle`) — thay bằng `vendor`. Khối ôn nhanh vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**; W47 khép lại với 25 từ mà vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W47, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-11-20 (soạn sẵn sáng 19/11):** vốn từ lên **345 từ** (IT 138 · Business 138 · Life 69), nợ ôn tập lên **340/345 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #69 do routine 7h sáng 19/11 soạn sẵn cho Thứ Sáu 20/11: phần A hỏi lại 5 từ của buổi 19/11 (feature parity · flapping · counteroffer · sunk cost · run late), phần B bốc bằng `sh tools/boc.sh` trúng chase up · failover · hit it off · clarify · happy path · hassle · shim · redact · drop by · upfront · edge case · loose ends · fallback · bump · take a breather · rapport · flaky · worn out · grab a bite · unplug — "gặp lần cuối" là 23/10 và 24/10, **không trùng một từ nào** với phần B của buổi 18/11 và 19/11. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)** ngay lần soát đầu. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hard gate R1 loại một loạt ứng viên vì đụng **cột họ từ**: `sticky session` (`sticky` ← `sticking point`) · `tail latency` (← `latency`) · `zero-downtime` (← `downtime`) · `blue-green deployment` (`green` ← `green light` ở bảng ⛔ Đã biết sẵn) · `wind down` (`wind up` ← `end up`) · `stock up` · `rain check` · `night owl` · `due diligence` · `stopgap` · `take it offline` · `firm up` · `retainer` · `walk back` · `quorum` · `backoff` · `tree shaking` · `hydrate` · `circuit breaker` · `load shedding` · `eventual consistency` · `soak test` · `fan-out` · `polyfill` · `scaffold` · `dangling` · `flush` · `bus factor` · `orphan` · `shard` · `thundering herd` · `backlog` · `churn` trùng thẳng lemma hoặc trúng bảng **⛔ Đã biết sẵn** (R1.b). Năm từ chốt lại đều sạch cả cột họ từ. Nghĩa gọn viết theo `memory/cach-dich-cua-user.md`: **quy luật 1** cho `haggle` → `mặc cả` (tiếng Việt có sẵn đúng chữ thì dùng thẳng, hình ảnh chợ búa dồn xuống `PHU`) · **quy luật 2** cho `bit rot` → `suy biến dần theo thời gian` và `bikeshedding` → `tranh luận chuyện vặt` (thuật ngữ IT mượn ẩn dụ thì gọi thẳng cái nó *là*, không dịch hình ảnh "mục bit" hay "nhà để xe đạp") · **quy luật 1 phần thành ngữ** cho `lowball` → `chào giá thấp hẳn` và `dial back` → `giảm bớt mức độ` (hỏi "người Việt nói việc này bằng chữ gì", không dịch sát `ball` hay `dial`). Tuần 2026-W47 nay có 20 từ (17/11 → 20/11); W46 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W46, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 

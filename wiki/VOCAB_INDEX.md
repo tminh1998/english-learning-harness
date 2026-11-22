@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
+**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-21
+**Cập nhật:** 2026-11-23
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -369,6 +369,11 @@
 | 348 | point of contact | contact, contacts, contacted, contacting, contact person, main contact, POC, single point of contact, points of contact | noun (đếm được) | Business | đầu mối liên hệ | 2026-11-21 | lesson |
 | 349 | ad hoc | ad-hoc, adhoc, ad hoc basis, ad hoc query, ad hoc testing, ad hoc meeting, ad hockery | adjective (cũng dùng như adverb) | Business | phát sinh ngoài kế hoạch / làm tạm cho đúng một việc | 2026-11-21 | lesson |
 | 350 | freshen up | fresh, freshly, freshness, freshen, freshens, freshened, freshening, refresh, refreshing, refreshment | phrasal verb (tách được) | Life | rửa mặt sửa soạn lại | 2026-11-21 | lesson |
+| 351 | middleware | middlewares, a middleware layer, the middleware stack, middleware chain, middle tier, ware, software, hardware | noun (thường không đếm được; cái cụ thể thì đếm được) | IT | lớp chen giữa request và handler | 2026-11-23 | lesson |
+| 352 | atomic | atom, atoms, atomically, atomicity, atomize, atomized, non-atomic, atomic operation | adjective | IT | nguyên tử, xong hết hoặc không gì cả | 2026-11-23 | lesson |
+| 353 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
+| 354 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
+| 355 | cram | crams, crammed, cramming, a cram session, cram school, crammer, overcrowd | verb | Life | nhồi nhét cho vừa / học dồn phút chót | 2026-11-23 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
