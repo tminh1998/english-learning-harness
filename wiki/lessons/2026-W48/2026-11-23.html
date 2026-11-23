@@ -201,37 +201,37 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>middleware
-        <button class="say" data-say="middleware" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>materialized view
+        <button class="say" data-say="materialized view" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈmɪd.əl.weə/ · <em>noun (thường không đếm được; nói về một cái cụ thể thì đếm được)</em></div>
+      <div class="ipa">/məˈtɪə.ri.ə.laɪzd vjuː/ · <em>noun (đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">lớp chen giữa request và handler<span class="alt">mọi request chạy qua nó trước — kiểm token, ghi log, chặn bớt — xong mới tới code xử lý thật</span></p>
+  <p class="vi-quick hide-me">khung nhìn vật chất hoá, kết quả query lưu sẵn<span class="alt">chạy câu query nặng một lần rồi cất kết quả thành bảng, ai hỏi thì đọc thẳng — nhanh hẳn, nhưng phải refresh mới thấy số mới</span></p>
 
-  <p class="def"><span class="tag">EN</span>Middleware is code that sits between an incoming request and the handler that answers it, so every request passes through it first.
-    <span class="def-vi hide-me">→ Middleware là đoạn code nằm giữa request đi vào và handler trả lời nó, nên mọi request đều chạy qua nó trước.</span>
+  <p class="def"><span class="tag">EN</span>A materialized view is the stored result of a query, saved like a table so reads are fast, and refreshed when the data underneath changes.
+    <span class="def-vi hide-me">→ Materialized view là kết quả của một câu query được cất lại như một bảng để đọc cho nhanh, và được refresh khi dữ liệu bên dưới thay đổi.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Sách mới dịch là "phần mềm trung gian", nhưng dev Việt nói luôn <code>middleware</code>. Trong Express/Koa/Next, một middleware là một hàm <code>(req, res, next)</code>; ở hệ thống lớn, <code>middleware</code> còn chỉ cả tầng message broker nằm giữa các service. Khác <code>interceptor</code> — cái đó gắn ở phía client, còn middleware nằm trên đường request đi vào server.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>view</code> thường — view thường chỉ là câu query được đặt tên, lần nào đọc cũng chạy lại từ đầu. Postgres refresh bằng tay (<code>REFRESH MATERIALIZED VIEW</code>), có hệ thống thì tự refresh theo lịch hoặc theo thay đổi. Cái giá là số liệu có thể cũ đi một quãng — hợp cho dashboard, báo cáo; không hợp cho số dư tài khoản.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">We moved the auth check into a <b>middleware</b>, so a request with a bad token never reaches the handler — that clears the last <span class="rev">blocker</span> for the mobile team.</span>
-      <span class="vi hide-me">→ Bọn mình chuyển phần kiểm token vào một middleware, nên request nào token sai là bị chặn trước khi tới handler — gỡ nốt cái vướng mắc cuối cùng cho team mobile.</span>
+      <span class="en">The sales dashboard reads from a <b>materialized view</b> that refreshes every ten minutes, so the figures you see can be <span class="rev">stale</span> by up to that long.</span>
+      <span class="vi hide-me">→ Dashboard doanh số đọc từ một materialized view mười phút refresh một lần, nên số liệu anh/chị thấy có thể cũ đi tối đa mười phút ạ.</span>
     </li>
     <li>
-      <span class="en">Adding the rate-limit <b>middleware</b> only took an afternoon, so the <span class="rev">turnaround</span> on that ticket was still under two days.</span>
-      <span class="vi hide-me">→ Thêm cái middleware giới hạn số request chỉ mất một buổi chiều, nên bên em xử xong cái ticket đó vẫn chưa tới hai ngày ạ.</span>
+      <span class="en">Instead of adding another <span class="rev">read replica</span>, we precomputed the monthly totals into a <b>materialized view</b>, and the report dropped from forty seconds to under one.</span>
+      <span class="vi hide-me">→ Thay vì thêm một read replica nữa, bọn mình tính sẵn tổng theo tháng vào một materialized view, thế là cái report từ bốn mươi giây xuống còn chưa tới một giây.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>an auth middleware</code>, <code>a logging middleware</code>, <code>the middleware stack</code>, <code>add / register a middleware</code>, <code>the middleware chain</code>, <code>run in middleware</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Viết liền một chữ: <code>middleware</code>, không phải <code>middle ware</code>. Nói chung chung thì không đếm: <code>we handle that in middleware</code> (không <code>in a middleware</code>); chỉ đếm khi nói về một cái cụ thể (<code>a logging middleware</code>), và số nhiều <code>middlewares</code> chỉ hợp trong văn nói kỹ thuật. Đuôi <code>-ware</code> đọc như trong <code>software</code> /weə/, đừng đọc "oa-rê".</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">middlewares, a middleware layer, the middleware stack, middleware chain, middle tier, ware, software, hardware</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>create a materialized view</code>, <code>refresh the materialized view</code>, <code>refresh concurrently</code>, <code>a stale materialized view</code>, <code>back a dashboard with a materialized view</code>, <code>query the view</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v"><code>materialized</code> ở đây không phải "thành hiện thực" như trong <code>the deal never materialized</code> — trong database nó nghĩa là được tính ra và lưu thật xuống đĩa. Anh-Anh viết <code>materialised</code>. Trọng âm vần hai: /məˈtɪə.ri.ə.laɪzd/ "mơ-TIA-ri-ơ-lai-zd". Và chưa cài refresh thì nó không tự cập nhật — đọc ra số cũ không phải lỗi của câu query.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">materialized views, materialised view, MV, matview, materialize, materialise, materialization, view, views, refresh materialized view</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Tin nhắn mở đầu tuần gửi trong kênh team</p>
-  <div class="passage">Morning all — plan for the week, <span class="rev">in a nutshell</span>. First, I'm pulling the auth check out of every route and into one <b>middleware</b>, so there's a single place to fix when the client asks for IP allowlisting. Second, the order write has to become <b>atomic</b> before the sale: right now a crash between the charge and the insert leaves a paying customer with nothing. Tuesday 9:30 we <b>triage</b> the forty-odd tickets that piled up over the weekend — bring coffee, we'll be ruthless. I also need two of you on the <b>vendor</b> questionnaire; their security team wants answers by Friday and I'd rather not <b>cram</b> it into Thursday night again.</div>
+  <div class="passage">Morning all — plan for the week, <span class="rev">in a nutshell</span>. First, the sales dashboard moves onto a <b>materialized view</b>, so it stops hitting the orders table on every page load and slowing down checkout. Second, the order write has to become <b>atomic</b> before the sale: right now a crash between the charge and the insert leaves a paying customer with nothing. Tuesday 9:30 we <b>triage</b> the forty-odd tickets that piled up over the weekend — bring coffee, we'll be ruthless. I also need two of you on the <b>vendor</b> questionnaire; their security team wants answers by Friday and I'd rather not <b>cram</b> it into Thursday night again.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Chào cả nhà — nói gọn lại là kế hoạch tuần này thế này. Một, mình sẽ bóc phần kiểm token ra khỏi từng route rồi gom vào đúng một middleware, để lúc khách xin chặn theo IP thì chỉ phải sửa một chỗ. Hai, phần ghi đơn hàng phải chạy trọn gói trước đợt sale: hiện giờ sập giữa lúc trừ tiền và lúc insert là khách trả tiền xong mà chẳng có gì. Thứ Ba 9:30 cả nhóm ngồi phân loại ưu tiên bốn chục cái ticket dồn lại từ cuối tuần — nhớ mang cà phê, bọn mình sẽ gạt thẳng tay. Mình cũng cần hai người làm bộ câu hỏi của nhà cung cấp; bên bảo mật của họ đòi câu trả lời trước thứ Sáu, mà mình thì không muốn lại nhồi hết vào tối thứ Năm nữa.</p>
+    <p class="hide-me">Chào cả nhà — nói gọn lại là kế hoạch tuần này thế này. Một, dashboard doanh số sẽ chuyển sang đọc từ một materialized view, để nó thôi query thẳng vào bảng orders mỗi lần mở trang mà kéo chậm cả khâu thanh toán. Hai, phần ghi đơn hàng phải chạy trọn gói trước đợt sale: hiện giờ sập giữa lúc trừ tiền và lúc insert là khách trả tiền xong mà chẳng có gì. Thứ Ba 9:30 cả nhóm ngồi phân loại ưu tiên bốn chục cái ticket dồn lại từ cuối tuần — nhớ mang cà phê, bọn mình sẽ gạt thẳng tay. Mình cũng cần hai người làm bộ câu hỏi của nhà cung cấp; bên bảo mật của họ đòi câu trả lời trước thứ Sáu, mà mình thì không muốn lại nhồi hết vào tối thứ Năm nữa.</p>
   </details>
 </section>
 
@@ -397,7 +397,7 @@
   <h2>Bài tập</h2>
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
-    <li>Điền từ: "Move the token check out of the controllers and into one ______ so every route gets it for free."</li>
+    <li>Điền từ: "The report took forty seconds, so we stored the query result in a ______ and refresh it every hour."</li>
     <li>Sửa lỗi: "We cramed four meetings in one morning and nobody remembered anything."</li>
     <li>Dịch Việt-Anh: "Sáng nào bọn mình cũng phân loại ưu tiên đống báo lỗi mới trước khi bắt tay vào sửa."</li>
     <li>Chọn collocation: "Keeping all our data in their format is a classic case of ______." — (a) vendor lock-up (b) vendor lock-in (c) vender lock-in</li>
@@ -406,7 +406,7 @@
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>middleware</b> — nói chung chung thì không đếm (<code>into middleware</code> / <code>into one middleware</code> đều được, nhưng đừng viết <code>middle ware</code> rời hai chữ).</li>
+      <li><b>materialized view</b> — phải đủ hai chữ: chỉ <code>view</code> thì là view thường, lần nào đọc cũng chạy lại câu query.</li>
       <li><b>"We crammed four meetings into one morning and nobody remembered anything."</b> — gấp đôi <code>m</code> (<code>crammed</code>), và đi với <code>into</code> chứ không phải <code>in</code>.</li>
       <li><b>"We triage the new bug reports every morning before we start fixing anything."</b> — <code>triage</code> ở đây là động từ; đừng dùng <code>prioritize</code>, vì đống báo lỗi mới còn chưa vào danh sách nào cả.</li>
       <li><b>(b) vendor lock-in</b> — cụm cố định là <code>lock-in</code>, không phải <code>lock-up</code>; và <code>vendor</code> viết đuôi <code>-or</code>.</li>

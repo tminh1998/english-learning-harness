@@ -38,9 +38,9 @@
       <div class="wp-head"><span class="wp-tag a">A</span>5 từ của buổi trước — 2026-11-23</div>
       <ol class="ex qa-list">
         <li class="qa">
-          <span class="q">lớp chen giữa request và handler<span class="alt">mọi request chạy qua nó trước — kiểm token, ghi log, chặn bớt — xong mới tới code xử lý thật</span></span>
+          <span class="q">khung nhìn vật chất hoá, kết quả query lưu sẵn<span class="alt">chạy câu query nặng một lần rồi cất kết quả thành bảng, ai hỏi thì đọc thẳng — nhanh hẳn, nhưng phải refresh mới thấy số mới</span></span>
           <details class="ans"><summary>đáp án</summary>
-            <span class="a hide-me"><b>middleware</b> — <em>"We moved the auth check into a middleware, so a request with a bad token never reaches the handler — that clears the last blocker for the mobile team."</em></span>
+            <span class="a hide-me"><b>materialized view</b> — <em>"The sales dashboard reads from a materialized view that refreshes every ten minutes, so the figures you see can be stale by up to that long."</em></span>
           </details>
         </li>
         <li class="qa">

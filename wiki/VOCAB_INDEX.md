@@ -14,7 +14,7 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
+**Đã biết sẵn (không dạy):** 24 từ — xem bảng cuối file
 **Cập nhật:** 2026-11-24
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
@@ -354,7 +354,7 @@
 | 333 | payment terms | term, terms, terms and conditions, payment schedule, pay, payable, prepayment | noun (số nhiều) | Business | điều khoản thanh toán | 2026-11-18 | lesson |
 | 334 | across the board | across-the-board, board, boards, blanket increase, wholesale | idiom (cụm trạng ngữ) | Business | đồng loạt, không trừ chỗ nào | 2026-11-18 | lesson |
 | 335 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up | adjective | Life | ấm cúng | 2026-11-18 | lesson |
-| 336 | middleware | middlewares, a middleware layer, the middleware stack, middleware chain, middle tier, ware, software, hardware | noun (thường không đếm được; cái cụ thể thì đếm được) | IT | lớp chen giữa request và handler | 2026-11-23 | lesson |
+| 336 | materialized view | materialized views, materialised view, MV, matview, materialize, materialise, materialization, refresh materialized view | noun (đếm được) | IT | khung nhìn vật chất hoá, kết quả query lưu sẵn | 2026-11-23 | lesson |
 | 337 | atomic | atom, atoms, atomically, atomicity, atomize, atomized, non-atomic, atomic operation | adjective | IT | nguyên tử, xong hết hoặc không gì cả | 2026-11-23 | lesson |
 | 338 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
 | 339 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
@@ -400,6 +400,7 @@
 | monorepo | monorepos, mono-repo, mono repo, monorepo tooling, polyrepo, multi-repo | noun (đếm được) | IT | một repo chứa nhiều project | 2026-10-23 |
 | code smell | code smells, smell, smells, smelly, design smell, test smell, smell test | noun (đếm được) | IT | dấu hiệu code có vấn đề | 2026-10-23 |
 | sandbox | sandboxes, sandboxed, sandboxing, sandbox mode, sandbox environment, sandboxed iframe, sandbox account, sandbox keys | noun (đếm được; cũng là verb) | IT | vùng chạy tách biệt | 2026-10-26 |
+| middleware | middlewares, a middleware layer, the middleware stack, middleware chain, middle tier | noun (thường không đếm được) | IT | lớp chen giữa request và handler | 2026-11-23 |
 
 <!--
 LUẬT GHI:

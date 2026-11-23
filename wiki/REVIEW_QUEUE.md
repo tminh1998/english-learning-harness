@@ -73,9 +73,9 @@
 - hạn 2026-11-13 — downtime · watermark · drill down · in arrears · mingle
 - hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
 - hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
-- hạn 2026-11-24 — middleware · atomic · triage · vendor · cram
+- hạn 2026-11-24 — materialized view · atomic · triage · vendor · cram
 
-_Ghi chú 2026-11-24 (buổi #69; bốc lại phần B ngày 23/11 sau khi xoá bài 19/11, 20/11, 21/11): phần A hỏi lại 5 từ của buổi 23/11 (middleware · atomic · triage · vendor · cram), phần B bốc lại bằng `sh tools/boc.sh 2026-11-24` trúng hassle · redact · load shedding · good faith · snapshot · failover · idempotent · happy path · upfront · shim · grab a bite · heads-up · orphan · ballpark · worn out · take a breather · due diligence · rapport · spare · run by — "gặp lần cuối" là 23/10 và 24/10, và **không trùng một từ nào** với phần ôn mới của buổi 23/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-11-24 (buổi #69; bốc lại phần B ngày 23/11 sau khi xoá bài 19/11, 20/11, 21/11): phần A hỏi lại 5 từ của buổi 23/11 (materialized view · atomic · triage · vendor · cram), phần B bốc lại bằng `sh tools/boc.sh 2026-11-24` trúng hassle · redact · load shedding · good faith · snapshot · failover · idempotent · happy path · upfront · shim · grab a bite · heads-up · orphan · ballpark · worn out · take a breather · due diligence · rapport · spare · run by — "gặp lần cuối" là 23/10 và 24/10, và **không trùng một từ nào** với phần ôn mới của buổi 23/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-11-23 (buổi #68; làm lại khối ôn nhanh ngày 23/11 sau khi xoá bài 19/11, 20/11, 21/11): phần A hỏi lại 5 từ của buổi 18/11 (write-ahead log · connection pool · payment terms · across the board · cozy), phần B bốc lại bằng `sh tools/boc.sh 2026-11-23` trúng smoke test · upsell · narrow down · quorum · walk through · bear with · buy-in · pilot · seed · couch potato · chase up · rollback · deadlock · clarify · retainer · short notice · hit it off · bring up · cold start · drop by — "gặp lần cuối" là 22/10 và 23/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
 
@@ -498,7 +498,7 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | payment terms | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 | across the board | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 | cozy | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
-| middleware | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
+| materialized view | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | atomic | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | triage | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | vendor | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
