@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-23 (buổi #71 — soạn sẵn sáng 22/11)
+**Cập nhật:** 2026-11-24 (buổi #72 — soạn sẵn sáng 23/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 355 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 142 · Business 142 · Life 71                                                           |
-| Số buổi học          | 71                                                                                      |
-| Streak hiện tại      | 6 buổi (2026-11-17 → 2026-11-23 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 360 · **đã biết sẵn** 23 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 144 · Business 144 · Life 72                                                           |
+| Số buổi học          | 72                                                                                      |
+| Streak hiện tại      | 7 buổi (2026-11-17 → 2026-11-24 — 3 bài 13/11, 14/11, 16/11 đã xoá nên chuỗi từ 12/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-23 (Thứ Hai) — buổi #71 |
+| Buổi gần nhất        | 2026-11-24 (Thứ Ba) — buổi #72 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -89,6 +89,7 @@
 | 2026-11-20 | 2026-W47 | #69 | bit rot · bikeshedding · lowball · dial back · haggle |
 | 2026-11-21 | 2026-W47 | #70 | least privilege · cascading failure · point of contact · ad hoc · freshen up |
 | 2026-11-23 | 2026-W48 | #71 | middleware · atomic · triage · vendor · cram |
+| 2026-11-24 | 2026-W48 | #72 | bloat · swallow · leverage · gatekeeper · downpour |
 
 ## Kết quả quiz tuần
 
@@ -143,6 +144,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-24:** vốn từ lên **360 từ**, nợ ôn tập lên **355/360 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #72 do routine 7h sáng Thứ Hai 23/11 soạn trước một ngày: phần A hỏi lại 5 từ của buổi 23/11 (middleware · atomic · triage · vendor · cram), phần B bốc bằng `tools/boc.sh` trúng concession · waive · stroll · ingest · bottleneck · prerequisite · quarantine · dry run · quote · immutable · ramp up · telemetry · saga · splurge · pitch · put a pin in it · runbook · downstream · heartbeat · binge-watch — cả 20 từ đều đang ở mốc "gặp lần cuối" 2026-10-27, tức là vòng vốn từ đã quay sang lô kế tiếp. `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Hard gate R1 loại khá nhiều ứng viên trong buổi này: `rate limit` (đụng `rate-limit` trong họ từ của `throttle`), `lazy loading` (đụng `load` trong họ từ của `payload`), `warm standby` (đụng `warm start` của `cold start`), `line item` (đụng `backlog item` / `roadmap item`), `proof of concept` (đụng `POC` của `point of contact` và `onus of proof` của `onus`), `white-glove` (đụng `white-label`), `cut corners` (đụng `corner case` của `edge case`) và `grace period` (đụng `gracefully` của `graceful degradation`) — chốt lại thành bloat · swallow · leverage · gatekeeper · downpour. Khối ôn nhanh vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Tuần 2026-W48 đã có 10 từ (23/11 → 24/11); W47 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W47, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 ⚠️ **Cập nhật 2026-11-23:** mở tuần **2026-W48**, vốn từ lên **355 từ**, nợ ôn tập lên **350/355 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #71 do routine 7h sáng Chủ nhật 22/11 soạn trước một ngày: phần A hỏi lại 5 từ của buổi 21/11 (least privilege · cascading failure · point of contact · ad hoc · freshen up), phần B bốc bằng `tools/boc.sh` trúng contention · ground rules · turnaround · cadence · follow up · sign off · blocker · escape hatch · recap · drain · chatty · boilerplate · pain point · pencil in · scope creep · put up with · nitpick · contingency · in a nutshell · polyfill — cả 20 từ đều đang ở mốc "gặp lần cuối" 2026-10-26, tức là một vòng vốn từ vừa quay hết. `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Ba ứng viên bị hard gate R1 loại trong buổi này: `line item` và `deadline` (đụng `line` trong word family của `bottom line`) và `rate limit` (đụng `rate-limit` trong word family của `throttle`) — thay bằng `vendor`. Khối ôn nhanh vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**; W47 khép lại với 25 từ mà vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W47, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 

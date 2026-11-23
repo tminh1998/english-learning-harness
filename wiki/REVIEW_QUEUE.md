@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-23: 350 từ** — toàn bộ vốn từ trừ lô của bài 23/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-24: 355 từ** — toàn bộ vốn từ trừ lô của bài 24/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -76,6 +76,9 @@
 - hạn 2026-11-20 — feature parity · flapping · counteroffer · sunk cost · run late
 - hạn 2026-11-21 — bit rot · bikeshedding · lowball · dial back · haggle
 - hạn 2026-11-22 — least privilege · cascading failure · point of contact · ad hoc · freshen up
+- hạn 2026-11-24 — middleware · atomic · triage · vendor · cram
+
+_Ghi chú 2026-11-24 (buổi #72): phần A hỏi lại 5 từ của buổi 23/11 (middleware · atomic · triage · vendor · cram), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng concession · waive · stroll · ingest · bottleneck · prerequisite · quarantine · dry run · quote · immutable · ramp up · telemetry · saga · splurge · pitch · put a pin in it · runbook · downstream · heartbeat · binge-watch — "gặp lần cuối" của cả 20 từ là 27/10, và **không trùng một từ nào** với phần ôn của buổi 21/11 và 23/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **355/360 từ**, toàn bộ ở bậc 1._
 
 _Ghi chú 2026-11-20 (buổi #69): phần A hỏi lại 5 từ của buổi 19/11 (feature parity · flapping · counteroffer · sunk cost · run late), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chase up · failover · hit it off · clarify · happy path · hassle · shim · redact · drop by · upfront · edge case · loose ends · fallback · bump · take a breather · rapport · flaky · worn out · grab a bite · unplug — "gặp lần cuối" là 23/10 và 24/10, và **không trùng một từ nào** với phần ôn của buổi 18/11 và 19/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
 
@@ -520,6 +523,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | triage | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | vendor | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | cram | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
+| bloat | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
+| swallow | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
+| leverage | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
+| gatekeeper | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
+| downpour | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
 
 ## Đã thuộc (bậc 5, đúng)
 

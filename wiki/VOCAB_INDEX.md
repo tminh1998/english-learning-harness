@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
+**Tổng: 360 từ đã học** · IT 144 · Business 144 · Life 72 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-23
+**Cập nhật:** 2026-11-24
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -374,6 +374,11 @@
 | 353 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
 | 354 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
 | 355 | cram | crams, crammed, cramming, a cram session, cram school, crammer, overcrowd | verb | Life | nhồi nhét cho vừa / học dồn phút chót | 2026-11-23 | lesson |
+| 356 | bloat | bloats, bloated, bloating, bloatware, bundle bloat, code bloat, index bloat, de-bloat | noun (không đếm được; cũng là verb) | IT | phình to vô ích | 2026-11-24 | lesson |
+| 357 | swallow | swallows, swallowed, swallowing, swallow up, swallow an error, hard to swallow, a swallow (chim nhạn) | verb (cũng là noun) | IT | nuốt lỗi, không báo ra ngoài | 2026-11-24 | lesson |
+| 358 | leverage | leverages, leveraged, leveraging, leverage over sb, high-leverage, leverage point, lever, leveraged buyout | noun (không đếm được; cũng là verb) | Business | tận dụng cái đã có / thế mạnh để mặc cả | 2026-11-24 | lesson |
+| 359 | gatekeeper | gatekeepers, gatekeeping, gatekeep, gatekeeper role, gate, keeper, keep the gate | noun (đếm được) | Business | người gác cổng | 2026-11-24 | lesson |
+| 360 | downpour | downpours, down-pour, pour, pours, poured, pouring, pour down, pouring rain | noun (đếm được) | Life | mưa như trút | 2026-11-24 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
