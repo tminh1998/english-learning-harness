@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-24: 355 từ** — toàn bộ vốn từ trừ lô của bài 24/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-24: 340 từ** — toàn bộ vốn từ trừ lô của bài 24/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -73,16 +73,11 @@
 - hạn 2026-11-13 — downtime · watermark · drill down · in arrears · mingle
 - hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
 - hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
-- hạn 2026-11-20 — feature parity · flapping · counteroffer · sunk cost · run late
-- hạn 2026-11-21 — bit rot · bikeshedding · lowball · dial back · haggle
-- hạn 2026-11-22 — least privilege · cascading failure · point of contact · ad hoc · freshen up
 - hạn 2026-11-24 — middleware · atomic · triage · vendor · cram
 
-_Ghi chú 2026-11-24 (buổi #72): phần A hỏi lại 5 từ của buổi 23/11 (middleware · atomic · triage · vendor · cram), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng concession · waive · stroll · ingest · bottleneck · prerequisite · quarantine · dry run · quote · immutable · ramp up · telemetry · saga · splurge · pitch · put a pin in it · runbook · downstream · heartbeat · binge-watch — "gặp lần cuối" của cả 20 từ là 27/10, và **không trùng một từ nào** với phần ôn của buổi 21/11 và 23/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **355/360 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-11-24 (buổi #69; bốc lại phần B ngày 23/11 sau khi xoá bài 19/11, 20/11, 21/11): phần A hỏi lại 5 từ của buổi 23/11 (middleware · atomic · triage · vendor · cram), phần B bốc lại bằng `sh tools/boc.sh 2026-11-24` trúng hassle · redact · load shedding · good faith · snapshot · failover · idempotent · happy path · upfront · shim · grab a bite · heads-up · orphan · ballpark · worn out · take a breather · due diligence · rapport · spare · run by — "gặp lần cuối" là 23/10 và 24/10, và **không trùng một từ nào** với phần ôn mới của buổi 23/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
 
-_Ghi chú 2026-11-20 (buổi #69): phần A hỏi lại 5 từ của buổi 19/11 (feature parity · flapping · counteroffer · sunk cost · run late), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng chase up · failover · hit it off · clarify · happy path · hassle · shim · redact · drop by · upfront · edge case · loose ends · fallback · bump · take a breather · rapport · flaky · worn out · grab a bite · unplug — "gặp lần cuối" là 23/10 và 24/10, và **không trùng một từ nào** với phần ôn của buổi 18/11 và 19/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
-
-_Ghi chú 2026-11-19 (buổi #68): phần A hỏi lại 5 từ của buổi 18/11 (write-ahead log · connection pool · payment terms · across the board · cozy), phần B bốc bằng `sh tools/boc.sh` (lâu chưa gặp nhất ra trước — luật R9 bản 2026-10-05) trúng quorum · smoke test · narrow down · walk through · upsell · load shedding · seed · pilot · bear with · deadlock · couch potato · good faith · short notice · rollback · retainer · idempotent · bring up · buy-in · cold start · snapshot — "gặp lần cuối" là 22/10 và 23/10, và **không trùng một từ nào** với phần ôn của buổi 17/11 và 18/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), không từ nào báo `LOI`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **335/340 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-11-23 (buổi #68; làm lại khối ôn nhanh ngày 23/11 sau khi xoá bài 19/11, 20/11, 21/11): phần A hỏi lại 5 từ của buổi 18/11 (write-ahead log · connection pool · payment terms · across the board · cozy), phần B bốc lại bằng `sh tools/boc.sh 2026-11-23` trúng smoke test · upsell · narrow down · quorum · walk through · bear with · buy-in · pilot · seed · couch potato · chase up · rollback · deadlock · clarify · retainer · short notice · hit it off · bring up · cold start · drop by — "gặp lần cuối" là 22/10 và 23/10. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
 
 _Ghi chú 2026-11-18 (buổi #67; bốc lại phần B ngày 17/11 sau khi xoá bài 13/11, 14/11, 16/11): phần A hỏi lại 5 từ của buổi 17/11 (transpile · garbage collection · reiterate · non-negotiable · grumpy), phần B bốc lại bằng `sh tools/boc.sh 2026-11-18` trúng tag along · multi-tenancy · reflow · canary release · awkward · flush · night owl · bake in · drag on · hash out · pick up the tab · reach out · low-hanging fruit · starvation · peckish · keep an eye on · dangling · race condition · invoice · caveat — **không trùng một từ nào** với phần ôn mới của buổi 17/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **330/335 từ**, toàn bộ ở bậc 1._
 
@@ -503,21 +498,6 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | payment terms | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 | across the board | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
 | cozy | 1 | 2026-11-19 | 0 | 0 | 2026-11-18 |
-| feature parity | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
-| flapping | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
-| counteroffer | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
-| sunk cost | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
-| run late | 1 | 2026-11-20 | 0 | 0 | 2026-11-19 |
-| bit rot | 1 | 2026-11-21 | 0 | 0 | 2026-11-20 |
-| bikeshedding | 1 | 2026-11-21 | 0 | 0 | 2026-11-20 |
-| lowball | 1 | 2026-11-21 | 0 | 0 | 2026-11-20 |
-| dial back | 1 | 2026-11-21 | 0 | 0 | 2026-11-20 |
-| haggle | 1 | 2026-11-21 | 0 | 0 | 2026-11-20 |
-| least privilege | 1 | 2026-11-22 | 0 | 0 | 2026-11-21 |
-| cascading failure | 1 | 2026-11-22 | 0 | 0 | 2026-11-21 |
-| point of contact | 1 | 2026-11-22 | 0 | 0 | 2026-11-21 |
-| ad hoc | 1 | 2026-11-22 | 0 | 0 | 2026-11-21 |
-| freshen up | 1 | 2026-11-22 | 0 | 0 | 2026-11-21 |
 | middleware | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | atomic | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | triage | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |

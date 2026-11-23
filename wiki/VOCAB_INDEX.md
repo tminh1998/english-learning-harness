@@ -13,7 +13,7 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 360 từ đã học** · IT 144 · Business 144 · Life 72 · ad-hoc 0
+**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 23 từ — xem bảng cuối file
 **Cập nhật:** 2026-11-24
 
@@ -354,31 +354,16 @@
 | 333 | payment terms | term, terms, terms and conditions, payment schedule, pay, payable, prepayment | noun (số nhiều) | Business | điều khoản thanh toán | 2026-11-18 | lesson |
 | 334 | across the board | across-the-board, board, boards, blanket increase, wholesale | idiom (cụm trạng ngữ) | Business | đồng loạt, không trừ chỗ nào | 2026-11-18 | lesson |
 | 335 | cozy | cosy, cozier, coziest, cozily, coziness, cozy up | adjective | Life | ấm cúng | 2026-11-18 | lesson |
-| 336 | feature parity | parity, par, on par with, disparity, parity gap, at parity, feature-parity gap | noun (không đếm được) | IT | ngang bằng tính năng | 2026-11-19 | lesson |
-| 337 | flapping | flap, flaps, flapped, flap detection, anti-flap, dampening, a flapping alert | verb (dạng -ing, hay dùng như tính từ) | IT | nhảy trạng thái liên tục | 2026-11-19 | lesson |
-| 338 | counteroffer | counter, counters, countered, countering, counter-offer, counteroffers, offer, offers, offered, offering | noun (đếm được) | Business | phản đề nghị, chào lại mức khác | 2026-11-19 | lesson |
-| 339 | sunk cost | sink, sank, sunk, sunken, sunk costs, sunk-cost fallacy, sunken ship | noun (đếm được) | Business | chi phí chìm | 2026-11-19 | lesson |
-| 340 | run late | runs late, ran late, running late, late, later, lately, lateness, run behind, be late | phrasal verb (cụm động từ) | Life | trễ giờ, chạy quá giờ | 2026-11-19 | lesson |
-| 341 | bit rot | rot, rots, rotted, rotting, rotten, bit-rot, bitrot, link rot, software rot, code rot | noun (không đếm được) | IT | suy biến dần theo thời gian | 2026-11-20 | lesson |
-| 342 | bikeshedding | bikeshed, bike shed, bike-shedding, bikesheds, bikeshedded, bikeshedder, law of triviality | noun (không đếm được) | IT | tranh luận chuyện vặt | 2026-11-20 | lesson |
-| 343 | lowball | lowballs, lowballed, lowballing, low-ball, a lowball offer, lowball bid, lowballer, highball | verb (cũng là noun) | Business | chào giá thấp hẳn | 2026-11-20 | lesson |
-| 344 | dial back | dials back, dialed back, dialled back, dialing back, dial sth back, dial it back, dial down, dial up, dial in | phrasal verb (tách được) | Business | giảm bớt mức độ | 2026-11-20 | lesson |
-| 345 | haggle | haggles, haggled, haggling, haggler, haggle over, haggle with, bargain | verb | Life | mặc cả | 2026-11-20 | lesson |
-| 346 | least privilege | privilege, privileges, privileged, unprivileged, underprivileged, least-privilege, PoLP, principle of least privilege | noun (không đếm được) | IT | nguyên tắc quyền tối thiểu | 2026-11-21 | lesson |
-| 347 | cascading failure | cascade, cascades, cascaded, cascading, cascade into, cascading effect, cascading outage, cascading failures | noun (đếm được) | IT | sụp đổ dây chuyền | 2026-11-21 | lesson |
-| 348 | point of contact | contact, contacts, contacted, contacting, contact person, main contact, POC, single point of contact, points of contact | noun (đếm được) | Business | đầu mối liên hệ | 2026-11-21 | lesson |
-| 349 | ad hoc | ad-hoc, adhoc, ad hoc basis, ad hoc query, ad hoc testing, ad hoc meeting, ad hockery | adjective (cũng dùng như adverb) | Business | phát sinh ngoài kế hoạch / làm tạm cho đúng một việc | 2026-11-21 | lesson |
-| 350 | freshen up | fresh, freshly, freshness, freshen, freshens, freshened, freshening, refresh, refreshing, refreshment | phrasal verb (tách được) | Life | rửa mặt sửa soạn lại | 2026-11-21 | lesson |
-| 351 | middleware | middlewares, a middleware layer, the middleware stack, middleware chain, middle tier, ware, software, hardware | noun (thường không đếm được; cái cụ thể thì đếm được) | IT | lớp chen giữa request và handler | 2026-11-23 | lesson |
-| 352 | atomic | atom, atoms, atomically, atomicity, atomize, atomized, non-atomic, atomic operation | adjective | IT | nguyên tử, xong hết hoặc không gì cả | 2026-11-23 | lesson |
-| 353 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
-| 354 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
-| 355 | cram | crams, crammed, cramming, a cram session, cram school, crammer, overcrowd | verb | Life | nhồi nhét cho vừa / học dồn phút chót | 2026-11-23 | lesson |
-| 356 | bloat | bloats, bloated, bloating, bloatware, bundle bloat, code bloat, index bloat, de-bloat | noun (không đếm được; cũng là verb) | IT | phình to vô ích | 2026-11-24 | lesson |
-| 357 | swallow | swallows, swallowed, swallowing, swallow up, swallow an error, hard to swallow, a swallow (chim nhạn) | verb (cũng là noun) | IT | nuốt lỗi, không báo ra ngoài | 2026-11-24 | lesson |
-| 358 | leverage | leverages, leveraged, leveraging, leverage over sb, high-leverage, leverage point, lever, leveraged buyout | noun (không đếm được; cũng là verb) | Business | tận dụng cái đã có / thế mạnh để mặc cả | 2026-11-24 | lesson |
-| 359 | gatekeeper | gatekeepers, gatekeeping, gatekeep, gatekeeper role, gate, keeper, keep the gate | noun (đếm được) | Business | người gác cổng | 2026-11-24 | lesson |
-| 360 | downpour | downpours, down-pour, pour, pours, poured, pouring, pour down, pouring rain | noun (đếm được) | Life | mưa như trút | 2026-11-24 | lesson |
+| 336 | middleware | middlewares, a middleware layer, the middleware stack, middleware chain, middle tier, ware, software, hardware | noun (thường không đếm được; cái cụ thể thì đếm được) | IT | lớp chen giữa request và handler | 2026-11-23 | lesson |
+| 337 | atomic | atom, atoms, atomically, atomicity, atomize, atomized, non-atomic, atomic operation | adjective | IT | nguyên tử, xong hết hoặc không gì cả | 2026-11-23 | lesson |
+| 338 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
+| 339 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
+| 340 | cram | crams, crammed, cramming, a cram session, cram school, crammer, overcrowd | verb | Life | nhồi nhét cho vừa / học dồn phút chót | 2026-11-23 | lesson |
+| 341 | bloat | bloats, bloated, bloating, bloatware, bundle bloat, code bloat, index bloat, de-bloat | noun (không đếm được; cũng là verb) | IT | phình to vô ích | 2026-11-24 | lesson |
+| 342 | swallow | swallows, swallowed, swallowing, swallow up, swallow an error, hard to swallow, a swallow (chim nhạn) | verb (cũng là noun) | IT | nuốt lỗi, không báo ra ngoài | 2026-11-24 | lesson |
+| 343 | leverage | leverages, leveraged, leveraging, leverage over sb, high-leverage, leverage point, lever, leveraged buyout | noun (không đếm được; cũng là verb) | Business | tận dụng cái đã có / thế mạnh để mặc cả | 2026-11-24 | lesson |
+| 344 | gatekeeper | gatekeepers, gatekeeping, gatekeep, gatekeeper role, gate, keeper, keep the gate | noun (đếm được) | Business | người gác cổng | 2026-11-24 | lesson |
+| 345 | downpour | downpours, down-pour, pour, pours, poured, pouring, pour down, pouring rain | noun (đếm được) | Life | mưa như trút | 2026-11-24 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
