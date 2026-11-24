@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 345 từ đã học** · IT 138 · Business 138 · Life 69 · ad-hoc 0
+**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 24 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-24
+**Cập nhật:** 2026-11-25
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -364,6 +364,11 @@
 | 343 | leverage | leverages, leveraged, leveraging, leverage over sb, high-leverage, leverage point, lever, leveraged buyout | noun (không đếm được; cũng là verb) | Business | tận dụng cái đã có / thế mạnh để mặc cả | 2026-11-24 | lesson |
 | 344 | gatekeeper | gatekeepers, gatekeeping, gatekeep, gatekeeper role, gate, keeper, keep the gate | noun (đếm được) | Business | người gác cổng | 2026-11-24 | lesson |
 | 345 | downpour | downpours, down-pour, pour, pours, poured, pouring, pour down, pouring rain | noun (đếm được) | Life | mưa như trút | 2026-11-24 | lesson |
+| 346 | minify | minifies, minified, minifying, minification, minifier, unminified, minify-on-build | verb | IT | rút gọn code cho file nhỏ lại | 2026-11-25 | lesson |
+| 347 | jank | janky, jankier, jankiest, jankiness, jank-free, scroll jank | noun (không đếm được; tính từ: janky) | IT | giật cục, chạy không mượt | 2026-11-25 | lesson |
+| 348 | agenda | agendas, agenda item, on the agenda, hidden agenda, agenda-setting, set an agenda | noun (đếm được) | Business | chương trình buổi họp | 2026-11-25 | lesson |
+| 349 | nice-to-have | nice-to-haves, nice to have, must-have, must-haves, should-have, won't-have, MoSCoW | noun (đếm được; cũng dùng như adjective) | Business | yêu cầu không bắt buộc, có thì tốt | 2026-11-25 | lesson |
+| 350 | muggy | muggier, muggiest, mugginess, humid, sticky, close (nghĩa thời tiết bí) | adjective | Life | oi bức | 2026-11-25 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

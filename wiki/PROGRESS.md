@@ -1,15 +1,15 @@
 # PROGRESS — Tiến độ học
 
-**Cập nhật:** 2026-11-24 (buổi #69 — soạn sẵn sáng 23/11; xoá bài 19/11, 20/11, 21/11 ngày 23/11)
+**Cập nhật:** 2026-11-25 (buổi #70 — soạn sẵn sáng 24/11)
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 345 · **đã biết sẵn** 24 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox · middleware — bảng cuối VOCAB_INDEX, không dạy lại) |
-| Phân bố              | IT 138 · Business 138 · Life 69                                                           |
-| Số buổi học          | 69                                                                                      |
-| Streak hiện tại      | 2 buổi (2026-11-23 → 2026-11-24 — 3 bài 19/11, 20/11, 21/11 đã xoá nên chuỗi 17/11 → 18/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
+| Tổng số từ đã học    | 350 · **đã biết sẵn** 24 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox · middleware — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Phân bố              | IT 140 · Business 140 · Life 70                                                           |
+| Số buổi học          | 70                                                                                      |
+| Streak hiện tại      | 3 buổi (2026-11-23 → 2026-11-25 — 3 bài 19/11, 20/11, 21/11 đã xoá nên chuỗi 17/11 → 18/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
 | Streak dài nhất      | 26 buổi (2026-08-13 → 2026-09-11)                                                                                 |
-| Buổi gần nhất        | 2026-11-24 (Thứ Ba) — buổi #69 |
+| Buổi gần nhất        | 2026-11-25 (Thứ Tư) — buổi #70 |
 | Số quiz đã làm       | 0                                                                                       |
 | Điểm quiz trung bình | —                                                                                       |
 | Level                | B1+ reading / A2-B1 active (tự đánh giá — **chưa chốt**, chờ bài xếp loại ở lesson đầu) |
@@ -87,6 +87,7 @@
 | 2026-11-18 | 2026-W47 | #67 | write-ahead log · connection pool · payment terms · across the board · cozy |
 | 2026-11-23 | 2026-W48 | #68 | materialized view · atomic · triage · vendor · cram |
 | 2026-11-24 | 2026-W48 | #69 | bloat · swallow · leverage · gatekeeper · downpour |
+| 2026-11-25 | 2026-W48 | #70 | minify · jank · agenda · nice-to-have · muggy |
 
 ## Kết quả quiz tuần
 
@@ -141,6 +142,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+⚠️ **Cập nhật 2026-11-25 (soạn sẵn sáng 24/11):** vốn từ lên **350 từ** (IT 140 · Business 140 · Life 70), nợ ôn tập lên **345/350 từ quá hạn**, vẫn toàn bộ ở bậc 1. Buổi #70 do routine 7h sáng Thứ Ba 24/11 soạn trước một ngày cho Thứ Tư 25/11: phần A hỏi lại 5 từ của buổi 24/11 (bloat · swallow · leverage · gatekeeper · downpour), phần B bốc bằng `sh tools/boc.sh` trúng unplug · fine print · blast radius · yak shaving · edge case · brittle · fallback · sunset · bump · gossip protocol · loose ends · flaky · statement of work · backfill · latency · contingency · boilerplate · tombstone · ground rules · pencil in — "gặp lần cuối" là 24/10 và 26/10, **không trùng một từ nào** với phần B của buổi 23/11 và 24/11. Câu hỏi chép nguyên `.vi-quick` của bài gốc qua `tools/nghia.sh`, không từ nào báo `LOI`; `soat-nghia.sh` in **KHOP-HET (125 chỗ khớp)** ngay lần soát đầu. Khối này vẫn là hỏi-tự-trả-lời trên trang nên **không có từ nào lên bậc**. Hai trong năm từ hôm nay — `minify` và `muggy` — nằm trong lô 15 từ của ba bài 13/11, 14/11, 16/11 đã xoá ngày 17/11, nên grep `VOCAB_INDEX` sạch và theo ghi chú hôm đó thì **được phép dạy lại**; `jank`, `agenda`, `nice-to-have` là từ hoàn toàn mới. Hard gate R1 loại một loạt ứng viên, phần lớn vì đụng **cột họ từ**: `layout shift` (`layout` ← `reflow`) · `line item` (`line` ← `bottom line`) · `rate limit` (`rate-limit` ← `throttle`) · `lazy load` (`load` ← `payload`) · `hot path` (`hot` ← `hotspot`) · `cut corners` (`corner case` ← `edge case`) · `stuffy` (cùng họ `stuffed`) · `carpool` (`pool` ← `connection pool`) · `splitting headache` (`split` ← `split-brain`) · `jet lag` (`replication lag` ← `read replica`) · `viewport` (`view` ← `materialized view`, mà nghĩa gọn lại đụng `khung nhìn`) · `sanitize` (quá sát `sanity check`) · `dead letter queue` (sát `poison message` ở bảng ⛔ Đã biết sẵn), cộng `quota`, `turnkey`, `minutes`, `pro rata`, `addendum`, `headcount`, `waiver`, `pilot`, `prerequisite`, `due diligence`, `churn`, `retainer`, `stopgap`, `red tape`, `thundering herd`, `cardinality`, `clock skew`, `fan-out`, `soak test`, `upsert`, `noisy neighbor`, `sidecar`, `orphan`, `hydrate`, `shim`, `potluck`, `chores`, `power nap`, `rain check`, `commute`, `doze off`, `oversleep`, `cut it close`, `swing by` trùng thẳng lemma. `goodwill` bị loại hai lần: họ từ của `good faith` (22/10) và nghĩa gọn cũng đụng `thiện chí` — quy luật 5 trong `memory/cach-dich-cua-user.md`. Nghĩa gọn viết theo sổ đó: **quy luật 1** cho `muggy` → `oi bức` và `agenda` → `chương trình buổi họp` (tiếng Việt có sẵn đúng chữ thì dùng thẳng, hình ảnh dồn xuống `PHU`) · **quy luật 7** cho `minify` → `rút gọn code cho file nhỏ lại` (giữ `code` bằng tiếng Anh, không dùng "nén mã nguồn") · **quy luật 3** cho `jank` → `giật cục, chạy không mượt` và `nice-to-have` → `yêu cầu không bắt buộc, có thì tốt` (một cách gọi hụt nghĩa thì ghép vế thứ hai, nối bằng dấu phẩy; chữ `yêu cầu` là chữ chuẩn của dự án như user đã sửa ở `gold-plating`). Tuần 2026-W48 nay có 15 từ (23/11 → 25/11); W47 vẫn **chưa có điểm quiz**. Muốn có điểm thật thì gõ tay `/kiem-tra` cho W47, muốn nợ giảm thật thì gõ `/on-tap` (lô cũ nhất 14/08 → 16/08).
 
 🔁 **Sửa lại 2026-11-23 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `middleware` — một suất IT của buổi #68. Theo R1.b: từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (không tính vào tổng, không vào `REVIEW_QUEUE.md`), thay bằng `materialized view` (tầng database, đi cặp với `atomic` cùng bài và `read replica` 29/10). Hard gate R1 sạch (`grep -inw "view\|materialize\|materialized"` không ra dòng nào). Bài `.md` và `.html` viết lại khối từ, câu đầu mẩu đọc, bài tập 1 + đáp án; hai câu ví dụ mượn `stale` và `read replica`. Phần A ôn nhanh của bài 24/11 chép lại nghĩa mới bằng `tools/nghia.sh`. Thêm một ví dụ cho quy luật: khái niệm web backend user chạm tay hằng ngày (route/handler) cũng bị bác.
 
