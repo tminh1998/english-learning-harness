@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-26: 350 từ** — toàn bộ vốn từ trừ lô của bài 26/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-26: 345 từ** — toàn bộ vốn từ trừ lô của bài 26/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -74,10 +74,11 @@
 - hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
 - hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
 - hạn 2026-11-24 — materialized view · atomic · triage · vendor · cram
-- hạn 2026-11-25 — bloat · swallow · leverage · gatekeeper · downpour
 - hạn 2026-11-26 — minify · jank · agenda · nice-to-have · muggy
 
-_Ghi chú 2026-11-25 (buổi #70): phần A hỏi lại 5 từ của buổi 24/11 (bloat · swallow · leverage · gatekeeper · downpour), phần B bốc bằng `sh tools/boc.sh` trúng unplug · fine print · blast radius · yak shaving · edge case · brittle · fallback · sunset · bump · gossip protocol · loose ends · flaky · statement of work · backfill · latency · contingency · boilerplate · tombstone · ground rules · pencil in — "gặp lần cuối" là 24/10 và 26/10, và **không trùng một từ nào** với phần ôn của buổi 24/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **345/350 từ**, toàn bộ ở bậc 1._
+_Ghi chú 2026-11-26 (buổi #70; bốc lại phần B ngày 25/11 sau khi xoá bài 24/11): phần A hỏi lại 5 từ của buổi 25/11 (minify · jank · agenda · nice-to-have · muggy — đáp án `minify` chép lại câu ví dụ mới, mượn `transitive dependency` thay `bloat`), phần B bốc lại bằng `sh tools/boc.sh 2026-11-26` trúng run by · fallback · take a breather · unplug · statement of work · ballpark · spare · due diligence · flaky · bump · latency · blast radius · rapport · heads-up · brittle · polyfill · contingency · follow up · blocker · pain point — **không trùng một từ nào** với phần B mới của 25/11. `soat-nghia.sh` in `KHOP-HET`. Không từ nào lên bậc._
+
+_Ghi chú 2026-11-25 (buổi #69; làm lại khối ôn nhanh ngày 25/11 sau khi xoá bài 24/11): phần A hỏi lại 5 từ của buổi 23/11 (materialized view · atomic · triage · vendor · cram), phần B bốc lại bằng `sh tools/boc.sh 2026-11-25` trúng shim · load shedding · hassle · upfront · failover · redact · good faith · idempotent · snapshot · happy path · sunset · loose ends · orphan · worn out · fine print · edge case · yak shaving · grab a bite · backfill · gossip protocol. Câu hỏi chép nguyên `.vi-quick` bài gốc qua `tools/nghia.sh`, `soat-nghia.sh` in `KHOP-HET`. Không từ nào lên bậc._
 
 _Ghi chú 2026-11-24 (buổi #69; bốc lại phần B ngày 23/11 sau khi xoá bài 19/11, 20/11, 21/11): phần A hỏi lại 5 từ của buổi 23/11 (materialized view · atomic · triage · vendor · cram), phần B bốc lại bằng `sh tools/boc.sh 2026-11-24` trúng hassle · redact · load shedding · good faith · snapshot · failover · idempotent · happy path · upfront · shim · grab a bite · heads-up · orphan · ballpark · worn out · take a breather · due diligence · rapport · spare · run by — "gặp lần cuối" là 23/10 và 24/10, và **không trùng một từ nào** với phần ôn mới của buổi 23/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **340/345 từ**, toàn bộ ở bậc 1._
 
@@ -507,11 +508,6 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | triage | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | vendor | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | cram | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
-| bloat | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
-| swallow | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
-| leverage | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
-| gatekeeper | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
-| downpour | 1 | 2026-11-25 | 0 | 0 | 2026-11-24 |
 | minify | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | jank | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | agenda | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |

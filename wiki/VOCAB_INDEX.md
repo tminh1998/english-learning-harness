@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
+**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 24 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-26
+**Cập nhật:** 2026-11-25 (xoá bài 24/11)
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -359,21 +359,16 @@
 | 338 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
 | 339 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
 | 340 | cram | crams, crammed, cramming, a cram session, cram school, crammer, overcrowd | verb | Life | nhồi nhét cho vừa / học dồn phút chót | 2026-11-23 | lesson |
-| 341 | bloat | bloats, bloated, bloating, bloatware, bundle bloat, code bloat, index bloat, de-bloat | noun (không đếm được; cũng là verb) | IT | phình to vô ích | 2026-11-24 | lesson |
-| 342 | swallow | swallows, swallowed, swallowing, swallow up, swallow an error, hard to swallow, a swallow (chim nhạn) | verb (cũng là noun) | IT | nuốt lỗi, không báo ra ngoài | 2026-11-24 | lesson |
-| 343 | leverage | leverages, leveraged, leveraging, leverage over sb, high-leverage, leverage point, lever, leveraged buyout | noun (không đếm được; cũng là verb) | Business | tận dụng cái đã có / thế mạnh để mặc cả | 2026-11-24 | lesson |
-| 344 | gatekeeper | gatekeepers, gatekeeping, gatekeep, gatekeeper role, gate, keeper, keep the gate | noun (đếm được) | Business | người gác cổng | 2026-11-24 | lesson |
-| 345 | downpour | downpours, down-pour, pour, pours, poured, pouring, pour down, pouring rain | noun (đếm được) | Life | mưa như trút | 2026-11-24 | lesson |
-| 346 | minify | minifies, minified, minifying, minification, minifier, unminified, minify-on-build | verb | IT | rút gọn code cho file nhỏ lại | 2026-11-25 | lesson |
-| 347 | jank | janky, jankier, jankiest, jankiness, jank-free, scroll jank | noun (không đếm được; tính từ: janky) | IT | giật cục, chạy không mượt | 2026-11-25 | lesson |
-| 348 | agenda | agendas, agenda item, on the agenda, hidden agenda, agenda-setting, set an agenda | noun (đếm được) | Business | chương trình buổi họp | 2026-11-25 | lesson |
-| 349 | nice-to-have | nice-to-haves, nice to have, must-have, must-haves, should-have, won't-have, MoSCoW | noun (đếm được; cũng dùng như adjective) | Business | yêu cầu không bắt buộc, có thì tốt | 2026-11-25 | lesson |
-| 350 | muggy | muggier, muggiest, mugginess, humid, sticky, close (nghĩa thời tiết bí) | adjective | Life | oi bức | 2026-11-25 | lesson |
-| 351 | skeleton screen | skeleton, skeletons, skeleton screens, skeleton loader, skeleton UI, skeleton state, skeletal | noun (đếm được) | IT | khung tạm hiện trong lúc chờ dữ liệu | 2026-11-26 | lesson |
-| 352 | N+1 query | N+1 queries, N+1 problem, N+1 issue, N+1 selects, N plus one, eager loading, lazy loading | noun (đếm được) | IT | một query lấy danh sách rồi N query lấy từng dòng | 2026-11-26 | lesson |
-| 353 | velocity | velocities, sprint velocity, average velocity, team velocity, high-velocity, velocity chart | noun (không đếm được ở nghĩa agile) | Business | lượng việc nhóm làm xong mỗi sprint | 2026-11-26 | lesson |
-| 354 | definition of done | definitions of done, DoD, done-done, definition of ready, define done | noun phrase (đếm được, thường số ít) | Business | định nghĩa hoàn thành | 2026-11-26 | lesson |
-| 355 | jam-packed | jam-pack, jam-packs, jam packed, packed, pack, pack in, chock-full | adjective | Life | chật cứng, kín đặc | 2026-11-26 | lesson |
+| 341 | minify | minifies, minified, minifying, minification, minifier, unminified, minify-on-build | verb | IT | rút gọn code cho file nhỏ lại | 2026-11-25 | lesson |
+| 342 | jank | janky, jankier, jankiest, jankiness, jank-free, scroll jank | noun (không đếm được; tính từ: janky) | IT | giật cục, chạy không mượt | 2026-11-25 | lesson |
+| 343 | agenda | agendas, agenda item, on the agenda, hidden agenda, agenda-setting, set an agenda | noun (đếm được) | Business | chương trình buổi họp | 2026-11-25 | lesson |
+| 344 | nice-to-have | nice-to-haves, nice to have, must-have, must-haves, should-have, won't-have, MoSCoW | noun (đếm được; cũng dùng như adjective) | Business | yêu cầu không bắt buộc, có thì tốt | 2026-11-25 | lesson |
+| 345 | muggy | muggier, muggiest, mugginess, humid, sticky, close (nghĩa thời tiết bí) | adjective | Life | oi bức | 2026-11-25 | lesson |
+| 346 | skeleton screen | skeleton, skeletons, skeleton screens, skeleton loader, skeleton UI, skeleton state, skeletal | noun (đếm được) | IT | khung tạm hiện trong lúc chờ dữ liệu | 2026-11-26 | lesson |
+| 347 | N+1 query | N+1 queries, N+1 problem, N+1 issue, N+1 selects, N plus one, eager loading, lazy loading | noun (đếm được) | IT | một query lấy danh sách rồi N query lấy từng dòng | 2026-11-26 | lesson |
+| 348 | velocity | velocities, sprint velocity, average velocity, team velocity, high-velocity, velocity chart | noun (không đếm được ở nghĩa agile) | Business | lượng việc nhóm làm xong mỗi sprint | 2026-11-26 | lesson |
+| 349 | definition of done | definitions of done, DoD, done-done, definition of ready, define done | noun phrase (đếm được, thường số ít) | Business | định nghĩa hoàn thành | 2026-11-26 | lesson |
+| 350 | jam-packed | jam-pack, jam-packs, jam packed, packed, pack, pack in, chock-full | adjective | Life | chật cứng, kín đặc | 2026-11-26 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
