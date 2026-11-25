@@ -14,8 +14,8 @@
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
 **Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
-**Đã biết sẵn (không dạy):** 24 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-25 (xoá bài 24/11)
+**Đã biết sẵn (không dạy):** 25 từ — xem bảng cuối file
+**Cập nhật:** 2026-11-25 (xoá bài 24/11; minify → đã biết sẵn, thay bằng hysteresis)
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -359,7 +359,7 @@
 | 338 | triage | triages, triaged, triaging, triage queue, triage process, a triage call, triage nurse, bug triage | noun (không đếm được; cũng là verb) | Business | phân loại ưu tiên | 2026-11-23 | lesson |
 | 339 | vendor | vendors, vendoring, vendored, vendor lock-in, multi-vendor, vendor-neutral, vend, vending | noun (đếm được) | Business | nhà cung cấp | 2026-11-23 | lesson |
 | 340 | cram | crams, crammed, cramming, a cram session, cram school, crammer, overcrowd | verb | Life | nhồi nhét cho vừa / học dồn phút chót | 2026-11-23 | lesson |
-| 341 | minify | minifies, minified, minifying, minification, minifier, unminified, minify-on-build | verb | IT | rút gọn code cho file nhỏ lại | 2026-11-25 | lesson |
+| 341 | hysteresis | hysteretic, hysteresis band, hysteresis loop, hysteresis threshold, hysteresis margin | noun (không đếm được) | IT | vùng trễ, ngưỡng bật khác ngưỡng tắt | 2026-11-25 | lesson |
 | 342 | jank | janky, jankier, jankiest, jankiness, jank-free, scroll jank | noun (không đếm được; tính từ: janky) | IT | giật cục, chạy không mượt | 2026-11-25 | lesson |
 | 343 | agenda | agendas, agenda item, on the agenda, hidden agenda, agenda-setting, set an agenda | noun (đếm được) | Business | chương trình buổi họp | 2026-11-25 | lesson |
 | 344 | nice-to-have | nice-to-haves, nice to have, must-have, must-haves, should-have, won't-have, MoSCoW | noun (đếm được; cũng dùng như adjective) | Business | yêu cầu không bắt buộc, có thì tốt | 2026-11-25 | lesson |
@@ -406,6 +406,7 @@
 | code smell | code smells, smell, smells, smelly, design smell, test smell, smell test | noun (đếm được) | IT | dấu hiệu code có vấn đề | 2026-10-23 |
 | sandbox | sandboxes, sandboxed, sandboxing, sandbox mode, sandbox environment, sandboxed iframe, sandbox account, sandbox keys | noun (đếm được; cũng là verb) | IT | vùng chạy tách biệt | 2026-10-26 |
 | middleware | middlewares, a middleware layer, the middleware stack, middleware chain, middle tier | noun (thường không đếm được) | IT | lớp chen giữa request và handler | 2026-11-23 |
+| minify | minifies, minified, minifying, minification, minifier, unminified, minify-on-build | verb | IT | rút gọn code cho file nhỏ lại | 2026-11-25 |
 
 <!--
 LUẬT GHI:

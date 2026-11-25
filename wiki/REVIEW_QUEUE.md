@@ -74,9 +74,9 @@
 - hạn 2026-11-18 — transpile · garbage collection · reiterate · non-negotiable · grumpy
 - hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
 - hạn 2026-11-24 — materialized view · atomic · triage · vendor · cram
-- hạn 2026-11-26 — minify · jank · agenda · nice-to-have · muggy
+- hạn 2026-11-26 — hysteresis · jank · agenda · nice-to-have · muggy
 
-_Ghi chú 2026-11-26 (buổi #70; bốc lại phần B ngày 25/11 sau khi xoá bài 24/11): phần A hỏi lại 5 từ của buổi 25/11 (minify · jank · agenda · nice-to-have · muggy — đáp án `minify` chép lại câu ví dụ mới, mượn `transitive dependency` thay `bloat`), phần B bốc lại bằng `sh tools/boc.sh 2026-11-26` trúng run by · fallback · take a breather · unplug · statement of work · ballpark · spare · due diligence · flaky · bump · latency · blast radius · rapport · heads-up · brittle · polyfill · contingency · follow up · blocker · pain point — **không trùng một từ nào** với phần B mới của 25/11. `soat-nghia.sh` in `KHOP-HET`. Không từ nào lên bậc._
+_Ghi chú 2026-11-26 (buổi #70; bốc lại phần B ngày 25/11 sau khi xoá bài 24/11): phần A hỏi lại 5 từ của buổi 25/11 (hysteresis · jank · agenda · nice-to-have · muggy — `hysteresis` thay `minify` vì user đã biết sẵn), phần B bốc lại bằng `sh tools/boc.sh 2026-11-26` trúng run by · fallback · take a breather · unplug · statement of work · ballpark · spare · due diligence · flaky · bump · latency · blast radius · rapport · heads-up · brittle · polyfill · contingency · follow up · blocker · pain point — **không trùng một từ nào** với phần B mới của 25/11. `soat-nghia.sh` in `KHOP-HET`. Không từ nào lên bậc._
 
 _Ghi chú 2026-11-25 (buổi #69; làm lại khối ôn nhanh ngày 25/11 sau khi xoá bài 24/11): phần A hỏi lại 5 từ của buổi 23/11 (materialized view · atomic · triage · vendor · cram), phần B bốc lại bằng `sh tools/boc.sh 2026-11-25` trúng shim · load shedding · hassle · upfront · failover · redact · good faith · idempotent · snapshot · happy path · sunset · loose ends · orphan · worn out · fine print · edge case · yak shaving · grab a bite · backfill · gossip protocol. Câu hỏi chép nguyên `.vi-quick` bài gốc qua `tools/nghia.sh`, `soat-nghia.sh` in `KHOP-HET`. Không từ nào lên bậc._
 
@@ -508,7 +508,7 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | triage | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | vendor | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
 | cram | 1 | 2026-11-24 | 0 | 0 | 2026-11-23 |
-| minify | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
+| hysteresis | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | jank | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | agenda | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | nice-to-have | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |

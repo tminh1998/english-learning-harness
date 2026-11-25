@@ -201,37 +201,37 @@
 <article class="word" data-cat="it">
   <div class="word-head">
     <div>
-      <h2><span class="num">1</span>minify
-        <button class="say" data-say="minify the bundle" title="Nghe phát âm">🔊</button>
+      <h2><span class="num">1</span>hysteresis
+        <button class="say" data-say="add some hysteresis" title="Nghe phát âm">🔊</button>
       </h2>
-      <div class="ipa">/ˈmɪn.ɪ.faɪ/ · <em>verb</em></div>
+      <div class="ipa">/ˌhɪs.təˈriː.sɪs/ · <em>noun (không đếm được)</em></div>
     </div>
     <span class="badge it">IT</span>
   </div>
 
-  <p class="vi-quick hide-me">rút gọn code cho file nhỏ lại<span class="alt">xoá khoảng trắng, chỗ xuống dòng, rút tên biến — chạy y như cũ nhưng file nhẹ hơn, tải nhanh hơn</span></p>
+  <p class="vi-quick hide-me">vùng trễ, ngưỡng bật khác ngưỡng tắt<span class="alt">vượt 80% mới bật, phải tụt dưới 60% mới tắt — chừa một khoảng ở giữa để số liệu cứ lởn vởn quanh một mốc thì hệ thống cũng không bật tắt liên tục</span></p>
 
-  <p class="def"><span class="tag">EN</span>To minify a file is to strip out everything only a human needs — spaces, line breaks, long names — so the file gets smaller while the code behaves exactly the same.
-    <span class="def-vi hide-me">→ Minify một file là bỏ hết những thứ chỉ người đọc mới cần — khoảng trắng, chỗ xuống dòng, tên biến dài — để file nhỏ lại mà code vẫn chạy y như cũ.</span>
+  <p class="def"><span class="tag">EN</span>Hysteresis means switching something on at one threshold and off at a different one, so a value hovering around a single line doesn't flip the system back and forth.
+    <span class="def-vi hide-me">→ Hysteresis là bật ở một ngưỡng, tắt ở một ngưỡng khác — để số liệu có lởn vởn quanh một mốc thì hệ thống cũng không bị bật tắt qua lại.</span>
   </p>
-  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Khác <code>gzip</code> / <code>compress</code>: gzip nén lúc truyền rồi giải nén lại, còn minify sửa thẳng nội dung file. Khác <code>tree shaking</code> (đã học 16/10) — tree shaking bỏ code không ai dùng, minify giữ nguyên code nhưng viết lại cho ngắn. Dev Việt nói luôn "minify cái bundle", không dịch.</p>
+  <p class="def hide-me"><span class="tag">GHI CHÚ</span>Gốc là thuật ngữ vật lý (hiện tượng trễ); cái máy lạnh để 26 độ mà không bật tắt mỗi giây cũng là nhờ nó. Trong vận hành hay gặp ở autoscaling, alert và <code>circuit breaker</code> (đã học 28/09): thiếu nó thì hệ thống bị "flapping" — bật tắt liên tục. Khác <code>backoff</code> (11/09) — backoff là chờ lâu dần giữa các lần thử lại, còn hysteresis là chừa khoảng cách giữa hai ngưỡng. Tiếng Việt cùng chữ "trễ" với <code>latency</code> (05/09) nhưng không dính gì nhau: hysteresis không phải chậm, mà là cố ý để ngưỡng tắt lệch khỏi ngưỡng bật.</p>
 
   <div class="ex-label">Ví dụ</div>
   <ul class="examples">
     <li>
-      <span class="en">We <b>minify</b> and gzip every asset on build, but the bundle is still heavy — the real fix is dropping the second chart library and the dozen <span class="rev">transitive dependencies</span> it drags in.</span>
-      <span class="vi hide-me">→ Bên mình minify với gzip hết asset lúc build, mà bundle vẫn nặng — muốn sửa thật thì phải bỏ cái thư viện vẽ chart thứ hai, cùng cả chục dependency được cài kèm mà nó kéo theo.</span>
+      <span class="en">Add some <b>hysteresis</b> to the autoscaler — right now it adds a node at 70% CPU and removes it at 69%, so every small <span class="rev">spike</span> spins one up and tears it down a minute later.</span>
+      <span class="vi hide-me">→ Cho autoscaler một vùng trễ đi — giờ nó thêm node ở 70% CPU rồi bớt node ở 69%, nên cứ CPU vọt lên rồi tụt xuống một chút là nó bật một node, một phút sau lại tắt.</span>
     </li>
     <li>
-      <span class="en"><span class="rev">Heads-up</span>: the build <b>minifies</b> the templates too now, so don't panic when the diff in <code>dist/</code> is unreadable.</span>
-      <span class="vi hide-me">→ Báo trước nhé: giờ build minify luôn cả template, nên thấy diff trong <code>dist/</code> đọc không nổi thì cũng đừng hoảng.</span>
+      <span class="en">Without <b>hysteresis</b>, a disk hovering at 90% fires the alert, clears it and fires it again all night — whoever is on call ends up completely <span class="rev">worn out</span>.</span>
+      <span class="vi hide-me">→ Không có vùng trễ thì cái disk cứ lởn vởn quanh 90% sẽ bắn alert, tự hết, rồi lại bắn suốt đêm — ai trực on-call sáng ra cũng mệt rã rời.</span>
     </li>
   </ul>
 
   <div class="rows">
-    <div class="r"><span class="k">Collocation</span><span class="v"><code>minify JS / CSS</code>, <code>minified bundle</code>, <code>minified output</code>, <code>un-minified source</code>, <code>minify on build</code>, <code>a minification step</code></span></div>
-    <div class="r warn"><span class="k">Bẫy</span><span class="v">Đừng lẫn với <code>minimize</code> (thu nhỏ cửa sổ, giảm thiểu rủi ro) — <code>minify</code> chỉ dùng cho file code. Danh từ là <code>minification</code>, không phải "minifying". Trọng âm vần đầu <code>/ˈmɪn.ɪ.faɪ/</code>, đuôi <code>-fy</code> đọc "fai" chứ không phải "fi".</span></div>
-    <div class="r"><span class="k">Họ từ</span><span class="v">minifies, minified, minifying, minification, minifier, unminified, minify-on-build</span></div>
+    <div class="r"><span class="k">Collocation</span><span class="v"><code>add hysteresis</code>, <code>a hysteresis band</code>, <code>hysteresis threshold</code>, <code>with / without hysteresis</code>, <code>scale-down hysteresis</code>, <code>hysteresis on the alert</code></span></div>
+    <div class="r warn"><span class="k">Bẫy</span><span class="v">Không đếm được: nói <code>add some hysteresis</code>, đừng nói "a hysteresis" hay "hysteresises". Phát âm <code>/ˌhɪs.təˈriː.sɪs/</code> bốn âm tiết, trọng âm rơi vào <code>ree</code>; đừng lẫn với <code>hysteria</code> (cơn kích động). Tính từ là <code>hysteretic</code>, ít gặp.</span></div>
+    <div class="r"><span class="k">Họ từ</span><span class="v">hysteretic, hysteresis band, hysteresis loop, hysteresis threshold, hysteresis margin</span></div>
   </div>
 </article>
 
@@ -386,10 +386,10 @@
 <section class="block">
   <h2>Mẩu đọc</h2>
   <p class="sub">Email gửi khách trước buổi họp giữa sprint</p>
-  <div class="passage">Dear Mr. Tran — it has been <b>muggy</b> all week here, so the whole team is quietly grateful the office air conditioning held. I've attached the <b>agenda</b> for Thursday: twenty minutes on the checkout page, ten on the two items still open, and five for you to <span class="rev">sign off</span> on the November <span class="rev">invoice</span>. On performance, we now <b>minify</b> and inline the critical CSS, which removed most of the scroll <b>jank</b> on mobile; what's left comes from the promo banner, and we'd like to park that as a <b>nice-to-have</b> for phase two.</div>
+  <div class="passage">Dear Mr. Tran — it has been <b>muggy</b> all week here, so the whole team is quietly grateful the office air conditioning held. I've attached the <b>agenda</b> for Thursday: twenty minutes on the checkout page, ten on the two items still open, and five for you to <span class="rev">sign off</span> on the November <span class="rev">invoice</span>. On performance, we now inline the critical CSS, which removed most of the scroll <b>jank</b> on mobile, and we've added <b>hysteresis</b> to the checkout autoscaler so it no longer adds and drops servers every few minutes; what's left comes from the promo banner, and we'd like to park that as a <b>nice-to-have</b> for phase two.</div>
   <details>
     <summary>Bản dịch</summary>
-    <p class="hide-me">Kính gửi anh Trần — cả tuần nay ngoài này oi bức, nên cả nhóm bên em thầm mừng là máy lạnh văn phòng vẫn trụ được ạ. Em gửi kèm chương trình buổi họp thứ Năm: hai mươi phút cho trang checkout, mười phút cho hai việc còn treo, và năm phút để anh duyệt chốt hoá đơn tháng Mười Một. Về hiệu năng, bên em đã minify và nhúng sẵn phần CSS quan trọng, nhờ vậy chỗ cuộn giật cục trên mobile hết gần hẳn; phần còn lại là do cái banner quảng cáo, chỗ đó bên em xin xếp vào loại không bắt buộc, để sang phase hai ạ.</p>
+    <p class="hide-me">Kính gửi anh Trần — cả tuần nay ngoài này oi bức, nên cả nhóm bên em thầm mừng là máy lạnh văn phòng vẫn trụ được ạ. Em gửi kèm chương trình buổi họp thứ Năm: hai mươi phút cho trang checkout, mười phút cho hai việc còn treo, và năm phút để anh duyệt chốt hoá đơn tháng Mười Một. Về hiệu năng, bên em đã nhúng sẵn phần CSS quan trọng, nhờ vậy chỗ cuộn giật cục trên mobile hết gần hẳn, và cũng đã thêm vùng trễ cho autoscaler của trang checkout nên nó thôi thêm bớt server vài phút một lần; phần còn lại là do cái banner quảng cáo, chỗ đó bên em xin xếp vào loại không bắt buộc, để sang phase hai ạ.</p>
   </details>
 </section>
 
@@ -397,7 +397,7 @@
   <h2>Bài tập</h2>
   <p class="sub">5 câu về từ vựng của buổi. Làm xong rồi mới mở đáp án.</p>
   <ol class="ex">
-    <li>Điền từ: "The build step ______ every JS file, which took the bundle from 480 KB down to 190 KB."</li>
+    <li>Điền từ: "The alert kept firing and clearing every few minutes, so we added some ______: it now fires at 90% and only clears below 80%."</li>
     <li>Sửa lỗi: "I'm muggy today, so let's keep the call short."</li>
     <li>Dịch Việt-Anh: "Cái đó là yêu cầu không bắt buộc, bên em xin để sang phase hai ạ."</li>
     <li>Chọn collocation: "Every image that loads without a fixed height adds ______." — (a) a jank (b) scroll jank (c) janks</li>
@@ -406,7 +406,7 @@
   <details>
     <summary>Đáp án</summary>
     <ol>
-      <li><b>minifies</b> — chủ ngữ số ít (<code>the build step</code>) nên thêm <code>-s</code>; <code>minify</code> đi thẳng với tân ngữ, không có giới từ.</li>
+      <li><b>hysteresis</b> — không đếm được nên đi với <code>some</code>, không có <code>a</code>; bật ở 90%, tắt dưới 80% chính là chừa vùng trễ giữa hai ngưỡng.</li>
       <li><b>"It's muggy today, so let's keep the call short."</b> — <code>muggy</code> nói về thời tiết, không nói về người; chủ ngữ phải là <code>it</code>.</li>
       <li><b>"That's a nice-to-have — we'd like to park it for phase two."</b> — danh từ <code>a nice-to-have</code> có gạch nối; <code>park sth</code> là xếp lại để sau, giọng gửi khách.</li>
       <li><b>(b) scroll jank</b> — <code>jank</code> không đếm được nên không có <code>a jank</code> / <code>janks</code>; cụm cố định là <code>scroll jank</code>.</li>

@@ -4,7 +4,7 @@
 
 | Chỉ số               | Giá trị                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------- |
-| Tổng số từ đã học    | 350 · **đã biết sẵn** 24 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox · middleware — bảng cuối VOCAB_INDEX, không dạy lại) |
+| Tổng số từ đã học    | 350 · **đã biết sẵn** 25 (hotfix · overwrite · cherry-pick · debounce · payload · stack trace · memory leak · kick off · replay · code freeze · soft delete · dedupe · go-live · poison message · hard stop · source map · memoize · change request · prefetch · green light · monorepo · code smell · sandbox · middleware · minify — bảng cuối VOCAB_INDEX, không dạy lại) |
 | Phân bố              | IT 140 · Business 140 · Life 70                                                           |
 | Số buổi học          | 70                                                                                      |
 | Streak hiện tại      | 2 buổi (2026-11-25 → 2026-11-26 — bài 24/11 đã xoá nên chuỗi từ 23/11 đứt; Chủ nhật là ngày nghỉ theo lịch, không tính đứt) |
@@ -86,7 +86,7 @@
 | 2026-11-17 | 2026-W47 | #66 | transpile · garbage collection · reiterate · non-negotiable · grumpy |
 | 2026-11-18 | 2026-W47 | #67 | write-ahead log · connection pool · payment terms · across the board · cozy |
 | 2026-11-23 | 2026-W48 | #68 | materialized view · atomic · triage · vendor · cram |
-| 2026-11-25 | 2026-W48 | #69 | minify · jank · agenda · nice-to-have · muggy |
+| 2026-11-25 | 2026-W48 | #69 | hysteresis · jank · agenda · nice-to-have · muggy |
 | 2026-11-26 | 2026-W48 | #70 | skeleton screen · N+1 query · velocity · definition of done · jam-packed |
 
 ## Kết quả quiz tuần
@@ -142,6 +142,8 @@ sắp phai. Luật đầy đủ: R9 trong [AGENTS.md](../AGENTS.md).
 ## Đang yếu
 
 _(chưa có dữ liệu về từ yếu — cần ít nhất 1 lượt ôn hoặc 1 bài quiz)_
+
+🔁 **Sửa lại 2026-11-25 (cùng ngày, sau khi user xem bài):** user báo đã biết sẵn `minify` — một suất IT của buổi #69 (bài 25/11). Theo R1.b: từ chuyển xuống bảng **Đã biết sẵn** ở cuối `VOCAB_INDEX.md` (nay 25 từ; không tính vào tổng, không vào `REVIEW_QUEUE.md`), thay bằng `hysteresis` (tầng vận hành — autoscaling, alert; grep sạch cả cột họ từ, trong khi `head-of-line blocking` bị loại vì đụng `block` ← `blocker` và `line` ← `bottom line`, `write amplification` bị loại vì đụng `write coalescing` / `write quorum`). Nghĩa gọn theo quy luật 3: `vùng trễ, ngưỡng bật khác ngưỡng tắt`. Bài 25/11 viết lại khối từ #1, câu mẩu đọc về autoscaler, bài tập 1 + đáp án, ghi chú phát âm; hai câu ví dụ mượn `spike` và `worn out`. Bài 26/11 phần A chép lại nghĩa mới bằng `nghia.sh`. Tổng vẫn **350 từ**.
 
 ⚠️ **Cập nhật 2026-11-25 (xoá bài):** **Bài 24/11 đã xoá hẳn** theo yêu cầu người học: gỡ file bài, gỡ 5 từ bloat · swallow · leverage · gatekeeper · downpour khỏi `VOCAB_INDEX.md` và `REVIEW_QUEUE.md` (sau này được phép dạy lại), đánh số lại VOCAB_INDEX. Bài 25/11 lùi thành **buổi #69** — phần A ôn nhanh đổi sang 5 từ của buổi 23/11, phần B bốc lại bằng `sh tools/boc.sh 2026-11-25`, câu ví dụ đầu của `minify` mượn `transitive dependency` thay `bloat`; bài 26/11 lùi thành **buổi #70** — phần A chép lại câu ví dụ mới của `minify`, phần B bốc lại bằng `sh tools/boc.sh 2026-11-26` (không trùng phần B mới của 25/11). Tuần W48 chưa có bảng ôn nên không phải sửa recap tuần; bảng ôn tháng/quý/nửa năm/năm sinh lại bằng `build-index.sh`. Vốn từ còn **350 từ** (IT 140 · Business 140 · Life 70), nợ ôn tập **345/350 từ quá hạn**, vẫn toàn bộ ở bậc 1. Streak còn **2 buổi** (25/11 → 26/11). `soat-nghia.sh` in `KHOP-HET` cho cả hai bài.
 
