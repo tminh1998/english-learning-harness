@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
+**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 24 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-25
+**Cập nhật:** 2026-11-26
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -369,6 +369,11 @@
 | 348 | agenda | agendas, agenda item, on the agenda, hidden agenda, agenda-setting, set an agenda | noun (đếm được) | Business | chương trình buổi họp | 2026-11-25 | lesson |
 | 349 | nice-to-have | nice-to-haves, nice to have, must-have, must-haves, should-have, won't-have, MoSCoW | noun (đếm được; cũng dùng như adjective) | Business | yêu cầu không bắt buộc, có thì tốt | 2026-11-25 | lesson |
 | 350 | muggy | muggier, muggiest, mugginess, humid, sticky, close (nghĩa thời tiết bí) | adjective | Life | oi bức | 2026-11-25 | lesson |
+| 351 | skeleton screen | skeleton, skeletons, skeleton screens, skeleton loader, skeleton UI, skeleton state, skeletal | noun (đếm được) | IT | khung tạm hiện trong lúc chờ dữ liệu | 2026-11-26 | lesson |
+| 352 | N+1 query | N+1 queries, N+1 problem, N+1 issue, N+1 selects, N plus one, eager loading, lazy loading | noun (đếm được) | IT | một query lấy danh sách rồi N query lấy từng dòng | 2026-11-26 | lesson |
+| 353 | velocity | velocities, sprint velocity, average velocity, team velocity, high-velocity, velocity chart | noun (không đếm được ở nghĩa agile) | Business | lượng việc nhóm làm xong mỗi sprint | 2026-11-26 | lesson |
+| 354 | definition of done | definitions of done, DoD, done-done, definition of ready, define done | noun phrase (đếm được, thường số ít) | Business | định nghĩa hoàn thành | 2026-11-26 | lesson |
+| 355 | jam-packed | jam-pack, jam-packs, jam packed, packed, pack, pack in, chock-full | adjective | Life | chật cứng, kín đặc | 2026-11-26 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

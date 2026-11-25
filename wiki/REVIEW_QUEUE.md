@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-25: 345 từ** — toàn bộ vốn từ trừ lô của bài 25/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-26: 350 từ** — toàn bộ vốn từ trừ lô của bài 26/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -75,6 +75,7 @@
 - hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
 - hạn 2026-11-24 — materialized view · atomic · triage · vendor · cram
 - hạn 2026-11-25 — bloat · swallow · leverage · gatekeeper · downpour
+- hạn 2026-11-26 — minify · jank · agenda · nice-to-have · muggy
 
 _Ghi chú 2026-11-25 (buổi #70): phần A hỏi lại 5 từ của buổi 24/11 (bloat · swallow · leverage · gatekeeper · downpour), phần B bốc bằng `sh tools/boc.sh` trúng unplug · fine print · blast radius · yak shaving · edge case · brittle · fallback · sunset · bump · gossip protocol · loose ends · flaky · statement of work · backfill · latency · contingency · boilerplate · tombstone · ground rules · pencil in — "gặp lần cuối" là 24/10 và 26/10, và **không trùng một từ nào** với phần ôn của buổi 24/11. Câu hỏi chép nguyên khối nghĩa `.vi-quick` của bài gốc bằng `tools/nghia.sh` (R9 mục 6), `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**. Nợ ôn tập nay là **345/350 từ**, toàn bộ ở bậc 1._
 
@@ -516,6 +517,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | agenda | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | nice-to-have | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
 | muggy | 1 | 2026-11-26 | 0 | 0 | 2026-11-25 |
+| skeleton screen | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
+| N+1 query | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
+| velocity | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
+| definition of done | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
+| jam-packed | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
 
 ## Đã thuộc (bậc 5, đúng)
 
