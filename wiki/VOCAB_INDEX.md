@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 350 từ đã học** · IT 140 · Business 140 · Life 70 · ad-hoc 0
+**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 25 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-25 (xoá bài 24/11; minify → đã biết sẵn, thay bằng hysteresis)
+**Cập nhật:** 2026-11-27 (buổi #71 — lockfile · fixture · point of contact · shortlist · doggy bag)
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -369,6 +369,11 @@
 | 348 | velocity | velocities, sprint velocity, average velocity, team velocity, high-velocity, velocity chart | noun (không đếm được ở nghĩa agile) | Business | lượng việc nhóm làm xong mỗi sprint | 2026-11-26 | lesson |
 | 349 | definition of done | definitions of done, DoD, done-done, definition of ready, define done | noun phrase (đếm được, thường số ít) | Business | định nghĩa hoàn thành | 2026-11-26 | lesson |
 | 350 | jam-packed | jam-pack, jam-packs, jam packed, packed, pack, pack in, chock-full | adjective | Life | chật cứng, kín đặc | 2026-11-26 | lesson |
+| 351 | lockfile | lockfiles, lock file, lock-file, lockfile conflict, locked versions, pin a version | noun (đếm được) | IT | file ghim đúng version của từng dependency | 2026-11-27 | lesson |
+| 352 | fixture | fixtures, test fixture, fixture data, fixture file, fix, fixed | noun (đếm được) | IT | dữ liệu dựng sẵn cho test | 2026-11-27 | lesson |
+| 353 | point of contact | points of contact, POC, SPOC, single point of contact, contact, contact person | noun (đếm được) | Business | đầu mối liên hệ | 2026-11-27 | lesson |
+| 354 | shortlist | shortlists, shortlisted, shortlisting, short list, shortlisted candidate | noun (đếm được; cũng là verb) | Business | danh sách rút gọn | 2026-11-27 | lesson |
+| 355 | doggy bag | doggy bags, doggie bag, to-go box, takeaway box, box sth up | noun (đếm được) | Life | hộp mang đồ ăn còn lại về | 2026-11-27 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 

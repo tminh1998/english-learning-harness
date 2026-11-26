@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-26: 345 từ** — toàn bộ vốn từ trừ lô của bài 26/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-27: 350 từ** — toàn bộ vốn từ trừ lô của bài 27/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -75,6 +75,9 @@
 - hạn 2026-11-19 — write-ahead log · connection pool · payment terms · across the board · cozy
 - hạn 2026-11-24 — materialized view · atomic · triage · vendor · cram
 - hạn 2026-11-26 — hysteresis · jank · agenda · nice-to-have · muggy
+- hạn 2026-11-27 — skeleton screen · N+1 query · velocity · definition of done · jam-packed
+
+_Ghi chú 2026-11-27 (buổi #71, bài soạn sẵn từ sáng 26/11): phần A hỏi lại 5 từ của buổi 26/11 (skeleton screen · N+1 query · velocity · definition of done · jam-packed), phần B bốc bằng `sh tools/boc.sh` trúng drain · blow off steam · tombstone · sign off · leeway · cadence · scope creep · ground rules · put up with · nitpick · escape hatch · pencil in · boilerplate · in a nutshell · on the fence · chatty · contention · turnaround · stay up · recap — cả 20 từ đều có "gặp lần cuối" là 26/10, không trùng phần B của các buổi 23/11 → 26/11. Câu hỏi chép nguyên `.vi-quick` bài gốc qua `tools/nghia.sh`, `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
 
 _Ghi chú 2026-11-26 (buổi #70; bốc lại phần B ngày 25/11 sau khi xoá bài 24/11): phần A hỏi lại 5 từ của buổi 25/11 (hysteresis · jank · agenda · nice-to-have · muggy — `hysteresis` thay `minify` vì user đã biết sẵn), phần B bốc lại bằng `sh tools/boc.sh 2026-11-26` trúng run by · fallback · take a breather · unplug · statement of work · ballpark · spare · due diligence · flaky · bump · latency · blast radius · rapport · heads-up · brittle · polyfill · contingency · follow up · blocker · pain point — **không trùng một từ nào** với phần B mới của 25/11. `soat-nghia.sh` in `KHOP-HET`. Không từ nào lên bậc._
 
@@ -518,6 +521,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | velocity | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
 | definition of done | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
 | jam-packed | 1 | 2026-11-27 | 0 | 0 | 2026-11-26 |
+| lockfile | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
+| fixture | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
+| point of contact | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
+| shortlist | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
+| doggy bag | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
 
 ## Đã thuộc (bậc 5, đúng)
 
