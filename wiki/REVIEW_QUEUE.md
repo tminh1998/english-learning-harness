@@ -4,7 +4,7 @@
 > Đúng khi ôn → lên bậc kế, tính lại `next_review`. Sai → tụt về bậc 1, `next_review` = mai, `sai` +1.
 > Từ đạt bậc 5 và đúng → coi như đã thuộc, chuyển xuống mục **Đã thuộc** ở cuối file.
 
-**⚠️ Tới hạn / quá hạn tính tới 2026-11-27: 350 từ** — toàn bộ vốn từ trừ lô của bài 27/11:
+**⚠️ Tới hạn / quá hạn tính tới 2026-11-28: 355 từ** — toàn bộ vốn từ trừ lô của bài 28/11:
 
 - hạn 2026-08-14 — deprecate · workaround · clarify · follow up · come across
 - hạn 2026-08-15 — edge case · bottleneck · escalate · deliverable · run out of
@@ -76,6 +76,9 @@
 - hạn 2026-11-24 — materialized view · atomic · triage · vendor · cram
 - hạn 2026-11-26 — hysteresis · jank · agenda · nice-to-have · muggy
 - hạn 2026-11-27 — skeleton screen · N+1 query · velocity · definition of done · jam-packed
+- hạn 2026-11-28 — lockfile · fixture · point of contact · shortlist · doggy bag
+
+_Ghi chú 2026-11-28 (buổi #72, bài soạn sẵn từ sáng 27/11): phần A hỏi lại 5 từ của buổi 27/11 (lockfile · fixture · point of contact · shortlist · doggy bag), phần B bốc bằng `sh tools/boc.sh` trúng outbox · concession · quote · downstream · quarantine · ramp up · chores · dry run · saga · telemetry · immutable · prerequisite · heartbeat · runbook · binge-watch · bottleneck · lead time · mitigate · stroll · ingest — cả 20 từ đều có "gặp lần cuối" là 27/10, không trùng phần B của các buổi 23/11 → 27/11. Câu hỏi chép nguyên `.vi-quick` bài gốc qua `tools/nghia.sh`, `soat-nghia.sh` in `KHOP-HET` (125 chỗ khớp). Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
 
 _Ghi chú 2026-11-27 (buổi #71, bài soạn sẵn từ sáng 26/11): phần A hỏi lại 5 từ của buổi 26/11 (skeleton screen · N+1 query · velocity · definition of done · jam-packed), phần B bốc bằng `sh tools/boc.sh` trúng drain · blow off steam · tombstone · sign off · leeway · cadence · scope creep · ground rules · put up with · nitpick · escape hatch · pencil in · boilerplate · in a nutshell · on the fence · chatty · contention · turnaround · stay up · recap — cả 20 từ đều có "gặp lần cuối" là 26/10, không trùng phần B của các buổi 23/11 → 26/11. Câu hỏi chép nguyên `.vi-quick` bài gốc qua `tools/nghia.sh`, `soat-nghia.sh` in `KHOP-HET`. Vẫn là hỏi-tự-trả-lời trên trang nên **không từ nào lên bậc**._
 
@@ -526,6 +529,11 @@ _Ghi chú 2026-08-24: người học báo đã biết sẵn `hotfix`, `overwrite
 | point of contact | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
 | shortlist | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
 | doggy bag | 1 | 2026-11-28 | 0 | 0 | 2026-11-27 |
+| flapping | 1 | 2026-11-29 | 0 | 0 | 2026-11-28 |
+| teardown | 1 | 2026-11-29 | 0 | 0 | 2026-11-28 |
+| lump sum | 1 | 2026-11-29 | 0 | 0 | 2026-11-28 |
+| second-guess | 1 | 2026-11-29 | 0 | 0 | 2026-11-28 |
+| staycation | 1 | 2026-11-29 | 0 | 0 | 2026-11-28 |
 
 ## Đã thuộc (bậc 5, đúng)
 

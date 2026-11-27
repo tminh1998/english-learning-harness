@@ -13,9 +13,9 @@
 > Từ trong bảng này **được phép** xuất hiện lại ở câu ví dụ, mẩu đọc, bài quiz —
 > đó là ôn tập. Chỉ không được tính là từ mới của ngày.
 
-**Tổng: 355 từ đã học** · IT 142 · Business 142 · Life 71 · ad-hoc 0
+**Tổng: 360 từ đã học** · IT 144 · Business 144 · Life 72 · ad-hoc 0
 **Đã biết sẵn (không dạy):** 25 từ — xem bảng cuối file
-**Cập nhật:** 2026-11-27 (buổi #71 — lockfile · fixture · point of contact · shortlist · doggy bag)
+**Cập nhật:** 2026-11-28 (buổi #72 — flapping · teardown · lump sum · second-guess · staycation)
 
 | #   | Word | Word family (cũng tính là trùng) | Loại | Nhóm | Nghĩa gọn | Ngày học | Nguồn |
 | --- | ---- | -------------------------------- | ---- | ---- | ---------- | -------- | ----- |
@@ -374,6 +374,11 @@
 | 353 | point of contact | points of contact, POC, SPOC, single point of contact, contact, contact person | noun (đếm được) | Business | đầu mối liên hệ | 2026-11-27 | lesson |
 | 354 | shortlist | shortlists, shortlisted, shortlisting, short list, shortlisted candidate | noun (đếm được; cũng là verb) | Business | danh sách rút gọn | 2026-11-27 | lesson |
 | 355 | doggy bag | doggy bags, doggie bag, to-go box, takeaway box, box sth up | noun (đếm được) | Life | hộp mang đồ ăn còn lại về | 2026-11-27 | lesson |
+| 356 | flapping | flap, flaps, flapped, flapping alert, flapping check, flap detection, flapping state | adjective (dạng V-ing của flap; cũng dùng như noun) | IT | lên xuống liên tục, alert bắn rồi tự tắt | 2026-11-28 | lesson |
+| 357 | teardown | teardowns, tear down, tears down, tore down, torn down, tear-down, global teardown, setup and teardown | noun (đếm được; động từ: tear down) | IT | bước dọn sau khi chạy xong | 2026-11-28 | lesson |
+| 358 | lump sum | lump sums, lump-sum, lump-sum payment, in a lump sum, a lump sum of, lump | noun (đếm được) | Business | khoản trả trọn gói một lần | 2026-11-28 | lesson |
+| 359 | second-guess | second-guesses, second-guessed, second-guessing, second guess, second-guess yourself | verb | Business | lật lại quyết định đã chốt / đoán ý người khác | 2026-11-28 | lesson |
+| 360 | staycation | staycations, stay-cation, staycationer, stay + vacation, home holiday | noun (đếm được) | Life | nghỉ phép ở nhà | 2026-11-28 | lesson |
 
 ## ⛔ Đã biết sẵn — KHÔNG BAO GIỜ dạy lại
 
